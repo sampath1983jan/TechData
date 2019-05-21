@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/appstyle")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/controljs")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var table = "";
+        var currentPage = 0;
+        var tbList = [];
+        $(document).ready(function () {
+            function bindTables(data) {
+                $("#tblist").html("");
+                $.each(data, function (i, d) {
+                    $("#tblist").append("<div class='row mar'><div class='col-md-12'><a style='cursor:pointer' t='" + d.Name + "'>" + d.Name + "</a></div></div>");
+                })
+                $("#tblist a").click(function () {
+                    var name = $(this).attr("t");
+                    tbName = name;
+                    getField(name);
+                })
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetEntity",
+                data: "",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    data = JSON.parse(data);
+                    tbList = data;
+                    bindTables(data);
+                },
+                error: function () {
+                    alert("Error occured!!")
+                }
+            });
+            $("#txtSearch").keyup(function () {
+                var val = $(this).val();
+                if (val == "") {
+                    newdataset = tbList;
+                } else {
+                    var newdataset = $.grep(tbList, function (v) {
+                        return v.Name.indexOf(val) == 0;
+                    });
+                }
+                bindTables(newdataset);
+            });
+
+            function renderGrid() {
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/GetData",
+                    data: JSON.stringify({ tb: tbName, currentPage: currentPage, PageSize: 10 }),
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        $("#txtPageNo").val(currentPage);
+                        data = JSON.parse(data);
+                        Page = data.Page;
+                        data = data.Data;
+                        var keys = [];
+                        if (data.length > 0) {
+                            for (var key in data[0]) {
+                                keys.push(key);
+                            }
+                        }
+                        $("#datalist").html("");
+                         
+                        //datalist
+                    
+
+                        str = "<table style='width:100%'>"
+                        str = str + "<tr>";
+                        $.each(keys, function (ir, r) {
+
+                            str = str + "<td>" + r + "</td>";
+
+                        });
+                        str = str + "</tr>";
+                        $.each(data, function (ir, r) {
+                            str = str + "<tr>";
+                            $.each(keys, function (ic, c) {
+                                str = str + "<td>" + r[c] + "</td>";
+                            })
+                            str = str + "</tr>";
+                        });
+                    str = str + "</table>";
+                    $("#datalist").append(str);
+                    $("#ttrc").html("<h3> Total Record in this table:" + Page.TotalRecord + "</h3>");
+                        
+                        //data = data.Columns;
+                        //$.each(data, function (i, d) {
+                        //    $("#fields").append("<div class='row mar'><div class='col-md-6'>" + d.Name + "</div><div class='col-md-2'>" + d.NativeType + "</div><div class='col-md-2'>" + d.Size + "</div><div class='col-md-2'>" + d.PrimaryKey + "</div></div>");
+                        //})
+                    },
+                    error: function () {
+                        alert("Error occured!!")
+                    }
+                });
+            }
+            $("#showdata").click(function () {
+                $("#txtPageNo").blur(function () {
+                    var v = $(this).val();
+                    if (v != "") {
+                        currentPage = v;
+                    }
+                    renderGrid();
+                })
+                renderGrid();
+
+                //$("#nCard").modalwindow({ id: 'win' });
+                //$("#nCard").modalwindow('open');
+
+            })
+            function getField(tbName) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/GetFields",
+                    data: JSON.stringify({ tb: tbName }),
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        $("#fields").html("");
+                        $("#txtPageNo").val(0);
+                        data = JSON.parse(data);
+                        data = data.Columns;
+                        $.each(data, function (i, d) {
+                            $("#fields").append("<div class='row mar'><div class='col-md-6'>" + d.Name + "</div><div class='col-md-2'>" + d.NativeType + "</div><div class='col-md-2'>" + d.Size + "</div><div class='col-md-2'>" + d.PrimaryKey + "</div></div>");
+                        })
+
+                    },
+                    error: function () {
+                        alert("Error occured!!")
+                    }
+                });
+            }
+
+            //$("#nCard").namecard({
+            //    title: "personal information",
+            //    header: "Employee ",
+            //    bodyTemplate: 'Some quick example text to build on the card title and make up the bulk of the card`s content',
+            //    image: '', //'https://www.planwallpaper.com/static/images/adirondacks-sun-beams-640x300.jpg',
+            //    imagePosition: 'bottom',
+            //    footerTemplate: '<small class="text-muted">welcome to name card <a href="#" class="card-link">Go somewhere</a></small>',
+            //    theme: "",
+            //    align: 'left'
+            //})
+
+   
+          
+        });
+
+    </script>
+</body>
+</html>

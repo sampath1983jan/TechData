@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Sample configuration file schema 
+     for registering custom implementations and profilers
+     https://github.com/svn2github/dynasql/tree/master/Perceiveit.Data.DynaSQL
+     Add the Tech.Data configSection and the 
+     Tech.Data element with the xmlns attribute (for intellisense)  -->
+
+<configuration>
+  <configSections>
+    <section name="Tech.Data" type="Tech.Data.Configuration.DBConfigurationSection, Tech.Data"/>
+  </configSections>
+  
+
+  <Tech.Data 
+    wrap-exceptions="false" > <!-- use @wrap-exceptions to stop sensitive information 
+                                   from being included in the exception message -->
+    
+    
+    <!-- automatically attach profilers to any DBDatabase. 
+         The 2 below are the standard (included) profilers, 
+         but you can define your own. -->
+    
+    <Profilers auto-start="true"  > <!-- If auto-start is false then manual starting of the profiler 
+                                         for each DBDatabase instance is required (default is true)-->
+      <Clear/>
+      <Attach name="Console" factory="Tech.Data.Profile.DBConsoleProfilerFactory, Tech.Data" />
+      <Attach name="LogFile" factory="Tech.Data.Profile.DBTextFileProfilerFactory, Tech.Data" >
+        <Set key="file-path" value="C:\Temp\DBLog_[Name]_[Date].log" /><!-- the file-path value is parsed to accept [Name], [Date] and [Connection] options 
+                                                                            so text file logs can be separated. 
+                                                                            Soon to support max-age and max-size options -->
+      </Attach>
+    </Profilers>
+    
+    
+    <!-- register custom implementations of the DBFactory to provide your own implementation, or extend the existing.
+      The known provider factories are automatically included so must be removed if extending -->
+    <Implementations>
+      <Remove provider="System.Data.SqlClient" />
+      <Register provider="System.Data.SqlClient" 
+                implementation-type="Tech.Data.SqlClient.DBSqlClientFactory, Tech.Data" />
+    </Implementations>
+    
+    
+  </Tech.Data>
+
+  
+</configuration>
+ 
