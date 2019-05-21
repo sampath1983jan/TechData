@@ -24,6 +24,10 @@ namespace Tz.Net
         public bool Status { get; set; }
         public bool isAuthenticateUser { get { return _isauth; } }
         private Data.User dUser;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userID"></param>
         public User(string userID) {
             _userid= userID;
             dUser = new Data.User();
