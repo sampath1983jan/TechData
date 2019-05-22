@@ -12,6 +12,11 @@ namespace Tz.Net
                        
         }
 
+        public void Reset(string conn) {
+            Tz.Data.Setup s = new Data.Setup(conn);
+            s.Clear();
+        }
+
         public void Execute(string conn) {
             try
             {
@@ -57,8 +62,31 @@ namespace Tz.Net
                     {
                         throw ex;
                     }
-                }             
-              
+                }
+                try
+                {
+                    s.CreateTable();
+                }
+                catch (Exception ex)
+                {
+                    if (ex.Message.IndexOf("exist") == 0)
+                    {
+                        throw ex;
+                    }
+                }
+
+
+                try
+                {
+                    s.CreateField();
+                }
+                catch (Exception ex)
+                {
+                    if (ex.Message.IndexOf("exist") == 0)
+                    {
+                        throw ex;
+                    }
+                }
             }
             catch (Exception ex) {
                 throw ex;

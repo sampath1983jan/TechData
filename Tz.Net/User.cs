@@ -13,7 +13,7 @@ namespace Tz.Net
         Admin,
         SuperAdmin,
     }
-    class User:INetImplimentor
+  public  class User:INetImplimentor
     {
        private string _userid;
        private bool _isauth;
@@ -24,6 +24,10 @@ namespace Tz.Net
         public bool Status { get; set; }
         public bool isAuthenticateUser { get { return _isauth; } }
         private Data.User dUser;
+
+        public User() {
+            _userid = "";
+        }
         /// <summary>
         /// 
         /// </summary>

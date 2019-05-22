@@ -18,8 +18,32 @@ namespace Tz.Data
             db = base.Database;
             DBSchemaProvider provider = db.GetSchemaProvider();
              tables = provider.GetAllTables();            
-
         }
+
+        public void Clear() {
+            DBQuery[] all = new DBQuery[] {
+            DBQuery.Drop.Table(base.Schema, TzAccount.Client.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.User.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.Server.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.Tables.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.Field.Table).IfExists(),
+            };
+
+            foreach (DBQuery q in all) {
+                try
+                {
+                    db.ExecuteNonQuery(q);
+                }
+                catch (Exception ex)
+                {
+                    //if (null == failure)
+                    //    failure = ex;
+                    //failcount++;
+                    //TestContext 
+                }
+            }
+        }
+
         public void CreateAccount() {            
          //   DBSchemaItemRef table =   tables.Where(x => x.Name.ToLower() == TzAccount.Account.Table.ToLower()).FirstOrDefault ();
          ////  Tech.Data.Schema.DBSchemaTable table = provider.GetTable("", base.Schema, TzAccount.Account.Table);
@@ -109,6 +133,47 @@ namespace Tz.Data
             else
             {
                 throw new Exception("Server table Name exist");
+            }
+        }
+
+        public void CreateTable()
+        {
+            DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.Tables.Table.ToLower()).FirstOrDefault();
+            if (table == null)
+            {
+                DBQuery create;
+                create = DBQuery.Create.Table(base.Schema, TzAccount.Tables.Table)
+                                        .Add(TzAccount.Tables.TableID)
+                                        .Add(TzAccount.Tables.TableName)
+                                        .Add(TzAccount.Tables.Category)                                      
+                                        ;
+                db.ExecuteNonQuery(create);
+            }
+            else
+            {
+                throw new Exception("'Table' table Name exist");
+            }
+        }
+        public void CreateField()
+        {
+            DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.Field.Table.ToLower()).FirstOrDefault();
+            if (table == null)
+            {
+                DBQuery create;
+                create = DBQuery.Create.Table(base.Schema, TzAccount.Field.Table)
+                                        .Add(TzAccount.Field.TableID)
+                                        .Add(TzAccount.Field.FieldID)
+                                        .Add(TzAccount.Field.FieldName)
+                                        .Add(TzAccount.Field.FieldType)
+                                        .Add(TzAccount.Field.Length)
+                                        .Add(TzAccount.Field.IsNullable)
+                                        .Add(TzAccount.Field.ISPrimaryKey)
+                                        ;
+                db.ExecuteNonQuery(create);
+            }
+            else
+            {
+                throw new Exception("'Fields' table Name exist");
             }
         }
 

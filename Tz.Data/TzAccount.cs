@@ -82,6 +82,34 @@ namespace Tz.Data
             public static readonly DBColumn Port = DBColumn.Column("Port", System.Data.DbType.Int32,
               DBColumnFlags.Nullable);
         }
+
+        public class Tables {
+            public const string Table = "cf_Table";
+            public static readonly DBColumn TableID = DBColumn.Column("TableID", System.Data.DbType.String, 255,
+           DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn TableName = DBColumn.Column("TableName", System.Data.DbType.String, 500,
+           DBColumnFlags.Nullable);
+            public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.String, 500,
+           DBColumnFlags.Nullable);          
+        }
+
+        public class Field {
+            public const string Table = "cf_Fields";
+
+            public static readonly DBColumn FieldID = DBColumn.Column("FieldID", System.Data.DbType.String, 255,
+          DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn TableID = DBColumn.Column("TableID", System.Data.DbType.String, 255);
+            public static readonly DBColumn FieldName = DBColumn.Column("FieldName", System.Data.DbType.String, 500,
+           DBColumnFlags.Nullable);
+            public static readonly DBColumn FieldType = DBColumn.Column("FieldType", System.Data.DbType.String, 500,
+           DBColumnFlags.Nullable);
+            public static readonly DBColumn Length = DBColumn.Column("Length", System.Data.DbType.String, 255,
+          DBColumnFlags.Nullable);
+            public static readonly DBColumn ISPrimaryKey = DBColumn.Column("ISPrimaryKey", System.Data.DbType.Boolean, 
+           DBColumnFlags.Nullable);
+            public static readonly DBColumn IsNullable = DBColumn.Column("IsNullable", System.Data.DbType.Boolean, 
+           DBColumnFlags.Nullable);
+        }
     }
 
     

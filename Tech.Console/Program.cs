@@ -37,7 +37,21 @@ namespace Tech.Console
 
             return number;
         }
+        private static string CreateUser() {
+            Tz.Net.User u = new Tz.Net.User("sampath",
+                "312",Tz.Net.UserType.Admin,true);
+            u.Save();
+            return u.UserID;
+        }
+        private static void RemoveUser(string uid) {
+            Tz.Net.User u = new Tz.Net.User(uid);
+            u.Remove();
+        }
 
+        private static void PrintUser() {
+            System.Console.Write(CreateUser());
+            System.Console.ReadKey();
+        }
         private static string CreateServer() {
             Tz.Net.Server s = new Tz.Net.Server("ipaddress", "server11", "sa", "3424", 3006);
             s.Save();
@@ -47,7 +61,6 @@ namespace Tech.Console
             System.Console.Write(CreateServer());
             System.Console.ReadKey();
         }
-
         private static void UpdateSever(string serverid)
         {
 
@@ -56,7 +69,6 @@ namespace Tech.Console
             System.Console.Write(ss.Save());
             System.Console.ReadKey();
         }
-
         private static void RemoveServer(string serverid)
         {
 
@@ -65,7 +77,6 @@ namespace Tech.Console
             System.Console.Write(s.Remove());
             System.Console.ReadKey();
         }
-
         private static string CreateClient() {
             Tz.Net.Client c = new Tz.Net.Client("sampath kumar",
                 "345435 34543",
@@ -91,6 +102,7 @@ namespace Tech.Console
             Tz.Net.Setup ss = new Tz.Net.Setup();
             try
             {
+                ss.Reset(s);
                 ss.Execute(s);
                 System.Console.Write("stepup created");
             }
@@ -109,16 +121,19 @@ namespace Tech.Console
           System.Console.Write(c.Save());
         }
         static void Main(string[] args) {
-            //  Setup();
+             Setup();
             //CreateClient();
             //RemoveClient();
             // UpdateClient();
             //  CreateServer();
-            string key = CreateServer();
-            UpdateSever(key);
-            System.Console.ReadKey();
-            RemoveServer(key);
+            //string key = CreateServer();
+            //UpdateSever(key);
+            //System.Console.ReadKey();
+            //RemoveServer(key);
 
+        //    PrintUser();
+            //RemoveUser(CreateUser());
+            //System.Console.ReadKey();
         }
 
         //static void Main(string[] args)

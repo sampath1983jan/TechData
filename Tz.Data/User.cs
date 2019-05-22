@@ -66,16 +66,18 @@ namespace Tz.Data
             DBConst dbStatus = DBConst.Const(DbType.Boolean, Status);
             DBConst dbUserType = DBConst.Int32(UserType);
             DBConst dbUserName = DBConst.String(UserName);
-         
+            DBConst dbPass = DBConst.String(Password);
+
             DBQuery insert = DBQuery.InsertInto(TzAccount.User.Table).Fields(
                 TzAccount.User.UserID.Name,
                TzAccount.User.UserName.Name,
                TzAccount.User.UserType.Name,
-               TzAccount.User.Status.Name).Values(
+               TzAccount.User.Status.Name,
+               TzAccount.User.Password.Name).Values(
                dbUserID,
                dbUserName,               
                dbUserType,
-               dbStatus              
+               dbStatus              , dbPass
                );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
