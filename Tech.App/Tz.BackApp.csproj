@@ -232,17 +232,9 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tech.DataAccess\Tech.DataAccess.csproj">
-      <Project>{f48c5744-01fc-435c-81a6-de04bee5e2f2}</Project>
-      <Name>Tech.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
-      <Project>{6605498e-3be2-4b50-af67-d5a9084a5f00}</Project>
+      <Project>{6605498E-3BE2-4B50-AF67-D5A9084A5F00}</Project>
       <Name>Tech.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tech.QScript\Tech.QScript.csproj">
-      <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
-      <Name>Tech.QScript</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

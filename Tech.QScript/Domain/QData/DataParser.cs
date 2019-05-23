@@ -47,9 +47,8 @@ namespace Tech.QScript.Domain.QData
                 }
                 foreach (Syntax.Query.Relation r in t.Relations)
                 {
-                    select.InnerJoin(t.TableName.Trim()).As(t.TableAlias.Trim()).On(r.lefttable.Trim(), r.LeftField.Trim(), GetCompare(r.Operator), r.RightTable.Trim(), r.RightField.Trim());
-                }
-                
+                    select.InnerJoin(t.TableName.Trim()).As(t.TableAlias.Trim()).On(r.lefttable.Trim(), r.LeftField.Trim(), GetCompare(r.Operator), r.RightTable.Trim(), r.RightField.Trim());                    
+                }               
             }
             //foreach (Syntax.Query.Table t in sQuery.from.Tables )
             //{

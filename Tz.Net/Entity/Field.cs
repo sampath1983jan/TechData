@@ -10,7 +10,7 @@ namespace Tz.Net.Entity
 {
     public interface IField
     {
-        string FieldID { get; set; }
+        string FieldID { get; }
         string FieldName { get; set; }
         DbType FieldType { get; set; }
         int Length { get; set; }
@@ -29,13 +29,41 @@ namespace Tz.Net.Entity
         public bool _isPrimarykey;
         public string _tableID;
 
-        public string FieldID { get => _fieldid; set => _fieldid=value; }
+        public string FieldID { get => _fieldid;  }
         public string FieldName { get => _fieldName; set => _fieldName = value; }
         public DbType FieldType { get => _fieldtype; set => _fieldtype = value; }
         public int Length { get => _length; set => _length = value; }
         public bool IsNullable { get => _isNullable; set => _isNullable = value; }
         public bool IsPrimaryKey { get => _isPrimarykey; set => _isPrimarykey = value; }
         public string TableID { get => _tableID; }
+        public Field() {
+            _fieldid= "";
+            FieldName = "";
+            Length =0;
+            IsNullable = true;
+            IsPrimaryKey = true;
+            _tableID= "";
+        }
+        public Field(string tableid) {
+            _fieldid = "";
+            FieldName = "";
+            Length = 0;
+            IsNullable = true;
+            IsPrimaryKey = true;
+            _tableID = tableid;
+        }
+        public bool Save() {
 
+            return true;
+        }
+
+        public bool Update() {
+            Data.Field dField = new Data.Field();
+            return dField.Update(FieldName, (int)FieldType, Length, IsNullable, IsPrimaryKey,this.TableID, _fieldid);
+        }
+        internal bool Remove() {
+            Data.Field dField = new Data.Field();
+           return dField.RemoveField(_fieldid);           
+        }
     }
 }
