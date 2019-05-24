@@ -76,7 +76,7 @@ namespace Tz.Net
                     .Add( Tz.Data.TzAccount.Client.OrganizationName.Name, "OrganizationName")
                     .Add( Tz.Data.TzAccount.Client.Status.Name,"Status")
                     .Add( Tz.Data.TzAccount.Client.Host.Name, "ClientHost")
-                    , null).FirstOrDefault();
+                    , null,null).FirstOrDefault();
             this.Merge<Client>(c);          
         }
         /// <summary>

@@ -85,13 +85,12 @@ namespace Tz.Data
             DataRow item = null;
             DBParam dbfieldid = DBParam.ParamWithDelegate(DbType.String, delegate { return Shared.generateID(); });
             DBParam dbTableid = DBParam.ParamWithDelegate(DbType.String, delegate { return item["tableid"] == null ? "" : item["tableid"]; });
-            DBParam dbfieldName = DBParam.ParamWithDelegate(DbType.String, delegate { return item["fieldname"] == null ? "" : item["fieldtype"]; });
+            DBParam dbfieldName = DBParam.ParamWithDelegate(DbType.String, delegate { return item["fieldname"] == null ? "" : item["fieldname"]; });
             DBParam dbfieldtype = DBParam.ParamWithDelegate(DbType.Int32, delegate { return (item["fieldtype"] == null ? 1 : item["fieldtype"]); });
             DBParam dbisnull = DBParam.ParamWithDelegate(DbType.Boolean, delegate { return (item["isnull"] == null ? false : item["isnull"]); });
             DBParam dbisprimary = DBParam.ParamWithDelegate(DbType.Boolean, delegate { return (item["isprimary"]==null?false: item["isprimary"]); });
             DBParam dblength = DBParam.ParamWithDelegate(DbType.Int32, delegate { return (item["length"]==null? 0: item["length"]); });
-
-
+            
             DBQuery insert = DBQuery.InsertInto(TzAccount.Field.Table).Fields(
               TzAccount.Field.TableID.Name,
               TzAccount.Field.FieldID.Name,

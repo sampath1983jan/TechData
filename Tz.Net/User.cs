@@ -83,7 +83,7 @@ namespace Tz.Net
                    .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
-                   , null).FirstOrDefault();
+                   , null, null).FirstOrDefault();
                 this.Merge<User>(c);
                 _isauth = true;
             }
@@ -105,7 +105,7 @@ namespace Tz.Net
                    .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
-                   , null).FirstOrDefault();
+                   , null, null).FirstOrDefault();
                 this.Merge<User>(c);
                 _isauth = true;
             }

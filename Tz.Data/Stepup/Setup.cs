@@ -34,7 +34,7 @@ namespace Tz.Data
                 {
                     db.ExecuteNonQuery(q);
                 }
-                catch (Exception ex)
+                catch (System.Exception ex)
                 {
                     //if (null == failure)
                     //    failure = ex;
@@ -93,7 +93,7 @@ namespace Tz.Data
             }
             else
             {
-                throw new Exception("Client table Name exist");
+                throw new System.Exception("Client table Name exist");
             }
         }
         public void CreateServer() {
@@ -112,7 +112,7 @@ namespace Tz.Data
             }
             else
             {
-                throw new Exception("Server table Name exist");
+                throw new System.Exception("Server table Name exist");
             }
         }
 
@@ -132,7 +132,7 @@ namespace Tz.Data
             }
             else
             {
-                throw new Exception("Server table Name exist");
+                throw new System.Exception("Server table Name exist");
             }
         }
 
@@ -151,7 +151,7 @@ namespace Tz.Data
             }
             else
             {
-                throw new Exception("'Table' table Name exist");
+                throw new System.Exception("'Table' table Name exist");
             }
         }
         public void CreateField()
@@ -173,7 +173,7 @@ namespace Tz.Data
             }
             else
             {
-                throw new Exception("'Fields' table Name exist");
+                throw new System.Exception("'Fields' table Name exist");
             }
         }
 

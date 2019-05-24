@@ -32,9 +32,12 @@ namespace Tz.Data
         /// <param name="tableid"></param>
         /// <returns></returns>
         public DataTable GetTable(string tableid) {
+            DBConst dbtableid = DBConst.String(tableid);
             DBQuery select;
-            select = DBQuery.SelectAll(TzAccount.Tables.Table).From(TzAccount.Tables.Table)
-                .LeftJoin(TzAccount.Field.Table).On(TzAccount.Field.TableID, Compare.Equals, TzAccount.Tables.TableID);
+            select = DBQuery.SelectAll().From(TzAccount.Tables.Table)
+                .LeftJoin(TzAccount.Field.Table).On(TzAccount.Field.Table,TzAccount.Field.TableID.Name, Compare.Equals, TzAccount.Tables.Table, TzAccount.Tables.TableID.Name)
+                .WhereField(TzAccount.Tables.Table, TzAccount.Tables.TableID.Name, Compare.Equals, dbtableid);
+
             return db.GetDatatable(select);
         }
 
@@ -94,7 +97,7 @@ namespace Tz.Data
                 TzAccount.Tables.TableName.Name, dbtableName
                 ).Set(
                 TzAccount.Tables.Category.Name, dbcategory
-                ).WhereField(TzAccount.Client.ClientID.Name, Compare.Equals, dbtableid);
+                ).WhereField(TzAccount.Tables.TableID.Name, Compare.Equals, dbtableid);
             int i = db.ExecuteNonQuery(update);
             if (i > 0)
             {

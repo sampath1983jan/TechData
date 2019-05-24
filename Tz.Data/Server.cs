@@ -54,7 +54,7 @@ namespace Tz.Data
             DBConst dbHostName = DBConst.String(host);
             DBConst dbDBname = DBConst.String(dbname);
             DBConst dbPassword = DBConst.String(password);
-            DBConst dbUserName = DBConst.String(password);
+            DBConst dbUserName = DBConst.String(userName);
             DBConst dbPort = DBConst.Int32(port);
 
             DBQuery insert = DBQuery.InsertInto(TzAccount.Server.Table).Fields(

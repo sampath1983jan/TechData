@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="AccountManager.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Exception\TableException.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="Shared\DataBase.cs" />
     <Compile Include="Server.cs" />
+    <Compile Include="Exception\DataException.cs" />
     <Compile Include="Stepup\Setup.cs" />
     <Compile Include="Shared\Shared.cs" />
     <Compile Include="Stepup\TzAccount.cs" />

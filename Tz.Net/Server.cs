@@ -22,6 +22,9 @@ namespace Tz.Net
         public Server() {
 
         }
+        public string Connection() {
+            return "Server="+ this.Host +";Initial Catalog="+ this.DBName +";Uid="+ this.UserName +";Pwd="+ this.Password +"";
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -65,7 +68,7 @@ namespace Tz.Net
                      .Add(Tz.Data.TzAccount.Server.Password.Name, "Password")
                      .Add(Tz.Data.TzAccount.Server.Port.Name, "Port")
                       .Add(Tz.Data.TzAccount.Server.DB.Name, "DBName")                    
-                     , null).FirstOrDefault();
+                     , null, null).FirstOrDefault();
             this.Merge<Server>(c);
         }
 

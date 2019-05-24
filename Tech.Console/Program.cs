@@ -39,7 +39,7 @@ namespace Tech.Console
         }
         private static string CreateUser() {
             Tz.Net.User u = new Tz.Net.User("sampath",
-                "312",Tz.Net.UserType.Admin,true);
+                "312", Tz.Net.UserType.Admin, true);
             u.Save();
             return u.UserID;
         }
@@ -53,11 +53,11 @@ namespace Tech.Console
             System.Console.ReadKey();
         }
         private static string CreateServer() {
-            Tz.Net.Server s = new Tz.Net.Server("ipaddress", "server11", "sa", "3424", 3006);
+            Tz.Net.Server s = new Tz.Net.Server("dell6", "talentozdev", "root", "admin312", 3006);
             s.Save();
             return s.ServerID;
         }
-        private static void PrintServer() {                       
+        private static void PrintServer() {
             System.Console.Write(CreateServer());
             System.Console.ReadKey();
         }
@@ -73,7 +73,7 @@ namespace Tech.Console
         {
 
             Tz.Net.Server s = new Tz.Net.Server(serverid);
-            
+
             System.Console.Write(s.Remove());
             System.Console.ReadKey();
         }
@@ -90,7 +90,7 @@ namespace Tech.Console
                 true
                 );
             c.Save();
-  return c.ClientID;
+            return c.ClientID;
         }
         private static void RemoveClient(string clientid) {
             Tz.Net.Client c = new Tz.Net.Client(clientid);
@@ -117,21 +117,99 @@ namespace Tech.Console
         }
         private static void UpdateClient(string clientid) {
             Tz.Net.Client c = new Tz.Net.Client(clientid);
-            c.OrganizationName = "Forziatech";          
-          System.Console.Write(c.Save());
+            c.OrganizationName = "Forziatech";
+            System.Console.Write(c.Save());
         }
-        static void Main(string[] args) {
-             Setup();
-            //CreateClient();
-            //RemoveClient();
-            // UpdateClient();
-            //  CreateServer();
-            //string key = CreateServer();
-            //UpdateSever(key);
-            //System.Console.ReadKey();
-            //RemoveServer(key);
 
-        //    PrintUser();
+        private static void CreateTable(out string tableid, out string serverid) {
+            string tablename = "";
+            System.Console.WriteLine("Enter TableName");
+            tablename = System.Console.ReadLine();
+            System.Console.WriteLine("Enter Field name seperated by ,");
+            string fields = "";
+            tableid = "";
+            fields = System.Console.ReadLine();
+            var fs = fields.Split(',');
+            serverid = CreateServer();
+            if (serverid != "") {
+                Tz.Net.DataManager dm = new Tz.Net.DataManager(serverid);
+                dm.NewTable(tablename, "sys");
+                foreach (string s in fs)
+                {
+                    if (s == "UserID")
+                    {
+                        dm.AddPrimarykey(s, System.Data.DbType.String, 25);
+                        //  dm.AddField(s, System.Data.DbType.String, 25, true);
+                    }
+                    else {
+                        dm.AddField(s, System.Data.DbType.String, 25, true);
+                    }
+
+                }
+                try
+                {
+                    dm.AcceptChanges();
+                    tableid = dm.getTableID();
+                    System.Console.WriteLine("table created");
+                    System.Console.ReadLine();
+                }
+                catch (System.Exception ex) {
+                    tableid = "";
+                    System.Console.WriteLine(ex.Message);
+                }
+            }
+        }
+        private static void addColumn (string tbID, string serverid){
+            Tz.Net.DataManager dm = new Tz.Net.DataManager(tbID, serverid);
+            string fields;
+            fields = System.Console.ReadLine();
+            var fs = fields.Split(',');
+            foreach (string s in fs)
+            {
+                if (s == "UserID")
+                {
+                    dm.AddPrimarykey(s, System.Data.DbType.String, 25);                 
+                }
+                else
+                {
+                    dm.AddField(s, System.Data.DbType.String, 25, true);
+                }
+            }
+            dm.AcceptChanges();
+            System.Console.WriteLine("fields added");
+            System.Console.ReadLine();
+        }
+
+        private static void DropTable(string tableid,   string serverid) {
+          //  string serverid = CreateServer();
+            Tz.Net.DataManager dm = new Tz.Net.DataManager(tableid, serverid);          
+            try {
+                dm.Remove();
+            }
+            catch (System.Exception ex)
+            {
+                System.Console.WriteLine(ex.Message);
+            }
+            System.Console.WriteLine("droped");
+            System.Console.ReadLine();
+        }
+
+        static void Main(string[] args) {
+            string tabid, serverid;
+                CreateTable(out tabid, out serverid);
+            addColumn(tabid, serverid);
+            DropTable(tabid,serverid);
+           //  Setup();
+           //CreateClient();
+           //RemoveClient();
+           // UpdateClient();
+           //  CreateServer();
+           //string key = CreateServer();
+           //UpdateSever(key);
+           //System.Console.ReadKey();
+           //RemoveServer(key);
+
+            //    PrintUser();
             //RemoveUser(CreateUser());
             //System.Console.ReadKey();
         }

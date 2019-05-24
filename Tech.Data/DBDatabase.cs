@@ -3184,7 +3184,7 @@ namespace Tech.Data
             {
                 query.BuildStatement(sb);
                 string cmdtext = sb.ToString().Trim();
-                cmd = this.Factory.CreateCommand();
+                cmd = this.Factory.CreateCommand();                
                 cmd.Connection = connection;
                 cmd.CommandText = cmdtext;
                 cmd.CommandType = query.GetCommandType();

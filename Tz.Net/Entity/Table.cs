@@ -18,34 +18,36 @@ namespace Tz.Net.Entity
     /// <summary>
     /// 
     /// </summary>
-  public  class Table:ITable
+    public class Table : ITable
     {
         private string _tableid;
         private string _tablename;
         private string _category;
         private Data.Table dTable;
         private Data.Field dField;
+        private List<IField> _fields;
         /// <summary>
         /// 
         /// </summary>
-        public string TableID { get => _tableid; set => _tableid=value; }
+        public string TableID { get => _tableid; set => _tableid = value; }
         /// <summary>
         /// 
         /// </summary>
-        public string TableName { get => _tablename; set => _tablename=value; }
+        public string TableName { get => _tablename; set => _tablename = value; }
         /// <summary>
         /// 
         /// </summary>
-        public string Category { get => _category; set => _category=value; }
+        public string Category { get => _category; set => _category = value; }
         /// <summary>
         /// 
         /// </summary>
-        public List<IField> Fields { get; }
+        public List<IField> Fields { get { return _fields; } }
         /// <summary>
         /// 
         /// </summary>
         public Table() {
-            Fields = new List<IField>();
+            _fields = new List<IField>();
+            dTable = new Data.Table();
         }
         /// <summary>
         /// 
@@ -53,11 +55,67 @@ namespace Tz.Net.Entity
         /// <param name="tableid"></param>
         public Table(string tableid) {
             _tableid = tableid;
-            Fields = new List<IField>();
+            _fields = new List<IField>();
+            dTable = new Data.Table();
+            Load();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <param name="category"></param>
+        public Table(string tableName, string category)
+        {
+            _tableid = "";
+            _tablename = tableName;
+            _category = category;
+            _fields = new List<IField>();
+            dTable = new Data.Table();
+        }
+        private dynamic dynamic(string x, string y) {
+            int k = 0;
+                Int32.TryParse(y,out k);
+            if (x == "FieldType")
+            {
+                return (System.Data.DbType)k;
+            }
+            else {
+                return y;
+            }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        private void Load() {
+         
+            DataTable dt = new DataTable();
+            dt=  dTable.GetTable(this.TableID);
+            if (dt.Rows.Count > 0) {
+            dynamic fs = dt.toList<Field>(new DataFieldMappings()               //  .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID")
+                    .Add(Tz.Data.TzAccount.Field.FieldName.Name, "FieldName")
+                  .Add(Tz.Data.TzAccount.Field.FieldType.Name, "FieldType")
+                  .Add(Tz.Data.TzAccount.Field.Length.Name, "Length")
+                  .Add(Tz.Data.TzAccount.Field.ISPrimaryKey.Name, "IsPrimaryKey")
+                  .Add(Tz.Data.TzAccount.Field.IsNullable.Name, "IsNullable")
+                  ,  null,(x,y)=> dynamic(x,y));
+                int i = 0;
+                foreach (Field f in fs) {
+                    f.setFieldID(dt.Rows[i]["FieldID"].ToString());
+                    _fields.Add(f);
+                    i = i + 1;
+                }
+                this.TableName = dt.Rows[0]["TableName"] == null ? "" : dt.Rows[0]["TableName"].ToString();
+                this.Category = dt.Rows[0]["Category"] == null ? "" : dt.Rows[0]["Category"].ToString();
+            }     
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         private bool AcceptFieldChanges()
         {
+            dField = new Data.Field();
             DataTable dt = new DataTable();
             dt.Columns.Add("tableid", typeof(string));
             dt.Columns.Add("fieldname", typeof(string));
@@ -100,7 +158,10 @@ namespace Tz.Net.Entity
             }
             return true;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string Save() {
             dTable = new Data.Table();
             Data.Field dField = new Data.Field();

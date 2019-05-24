@@ -60,7 +60,7 @@ namespace Tz.Net
 
         
 
-        public static List<T> toList<T>(this System.Data.DataTable dt, DataFieldMappings df, Func<T, T> Bind)
+        public static List<T> toList<T>(this System.Data.DataTable dt, DataFieldMappings df, Func<T, T> Bind,Func<string,string,dynamic> format)
         {
             try
             {
@@ -93,7 +93,17 @@ namespace Tz.Net
                                     }                                    
                                 }
                                 else {
-                                    pt.SetValue(instanceOfT, dataRow[d.DataField], null);
+                                    if ((((pt).PropertyType).BaseType).FullName == "System.Enum")
+                                    {
+                                        pt.SetValue(instanceOfT, format(d.DataField, dataRow[d.DataField].ToString()), null);
+                                    }
+                                    else if ((((pt).PropertyType).BaseType).FullName == "System.ValueType") {
+                                        pt.SetValue(instanceOfT,  Cast(dataRow[d.DataField], (((pt).PropertyType))), null);
+                                    }
+                                    else
+                                    {
+                                        pt.SetValue(instanceOfT, dataRow[d.DataField], null);
+                                    }
                                 }
                                 
 
@@ -114,6 +124,12 @@ namespace Tz.Net
                 throw new Exception(e.Message, e.InnerException);
             }
         }
+
+        public static dynamic Cast(dynamic obj, Type castTo)
+        {
+            return Convert.ChangeType(obj, castTo);
+        }
+
 
         public static List<T> toList<T>(this System.Data.DataTable dt, DataFieldMappings df)
         {
