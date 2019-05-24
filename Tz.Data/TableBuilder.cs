@@ -12,8 +12,7 @@ namespace Tz.Data
    public class TableBuilder: DataBase
     {
         private DBSchemaTable tables;
-        private DBDatabase db;
-        private DBQuery create;
+        private DBDatabase db;        
         private List<DBColumn> Columns;
         private List<DBColumn> AlterColumns;
         private List<DBColumn> PrimaryKey;
@@ -35,8 +34,6 @@ namespace Tz.Data
             NewColumns = new List<string>();
             PrimaryKey = new List<DBColumn>();
         }
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -50,7 +47,10 @@ namespace Tz.Data
                 return true;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public bool DropTable() {
             try
             {
@@ -90,6 +90,12 @@ namespace Tz.Data
                     return true;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fieldName"></param>
+        /// <param name="columns"></param>
+        /// <returns></returns>
         private bool IsFieldExist(string fieldName, List<DBColumn> columns) {
             if (IsTableExist())
             {
@@ -122,11 +128,21 @@ namespace Tz.Data
             }            
             return this;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public TableBuilder AddPrimaryKeyField(DBColumn c) {         
             PrimaryKey.Add(c);
             return this;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="newcolumn"></param>
+        /// <returns></returns>
         public TableBuilder AlterField(DBColumn c, string newcolumn = "") {
             if (IsFieldExist(c.Name, AlterColumns))
             {
