@@ -20,7 +20,206 @@
     <div class="control col-md-6"></div>
 </div>
 <div class="row"> <div id="fg3" class="control col-md-6"></div>    </div>
+<div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <div class="container">
+            <input type="button" id="btnReg" value="Registration" class="btn  btn-primary" style="float:left; width:45%" />
+            <input type="button" id="btnCancel" class="btn btn-default" value="Cancel"style="float:left; width:50%" />
+        </div>
+        
+    </div>
+    
+</div>
  </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#btnReg").click(function () {
+            var u = {};
+            u.Username = $("#fg1").Input("text");
+          //  u.email = $("#fg2").Input("text");
+            u.password = $("#fg4").Input("text");
+            u.firstName = "sampath";
+            u.lastName = "Kumar";
+            u.userType = 1;
+
+            $.ajax('/Authentication/SaveUser',
+                {
+                    dataType: 'json', // type of response data
+                    data: (u),
+                        // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function
+                        //$('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
+                        alert("success");
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback 
+                        alert(errorMessage);
+                        //$('p').append('Error: ' + errorMessage);
+                    }
+                });
+        });
+
+        (function ($reg) {
+            $reg.Include = function (options) {
+                var defaults = {
+                    plc: "",
+                    onRegistration: function () {
+
+                    },
+                    onCancel: function () {
+
+                    }
+                };
+                $.extend(this, defaults, options);
+                
+                var utype = [{ key: 1, value: "User" }, { key: 2, value: "Admin" }, { key: 3, value: "Super Admin" }]
+
+                $("#" + this.plc).labelfields({
+                    items: [{
+                        label: "User Name",
+                        field: {
+                            id: "userName", 'note': "Enter username here",
+                            limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                            format: "hex", range: false
+                        },
+                        id: 'fg1'
+                    }, {
+                        label: "Email address",
+                        field:
+                        {
+                            id: "emailaddress", 'note': "demo@gmail.com",
+                            limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": "",
+                            format: "hex", range: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: [],
+                                displayField: "make_display",
+                                valueField: "make_id",
+                                selection: "multiple"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        }
+                        ,
+                        id: 'fg2'
+                    },
+                    {
+                        label: "Password",
+                        field:
+                        {
+                            id: "Passwordctr", 'note': "",
+                            limit: true, maxlength: 15, inputType: 1, textType: 2, timeformat: 12, 'regexp': "", "text": "",
+                            format: "hex", range: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: [],
+                                displayField: "make_display",
+                                valueField: "make_id",
+                                selection: "multiple"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        },
+                        id: 'fg4'
+                    },
+                    {
+                        label: "Confirm Password",
+                        field:
+                        {
+                            id: "cPasswordctr", 'note': "",
+                            limit: true, maxlength: 15, inputType: 1, textType: 2, timeformat: 12, 'regexp': "", "text": "",
+                            format: "hex", range: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: [],
+                                displayField: "make_display",
+                                valueField: "make_id",
+                                selection: "multiple"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        },
+                        id: 'fg5'
+                    },
+                    {
+                        label: "User Type",
+                        field:
+                        {
+                            id: "usertype", 'note': "",
+                            limit: true, maxlength: 15, inputType: 19, textType: 1, timeformat: 12, 'regexp': "", "text": "",
+                            format: "hex", range: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: utype,
+                                displayField: "value",
+                                valueField: "key",
+                                selection: "single"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        },
+                        id: 'fg3'
+                    }]
+                })
+            }
+
+            $.Include({ plc: "onRegistraction" })
+
+        })($)
+
+
+    })
+
+</script>
 @*@if (ViewBag.Status != null && Convert.ToBoolean(ViewBag.Status))
     {
         if (ViewBag.Message != null)
@@ -102,181 +301,3 @@
         }
     }*@
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        (function ($reg) {
-            $reg.Include = function (options) {
-                var defaults = {
-                    plc: "",
-                    onRegistration: function () {
-
-                    },
-                    onCancel: function () {
-
-                    }
-                };
-                $.extend(this, defaults, options);
-               // $("#" + this.plc).append("<div id='lblField'></div>");
-                var addUserName = function (cthis) {
-
-                }
-                var addFirstName = function (cthis) {
-
-                }
-                var addLastName = function (cthis) {
-
-                }
-                var addPassword = function (cthis) {
-
-                }
-                var addEmailID = function (cthis) {
-
-                }
-                var utype = [{ key: 1, value: "User" }, { key: 2, value: "Admin" },{ key: 3, value: "Super Admin" }]
-
-                $("#" + this.plc).labelfields({
-                    items: [{
-                        label: "User Name",
-                        field: {
-                            id: "userName", 'note': "Enter username here",
-                            limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
-                            format: "hex", range: false
-                        },
-                        id: 'fg1'
-                    }, {
-                        label: "Email address",
-                        field:
-                        {
-                            id: "emailaddress", 'note': "demo@gmail.com",
-                            limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": "",
-                            format: "hex", range: true,
-                            date: {
-                                datepickerType: 1,
-                                timeformat: 12,
-                                dateformat: "dd.mm.yyyy".toUpperCase()
-                            },
-                            autofill: {
-                                type: "select",
-                                allowCustomText: true
-                            },
-                            selectPicker: {
-                                datasource: [],
-                                displayField: "make_display",
-                                valueField: "make_id",
-                                selection: "multiple"
-                            },
-                            upload: {
-                                fileExtension: ['doc', 'docx', 'txt'],
-                                showPreview: true,
-                                url: "/Security/Upload",
-                                selection: 'multiple'
-                            }
-                        }
-                        ,
-                        id: 'fg2'
-                        },
-                        {
-                        label: "Password",
-                        field:
-                        {
-                            id: "Passwordctr", 'note': "",
-                            limit: true, maxlength: 15, inputType:1, textType:2, timeformat: 12, 'regexp': "", "text": "",
-                            format: "hex", range: true,
-                            date: {
-                                datepickerType: 1,
-                                timeformat: 12,
-                                dateformat: "dd.mm.yyyy".toUpperCase()
-                            },
-                            autofill: {
-                                type: "select",
-                                allowCustomText: true
-                            },
-                            selectPicker: {
-                                datasource: [],
-                                displayField: "make_display",
-                                valueField: "make_id",
-                                selection: "multiple"
-                            },
-                            upload: {
-                                fileExtension: ['doc', 'docx', 'txt'],
-                                showPreview: true,
-                                url: "/Security/Upload",
-                                selection: 'multiple'
-                            }
-                        },
-                        id: 'fg4'
-                        },
-                        {
-                            label: "Confirm Password",
-                            field:
-                            {
-                                id: "cPasswordctr", 'note': "",
-                                limit: true, maxlength: 15, inputType: 1, textType: 2, timeformat: 12, 'regexp': "", "text": "",
-                                format: "hex", range: true,
-                                date: {
-                                    datepickerType: 1,
-                                    timeformat: 12,
-                                    dateformat: "dd.mm.yyyy".toUpperCase()
-                                },
-                                autofill: {
-                                    type: "select",
-                                    allowCustomText: true
-                                },
-                                selectPicker: {
-                                    datasource: [],
-                                    displayField: "make_display",
-                                    valueField: "make_id",
-                                    selection: "multiple"
-                                },
-                                upload: {
-                                    fileExtension: ['doc', 'docx', 'txt'],
-                                    showPreview: true,
-                                    url: "/Security/Upload",
-                                    selection: 'multiple'
-                                }
-                            },
-                            id: 'fg5'
-                        },
-                        {
-                            label: "User Type",
-                            field:
-                            {
-                                id: "usertype", 'note': "",
-                                limit: true, maxlength: 15, inputType: 19, textType: 1, timeformat: 12, 'regexp': "", "text": "",
-                                format: "hex", range: true,
-                                date: {
-                                    datepickerType: 1,
-                                    timeformat: 12,
-                                    dateformat: "dd.mm.yyyy".toUpperCase()
-                                },
-                                autofill: {
-                                    type: "select",
-                                    allowCustomText: true
-                                },
-                                selectPicker: {
-                                    datasource: utype,
-                                    displayField: "value",
-                                    valueField: "key",
-                                    selection: "single"
-                                },
-                                upload: {
-                                    fileExtension: ['doc', 'docx', 'txt'],
-                                    showPreview: true,
-                                    url: "/Security/Upload",
-                                    selection: 'multiple'
-                                }
-                            },
-                            id: 'fg3'
-                        }]
-                })
-            }
-
-            $.Include({ plc: "onRegistraction" })
-
-        })($)
-
-
-    })
-
-</script>
