@@ -52,6 +52,21 @@ namespace Tz.Data
         /// </summary>
         /// <param name="UserName"></param>
         /// <param name="Password"></param>
+        /// <returns></returns>
+        public DataTable GetUserByEmail(string UserName)
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+            select = DBQuery.SelectAll(TzAccount.User.Table).From(TzAccount.User.Table)
+                .WhereField(TzAccount.User.Table, TzAccount.User.UserName.Name, Compare.Equals, DBConst.String(UserName));
+            return db.GetDatatable(select);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="UserName"></param>
+        /// <param name="Password"></param>
         /// <param name="UserType"></param>
         /// <param name="Status"></param>
         /// <returns></returns>

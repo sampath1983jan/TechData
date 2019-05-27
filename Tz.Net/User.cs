@@ -13,18 +13,26 @@ namespace Tz.Net
         Admin,
         SuperAdmin,
     }
-  public  class User:INetImplimentor
-    {
-       private string _userid;
-       private bool _isauth;
-        public string UserID { get { return _userid; } }
+
+    public abstract class IUser {     
+        public abstract string UserID { get; }
         public string UserName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
         public string Password { get; set; }
         public UserType UserType { get; set; }
-        public bool Status { get; set; }
-        public bool isAuthenticateUser { get { return _isauth; } }
+        public bool IsActive { get; set; }
+        public Guid ActivationCode { get; set; }
+        public abstract bool isAuthenticateUser { get; }
+    }
+    public class User : IUser, INetImplimentor
+    {
+        private string _userid;
+        private bool _isauth;
         private Data.User dUser;
-
+        public override string UserID => _userid;
+        public override bool isAuthenticateUser => _isauth;
         public User() {
             _userid = "";
         }
@@ -47,8 +55,7 @@ namespace Tz.Net
             this.Password = password;
             _userid = "";
             dUser = new Data.User();
-            Authenticate();
-           
+            Authenticate();           
         }
         /// <summary>
         /// /
@@ -67,9 +74,10 @@ namespace Tz.Net
             this.UserName = userName;
             this.Password = password;
             this.UserType = usertype;
-            this.Status = status;
+            this.IsActive = status;
             _isauth = true;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -80,16 +88,44 @@ namespace Tz.Net
             {
                 User c = dt.toList<User>(new DataFieldMappings()
                    .Add(Tz.Data.TzAccount.User.UserName.Name, "UserName")
-                   .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
+                   //.Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
                    , null, null).FirstOrDefault();
                 this.Merge<User>(c);
+                if (dt.Rows[0]["UserType"] == null) {
+                    this.UserType = (UserType)dt.Rows[0]["UserType"];
+                }
                 _isauth = true;
             }
             else {
                 _isauth = false;
             }
+        }
+        public User GetUserDetailByEmail() {
+            DataTable dt = new DataTable();
+            User c = null;
+            dt = dUser.GetUserByEmail(this.UserName);
+            if (dt.Rows.Count > 0)
+            {
+                  c = dt.toList<User>(new DataFieldMappings()
+                   .Add(Tz.Data.TzAccount.User.UserName.Name, "UserName")
+                   // .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
+                   .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
+                   .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
+                   , null, null).FirstOrDefault();
+              //  this.Merge<User>(c);
+                if (dt.Rows[0]["UserType"] == null)
+                {
+                    c.UserType = (UserType)dt.Rows[0]["UserType"];
+                }
+                _isauth = true;
+            }
+            else
+            {
+                _isauth = false;
+            }
+            return c;
         }
         /// <summary>
         /// 
@@ -102,11 +138,15 @@ namespace Tz.Net
             {
                 User c = dt.toList<User>(new DataFieldMappings()
                    .Add(Tz.Data.TzAccount.User.UserName.Name, "UserName")
-                   .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
+                  // .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
                    , null, null).FirstOrDefault();
                 this.Merge<User>(c);
+                if (dt.Rows[0]["UserType"] == null)
+                {
+                    this.UserType = (UserType)dt.Rows[0]["UserType"];
+                }
                 _isauth = true;
             }
             else
@@ -161,7 +201,7 @@ namespace Tz.Net
                 _userid = dUser.Save(this.UserName,
                 this.Password,
                 (int)this.UserType,
-                this.Status);
+                this.IsActive);
                 if (_userid == "")
                 {
                     return false;

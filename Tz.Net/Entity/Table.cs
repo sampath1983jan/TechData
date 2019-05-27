@@ -130,7 +130,7 @@ namespace Tz.Net.Entity
                 {
                     dr = dt.NewRow();
                     dr[0] = this.TableID;
-                    dr[1] = field.FieldName;
+                    dr[1] = field.NewFieldName ==""? field.FieldName : field.NewFieldName;
                     dr[2] = field.FieldType;
                     dr[3] = field.IsNullable;
                     dr[4] = field.IsPrimaryKey;

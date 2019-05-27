@@ -1,31 +1,28 @@
-﻿<!DOCTYPE html>
+﻿@using CustomAuthentication
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/appstyle")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
+    <div class="navbar navbar-inverse navbar-fixed-top"></div>
+
+    <div id="header_container">
+        <div id="header">
+            @*<i>=(^.^)= @ViewBag.Title</i>*@
+            <span style="float:right; font-size:small">
+                @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    var identity = ((CustomPrincipal)HttpContext.Current.User);
+                    @Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
+                    @Html.ActionLink("Log out", "LogOut", "Authentication")
+                }
+            </span>
         </div>
     </div>
     <div class="container body-content">
@@ -103,9 +100,9 @@
                             }
                         }
                         $("#datalist").html("");
-                         
+
                         //datalist
-                    
+
 
                         str = "<table style='width:100%'>"
                         str = str + "<tr>";
@@ -122,10 +119,10 @@
                             })
                             str = str + "</tr>";
                         });
-                    str = str + "</table>";
-                    $("#datalist").append(str);
-                    $("#ttrc").html("<h3> Total Record in this table:" + Page.TotalRecord + "</h3>");
-                        
+                        str = str + "</table>";
+                        $("#datalist").append(str);
+                        $("#ttrc").html("<h3> Total Record in this table:" + Page.TotalRecord + "</h3>");
+
                         //data = data.Columns;
                         //$.each(data, function (i, d) {
                         //    $("#fields").append("<div class='row mar'><div class='col-md-6'>" + d.Name + "</div><div class='col-md-2'>" + d.NativeType + "</div><div class='col-md-2'>" + d.Size + "</div><div class='col-md-2'>" + d.PrimaryKey + "</div></div>");
@@ -184,8 +181,8 @@
             //    align: 'left'
             //})
 
-   
-          
+
+
         });
 
     </script>

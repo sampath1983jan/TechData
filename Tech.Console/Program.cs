@@ -23,7 +23,6 @@ namespace Tech.Console
                      .SelectMany(element => element).ToList();
 
         }
-
         public static string generateID()
         {
             long i = 1;
@@ -180,6 +179,22 @@ namespace Tech.Console
             System.Console.ReadLine();
         }
 
+        private static void AlterColumn(string tbid, string serverid) {
+            Tz.Net.DataManager dm = new Tz.Net.DataManager(tbid, serverid);
+            string fields;
+            fields = System.Console.ReadLine();
+            fields = "83eabe2691bc40dfb426c9ee741c65f9755807932,changepass,Password";
+            var fs = fields.Split(',');
+            //foreach (string s in fs)
+            //{             
+                    dm.ChangeField(fs[0], fs[1], System.Data.DbType.Int32 , 100, true, fs[2]);
+                
+            //}
+            dm.AcceptChanges();
+            System.Console.WriteLine("fields added");
+            System.Console.ReadLine();
+        }
+
         private static void DropTable(string tableid,   string serverid) {
           //  string serverid = CreateServer();
             Tz.Net.DataManager dm = new Tz.Net.DataManager(tableid, serverid);          
@@ -196,9 +211,10 @@ namespace Tech.Console
 
         static void Main(string[] args) {
             string tabid, serverid;
-                CreateTable(out tabid, out serverid);
-            addColumn(tabid, serverid);
-            DropTable(tabid,serverid);
+          //      CreateTable(out tabid, out serverid);
+        //    addColumn(tabid, serverid);
+            AlterColumn("60c1e054e52e4cf5917a9a235d615f86755744925", "5a0601c9263240a98b16e4d68ec7bd3c986933058");
+           // DropTable(tabid,serverid);
            //  Setup();
            //CreateClient();
            //RemoveClient();

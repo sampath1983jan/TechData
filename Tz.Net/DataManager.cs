@@ -172,7 +172,7 @@ namespace Tz.Net
                             if (f.FieldID == "")
                                 tb.AddField(c);
                             else
-                                tb.AlterField(c);
+                                tb.AlterField(c,f.NewFieldName);
 
                             tb.AddPrimaryKeyField(c);
                         }
@@ -185,7 +185,7 @@ namespace Tz.Net
                             if (f.FieldID == "")
                                 tb.AddField(c);
                             else
-                                tb.AlterField(c);
+                                tb.AlterField(c,f.NewFieldName);
                         }
                         else
                         {
@@ -195,7 +195,7 @@ namespace Tz.Net
                             if (f.FieldID == "")
                                 tb.AddField(c);
                             else
-                                tb.AlterField(c);
+                                tb.AlterField(c,f.NewFieldName);
                         }
                     }                  
                 }

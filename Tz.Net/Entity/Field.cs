@@ -74,7 +74,8 @@ namespace Tz.Net.Entity
 
         public bool Update() {
             Data.Field dField = new Data.Field();
-            return dField.Update(FieldName, (int)FieldType, Length, IsNullable, IsPrimaryKey,this.TableID, _fieldid);
+            var fname = NewFieldName == "" ? FieldName : NewFieldName;
+            return dField.Update(fname, (int)FieldType, Length, IsNullable, IsPrimaryKey,this.TableID, _fieldid);
         }
         internal bool Remove() {
             Data.Field dField = new Data.Field();

@@ -314,9 +314,18 @@ namespace Tz.Data
                         flag = " NOT NULL ";
                     }
                     //ALTER TABLE `talentozdev`.`cf_fields` CHANGE COLUMN `Length` `Lengths` VARCHAR(255) NULL DEFAULT NULL;
-                    string temp = " ALTER TABLE {0} MODIFY  {1} {2} {3}";
-                    //temp = string.Format(temp, Table, dc.Name, NewColumns[index], val, flag);
-                    temp = string.Format(temp, Table, dc.Name, val, flag); // change null,size
+                    //ALTER TABLE `talentozdev`.`articles` CHANGE COLUMN `title` `title2` VARCHAR(200) CHARACTER SET 'latin1' NULL DEFAULT NULL;
+                    string temp = "";
+                    if (NewColumns[index] != "")
+                    {
+                        temp = " ALTER TABLE {0} CHANGE COLUMN  {1} {2} {3} {4}";
+                        temp = string.Format(temp, Table, dc.Name, NewColumns[index], val, flag);
+                    }
+                    else {
+                        temp = " ALTER TABLE {0} CHANGE COLUMN  {1} {2} {3} {4}";
+                        temp = string.Format(temp, Table, dc.Name, dc.Name, val, flag);
+                    }                   
+                   //  temp = string.Format(temp, Table, dc.Name, val, flag); // change null,size
                     try
                     {
                         r = db.ExecuteNonQuery(temp);
