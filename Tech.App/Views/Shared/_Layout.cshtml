@@ -8,6 +8,11 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/appstyle")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/controljs")
+    @RenderSection("scripts", required: false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top"></div>
@@ -33,11 +38,7 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryui")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/controljs")
-    @RenderSection("scripts", required: false)
+ 
     <script type="text/javascript">
         var table = "";
         var currentPage = 0;

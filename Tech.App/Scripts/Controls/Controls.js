@@ -427,14 +427,14 @@
         _getTemplate:function (prt) {
             var tmp = "";
             var txt = "text";
-            if (prt.textType == 1) {
+            if (prt.textType === 1) { //textbox
                 txt = "text";
-            } else if(prt.textType ===2){
+            } else if(prt.textType ===2){ //password
                 txt = "password";
             }
-            if (prt.inputType == 10) {
+            if (prt.inputType === 10) { // checkbox
                 txt = "checkbox";
-            } else if (prt.inputType === 11) {
+            } else if (prt.inputType === 11) { // radio
                 txt = "radio";
             }
             var hlp = "";
@@ -449,7 +449,7 @@
                 }
                 tmp = tmp + "<input  " + db + " type='" + txt + "' id='"+ prt.id +"' class='form-control' placeholder=''/>";
                 
-                if (prt.note != "") {
+                if (prt.note !== "") {
                     hlp = prt.note;                    
                 }
                 if (prt.limit === true) {
@@ -460,7 +460,7 @@
                     tmp = tmp + "</div>";
                 }
                 
-            } else if (prt.inputType === 7 || prt.inputType === 9) {
+            } else if (prt.inputType === 7 || prt.inputType === 9) { // datepicker,datetimepicker
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
@@ -585,7 +585,7 @@
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
-            } else if (prt.inputType === 17) {
+            } else if (prt.inputType === 17) {//selection
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
