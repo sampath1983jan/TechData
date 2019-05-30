@@ -10,6 +10,7 @@ namespace Tz.Net
     public class Server:INetImplimentor
     {
         private string _serverID;
+        public string ServerName { get; set; }
         public string Host { get; set; }
         public string DBName { get; set; }
         public string UserName { get; set; }
@@ -20,7 +21,12 @@ namespace Tz.Net
         private Data.Server dServer;
 
         public Server() {
-
+            ServerName = "";
+            Host = "";
+            _serverID = "";
+            Port = 0;   
+            Password = "";
+            UserName = "";
         }
         public string Connection() {
             return "Server="+ this.Host +";Initial Catalog="+ this.DBName +";Uid="+ this.UserName +";Pwd="+ this.Password +"";
@@ -45,7 +51,8 @@ namespace Tz.Net
             string dbName,
             string userName,
             string password,
-            int port)
+            int port,
+            string serverName)
         {
             _serverID = "";
             this.Host = host;
@@ -53,6 +60,7 @@ namespace Tz.Net
             this.UserName = userName;
             this.Password = password;
             this.Port = port;
+            this.ServerName = serverName;
         }
         /// <summary>
         /// 
@@ -62,7 +70,9 @@ namespace Tz.Net
             DataTable dt = new DataTable();
             dServer = new Data.Server();
             dt = dServer.GetServer(this.ServerID);
-            Server c = dt.toList<Server>(new DataFieldMappings()                  
+            Server c = dt.toList<Server>(new DataFieldMappings()
+                .Add(Tz.Data.TzAccount.Server.ServerID.Name, "ServerID",true)
+                .Add(Tz.Data.TzAccount.Server.ServerName.Name, "ServerName")
                      .Add(Tz.Data.TzAccount.Server.Host.Name, "Host")
                      .Add(Tz.Data.TzAccount.Server.UserID.Name, "UserName")
                      .Add(Tz.Data.TzAccount.Server.Password.Name, "Password")
@@ -70,6 +80,27 @@ namespace Tz.Net
                       .Add(Tz.Data.TzAccount.Server.DB.Name, "DBName")                    
                      , null, null).FirstOrDefault();
             this.Merge<Server>(c);
+        }
+
+        public static List<Server> GetServer() {
+            DataTable dt = new DataTable();
+            Data.Server   dServer = new Data.Server();
+            dt = dServer.GetServer();
+            if (dt.Rows.Count > 0)
+            {
+                return dt.toList<Server>(new DataFieldMappings()
+                      .Add(Tz.Data.TzAccount.Server.ServerID.Name, "ServerID", true)
+                             .Add(Tz.Data.TzAccount.Server.ServerName.Name, "ServerName")
+                     .Add(Tz.Data.TzAccount.Server.Host.Name, "Host")
+                     .Add(Tz.Data.TzAccount.Server.UserID.Name, "UserName")
+                     .Add(Tz.Data.TzAccount.Server.Password.Name, "Password")
+                     .Add(Tz.Data.TzAccount.Server.Port.Name, "Port")
+                      .Add(Tz.Data.TzAccount.Server.DB.Name, "DBName")
+                     , null, null).ToList();
+            }
+            else {
+                return new List<Server>();
+            }           
         }
 
         public bool Remove()
@@ -87,7 +118,7 @@ namespace Tz.Net
                     DBName,
                     UserName,
                     Password,
-                    Port);
+                    Port,ServerName);
                 if (_serverID != "")
                 {
                     return true;
@@ -104,7 +135,7 @@ namespace Tz.Net
                     DBName,
                     UserName,
                     Password,
-                    Port))
+                    Port, ServerName))
                 {
                     return true;
                 }

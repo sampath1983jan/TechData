@@ -38,7 +38,7 @@ namespace Tech.Console
         }
         private static string CreateUser() {
             Tz.Net.User u = new Tz.Net.User("sampath",
-                "312", Tz.Net.UserType.Admin, true);
+                "312", Tz.Net.UserType.Admin, true,"sampath","kumar","sampath1983jan@gmail.com");
             u.Save();
             return u.UserID;
         }
@@ -52,7 +52,7 @@ namespace Tech.Console
             System.Console.ReadKey();
         }
         private static string CreateServer() {
-            Tz.Net.Server s = new Tz.Net.Server("dell6", "talentozdev", "root", "admin312", 3006);
+            Tz.Net.Server s = new Tz.Net.Server("dell6", "talentozdev", "root", "admin312", 3006,"testing");
             s.Save();
             return s.ServerID;
         }
@@ -210,12 +210,12 @@ namespace Tech.Console
         }
 
         static void Main(string[] args) {
-            string tabid, serverid;
+         //   string tabid, serverid;
           //      CreateTable(out tabid, out serverid);
         //    addColumn(tabid, serverid);
-            AlterColumn("60c1e054e52e4cf5917a9a235d615f86755744925", "5a0601c9263240a98b16e4d68ec7bd3c986933058");
+         //   AlterColumn("60c1e054e52e4cf5917a9a235d615f86755744925", "5a0601c9263240a98b16e4d68ec7bd3c986933058");
            // DropTable(tabid,serverid);
-           //  Setup();
+              Setup();
            //CreateClient();
            //RemoveClient();
            // UpdateClient();

@@ -31,17 +31,31 @@ namespace Tech.App.Controllers
             return View();
         }
 
-
-        public JsonResult GetData(string tb,int currentPage,int PageSize)
+        public ActionResult Client()
         {
+            ViewBag.Message = "Your Client page.";
+            return View();
+        }        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tb"></param>
+        /// <param name="currentPage"></param>
+        /// <param name="PageSize"></param>
+        /// <returns></returns>
+        public JsonResult GetData(string clientid,string tb,int currentPage,int PageSize)
+        {
+            Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+
             System.Data.DataTable dt = new DataTable();
-            Data.DBDatabase db = Data.DBDatabase.Create("Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312", "MySql.Data.MySqlClient");
+            Data.DBDatabase db = Data.DBDatabase.Create(c.GetServer().Connection(), "MySql.Data.MySqlClient");
             // Data.DBDatabase db = Data.DBDatabase.Create("Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; ", "MySql.Data.MySqlClient");
             //Data.Schema.DBSchemaProvider provider = db.GetSchemaProvider();
             //DBSchemaTable tables = provider.GetTable(tb);
-            DBQuery totalRecord = DBQuery.SelectCount().From("talentozdev",tb);
+            string dbname = c.GetServer().DBName;
+            DBQuery totalRecord = DBQuery.SelectCount().From(dbname, tb);
             int trecord = Convert.ToInt32(db.ExecuteScalar(totalRecord));
-            DBQuery record = DBQuery.SelectAll().From("talentozdev", tb).TopRange(currentPage* PageSize, PageSize);
+            DBQuery record = DBQuery.SelectAll().From(dbname, tb).TopRange(currentPage* PageSize, PageSize);
             var dtRecord= db.GetDatatable(record);
             string dtr =   DataResult.Create(dtRecord, PageSize, currentPage, trecord);
 
@@ -49,9 +63,14 @@ namespace Tech.App.Controllers
 
            return Json(dtr, JsonRequestBehavior.AllowGet);
         }
-            public JsonResult GetEntity() {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult GetEntity(string clientid) {
             System.Data.DataTable dt = new DataTable();
-            Data.DBDatabase db = Data.DBDatabase.Create("Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312", "MySql.Data.MySqlClient");
+            Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+            Data.DBDatabase db = Data.DBDatabase.Create(c.GetServer().Connection(), "MySql.Data.MySqlClient");
           // Data.DBDatabase db = Data.DBDatabase.Create("Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; ", "MySql.Data.MySqlClient");
             //Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; 
             Data.Schema.DBSchemaProvider provider = db.GetSchemaProvider();
@@ -61,10 +80,15 @@ namespace Tech.App.Controllers
             tables= tables.Concat(tables1);
             return Json(Newtonsoft.Json.JsonConvert.SerializeObject(tables), JsonRequestBehavior.AllowGet);
         }
-
-        public JsonResult GetFields(string tb) {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tb"></param>
+        /// <returns></returns>
+        public JsonResult GetFields(string clientid, string tb) {
             System.Data.DataTable dt = new DataTable();
-            Data.DBDatabase db = Data.DBDatabase.Create("Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312", "MySql.Data.MySqlClient");
+            Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+            Data.DBDatabase db = Data.DBDatabase.Create(c.GetServer().Connection(), "MySql.Data.MySqlClient");
           // Data.DBDatabase db = Data.DBDatabase.Create("Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; ", "MySql.Data.MySqlClient");
             Data.Schema.DBSchemaProvider provider = db.GetSchemaProvider();
             DBSchemaTable tables = provider.GetTable(tb);

@@ -24,6 +24,9 @@
                 @if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
                     var identity = ((CustomPrincipal)HttpContext.Current.User);
+                    @Html.ActionLink("Home", "Index", "Home");
+                    @Html.ActionLink("Server", "Server", "Server");
+                    @Html.ActionLink("Clients", "Client", "Client");
                     @Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
                     @Html.ActionLink("Log out", "LogOut", "Authentication")
                 }
@@ -34,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year</p>
         </footer>
     </div>
 
@@ -43,6 +46,7 @@
         var table = "";
         var currentPage = 0;
         var tbList = [];
+        var clientid = "";
         $(document).ready(function () {
             function bindTables(data) {
                 $("#tblist").html("");
@@ -55,21 +59,53 @@
                     getField(name);
                 })
             }
-            $.ajax({
-                type: "POST",
-                url: "/Home/GetEntity",
-                data: "",
-                dataType: "json",
-                contentType: 'application/json; charset=utf-8',
-                success: function (data) {
-                    data = JSON.parse(data);
-                    tbList = data;
-                    bindTables(data);
-                },
-                error: function () {
-                    alert("Error occured!!")
-                }
-            });
+            renderClients = function () {
+            //    function loadClients() {
+                    $.ajax('/Client/Gets',
+                        {
+                            type: "GET",
+                            dataType: 'jsonp', // type of response data
+                            data: "",
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function                        
+                                $("#clist").html("");
+                                var dv = "<div class='row'>"
+                                $.each(data, function (i, d) {
+                                    dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";
+                                })
+                                dv = dv + "</div>"
+                                $("#clist").append(dv);
+                                $("#clist").find("a").click(function () {
+                                    clientid = $(this).attr("name");
+                                    renderTables();
+                                })
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback 
+                                alert(errorMessage);
+                                //$('p').append('Error: ' + errorMessage);
+                            }
+                        });
+               // }        
+            }
+            renderTables = function () {
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/GetEntity",
+                    data: JSON.stringify({ clientid: clientid }),
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        data = JSON.parse(data);
+                        tbList = data;
+                        bindTables(data);
+                    },
+                    error: function () {
+                        alert("Error occured!!")
+                    }
+                });
+            }
+            
             $("#txtSearch").keyup(function () {
                 var val = $(this).val();
                 if (val == "") {
@@ -86,7 +122,7 @@
                 $.ajax({
                     type: "POST",
                     url: "/Home/GetData",
-                    data: JSON.stringify({ tb: tbName, currentPage: currentPage, PageSize: 10 }),
+                    data: JSON.stringify({ tb: tbName, currentPage: currentPage, PageSize: 10, clientid: clientid }),
                     dataType: "json",
                     contentType: 'application/json; charset=utf-8',
                     success: function (data) {
@@ -152,7 +188,7 @@
                 $.ajax({
                     type: "POST",
                     url: "/Home/GetFields",
-                    data: JSON.stringify({ tb: tbName }),
+                    data: JSON.stringify({ tb: tbName, clientid: clientid }),
                     dataType: "json",
                     contentType: 'application/json; charset=utf-8',
                     success: function (data) {
@@ -170,6 +206,7 @@
                     }
                 });
             }
+            renderClients();
 
             //$("#nCard").namecard({
             //    title: "personal information",

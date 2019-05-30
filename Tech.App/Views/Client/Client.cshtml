@@ -1,0 +1,551 @@
+﻿
+@{
+    ViewBag.Title = "Client";
+}
+
+<div id="container">
+
+    
+
+
+    
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {        
+        function getClient(clientID) {
+            $.ajax('/Client/Get',
+                {
+                    type: "GET",
+                    dataType: 'jsonp', // type of response data
+                    data: ({ clientid: clientID }),
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function                        
+
+                     var c =new  $.Client({
+                            plc: "onClient",
+                            ClientID: data.ClientID,
+                            ClientName: data.ClientName,
+                            ClientNo: data.ClientNo,
+                            Address: data.Address,
+                            State: data.State,
+                            Country: data.Country,
+                            Email: data.Email,
+                            OrgName: data.OrganizationName,
+                         HostName: data.ClientHost,
+                       //  View: $.ServerView(),
+                        });
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert(errorMessage);
+                        //$('p').append('Error: ' + errorMessage);
+                    }
+                });
+        }
+        function getServer(clientID,onComplete) {
+            $.ajax('/Client/GetServer',
+                {
+                    type: "GET",
+                    dataType: 'jsonp', // type of response data
+                    data: ({ clientid: clientID }),
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function                        
+                        onComplete(data.ServerID);
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert(errorMessage);
+                        //$('p').append('Error: ' + errorMessage);
+                    }
+                });
+        }
+        function loadClients() {
+            $.ajax('/Client/Gets',
+                {
+                    type:"GET",
+                    dataType: 'jsonp', // type of response data
+                    data: "",
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function                        
+                        $("#clist").html("");
+                        var dv="<div class='row'>"
+                        $.each(data, function (i, d) {                            
+                            dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";                            
+                        })
+                        dv = dv + "</div>"
+                        $("#clist").append(dv);
+                        $("#clist").find("a").click(function () {
+                            var cid = $(this).attr("name");
+                            getClient(cid);
+                        })
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback 
+                        alert(errorMessage);
+                        //$('p').append('Error: ' + errorMessage);
+                    }
+                });
+        }        
+        (function ($Client) {
+            $Client.Client = function (options) {
+                var defaults = {
+                    plc: "",
+                    ClientID: "",
+                    OrgName: "",
+                    ClientName: "",
+                    ClientNo: "",
+                    Address: "",
+                    State: "",
+                    Country: "",
+                    Email: "",
+                    HostName: "",
+                    onSave: function () {
+
+                    },
+                    onCancel: function () {
+                    }
+                };
+                var cthis = this;
+                var serverID = "";                
+                $.extend(this, defaults, options);
+                $("#server").hide();
+                $("#btnRemovesever").hide();
+                var render = function (cthis) {
+                    $("#cOrgName").html("");
+                    $("#cClientName").html("");
+                    $("#cNo").html("");
+                    $("#cAddress").html("");
+                    $("#cState").html("");
+                    $("#cCountry").html("");
+                    $("#cEmail").html("");
+                    $("#cHostName").html("");
+                    $("#" + cthis.plc).labelfields({
+                        items: [{
+                            label: "Organization",
+                            field: {
+                                id: "fdoname", 'note': "Enter Organization Name",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": cthis.OrgName,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'cOrgName'
+                        }, {
+                            label: "Client No",
+                            field: {
+                                id: "fdcno", 'note': "Clientn No",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": cthis.ClientNo,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'cNo'
+                        }, {
+                            label: "Client Name",
+                            field:
+                            {
+                                id: "fdname", 'note': "Contact person name",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": cthis.ClientName,
+                                format: "hex", range: true, isRequired: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: [],
+                                    displayField: "make_display",
+                                    valueField: "make_id",
+                                    selection: "multiple"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            }
+                            ,
+                            id: 'cClientName'
+                        },
+                        {
+                            label: "Address",
+                            field:
+                            {
+                                id: "faddress", 'note': "Full address",
+                                limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": cthis.Address,
+                                format: "hex", range: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: [],
+                                    displayField: "make_display",
+                                    valueField: "make_id",
+                                    selection: "multiple"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            }
+                            ,
+                            id: 'cAddress'
+                        }, {
+                            label: "State",
+                            field:
+                            {
+                                id: "fdstate", 'note': "Enter Name of the state",
+                                limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": cthis.State,
+                                format: "hex", range: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: [],
+                                    displayField: "make_display",
+                                    valueField: "make_id",
+                                    selection: "multiple"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            }
+                            ,
+                            id: 'cState'
+                        },
+                        {
+                            label: "Country",
+                            field:
+                            {
+                                id: "fdcountry", 'note': "",
+                                limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": cthis.Country,
+                                format: "hex", range: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: [],
+                                    displayField: "make_display",
+                                    valueField: "make_id",
+                                    selection: "multiple"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            },
+                            id: 'cCountry'
+                        },
+                        {
+                            label: "Email",
+                            field:
+                            {
+                                id: "fdemail", 'note': "demo@email.com",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": cthis.Email,
+                                format: "hex", range: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: [],
+                                    displayField: "make_display",
+                                    valueField: "make_id",
+                                    selection: "multiple"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            },
+                            id: 'cEmail'
+                        },
+                        {
+                            label: "HostName",
+                            field:
+                            {
+                                id: "fdhost", 'note': "Host name ex:demo.talentoz.com",
+                                limit: true, maxlength: 150, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": cthis.HostName,
+                                format: "hex", range: true, isRequired: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: [],
+                                    displayField: "value",
+                                    valueField: "key",
+                                    selection: "single"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            },
+                            id: 'cHostName'
+                        }]
+                    })
+                    if (cthis.ClientID != "") {
+                        setServer(cthis);
+                        $("#server").show();
+                    }
+                    $("#btnSave").unbind();
+                    $("#btnSave").click(function () {
+                        var u = {};
+                        u.orgName = $("#cOrgName").Input("text");
+                        u.clientName = $("#cClientName").Input("text");
+                        u.clientNo = $("#cNo").Input("text");
+                        u.address = $("#cAddress").Input("text");
+                        u.country = $("#cCountry").Input("text");
+                        u.state = $("#cState").Input("text");
+                        u.email = $("#cEmail").Input("text");
+                        u.hostName = $("#cHostName").Input("text");
+                        //u.userType = 1;
+                        var action = "";
+                        if (cthis.ClientID == "") {
+                            action = "Save";
+                        } else {
+                            u.ClientID = cthis.ClientID;
+                            action = "Update";
+                        }
+                        $.ajax('/Client/' + action,
+                            {
+                                dataType: 'jsonp', // type of response data
+                                data: (u),
+                                // timeout milliseconds
+                                success: function (data, status, xhr) {   // success callback function
+                                    //$('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
+                                    loadClients();
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback 
+                                    alert(errorMessage);
+                                    //$('p').append('Error: ' + errorMessage);
+                                }
+                            });
+                    });
+                }
+                var setServer = function (cthis) {
+                    var getServerlist = function (onComplete) {
+                        $.ajax('/Server/Gets',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: "",
+                                success: function (data, status, xhr) {   // success callback function
+                                    if (onComplete != undefined) {
+                                        onComplete(data);
+                                    }
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                }
+                            });
+                    }
+                    $("#btnAssignServer").unbind();
+                    $("#btnRemovesever").unbind();
+                    $("#btnAssignServer").click(function () {
+                        var sid = $("#sServer").Input("text");
+                       
+
+                        $.ajax('/Client/Assign',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: { clientid: cthis.ClientID, serverid: sid},
+                                success: function (data, status, xhr) {   // success callback function
+                                    if (onComplete != undefined) {
+                                       // onComplete(data);
+                                    }
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                }
+                            });
+                    });
+                    $("#btnRemovesever").click(function () {                                             
+                        $.ajax('/Client/RemoveServer',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: { clientid: cthis.ClientID, serverid: serverID },
+                                success: function (data, status, xhr) {   // success callback function
+                                    //if (onComplete != undefined) {
+                                    //    // onComplete(data);
+                                    //}
+                                    getServer(cthis.ClientID, function (serverid) {
+                                        serverID = serverid;
+                                        render(cthis);
+                                    })
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                }
+                            });
+                    });
+                    getServerlist(function (data) {
+                        renderServerList(cthis, data);
+                    });
+                }
+                var renderServerList = function (cthis, data) {
+                    $("#sServer").html("");
+                    if (serverID !="") {
+                        $("#btnRemovesever").show();
+                    }
+                    $("#server").labelfields({
+                        items: [{
+                            label: "Server",
+                            field:
+                            {
+                                id: "fdserver", 'note': "",
+                                limit: true, maxlength: 15, inputType: 19, textType: 1, timeformat: 12, 'regexp': "", "text": serverID,
+                                format: "hex", range: true,
+                                date: {
+                                    datepickerType: 1,
+                                    timeformat: 12,
+                                    dateformat: "dd.mm.yyyy".toUpperCase()
+                                },
+                                autofill: {
+                                    type: "select",
+                                    allowCustomText: true
+                                },
+                                selectPicker: {
+                                    datasource: data,
+                                    displayField: "ServerName",
+                                    valueField: "ServerID",
+                                    selection: "single"
+                                },
+                                upload: {
+                                    fileExtension: ['doc', 'docx', 'txt'],
+                                    showPreview: true,
+                                    url: "/Security/Upload",
+                                    selection: 'multiple'
+                                }
+                            },
+                            id: 'sServer'
+                        }]
+                    })
+                }
+                if (this.ClientID != "") {
+                    getServer(this.ClientID, function (serverid) {
+                        serverID = serverid;
+                        render(cthis);
+                    })
+                } else {
+                    render(this);
+                }               
+                
+            }
+        })($);       
+        $("#container").append($.ServerView());
+         $("#btnCancel").click(function () {
+            window.location = "@Url.Action("login", "Authentication")"; 
+        })
+        var client = new $.Client({ plc: "onClient"});
+        loadClients();
+        
+    });
+    //onclick='"window.location = "@Url.Action("login", "Authentication")"; "'
+    (function ($Server) {
+        $.ServerView = function () {
+            var viewUI= '<table style="width:100%" >';
+            viewUI = viewUI + '   <tr>';
+            viewUI = viewUI + '   <td>';
+            viewUI = viewUI + '   <div class="container">';
+            viewUI = viewUI + '   <div id="clist"> </div>';
+            viewUI = viewUI + '   </div>';
+            viewUI = viewUI + '   </td>';
+            viewUI = viewUI + '   <td width="80%">';
+            viewUI = viewUI + '       <div id="onClient" class="float-label container">';
+            viewUI = viewUI + '   <div class="row">';
+            viewUI = viewUI + '   <div id="" class="col-md-12"><h3>Client information</h3></div>';
+            viewUI = viewUI + '           </div>';
+            viewUI = viewUI + '           <div class="row">';
+            viewUI = viewUI + '               <div id="cOrgName" class="control col-md-5"></div>';
+            viewUI = viewUI + '               <div id="cClientName" class="control col-md-4"></div>';
+            viewUI = viewUI + '               <div id="cNo" class="control col-md-3"></div>';
+            viewUI = viewUI + '           </div>';
+            viewUI = viewUI + '           <div class="row">';
+            viewUI = viewUI + '               <div id="cAddress" class="control col-md-5"></div>';
+            viewUI = viewUI + '               <div id="cState" class="control col-md-4"></div>';
+            viewUI = viewUI + '               <div id="cCountry" class="control col-md-3"></div>';                        
+            viewUI = viewUI + '           </div>';
+            viewUI = viewUI + '   <div class="row">';
+            viewUI = viewUI + '               <div id="cEmail" class="control col-md-6"></div>';
+            viewUI = viewUI + '               <div id="cHostName" class="control col-md-6"></div>';            
+            viewUI = viewUI + '           </div>';
+            viewUI = viewUI + '           <div class="row">';
+            viewUI = viewUI + '               <div class="col-md-6"></div>';
+            viewUI = viewUI + '   <div class="col-md-6">';
+            viewUI = viewUI + '   <div class="container">';
+            viewUI = viewUI + '   <input type="button" id="btnSave" value="Save" class="btn  btn-primary" style="float:left; width:45%" />';
+            viewUI = viewUI + '                       <input type="button" id="btnCancel" class="btn btn-default"  value="Cancel" style="float:left; width:50%" />';
+            viewUI = viewUI + '                   </div>';
+            viewUI = viewUI + '   </div>';
+            viewUI = viewUI + '   </div>';
+           // if (isnew == false) {
+            viewUI = viewUI + '       <div class="container"  id="server">';
+                viewUI = viewUI + '      <div class="row">';
+                viewUI = viewUI + '     <div class="col-md-12"> <h3>Server</h3></div>';
+                viewUI = viewUI + '     </div>';
+                viewUI = viewUI + '     <div class="row" >';
+                viewUI = viewUI + '     <div id="sServer" class="control col-md-5"></div>';
+                viewUI = viewUI + '      </div>';
+                viewUI = viewUI + '     <div class="row">';
+                viewUI = viewUI + '     <div class="col-md-6"></div>';
+                viewUI = viewUI + '     <div class="col-md-6">';
+                viewUI = viewUI + '     <div class="container">';
+            viewUI = viewUI + '     <input type="button" id="btnAssignServer" value="Save" class="btn  btn-primary" style="float:left; width:45%" />';
+            viewUI = viewUI + '     <input type="button" id="btnRemovesever" value="Remove" class="btn  btn-default" style="float:left; width:45%" />';
+                viewUI = viewUI + '      </div>';
+            viewUI = viewUI + '                  </div>';
+            viewUI = viewUI + '               </div>';
+           // }           
+            viewUI = viewUI + '           </div>';
+            viewUI = viewUI + '       </div>';
+            viewUI = viewUI + '   </td>';
+            viewUI = viewUI + '   </tr>';
+            viewUI = viewUI + '   </table>';
+            return viewUI;
+        }
+    })($)
+</script>
+
+    

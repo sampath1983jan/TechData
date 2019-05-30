@@ -38,9 +38,9 @@ namespace Tz.BackApp.Controllers.Authentication
         {
             return View();
         }
-        public JsonpResult SaveUser(string Username, string firstName, string lastName, string password, int userType)
+        public JsonpResult SaveUser(string Username, string firstName, string lastName, string password, int userType,string email)
         {
-            Tz.Net.User u = new Net.User(Username, password, (UserType)userType, true);
+            Tz.Net.User u = new Net.User(Username, password, (UserType)userType, true,firstName,lastName,email);
             u.Save();
             return new JsonpResult(u.UserID);
         }
@@ -80,11 +80,12 @@ namespace Tz.BackApp.Controllers.Authentication
                     }
                     else
                     {
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index", "Home", new { area = "" });
+                        //return Redirect("Index");
                     }
                 }
             }
-            ModelState.AddModelError("", "Something Wrong : Username or Password invalid ^_^ ");
+            ModelState.AddModelError("loginerror", "Something Wrong : Username or Password invalid ^_^ ");
             return View(loginView);
         }
 

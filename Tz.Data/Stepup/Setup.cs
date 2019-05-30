@@ -19,7 +19,6 @@ namespace Tz.Data
             DBSchemaProvider provider = db.GetSchemaProvider();
              tables = provider.GetAllTables();            
         }
-
         public void Clear() {
             DBQuery[] all = new DBQuery[] {
             DBQuery.Drop.Table(base.Schema, TzAccount.Client.Table).IfExists(),
@@ -27,23 +26,18 @@ namespace Tz.Data
             DBQuery.Drop.Table(base.Schema, TzAccount.Server.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.Tables.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.Field.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.ClientServer.Table).IfExists(),
             };
-
             foreach (DBQuery q in all) {
                 try
                 {
                     db.ExecuteNonQuery(q);
                 }
                 catch (System.Exception ex)
-                {
-                    //if (null == failure)
-                    //    failure = ex;
-                    //failcount++;
-                    //TestContext 
+                {              
                 }
             }
         }
-
         public void CreateAccount() {            
          //   DBSchemaItemRef table =   tables.Where(x => x.Name.ToLower() == TzAccount.Account.Table.ToLower()).FirstOrDefault ();
          ////  Tech.Data.Schema.DBSchemaTable table = provider.GetTable("", base.Schema, TzAccount.Account.Table);
@@ -103,6 +97,7 @@ namespace Tz.Data
                 DBQuery create;
                 create = DBQuery.Create.Table(base.Schema, TzAccount.Server.Table)
                                         .Add(TzAccount.Server.ServerID)
+                                        .Add(TzAccount.Server.ServerName)
                                         .Add(TzAccount.Server.Host)
                                         .Add(TzAccount.Server.Port)
                                         .Add(TzAccount.Server.UserID)
@@ -126,13 +121,16 @@ namespace Tz.Data
                                         .Add(TzAccount.User.UserID)
                                         .Add(TzAccount.User.UserName)
                                         .Add(TzAccount.User.Password)
+                                        .Add(TzAccount.User.Email)
+                                        .Add(TzAccount.User.FirstName)
+                                        .Add(TzAccount.User.LastName)
                                         .Add(TzAccount.User.Status)
                                         .Add(TzAccount.User.UserType);
                 db.ExecuteNonQuery(create);
             }
             else
             {
-                throw new System.Exception("Server table Name exist");
+                throw new System.Exception("User table Name exist");
             }
         }
 
@@ -174,6 +172,22 @@ namespace Tz.Data
             else
             {
                 throw new System.Exception("'Fields' table Name exist");
+            }
+        }
+        public void CreateClientServer()
+        {
+            DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.ClientServer.Table.ToLower()).FirstOrDefault();
+            if (table == null)
+            {
+                DBQuery create;
+                create = DBQuery.Create.Table(base.Schema, TzAccount.ClientServer.Table)
+                                        .Add(TzAccount.ClientServer.ClientID)
+                                        .Add(TzAccount.ClientServer.ServerID);                                        
+                db.ExecuteNonQuery(create);
+            }
+            else
+            {
+                throw new System.Exception("'Client Server' table Name exist");
             }
         }
 

@@ -1,0 +1,276 @@
+﻿
+@{
+    ViewBag.Title = "Server";
+}
+
+<h2>Server</h2>
+
+<table style="width:100%">
+    <tr>
+        <td>
+            <div class="container">
+                <div id="slist"> </div>
+            </div>
+        </td>
+        <td width="80%">
+            <div id="onServer" class="float-label container">
+                <div class="row">
+                    <div id="sServer" class="control col-md-12"></div>                    
+                </div>
+                <div class="row">
+                    <div id="sHost" class="control col-md-5"></div>
+                    <div id="sDBName" class="control col-md-4"></div>
+                </div>
+                <div class="row">
+                    <div id="sUserName" class="control col-md-5"></div>
+                    <div id="sPassword" class="control col-md-4"></div>
+                    <div id="sPort" class="control col-md-3"></div>
+                    @*<div class="control col-md-6"></div>*@
+                </div>
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <input type="button" id="btnSave" value="Save" class="btn  btn-primary" style="float:left; width:45%" />
+                            <input type="button" id="btnCancel" class="btn btn-default" onclick='window.location = "@Url.Action("login", "Authentication")";' value="Cancel" style="float:left; width:50%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+        function loadServer() {
+            $.ajax('/Server/Gets',
+                {
+                    type: "GET",
+                    dataType: 'jsonp', // type of response data
+                    data: "",
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function
+                        //$('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
+                        var dv = "<div class='row'>"
+                        $.each(data, function (i, d) {
+                            dv = dv + "<div class='col-md-12'><a href='#' name='"+d.ServerID+"'>" + d.ServerName + '-' + d.Host + "</a></div>"
+                           
+                        })
+                        dv = dv + "</div>"
+                        $("#slist").append(dv);
+                        $("#slist").find("a").click(function () {
+                            sid = $(this).attr("name");
+                            getServer(sid);
+                        })
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert(errorMessage);
+                        //$('p').append('Error: ' + errorMessage);
+                    }
+                });
+        }
+        function getServer(serverid) {
+            $.ajax('/Server/Get',
+                {
+                    type: "GET",
+                    dataType: 'jsonp', // type of response data
+                    data:  ({ serverID: serverid }),
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function                        
+                       
+                        $.AddServer({
+                            plc: "onServer",
+                            ServerName: data.ServerName,
+                            DBName: data.DBName,
+                            UserName: data.UserName,
+                            Password: data.Password,
+                            Host: data.Host,
+                            Port: data.Port,
+                        })
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert(errorMessage);
+                        //$('p').append('Error: ' + errorMessage);
+                    }
+                });
+        }
+        $("#btnSave").click(function () {
+            var u = {};
+            u.serverName = $("#sServer").Input("text");
+            u.host = $("#sHost").Input("text");
+            u.dbName = $("#sDBName").Input("text");
+            u.userName = $("#sUserName").Input("text");
+            u.password = $("#sPassword").Input("text");
+            u.port = $("#sPort").Input("text");                     
+            $.ajax('/Server/Save',
+                {
+                    dataType: 'jsonp', // type of response data
+                    data: (u),
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function                        
+                        alert("success");
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert(errorMessage);                        
+                    }
+                });
+        });
+        (function ($server) {
+            $server.AddServer = function (options) {
+                var defaults = {
+                    plc: "",
+                    ServerID:"",
+                    ServerName: "",
+                    DBName:"",
+                    UserName: "",
+                    Password: "",
+                    Port:"",
+                    onSave: function () {
+
+                    },
+                    onCancel: function () {
+
+                    },
+                };             
+                $.extend(this, defaults, options);
+                $("#sServer").html("");
+                $("#sHost").html("");
+                $("#sDBName").html("");
+                $("#sUserName").html("");
+                $("#sPassword").html("");
+                $("#sPort").html("");
+
+                //   var utype = [{ key: 1, value: "User" }, { key: 2, value: "Admin" }, { key: 3, value: "Super Admin" }]
+                $("#" + this.plc).labelfields({
+                    items: [{
+                        label: "Server Name",
+                        field: {
+                            id: "fdserver", 'note': "Enter server name",
+                            limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": this.ServerName,
+                            format: "hex", range: false, isRequired: true,
+                        },
+                        id: 'sServer'
+                    }, {
+                            label: "Host Name",
+                            field: {
+                                id: "fdhost", 'note': "Enter Host name",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": this.Host,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'sHost'
+                        }, {
+                            label: "DB Name",
+                        field: {
+                            id: "fdDBName", 'note': "DB Name",
+                            limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": this.DBName,
+                            format: "hex", range: false, isRequired: true,
+                        },
+                            id: 'sDBName'
+                    }, {
+                        label: "User Name",
+                        field:
+                        {
+                            id: "fdUserName", 'note': "",
+                            limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": this.UserName,
+                            format: "hex", range: true, isRequired: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: [],
+                                displayField: "make_display",
+                                valueField: "make_id",
+                                selection: "multiple"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        }
+                        ,
+                            id: 'sUserName'
+                    },
+                    {
+                        label: "Password",
+                        field:
+                        {
+                            id: "fdPassword", 'note': "Enter password of server",
+                            limit: true, maxlength: 15, inputType: 1, textType: 2, timeformat: 12, 'regexp': "", "text": this.Password,
+                            format: "hex", range: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: [],
+                                displayField: "make_display",
+                                valueField: "make_id",
+                                selection: "multiple"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        }
+                        ,
+                        id: 'sPassword'
+                    }, {
+                        label: "Port",
+                        field:
+                        {
+                            id: "fdPort", 'note': "Port no of server",
+                            limit: true, maxlength: 15, inputType: 1, textType: 1, timeformat: 12, 'regexp': "", "text": this.Port,
+                            format: "hex", range: true,
+                            date: {
+                                datepickerType: 1,
+                                timeformat: 12,
+                                dateformat: "dd.mm.yyyy".toUpperCase()
+                            },
+                            autofill: {
+                                type: "select",
+                                allowCustomText: true
+                            },
+                            selectPicker: {
+                                datasource: [],
+                                displayField: "make_display",
+                                valueField: "make_id",
+                                selection: "multiple"
+                            },
+                            upload: {
+                                fileExtension: ['doc', 'docx', 'txt'],
+                                showPreview: true,
+                                url: "/Security/Upload",
+                                selection: 'multiple'
+                            }
+                        }
+                        ,
+                        id: 'sPort'
+                    }]
+                })
+            }
+            $.AddServer({ plc: "onServer" })
+        })($)
+
+         loadServer();
+    });
+</script>
+
+

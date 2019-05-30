@@ -26,6 +26,19 @@ namespace Tz.Data
             return db.GetDatatable(select);
         }
 
+
+        public DataTable GetClients()
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+
+            select = DBQuery.SelectAll(TzAccount.Client.Table).From(TzAccount.Client.Table);
+               // .WhereField(TzAccount.Client.Table, TzAccount.Client.ClientID.Name, Compare.Equals, DBConst.String(ClientID));
+            return db.GetDatatable(select);
+        }
+
+
         public string Save(string clientName,
             string clientNo,
             string address,

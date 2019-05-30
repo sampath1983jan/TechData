@@ -109,8 +109,8 @@
             $(this).find("input").blur(function () {
                 $(self).find("[data-toggle=tooltip]").attr("title", "");
                 $(self).find("[data-toggle=tooltip]").attr("data-original-title", "");
-            });
-            $(this).find("input").keypress(function () {              
+			});
+			$(this).find("input").keypress(function () {              
                  return methods._isValid.call(self);                                       
             });
            // if (methods._isNeedKeyValidation(prt)) {
@@ -453,7 +453,7 @@
                     hlp = prt.note;                    
                 }
                 if (prt.limit === true) {
-                    hlp = hlp + " " + "Enter value between (min-" + prt.min + " max-" + prt.max + ")";
+					hlp = hlp + " " + "(Length min-" + prt.min + " max-" + prt.max + ")";
                 }                    
                 tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + hlp + '</small>';
                 if (prt.enabletooltip === true) {
@@ -739,7 +739,7 @@
                 o.inputType === 14) {                
                 if (o.isRequired === true) {
                     if (v === "") {
-                        return false;
+                        return true;
                     }
                 }                
                 if (o.limit === true) {
@@ -1908,11 +1908,20 @@
     };
     var methods = {
         init: function (options) {
-            self = $(this);
-            var _options = $.extend(true, $.labelfields.defaults, options || {});
+			self = $(this);
+			var _options = {};
+			_options.items = [];
+			$.each(options.items, function (io, o) {
+				var settings = $.extend({}, $.labelfields.defaults.items[0], o);
+				_options.items.push(settings);
+				_options.template = $.labelfields.defaults.template;
+			});
+
+			//var _options = $.extend(true, options || {}, $.labelfields.defaults);
             $.each(_options.items, function (jk, ks) {
                 ks.field.enabletooltip = false;               
-                $("#" + ks.id).Input(ks.field);
+				$("#" + ks.id).Input(ks.field);
+				$("#" + ks.id).Input("text", ks.field.text);
                 $($("#" + ks.id).find("input")[0]).parent().addClass("control");
                 $("#" + ks.id).find("input").attr("placeholder", ks.label);
                 $("#" + ks.id).find("input").removeClass("form-control");
@@ -2068,8 +2077,9 @@
     };
     var methods = {
         init: function (options) {
-            var self = $(this);
-             var _options = $.extend(true, $.modalwindow.defaults, options || {});
+			var self = $(this);
+			var _options = $.extend({}, $.modalwindow.defaults, options);
+             //var _options = $.extend(true, $.modalwindow.defaults, options || {});
             self.data('model', $.extend({}, _options, { initialized: true, waiting: false }));
             self.html("");
             self.append(methods._gettemplate.call($(this)));
@@ -2160,8 +2170,9 @@
     };
     var methods = {
         init: function (options) {
-            var self = $(this);
-            var _options = $.extend(true, $.dialogBox.defaults, options || {});
+			var self = $(this);
+			var _options = $.extend({}, $.dialogBox.defaults, options);
+            //var _options = $.extend(true, $.dialogBox.defaults, options || {});
             self.data('dialogBox', $.extend({}, _options, { initialized: true, waiting: false }));
             if (_options.type === 1) {
                 if (_options.title === "") {

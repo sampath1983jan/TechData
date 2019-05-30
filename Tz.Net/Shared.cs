@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Reflection;
+using Mono.Reflection;
+
 using System.Text;
 using System.Threading.Tasks;
 
@@ -60,7 +62,8 @@ namespace Tz.Net
 
         
 
-        public static List<T> toList<T>(this System.Data.DataTable dt, DataFieldMappings df, Func<T, T> Bind,Func<string,string,dynamic> format)
+        public static List<T> toList<T>(this System.Data.DataTable dt, DataFieldMappings df, Func<T, T> Bind,
+            Func<string,string,dynamic> format)
         {
             try
             {
@@ -84,29 +87,39 @@ namespace Tz.Net
                             if (property.Count() > 0)
                             {
                                 var pt = property.FirstOrDefault();
-                                if (pt.PropertyType.Name == "Boolean")
+                                if (d.IsKey == false)
                                 {
-                                    if (dataRow[d.DataField] == null) {
-                                        pt.SetValue(instanceOfT, false, null);
-                                    }else {
-                                        pt.SetValue(instanceOfT, Convert.ToBoolean(dataRow[d.DataField]), null);
-                                    }                                    
-                                }
-                                else {
-                                    if ((((pt).PropertyType).BaseType).FullName == "System.Enum")
+                                    if (pt.PropertyType.Name == "Boolean")
                                     {
-                                        pt.SetValue(instanceOfT, format(d.DataField, dataRow[d.DataField].ToString()), null);
-                                    }
-                                    else if ((((pt).PropertyType).BaseType).FullName == "System.ValueType") {
-                                        pt.SetValue(instanceOfT,  Cast(dataRow[d.DataField], (((pt).PropertyType))), null);
+                                        if (dataRow[d.DataField] == null)
+                                        {
+                                            pt.SetValue(instanceOfT, false, null);
+                                        }
+                                        else
+                                        {
+                                            pt.SetValue(instanceOfT, Convert.ToBoolean(dataRow[d.DataField]), null);
+                                        }
                                     }
                                     else
                                     {
-                                        pt.SetValue(instanceOfT, dataRow[d.DataField], null);
+                                        if ((((pt).PropertyType).BaseType).FullName == "System.Enum")
+                                        {
+                                            pt.SetValue(instanceOfT, format(d.DataField, dataRow[d.DataField].ToString()), null);
+                                        }
+                                        else if ((((pt).PropertyType).BaseType).FullName == "System.ValueType")
+                                        {
+                                            pt.SetValue(instanceOfT, Cast(dataRow[d.DataField], (((pt).PropertyType))), null);
+                                        }
+                                        else
+                                        {
+                                            pt.SetValue(instanceOfT, dataRow[d.DataField], null);
+                                        }
                                     }
                                 }
-                                
-
+                                else {
+                                    FieldInfo nameField = pt.GetBackingField();
+                                    nameField.SetValue(instanceOfT, dataRow[d.DataField]);
+                                }
                             }
                         }
                     }
@@ -194,9 +207,9 @@ namespace Tz.Net
         {
             return dfm;
         }
-        public DataFieldMappings Add(string dataField, string memberField)
+        public DataFieldMappings Add(string dataField, string memberField,bool isKey=false)
         {
-            dfm.Add(new DataFieldMapping(dataField, memberField));
+            dfm.Add(new DataFieldMapping(dataField, memberField,isKey));
             return this;
         }
     }
@@ -205,10 +218,18 @@ namespace Tz.Net
     {
         public string DataField;
         public string MemberField;
+        public bool IsKey;
+        public DataFieldMapping(string dataField, string memberField,bool isKey)
+        {
+            DataField = dataField;
+            MemberField = memberField;
+            IsKey = isKey;
+        }
         public DataFieldMapping(string dataField, string memberField)
         {
             DataField = dataField;
             MemberField = memberField;
+            IsKey = false;
         }
     }
 }

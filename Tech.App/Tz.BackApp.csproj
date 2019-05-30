@@ -140,7 +140,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Authentication\AuthenticationController.cs" />
+    <Compile Include="Controllers\Client\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Server\ServerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -227,6 +229,8 @@
     <Content Include="Views\Authentication\Login.cshtml" />
     <Content Include="Views\Authentication\index.cshtml" />
     <Content Include="Views\Authentication\Registration.cshtml" />
+    <Content Include="Views\Client\Client.cshtml" />
+    <Content Include="Views\Server\Server.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

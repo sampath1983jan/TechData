@@ -44,7 +44,7 @@ namespace Tz.Data
             DBQuery select;
             select = DBQuery.SelectAll(TzAccount.User.Table).From(TzAccount.User.Table)
                 .WhereField(TzAccount.User.Table, TzAccount.User.UserName.Name, Compare.Equals, DBConst.String(UserName))
-                .WhereField(TzAccount.User.Table, TzAccount.User.Password.Name, Compare.Equals, DBConst.String(Password));
+                .AndWhere(TzAccount.User.Table, TzAccount.User.Password.Name, Compare.Equals, DBConst.String(Password));
             return db.GetDatatable(select);
         }
         /// <summary>
@@ -73,7 +73,7 @@ namespace Tz.Data
         public string Save(string UserName,
             string Password,
             int UserType,
-            bool Status) {
+            bool Status,string firstName,string lastName,string email) {
             DBDatabase db;
             db = base.Database;
             string a = Shared.generateID();
@@ -82,17 +82,27 @@ namespace Tz.Data
             DBConst dbUserType = DBConst.Int32(UserType);
             DBConst dbUserName = DBConst.String(UserName);
             DBConst dbPass = DBConst.String(Password);
+            DBConst dbfirstName = DBConst.String(firstName);
+            DBConst dblastName= DBConst.String(lastName);
+            DBConst dbemail = DBConst.String(email);
 
             DBQuery insert = DBQuery.InsertInto(TzAccount.User.Table).Fields(
                 TzAccount.User.UserID.Name,
                TzAccount.User.UserName.Name,
                TzAccount.User.UserType.Name,
                TzAccount.User.Status.Name,
+               TzAccount.User.FirstName.Name,
+               TzAccount.User.LastName.Name,
+               TzAccount.User.Email.Name,
                TzAccount.User.Password.Name).Values(
                dbUserID,
                dbUserName,               
                dbUserType,
-               dbStatus              , dbPass
+               dbStatus,
+               dbfirstName,
+               dblastName,
+               dbemail,
+               dbPass
                );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -109,6 +119,32 @@ namespace Tz.Data
                 return "";
             }
         }
+
+        public bool Update(string UserId, string firstname, string lastName, string email, bool status) {
+            DBDatabase db;
+            db = base.Database;
+            DBConst dbUserID = DBConst.String(UserId);
+            DBConst dbfirstname = DBConst.String(firstname);
+            DBConst dblastName = DBConst.String(lastName);
+            DBConst dbemail = DBConst.String(email);
+            DBConst dbStatus = DBConst.Const(DbType.Boolean, status);
+            DBQuery update = DBQuery.Update(TzAccount.User.Table).Set(
+                TzAccount.User.Status.Name, dbStatus).Set(
+                TzAccount.User.FirstName.Name, dbfirstname).Set(
+                TzAccount.User.LastName.Name, dblastName).Set(
+                TzAccount.User.Email.Name, dbemail)
+                .WhereField(TzAccount.User.UserID.Name, Compare.Equals, dbUserID);
+            int i = db.ExecuteNonQuery(update);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -122,7 +158,7 @@ namespace Tz.Data
             DBConst dbUserID = DBConst.String(UserID);
             DBConst dbStatus = DBConst.Const (DbType.Boolean,Status);
             DBQuery update = DBQuery.Update(TzAccount.User.Table).Set(
-                TzAccount.User.Password.Name, dbStatus)
+                TzAccount.User.Status.Name, dbStatus)
                 .WhereField(TzAccount.User.UserID.Name, Compare.Equals, dbUserID);
             int i = db.ExecuteNonQuery(update);
             if (i > 0)

@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Reflection, Version=1.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\mono.reflection-master\mono.reflection-master\bin\Debug\Mono.Reflection.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +47,7 @@
   <ItemGroup>
     <Compile Include="AccountManager.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="ClientSever.cs" />
     <Compile Include="Exception\TableException.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="Shared\DataBase.cs" />

@@ -79,6 +79,28 @@ namespace Tz.Net
                     , null,null).FirstOrDefault();
             this.Merge<Client>(c);          
         }
+        public static List<Client> GetClients() {
+            var dClient = new Data.Client("");
+            DataTable dt = new DataTable();
+            dt = dClient.GetClients();
+            if (dt == null) {
+                return new List<Client>();
+            }
+          return  dt.toList<Client>(new DataFieldMappings()
+                     .Add(Tz.Data.TzAccount.Client.ClientID.Name, "ClientID",true)
+                     .Add(Tz.Data.TzAccount.Client.ClientName.Name, "ClientName")
+                     .Add(Tz.Data.TzAccount.Client.ClientNo.Name, "ClientNo")
+                     .Add(Tz.Data.TzAccount.Client.Address.Name, "Address")
+                     .Add(Tz.Data.TzAccount.Client.State.Name, "State")
+                     .Add(Tz.Data.TzAccount.Client.Country.Name, "Country")
+                      .Add(Tz.Data.TzAccount.Client.Email.Name, "Email")
+                     .Add(Tz.Data.TzAccount.Client.PhoneNo.Name, "PhoneNo")
+                     .Add(Tz.Data.TzAccount.Client.OrganizationName.Name, "OrganizationName")
+                     .Add(Tz.Data.TzAccount.Client.Status.Name, "Status")
+                     .Add(Tz.Data.TzAccount.Client.Host.Name, "ClientHost")
+                     , null, null).ToList();
+        }
+
         /// <summary>
         /// 
         /// </summary>

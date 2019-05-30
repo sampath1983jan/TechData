@@ -87,6 +87,17 @@ namespace Tz.Net
                         throw ex;
                     }
                 }
+                try
+                {
+                    s.CreateClientServer();
+                }
+                catch (Exception ex)
+                {
+                    if (ex.Message.IndexOf("exist") == 0)
+                    {
+                        throw ex;
+                    }
+                }
             }
             catch (Exception ex) {
                 throw ex;

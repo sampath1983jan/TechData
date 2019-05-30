@@ -54,6 +54,9 @@ namespace Tz.Net
             this.UserName = userName;
             this.Password = password;
             _userid = "";
+            this.LastName = "";
+            this.FirstName = "";
+            this.Email = "";            
             dUser = new Data.User();
             Authenticate();           
         }
@@ -67,7 +70,7 @@ namespace Tz.Net
         public User(string userName,
             string password,
             UserType usertype,
-            bool status)
+            bool status,string firstName,string lastName,string email)
         {
             dUser = new Data.User();
             _userid = "";
@@ -75,6 +78,9 @@ namespace Tz.Net
             this.Password = password;
             this.UserType = usertype;
             this.IsActive = status;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Email = email;
             _isauth = true;
         }
 
@@ -88,6 +94,9 @@ namespace Tz.Net
             {
                 User c = dt.toList<User>(new DataFieldMappings()
                    .Add(Tz.Data.TzAccount.User.UserName.Name, "UserName")
+                   .Add(Tz.Data.TzAccount.User.FirstName.Name, "FirstName")
+                   .Add(Tz.Data.TzAccount.User.LastName.Name, "LastName")
+                   .Add(Tz.Data.TzAccount.User.Email.Name, "Email")
                    //.Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
@@ -110,6 +119,9 @@ namespace Tz.Net
             {
                   c = dt.toList<User>(new DataFieldMappings()
                    .Add(Tz.Data.TzAccount.User.UserName.Name, "UserName")
+                     .Add(Tz.Data.TzAccount.User.FirstName.Name, "FirstName")
+                   .Add(Tz.Data.TzAccount.User.LastName.Name, "LastName")
+                   .Add(Tz.Data.TzAccount.User.Email.Name, "Email")
                    // .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
@@ -138,7 +150,10 @@ namespace Tz.Net
             {
                 User c = dt.toList<User>(new DataFieldMappings()
                    .Add(Tz.Data.TzAccount.User.UserName.Name, "UserName")
-                  // .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
+                     .Add(Tz.Data.TzAccount.User.FirstName.Name, "FirstName")
+                   .Add(Tz.Data.TzAccount.User.LastName.Name, "LastName")
+                   .Add(Tz.Data.TzAccount.User.Email.Name, "Email")
+                   // .Add(Tz.Data.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Data.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
                    , null, null).FirstOrDefault();
@@ -190,6 +205,18 @@ namespace Tz.Net
             else
                 return false;
         }
+
+        public bool Update() {
+            try
+            {
+                dUser.Update(this.UserID, this.FirstName, this.LastName, this.Email, this.IsActive);
+            }
+            catch (System.Exception ex) {
+                return false;
+            }            
+            return true;
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -201,7 +228,7 @@ namespace Tz.Net
                 _userid = dUser.Save(this.UserName,
                 this.Password,
                 (int)this.UserType,
-                this.IsActive);
+                this.IsActive,this.FirstName,this.LastName,this.Email);
                 if (_userid == "")
                 {
                     return false;

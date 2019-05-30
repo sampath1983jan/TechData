@@ -31,6 +31,21 @@ namespace Tz.Data
                 .WhereField(TzAccount.Server.Table, TzAccount.Server.ServerID.Name, Compare.Equals, DBConst.String(serverid));
             return db.GetDatatable(select);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        
+        /// <returns></returns>
+        public DataTable GetServer( )
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+            select = DBQuery.SelectAll(TzAccount.Server.Table).From(TzAccount.Server.Table);              
+            return db.GetDatatable(select);
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -45,6 +60,7 @@ namespace Tz.Data
             string userName,
             string password,
             int port
+            , string serverName
             )
         {
             DBDatabase db;
@@ -52,6 +68,7 @@ namespace Tz.Data
             string a = Shared.generateID();
             DBConst dbServerID = DBConst.String(a);
             DBConst dbHostName = DBConst.String(host);
+            DBConst dbServerName = DBConst.String(serverName);
             DBConst dbDBname = DBConst.String(dbname);
             DBConst dbPassword = DBConst.String(password);
             DBConst dbUserName = DBConst.String(userName);
@@ -63,13 +80,15 @@ namespace Tz.Data
                TzAccount.Server.UserID.Name,
                TzAccount.Server.Password.Name,
                TzAccount.Server.Port.Name,
-               TzAccount.Server.DB.Name).Values(
+               TzAccount.Server.DB.Name,
+               TzAccount.Server.ServerName.Name).Values(
                dbServerID,
                dbHostName,
                dbUserName,
                dbPassword,
                dbPort,
-               dbDBname
+               dbDBname,
+               dbServerName
                );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -100,14 +119,15 @@ namespace Tz.Data
             string dbname,
             string userName,
             string password,
-            int port
+            int port, string serverName
             )
         {
                 DBDatabase db;
                 db = base.Database;            
                 DBConst dbServerID = DBConst.String(serverid);
                 DBConst dbHostName = DBConst.String(host);
-                DBConst dbDBname = DBConst.String(dbname);
+            DBConst dbServerName = DBConst.String(serverName);
+            DBConst dbDBname = DBConst.String(dbname);
                 DBConst dbPassword = DBConst.String(password);
                 DBConst dbUserName = DBConst.String(userName);
                 DBConst dbPort = DBConst.Int32(port);
@@ -116,7 +136,8 @@ namespace Tz.Data
                     TzAccount.Server.Host.Name, dbHostName).Set(
                    TzAccount.Server.UserID.Name, dbUserName).Set(
                    TzAccount.Server.Password.Name, dbPassword).Set(
-                   TzAccount.Server.Port.Name, dbPort).WhereField(TzAccount.Server.ServerID.Name, Compare.Equals, dbServerID);
+                   TzAccount.Server.Port.Name, dbPort).Set(
+                   TzAccount.Server.ServerName.Name, dbServerName).WhereField(TzAccount.Server.ServerID.Name, Compare.Equals, dbServerID);
                 int i = db.ExecuteNonQuery(update);
                 if (i > 0)
                 {
