@@ -203,6 +203,9 @@ namespace Tz.Data
         /// <returns></returns>
         public bool AlterTableSetPrimarykey(bool isdrop=true)
         {
+            if (this.PrimaryKey.Count == 0) {
+                return true;
+            }
             //ALTER TABLE `talentozdev`.`cf_fields` 
             //DROP PRIMARY KEY
             //, ADD PRIMARY KEY(`FieldID`);
@@ -364,6 +367,22 @@ namespace Tz.Data
             catch (System.Exception ex) {
                 throw new Exception.TableException(this.Table, ex.Message, ex); ;
             }            
+        }
+
+        public bool Rename(string NewName) {
+            //ALTER TABLE old_table RENAME new_table;
+            string query= "ALTER TABLE {0} RENAME {1}";
+            query = string.Format(query, Table, NewName);
+            try
+            {
+                 db.ExecuteNonQuery(query);
+                
+            }
+            catch (System.Exception ex)
+            {
+                throw new Exception.TableException(this.Table, "Unable to change name of the table", ex);
+            }
+            return true;
         }
         /// <summary>
         /// 

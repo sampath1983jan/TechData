@@ -2100,7 +2100,7 @@
         _gettemplate: function () {
             var _options = this.data('model');
             var k = '<div class="modal fade" id="' + _options.id + '"  tabindex=" - 1" role="dialog" aria-hidden="true">';
-            k = k + '<div class="modal-dialog" role="document">';
+			k = k + '<div class="modal-dialog modal-lg" role="document">';
             k = k + ' <div class="modal-content">';
             k = k + '<div class="modal-header">';
             k = k + '<h5 class="modal-title" id="exampleModalLabel">' + _options.title + '</h5>';
@@ -2458,11 +2458,11 @@
            // k = k + ' <a class="navbar-brand" href="#">' + _options.name + '</a>';
             k = k + '<ul class="navbar-nav mr-auto mt-2 mt-lg-0">';
             $.each(_options.linkbuttons, function (ict, ct) {
-                k = k + '<li class="nav-item">' + ct + '</li>';
+				k = k + '<li class="nav-item" >' + ct + '</li>';
             });
             k = k + '</ul>';
             $.each(_options.formElement, function (ict, ct) {
-                k = k + '<div class="form-inline my-2 my-lg-0">' + ct + '</div>';
+				k = k + '<div class="form-inline my-2 my-lg-0" >' + ct + '</div>';
             });           
             k = k + "</div>";
             self.html("");

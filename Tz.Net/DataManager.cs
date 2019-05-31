@@ -13,7 +13,6 @@ namespace Tz.Net
         private Entity.ITable Table;
         private Server Server;
 
-
         /// <summary>
         /// 
         /// </summary>
@@ -28,7 +27,7 @@ namespace Tz.Net
         /// <param name="serverID"></param>
         public DataManager(string tableID,string serverID) {
             Server = new Server(serverID);
-            Table = new Entity.Table(tableID);
+            Table = new Entity.Table(tableID, serverID);
         }
         /// <summary>
         ///     
@@ -42,7 +41,7 @@ namespace Tz.Net
         /// </summary>
         /// <returns></returns>
         public DataManager NewTable(string tableName,string category) {
-            Table = new Entity.Table(tableName,category);
+            Table = new Entity.Table(Server.ServerID, tableName,category);
             return this;            
         }        
         /// <summary>
@@ -122,6 +121,26 @@ namespace Tz.Net
                 //((Entity.Table)Table).Add(field);
                 return this;
             }            
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="newName"></param>
+        /// <returns></returns>
+        public bool Rename(string newName,string category) {            
+            Data.TableBuilder tb = new Data.TableBuilder(this.Table.TableName, this.Server.Connection());
+            try
+            {
+                if (newName != "") {
+                    tb.Rename(newName);
+                    this.Table.TableName = newName;
+                }                                
+                this.Table.Category = category;
+                ((Entity.Table)Table).Save();
+            } catch (Data.Exception.TableException ex) {
+                throw ex;
+            }
+            return true;
         }
         /// <summary>
         /// table create,alter column ,add column,add primary key

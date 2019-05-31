@@ -21,9 +21,11 @@ namespace Tz.Data
         /// 
         /// </summary>
         /// <returns></returns>
-        public DataTable GetTables() {
+        public DataTable GetTables(string clientid) {
             DBQuery select;
-            select = DBQuery.SelectAll(TzAccount.Tables.Table).From(TzAccount.Tables.Table);
+            DBConst dbclientid = DBConst.String(clientid);
+            select = DBQuery.SelectAll(TzAccount.Tables.Table).From(TzAccount.Tables.Table)
+                  .WhereField(TzAccount.Tables.Table, TzAccount.Tables.ServerID.Name, Compare.Equals, dbclientid);
             return db.GetDatatable(select);
         }
         /// <summary>
@@ -47,22 +49,26 @@ namespace Tz.Data
         /// <param name="tableName"></param>
         /// <param name="tableCategory"></param>
         /// <returns></returns>
-        public string Save(string tableName,
+        public string Save(string serverID, string tableName,
             string tableCategory)
         {
             string a = Shared.generateID();
             DBConst dbTableid = DBConst.String(a);
+            DBConst dbServerID = DBConst.String(serverID);
             DBConst dbtableName = DBConst.String(tableName);
             DBConst dbtableCategory = DBConst.String(tableCategory);
 
             DBQuery insert = DBQuery.InsertInto(TzAccount.Tables.Table).Fields(
               TzAccount.Tables.TableID.Name,
               TzAccount.Tables.TableName.Name,
-              TzAccount.Tables.Category.Name
+              TzAccount.Tables.Category.Name,
+              TzAccount.Tables.ServerID.Name
+              
           ).Values(
               dbTableid,
               dbtableName,
-              dbtableCategory
+              dbtableCategory,
+              dbServerID
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())

@@ -127,7 +127,7 @@ namespace Tz.Net
                    .Add(Tz.Data.TzAccount.User.Password.Name, "Password")
                    , null, null).FirstOrDefault();
               //  this.Merge<User>(c);
-                if (dt.Rows[0]["UserType"] == null)
+                if (dt.Rows[0]["UserType"] != null)
                 {
                     c.UserType = (UserType)dt.Rows[0]["UserType"];
                 }

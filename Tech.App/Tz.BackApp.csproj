@@ -142,6 +142,7 @@
     <Compile Include="Controllers\Authentication\AuthenticationController.cs" />
     <Compile Include="Controllers\Client\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Schema\SchemaController.cs" />
     <Compile Include="Controllers\Server\ServerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -155,6 +156,7 @@
     <Compile Include="Models\JsonResult.cs" />
     <Compile Include="Models\LoginView.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +233,7 @@
     <Content Include="Views\Authentication\Registration.cshtml" />
     <Content Include="Views\Client\Client.cshtml" />
     <Content Include="Views\Server\Server.cshtml" />
+    <Content Include="Views\Schema\Schema.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,394 @@
+﻿
+@{
+    ViewBag.Title = "Schema";
+}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<h2>Schema</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <div id="navBtnList"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div id="lftSchema"></div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="rghTable"></div>
+        </div>
+        <div class="col-md-3">
+            <div id="rgfieldinfo"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <div id="saveaction">
+               
+            </div>
+        </div>
+        <div id="mkd"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //(function ($s) {
+            //    $s.ClientListView = function () {
+            //        var viewui = "";
+            //    }
+            //})($)
+
+
+            (function ($schema) {
+                $schema.Schema = function (options) {
+                    var defaults = {
+                        ClientID: "",
+                        View: "",
+                        plc: "",
+                    }
+                    var _opt = $.extend({}, defaults, options);
+                    var tbl = {};
+                    var renderTableList = function ($plc, data) {
+
+                    }
+                    var getTableList = function (client, onComplete) {
+
+                    }
+                    var renderToolbar = function () {
+                        $("#navBtnList").toolbar({
+                            name: "Home", linkbuttons: ['<a class="nav-link" href="#" name="addtb">Add Table <span class="sr-only">(current)</span></a>', '<a class="nav-link" href="#">Remove</a>', '<a class="nav-link" href="#">View Data</a>']
+                        })
+
+                        $("#navBtnList").find("a[name=addtb]").click(function () {
+                            
+                            tbl = new $schema.Table({
+                                ClientID: _opt.ClientID,
+                                TableID: "",
+                                plc: "rghTable",
+                            });
+                        })
+                    }
+                    var renderClients = function (data) {
+                        //var dv = "<div class='row'>"
+                        var dv = "";
+                        $.each(data, function (i, d) {
+                            dv = dv + "<h3><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "</a></h3>";
+                            dv = dv + "<div name='" + d.ClientID + "'></div>"
+                        })
+                        //dv = dv + "</div>"
+                        $("#lftSchema").append(dv);
+                        $("#lftSchema").find("a").click(function () {
+                            _opt.ClientID = $(this).attr("name");
+                            //renderTables();
+                        });
+                        var already_loaded = new Object();
+                        $("#lftSchema").accordion({
+                            collapsible: true,
+                            active: false,
+                            //heightStyle: 'fill', // http://jqueryui.com/accordion/#fillspace  -- Just sets the height of the accordion to the height of it's parent container.  We need a way to change the height of the parent to that of the newly added content.
+                            activate: function (e, ui) {
+                                // only fire when the accordion is opening..
+                                if (ui.newHeader.length > 0) {
+                                    // only retrieve the remote content once..
+                                    if (!already_loaded[ui.newHeader[0].id] == 1) {
+                                        var srcObj = $(ui.newHeader[0]).children('a');
+                                        var url = srcObj.attr('name');
+
+                                        getTableList(url, function (data) {
+                                            renderTableList($(ui.newHeader[0]).next(), data);
+                                            var contentDiv = $(ui.newHeader[0]).next()[0];
+                                            $("#lftSchema").accordion("refresh");
+                                            already_loaded[ui.newHeader[0].id] = 1;
+                                        });
+
+                                    }
+                                }
+                            }
+
+                        });
+                    }
+                    var getClientlist = function (onComplete) {
+                        $.ajax('/Client/Gets',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: "",
+                                // timeout milliseconds
+                                success: function (data, status, xhr) {   // success callback function
+                                    $("#lftSchema").html("");
+                                    onComplete(data);
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                    //$('p').append('Error: ' + errorMessage);
+                                }
+                            });
+                    }
+                    var render = function () {
+                        renderToolbar();
+                        getClientlist(function (data) {
+                            renderClients(data);
+                        });
+                    }
+                    render();
+                }
+                $schema.Table = function (options) {
+                    var defaults = {
+                        ClientID: "",
+                        TableID: "",
+                        Fields: [],
+                        plc: "",
+                        View: "",
+                    }
+                    var defaultsfield = {
+                        FieldID: "",
+                        FieldName: "",
+                        FieldType: 0,
+                        Length: 0,
+                        IsNull: false,
+                        IsPrimary: false,
+                    }
+                    var Save = function () {
+                        var tb = $("#fldTabName").Input("text");
+                        var cat = $("#fldTabCatg").Input("text");
+                        var fs = [];
+                        var tbl = {};
+                        tbl.TableName = tb;
+                        tbl.Category = cat;
+
+                        $.each(_opt.Fields, function (ifd,fd) {
+                            var f = {};
+                            f.FieldName = fd.FieldName;
+                            f.FieldType = fd.FieldType;
+                            f.Length = fd.Length;
+                            f.IsNullable = fd.IsNull;
+                            f.IsPrimaryKey = fd.IsPrimary;
+                            f.FieldID = "";
+                            f.TableID = "";
+                            fs.push(f);
+                        })
+
+                        $.ajax('/Schema/SaveTableField',
+                            {
+                        dataType: 'jsonp', // type of response data
+                        data: (({ clientid: _opt.ClientID, tb: JSON.stringify(tbl), fields: JSON.stringify(fs) })),
+                        // timeout milliseconds
+                        success: function (data, status, xhr) {   // success callback function
+                            alert(data);
+                        },
+                        error: function (jqXhr, textStatus, errorMessage) { // error callback
+                            alert(errorMessage);
+                            //$('p').append('Error: ' + errorMessage);
+                        }
+                    });
+                    }
+                    var _opt = $.extend({}, defaults, options);
+                    var renderTable = function () {
+                        $("#tbplc").append("<div class='row'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div></div>");
+                        $("#tbplc").labelfields({
+                            items: [{
+                                label: "Table Name",
+                                field: {
+                                    id: "fdtbName", 'note': "Enter Table Name",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                id: 'fldTabName'
+                            }, {
+                                label: "Category",
+                                field: {
+                                    id: "fdcatgory", 'note': "",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                id: 'fldTabCatg'
+                            }]
+                        });
+                        renderFields();
+                    }
+                    var getFieldType = function (id) {
+                        //  var ft = $$.Utility.filter({ key: id });
+                        var sl = [];
+                        $.each(fieldtype, function (ift, ft) {
+                            if (ft.key == id) {
+                                sl = ft;
+                            }
+                        });
+                        if (sl.value != undefined) {
+                            return sl.value;
+                        }
+                        else {
+                            return "";
+                        }
+
+
+                    }
+                    var renderFields = function () {
+                        $("#fldinfo").html("");
+                        $("#fldinfo").append("<div class='row'><div class='col-md-8'>Field List</div><div class='col-md-4'><input type='button' id='btnAddField' value='Add Field'/></div></div><div class='row'><div  class='col-md-12'><div id='fldlist' class='row'></div></div></div>");
+                        $.each(_opt.Fields, function (ifd, fd) {
+                            var finf = "<div class='col-md-6'>" + fd.FieldName + "</div>";
+                            finf = finf + "<div class='col-md-3'>" + getFieldType(fd.FieldType) + "</div>";
+                            finf = finf + "<div class='col-md-1'>" + fd.Length + "</div>";
+                            finf = finf + "<div class='col-md-1'>" + fd.IsNull + "</div>";
+                            finf = finf + "<div class='col-md-1'>" + fd.IsPrimary + "</div>";
+                            $("#fldlist").append(finf);
+                        });
+                        $("#btnAddField").click(function () {
+                            renderField();
+                        })
+                    }
+                    var fieldtype = [
+                        //{ key: 0, value: "Select" },
+                        { key: 16, value: "String" },
+                        { key: 10, value: "Small Number" },
+                        { key: 11, value: "Number" },
+                        { key: 12, value: "Double" },
+                        { key: 7, value: "Decimal" },
+                        { key: 6, value: "DateTime" },
+                        { key: 5, value: "Date" },
+                        { key: 3, value: "Boolean" },
+                        { key: 4, value: "Currency" },
+                        { key: 17, value: "Time" },
+                    ]
+                    var renderFieldInfo = function () {
+                        $("#sfldinfo").labelfields({
+                            items: [{
+                                label: "Field Name",
+                                field: {
+                                    id: "fdfieldname", 'note': "",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                id: 'tbfldName'
+                            }, {
+                                label: "Field Type",
+                                field: {
+                                    id: "fdfldtype", 'note': "",
+                                    limit: true, maxlength: 50, inputType: 19, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                    selectPicker: {
+                                        datasource: fieldtype,
+                                        displayField: "value",
+                                        valueField: "key",
+                                        selection: "single"
+                                    }
+                                },
+                                id: 'tbfldType'
+                            }, {
+                                label: "Length",
+                                field: {
+                                    id: "fldlength", 'note': "",
+                                    limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                id: 'tbfldlength'
+                            }, {
+                                label: "Is Primarykey",
+                                field: {
+                                    id: "fldfieldprimary", 'note': "Is Primary key",
+                                    limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                    id: 'tbfldprimary'
+                            }, {
+                                label: "Is Null",
+                                field: {
+                                    id: "fldnull", 'note': "Is Nullable",
+                                    limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                    id: 'tbfldnull'
+                            }]
+                        });
+                    }
+                    var collectFieldInfo = function () {
+                        var f = {};
+                        f.FieldName = $("#tbfldName").Input("text");
+                        f.FieldType = $("#tbfldType").Input("text");
+                        f.Length = $("#tbfldlength").Input("text");
+                        f.IsNull = $("#tbfldnull").Input("text");
+                        f.IsPrimary = $("#tbfldprimary").Input("text");
+                        return f;
+                    }
+                    var renderField = function () {
+                        //fieldname,fieldtype,length,isprimary,isnull,
+                        $("#rgfieldinfo").html("");
+                        var fld = "<div class='float-label container'><div id='sfldinfo' class='row'>";
+                        fld = fld + "<div id='tbfldName' class='col-md-12'></div>";
+                        fld = fld + "<div id='tbfldType' class='col-md-12'></div>";
+                        fld = fld + "</div>";
+                        fld = fld + "<div class='row'>";
+                        fld = fld + "<div id='tbfldlength' class='col-md-12'></div>";
+                        fld = fld + "<div id='tbfldnull' class='col-md-12'></div>";
+                        fld = fld + "<div id='tbfldprimary' class='col-md-12'></div>";
+                        fld = fld + "</div>";
+                        fld = fld + "<div class='row'>";
+                        fld = fld + '<button type="button" class="btn btn-primary" action="save">Save</button>'
+                        fld = fld + "</div>";
+                        fld = fld + "</div>";
+                        $("#rgfieldinfo").append("<div class='col-md-12'><div class='col-md-12'>Field Information</div>" + fld + "</div>");
+                        renderFieldInfo();
+                        $("#rgfieldinfo").find("button[action=save]").click(function () {
+                            _opt.Fields.push(collectFieldInfo());
+                            renderFields();
+                            renderField();
+                        })
+                        //$("#mkd").modalwindow({
+                        //    title: "New Field",
+                        //    id: 'w1',
+                        //    onClose: function () {
+                        //       // alert('windowclosed');
+                        //    },
+                        //    onShow: function () {
+
+                        //    }, onSave: function () {
+
+                        //        $("#mkd").modalwindow('close');
+                        //    }
+                        //});
+                        //$("#mkd").modalwindow("open");
+                        //  $("#fldplc").append("<div><div>Field Information</div></div>");
+                    }
+                    var render = function (cthis) {
+                        $("#saveaction").append(' <input type="button" id="btnSaveTable" class="btn  btn-primary" value="Accept Changes" />');
+                        $("#saveaction").append('<input type = "button" id = "btnReverse" value = "Retract" class= "btn  btn-default" />');
+                        $("#" + _opt.plc).append("<div><div id='tbplc' class='float-label container'></div><div id='fldinfo' class='container'></div><div class='row' id='fddetail'></div></div>");
+                        renderTable();
+                        $("#btnSaveTable").click(function () {
+                            Save();
+                        })
+                    }
+                    render(this);
+                }
+
+            })($)
+
+            var s = new $.Schema({});
+
+            //function getTable() {
+            //    //$.ajax('/Schema/Table',
+            //    //    {
+
+            //    //        dataType: 'jsonp', // type of response data
+            //    //        data: ({ tb: JSON.stringify({ TableID: "100", TableName: "sys_user", Category: "testing" }) }),
+            //    //        // timeout milliseconds
+            //    //        success: function (data, status, xhr) {   // success callback function
+
+            //    //            alert(data);
+            //    //        },
+            //    //        error: function (jqXhr, textStatus, errorMessage) { // error callback
+            //    //            alert(errorMessage);
+            //    //            //$('p').append('Error: ' + errorMessage);
+            //    //        }
+            //    //    });
+            //}
+
+
+            //getTable();
+        });
+    </script>
+

@@ -29,7 +29,7 @@ namespace CustomAuthentication
                     (new System.Web.Routing.RouteValueDictionary
                     (new
                     {
-                        controller = "Account",
+                        controller = "Authentication",
                         action = "Login",
                     }
                     ));

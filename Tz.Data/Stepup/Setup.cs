@@ -142,6 +142,7 @@ namespace Tz.Data
                 DBQuery create;
                 create = DBQuery.Create.Table(base.Schema, TzAccount.Tables.Table)
                                         .Add(TzAccount.Tables.TableID)
+                                        .Add(TzAccount.Tables.ServerID)
                                         .Add(TzAccount.Tables.TableName)
                                         .Add(TzAccount.Tables.Category)                                      
                                         ;

@@ -72,11 +72,11 @@
                             dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";                            
                         })
                         dv = dv + "</div>"
-                        $("#clist").append(dv);
+                        $("#clist").append(dv);                       
                         $("#clist").find("a").click(function () {
                             var cid = $(this).attr("name");
                             getClient(cid);
-                        })
+                        });
                     },
                     error: function (jqXhr, textStatus, errorMessage) { // error callback 
                         alert(errorMessage);

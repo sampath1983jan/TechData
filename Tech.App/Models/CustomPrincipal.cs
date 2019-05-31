@@ -25,17 +25,30 @@ namespace CustomAuthentication
 
         public bool IsInRole(string role)
         {
-            //if (Roles.Any(r => role.Contains(r)))
-            //{
-            //    return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+            if (role == "Admin")
+            {
+                if (Roles == UserType.Admin || Roles == UserType.SuperAdmin)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else if (role == "User") {
+                if (Roles == UserType.User || Roles == UserType.SuperAdmin || Roles == UserType.Admin || Roles == UserType.SuperUser)
+                {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
             return false;
         }
 
+        
         public CustomPrincipal(string username)
         {
             Identity = new GenericIdentity(username);

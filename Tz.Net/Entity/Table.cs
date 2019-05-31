@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
+using System.Linq;
 namespace Tz.Net.Entity
 {
     /// <summary>
@@ -14,6 +12,7 @@ namespace Tz.Net.Entity
         string TableName { get; set; }
         string Category { get; set; }
           List<IField> Fields { get; }
+        string ServerID { get; set; }
     }
     /// <summary>
     /// 
@@ -23,8 +22,10 @@ namespace Tz.Net.Entity
         private string _tableid;
         private string _tablename;
         private string _category;
+        private string _serverID;
         private Data.Table dTable;
         private Data.Field dField;
+
         private List<IField> _fields;
         /// <summary>
         /// 
@@ -42,6 +43,9 @@ namespace Tz.Net.Entity
         /// 
         /// </summary>
         public List<IField> Fields { get { return _fields; } }
+
+        public string ServerID { get => _serverID; set => _serverID=value; }
+
         /// <summary>
         /// 
         /// </summary>
@@ -53,7 +57,8 @@ namespace Tz.Net.Entity
         /// 
         /// </summary>
         /// <param name="tableid"></param>
-        public Table(string tableid) {
+        public Table(string serverID,string tableid) {
+            _serverID = serverID;
             _tableid = tableid;
             _fields = new List<IField>();
             dTable = new Data.Table();
@@ -64,8 +69,9 @@ namespace Tz.Net.Entity
         /// </summary>
         /// <param name="tableName"></param>
         /// <param name="category"></param>
-        public Table(string tableName, string category)
+        public Table(string serverID,string tableName, string category)
         {
+            _serverID = serverID;
             _tableid = "";
             _tablename = tableName;
             _category = category;
@@ -83,6 +89,23 @@ namespace Tz.Net.Entity
                 return y;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
+        /// <returns></returns>
+        public static List<Table> GetTables(string clientid) {
+            var dTable = new Data.Table();
+            DataTable dt = new DataTable();
+            dt = dTable.GetTables(clientid);
+            List<Table>ts                = dt.toList<Table>(new DataFieldMappings()               //  .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID")
+               .Add(Tz.Data.TzAccount.Tables.TableID.Name, "TableID", true)
+                  .Add(Tz.Data.TzAccount.Tables.TableName.Name, "TableName")
+                .Add(Tz.Data.TzAccount.Tables.Category.Name, "Category")
+                .Add(Tz.Data.TzAccount.Tables.ServerID.Name, "ClientID")                
+                , null, null);
+            return ts;
+        }
 
         /// <summary>
         /// 
@@ -93,18 +116,19 @@ namespace Tz.Net.Entity
             dt=  dTable.GetTable(this.TableID);
             if (dt.Rows.Count > 0) {
             dynamic fs = dt.toList<Field>(new DataFieldMappings()               //  .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID")
+                 .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID",true)
                     .Add(Tz.Data.TzAccount.Field.FieldName.Name, "FieldName")
                   .Add(Tz.Data.TzAccount.Field.FieldType.Name, "FieldType")
                   .Add(Tz.Data.TzAccount.Field.Length.Name, "Length")
                   .Add(Tz.Data.TzAccount.Field.ISPrimaryKey.Name, "IsPrimaryKey")
                   .Add(Tz.Data.TzAccount.Field.IsNullable.Name, "IsNullable")
                   ,  null,(x,y)=> dynamic(x,y));
-                int i = 0;
-                foreach (Field f in fs) {
-                    f.setFieldID(dt.Rows[i]["FieldID"].ToString());
-                    _fields.Add(f);
-                    i = i + 1;
-                }
+                //int i = 0;
+                //foreach (Field f in fs) {
+                //    f.setFieldID(dt.Rows[i]["FieldID"].ToString());
+                //    _fields.Add(f);
+                //    i = i + 1;
+                //}
                 this.TableName = dt.Rows[0]["TableName"] == null ? "" : dt.Rows[0]["TableName"].ToString();
                 this.Category = dt.Rows[0]["Category"] == null ? "" : dt.Rows[0]["Category"].ToString();
             }     
@@ -170,7 +194,7 @@ namespace Tz.Net.Entity
             }
             if (TableID == "")
             {
-                TableID = dTable.Save(this.TableName, this.Category);
+                TableID = dTable.Save(this.ServerID, this.TableName, this.Category);
                 if (TableID != "")
                 {
                     AcceptFieldChanges();

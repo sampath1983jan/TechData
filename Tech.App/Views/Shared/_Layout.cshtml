@@ -25,6 +25,7 @@
                 {
                     var identity = ((CustomPrincipal)HttpContext.Current.User);
                     @Html.ActionLink("Home", "Index", "Home");
+                    @Html.ActionLink("Schema", "Schema", "Schema");
                     @Html.ActionLink("Server", "Server", "Server");
                     @Html.ActionLink("Clients", "Client", "Client");
                     @Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
@@ -68,14 +69,14 @@
                             data: "",
                             // timeout milliseconds
                             success: function (data, status, xhr) {   // success callback function                        
-                                $("#clist").html("");
+                                $("#clientlist").html("");
                                 var dv = "<div class='row'>"
                                 $.each(data, function (i, d) {
                                     dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";
                                 })
                                 dv = dv + "</div>"
-                                $("#clist").append(dv);
-                                $("#clist").find("a").click(function () {
+                                $("#clientlist").append(dv);
+                                $("#clientlist").find("a").click(function () {
                                     clientid = $(this).attr("name");
                                     renderTables();
                                 })
