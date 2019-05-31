@@ -18,6 +18,21 @@ namespace Tz.BackApp.Controllers.Schema
         public ActionResult Schema() {
             return View();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
+        /// <returns></returns>
+        public JsonpResult GetTables(string clientid) {
+            Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+           return new JsonpResult( Net.Entity.Table.GetTables(c.GetServer().ServerID));
+        }
+
+        public JsonpResult GetTable(string clientid, string tableid) {
+            Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+            Tz.Net.DataManager dataManager = new Net.DataManager(c.GetServer().ServerID);
+            return new JsonpResult(dataManager.GetTable());
+        }
 
         /// <summary>
         ///  new table creation with fields

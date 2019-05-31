@@ -29,6 +29,11 @@ namespace Tz.Net
             Server = new Server(serverID);
             Table = new Entity.Table(tableID, serverID);
         }
+
+
+        public Entity.ITable GetTable() {
+            return Table;
+        }
         /// <summary>
         ///     
         /// </summary>

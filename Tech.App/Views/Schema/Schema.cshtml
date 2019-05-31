@@ -52,10 +52,35 @@
                     var _opt = $.extend({}, defaults, options);
                     var tbl = {};
                     var renderTableList = function ($plc, data) {
-
+                        var sq="<div class='row'>"
+                        $.each(data, function (id, d) {
+                            sq = sq + "<div class='col-md-12' ><a href='#' name='" + d.TableID + "'>" + d.TableName + "</a></div>";
+                        }); 
+                        sq=s+"</div>"
+                        $plc.append(sq);
+                        $plc.find("a").click(function () {
+                            tbl = new $schema.Table({
+                                ClientID: _opt.ClientID,
+                                TableID: $(this).attr("name"),
+                                plc: "rghTable",
+                            });
+                        })
                     }
-                    var getTableList = function (client, onComplete) {
-
+                    var getTableList = function ( onComplete) {
+                        $.ajax('/Client/GetTables',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: ({ clientid: _opt.ClientID }),
+                                // timeout milliseconds
+                                success: function (data, status, xhr) {   // success callback function                                   
+                                    onComplete(data);
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                    //$('p').append('Error: ' + errorMessage);
+                                }
+                            });
                     }
                     var renderToolbar = function () {
                         $("#navBtnList").toolbar({
@@ -143,6 +168,8 @@
                         plc: "",
                         View: "",
                     }
+                    var tbName = "";
+                    var category = "";
                     var defaultsfield = {
                         FieldID: "",
                         FieldName: "",
@@ -193,7 +220,7 @@
                                 label: "Table Name",
                                 field: {
                                     id: "fdtbName", 'note': "Enter Table Name",
-                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": tbName,
                                     format: "hex", range: false, isRequired: true,
                                 },
                                 id: 'fldTabName'
@@ -201,13 +228,32 @@
                                 label: "Category",
                                 field: {
                                     id: "fdcatgory", 'note': "",
-                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": category,
                                     format: "hex", range: false, isRequired: true,
                                 },
                                 id: 'fldTabCatg'
                             }]
                         });
                         renderFields();
+                    }
+                    var getTable = function (onComplete) {
+                        $.ajax('/Client/GetTable',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: ({ clientid: _opt.ClientID,tableid:_opt.TableID }),
+                                // timeout milliseconds
+                                success: function (data, status, xhr) {   // success callback function                                   
+                                    tbName = data.TableName;
+                                    category = data.Category;
+
+                                    onComplete(data);
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                    //$('p').append('Error: ' + errorMessage);
+                                }
+                            });
                     }
                     var getFieldType = function (id) {
                         //  var ft = $$.Utility.filter({ key: id });
@@ -357,7 +403,14 @@
                         $("#saveaction").append(' <input type="button" id="btnSaveTable" class="btn  btn-primary" value="Accept Changes" />');
                         $("#saveaction").append('<input type = "button" id = "btnReverse" value = "Retract" class= "btn  btn-default" />');
                         $("#" + _opt.plc).append("<div><div id='tbplc' class='float-label container'></div><div id='fldinfo' class='container'></div><div class='row' id='fddetail'></div></div>");
-                        renderTable();
+                        if (_opt.TableID != "") {
+                            getTable(function () {
+                                renderTable();
+                            })
+                        } else {
+                            renderTable();
+                        }
+                        //renderTable();
                         $("#btnSaveTable").click(function () {
                             Save();
                         })
