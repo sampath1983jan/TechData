@@ -1032,7 +1032,7 @@
                     if (o.selectPicker.selection === 'multiple') {
                         sVal = o.text.split(',');
                     } else {
-                        sVal = o.text;
+                        sVal = o.text + "";
                     }
                     if (sVal.length > 0) {
                         $('#select_' + o.id).selectpicker("val", sVal);

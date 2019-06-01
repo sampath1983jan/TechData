@@ -123,12 +123,13 @@ namespace Tz.Net.Entity
                   .Add(Tz.Data.TzAccount.Field.ISPrimaryKey.Name, "IsPrimaryKey")
                   .Add(Tz.Data.TzAccount.Field.IsNullable.Name, "IsNullable")
                   ,  null,(x,y)=> dynamic(x,y));
-                //int i = 0;
-                //foreach (Field f in fs) {
-                //    f.setFieldID(dt.Rows[i]["FieldID"].ToString());
-                //    _fields.Add(f);
-                //    i = i + 1;
-                //}
+                int i = 0;
+                foreach (Field f in fs)
+                {
+                    f.setFieldID(dt.Rows[i]["FieldID"].ToString());
+                    _fields.Add(f);
+                    i = i + 1;
+                }
                 this.TableName = dt.Rows[0]["TableName"] == null ? "" : dt.Rows[0]["TableName"].ToString();
                 this.Category = dt.Rows[0]["Category"] == null ? "" : dt.Rows[0]["Category"].ToString();
             }     

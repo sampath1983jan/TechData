@@ -237,6 +237,7 @@
                                 id: 'fldTabCatg'
                             }]
                         });
+                        
                         renderFields();
                     }
                     var getTable = function (onComplete) {
@@ -258,7 +259,7 @@
                                         f.Length = d.Length;
                                         f.IsNull = d.IsNullable;
                                         f.TableID = d.TableID;
-                                        f.IsPrimary = d.TableID;
+                                        f.IsPrimary = d.IsPrimaryKey;
                                         _opt.Fields.push(f);
                                     })
                                     onComplete(data);
@@ -288,15 +289,20 @@
                     }
                     var renderFields = function () {
                         $("#fldinfo").html("");
-                        $("#fldinfo").append("<div class='row'><div class='col-md-8'>Field List</div><div class='col-md-4'><input type='button' id='btnAddField' value='Add Field'/></div></div><div class='row'><div  class='col-md-12'><div id='fldlist' class='row'></div></div></div>");
+                        $("#fldinfo").append("<div class='row'><div class='col-md-8'>Field List</div><div class='col-md-4'><input type='button' id='btnAddField' value='Add Field'/></div></div><div class='row'><div  class='col-md-12'><div id='fldlist' class=''></div></div></div>");
                         $.each(_opt.Fields, function (ifd, fd) {
-                            var finf = "<div class='col-md-6'>" + fd.FieldName + "</div>";
+                            
+                            var finf = "<div class='row' name='"+ fd.FieldID +"'><div class='col-md-6'>" + fd.FieldName + "</div>";
                             finf = finf + "<div class='col-md-3'>" + getFieldType(fd.FieldType) + "</div>";
                             finf = finf + "<div class='col-md-1'>" + fd.Length + "</div>";
                             finf = finf + "<div class='col-md-1'>" + fd.IsNull + "</div>";
-                            finf = finf + "<div class='col-md-1'>" + fd.IsPrimary + "</div>";
+                            finf = finf + "<div class='col-md-1'>" + fd.IsPrimary + "</div></div>";
                             $("#fldlist").append(finf);
                         });
+                        $("#fldlist").find("div[class=row]").click(function () {
+                            var fid = $(this).attr("name");
+                            renderField(fid);
+                        })
                         $("#btnAddField").click(function () {
                             renderField();
                         })
@@ -314,13 +320,26 @@
                         { key: 4, value: "Currency" },
                         { key: 17, value: "Time" },
                     ]
-                    var renderFieldInfo = function () {
+                    var renderFieldInfo = function (fid) {
+
+                        var fld = {}
+                        if (fid != undefined) {
+                            $.each(_opt.Fields, function (ifd, fd) {
+                                if (fd.FieldID == fid) {
+                                    fld = fd;
+                                }
+                            });
+                        } else {
+                            fld = $.extend({}, defaultsfield, {});
+                        }
+                        
+
                         $("#sfldinfo").labelfields({
                             items: [{
                                 label: "Field Name",
                                 field: {
                                     id: "fdfieldname", 'note': "",
-                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": fld.FieldName,
                                     format: "hex", range: false, isRequired: true,
                                 },
                                 id: 'tbfldName'
@@ -328,7 +347,7 @@
                                 label: "Field Type",
                                 field: {
                                     id: "fdfldtype", 'note': "",
-                                    limit: true, maxlength: 50, inputType: 19, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 19, textType: 1, timeformat: 0, 'regexp': "", "text": fld.FieldType,
                                     format: "hex", range: false, isRequired: true,
                                     selectPicker: {
                                         datasource: fieldtype,
@@ -342,7 +361,7 @@
                                 label: "Length",
                                 field: {
                                     id: "fldlength", 'note': "",
-                                    limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": fld.Length,
                                     format: "hex", range: false, isRequired: true,
                                 },
                                 id: 'tbfldlength'
@@ -350,7 +369,7 @@
                                 label: "Is Primarykey",
                                 field: {
                                     id: "fldfieldprimary", 'note': "Is Primary key",
-                                    limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsPrimary,
                                     format: "hex", range: false, isRequired: true,
                                 },
                                     id: 'tbfldprimary'
@@ -358,7 +377,7 @@
                                 label: "Is Null",
                                 field: {
                                     id: "fldnull", 'note': "Is Nullable",
-                                    limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsNull,
                                     format: "hex", range: false, isRequired: true,
                                 },
                                     id: 'tbfldnull'
@@ -374,7 +393,7 @@
                         f.IsPrimary = $("#tbfldprimary").Input("text");
                         return f;
                     }
-                    var renderField = function () {
+                    var renderField = function (fid) {
                         //fieldname,fieldtype,length,isprimary,isnull,
                         $("#rgfieldinfo").html("");
                         var fld = "<div class='float-label container'><div id='sfldinfo' class='row'>";
@@ -391,7 +410,7 @@
                         fld = fld + "</div>";
                         fld = fld + "</div>";
                         $("#rgfieldinfo").append("<div class='col-md-12'><div class='col-md-12'>Field Information</div>" + fld + "</div>");
-                        renderFieldInfo();
+                        renderFieldInfo(fid);
                         $("#rgfieldinfo").find("button[action=save]").click(function () {
                             _opt.Fields.push(collectFieldInfo());
                             renderFields();

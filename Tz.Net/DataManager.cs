@@ -27,7 +27,7 @@ namespace Tz.Net
         /// <param name="serverID"></param>
         public DataManager(string tableID,string serverID) {
             Server = new Server(serverID);
-            Table = new Entity.Table(tableID, serverID);
+            Table = new Entity.Table( serverID, tableID);
         }
 
 
