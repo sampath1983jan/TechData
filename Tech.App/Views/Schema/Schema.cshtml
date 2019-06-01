@@ -179,6 +179,7 @@
                         Length: 0,
                         IsNull: false,
                         IsPrimary: false,
+                        TableID:"",
                     }
                     var Save = function () {
                         var tb = $("#fldTabName").Input("text");
@@ -249,6 +250,17 @@
                                     tbName = data.TableName;
                                     category = data.Category;
 
+                                    $.each(data.Fields, function (id,d) {
+                                        var f = {};
+                                        f.FieldID = d.FieldID;
+                                        f.FieldName = d.FieldName;
+                                        f.FieldType = d.FieldType;
+                                        f.Length = d.Length;
+                                        f.IsNull = d.IsNullable;
+                                        f.TableID = d.TableID;
+                                        f.IsPrimary = d.TableID;
+                                        _opt.Fields.push(f);
+                                    })
                                     onComplete(data);
                                 },
                                 error: function (jqXhr, textStatus, errorMessage) { // error callback
