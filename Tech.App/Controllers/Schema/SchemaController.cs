@@ -30,7 +30,7 @@ namespace Tz.BackApp.Controllers.Schema
 
         public JsonpResult GetTable(string clientid, string tableid) {
             Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-            Tz.Net.DataManager dataManager = new Net.DataManager(c.GetServer().ServerID);
+            Tz.Net.DataManager dataManager = new Net.DataManager(tableid,c.GetServer().ServerID);
             return new JsonpResult(dataManager.GetTable());
         }
 

@@ -56,7 +56,7 @@
                         $.each(data, function (id, d) {
                             sq = sq + "<div class='col-md-12' ><a href='#' name='" + d.TableID + "'>" + d.TableName + "</a></div>";
                         }); 
-                        sq=s+"</div>"
+                        sq=sq+"</div>"
                         $plc.append(sq);
                         $plc.find("a").click(function () {
                             tbl = new $schema.Table({
@@ -66,8 +66,9 @@
                             });
                         })
                     }
-                    var getTableList = function ( onComplete) {
-                        $.ajax('/Client/GetTables',
+                    var getTableList = function (onComplete) {
+                        
+                        $.ajax('/Schema/GetTables',
                             {
                                 type: "GET",
                                 dataType: 'jsonp', // type of response data
@@ -106,6 +107,7 @@
                         //dv = dv + "</div>"
                         $("#lftSchema").append(dv);
                         $("#lftSchema").find("a").click(function () {
+
                             _opt.ClientID = $(this).attr("name");
                             //renderTables();
                         });
@@ -120,9 +122,9 @@
                                     // only retrieve the remote content once..
                                     if (!already_loaded[ui.newHeader[0].id] == 1) {
                                         var srcObj = $(ui.newHeader[0]).children('a');
-                                        var url = srcObj.attr('name');
-
-                                        getTableList(url, function (data) {
+                                       // var url = srcObj.attr('name');
+                                        _opt.ClientID = srcObj.attr("name");
+                                        getTableList(function (data) {
                                             renderTableList($(ui.newHeader[0]).next(), data);
                                             var contentDiv = $(ui.newHeader[0]).next()[0];
                                             $("#lftSchema").accordion("refresh");
@@ -237,7 +239,7 @@
                         renderFields();
                     }
                     var getTable = function (onComplete) {
-                        $.ajax('/Client/GetTable',
+                        $.ajax('/Schema/GetTable',
                             {
                                 type: "GET",
                                 dataType: 'jsonp', // type of response data
