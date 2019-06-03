@@ -188,16 +188,17 @@
                         var tbl = {};
                         tbl.TableName = tb;
                         tbl.Category = cat;
-
+                        tbl.TableID = _opt.TableID;
                         $.each(_opt.Fields, function (ifd,fd) {
                             var f = {};
+                            f.TableID = _opt.TableID;
                             f.FieldName = fd.FieldName;
                             f.FieldType = fd.FieldType;
                             f.Length = fd.Length;
                             f.IsNullable = fd.IsNull;
                             f.IsPrimaryKey = fd.IsPrimary;
-                            f.FieldID = "";
-                            f.TableID = "";
+                            f.FieldID = fd.FieldID;
+                            //f.TableID = "";
                             fs.push(f);
                         })
 
@@ -207,7 +208,8 @@
                         data: (({ clientid: _opt.ClientID, tb: JSON.stringify(tbl), fields: JSON.stringify(fs) })),
                         // timeout milliseconds
                         success: function (data, status, xhr) {   // success callback function
-                            alert(data);
+                            // alert(data);
+                            renderFields();
                         },
                         error: function (jqXhr, textStatus, errorMessage) { // error callback
                             alert(errorMessage);
@@ -304,7 +306,7 @@
                             renderField(fid);
                         })
                         $("#btnAddField").click(function () {
-                            renderField();
+                            renderField("");
                         })
                     }
                     var fieldtype = [
@@ -384,8 +386,9 @@
                             }]
                         });
                     }
-                    var collectFieldInfo = function () {
+                    var collectFieldInfo = function (fid) {
                         var f = {};
+                        f.FieldID = fid;
                         f.FieldName = $("#tbfldName").Input("text");
                         f.FieldType = $("#tbfldType").Input("text");
                         f.Length = $("#tbfldlength").Input("text");
@@ -412,7 +415,7 @@
                         $("#rgfieldinfo").append("<div class='col-md-12'><div class='col-md-12'>Field Information</div>" + fld + "</div>");
                         renderFieldInfo(fid);
                         $("#rgfieldinfo").find("button[action=save]").click(function () {
-                            _opt.Fields.push(collectFieldInfo());
+                            _opt.Fields.push(collectFieldInfo(fid));
                             renderFields();
                             renderField();
                         })

@@ -48,21 +48,56 @@ namespace Tz.BackApp.Controllers.Schema
                 Tz.BackApp.Models.Table ModalTable;
                 ModalTable = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Table>(tb);
                 List<Models.Field> mFields = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.Field>>(fields);
-                Tz.Net.DataManager dataManager = new Net.DataManager(c.GetServer().ServerID);
-                dataManager.NewTable( ModalTable.TableName, ModalTable.Category);
-                foreach (Models.Field f in mFields)
+               
+                if (ModalTable.TableID == "")
                 {
-                    if (f.IsPrimaryKey)
+                    Tz.Net.DataManager dataManager = new Net.DataManager(c.GetServer().ServerID); 
+                    dataManager.NewTable(ModalTable.TableName, ModalTable.Category);
+                    foreach (Models.Field f in mFields)
                     {
-                        dataManager.AddPrimarykey(f.FieldName, f.FieldType, f.Length);
+                        if (f.IsPrimaryKey)
+                        {
+                            dataManager.AddPrimarykey(f.FieldName, f.FieldType, f.Length);
+                        }
+                        else
+                        {
+                            dataManager.AddField(f.FieldName, f.FieldType, f.Length, f.IsNullable);
+                        }
                     }
-                    else
-                    {
-                        dataManager.AddField(f.FieldName, f.FieldType, f.Length, f.IsNullable);
-                    }
+                    dataManager.AcceptChanges();
+                    return new JsonpResult(dataManager.getTableID());
                 }
-                dataManager.AcceptChanges();
-                return new JsonpResult(dataManager.getTableID());
+                else {
+                    Tz.Net.DataManager dataManager = new Net.DataManager(ModalTable.TableID,c.GetServer().ServerID);
+                    if (ModalTable.TableName != "") {
+                        if (dataManager.GetTable().TableName != ModalTable.TableName)
+                        {
+                            dataManager.Rename(ModalTable.TableName, ModalTable.Category); // rename table
+                        }
+                    }
+                    
+                    foreach (Models.Field f in mFields) {
+                        if (f.IsChanged)
+                        {
+                            dataManager.ChangeField(f.FieldID, f.FieldName, f.FieldType, f.Length, f.IsNullable); // alter table field info & new field name
+                        }
+                        else {
+                            if (f.IsPrimaryKey)
+                            {
+                                dataManager.AddPrimarykey(f.FieldName, f.FieldType, f.Length);
+                            }
+                            else
+                            {
+                                dataManager.AddField(f.FieldName, f.FieldType, f.Length, f.IsNullable);
+                            }
+                        }
+                    }
+                    dataManager.AcceptChanges();
+                    return new JsonpResult(dataManager.getTableID());
+                    //dataManager
+                }
+                
+                
             }
             catch (System.Exception ex) {
                 throw ex;

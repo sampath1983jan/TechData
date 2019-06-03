@@ -94,6 +94,7 @@ namespace Tz.Net
             ((Entity.Table)Table).Add(field);
             return this;
         }
+        
         /// <summary>
         /// alter field information add here
         /// </summary>
@@ -116,12 +117,14 @@ namespace Tz.Net
                 throw new Data.Exception.TableFieldException(this.Table.TableName, fieldName, "Field dosenot exist");
             }
             else {
-                field.FieldName = fieldName;
+               // field.FieldName = fieldName;
                 field.FieldType = fieldType;
                 field.Length = length;
                 field.IsNullable = isNullable;
                 field.IsPrimaryKey = false;
-                field.NewFieldName = newfieldname;
+                if (fieldName != field.FieldName) {
+                    field.NewFieldName = fieldName;
+                }                
                 field.isChanged = true;
                 //((Entity.Table)Table).Add(field);
                 return this;

@@ -28,6 +28,7 @@ namespace Tz.BackApp.Models
         public bool IsNullable { get; set; }
         public bool IsPrimaryKey { get; set; }
         public string TableID  {get;set;}
+        public bool IsChanged { get; set; }
         public string NewFieldName { get; set; }     
     }
 }
