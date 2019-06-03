@@ -9,7 +9,10 @@
         background: #FECA40;
           
     }
-
+    .plns {
+        overflow-x:hidden !important;
+        overflow-y:auto !important;
+    }
     .selectable .ui-selected {
         background: #F39814;
         color: white;
@@ -20,6 +23,9 @@
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+    .padd5l {
+        padding: 0px 10px 0px 10px !important;
     }
     .padd5 {
         
@@ -35,7 +41,7 @@
             height: 18px;
         }
 </style>
-<div class="container">
+<div class="padd5l">
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-9">
@@ -188,8 +194,8 @@
                     }
                     var renderToolbar = function () {
                         $("#navBtnList").toolbar({
-                            name: "Home", linkbuttons: ['<a class="nav-link" href="#" name="veSchema">View Schema <span class="sr-only">(current)</span></a>',
-                                '<a class="nav-link" href="#" name="addtb">Add Table <span class="sr-only">(current)</span></a>',
+                            name: "", linkbuttons: ['<a class="nav-link " href="#" name="veSchema">View Schema <span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link active" href="#" name="addtb">Add Table <span class="sr-only">(current)</span></a>',
                                 '<a class="nav-link" name="rmtb" href="#">Remove</a>',
                                 '<a class="nav-link" name="vbTb" href="#">View Data</a>',
                                 '<a class="nav-link" name="csync" href="#">Sync</a>']
@@ -279,7 +285,7 @@
                         var dv = "";
                         $.each(data, function (i, d) {
                             dv = dv + "<h3><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "</a></h3>";
-                            dv = dv + "<div plc='cont' class='padd5' name='" + d.ClientID + "'></div>"
+                            dv = dv + "<div plc='cont'   class='padd5 plns' name='" + d.ClientID + "'></div>"
                             if (_opt.ClientID == "") {
                                 if (i == 0) {
                                     _opt.ClientID = d.ClientID;
@@ -299,6 +305,7 @@
                         var already_loaded = new Object();
                         $("#lftSchemacnt").accordion({
                             collapsible: true,
+                            heightStyle: "fill",
                             //active: false,
                             active: aindex,
                             //heightStyle: 'fill', // http://jqueryui.com/accordion/#fillspace  -- Just sets the height of the accordion to the height of it's parent container.  We need a way to change the height of the parent to that of the newly added content.
@@ -320,6 +327,7 @@
                                 }
                             }
                         });
+                        $("#lftSchemacnt").find("div[plc=cont]").css("overflow-x", "hidden !important");
                         getTableList(function (data) {
                             var itm = $("#lftSchemacnt").find("div[plc=cont]")[aindex];
                             renderTableList($(itm), data);
@@ -348,12 +356,12 @@
                     }
                     var renderView = function () {
                         $("#rghtbinfo").html("");
-                        $("#rghtbinfo").append('<div class="col-md-9"><div id = "rghTable" ></div ></div ><div class="col-md-3"><div id="rgfieldinfo"></div></div>');
+                        $("#rghtbinfo").append('<div class="col-md-8"><div id = "rghTable" ></div ></div ><div class="col-md-4"><div id="rgfieldinfo"></div></div>');
                     }
                     var render = function () {
                         $("#lftSchema").html("");
                         renderView();
-                        $("#lftSchema").append("<div id='lftSchemacnt'></div>")
+                        $("#lftSchema").append("<div id='lftSchemacnt' style='height:550px;'></div>")
                         renderToolbar();
                         getClientlist(function (data) {
                             renderClients(data);
@@ -670,7 +678,7 @@
                     var renderField = function (fid) {
                         //fieldname,fieldtype,length,isprimary,isnull,
                         $("#rgfieldinfo").html("");
-                        var fld = "<div class='float-label container'><div id='sfldinfo' class='row'>";
+                        var fld = "<div class='float-label '><div id='sfldinfo' class='row'>";
                         fld = fld + "<div id='tbfldName' class='col-md-12'></div>";
                         fld = fld + "<div id='tbfldType' class='col-md-12'></div>";
                         fld = fld + "</div>";
@@ -746,7 +754,7 @@
                         $("#saveaction").html("");
                         $("#saveaction").append(' <input type="button" id="btnSaveTable" class="btn  btn-primary" value="Accept Changes" />');
                         $("#saveaction").append('<input type = "button" id = "btnReverse" value = "Retract" class= "btn  btn-default" />');
-                        $("#" + _opt.plc).append("<div><div id='tbplc' class='float-label container'></div><div id='fldinfo' class='container'></div><div class='row' id='fddetail'></div></div>");
+                        $("#" + _opt.plc).append("<div><div id='tbplc' class='float-label '></div><div id='fldinfo' class=''></div><div class='row' id='fddetail'></div></div>");
                         if (_opt.TableID != "") {
                             getTable(function () {
                                 renderTable();

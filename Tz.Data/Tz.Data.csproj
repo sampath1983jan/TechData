@@ -48,6 +48,7 @@
     <Compile Include="AccountManager.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="ClientSever.cs" />
+    <Compile Include="DataScript.cs" />
     <Compile Include="Exception\TableException.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="Shared\DataBase.cs" />
@@ -65,6 +66,10 @@
     <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
       <Project>{6605498E-3BE2-4B50-AF67-D5A9084A5F00}</Project>
       <Name>Tech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tech.QScript\Tech.QScript.csproj">
+      <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
+      <Name>Tech.QScript</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

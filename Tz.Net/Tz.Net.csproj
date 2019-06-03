@@ -48,6 +48,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="ClientServer.cs" />
     <Compile Include="DataManager.cs" />
+    <Compile Include="DataScript.cs" />
     <Compile Include="Entity\Field.cs" />
     <Compile Include="Entity\Table.cs" />
     <Compile Include="INetImplimentor.cs" />
@@ -65,6 +66,10 @@
     <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
       <Project>{6605498E-3BE2-4B50-AF67-D5A9084A5F00}</Project>
       <Name>Tech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tech.QScript\Tech.QScript.csproj">
+      <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
+      <Name>Tech.QScript</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.Data\Tz.Data.csproj">
       <Project>{a25eb976-3db6-4de4-8ea6-5d33e6cb5867}</Project>

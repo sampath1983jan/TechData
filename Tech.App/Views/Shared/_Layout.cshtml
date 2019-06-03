@@ -21,20 +21,36 @@
         <div id="header">
             @*<i>=(^.^)= @ViewBag.Title</i>*@
             <span style="float:right; font-size:small">
+
                 @if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
-                    var identity = ((CustomPrincipal)HttpContext.Current.User);
-                    @Html.ActionLink("Home", "Index", "Home");
-                    @Html.ActionLink("Schema", "Schema", "Schema");
-                    @Html.ActionLink("Server", "Server", "Server");
-                    @Html.ActionLink("Clients", "Client", "Client");
-                    @Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
-                    @Html.ActionLink("Log out", "LogOut", "Authentication")
-                }
-            </span>
+                        var identity = ((CustomPrincipal)HttpContext.Current.User);
+    @:<nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-light">
+    @:<div class="navbar-collapse">
+        @:<ul class="navbar-nav">
+    @:<li class="nav-item active"><a class="nav-link " href="/Home/Index">Home</a></li>
+    @:<li class="nav-item"><a class="nav-link" href="/Schema/Schema">Schema</a></li>
+    @:<li class="nav-item"><a class="nav-link" href="/Server/Server">Server</a></li>
+    @:<li class="nav-item "><a class="nav-link" href="/Client/Client">Client</a></li>
+    @:<li class="nav-item "><a class="nav-link" href="/Schema/DataScript">Data Script</a></li>
+    @:<li class="nav-item"><a class="nav-link" href="/Authentication/LogOut">Log out</a></li>
+    @:<li class="nav-item"><a class="nav-link" href="/Authentication/LogOut">@Html.Label(string.Format("{0} {1}", identity.FirstName, identity.LastName))</a></li>
+@:</ul>
+    @:</div>
+                @:</nav>
+
+    @*@Html.ActionLink("Home", "Index", "Home");
+        @Html.ActionLink("Schema", "Schema", "Schema");
+        @Html.ActionLink("Server", "Server", "Server");
+        @Html.ActionLink("Clients", "Client", "Client");
+        @Html.ActionLink("Log out", "LogOut", "Authentication")*@
+    //@Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
+
+}
+</span>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
         <hr />
         <footer>
@@ -49,6 +65,12 @@
         var tbList = [];
         var clientid = "";
         $(document).ready(function () {
+            $("#navHeader").find("a").click(function () {
+                $("#navHeader").find("li").removeClass("active");
+                $(this).parent().addClass("active");
+            });
+            
+
             function bindTables(data) {
                 $("#tblist").html("");
                 $.each(data, function (i, d) {

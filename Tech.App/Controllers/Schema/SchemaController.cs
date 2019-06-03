@@ -16,6 +16,10 @@ namespace Tz.BackApp.Controllers.Schema
         {
             return View();
         }
+        public ActionResult DataScript()
+        {
+            return View();
+        }
         public ActionResult Schema() {
             return View();
         }
