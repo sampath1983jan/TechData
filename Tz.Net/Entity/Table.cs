@@ -13,6 +13,7 @@ namespace Tz.Net.Entity
         string Category { get; set; }
           List<IField> Fields { get; }
         string ServerID { get; set; }
+        string ClientID { get; set; }
     }
     /// <summary>
     /// 
@@ -23,6 +24,7 @@ namespace Tz.Net.Entity
         private string _tablename;
         private string _category;
         private string _serverID;
+        private string _clientID;
         private Data.Table dTable;
         private Data.Field dField;
 
@@ -43,8 +45,14 @@ namespace Tz.Net.Entity
         /// 
         /// </summary>
         public List<IField> Fields { get { return _fields; } }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string ServerID { get => _serverID; set => _serverID=value; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ClientID { get => _clientID; set => _clientID = value; }
 
         /// <summary>
         /// 
@@ -52,13 +60,15 @@ namespace Tz.Net.Entity
         public Table() {
             _fields = new List<IField>();
             dTable = new Data.Table();
+            _clientID = "";
         }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="tableid"></param>
-        public Table(string serverID,string tableid) {
+        public Table(string serverID,string tableid,string clientID) {
             _serverID = serverID;
+            _clientID = clientID;
             _tableid = tableid;
             _fields = new List<IField>();
             dTable = new Data.Table();
@@ -69,8 +79,9 @@ namespace Tz.Net.Entity
         /// </summary>
         /// <param name="tableName"></param>
         /// <param name="category"></param>
-        public Table(string serverID,string tableName, string category)
+        public Table(string serverID,string tableName, string category, string clientID)
         {
+            _clientID = clientID;
             _serverID = serverID;
             _tableid = "";
             _tablename = tableName;
@@ -94,15 +105,16 @@ namespace Tz.Net.Entity
         /// </summary>
         /// <param name="clientid"></param>
         /// <returns></returns>
-        public static List<Table> GetTables(string clientid) {
+        public static List<Table> GetTables(string clientid,string serverid) {
             var dTable = new Data.Table();
             DataTable dt = new DataTable();
-            dt = dTable.GetTables(clientid);
+            dt = dTable.GetTables(clientid,serverid);
             List<Table>ts                = dt.toList<Table>(new DataFieldMappings()               //  .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID")
                .Add(Tz.Data.TzAccount.Tables.TableID.Name, "TableID", true)
                   .Add(Tz.Data.TzAccount.Tables.TableName.Name, "TableName")
                 .Add(Tz.Data.TzAccount.Tables.Category.Name, "Category")
-                .Add(Tz.Data.TzAccount.Tables.ServerID.Name, "ClientID")                
+                .Add(Tz.Data.TzAccount.Tables.ServerID.Name, "ServerID")
+                .Add(Tz.Data.TzAccount.Tables.ClientID.Name, "ClientID")
                 , null, null);
             return ts;
         }
@@ -195,7 +207,7 @@ namespace Tz.Net.Entity
             }
             if (TableID == "")
             {
-                TableID = dTable.Save(this.ServerID, this.TableName, this.Category);
+                TableID = dTable.Save(this.ServerID, this.TableName, this.Category,this.ClientID);
                 if (TableID != "")
                 {
                     AcceptFieldChanges();

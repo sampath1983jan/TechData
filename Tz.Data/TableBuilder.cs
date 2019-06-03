@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,9 @@ namespace Tz.Data
         public int getFieldCount() {
             return this.PrimaryKey.Count + this.AlterColumns.Count + this.Columns.Count;
         }
+        public int getPrimaryFieldCount() {
+            return this.PrimaryKey.Count;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -128,6 +132,17 @@ namespace Tz.Data
             }            
             return this;
         }
+        public TableBuilder AddDropField(DBColumn c) {
+            if (IsFieldExist(c.Name))
+            {
+                this.Columns.Add(c);
+            }
+            else
+            {
+                throw new Exception.TableFieldException(this.Table, c.Name, "Field not exist");
+            }
+            return this;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -183,20 +198,28 @@ namespace Tz.Data
             try
             {
                 int r = db.ExecuteNonQuery(tb);
-                if (r > 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return true;
             }
             catch (System.Exception ex) {
                 throw new Exception.TableSchemaException(this.Table, fields, Exception.OperaitonType.dropfield, ex.Message);
             }
             
         } 
+
+        public bool DropPrimarykey()
+        {
+            string tb = "ALTER TABLE `" + base.Schema + "`.`" + Table + "`";            
+            tb = tb + " DROP PRIMARY KEY ";
+            try
+            {
+                int r = db.ExecuteNonQuery(tb);
+                return true;                
+            }
+            catch (System.Exception ex)
+            {
+                throw new Exception.TableSchemaException(this.Table, "", Exception.OperaitonType.addkey, ex.Message);
+            }
+        }
         /// <summary>
         /// change primary key
         /// </summary>
@@ -368,7 +391,11 @@ namespace Tz.Data
                 throw new Exception.TableException(this.Table, ex.Message, ex); ;
             }            
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="NewName"></param>
+        /// <returns></returns>
         public bool Rename(string NewName) {
             //ALTER TABLE old_table RENAME new_table;
             string query= "ALTER TABLE {0} RENAME {1}";
@@ -384,6 +411,9 @@ namespace Tz.Data
             }
             return true;
         }
+
+       
+
         /// <summary>
         /// 
         /// </summary>

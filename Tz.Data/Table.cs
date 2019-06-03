@@ -21,11 +21,14 @@ namespace Tz.Data
         /// 
         /// </summary>
         /// <returns></returns>
-        public DataTable GetTables(string clientid) {
+        public DataTable GetTables(string clientid,string serverid) {
             DBQuery select;
+            DBComparison client = DBComparison.Equal(DBField.Field(TzAccount.ClientServer.ClientID.Name), DBConst.String(clientid));
+            DBComparison server = DBComparison.Equal(DBField.Field(TzAccount.ClientServer.ServerID.Name), DBConst.String(serverid));
+
             DBConst dbclientid = DBConst.String(clientid);
             select = DBQuery.SelectAll(TzAccount.Tables.Table).From(TzAccount.Tables.Table)
-                  .WhereField(TzAccount.Tables.Table, TzAccount.Tables.ServerID.Name, Compare.Equals, dbclientid);
+                  .WhereAll(client, server);
             return db.GetDatatable(select);
         }
         /// <summary>
@@ -50,11 +53,12 @@ namespace Tz.Data
         /// <param name="tableCategory"></param>
         /// <returns></returns>
         public string Save(string serverID, string tableName,
-            string tableCategory)
+            string tableCategory,string clientID)
         {
             string a = Shared.generateID();
             DBConst dbTableid = DBConst.String(a);
             DBConst dbServerID = DBConst.String(serverID);
+            DBConst dbClientID = DBConst.String(clientID);
             DBConst dbtableName = DBConst.String(tableName);
             DBConst dbtableCategory = DBConst.String(tableCategory);
 
@@ -62,13 +66,14 @@ namespace Tz.Data
               TzAccount.Tables.TableID.Name,
               TzAccount.Tables.TableName.Name,
               TzAccount.Tables.Category.Name,
-              TzAccount.Tables.ServerID.Name
-              
+              TzAccount.Tables.ServerID.Name,
+              TzAccount.Tables.ClientID.Name
           ).Values(
               dbTableid,
               dbtableName,
               dbtableCategory,
-              dbServerID
+              dbServerID,
+              dbClientID
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -115,6 +120,28 @@ namespace Tz.Data
             }
 
         }
+        public int GetDataCount( string tb)
+        {
+            string dbname = base.Schema;
+            DBQuery totalRecord = DBQuery.SelectCount().From(dbname, tb);
+            int trecord = Convert.ToInt32(db.ExecuteScalar(totalRecord));
+            return trecord;
+        }
+
+        public System.Data.DataTable GetData(int currentPage, int PageSize, string tb)
+        {
+            System.Data.DataTable dt = new DataTable();
+            DBDatabase db = base.Database;
+            string dbname = base.Schema;
+            DBQuery totalRecord = DBQuery.SelectCount().From(dbname, tb);
+            int trecord = Convert.ToInt32(db.ExecuteScalar(totalRecord));
+            DBQuery record = DBQuery.SelectAll().From(dbname, tb).TopRange(currentPage * PageSize, PageSize);
+            var dtRecord = db.GetDatatable(record);
+            return dtRecord;
+        }
+
+        
+
         /// <summary>
         /// 
         /// </summary>

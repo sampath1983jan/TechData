@@ -2,9 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-
+using Tech.App.Models;
 namespace Tz.BackApp.Controllers.Schema
 {
     [CustomAuthorize(Roles = "Admin")]
@@ -25,12 +26,12 @@ namespace Tz.BackApp.Controllers.Schema
         /// <returns></returns>
         public JsonpResult GetTables(string clientid) {
             Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-           return new JsonpResult( Net.Entity.Table.GetTables(c.GetServer().ServerID));
+           return new JsonpResult( Net.Entity.Table.GetTables(clientid,c.GetServer().ServerID));
         }
 
         public JsonpResult GetTable(string clientid, string tableid) {
             Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-            Tz.Net.DataManager dataManager = new Net.DataManager(tableid,c.GetServer().ServerID);
+            Tz.Net.DataManager dataManager = new Net.DataManager(tableid,c.GetServer().ServerID,clientid);
             return new JsonpResult(dataManager.GetTable());
         }
 
@@ -51,7 +52,7 @@ namespace Tz.BackApp.Controllers.Schema
                
                 if (ModalTable.TableID == "")
                 {
-                    Tz.Net.DataManager dataManager = new Net.DataManager(c.GetServer().ServerID); 
+                    Tz.Net.DataManager dataManager = new Net.DataManager(c.GetServer().ServerID,clientid); 
                     dataManager.NewTable(ModalTable.TableName, ModalTable.Category);
                     foreach (Models.Field f in mFields)
                     {
@@ -68,7 +69,7 @@ namespace Tz.BackApp.Controllers.Schema
                     return new JsonpResult(dataManager.getTableID());
                 }
                 else {
-                    Tz.Net.DataManager dataManager = new Net.DataManager(ModalTable.TableID,c.GetServer().ServerID);
+                    Tz.Net.DataManager dataManager = new Net.DataManager(ModalTable.TableID,c.GetServer().ServerID,clientid);
                     if (ModalTable.TableName != "") {
                         if (dataManager.GetTable().TableName != ModalTable.TableName)
                         {
@@ -77,9 +78,9 @@ namespace Tz.BackApp.Controllers.Schema
                     }
                     
                     foreach (Models.Field f in mFields) {
-                        if (f.IsChanged)
+                        if (f.IsChanged || f.FieldID !="")
                         {
-                            dataManager.ChangeField(f.FieldID, f.FieldName, f.FieldType, f.Length, f.IsNullable); // alter table field info & new field name
+                            dataManager.ChangeField(f.FieldID, f.FieldName, f.FieldType, f.Length, f.IsNullable,f.IsPrimaryKey); // alter table field info & new field name
                         }
                         else {
                             if (f.IsPrimaryKey)
@@ -115,7 +116,7 @@ namespace Tz.BackApp.Controllers.Schema
             Tz.Net.ClientServer c = new Net.ClientServer(clientid);
             Tz.BackApp.Models.Table ModalTable;
             ModalTable = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Table>(tb);
-            Tz.Net.DataManager dataManager = new Net.DataManager(ModalTable.TableID,c.GetServer().ServerID);
+            Tz.Net.DataManager dataManager = new Net.DataManager(ModalTable.TableID,c.GetServer().ServerID,clientid);
             dataManager.Rename(ModalTable.TableName, ModalTable.Category);
                 return new JsonpResult(dataManager.getTableID());
             }
@@ -136,7 +137,7 @@ namespace Tz.BackApp.Controllers.Schema
         public JsonpResult AddField(string clientid, string btid, string fields) {
             try { 
             Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-            Tz.Net.DataManager dataManager = new Net.DataManager(btid, c.GetServer().ServerID);
+            Tz.Net.DataManager dataManager = new Net.DataManager(btid, c.GetServer().ServerID, clientid);
             Models.Field mField = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Field>(fields);
             if (mField.IsPrimaryKey)
             {
@@ -145,6 +146,7 @@ namespace Tz.BackApp.Controllers.Schema
             else {
                 dataManager.AddField(mField.FieldName, mField.FieldType, mField.Length, mField.IsNullable);
                 }
+                dataManager.AcceptChanges();
                 return new JsonpResult(dataManager.getTableID());
             }
             catch (System.Exception ex)
@@ -163,16 +165,17 @@ namespace Tz.BackApp.Controllers.Schema
             try
             {
                 Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-                Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID);
+                Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID, clientid);
                 Models.Field mField = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Field>(fields);
-                if (mField.IsPrimaryKey)
-                {
-                   // dataManager.AddPrimarykey(mField.FieldName, mField.FieldType, mField.Length);
-                }
-                else
-                {
-                    dataManager.ChangeField(mField.FieldID, mField.FieldName, mField.FieldType, mField.Length, mField.IsNullable, mField.NewFieldName);
-                }
+                //if (mField.IsPrimaryKey)
+                //{
+                //   // dataManager.AddPrimarykey(mField.FieldName, mField.FieldType, mField.Length);
+                //}
+                //else
+                //{
+                    dataManager.ChangeField(mField.FieldID, mField.FieldName, mField.FieldType, mField.Length, mField.IsNullable,mField.IsPrimaryKey, mField.NewFieldName);
+                    dataManager.AcceptChanges();
+               // }
                 return new JsonpResult(dataManager.getTableID());
             }
             catch (System.Exception ex)
@@ -191,7 +194,7 @@ namespace Tz.BackApp.Controllers.Schema
             try
             {
                 Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-                Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID);
+                Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID, clientid);
                 dataManager.Remove();
                 return new JsonpResult("true");
             }
@@ -200,6 +203,18 @@ namespace Tz.BackApp.Controllers.Schema
                 throw ex;
             }
         }
+
+        public JsonpResult GetData(int pageSize, int currentPage, string clientid, string tbid) {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+            Tz.Net.DataManager dataManager = new Net.DataManager(tbid, c.GetServer().ServerID, clientid);
+            dt= dataManager.GetData(currentPage, pageSize);
+            int trecord = dataManager.GetDataCount();
+
+            string dtr = DataResult.Create(dt, pageSize, currentPage, trecord);
+            return new JsonpResult(dtr);
+        }
+
         /// <summary>
         /// remove field from the table
         /// </summary>
@@ -211,7 +226,7 @@ namespace Tz.BackApp.Controllers.Schema
             try
             {
                 Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-                Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID);
+                Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID, clientid);
                 dataManager.RemoveField(fieldID);
                 return new JsonpResult("true");
             }
@@ -220,5 +235,24 @@ namespace Tz.BackApp.Controllers.Schema
                 throw ex;
             }
         }
+
+        public Task syncSchema(string clientid)
+        {
+            try
+            {
+                return Task.Run(() =>
+                {
+                     Net.DataManager.synSever(clientid);
+                });
+
+              
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        //syncSchema
     }
 }

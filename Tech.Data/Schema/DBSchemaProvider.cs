@@ -2388,17 +2388,24 @@ namespace Tech.Data.Schema
                         restrictions[i] = null;
                 }
             }
-
-            
-            DataTable data = con.GetSchema(collection.CollectionName, restrictions);
-            if (null != data)
+            try
             {
-                if (string.IsNullOrEmpty(data.TableName))
-                    data.TableName = collection.CollectionName;
+                DataTable data = con.GetSchema(collection.CollectionName, restrictions);
+                if (null != data)
+                {
+                    if (string.IsNullOrEmpty(data.TableName))
+                        data.TableName = collection.CollectionName;
 
-                WriteCollectionData(collection.CollectionName, restrictions, data);
+                    WriteCollectionData(collection.CollectionName, restrictions, data);
+                }
+                return data;
             }
-            return data;
+            catch (Exception ex) {
+
+            }
+            return null;
+            
+        
         }
 
         /// <summary>

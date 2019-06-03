@@ -96,6 +96,8 @@ namespace Tz.Data
            DBColumnFlags.PrimaryKey);
             public static readonly DBColumn ServerID = DBColumn.Column("ServerID", System.Data.DbType.String, 255,
           DBColumnFlags.Nullable);
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255,
+        DBColumnFlags.Nullable);
             public static readonly DBColumn TableName = DBColumn.Column("TableName", System.Data.DbType.String, 500,
            DBColumnFlags.Nullable);
             public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.String, 500,

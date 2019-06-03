@@ -131,7 +131,7 @@ namespace Tech.Console
             var fs = fields.Split(',');
             serverid = CreateServer();
             if (serverid != "") {
-                Tz.Net.DataManager dm = new Tz.Net.DataManager(serverid);
+                Tz.Net.DataManager dm = new Tz.Net.DataManager(serverid,"");
                 dm.NewTable(tablename, "sys");
                 foreach (string s in fs)
                 {
@@ -187,7 +187,7 @@ namespace Tech.Console
             var fs = fields.Split(',');
             //foreach (string s in fs)
             //{             
-                    dm.ChangeField(fs[0], fs[1], System.Data.DbType.Int32 , 100, true, fs[2]);
+                    dm.ChangeField(fs[0], fs[1], System.Data.DbType.Int32 , 100, true,false,"");
                 
             //}
             dm.AcceptChanges();
