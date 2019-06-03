@@ -291,7 +291,9 @@ namespace Tech.Data.MySqlClient
                 DataTable dt = ds.Tables.Add("ForeignKeys");
                 this.Database.PopulateDataSet(ds, cmd, LoadOption.OverwriteChanges, "ForeignKeys");
                 ds.AcceptChanges();
-                dt.WriteXml("C:\\SchemaOutput\\ForeignKeys" + fkref.Name + ".xml");
+                try {
+                    dt.WriteXml("C:\\SchemaOutput\\ForeignKeys" + fkref.Name + ".xml");
+                }catch (Exception ex) { }                
                 return dt;
             }
 
