@@ -9,7 +9,7 @@ using Tech.DataAccess;
 using Tech.DataAccess.Tables;
 using Tech.QScript.Syntax;
 using Tech.QScript;
-
+using MySql.Data.MySqlClient;
 
 namespace Tech.Console
 {
@@ -209,13 +209,30 @@ namespace Tech.Console
             System.Console.ReadLine();
         }
 
-        static void Main(string[] args) {
+        //static void Main(string[] args) {
+
+            //MySqlConnection c = new MySqlConnection("Server=talentozstagemysql.mysql.database.azure.com;Initial Catalog=demo1talentoz;Uid=adminstage@talentozstagemysql;Pwd=SMRmme123456*");
+            //try
+            //{
+            //    c.Open();
+            //}
+            //catch (Exception ex)
+            //{
+
+
+            //}
+            //finally {
+            //    c.Close();
+            //}
+            
+           
+
          //   string tabid, serverid;
           //      CreateTable(out tabid, out serverid);
         //    addColumn(tabid, serverid);
          //   AlterColumn("60c1e054e52e4cf5917a9a235d615f86755744925", "5a0601c9263240a98b16e4d68ec7bd3c986933058");
            // DropTable(tabid,serverid);
-              Setup();
+             // Setup();
            //CreateClient();
            //RemoveClient();
            // UpdateClient();
@@ -228,10 +245,10 @@ namespace Tech.Console
             //    PrintUser();
             //RemoveUser(CreateUser());
             //System.Console.ReadKey();
-        }
+        //}
 
-        //static void Main(string[] args)
-        //{
+         static void Main(string[] args)
+         {
 
 
 
@@ -333,17 +350,17 @@ namespace Tech.Console
 
         //        //program = program + ";data= case(data,PositionID:[equalto 124:welcome,else:dontcome],performance);";
 
-        //        //string a = "0";
-        //        //System.Console.WriteLine("Enter Logical value:");
-        //        string val = System.Console.ReadLine();
-        //        //System.Console.WriteLine("Enter a Value:");
-        //        //a = System.Console.ReadLine();
-        //        //System.Console.WriteLine("Enter b  Value:");
-        //        //string b = System.Console.ReadLine();
+        string a = "0";
+        System.Console.WriteLine("Enter Logical value:");
+                string val = System.Console.ReadLine();
+        System.Console.WriteLine("Enter a Value:");
+                a = System.Console.ReadLine();
+                System.Console.WriteLine("Enter b  Value:");
+                string b = System.Console.ReadLine();
 
-        //        //string program = "d:val; val="+ val+";d:a="+ a +";d:b="+ b +";d:k;" ;
-        //        //program = program + "; d:pe=if(mod("+a+","+b+"),'i am printing', 'i am not printing');";
-        //        //program = program + "; k=Expr(Expr([a] + [b]) * Expr([a] * [b]))";
+        string program = "d:val; val=" + val + ";d:a=" + a + ";d:b=" + b + ";d:k;";
+        program = program + "; d:pe=if(mod("+a+","+b+"),'i am printing', 'i am not printing');";
+                program = program + "; k=Expr([a] + [b]);";
 
         //        //124
         //        //string str = "fkdfdsfdflkdkfk@dfsdfjk72388389@kdkfkdfkkl@jkdjkfjd@jjjk@";
@@ -352,9 +369,9 @@ namespace Tech.Console
         //        //System.Console.WriteLine(str);
         //        //  System.Console.ReadKey();
         //        //  var program = "d:data=getdata(get[sys_User:UserID,Position:PositionID],from[sys_User,Position,Employee_Position],and[(sys_user:UserID equalto Employee_Position:UserID),(Position:PositionID equalto EmployeePosition:PositionID)])"; /*System.Console.ReadLine();   */
-        //        EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
-        //        QScriptStatement sq = new QScriptStatement(program, ev);
-        //        var res = sq.Evaluation();
+        EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+        QScriptStatement sq = new QScriptStatement(program, ev);
+        var res = sq.Evaluation();
         //        try
         //        {                    
         //            //for (int i = 0; i < res.Count; i++)
@@ -389,6 +406,6 @@ namespace Tech.Console
         //    //    var sourceCode = new SourceCode(program);
         //    //    var tokens = lexer.LexFile(sourceCode).ToArray();
         //    //}
-        //}
+         }
     }
 }

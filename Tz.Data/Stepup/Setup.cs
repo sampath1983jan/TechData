@@ -27,6 +27,7 @@ namespace Tz.Data
             DBQuery.Drop.Table(base.Schema, TzAccount.Tables.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.Field.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.ClientServer.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.DataScript.Table).IfExists(),
             };
             foreach (DBQuery q in all) {
                 try
@@ -185,6 +186,24 @@ namespace Tz.Data
                 create = DBQuery.Create.Table(base.Schema, TzAccount.ClientServer.Table)
                                         .Add(TzAccount.ClientServer.ClientID)
                                         .Add(TzAccount.ClientServer.ServerID);                                        
+                db.ExecuteNonQuery(create);
+            }
+            else
+            {
+                throw new System.Exception("'Client Server' table Name exist");
+            }
+        }
+
+        public void CreateDataScript() {
+            DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.DataScript.Table.ToLower()).FirstOrDefault();
+            if (table == null)
+            {
+                DBQuery create;
+                create = DBQuery.Create.Table(base.Schema, TzAccount.DataScript.Table)
+                                        .Add(TzAccount.DataScript.ScriptID)
+                                         .Add(TzAccount.DataScript.ScriptName)
+                                          .Add(TzAccount.DataScript.Category)
+                                        .Add(TzAccount.DataScript.Script);
                 db.ExecuteNonQuery(create);
             }
             else

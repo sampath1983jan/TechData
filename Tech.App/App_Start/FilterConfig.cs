@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using Tz.BackApp.Filters;
 
 namespace Tech.App
 {
@@ -7,7 +8,8 @@ namespace Tech.App
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+              filters.Add(new HandleErrorAttribute());
+           // filters.Add(new BasicAuthenticationAttribute());
         }
     }
 }

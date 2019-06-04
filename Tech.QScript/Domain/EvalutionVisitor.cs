@@ -307,7 +307,8 @@ namespace Tech.QScript
                     System.Data.DataTable dt = (System.Data.DataTable)element.GetSource();
                     if (dt.Rows.Count > 0)
                     {
-                        var s = dt.Rows[0].Field<string>(element.Name);
+                        var name = ((Fun)element).Arguments[0].FieldName;
+                        var s = dt.Rows[0].Field<string>(name);
                         result = new Result();
                         result.Value = s;
                     }

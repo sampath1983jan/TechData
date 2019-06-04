@@ -5,3 +5,223 @@
 
 <h2>Datasource</h2>
 
+<div id="Container" class="">
+
+</div>
+<div id="mkd"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {   
+            (function ($dScript) {
+                $dScript.DataScript = function (options) {
+                    defaults = {
+                        plc: "",
+                    }
+                    var _opt = $.extend({}, defaults, options);
+                    
+                    var scriptID = "";
+                    var Scripts = [];
+                    var renderView = function () {
+                        $("#" + _opt.plc).append("<div class='row'><div id='dlist' class='col-md-4 padd5l'></div><div id='ddetl' class='col-md-8'></div></div>");
+                        getList(function () {
+                            renderList("dlist");
+                            
+                            renderDetail("ddetl");
+                        });                        
+                    }
+                    var getList = function (onComplete) {
+                        $.ajax('/Schema/GetDataScripts',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: "",                              
+                                success: function (data, status, xhr) {   // success callback function                                   
+                                    Scripts = data;
+                                    onComplete();
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);                                    
+                                }
+                            });
+                    }
+                    var renderList = function (plc) {                        
+                            $("#" + plc).html("");
+                        //list-group
+                        var sq = "<ul class='nav flex-column nav-pills'>"
+                        $.each(Scripts, function (id, d) {
+                            var s = "";
+                            if (d.ScriptID == scriptID) {
+                                s = "active";
+                            }
+                            sq = sq + "<li><div style='cursor:pointer; position:absolute;left:90%;color:red;font-weight:bold' a='r' name='" + d.ScriptID + "'>X</div><a class='nav-link' href='#' name='" + d.ScriptID + "'>" + d.Name + "-" + d.Category + "</a></li>";
+                        });
+                        sq = sq + "</ul>"
+                        $("#" + plc).append(sq);
+                        $("#" + plc).find("div[a=r]").click(function () {
+                            var sid = $(this).attr("name");
+                            $("#mkd").dialogBox({
+                                id: 'wd',
+                                title: "",
+                                message: "Are you Sure,Do you want remove this script?",
+                                onAction: function () {
+                                    $("#mkd").dialogBox('hide');
+                                    remove(sid);
+                                },
+                                onCancel: function () {
+
+                                },
+                                type: 2,
+                                alertType: 3,
+                            })
+                            $("#mkd").dialogBox('show');
+
+                           
+
+                        })
+                        $("#" + plc).find("a").click(function () {
+                            $("#" + plc).find("a").removeClass("active");
+                            $(this).addClass("active");
+                            scriptID = $(this).attr("name");
+                            renderDetail("ddetl");
+                        })
+                    }             
+                    var remove = function(srid){
+                        scriptID = "";                        
+                        $.ajax('/Schema/RemoveDataScript',
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: { scriptID: srid},
+                                success: function (data, status, xhr) {   // success callback function                                                                      
+                                    render();
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                }
+                            });
+                    }
+                    var collectValue = function () {
+                        var sname = $("#dsName").Input("text");
+                        var scategory = $("#dsCateogry").Input("text");
+                        var script = $("#dsScript").Input("text");
+                        var s = {};
+                        s.scriptname = sname;
+                        s.category = scategory;
+                        s.script = script
+                        s.scriptid = scriptID;
+                        return s;
+                    }
+                    var saveScript = function () {
+                        var s = collectValue();
+                        var action = "";
+                        if (scriptID == "") {
+                            action = "SaveDataScript";
+                        } else {
+                            action = "UpdateDataScript";
+                        }
+                        $.ajax('/Schema/' + action,
+                            {
+                                type: "GET",
+                                dataType: 'jsonp', // type of response data
+                                data: s,
+                                success: function (data, status, xhr) {   // success callback function                                                                      
+                                    render();
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                    alert(errorMessage);
+                                }
+                            });
+                    }
+                    var renderDetail = function (plc) {
+                        $("#"+plc).html("");
+                        var vw = "<div class='row float-label'>";
+                        vw = vw + "     <div class='col-md-12' id='dsName'></div>";
+                        vw = vw + "     <div class='col-md-12' id='dsCateogry'></div>";
+                        vw = vw + "     <div class='col-md-12' id='dsScript'></div>";
+                        vw = vw + "<div class='row'>";
+                        vw = vw + '     <input type="button" id="btnSaveScript" value="Save" class="btn  btn-primary" style="float:left; width:45%" />';
+                        vw = vw + '     <input type="button" id="btnCancelScript" value="Cancel" class="btn  btn-default" style="float:left; width:45%" />';
+                        vw = vw + "</div>";
+                        vw = vw + "</div>";                        
+                        $("#" + plc).append(vw);
+                        $("#btnSaveScript").click(function () {
+                            saveScript()
+                        })
+                        var script = {
+                            Name: "",
+                            Script: "",
+                            Category: "",
+                            ScriptID: "",
+                        };
+                        $.each(Scripts, function (is,s) {
+                            if (scriptID == s.ScriptID) {
+                                script = s; 
+                            }
+                        })
+                        $("#" + plc).labelfields({
+                            items: [
+                                {
+                                label: "Script Name",
+                                field: {
+                                    id: "fddsname", 'note': "", enablefloating: false,
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": script.Name,
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                    id: 'dsName'
+                                },
+                                {
+                                label: "Category",
+                                field: {
+                                    id: "fddscategory", 'note': "",
+                                    limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": script.Category,
+                                    format: "hex", range: false, isRequired: true,
+                                },
+                                    id: 'dsCateogry'
+                                },
+                                {
+                                label: "Script",
+                                field:
+                                {
+                                    id: "fddsscript", 'note': "",
+                                    limit: false, maxlength: 50, inputType: 8,row:10, textType: 1, timeformat: 12, 'regexp': "", "text": script.Script,
+                                    format: "hex", range: true, isRequired: true,
+                                    date: {
+                                        datepickerType: 1,
+                                        timeformat: 12,
+                                        dateformat: "dd.mm.yyyy".toUpperCase()
+                                    },
+                                    autofill: {
+                                        type: "select",
+                                        allowCustomText: true
+                                    },
+                                    selectPicker: {
+                                        datasource: [],
+                                        displayField: "make_display",
+                                        valueField: "make_id",
+                                        selection: "multiple"
+                                    },
+                                    upload: {
+                                        fileExtension: ['doc', 'docx', 'txt'],
+                                        showPreview: true,
+                                        url: "/Security/Upload",
+                                        selection: 'multiple'
+                                    }
+                                }
+                                ,
+                                    id: 'dsScript'
+                            }                            
+                            ]
+                        })
+                    }
+                    var render = function () {
+                        $("#Container").html("");
+                        renderView();
+                    }
+                    render();
+                }
+            })($);        
+            var ds = new $.DataScript({
+                plc:"Container"
+            })
+        })
+
+    </script>

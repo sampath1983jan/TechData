@@ -5,41 +5,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <h2>Schema</h2>
 <style>
-    .selectable .ui-selecting {
-        background: #FECA40;
-          
-    }
-    .plns {
-        overflow-x:hidden !important;
-        overflow-y:auto !important;
-    }
-    .selectable .ui-selected {
-        background: #F39814;
-        color: white;
-    }
-
-    .selectable {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    .padd5l {
-        padding: 0px 10px 0px 10px !important;
-    }
-    .padd5 {
-        
-        padding:10px 0px 10px 0px !important;
-    }
-        .selectable li {
-         padding:8px 0px 8px 10px;
-        }
-        .selectable li a {
-            margin: 3px;
-            padding: 10px;
-            font-size: 14px;
-            height: 18px;
-        }
+   
 </style>
 <div class="padd5l">
     <div class="row">
@@ -142,7 +108,7 @@
                             }
                         });
                     }
-                    function RenderGrid(cpage) {
+                    var RenderGrid =function(cpage) {
                         $.ajax({
                             type: "POST",
                             url: "/schema/GetData",
@@ -771,29 +737,8 @@
                 }
 
             })($)
-
             var s = new $.Schema({});
-
-            //function getTable() {
-            //    //$.ajax('/Schema/Table',
-            //    //    {
-
-            //    //        dataType: 'jsonp', // type of response data
-            //    //        data: ({ tb: JSON.stringify({ TableID: "100", TableName: "sys_user", Category: "testing" }) }),
-            //    //        // timeout milliseconds
-            //    //        success: function (data, status, xhr) {   // success callback function
-
-            //    //            alert(data);
-            //    //        },
-            //    //        error: function (jqXhr, textStatus, errorMessage) { // error callback
-            //    //            alert(errorMessage);
-            //    //            //$('p').append('Error: ' + errorMessage);
-            //    //        }
-            //    //    });
-            //}
-
-
-            //getTable();
+          
         });
     </script>
 

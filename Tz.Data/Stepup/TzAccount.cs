@@ -120,6 +120,16 @@ namespace Tz.Data
             public static readonly DBColumn IsNullable = DBColumn.Column("IsNullable", System.Data.DbType.Boolean,
            DBColumnFlags.Nullable);
         }
+
+        public class DataScript
+        {
+            public const string Table = "cf_DataScript";
+            public static readonly DBColumn ScriptID = DBColumn.Column("ScriptID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+           public static readonly DBColumn ScriptName = DBColumn.Column("ScriptName", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn Script = DBColumn.Column("Script", System.Data.DbType.String , 655000, DBColumnFlags.Nullable);
+        }
+
         public class ClientServer
         {
             public const string Table = "cf_ClientServer";

@@ -98,6 +98,17 @@ namespace Tz.Net
                         throw ex;
                     }
                 }
+                try
+                {
+                    s.CreateDataScript();
+                }
+                catch (Exception ex)
+                {
+                    if (ex.Message.IndexOf("exist") == 0)
+                    {
+                        throw ex;
+                    }
+                }
             }
             catch (Exception ex) {
                 throw ex;

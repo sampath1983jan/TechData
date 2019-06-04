@@ -18,7 +18,8 @@
             //13-number range, 14.url,  15 color picker ,16 - yes/no,17 autextbox,19-combobox                           
             errorStyle: '',
             timeformat: 12,  //12,24  
-            text: "",
+			text: "",
+			row:5,
             dateformat: "dd/mm/yyyy",   // dd/mm/yyyy,mm/dd/yyyy, dd-mm-yyyy,mm-dd-yyyy, dd mmm yyyy,dd mmmm yyyy,dd/mm/yy,mm/dd/yy, dd-mm-yy,mm-dd-yy,dd.mm.yyyy,mm.dd.yyyy,
             stephours: 1,
             stepmin: 10,
@@ -265,9 +266,9 @@
                 }
                 var picker = $(self).find("input").daterangepicker(option);
 
-            } else if (prt.inputType === 8) {
-                $(self).append(tmp);
-                
+			}
+			else if (prt.inputType === 8) {
+                $(self).append(tmp);                
             } else if (prt.inputType === 12) {
                 $(self).append(tmp);
                 $(self).find("input").data('parent', self);
@@ -455,12 +456,35 @@
                 if (prt.limit === true) {
 					hlp = hlp + " " + "(Length min-" + prt.min + " max-" + prt.max + ")";
                 }                    
-                tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + hlp + '</small>';
+                tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + hlp + '</small>';
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
                 
-            } else if (prt.inputType === 7 || prt.inputType === 9) { // datepicker,datetimepicker
+			}
+			else if (prt.inputType === 8) {
+				tmp = ' <div data-toggle="tooltip" title="this is required field">';
+				 var db = "";
+				if (prt.enabletooltip === false) {
+					tmp = "";
+				}
+				if (prt.databind !== "") {
+					db = "data-bind='" + prt.databind + "'";
+				}
+				tmp = tmp + "<textarea  " + db + " rows='"+ prt.row +"' id='" + prt.id + "' class='form-control' placeholder=''/>";
+
+				if (prt.note !== "") {
+					hlp = prt.note;
+				}
+				if (prt.limit === true) {
+					hlp = hlp + " " + "(Length min-" + prt.min + " max-" + prt.max + ")";
+				}
+				tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + hlp + '</small>';
+				if (prt.enabletooltip === true) {
+					tmp = tmp + "</div>";
+				}
+			}
+			else if (prt.inputType === 7 || prt.inputType === 9) { // datepicker,datetimepicker
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
@@ -477,12 +501,13 @@
                 }
                 //if (prt.limit === true) {
                 hlp = hlp + " " + "Date Format(" + prt.date.dateformat.toUpperCase() + ")";
-                tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + hlp + '</small>';
+                tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + hlp + '</small>';
                 //}
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
-            } else if (prt.inputType === 10) {
+			}
+			else if (prt.inputType === 10) {
 
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
@@ -494,12 +519,13 @@
                 }
                 tmp = tmp + "<input  " + db + " type='checkbox'  id='" + prt.id +"'  class='form-control option-input checkbox' placeholder=''/>";
                 if (prt.note != "") {
-                    tmp = tmp + '<br/><small id="emailHelp" class="form-text text-muted">' + prt.note + '</small>';
+                    tmp = tmp + '<br/><small id="emailHelp" class="form-text help-text-muted">' + prt.note + '</small>';
                 }
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
-            } else if (prt.inputType === 11) {
+			}
+			else if (prt.inputType === 11) {
                 var nm = "";
                 if (prt.name !== "") {
                     nm = "name='" + prt.name + "'";
@@ -514,12 +540,13 @@
                 }
                 tmp = tmp + "<input  " + db + " type='radio' " + nm + " id='" + prt.id +"'  class='form-control option-input radio' placeholder=''/>";                
                 if (prt.note !== "") {
-                    tmp = tmp + '<br/><small id="emailHelp" class="form-text text-muted">' + prt.note + '</small>';
+                    tmp = tmp + '<br/><small id="emailHelp" class="form-text help-text-muted">' + prt.note + '</small>';
                 }
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
-            } else if (prt.inputType == 12) {
+			}
+			else if (prt.inputType == 12) {
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
@@ -541,7 +568,7 @@
                 }
                 hlp = hlp + "(Upload format:" + prt.upload.fileExtension.join(",") + ")";
                
-                tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + hlp + '</small>';
+                tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + hlp + '</small>';
                 if (prt.upload.showPreview == true) {
                     tmp = tmp + "<ul id='file_list' class='list' style='display: none;'> </ul>";
                 }
@@ -549,7 +576,8 @@
                     tmp = tmp + "</div>";
                 }
 
-            } else if(prt.inputType === 15) {
+			}
+			else if (prt.inputType === 15) {
                 tmp = ' <div data-toggle="tooltip " title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
@@ -563,7 +591,7 @@
                 tmp = tmp + '<span class="input-group-addon"><i></i></span>';
                 tmp = tmp + "</div>";
                 if (prt.note != "") {
-                    tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + prt.note + '</small>';
+                    tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + prt.note + '</small>';
                 }
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
@@ -580,12 +608,13 @@
                 }
                 tmp = tmp + "<label class='switch' style='margin-bottom:0px !important'><input id='" + prt.id +"'  " + db + " type='checkbox' class='form-control' /> <span class='slider round'></span></label>";
                 if (prt.note !== "") {
-                    tmp = tmp + '</br><small id="emailHelp" class="form-text text-muted">' + prt.note + '</small>';
+                    tmp = tmp + '</br><small id="emailHelp" class="form-text help-text-muted">' + prt.note + '</small>';
                 }
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
-            } else if (prt.inputType === 17) {//selection
+			}
+			else if (prt.inputType === 17) {//selection
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
@@ -613,12 +642,13 @@
                 });
                 tmp = tmp + "</select>";
                 if (prt.note !== "") {
-                    tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + prt.note + '</small>';
+                    tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + prt.note + '</small>';
                 }
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
                 }
-            } else if (prt.inputType === 19) {
+			}
+			else if (prt.inputType === 19) {
                 tmp = ' <div data-toggle="tooltip" title="this is required field">';
                 if (prt.enabletooltip === false) {
                     tmp = "";
@@ -680,7 +710,7 @@
                 }                
                  
                 if (prt.note !== "") {
-                    tmp = tmp + '<small id="emailHelp" class="form-text text-muted">' + prt.note + '</small>';
+                    tmp = tmp + '<small id="emailHelp" class="form-text help-text-muted">' + prt.note + '</small>';
                 }
                 if (prt.enabletooltip === true) {
                     tmp = tmp + "</div>";
@@ -725,18 +755,19 @@
             var cthis = this;
             $(cthis).find("[data-toggle=tooltip]").attr("title", "");
         },
-        _isValid: function () {
-            var cthis = this;
-                    //1-text,2-number,3-decimal,4-alphaNumber,5-timeformat,6-email, //7-datepicker, 9-datetimepicker, 10-checkbox, 11-radio, 12-fileupload,
-                //13-number range, 14.url,  15 color picker ,16 - yes/no,17 autextbox,19-combobox
-            var o = $(cthis).data("c_textbox");            
-            var v = methods.text.call(cthis);
-            if (o.inputType === 1 ||
-                o.inputType === 2 ||
-                o.inputType === 3 ||
-                o.inputType === 4 ||
-                o.inputType === 6 ||
-                o.inputType === 14) {                
+		_isValid: function () {
+			var cthis = this;
+			//1-text,2-number,3-decimal,4-alphaNumber,5-timeformat,6-email, //7-datepicker, 9-datetimepicker, 10-checkbox, 11-radio, 12-fileupload,
+			//13-number range, 14.url,  15 color picker ,16 - yes/no,17 autextbox,19-combobox
+			var o = $(cthis).data("c_textbox");
+			var v = methods.text.call(cthis);
+			if (o.inputType === 1 ||
+				o.inputType === 2 ||
+				o.inputType === 3 ||
+				o.inputType === 4 ||
+				o.inputType === 6 ||
+				o.inputType === 14 ||
+				o.inputType === 8) {                
                 if (o.isRequired === true) {
                     if (v === "") {
                         return true;
@@ -744,7 +775,10 @@
                 }                
                 if (o.limit === true) {
                     var l = "";
-                    if (o.inputType === 1 || o.inputType === 4 || o.inputType === 6 || o.inputType === 14) {
+					if (o.inputType === 1 ||
+						o.inputType === 4 ||
+						o.inputType === 6 ||
+						o.inputType === 14) {
                         l = v.length;
                     } else if (o.inputType === 2 || o.inputType === 3) {
                         l = parseFloat(l);
@@ -853,7 +887,14 @@
                         methods._showError.call(cthis, "Maximum  " + o.max + " files to upload");
                     }
                 }
-            }
+			}
+			else if (o.inputType === 8) {
+				if (o.limit === true) {
+					if (v.length > o.max) {
+						methods._showError.call(cthis, "Maximum you can enter only" + o.max);
+					}
+				}
+			}
             else if (o.inputType === 13) {
                 if (o.isRequired === true) {
                     if (v === "") {
@@ -923,14 +964,16 @@
                 o.text = val;
                 //1-text,2-number,3-decimal,4-alphaNumber,5-timeformat,6-email, //7-datepicker, 9-datetimepicker, 10-checkbox, 11-radio, 12-fileupload,
                 //13-number range, 14.url,  15 color picker ,16 - yes/no,17 autextbox,19-combobox    
-                if (o.inputType === 1 ||
-                    o.inputType === 2 ||
-                    o.inputType === 3 ||
-                    o.inputType === 4 ||
-                    o.inputType === 6 ||
-                    o.inputType === 14) {
-                    $(this).find("input").val(val);
-                }
+				if (o.inputType === 1 ||
+					o.inputType === 2 ||
+					o.inputType === 3 ||
+					o.inputType === 4 ||
+					o.inputType === 6 ||
+					o.inputType === 14) {
+					$(this).find("input").val(val);
+				} else if (o.inputType === 8) {
+					$(this).find("textarea").val(val);
+				}
                 else if (o.inputType === 13) {
                     $(this).find("input").bootstrapSlider('setValue', val);
                 }
@@ -1046,9 +1089,13 @@
                     o.inputType === 3 ||
                     o.inputType === 4 ||
                     o.inputType === 6 ||
-                    o.inputType === 14) {
-                    return $(this).find("input").val();
-                } else if (o.inputType === 5) {
+					o.inputType === 14 
+					) {
+					return $(this).find("input").val();
+				} else if (o.inputType === 8) {
+					return $(this).find("textarea").val();
+				}
+				else if (o.inputType === 5) {
                     return $(this).find("input[class=form-control]").timepicki("getValue");
                 }
                 else if (o.inputType === 7 || o.inputType === 9) {
@@ -1897,7 +1944,7 @@
     $.labelfields = {
         defaults: {
             items: [{
-                label: "",
+				label: "",				 
                 field: {},
                 help: "",
                 format: "",
@@ -1916,20 +1963,43 @@
 				_options.items.push(settings);
 				_options.template = $.labelfields.defaults.template;
 			});
-
+			//$(self).addClass("float-label");
 			//var _options = $.extend(true, options || {}, $.labelfields.defaults);
             $.each(_options.items, function (jk, ks) {
                 ks.field.enabletooltip = false;               
 				$("#" + ks.id).Input(ks.field);
 				$("#" + ks.id).Input("text", ks.field.text);
-                $($("#" + ks.id).find("input")[0]).parent().addClass("control");
-                $("#" + ks.id).find("input").attr("placeholder", ks.label);
-                $("#" + ks.id).find("input").removeClass("form-control");
-                $("#" + ks.id).find("input").prop('required', true);
-                //$("#" + ks.id).find('small').remove();
-                $($("#" + ks.id).find("input")[0]).after("<label for=" + ks.field.id + ">" + ks.label + "</label>");
+				$($("#" + ks.id).find("input")[0]).parent().addClass("control");
+				$("#" + ks.id).addClass("is-floating-label");
+				//$("#" + ks.id).find("input").attr("placeholder", ks.label);
+				//$("#" + ks.id).find("textarea").attr("placeholder", ks.label);
+				//$("#" + ks.id).find("input").removeClass("form-control");
+
+				$("#" + ks.id).find("input").prop('required', true);
+				$("#" + ks.id).find("textarea").prop('required', true);
+				//$("#" + ks.id).find('small').remove();
+				$($("#" + ks.id).find("input")[0]).before("<label for=" + ks.field.id + ">" + ks.label + "</label>");
+				$($("#" + ks.id).find("textarea")[0]).before("<label for=" + ks.field.id + ">" + ks.label + "</label>");
+				if (ks.field.enablefloating == undefined) {
+					ks.field.enablefloating = true;
+				}
+				if (ks.field.enablefloating === true) {
+					$("#" + ks.id).find("textarea").on('focus blur', function (e) {
+						$(this).parents('.is-floating-label').toggleClass('is-focused', (e.type === 'focus' || this.value.length > 0));
+					}).trigger('blur');
+
+					$("#" + ks.id).find("input").on('focus blur', function (e) {
+						$(this).parents('.is-floating-label').toggleClass('is-focused', (e.type === 'focus' || this.value.length > 0));
+					}).trigger('blur');
+				} else {
+					$("#" + ks.id).addClass("is-focused");
+				}
+				
             });            
-            self.data('lblfield', $.extend({}, _options, { initialized: true, waiting: false }));
+			self.data('lblfield', $.extend({}, _options, { initialized: true, waiting: false }));
+			//$(this).parents('.is-floating-label').find("label").css("opacity", "0");
+		
+			
         }
     };
     $.fn.labelfields = function (method) {
@@ -2558,6 +2628,7 @@ $.getUniqueArray = function (arr, uniqueField) {
     uniArray.all = all;
     return uniArray;
 };
+
 
 
 

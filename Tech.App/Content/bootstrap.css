@@ -10690,7 +10690,7 @@ body {
     margin: auto;
 }*/
 
-.float-label .control {
+/*.float-label .control {
     float: left;
     position: relative;
     width: 100%;
@@ -10756,7 +10756,44 @@ body {
 .float-label input:focus + label,
 .float-label textarea:focus + label {
     color: #337ab7;
+}*/
+
+
+
+/* 
+ * Floating label styles
+ * Based on http://jsfiddle.net/RyanWalters/z9ymd852/
+ */
+.is-floating-label {
+    position: relative;
+    margin-bottom: 15px;
+   margin-top:20px;
+   
 }
+
+    .is-floating-label input {
+        /*position: absolute;*/
+        left: 0;       
+        background-color: transparent;
+    }
+
+    .is-floating-label label {
+        opacity: 0.8;
+        margin-left: 10px;
+        margin-top: 10px;
+        pointer-events: none;
+        position: absolute;
+
+        transform: translate3d(0, 0, 0) scale(1);
+        transform-origin: left top;
+        transition: 100ms;
+        font-size: 14px;
+    }
+
+    .is-floating-label.is-focused label {
+        color: #007bff;
+        transform: translateY(-40px) scale(1);
+    }
 
 
 
