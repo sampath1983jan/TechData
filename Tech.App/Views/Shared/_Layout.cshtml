@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/appstyle")
@@ -12,7 +14,10 @@
     @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/controljs")
+    
+    @*<script src="~/Scripts/WebChat.js"></script>*@
     @RenderSection("scripts", required: false)
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top"></div>
@@ -24,41 +29,50 @@
 
                 @if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
-                        var identity = ((CustomPrincipal)HttpContext.Current.User);
-    @:<nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-light">
-    @:<div class="navbar-collapse">
-        @:<ul class="navbar-nav">
-    @:<li class="nav-item active"><a class="nav-link " href="/Home/Index">Home</a></li>
-    @:<li class="nav-item"><a class="nav-link" href="/Schema/Schema">Schema</a></li>
-    @:<li class="nav-item"><a class="nav-link" href="/Server/Server">Server</a></li>
-    @:<li class="nav-item "><a class="nav-link" href="/Client/Client">Client</a></li>
-    @:<li class="nav-item "><a class="nav-link" href="/Schema/DataScript">Data Script</a></li>
-    @:<li class="nav-item"><a class="nav-link" href="/Authentication/LogOut">Log out</a></li>
-    @:<li class="nav-item"><a class="nav-link" href="/Authentication/LogOut">@Html.Label(string.Format("{0} {1}", identity.FirstName, identity.LastName))</a></li>
-@:</ul>
-    @:</div>
-                @:</nav>
+                    var identity = ((CustomPrincipal)HttpContext.Current.User);
+                    @:<nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-light">
+                        @:<div class="navbar-collapse">
+                            @:<ul class="navbar-nav">
+                                @:<li class="nav-item active"><a class="nav-link " href="/Home/Index">Home</a></li>
+                                @:<li class="nav-item"><a class="nav-link" href="/Schema/Schema">Schema</a></li>
+                                @:<li class="nav-item"><a class="nav-link" href="/Server/Server">Server</a></li>
+                                @:<li class="nav-item "><a class="nav-link" href="/Client/Client">Client</a></li>
+                                @:<li class="nav-item "><a class="nav-link" href="/Schema/DataScript">Data Script</a></li>
+                                @:<li class="nav-item"><a class="nav-link" href="/Authentication/LogOut">Log out</a></li>
+                                @:<li class="nav-item"><a class="nav-link" href="/Authentication/LogOut">@Html.Label(string.Format("{0} {1}", identity.FirstName, identity.LastName))</a></li>
+                            @:</ul>
+                        @:</div>
+                    @:</nav>
 
-    @*@Html.ActionLink("Home", "Index", "Home");
-        @Html.ActionLink("Schema", "Schema", "Schema");
-        @Html.ActionLink("Server", "Server", "Server");
-        @Html.ActionLink("Clients", "Client", "Client");
-        @Html.ActionLink("Log out", "LogOut", "Authentication")*@
-    //@Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
 
-}
-</span>
+
+
+                    @*@Html.ActionLink("Home", "Index", "Home");
+                        @Html.ActionLink("Schema", "Schema", "Schema");
+                        @Html.ActionLink("Server", "Server", "Server");
+                        @Html.ActionLink("Clients", "Client", "Client");
+                        @Html.ActionLink("Log out", "LogOut", "Authentication")*@
+                    //@Html.Label(string.Format("Welcome {0} {1}", identity.FirstName, identity.LastName))
+
+                }
+            </span>
         </div>
     </div>
+
     <div class="body-content">
         @RenderBody()
         <hr />
+
+
+
         <footer>
             <p>&copy; @DateTime.Now.Year</p>
         </footer>
     </div>
 
- 
+   
+
+
     <script type="text/javascript">
         var table = "";
         var currentPage = 0;
@@ -69,7 +83,7 @@
                 $("#navHeader").find("li").removeClass("active");
                 $(this).parent().addClass("active");
             });
-            
+
 
             function bindTables(data) {
                 $("#tblist").html("");
@@ -83,32 +97,32 @@
                 })
             }
             renderClients = function () {
-            //    function loadClients() {
-                    $.ajax('/Client/Gets',
-                        {
-                            type: "GET",
-                            dataType: 'jsonp', // type of response data
-                            data: "",
-                            // timeout milliseconds
-                            success: function (data, status, xhr) {   // success callback function                        
-                                $("#clientlist").html("");
-                                var dv = "<div class='row'>"
-                                $.each(data, function (i, d) {
-                                    dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";
-                                })
-                                dv = dv + "</div>"
-                                $("#clientlist").append(dv);
-                                $("#clientlist").find("a").click(function () {
-                                    clientid = $(this).attr("name");
-                                    renderTables();
-                                })
-                            },
-                            error: function (jqXhr, textStatus, errorMessage) { // error callback 
-                                alert(errorMessage);
-                                //$('p').append('Error: ' + errorMessage);
-                            }
-                        });
-               // }        
+                //    function loadClients() {
+                $.ajax('/Client/Gets',
+                    {
+                        type: "GET",
+                        dataType: 'jsonp', // type of response data
+                        data: "",
+                        // timeout milliseconds
+                        success: function (data, status, xhr) {   // success callback function
+                            $("#clientlist").html("");
+                            var dv = "<div class='row'>"
+                            $.each(data, function (i, d) {
+                                dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";
+                            })
+                            dv = dv + "</div>"
+                            $("#clientlist").append(dv);
+                            $("#clientlist").find("a").click(function () {
+                                clientid = $(this).attr("name");
+                                renderTables();
+                            })
+                        },
+                        error: function (jqXhr, textStatus, errorMessage) { // error callback
+                            alert(errorMessage);
+                            //$('p').append('Error: ' + errorMessage);
+                        }
+                    });
+                // }
             }
             renderTables = function () {
 
@@ -128,7 +142,7 @@
                     }
                 });
             }
-            
+
             $("#txtSearch").keyup(function () {
                 var val = $(this).val();
                 if (val == "") {
@@ -230,6 +244,49 @@
                 });
             }
             renderClients();
+
+      
+
+            //window.WebChat.renderWebChat({
+            //            directLine: window.WebChat.createDirectLine({
+            //                token: "y0qs3BIyoLE.CRrz91tTYwaror0MIJbaqZEe7OxoGmGjyZUvShqBQdQ"
+            //            }), userID: 'YOUR_USER_ID',
+            //    username: 'Web Chat User',
+            //    locale: 'en-US',
+            //    botAvatarInitials: 'WC',
+            //    userAvatarInitials: 'WW'
+            //}, document.getElementById('webchat'));
+
+
+            //window.fetch('https://elizaadevt.azurewebsites.net/directline/token', { method: 'POST' })
+            //    .then(function (res) {
+            //        return res.json();
+            //    })
+            //    .then(function (json) {
+            //        const token = json.token;
+            //        window.WebChat.renderWebChat({
+            //            directLine: window.WebChat.createDirectLine({
+            //                token: token
+            //            })
+            //        }, document.getElementById('webchat'));
+            //        document.querySelector('#webchat > *').focus();
+            //    });
+
+            //(async function () {
+            //    // In this demo, we are using Direct Line token from MockBot.
+            //    // To talk to your bot, you should use the token exchanged using your Direct Line secret.
+            //    // You should never put the Direct Line secret in the browser or client app.
+            //    // https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication
+
+            //    const res = await fetch('https://elizaadevt.azurewebsites.net/directline/token', { method: 'POST' });
+            //    const { token } = await res.json();
+
+            //    window.WebChat.renderWebChat({
+            //        directLine: window.WebChat.createDirectLine({ token })
+            //    }, document.getElementById('webchat'));
+
+            //    document.querySelector('#webchat > *').focus();
+            //})().catch(err => console.error(err));
 
             //$("#nCard").namecard({
             //    title: "personal information",

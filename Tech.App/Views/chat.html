@@ -1,0 +1,169 @@
+﻿
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0
+        }
+        .header {
+            padding:10px;
+            border-bottom:2px solid #ede8e8;
+        }
+
+        .title {
+            font-size:22px;            
+            color:#605d60
+        }
+            .title small {
+                font-size:12px;
+                color:#ff6a00
+            }
+            .open-button {
+                background-color: #fff;
+                color: white;
+                /*padding: 16px 20px;*/
+                border: none;
+                cursor: pointer;
+                opacity: 0.8;
+                position: fixed;
+                bottom: 23px;
+                right: 28px;
+                width: 70px;
+                height: 70px;
+            }
+
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            width: 400px;
+            overflow:hidden;
+
+            height: 600px;
+
+            -webkit-box-shadow: -5px -3px 13px -5px rgba(201,195,201,1);
+            -moz-box-shadow: -5px -3px 13px -5px rgba(201,195,201,1);
+            box-shadow: -5px -3px 13px -5px rgba(201,195,201,1);
+        }
+
+
+        #webchat {
+            /*margin: 10px;
+            position: fixed;
+            bottom: 30px;
+            right: 10px;
+            z-index: 1000000;  width: 100%;*/
+            height: 90%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat-es5.js"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                url: "https://directline.botframework.com/v3/directline/tokens/generate",
+                data: "",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', "Bearer y0qs3BIyoLE.CRrz91tTYwaror0MIJbaqZEe7OxoGmGjyZUvShqBQdQ");
+                },
+                success: function (data) {
+                    const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
+                        if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+                            dispatch({ type: 'WEB_CHAT/SEND_MESSAGE', payload: { text: '' } });
+                        }
+                        return next(action);
+                    });
+                    window.WebChat.renderWebChat({
+                        directLine: window.WebChat.createDirectLine({
+                            token: data.token,
+                        }),
+                        userID: 'YOUR_USER_ID',
+                        username: 'Web Chat User',
+                        locale: 'en-US',
+                        botAvatarInitials: 'Elizaa',
+                        userAvatarInitials: 'SK',
+                        // Web Chat will send a typing activity, on behalf of the user, when "sendTypingIndicator" is set to true.
+                        // The typing indicator will be sent when the send box by any means, including speech.
+                        sendTypingIndicator: true,
+                        // The following code is added for demo purpose only.
+                        store
+                    }, document.getElementById('webchat'));
+                    document.querySelector('#webchat > *').focus();
+                },
+                error: function () {
+                    alert("Error occured!!")
+                }
+            });
+            $('#webchat').bind("DOMSubtreeModified", function () {
+                
+                $(".css-1dgbgmu").css("background-color", "red");
+                $(".css-1dgbgmu.from-user").css("background-color", "green");
+            });
+            
+
+            function openchatbot() {                
+                
+            }
+            $("#ctWindowClose").click(function () {
+                document.getElementById("popupwindow").style.display = "none";
+            })
+            $(".open-button").on('click',
+                function () {
+                    document.getElementById("popupwindow").style.display = "block";
+
+                });
+            $(".close-icon").on('click',
+                function () {
+                    $(".wc-chatview-panel ").removeClass("minimizebot");
+                    $(".wc-chatview-panel ").removeClass("maximizebot");
+                    $(".wc-chatview-panel").css({ 'bottom': '-500px', 'display': 'none' });
+                });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="popupwindow" class="chat-popup">
+        <div class="row header" >
+
+            <div class="col-md-11">
+                <div class="title">Elizaa <small>beta</small></div>
+            </div>
+            <div class="col-md-1">
+                <button type="button" id="ctWindowClose" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div id="webchat" role="main" class=""></div>
+
+
+    </div>
+
+    <img src="https://cdn4.iconfinder.com/data/icons/keynote-and-powerpoint-icons/256/Messages-256.png" class="open-button"/>
+    <!--<img src="https://i.stack.imgur.com/RD7i4.png" class="open-button" />-->
+    <!--<img src="https://cdn3.iconfinder.com/data/icons/seo-and-e-commerce/256/seo_social_engagement-256.png" class="open-button" />-->
+
+</body>
+</html>

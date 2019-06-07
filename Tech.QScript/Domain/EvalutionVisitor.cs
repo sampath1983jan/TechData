@@ -308,7 +308,7 @@ namespace Tech.QScript
                     if (dt.Rows.Count > 0)
                     {
                         var name = ((Fun)element).Arguments[0].FieldName;
-                        var s = dt.Rows[0].Field<string>(name);
+                        var s = dt.Rows[0][name];
                         result = new Result();
                         result.Value = s;
                     }
@@ -322,6 +322,7 @@ namespace Tech.QScript
                     if (dt.Rows.Count > 0)
                     {
                         var name = ((Fun)element).Arguments[0].FieldName;
+                    Type type=     dt.Columns[name].DataType; 
                         var selectedColumn = string.Join(",", dt.AsEnumerable().Select(s => s.Field<string>(name)).ToArray());
                         result = new Result();
                         result.Value = selectedColumn;

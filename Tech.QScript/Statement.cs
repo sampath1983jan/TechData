@@ -98,7 +98,7 @@ namespace Tech.QScript
             Result.AddProperty(name, val);
         }
         private void Compile(dynamic c) {
-            if (c.Catagory == Syntax.SyntaxCatagory.Declaration)
+            if (c.Catagory == Syntax.SyntaxCatagory.Declaration )
             {
                 var v = new EvalutionVisitor();
                 c.Accept(v, _evp);
