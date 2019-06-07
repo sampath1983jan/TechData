@@ -94,10 +94,12 @@
                         }
                         return next(action);
                     });
+                    var dl = window.WebChat.createDirectLine({
+                        token: data.token,
+                    });
+
                     window.WebChat.renderWebChat({
-                        directLine: window.WebChat.createDirectLine({
-                            token: data.token,
-                        }),
+                        directLine: dl,
                         userID: 'YOUR_USER_ID',
                         username: 'Web Chat User',
                         locale: 'en-US',
@@ -110,6 +112,26 @@
                         store
                     }, document.getElementById('webchat'));
                     document.querySelector('#webchat > *').focus();
+
+                    var activity = {
+                        from: {
+                            id: "userId",
+                            name: "userName"
+                        },
+                        name: 'startConversation',
+                        type: 'event',
+                        value: '',
+                        channelData: {
+                            "personId": "userId",
+                            "environment": window.location.host
+                        }
+                    };
+                    dl.postActivity(activity).subscribe(function (id) {
+                        if (console) {
+                            console.log('"trigger requestWelcomeDialog" sent');
+                        }
+                    });
+
                 },
                 error: function () {
                     alert("Error occured!!")
