@@ -28,6 +28,7 @@ namespace Tz.Data
             DBQuery.Drop.Table(base.Schema, TzAccount.Field.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.ClientServer.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.DataScript.Table).IfExists(),
+            DBQuery.Drop.Table(base.Schema, TzAccount.ScriptIntend.Table).IfExists(),
             };
             foreach (DBQuery q in all) {
                 try
@@ -211,7 +212,24 @@ namespace Tz.Data
                 throw new System.Exception("'Client Server' table Name exist");
             }
         }
-
+        public void CreateScriptIntend()
+        {
+            DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.ScriptIntend.Table.ToLower()).FirstOrDefault();
+            if (table == null)
+            {
+                DBQuery create;
+                create = DBQuery.Create.Table(base.Schema, TzAccount.ScriptIntend.Table)
+                                        .Add(TzAccount.ScriptIntend.ScriptID)
+                                         .Add(TzAccount.ScriptIntend.Intend)
+                                          
+                                        ;
+                db.ExecuteNonQuery(create);
+            }
+            else
+            {
+                throw new System.Exception("'Script intend' table Name exist");
+            }
+        }
         private bool IsColumnExist(DBSchemaTable table, params DBColumn[] columns)
         {
             foreach (DBColumn col in columns)

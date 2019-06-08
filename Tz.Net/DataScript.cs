@@ -15,6 +15,7 @@ namespace Tz.Net
         public string Category { get; set; }
         public string Name { get; set; }
         private QScriptStatement sq;
+        public List<ScriptIntend> ScriptIntends;
         private Data.DataScript dScript;
         public DataScript(string scriptID) {
             ScriptID= scriptID;
@@ -22,7 +23,13 @@ namespace Tz.Net
             Name = "";
             Category = "";
             dScript = new Data.DataScript();
+            ScriptIntends = new List<ScriptIntend>();
             Load();
+        }
+        public void AddIntend(string intend) {
+            if (intend != "") {
+                ScriptIntends.Add(new ScriptIntend(ScriptID, intend));
+            }            
         }
         public DataScript(string scriptname, string category, string script) {
             Script = script;
@@ -30,12 +37,14 @@ namespace Tz.Net
             Category = category;
             ScriptID = "";
             dScript = new Data.DataScript();
+            ScriptIntends = new List<ScriptIntend>();
         }
         public DataScript() {
             Script = "";
             Name = "";
             Category = "";
             ScriptID = "";
+            ScriptIntends = new List<ScriptIntend>();
             dScript = new Data.DataScript();
         }
 
@@ -58,6 +67,9 @@ namespace Tz.Net
                  this.ScriptID= dScript.Save(Script,Name,Category);
                 if (this.ScriptID != "")
                 {
+                    foreach (ScriptIntend si in ScriptIntends) {
+                        si.Save();
+                    }
                     return true;
                 }
                 else {
@@ -65,11 +77,21 @@ namespace Tz.Net
                 }                
             }
             else {
-                return dScript.Update(ScriptID,Script,Name,Category);
+                 dScript.Update(ScriptID,Script,Name,Category);
+                foreach (ScriptIntend si in ScriptIntends)
+                {
+                    si.Save();
+                }
+                return true;
             }            
         }
         public bool Remove() {
-            return dScript.Remove(this.ScriptID);
+             dScript.Remove(this.ScriptID);
+            foreach (ScriptIntend si in ScriptIntends)
+            {
+                si.Remove();
+            }
+            return true;
         }
         private void Load() {
             DataTable dt = new DataTable();
@@ -79,12 +101,22 @@ namespace Tz.Net
                 Script = dr["ScriptName"] == null ? "" : dr["ScriptName"].ToString();
                 Script = dr["Category"] == null ? "" : dr["Category"].ToString();
             }
+            ScriptIntends.Add(new ScriptIntend(this.ScriptID,""));
         }        
-        public dynamic GetData(string ServerID,string returnstring) {
+        public dynamic GetData(string ServerID,string returnstring, List<Params> InputParam=null) {
             EvaluationParam ev = new EvaluationParam("connection", new Server(ServerID).Connection());
-            sq = new QScriptStatement(Script, ev);
-            var res = sq.Evaluation();
-            return res[returnstring];
+            foreach (Params p in InputParam) {
+                ev.AddProperty(p.Name, p.Value);
+            }
+            try
+            {
+                sq = new QScriptStatement(Script, ev);
+                var res = sq.Evaluation();
+                return res[returnstring];
+            }
+            catch (System.Exception Ex) {
+                throw Ex;
+            }            
         }
     }
 }

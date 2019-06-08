@@ -136,6 +136,13 @@ namespace Tz.Data
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
             public static readonly DBColumn ServerID = DBColumn.Column("ServerID", System.Data.DbType.String, 255);
         }
+        public class ScriptIntend
+        {
+            public const string Table = "cf_ScriptIntend";
+            public static readonly DBColumn ScriptID = DBColumn.Column("ScriptID", System.Data.DbType.String, 255);
+            public static readonly DBColumn Intend = DBColumn.Column("Intend", System.Data.DbType.String, 255);
+        }
+
     }
 
     

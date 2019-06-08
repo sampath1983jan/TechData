@@ -288,9 +288,14 @@ namespace Tz.BackApp.Controllers.Schema
         /// <param name="category"></param>
         /// <param name="script"></param>
         /// <returns></returns>
-        public JsonpResult SaveDataScript(string scriptname, string category, string script) {
+        public JsonpResult SaveDataScript(string scriptname, string category, string script,string intend) {
             DataScript ds = new DataScript(scriptname,category,script);
+            ds.AddIntend(intend);
             ds.Save();
+            //if (ds.ScriptID != "") {
+            //    ScriptIntend sc = new ScriptIntend(ds.ScriptID, intend);
+            //    sc.Save();
+            //}
             return new JsonpResult(ds.ScriptID);
         }
         /// <summary>
@@ -301,12 +306,15 @@ namespace Tz.BackApp.Controllers.Schema
         /// <param name="script"></param>
         /// <param name="scriptid"></param>
         /// <returns></returns>
-        public JsonpResult UpdateDataScript(string scriptname, string category, string script, string scriptid) {
+        public JsonpResult UpdateDataScript(string scriptname, string category, string script, string scriptid, string intend) {
             DataScript ds = new DataScript(scriptid);
             ds.Script = script;
             ds.Name = scriptname;
             ds.Category = category;
+            ds.AddIntend(intend);
             ds.Save();
+            //ScriptIntend sc = new ScriptIntend(ds.ScriptID, intend);
+            //sc.Update();
             return new JsonpResult(ds.ScriptID);
         }
         /// <summary>
@@ -316,7 +324,12 @@ namespace Tz.BackApp.Controllers.Schema
         /// <returns></returns>
         public JsonpResult RemoveDataScript(string scriptID) {
             DataScript ds = new DataScript(scriptID);
-            return new JsonpResult( ds.Remove());
+            var rs =ds.Remove();
+            //if (rs == true) {
+            //    ScriptIntend sc = new ScriptIntend(ds.ScriptID);
+            //    sc.Remove();
+            //}
+            return new JsonpResult( rs);
         }
         /// <summary>
         /// 
