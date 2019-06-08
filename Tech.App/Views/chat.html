@@ -78,89 +78,84 @@
 
 
         $(document).ready(function () {
-            $.ajax({
-                type: "POST",
-                url: "https://directline.botframework.com/v3/directline/tokens/generate",
-                data: "",
-                dataType: "json",
-                contentType: 'application/json; charset=utf-8',
-                beforeSend: function (xhr) {
-                    xhr.setRequestHeader('Authorization', "Bearer y0qs3BIyoLE.CRrz91tTYwaror0MIJbaqZEe7OxoGmGjyZUvShqBQdQ");
-                },
-                success: function (data) {
-                    const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
-                        if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
-                            dispatch({ type: 'WEB_CHAT/SEND_MESSAGE', payload: { text: '' } });
-                        }
-                        return next(action);
-                    });
-                    var dl = window.WebChat.createDirectLine({
-                        token: data.token,
-                    });
+            function show() {
+                $.ajax({
+                    type: "POST",
+                    url: "https://directline.botframework.com/v3/directline/tokens/generate",
+                    data: "",
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader('Authorization', "Bearer y0qs3BIyoLE.CRrz91tTYwaror0MIJbaqZEe7OxoGmGjyZUvShqBQdQ");
+                    },
+                    success: function (data) {
+                        const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
+                            if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+                                dispatch({ type: 'WEB_CHAT/SEND_MESSAGE', payload: { text: '' } });
+                            }
+                            return next(action);
+                        });
+                        var dl = window.WebChat.createDirectLine({
+                            token: data.token,
+                        });
 
-                    window.WebChat.renderWebChat({
-                        directLine: dl,
-                        userID: 'YOUR_USER_ID',
-                        username: 'Web Chat User',
-                        locale: 'en-US',
-                        botAvatarInitials: 'Elizaa',
-                        userAvatarInitials: 'SK',
-                        // Web Chat will send a typing activity, on behalf of the user, when "sendTypingIndicator" is set to true.
-                        // The typing indicator will be sent when the send box by any means, including speech.
-                        sendTypingIndicator: true,
-                        // The following code is added for demo purpose only.
-                        store
-                    }, document.getElementById('webchat'));
-                    document.querySelector('#webchat > *').focus();
+                        window.WebChat.renderWebChat({
+                            directLine: dl,
+                            userID: 'YOUR_USER_ID',
+                            username: 'sampathkumar',
+                            locale: 'en-US',
+                            botAvatarInitials: 'Elizaa',
+                            userAvatarInitials: 'SK',
+                            // Web Chat will send a typing activity, on behalf of the user, when "sendTypingIndicator" is set to true.
+                            // The typing indicator will be sent when the send box by any means, including speech.
+                            sendTypingIndicator: true,
+                            // The following code is added for demo purpose only.
+                            store
+                        }, document.getElementById('webchat'));
+                        document.querySelector('#webchat > *').focus();
 
-                    var activity = {
-                        from: {
-                            id: "userId",
-                            name: "userName"
-                        },
-                        name: 'startConversation',
-                        type: 'event',
-                        value: '',
-                        channelData: {
-                            "personId": "userId",
-                            "environment": window.location.host
-                        }
-                    };
-                    dl.postActivity(activity).subscribe(function (id) {
-                        if (console) {
-                            console.log('"trigger requestWelcomeDialog" sent');
-                        }
-                    });
+                        //var activity = {
+                        //    from: {
+                        //        id: "userId",
+                        //        name: "sampathkumar"
+                        //    },
+                        //    name: 'startConversation',
+                        //    type: 'event',
+                        //    value: '',
+                        //    channelData: {
+                        //        "personId": "userId",
+                        //        "environment": window.location.host
+                        //    }
+                        //};
+                        //dl.postActivity(activity).subscribe(function (id) {
+                        //    if (console) {
+                        //        console.log('"trigger requestWelcomeDialog" sent');
+                        //    }
+                        //});
 
-                },
-                error: function () {
-                    alert("Error occured!!")
-                }
-            });
-            $('#webchat').bind("DOMSubtreeModified", function () {
-                
-                $(".css-1dgbgmu").css("background-color", "red");
-                $(".css-1dgbgmu.from-user").css("background-color", "green");
-            });
-            
+                    },
+                    error: function () {
+                        alert("Error occured!!")
+                    }
+                });
+                $('#webchat').bind("DOMSubtreeModified", function () {
 
-            function openchatbot() {                
-                
+                    $(".css-1dgbgmu").css("background-color", "red");
+                    $(".css-1dgbgmu.from-user").css("background-color", "green");
+                });
+
             }
             $("#ctWindowClose").click(function () {
                 document.getElementById("popupwindow").style.display = "none";
-            })
+            });
+
             $(".open-button").on('click',
                 function () {
+                    show();
                     document.getElementById("popupwindow").style.display = "block";
+                });
 
-                });
-            $(".close-icon").on('click',
-                function () {
-                    $(".wc-chatview-panel ").removeClass("minimizebot");
-                    $(".wc-chatview-panel ").removeClass("maximizebot");
-                    $(".wc-chatview-panel").css({ 'bottom': '-500px', 'display': 'none' });
-                });
+            
         });
     </script>
 
