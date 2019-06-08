@@ -25,10 +25,18 @@ namespace Tz.Net
             dScript = new Data.DataScript();
             ScriptIntends = new List<ScriptIntend>();
             Load();
+            LoadInten();
+        }
+        public void LoadInten() {
+            ScriptIntends.Add(new ScriptIntend(ScriptID, ""));
         }
         public void AddIntend(string intend) {
             if (intend != "") {
-                ScriptIntends.Add(new ScriptIntend(ScriptID, intend));
+                if (ScriptIntends.Where(x => x.Intend.ToLower() == intend.ToLower()).FirstOrDefault() == null) {
+
+                    ScriptIntends.Add(new ScriptIntend(ScriptID, intend));
+                }
+               
             }            
         }
         public DataScript(string scriptname, string category, string script) {
@@ -58,7 +66,12 @@ namespace Tz.Net
                   .Add(Tz.Data.TzAccount.DataScript.Script.Name, "Script")
                   .Add(Tz.Data.TzAccount.DataScript.ScriptName.Name, "Name")
                   .Add(Tz.Data.TzAccount.DataScript.Category.Name, "Category")                  
-                  , null, null).ToList();            
+                  , null, null).ToList();
+            int indx = 0;
+            foreach (DataRow dr in dt.Rows) {
+                c[indx].AddIntend( dr["intend"]==null? "":dr["intend"].ToString());
+                indx = indx = 1;
+            }
             return c;
         }
         public bool Save() {
@@ -68,6 +81,7 @@ namespace Tz.Net
                 if (this.ScriptID != "")
                 {
                     foreach (ScriptIntend si in ScriptIntends) {
+                        si.ScriptID = this.ScriptID;
                         si.Save();
                     }
                     return true;

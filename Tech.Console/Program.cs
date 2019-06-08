@@ -252,7 +252,7 @@ namespace Tech.Console
 
 
             Setup();
-           
+
 
 
 
@@ -351,62 +351,62 @@ namespace Tech.Console
 
             //        //program = program + ";data= case(data,PositionID:[equalto 124:welcome,else:dontcome],performance);";
 
-            string a = "0";
-        System.Console.WriteLine("Enter Logical value:");
-                string val = System.Console.ReadLine();
-        System.Console.WriteLine("Enter a Value:");
-                a = System.Console.ReadLine();
-                System.Console.WriteLine("Enter b  Value:");
-                string b = System.Console.ReadLine();
+            //string a = "0";
+            //System.Console.WriteLine("Enter Logical value:");
+            //string val = System.Console.ReadLine();
+            //System.Console.WriteLine("Enter a Value:");
+            //a = System.Console.ReadLine();
+            //System.Console.WriteLine("Enter b  Value:");
+            //string b = System.Console.ReadLine();
 
-        string program = "d:val; val=" + val + ";d:a=" + a + ";d:b=" + b + ";d:k;";
-        program = program + "; d:pe=if(mod("+a+","+b+"),'i am printing', 'i am not printing');";
-                program = program + "; k=Expr([a] + [b]);";
+            //string program = "d:val; val=" + val + ";d:a=" + a + ";d:b=" + b + ";d:k;";
+            //program = program + "; d:pe=if(mod(" + a + "," + b + "),'i am printing', 'i am not printing');";
+            //program = program + "; k=Expr([a] + [b]);";
 
-        //        //124
-        //        //string str = "fkdfdsfdflkdkfk@dfsdfjk72388389@kdkfkdfkkl@jkdjkfjd@jjjk@";
-        //        //str = str.Replace("@",  "");                
-        //        //var s = Regex.Split(str, @"join");
-        //        //System.Console.WriteLine(str);
-        //        //  System.Console.ReadKey();
-        //        //  var program = "d:data=getdata(get[sys_User:UserID,Position:PositionID],from[sys_User,Position,Employee_Position],and[(sys_user:UserID equalto Employee_Position:UserID),(Position:PositionID equalto EmployeePosition:PositionID)])"; /*System.Console.ReadLine();   */
-        EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
-        QScriptStatement sq = new QScriptStatement(program, ev);
-        var res = sq.Evaluation();
-        //        try
-        //        {                    
-        //            //for (int i = 0; i < res.Count; i++)
-        //            //{
-        //                System.Console.WriteLine(res.data);
-        //            System.Console.WriteLine(res.values);
-        //            //System.Console.WriteLine("Row Count:" + res.data.Rows.Count);
-        //            //System.Console.WriteLine("Expression:" + res.k);
-        //            //}
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            System.Console.WriteLine(res);
-        //        }
-        //        //foreach (Tech.QScript.Source.ErrorEntry token in parser.ErrorSink.Errors)
-        //        //{
-        //        //    System.Console.WriteLine("Error in line no " + token.Span.Start.Line + " Message:" + token.Message + " line " + token.Lines[0]);
-        //        //}
-        //        //if (parser.ErrorSink.Errors.ToList().Count == 0)
-        //        //{
-        //        //    System.Console.WriteLine("no error");
-        //        //}
-        //    }
+            ////124
+            ////string str = "fkdfdsfdflkdkfk@dfsdfjk72388389@kdkfkdfkkl@jkdjkfjd@jjjk@";
+            ////str = str.Replace("@",  "");                
+            ////var s = Regex.Split(str, @"join");
+            ////System.Console.WriteLine(str);
+            ////  System.Console.ReadKey();
+            ////  var program = "d:data=getdata(get[sys_User:UserID,Position:PositionID],from[sys_User,Position,Employee_Position],and[(sys_user:UserID equalto Employee_Position:UserID),(Position:PositionID equalto EmployeePosition:PositionID)])"; /*System.Console.ReadLine();   */
+            //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+            //QScriptStatement sq = new QScriptStatement(program, ev);
+            //var res = sq.Evaluation();
+            //        try
+            //        {                    
+            //            //for (int i = 0; i < res.Count; i++)
+            //            //{
+            //                System.Console.WriteLine(res.data);
+            //            System.Console.WriteLine(res.values);
+            //            //System.Console.WriteLine("Row Count:" + res.data.Rows.Count);
+            //            //System.Console.WriteLine("Expression:" + res.k);
+            //            //}
+            //        }
+            //        catch (Exception e)
+            //        {
+            //            System.Console.WriteLine(res);
+            //        }
+            //        //foreach (Tech.QScript.Source.ErrorEntry token in parser.ErrorSink.Errors)
+            //        //{
+            //        //    System.Console.WriteLine("Error in line no " + token.Span.Start.Line + " Message:" + token.Message + " line " + token.Lines[0]);
+            //        //}
+            //        //if (parser.ErrorSink.Errors.ToList().Count == 0)
+            //        //{
+            //        //    System.Console.WriteLine("no error");
+            //        //}
+            //    }
 
 
-        //    //Tech.QueryParser.Language.Lexer.QueryScriptLexer lexer = new Tech.QueryParser.Language.Lexer.QueryScriptLexer();
-        //    //Tech.QueryParser.Language.Parser.QueryScriptParser parser = new Tech.QueryParser.Language.Parser.QueryScriptParser(lexer.ErrorSink);
-        //    //while (true)
-        //    //{
-        //    //    System.Console.Write("GlassScript> ");
-        //    //    var program = System.Console.ReadLine();
-        //    //    var sourceCode = new SourceCode(program);
-        //    //    var tokens = lexer.LexFile(sourceCode).ToArray();
-        //    //}
-         }
+            //    //Tech.QueryParser.Language.Lexer.QueryScriptLexer lexer = new Tech.QueryParser.Language.Lexer.QueryScriptLexer();
+            //    //Tech.QueryParser.Language.Parser.QueryScriptParser parser = new Tech.QueryParser.Language.Parser.QueryScriptParser(lexer.ErrorSink);
+            //    //while (true)
+            //    //{
+            //    //    System.Console.Write("GlassScript> ");
+            //    //    var program = System.Console.ReadLine();
+            //    //    var sourceCode = new SourceCode(program);
+            //    //    var tokens = lexer.LexFile(sourceCode).ToArray();
+            //    //}
+        }
     }
 }

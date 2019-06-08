@@ -25,8 +25,10 @@ namespace Tz.Net
         }
         public ScriptIntend(string scriptID, string intend) {
             this.ScriptID = scriptID;
+            scriptIntend = new Data.ScriptIntend();
             if (intend == "")
             {
+               
                 DataTable dt = scriptIntend.GetIntend(ScriptID);
                 if (dt.Rows.Count > 0)
                 {
@@ -37,7 +39,7 @@ namespace Tz.Net
                 this.Intend = intend;
             }           
             
-            scriptIntend = new Data.ScriptIntend();
+            
         }
         public bool Save() {
             if (scriptIntend.GetIntend(ScriptID).Rows.Count > 0)

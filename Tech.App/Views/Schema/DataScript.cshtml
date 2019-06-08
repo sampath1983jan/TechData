@@ -154,12 +154,18 @@
                             Script: "",
                             Category: "",
                             ScriptID: "",
+                            ScriptIntends:[],
                         };
                         $.each(Scripts, function (is,s) {
                             if (scriptID == s.ScriptID) {
                                 script = s; 
                             }
                         })
+                        var intend = "";
+                        
+                        if (script.ScriptIntends.length > 0) {
+                            intend = script.ScriptIntends[0].Intend;
+                        }
                         $("#" + plc).labelfields({
                             items: [
                                 {
@@ -216,7 +222,7 @@
                                     label: "Intend",
                                     field: {
                                         id: "fddsintend", 'note': "",
-                                        limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": script.Category,
+                                        limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": intend,
                                         format: "hex", range: false, isRequired: true,
                                     },
                                     id: 'dsintend'

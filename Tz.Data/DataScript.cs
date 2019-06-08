@@ -24,7 +24,8 @@ namespace Tz.Data
             db = base.Database;
             DBQuery select;
 
-            select = DBQuery.SelectAll(TzAccount.DataScript.Table).From(TzAccount.DataScript.Table);                
+            select = DBQuery.SelectAll().From(TzAccount.DataScript.Table).LeftJoin(TzAccount.ScriptIntend.Table).
+                On(TzAccount.DataScript.Table,TzAccount.DataScript.ScriptID.Name ,Compare.Equals,TzAccount.ScriptIntend.Table,TzAccount.ScriptIntend.ScriptID.Name);                
             return db.GetDatatable(select);
         }
         /// <summary>
