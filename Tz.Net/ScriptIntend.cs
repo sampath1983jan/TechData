@@ -18,7 +18,7 @@ namespace Tz.Net
            DataTable dt= scriptIntend.GetScript(intend);
             if (dt.Rows.Count > 0) {
                 ScriptID = dt.Rows[0]["ScriptID"].ToString();
-            }
+            }else
             {
                 ScriptID = "";
             }

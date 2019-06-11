@@ -410,6 +410,11 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildDateParse(DateParse fn) {
             //dateparse(data,columnName,parsetype);
             var gVal = getValue(FunDefination.fun, _current.Value);
@@ -426,6 +431,11 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildDuplicate(Duplicate fn) {
             //duplidate(data,columnName,newcolumnName);
             var gVal = getValue(FunDefination.fun, _current.Value);
@@ -442,6 +452,30 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }
+        private Fun buildOrder(Order fn) {
+            var gVal = getValue(FunDefination.fun, _current.Value);
+            var items = split(FunDefination.splitbyComma, gVal);
+            if (items.Length == 2)
+            {
+                fn.Datasource = items[0];
+                var order = split(FunDefination.splitbyComma, items[1].Replace("[", "").Replace("]", ""));
+                foreach (string s in order)
+                {
+                    var aa = split(FunDefination.splitbyColn, s);
+                    fn.AddField(aa[0], aa[1]);
+                }
+            }
+            else {
+                AddError(Source.Severity.Error, "Syntax error in order : ", _current.Span);
+            }
+            return fn;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildSplit(Split fn)
         {
             //split(Data,columnName,spliter,newColumnNameprefix);
@@ -460,6 +494,11 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildReplace(Replace fn) {
             //Replace(Data,ColumnName,findstring,replacestring,newcolumnname);
             var gVal = getValue(FunDefination.fun, _current.Value);
@@ -478,6 +517,11 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildCalculate(Calculate fn) {
             //Calculate(data,cname,formula);
             var gVal = getValue(FunDefination.fun, _current.Value);
@@ -489,6 +533,11 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildTextCase(TextCase fn) {
             //ChangeCase(data,column,U/L/T/C)
             var gVal = getValue(FunDefination.fun, _current.Value);
@@ -521,6 +570,11 @@ namespace Tech.QScript.Parser
             }
             return fn;
         }    
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fn"></param>
+        /// <returns></returns>
         private Fun buildTrancate(Trancate fn) {
             //Trancate(data,columnname,index);
             var gVal = getValue(FunDefination.fun, _current.Value);
@@ -583,6 +637,9 @@ namespace Tech.QScript.Parser
                 case TokenKind.Columnduplicate:
                     fn = buildDuplicate((Duplicate)fn);
                     break;
+                case TokenKind.Order:
+                    fn = buildOrder((Order)fn);
+                    break;
                 case TokenKind.Columnspit:
                     fn = buildSplit((Split)fn);
                     break;
@@ -591,10 +648,8 @@ namespace Tech.QScript.Parser
                     break;
                 case TokenKind.Calculate:
                     fn = buildCalculate((Calculate)fn);
-                    break;
-                
-
-            }
+                    break;               
+               }
         }
         /// <summary>
         /// 
@@ -751,6 +806,12 @@ namespace Tech.QScript.Parser
             else if (_current.Kind == TokenKind.Trancate)
             {
                 var f = new Trancate(assignTo, "", _current.Span);
+                ExtractFun(f);
+                return f;
+            }
+            else if (_current.Kind == TokenKind.Order)
+            {
+                var f = new Order(assignTo, "", _current.Span);
                 ExtractFun(f);
                 return f;
             }

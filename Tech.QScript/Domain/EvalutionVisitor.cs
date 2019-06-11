@@ -21,7 +21,14 @@ namespace Tech.QScript
         public override void Visit(Declare element, EvaluationParam evp)
         {
             result = new Result();
-            result.Value = element.Value;
+            if (evp.IsPropertyExist(element.Name))
+            {
+                result.Value = evp.GetValue(element.Name);
+            }
+            else {
+                result.Value = element.Value;
+            }            
+            
         }
         /// <summary>
         /// 
@@ -130,6 +137,22 @@ namespace Tech.QScript
                     dt.AcceptChanges();
                     result.Value = dt;
                 }
+            }
+            else if (element.Type == FunctionType.Order) {
+                var c = (Order)element;
+                System.Data.DataTable dt = getRecord(element);
+                result = new Result();
+                string s = "";
+                foreach (ParamFields p in c.Fields) {
+                    s = s + "," + p.FieldName + " " + p.Order; 
+                }
+                if (s.StartsWith(",")) {
+                    s = s.Substring(1);
+                }                 
+                DataView viewFI = new DataView(dt);
+                viewFI.Sort = s;
+                dt = viewFI.ToTable();
+                result.Value = dt;
             }
             else if (element.Type == FunctionType.Pivot)
             {
@@ -308,9 +331,14 @@ namespace Tech.QScript
                     if (dt.Rows.Count > 0)
                     {
                         var name = ((Fun)element).Arguments[0].FieldName;
-                        var s = dt.Rows[0][name];
+                        var s = dt.Rows[0][name.Trim()];
                         result = new Result();
                         result.Value = s;
+                    }
+                    else
+                    {
+                        result = new Result();
+                        result.Value = "";
                     }
                 }
             }
@@ -321,8 +349,8 @@ namespace Tech.QScript
                     System.Data.DataTable dt = (System.Data.DataTable)element.GetSource();
                     if (dt.Rows.Count > 0)
                     {
-                        var name = ((Fun)element).Arguments[0].FieldName;
-                    Type type=     dt.Columns[name].DataType; 
+                        var name = ((Fun)element).Arguments[0].FieldName.Trim();
+                        Type type = dt.Columns[name].DataType;
                         var selectedColumn = string.Join(",", dt.AsEnumerable().Select(s => s.Field<string>(name)).ToArray());
                         result = new Result();
                         result.Value = selectedColumn;

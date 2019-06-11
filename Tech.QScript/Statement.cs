@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Dynamic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Tech.QScript.Source;
@@ -26,9 +27,19 @@ namespace Tech.QScript
             {
                 Tech.QScript.Lexer.QLexer lex = new QScript.Lexer.QLexer();
                 var tokens = lex.LexFile(sourceCode).ToList();
-                tokens= tokens.Where(x => x != null).ToList();
+                tokens = tokens.Where(x => x != null).ToList();
+                foreach (Token t in tokens) {
+                    if (t.Catagory != TokenCatagory.Declaration) {
+
+                        foreach (string key in _evp.getProperties())
+                        {
+                            t.Value = t.Value.Replace(key, _evp.GetValue(key));
+                        }
+                    }
+                }
+                
                 Tech.QScript.Parser.QScriptParser parser = new QScript.Parser.QScriptParser();
-                 Content = parser.ParseFile(sourceCode, tokens);
+                 Content = parser.ParseFile(sourceCode, tokens);               
                 if (parser.ErrorSink.ToList().Count > 0)
                 {
                     var sk = parser.ErrorSink.ToList();
@@ -82,19 +93,21 @@ namespace Tech.QScript
         }
         private void AssignTo(dynamic c, object val) {
             var aa = ((List<Tech.QScript.Syntax.SyntaxNode>)Content).Where(x => ((Syntax.SyntaxNode)x).Catagory == Syntax.SyntaxCatagory.Declaration).ToList();
-            var a = (Syntax.Declare)(aa).Where(x => ((Syntax.Declare)x).Name == c.AssignTo.Name).ToList().FirstOrDefault();
-            if (a != null)
-            {
-                var k = new EvalutionVisitor();                
-                if (c.AssignTo != null) {
-                    a.setResult(c.AssignTo.Name, val);
-                    setResult(c.AssignTo.Name, val);
-                }                
-                a.Accept(k,EvalutionParam);                
-            }
+            if (c.AssignTo != null) {
+                var a = (Syntax.Declare)(aa).Where(x => ((Syntax.Declare)x).Name == c.AssignTo.Name).ToList().FirstOrDefault();
+                if (a != null)
+                {
+                    var k = new EvalutionVisitor();
+                    if (c.AssignTo != null)
+                    {
+                        a.setResult(c.AssignTo.Name, val);
+                        setResult(c.AssignTo.Name, val);
+                    }
+                    a.Accept(k, EvalutionParam);
+                }
+            }            
         }
-        private void setResult(string name,object val) {
-           // Result = new Result();
+        private void setResult(string name,object val) {           
             Result.AddProperty(name, val);
         }
         private void Compile(dynamic c) {
@@ -111,8 +124,7 @@ namespace Tech.QScript
                 {
                     Syntax.Declare d = (Syntax.Declare)ss;
                     c.ReplaceWith(d.Name, d.GetResult(d.Name));
-                    }
-
+                }                              
                 var v = new EvalutionVisitor();
                 c.Accept(v, _evp);
                 AssignTo(c, v.result.Value);                

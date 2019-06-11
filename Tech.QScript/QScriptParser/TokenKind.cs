@@ -51,6 +51,7 @@ namespace Tech.QScript
         Trancate,
         ToJson,
         Calculate,
+        Order,
         #endregion
 
         #region Statment
@@ -106,6 +107,8 @@ literal,
         public static string ifstate = @"if\((.*?)\)";
         public static string literal = "(.*?)";
 
+        public static string Order = @"orderby\((.*?)\)";
+
         public static string duplicate = @"duplicate\((.*?)\)";
         public static string replace = @"replace\((.*?)\)";
         public static string split = @"split\((.*?)\)";
@@ -114,6 +117,7 @@ literal,
         public static string trancate = @"trancate\((.*?)\)";
         public static string calculate = @"calculate\((.*?)\)";
         public static string tojson = @"tojson\((.*?)\)";
+
         //public static string Filter = @"Filter\((.*?)\)";
     }
 }

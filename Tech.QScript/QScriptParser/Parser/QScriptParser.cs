@@ -106,13 +106,39 @@ namespace Tech.QScript.Parser
                var dy =contents.Where(x => x.Catagory == SyntaxCatagory.Declaration).ToList().ToArray();
             foreach (SyntaxNode ss in dy) {
                 Declare d = (Declare)ss;
-                if ("d:" +d.Name == _current.Left ||  d.Name == _current.Left || d.Name.Replace("d:","") ==   _current.Left) {
+                if ("d:" + d.Name == _current.Left || d.Name == _current.Left || d.Name.Replace("d:", "") == _current.Left)
+                {
+                    return d;
+                }
+                else if ("p:" + d.Name == _current.Left || d.Name == _current.Left || d.Name.Replace("p:", "") == _current.Left) {
                     return d;
                 }
             }
             return null;
         }
 
+        private string replaceWithParam(string cont, List<SyntaxNode> contents)
+        {
+            var dy = contents.Where(x => x.Catagory == SyntaxCatagory.Declaration).ToList().ToArray();
+            var litr = contents.Where(x => x.Catagory == SyntaxCatagory.Literal).ToList().ToArray();
+            foreach (SyntaxNode ss in dy)
+            {
+                Declare d = (Declare)ss;
+                var val= litr.Where(x => ((Value)x).AssignTo.Name == "p:" + d.Name || ((Value)x).AssignTo.Name == d.Name || ((Value)x).AssignTo.Name == "d:" + d.Name).FirstOrDefault();
+                //if ("p:" + d.Name == _current.Left || d.Name == _current.Left || d.Name.Replace("p:", "") == _current.Left)
+                //{
+                var name = d.Name.Replace("p:", "");
+                if (val == null)
+                {
+                //    cont= cont.Replace(name, "");                   
+                }
+                else {
+                    cont= cont.Replace(name, ((Value)val).getValue());
+                }                   
+                //}             
+            }
+            return cont;
+        }
         private dynamic ParseDocument() {
             List<SyntaxNode> contents = new List<SyntaxNode>();
             while (_current.Kind != TokenKind.EndOfFile) {
@@ -122,23 +148,26 @@ namespace Tech.QScript.Parser
                 }
                 else if (_current.Catagory == TokenCatagory.Query)
                 {
+                    _current.Value= replaceWithParam(_current.Value, contents);
                     contents.Add(QueryParser(getDeclare(contents), _current));
                 }
                 else if (_current.Catagory == TokenCatagory.Function)
                 {
+                    _current.Value = replaceWithParam(_current.Value, contents);
                     contents.Add(FunctionParser(getDeclare(contents)));
                 }
                 else if (_current.Catagory == TokenCatagory.Statement)
                 {
+                    _current.Value = replaceWithParam(_current.Value, contents);
                     contents.Add(StatementParser(getDeclare(contents)));
                 }
                 else if (_current.Catagory == TokenCatagory.Expression)
                 {
-                  
-
-                        contents.Add(ParseExpression(getDeclare(contents)));
+                  //  _current.Value = replaceWithParam(_current.Value, contents);
+                    contents.Add(ParseExpression(getDeclare(contents)));
                 }
                 else if (_current.Catagory == TokenCatagory.Literal) {
+                    //_current.Value = replaceWithParam(_current.Value, contents);
                     contents.Add(ParseValue(getDeclare(contents)));
                 }
                 Take();

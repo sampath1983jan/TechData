@@ -16,7 +16,10 @@ namespace Tech.QScript
         }
         public EvaluationParam(string name,object value)
         {                      
-                this.AddProperty(name,value);            
+                this.AddProperty(name,value);                        
+        }
+        public dynamic GetValue(string Name) {
+            return this.get(Name);
         }
          
     } 

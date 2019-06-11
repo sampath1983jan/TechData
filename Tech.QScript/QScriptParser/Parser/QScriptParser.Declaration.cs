@@ -53,6 +53,7 @@ namespace Tech.QScript.Parser
         /// <param name="val"></param>
         private void setValue(ref Syntax.Declare dec,string val) {
             val = val.Replace("d:", "");
+            val = val.Replace("p:", "");
 
             var content = Regex.Split(val,":");
             if (content.Length == 1)

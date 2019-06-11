@@ -33,11 +33,14 @@ namespace Tz.BackApp.Filters
                     //objErrInfo = objAPI.Validate();
                     // Replace this with your own system of security / means of validating credentials
                     //var isValid = userName == "andy" && password == "password";
-                    if (userName == "admin" && password == "312") {
-                        var principal = new GenericPrincipal(new GenericIdentity(userName), null);
-                        Thread.CurrentPrincipal = principal;
-                        return;
-                    }                  
+                    
+                    //if (userName == "admin" && password == "312") {
+                    //    var principal = new GenericPrincipal(new GenericIdentity(userName), null);
+                    //    Thread.CurrentPrincipal = principal;
+                    //    return;
+                    //}    
+                    
+                    return;
                     //if (objErrInfo.TypeOfError == SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.NO_ERROR)
                     //{
                     //    var principal = new GenericPrincipal(new GenericIdentity(objErrInfo.ErrorMessage), null);

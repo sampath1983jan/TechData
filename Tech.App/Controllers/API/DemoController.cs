@@ -8,30 +8,38 @@ using System.Web.Http;
 using Tech.QScript;
 using Tz.BackApp.Filters;
 using Tz.BackApp.Models;
+using Tz.Net;
+
 namespace Tz.BackApp.Controllers.API
 {
-    public class Car
+    public class Param
     {
-        public string ClientKey;
-        public string ScriptID;
-        public List<Inparam> inparam;
+        public string ClientID;
+        public string Intend;
+        public List<Inparam> InputParam;
         public List<Outparam> outparam;
     }
 
-    [BasicAuthentication]
+  //  [BasicAuthentication]
     [RoutePrefix("api/Demo")]
     public class DemoController : ApiController
     {
         // GET: api/Demo
-        [HttpGet]
+        [HttpPost]
         [Route("GetResult")]
-        public HttpResponseMessage Get(Car c)
+        public HttpResponseMessage Get(Param c)
         {
-            string ss = "d:k=Expr(13 + 5);";
-            EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
-            QScriptStatement sq = new QScriptStatement(ss, ev);
-            var res = sq.Evaluation();
-            string s =Newtonsoft.Json.JsonConvert.SerializeObject(res.get(c.outparam[0].key));
+            //string ss = "d:k=Expr(13 + 5);";
+            //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+            //QScriptStatement sq = new QScriptStatement(ss, ev);
+            //var res = sq.Evaluation();
+
+            DataScriptManager dataScript = new DataScriptManager(c.Intend,c.ClientID);
+            foreach (Inparam p in c.InputParam) {
+                dataScript.AddParam(p.Name,p.Value);
+            }            
+           var res= dataScript.GetResult("result");
+            string s =Newtonsoft.Json.JsonConvert.SerializeObject(res);
             var response = Request.CreateResponse(HttpStatusCode.OK);
             response.Content = new StringContent(s, Encoding.UTF8, "application/json");
             return response;             

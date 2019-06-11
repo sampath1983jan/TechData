@@ -88,7 +88,9 @@
                     }
 
                     return pos;
-                } catch (e) { }
+				} catch (e) {
+					return "";
+				}
             },
             setCaret: function (pos) {
                 try {

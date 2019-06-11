@@ -10,6 +10,8 @@ using Tech.DataAccess.Tables;
 using Tech.QScript.Syntax;
 using Tech.QScript;
 using MySql.Data.MySqlClient;
+using System.Reflection;
+using System.IO;
 
 namespace Tech.Console
 {
@@ -97,7 +99,7 @@ namespace Tech.Console
             System.Console.ReadKey();
         }
         private static void Setup() {
-            string s = "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312";
+            string s = Tech.Console.Properties.Resources.Conn;
             Tz.Net.Setup ss = new Tz.Net.Setup();
             try
             {
@@ -250,10 +252,21 @@ namespace Tech.Console
          static void Main(string[] args)
          {
 
+            //    Setup();
 
-            Setup();
+            //var strings =Assembly.GetExecutingAssembly().Location ;
+            ////Setup();
+            //string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
 
+            //string program = @"p:pUserID=90; p:getfield=F_200115; d:data=getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030, F_200140, F_200115, F_200160, F_200200, F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID]:c with[c:PositionID equalto b:PositionID],[c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]), and[(a:UserID isequalto value:pUserID), (b:status isequalto value:1)]);d:result = getvalue(data, getfield)";
+            ////
+
+            //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+            //QScriptStatement sq = new QScriptStatement(program, ev);
+            //var res = sq.Evaluation();
+            //System.Console.Write(res.result);
+            //System.Console.ReadLine();
 
 
             //    // Setup employee collection
@@ -359,9 +372,9 @@ namespace Tech.Console
             //System.Console.WriteLine("Enter b  Value:");
             //string b = System.Console.ReadLine();
 
-            //string program = "d:val; val=" + val + ";d:a=" + a + ";d:b=" + b + ";d:k;";
+           // string program = "d:val; val=" + val + ";d:a=" + a + ";d:b=" + b + ";d:k;";
             //program = program + "; d:pe=if(mod(" + a + "," + b + "),'i am printing', 'i am not printing');";
-            //program = program + "; k=Expr([a] + [b]);";
+           // program = program + "; k=Expr([a] * [b]);";
 
             ////124
             ////string str = "fkdfdsfdflkdkfk@dfsdfjk72388389@kdkfkdfkkl@jkdjkfjd@jjjk@";
@@ -369,10 +382,13 @@ namespace Tech.Console
             ////var s = Regex.Split(str, @"join");
             ////System.Console.WriteLine(str);
             ////  System.Console.ReadKey();
-            ////  var program = "d:data=getdata(get[sys_User:UserID,Position:PositionID],from[sys_User,Position,Employee_Position],and[(sys_user:UserID equalto Employee_Position:UserID),(Position:PositionID equalto EmployeePosition:PositionID)])"; /*System.Console.ReadLine();   */
-            //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
-            //QScriptStatement sq = new QScriptStatement(program, ev);
-            //var res = sq.Evaluation();
+              var program = "d:data= getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030,F_200140,F_200115,F_200160,F_200200,F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID,F_360010]:c with[c:PositionID equalto b:PositionID,c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]),and[(b:status isequalto value:1)]);"; /*System.Console.ReadLine();   */
+            program = program + ";data=orderby(data,[F_200005:desc,F_200015:asc])";
+            EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+            QScriptStatement sq = new QScriptStatement(program, ev);
+            var res = sq.Evaluation();
+            System.Console.WriteLine("Total:" + res.data);
+            System.Console.ReadLine();
             //        try
             //        {                    
             //            //for (int i = 0; i < res.Count; i++)
@@ -410,3 +426,4 @@ namespace Tech.Console
         }
     }
 }
+

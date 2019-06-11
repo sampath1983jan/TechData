@@ -45,9 +45,19 @@ namespace Tech.QScript.Domain.QData
                         isAdded = true;
                     }
                 }
+                isAdded = false;
+                int indx = 0;
                 foreach (Syntax.Query.Relation r in t.Relations)
                 {
-                    select.InnerJoin(t.TableName.Trim()).As(t.TableAlias.Trim()).On(r.lefttable.Trim(), r.LeftField.Trim(), GetCompare(r.Operator), r.RightTable.Trim(), r.RightField.Trim());                    
+                    if (indx == 0)
+                    {
+                        select.InnerJoin(t.TableName.Trim()).As(t.TableAlias.Trim()).On(r.lefttable.Trim(), r.LeftField.Trim(), GetCompare(r.Operator), r.RightTable.Trim(), r.RightField.Trim());
+                    }
+                    else if (t.Relations.Count > 1)
+                    {
+                        select.And(r.lefttable.Trim(), r.LeftField.Trim(), GetCompare(r.Operator), r.RightTable.Trim(), r.RightField.Trim());
+                    }
+                    indx = indx + 1;
                 }               
             }
             //foreach (Syntax.Query.Table t in sQuery.from.Tables )

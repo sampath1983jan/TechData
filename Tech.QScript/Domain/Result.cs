@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +22,11 @@ namespace Tech.QScript
             {
                 return dictionary.Count;
             }
+        }
+        public Dictionary<string, object>.KeyCollection getProperties() {
+            Type t = dictionary.GetType();
+            return dictionary.Keys;
+          //  return t.GetProperties();
         }
         public dynamic get(string name) {
             return dictionary[name];

@@ -37,6 +37,7 @@ namespace Tech.QScript.Syntax
         Trancate,
         ToJson,
         Calculate,
+        Order,
     }
     public enum AggregateType {
         none,
@@ -169,11 +170,7 @@ namespace Tech.QScript.Syntax
         public Object GetSource()
         {
             return this.Data;
-        }
-
-        
-
-       
+        }                              
     }
 
     public class ParamFields {
@@ -187,6 +184,7 @@ namespace Tech.QScript.Syntax
         public FieldType RelatedFieldType;
         public string RelatedFieldValues;
         public WhereOperators relationship;
+        public string Order;
     }
     public interface IFunction{
 

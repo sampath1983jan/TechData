@@ -112,8 +112,8 @@ namespace Tz.Net
             dt = dScript.GetScript(this.ScriptID);
             foreach (DataRow dr in dt.Rows) {
                 Script = dr["Script"] == null ? "" : dr["Script"].ToString();
-                Script = dr["ScriptName"] == null ? "" : dr["ScriptName"].ToString();
-                Script = dr["Category"] == null ? "" : dr["Category"].ToString();
+                Name  = dr["ScriptName"] == null ? "" : dr["ScriptName"].ToString();
+                Category= dr["Category"] == null ? "" : dr["Category"].ToString();
             }
             ScriptIntends.Add(new ScriptIntend(this.ScriptID,""));
         }        
@@ -124,9 +124,12 @@ namespace Tz.Net
             }
             try
             {
+                Script = Script.Replace("\n", "");
+                Script = Script.Replace("\r", "");
+
                 sq = new QScriptStatement(Script, ev);
-                var res = sq.Evaluation();
-                return res[returnstring];
+                Result res = sq.Evaluation();
+                return res.get(returnstring);
             }
             catch (System.Exception Ex) {
                 throw Ex;

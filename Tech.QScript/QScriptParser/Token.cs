@@ -12,7 +12,7 @@ namespace Tech.QScript
     {
         public TokenCatagory Catagory;
 
-        public string Value { get; }
+        public string Value { get; set; }
 
         public SourceSpan Span { get; }
 
@@ -99,6 +99,7 @@ namespace Tech.QScript
                 case TokenKind.Trancate:
                 case TokenKind.Replace:
                 case TokenKind.Filter:
+                case TokenKind.Order:
                 case TokenKind.Calculate:
                     {
                         return TokenCatagory.Function;

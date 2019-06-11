@@ -7,7 +7,8 @@ namespace Tz.BackApp.Models
 {
     public class Inparam
     {
-        public string key;
-        public string value;
+        public string Name { get; set; }
+        public string Value { get; set; }
+
     }
 }

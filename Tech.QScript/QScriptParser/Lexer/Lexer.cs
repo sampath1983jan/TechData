@@ -270,7 +270,10 @@ namespace Tech.QScript.Lexer
             {
                 return Scanif(d);
             }
-           
+            else if (Scan(TokenExpression.Order))
+            {
+                return ScanOrder(d);
+            }
             else if (Scan(TokenExpression.duplicate))
             {
                 return ScanDuplicate(d);
@@ -403,6 +406,20 @@ namespace Tech.QScript.Lexer
         /// </summary>
         /// <param name="d"></param>
         /// <returns></returns>
+        private Token ScanOrder(string d)
+        {
+
+            if (Scan(TokenExpression.Order))
+            {
+                return CreateToken(TokenKind.Order, word, d);
+            }
+            return null;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         private Token ScanDuplicate(string d)
         {
 
@@ -428,6 +445,8 @@ namespace Tech.QScript.Lexer
         /// <returns></returns>
         private Token ScanDeclaration(string val) {
             val = val.Trim();
+            Match pResult = Regex.Match(val, TokenExpression.p, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
             Match result = Regex.Match(val, TokenExpression.d, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             if (result.Success)
             {
@@ -443,10 +462,11 @@ namespace Tech.QScript.Lexer
                 }
                 
             }
-            else if (Regex.Match(val, TokenExpression.p, System.Text.RegularExpressions.RegexOptions.IgnoreCase).Success)
+            else 
+            if (pResult.Success)
             {
-                Declaration.Add(result.Value);
-                return CreateToken(TokenKind.p, result.Value);
+                Declaration.Add(pResult.Value);
+                return CreateToken(TokenKind.p, pResult.Value);
             }
             else {
                 if (Declaration.Where(x => x == "d:" + val).ToList().Count > 0)

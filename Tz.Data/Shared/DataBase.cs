@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Tech.Data;
@@ -23,7 +25,15 @@ namespace Tz.Data
         public void InitDbs(string conn)
         {
             if (conn == "") {
-                conn = ConfigurationSettings.AppSettings["conn"];
+                string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
+                assemblyFolder = assemblyFolder.Replace("\\Debug", "");
+                assemblyFolder = assemblyFolder.Replace("\\bin", "");
+                assemblyFolder = assemblyFolder.Replace("\\netcoreapp2.1", "");
+                
+                assemblyFolder = assemblyFolder.Replace("file:\\", "");
+                string text = System.IO.File.ReadAllText(assemblyFolder + @"\appsettings.json");
+                dynamic o= Newtonsoft.Json.JsonConvert.DeserializeObject<appSetting>(text);
+                conn = o.Conn;
 
                 if (conn == null) {
                     conn = DbConnection;
