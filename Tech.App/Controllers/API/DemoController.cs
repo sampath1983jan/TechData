@@ -37,8 +37,17 @@ namespace Tz.BackApp.Controllers.API
             DataScriptManager dataScript = new DataScriptManager(c.Intend,c.ClientID);
             foreach (Inparam p in c.InputParam) {
                 dataScript.AddParam(p.Name,p.Value);
-            }            
-           var res= dataScript.GetResult("result");
+            }
+            object res;
+            try
+            {
+                res = dataScript.GetResult("result");
+            }
+            catch (Exception ex) {
+                var r = Request.CreateResponse(HttpStatusCode.InternalServerError);
+                r.Content = new StringContent(ex.Message, Encoding.UTF8, "application/json");
+                return r;
+            }
             string s =Newtonsoft.Json.JsonConvert.SerializeObject(res);
             var response = Request.CreateResponse(HttpStatusCode.OK);
             response.Content = new StringContent(s, Encoding.UTF8, "application/json");
