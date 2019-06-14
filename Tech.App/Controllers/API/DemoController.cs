@@ -17,7 +17,7 @@ namespace Tz.BackApp.Controllers.API
         public string ClientID;
         public string Intend;
         public List<Inparam> InputParam;
-        public List<Outparam> outparam;
+        public string OutParam;
     }
 
   //  [BasicAuthentication]
@@ -41,14 +41,22 @@ namespace Tz.BackApp.Controllers.API
             object res;
             try
             {
-                res = dataScript.GetResult("result");
+                res = dataScript.GetResult(c.OutParam);
             }
             catch (Exception ex) {
                 var r = Request.CreateResponse(HttpStatusCode.InternalServerError);
                 r.Content = new StringContent(ex.Message, Encoding.UTF8, "application/json");
                 return r;
             }
-            string s =Newtonsoft.Json.JsonConvert.SerializeObject(res);
+            string s = "";
+            if (res is System.Data.DataTable)
+            {
+                s = ((System.Data.DataTable)res).ToJSON();
+            }
+            else {
+                 s = Newtonsoft.Json.JsonConvert.SerializeObject(res);
+            }
+            
             var response = Request.CreateResponse(HttpStatusCode.OK);
             response.Content = new StringContent(s, Encoding.UTF8, "application/json");
             return response;             
