@@ -15,6 +15,7 @@ namespace Tech.QScript.Domain.QData
         public string Query => query;
         private DataTable dataTable;
         public System.Data.DataTable Datatable => dataTable;
+        
         public DataParser(string conn) {
             base.InitDbs(conn);
         }

@@ -49,14 +49,16 @@ namespace Tz.BackApp.Controllers.API
                 return r;
             }
             string s = "";
-            if (res is System.Data.DataTable)
-            {
-                s = ((System.Data.DataTable)res).ToJSON();
-            }
-            else {
-                 s = Newtonsoft.Json.JsonConvert.SerializeObject(res);
-            }
-            
+            //if (res is System.Data.DataTable)
+            //{
+            //    s = ((System.Data.DataTable)res).ToJSON();
+            //}
+            //else {
+          s = Newtonsoft.Json.JsonConvert.SerializeObject(res);
+            // //   s =(string) res.ToString();
+            //}
+            s = "testing data working :" + s; 
+
             var response = Request.CreateResponse(HttpStatusCode.OK);
             response.Content = new StringContent(s, Encoding.UTF8, "application/json");
             return response;             

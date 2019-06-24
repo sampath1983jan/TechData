@@ -32,7 +32,7 @@ namespace Tz.Net
             }
             catch (System.Exception Ex)
             {
-                throw Ex;
+                return Ex.Message;
             }
 
         }

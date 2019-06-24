@@ -421,7 +421,7 @@ namespace Tech.QScript
                 var d =c.connection;
                 var data = new Domain.QData.DataParser(d);
                data.GetDatatable(element);                
-                result.Value = data.Datatable;
+                result.Value = data.Query;
             }            
         }
         /// <summary>

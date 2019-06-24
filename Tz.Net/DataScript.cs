@@ -126,13 +126,13 @@ namespace Tz.Net
             {
                 Script = Script.Replace("\n", "");
                 Script = Script.Replace("\r", "");
-
                 sq = new QScriptStatement(Script, ev);
                 Result res = sq.Evaluation();
                 return res.get(returnstring);
+               // return res.getProperties();
             }
             catch (System.Exception Ex) {
-                throw Ex;
+                return Ex.Message;
             }            
         }
     }
