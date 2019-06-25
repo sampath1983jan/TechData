@@ -124,10 +124,10 @@ namespace Tz.Data
         public class DataScript
         {
             public const string Table = "cf_DataScript";
-            public static readonly DBColumn ScriptID = DBColumn.Column("ScriptID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
-           public static readonly DBColumn ScriptName = DBColumn.Column("ScriptName", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn ScriptID = DBColumn.Column("ScriptID", System.Data.DbType.String, 255, DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn ScriptName = DBColumn.Column("ScriptName", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
             public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
-            public static readonly DBColumn Script = DBColumn.Column("Script", System.Data.DbType.String , 655000, DBColumnFlags.Nullable);
+            public static readonly DBColumn Script = DBColumn.Column("Script", System.Data.DbType.String, 655000, DBColumnFlags.Nullable);
         }
 
         public class ClientServer
@@ -142,8 +142,65 @@ namespace Tz.Data
             public static readonly DBColumn ScriptID = DBColumn.Column("ScriptID", System.Data.DbType.String, 255);
             public static readonly DBColumn Intend = DBColumn.Column("Intend", System.Data.DbType.String, 255);
         }
+        public class Component {
+            public const string Table = "cf_component";
+            public static readonly DBColumn ComponentID = DBColumn.Column("componentId", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn ClientID = DBColumn.Column("clientid", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentName = DBColumn.Column("ComponentName", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn ComponentType = DBColumn.Column("ComponentType", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            public static readonly DBColumn Title = DBColumn.Column("Title", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn TableID = DBColumn.Column("TableID", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn PrimaryKeys = DBColumn.Column("PrimaryKeys", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn TitleFormat = DBColumn.Column("TitleFormat", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn NewLayout = DBColumn.Column("NewLayout", System.Data.DbType.String, 655000, DBColumnFlags.Nullable);
+            public static readonly DBColumn ReadLayout = DBColumn.Column("ReadLayout", System.Data.DbType.String, 655000, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsGlobal = DBColumn.Column("IsGlobal", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+        }   
+        public class ComponentAttribute{
+            public const string Table = "cf_componentattribute";
+            public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
+            public static readonly DBColumn FieldID = DBColumn.Column("FieldID", System.Data.DbType.String, 255);
+            public static readonly DBColumn IsRequired = DBColumn.Column("IsRequired", System.Data.DbType.Boolean, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsUnique = DBColumn.Column("IsUnique", System.Data.DbType.Boolean, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsCore = DBColumn.Column("IsCore", System.Data.DbType.Boolean, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsReadOnly = DBColumn.Column("IsReadOnly", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsSecured = DBColumn.Column("IsSecured", System.Data.DbType.Boolean, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn LookUpID = DBColumn.Column("LookUpID", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            //public static readonly DBColumn PrimaryKeys = DBColumn.Column("PrimaryKeys", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn DefaultValue = DBColumn.Column("DefaultValue", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn FileExtension = DBColumn.Column("FileExtension", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn RegExp = DBColumn.Column("RegExp", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsAuto = DBColumn.Column("IsAuto", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+        }
+        public class ComponentModal {
+            public const string Table = "cf_componentmodal";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentModalID = DBColumn.Column("ComponentModalID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn ParentComponent = DBColumn.Column("ParentComponent", System.Data.DbType.String, 255);
+            public static readonly DBColumn Name = DBColumn.Column("Name", System.Data.DbType.String, 255);
+            public static readonly DBColumn Catgory = DBColumn.Column("Catgory", System.Data.DbType.String, 255);
+        }
 
-    }
-
-    
+        public class ComponentModalItem {
+            public const string Table = "cf_componentmodalItem";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentModalID = DBColumn.Column("ComponentModalID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ChildComponentID = DBColumn.Column("ChildComponentID", System.Data.DbType.String, 255);
+            public static readonly DBColumn Left = DBColumn.Column("Left", System.Data.DbType.Int32,DBColumnFlags.Nullable);
+            public static readonly DBColumn Right = DBColumn.Column("Right", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            public static readonly DBColumn Depth = DBColumn.Column("Depth", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+        }
+        public class ComponentModalRelation
+        {
+            public const string Table = "cf_componentmodalRelation";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentModalID = DBColumn.Column("ComponentModalID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ParentField = DBColumn.Column("ParentField", System.Data.DbType.String, 255);
+            public static readonly DBColumn RelatedField = DBColumn.Column("RelatedField", System.Data.DbType.String, 255);            
+        }
+    }    
 }

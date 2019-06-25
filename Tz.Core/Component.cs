@@ -25,5 +25,10 @@ namespace Tz.Core
         public string NewLayout { get; set; }
         public string ReadLayout { get; set; }
         public bool IsGlobal { get; set; }
+
+        public Component(string clientID,string componentID) {
+            ClientID = clientID;
+            ComponentID = componentID;
+        }
     }
 }

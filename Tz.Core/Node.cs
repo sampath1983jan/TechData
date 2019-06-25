@@ -7,43 +7,52 @@ using System.Text;
 namespace Tz.Core
 {
      
-        public class TreeNode<T>
+        public class Node<T>
         {
             private readonly T _value;
-            private readonly List<TreeNode<T>> _children = new List<TreeNode<T>>();
+            private readonly List<Node<T>> _children = new List<Node<T>>();
 
-            public TreeNode(T value)
+            public Node(T value)
             {
                 _value = value;
             }
 
-            public TreeNode<T> this[int i]
+        
+            public Node<T> this[int i]
             {
                 get { return _children[i]; }
             }
 
-            public TreeNode<T> Parent { get; private set; }
+            public Node<T> Parent { get; private set; }
 
             public T Value { get { return _value; } }
 
-            public ReadOnlyCollection<TreeNode<T>> Children
+            public List<Node<T>> Children
             {
-                get { return _children.AsReadOnly(); }
+                get { return _children; }
             }
 
-            public TreeNode<T> AddChild(T value)
+            public Node<T> AddChild(T value)
             {
-                var node = new TreeNode<T>(value) { Parent = this };
+                var node = new Node<T>(value) { Parent = this };
                 _children.Add(node);
                 return node;
             }
 
-            public TreeNode<T>[] AddChildren(params T[] values)
+        public Node<T> AddChild(Node<T> value)
+        {
+            var node = value;
+            node.Parent = this;
+            _children.Add(node);
+            return node;
+        }
+
+        public Node<T>[] AddChildren(params T[] values)
             {
                 return values.Select(AddChild).ToArray();
             }
 
-            public bool RemoveChild(TreeNode<T> node)
+            public bool RemoveChild(Node<T> node)
             {
                 return _children.Remove(node);
             }

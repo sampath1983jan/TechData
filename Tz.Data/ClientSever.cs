@@ -63,15 +63,15 @@ namespace Tz.Data
             }
         }
 
-        public DataTable GetServer(string clientid) {
-            DBDatabase db;
-            db = base.Database;
-            DBQuery select;
+            public DataTable GetServer(string clientid) {
+                DBDatabase db;
+                db = base.Database;
+                DBQuery select;
 
-            select = DBQuery.SelectAll(TzAccount.ClientServer.Table).From(TzAccount.ClientServer.Table)
-                .WhereField(TzAccount.ClientServer.Table, TzAccount.ClientServer.ClientID.Name, Compare.Equals, DBConst.String(clientid));
-            return db.GetDatatable(select);
-        }
+                select = DBQuery.SelectAll(TzAccount.ClientServer.Table).From(TzAccount.ClientServer.Table)
+                    .WhereField(TzAccount.ClientServer.Table, TzAccount.ClientServer.ClientID.Name, Compare.Equals, DBConst.String(clientid));
+                return db.GetDatatable(select);
+            }
 
         public bool Remove(string clientID, string serverID) {
             DBDatabase db;
