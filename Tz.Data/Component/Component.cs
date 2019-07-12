@@ -11,8 +11,8 @@ namespace Tz.Data.Component
 {
    public class Component:DataBase
     {
-        public Component() {
-            InitDbs("");
+        public Component(string conn) {
+            InitDbs(conn);
         }
         /// <summary>
         /// 
@@ -24,10 +24,35 @@ namespace Tz.Data.Component
             DBDatabase db;
             db = base.Database;
             DBQuery select;
-
-            select = DBQuery.SelectAll(TzAccount.Component.Table).From(TzAccount.Component.Table)
-                .WhereField(TzAccount.Component.Table, TzAccount.Component.ClientID.Name, Compare.Equals, DBConst.String(clientid));
-            return db.GetDatatable(select);
+            select = DBQuery.Select()
+                .Field(TzAccount.Component.Table, TzAccount.Component.ComponentID.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.ComponentName.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.Category.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.Title.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.TitleFormat.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.PrimaryKeys.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.ComponentType.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.TableID.Name)
+                .Field(TzAccount.Component.Table, TzAccount.Component.IsGlobal.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FieldID.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeName.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeType.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsRequired.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsCore.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsUnique.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsAuto.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsSecured.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsReadOnly.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FileExtension.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.LookUpID.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.RegExp.Name)                
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.DefaultValue.Name)
+                .From(TzAccount.ComponentAttribute.Table).LeftJoin(TzAccount.Component.Table)
+                .On(TzAccount.Component.Table, TzAccount.Component.ComponentID.Name,
+                Compare.Equals,TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.ComponentID.Name)
+               .WhereField(TzAccount.Component.Table, TzAccount.ComponentAttribute.ClientID.Name, 
+               Compare.Equals, DBConst.String(clientid));
+            return db.GetDatatable(select);                       
         }
         /// <summary>
         /// 
@@ -82,7 +107,8 @@ namespace Tz.Data.Component
             string primarykeys,
             string titleformat,
             string newlayout,
-            string readlayout
+            string readlayout,
+            string category
             )
         {
             DBDatabase db;
@@ -98,7 +124,7 @@ namespace Tz.Data.Component
             DBConst dbtitleformat = DBConst.String(titleformat);
             DBConst dbnewlayout = DBConst.String(newlayout);
             DBConst dbreadlayout = DBConst.String(readlayout);
-
+            DBConst dbcategory = DBConst.String(category);
             DBQuery insert = DBQuery.InsertInto(TzAccount.Component.Table).Fields(
               TzAccount.Component.ComponentID.Name,
               TzAccount.Component.ComponentName.Name,
@@ -109,7 +135,9 @@ namespace Tz.Data.Component
               TzAccount.Component.NewLayout.Name,
               TzAccount.Component.ReadLayout.Name,
               TzAccount.Component.TableID.Name,
-              TzAccount.Component.ClientID .Name 
+              TzAccount.Component.ClientID .Name ,
+              TzAccount.Component.Category.Name
+
               )
               .Values(
               dbcomponentid,
@@ -121,7 +149,8 @@ namespace Tz.Data.Component
               dbnewlayout,
               dbreadlayout,
               dbtableid,
-              dbclientid
+              dbclientid,
+              dbcategory
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -154,13 +183,13 @@ namespace Tz.Data.Component
         /// <returns></returns>
         public bool UpdateComponent(string clientid,string componentID,
             string componentName,
-            int componenttype,
-            string tableid,
+            int componenttype,           
             string title,
             string primarykeys,
             string titleformat,
             string newlayout,
-            string readlayout
+            string readlayout,
+            string category
             )
         {
             DBDatabase db;
@@ -168,19 +197,24 @@ namespace Tz.Data.Component
             DBConst dbcomponentid = DBConst.String(componentID);
             DBConst dbcomponentName = DBConst.String(componentName);
             DBConst dbcomponenttype = DBConst.Int32(componenttype);
-            DBConst dbtableid = DBConst.String(tableid);
+         //   DBConst dbtableid = DBConst.String(tableid);
             DBConst dbtitle = DBConst.String(title);
             DBConst dbprimarykeys = DBConst.String(primarykeys);
             DBConst dbtitleformat = DBConst.String(titleformat);
             DBConst dbnewlayout = DBConst.String(newlayout);
             DBConst dbreadlayout = DBConst.String(readlayout);
+            DBConst dbcategory = DBConst.String(category);
             DBComparison componentid = DBComparison.Equal(DBField.Field(TzAccount.Component.ComponentID.Name), dbcomponentid);
 
             DBQuery update = DBQuery.Update(TzAccount.Component.Table).Set(
             TzAccount.Component.ComponentName.Name, dbcomponentName
             ).Set(
-            TzAccount.Component.PrimaryKeys.Name, dbprimarykeys
-            ).Set(
+            TzAccount.Component.Category.Name, dbcategory
+            )
+            //.Set(
+            //TzAccount.Component.PrimaryKeys.Name, dbprimarykeys
+            //)
+            .Set(
             TzAccount.Component.Title.Name, dbtitle
             ).Set(
             TzAccount.Component.TitleFormat.Name, dbtitleformat
@@ -199,7 +233,6 @@ namespace Tz.Data.Component
             {
                 return false;
             }
-
         }
         public bool Remove(string clientID,
             string componentID)

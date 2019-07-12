@@ -1,12 +1,14 @@
 ﻿body {
     padding-top: 10px;
     padding-bottom: 20px;
+    font-family: "Segoe UI","Helvetica Neue","Arial","sans-serif"
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 5px;
     padding-right: 5px;
+    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -65,3 +67,149 @@ textarea {
         font-size: 14px;
         height: 18px;
     }
+
+input[type=checkbox] {
+    left: 0;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    z-index:10;
+}
+
+.option-input {
+    top:1px !important;
+}
+label {
+    margin-bottom:2px;
+}
+
+is-floating-label {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.list {
+    margin:5px;
+    
+}
+    .list > .header {
+        font-size: 18px;
+        color: #4f4f4f;
+        font-weight: bold;
+        margin: 10px 10px 10px 0px;
+        border-bottom: 1px solid #aaa;
+        padding-bottom:10px;
+    }
+    .list > ul {
+        padding-left:0px
+    }
+        
+        .list > ul > li {   
+            line-height: 40px;
+            display: block;
+         
+            font-size: 16px;
+            color: #4f4f4f;
+            transition: .4s;
+        }
+            .list > ul > li > div[class^="row"] {
+                border-bottom: 1px solid #dddddda6;
+                margin-left: 1px;
+            }
+                .list > ul > li > div[class^="row"] > div {                    
+                    font-size: 14px;
+                }
+            .list > ul > li > a:hover {
+            }
+            .list > ul > li > a {
+                margin-left: 20px;
+                font-size: 16px;
+                color: #4f4f4f;
+                text-decoration: none;
+                
+
+                 
+            }
+.bootstrap-select {
+    border: 1px solid #ced4da !important;
+}
+.liactive {
+    border-right: 2px solid green !important;
+    background-color: #ddd !important;
+}
+.tdrow {
+     padding:10px 0px 10px 0px;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text);
+    color: #bbbbbb;
+}
+.pgtitle {
+    font-size: 20px;
+    color: #4f4f4f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.nav-link.active {
+    color: #28a745 !important;
+    position:relative;
+}
+    .nav-link.active:hover:after {
+        width: 90%;
+        background: green;
+    }
+    .nav-link.active:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+        bottom: -4px;
+        /****** 
+       optional values below 
+       ******/
+        /* center - (optional) use with adjusting width   */
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 80%;
+        top: 85%;
+        
+        background: green;
+        /* optional animation */
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+.rowheader {
+    font-size: 14px;
+    color: #4f4f4f;
+    font-weight: bold;
+    margin: 10px 10px 10px 0px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+.remove {
+    font-size:14px;
+    color:#bbbbbb;
+    padding:5px;
+}
+.remove:hover {    
+    color: red;  
+}
+.rowlight:hover {
+    background-color:rgba(204, 204, 204, 0.46);
+}
+
+.plchighlight {
+    border: 1px solid #FECA40;
+    font-weight: bold;
+    font-size: 45px;
+    background-color: rgba(254, 202, 64, 0.49);
+    min-height: 30px;
+}

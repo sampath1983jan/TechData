@@ -148,7 +148,8 @@ namespace Tz.Data
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public TableBuilder AddPrimaryKeyField(DBColumn c) {         
+        public TableBuilder AddPrimaryKeyField(DBColumn c) {
+           
             PrimaryKey.Add(c);
             return this;
         }

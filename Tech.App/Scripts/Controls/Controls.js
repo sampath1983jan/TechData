@@ -36,7 +36,8 @@
                 groupField:"",
                 onSelected: function () {
 
-                },
+				},
+				defaultSelection:"----Select----",
                 container: "body",
                 dropupAuto: true,
                 width: 'auto',
@@ -269,11 +270,13 @@
 			}
 			else if (prt.inputType === 8) {
                 $(self).append(tmp);                
-            } else if (prt.inputType === 12) {
+			}
+			else if (prt.inputType === 12) {
                 $(self).append(tmp);
                 $(self).find("input").data('parent', self);
                 $(self).find("input").on("change", methods._fileSelection);
-            }else if (prt.inputType === 13) {
+			}
+			else if (prt.inputType === 13) {
                 $(self).append(tmp);
                 //data-slider-value
                 $(self).find("input").bootstrapSlider({
@@ -290,7 +293,8 @@
                     }
                 });
                 $("#slider" + prt.id).addClass("ns-Slider");
-            } else if (prt.inputType === 15) {
+			}
+			else if (prt.inputType === 15) {
                 $(self).append(tmp);
                 $(self).colorpicker({
                     format: prt.color.format,
@@ -299,7 +303,8 @@
                 }).on('changeColor', function (e) {
                     prt.color.onSelected(e.color);
                     });
-            } else if (prt.inputType === 17) {
+			}
+			else if (prt.inputType === 17) {
                 $(self).append(tmp);
                 var ty = '';
                 if (prt.autofill.type === 'select') {
@@ -317,15 +322,29 @@
                 };
                 $('#aufill_' + prt.id).tokenize2(op);
                 
-            } else if (prt.inputType === 19) {
-                $(self).append(tmp);
+			}
+			else if (prt.inputType === 19) {
+				$(self).append(tmp);
+				if ($('#select_' + prt.id)[0] != null) {
+					$('#select_' + prt.id)[0].prt = prt;
+				}
+			
                 $('#select_' + prt.id).selectpicker({
                     dropupAuto: prt.selectPicker.dropupAuto,
                     width: prt.width,
                     noneSelectedText: prt.noneSelectedText,
                     noneResultsText: prt.noneResultsText
-                });
-            } else {
+				}).on("change", function (e) {
+					this.prt.selectPicker.onSelected($(this).val());
+				});
+				
+			} else if (prt.inputType == 16) {
+				$(self).append(tmp);
+				var a = methods._setCheckValue(prt.text);
+				$(self).find("input[type=checkbox]").prop("checked", a);
+				//$(self).find("[type=checkbox]").Input("text", prt.text);
+			}
+			else {
                 
                 $(self).append(tmp);
                 //if (prt.inputType === 10) {
@@ -664,7 +683,8 @@
                 var ds = prt.selectPicker.datasource;
                 if (prt.selectPicker.groupField !== "") {
                     var ugroup = methods._renderUniqueValue(ds, prt.selectPicker.groupField);
-                    ugroup = ugroup.Unique;
+					ugroup = ugroup.Unique;
+					
                     tmp = tmp + "<select " + db + " " + sel + " class='form-control' id='select_" + prt.id + "'>";
                     //if (prt.selectPicker.selection === 'single') {
                     //    tmp = tmp + "<option value='-1'>-----Select-----</option>";
@@ -694,7 +714,7 @@
                 } else {
                     tmp = tmp + "<select " + db + " " + sel + " class='form-control' id='select_" + prt.id + "'>";
                     if (prt.selectPicker.selection === 'single') {
-                        tmp = tmp + "<option value='-1'>-----Select-----</option>";
+						tmp = tmp + "<option value='-1'>" + prt.selectPicker.defaultSelection +"</option>";
                     }
                     $.each(ds, function (ids, so) {
                         var vf = "";
@@ -1978,6 +1998,8 @@
 				$("#" + ks.id).find("input").prop('required', true);
 				$("#" + ks.id).find("textarea").prop('required', true);
 				//$("#" + ks.id).find('small').remove();
+				 
+				$($("#" + ks.id).find("select")[0]).before("<label style='display:none;' for=" + ks.field.id + ">" + ks.label + "</label>");
 				$($("#" + ks.id).find("input")[0]).before("<label for=" + ks.field.id + ">" + ks.label + "</label>");
 				$($("#" + ks.id).find("textarea")[0]).before("<label for=" + ks.field.id + ">" + ks.label + "</label>");
 				if (ks.field.enablefloating == undefined) {
@@ -1987,6 +2009,20 @@
 					$("#" + ks.id).find("textarea").on('focus blur', function (e) {
 						$(this).parents('.is-floating-label').toggleClass('is-focused', (e.type === 'focus' || this.value.length > 0));
 					}).trigger('blur');
+
+					$("#" + ks.id).find("select").change(function (e) {
+						if ($(this).parents('.is-floating-label').hasClass('is-focused') == false) {
+							$(this).parents('.is-floating-label').addClass('is-focused');
+														
+						}
+						var a = $(this).parent().parent().Input("text");
+						if (a == '-1') {
+							$(this).parents('.is-floating-label').find("label").css('display', "none");	
+						} else{
+							$(this).parents('.is-floating-label').find("label").css('display', "block");
+						}
+						
+					});
 
 					$("#" + ks.id).find("input").on('focus blur', function (e) {
 						$(this).parents('.is-floating-label').toggleClass('is-focused', (e.type === 'focus' || this.value.length > 0));

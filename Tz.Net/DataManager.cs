@@ -64,6 +64,7 @@ namespace Tz.Net
         /// </summary>
         /// <returns></returns>
         public DataManager NewTable(string tableName,string category) {
+            tableName = tableName.Replace(" ", "_");
             Table = new Entity.Table(Server.ServerID, tableName,category,this.ClientID);
             return this;            
         }        
@@ -160,6 +161,7 @@ namespace Tz.Net
                     //  field.IsPrimaryKey = false;
                     if (fieldName != field.FieldName)
                     {
+                       // field.FieldName = fieldName;
                         field.NewFieldName = fieldName;
                     }
                     field.isChanged = true;
@@ -177,6 +179,7 @@ namespace Tz.Net
             Data.TableBuilder tb = new Data.TableBuilder(this.Table.TableName, this.Server.Connection());
             try
             {
+                newName = newName.Replace(" ", "_");
                 if (newName != "") {
                     tb.Rename(newName);
                     this.Table.TableName = newName;
@@ -252,6 +255,10 @@ namespace Tz.Net
                             else
                                 tb.AlterField(c, f.NewFieldName == null ? "" : f.NewFieldName);
 
+                            DBColumn k = DBColumn.Column( f.NewFieldName ==""? f.FieldName:f.NewFieldName,
+                               f.FieldType,
+                               f.Length,
+                               Tech.Data.DBColumnFlags.PrimaryKey);
                             tb.AddPrimaryKeyField(c);
                         }
                         else if (f.IsNullable == true)

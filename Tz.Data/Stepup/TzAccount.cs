@@ -147,6 +147,7 @@ namespace Tz.Data
             public static readonly DBColumn ComponentID = DBColumn.Column("componentId", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
             public static readonly DBColumn ClientID = DBColumn.Column("clientid", System.Data.DbType.String, 255);
             public static readonly DBColumn ComponentName = DBColumn.Column("ComponentName", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
             public static readonly DBColumn ComponentType = DBColumn.Column("ComponentType", System.Data.DbType.Int32, DBColumnFlags.Nullable);
             public static readonly DBColumn Title = DBColumn.Column("Title", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
             public static readonly DBColumn TableID = DBColumn.Column("TableID", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
@@ -159,6 +160,8 @@ namespace Tz.Data
         }   
         public class ComponentAttribute{
             public const string Table = "cf_componentattribute";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn AttributeName = DBColumn.Column("AttributeName", System.Data.DbType.String, 255);
             public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
             public static readonly DBColumn FieldID = DBColumn.Column("FieldID", System.Data.DbType.String, 255);
             public static readonly DBColumn IsRequired = DBColumn.Column("IsRequired", System.Data.DbType.Boolean, 255, DBColumnFlags.Nullable);
@@ -166,8 +169,8 @@ namespace Tz.Data
             public static readonly DBColumn IsCore = DBColumn.Column("IsCore", System.Data.DbType.Boolean, 255, DBColumnFlags.Nullable);
             public static readonly DBColumn IsReadOnly = DBColumn.Column("IsReadOnly", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
             public static readonly DBColumn IsSecured = DBColumn.Column("IsSecured", System.Data.DbType.Boolean, 555, DBColumnFlags.Nullable);
-            public static readonly DBColumn LookUpID = DBColumn.Column("LookUpID", System.Data.DbType.Int32, DBColumnFlags.Nullable);
-            //public static readonly DBColumn PrimaryKeys = DBColumn.Column("PrimaryKeys", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn LookUpID = DBColumn.Column("LookUpID", System.Data.DbType.String, DBColumnFlags.Nullable);
+            public static readonly DBColumn AttributeType = DBColumn.Column("AttributeType", System.Data.DbType.Int32, 555, DBColumnFlags.Nullable);
             public static readonly DBColumn DefaultValue = DBColumn.Column("DefaultValue", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
             public static readonly DBColumn FileExtension = DBColumn.Column("FileExtension", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
             public static readonly DBColumn RegExp = DBColumn.Column("RegExp", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
@@ -182,25 +185,50 @@ namespace Tz.Data
             public static readonly DBColumn Name = DBColumn.Column("Name", System.Data.DbType.String, 255);
             public static readonly DBColumn Catgory = DBColumn.Column("Catgory", System.Data.DbType.String, 255);
         }
-
         public class ComponentModalItem {
             public const string Table = "cf_componentmodalItem";
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
-            public static readonly DBColumn ComponentModalID = DBColumn.Column("ComponentModalID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn ComponentModalID = DBColumn.Column("ComponentModalID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentModalItemID = DBColumn.Column("ComponentModalItemID", System.Data.DbType.String, 255);
             public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
             public static readonly DBColumn ChildComponentID = DBColumn.Column("ChildComponentID", System.Data.DbType.String, 255);
-            public static readonly DBColumn Left = DBColumn.Column("Left", System.Data.DbType.Int32,DBColumnFlags.Nullable);
-            public static readonly DBColumn Right = DBColumn.Column("Right", System.Data.DbType.Int32, DBColumnFlags.Nullable);
-            public static readonly DBColumn Depth = DBColumn.Column("Depth", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            //public static readonly DBColumn Left = DBColumn.Column("Left", System.Data.DbType.Int32,DBColumnFlags.Nullable);
+            //public static readonly DBColumn Right = DBColumn.Column("Right", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            //public static readonly DBColumn Depth = DBColumn.Column("Depth", System.Data.DbType.Int32, DBColumnFlags.Nullable);
             public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class ComponentModalRelation
         {
             public const string Table = "cf_componentmodalRelation";
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
-            public static readonly DBColumn ComponentModalID = DBColumn.Column("ComponentModalID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentModalItemID = DBColumn.Column("ComponentModalItemID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentModalRelationID = DBColumn.Column("ComponentModalRelationID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+          //  public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
+          //  public static readonly DBColumn ChildComponentID = DBColumn.Column("ChildComponentID", System.Data.DbType.String, 255);
             public static readonly DBColumn ParentField = DBColumn.Column("ParentField", System.Data.DbType.String, 255);
             public static readonly DBColumn RelatedField = DBColumn.Column("RelatedField", System.Data.DbType.String, 255);            
+        }
+
+        public class ComponentLookUpItem
+        {
+            public const string Table = "cf_componentlookupItem";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ComponentLookupItemID = DBColumn.Column("ComponentLookupItemID", System.Data.DbType.String, 255,DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn Value = DBColumn.Column("Value", System.Data.DbType.String, 255);
+            public static readonly DBColumn Description = DBColumn.Column("Description", System.Data.DbType.String, 1000);
+            public static readonly DBColumn LookupID = DBColumn.Column("LookupID", System.Data.DbType.String, 255);
+            public static readonly DBColumn Label = DBColumn.Column("Label", System.Data.DbType.String, 255);
+            public static readonly DBColumn ShortLabel = DBColumn.Column("ShortLabel", System.Data.DbType.String, 255);
+            public static readonly DBColumn ParentID = DBColumn.Column("ParentID", System.Data.DbType.String, 255);
+            public static readonly DBColumn Order = DBColumn.Column("Order", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn IsActive = DBColumn.Column("IsActive", System.Data.DbType.Boolean);
+        }
+
+        public class ComponentLookUp {
+            public const string Table = "cf_componentlookup";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn LookupID = DBColumn.Column("LookupID", System.Data.DbType.String, 255, DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn LookUpName = DBColumn.Column("Name", System.Data.DbType.String, 255);            
         }
     }    
 }

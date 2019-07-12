@@ -10777,6 +10777,12 @@ body {
         background-color: transparent;
     }
 
+    .is-floating-label select {
+        /*position: absolute;*/
+        left: 0;
+        background-color: transparent;
+    }
+
     .is-floating-label label {
         opacity: 0.8;
         margin-left: 10px;

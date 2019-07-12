@@ -6,21 +6,43 @@ using System.Data.Common;
 using System.Text;
 using Tech.Data;
 using Tech.Data.Query;
+using Tz.Data;
 
 namespace Tz.Data.Component
 {
     public class ComponentAttribute:DataBase
     {
-        public ComponentAttribute() {
-            InitDbs("");
+        public ComponentAttribute(string conn) {
+            InitDbs(conn);
         }
 
         public DataTable GetAttributes( string componentID) {
             DBDatabase db;
             db = base.Database;
             DBQuery select;
-            select = DBQuery.SelectAll().From(TzAccount.ComponentAttribute.Table)
-               .WhereField(TzAccount.Component.Table, TzAccount.ComponentAttribute.ComponentID.Name, Compare.Equals, DBConst.String(componentID));
+            select = DBQuery.Select()
+                .Field(TzAccount.Field.Table,TzAccount.Field.FieldName.Name)
+                .Field(TzAccount.Field.Table, TzAccount.Field.FieldType.Name)
+                .Field(TzAccount.Field.Table, TzAccount.Field.Length.Name)
+                .Field(TzAccount.Field.Table, TzAccount.Field.IsNullable.Name)
+                .Field(TzAccount.Field.Table, TzAccount.Field.ISPrimaryKey.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FieldID.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeName.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeType.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsRequired.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsCore.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsUnique.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsAuto.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsSecured.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsReadOnly.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FileExtension.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.LookUpID.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.RegExp.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.DefaultValue.Name)
+                .From(TzAccount.ComponentAttribute.Table).LeftJoin(TzAccount.Field.Table)
+                .On(TzAccount.ComponentAttribute.Table,TzAccount.ComponentAttribute.FieldID.Name,Compare.Equals,
+                TzAccount.Field.Table,TzAccount.Field.FieldID.Name)
+               .WhereField(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.ComponentID.Name, Compare.Equals, DBConst.String(componentID));
             return db.GetDatatable(select);
         }
 
@@ -33,14 +55,22 @@ namespace Tz.Data.Component
             bool isReadOnly,
             bool isSecuired,
             bool isAuto,
-            int lookupid,
+            string lookupid,
             string defaultValue,
             string fileExtension,
-            string regExp) {
+            string regExp,
+            string AttributeName,
+            int AttributeType) {
+            lookupid= lookupid == null ? "" : lookupid;
+            defaultValue = defaultValue == null ? "" : defaultValue;
+            fileExtension = fileExtension == null ? "" : fileExtension;
+            regExp = regExp == null ? "" : regExp;
+            AttributeName = AttributeName == null ? "" : AttributeName;
+            FieldID = FieldID == null ? "" : FieldID;
 
             DBDatabase db;
             db = base.Database;
-
+            DBConst dbAttributeName = DBConst.String(AttributeName);
             DBConst dbcomponentID = DBConst.String(componentID);
             DBConst dbclientid = DBConst.String(clientid);
             DBConst dbFieldID = DBConst.String(FieldID);
@@ -50,10 +80,12 @@ namespace Tz.Data.Component
             DBConst dbisReadOnly = DBConst.Const(DbType.Boolean, isReadOnly);
             DBConst dbisSecuired = DBConst.Const(DbType.Boolean, isSecuired);
             DBConst dbisAuto = DBConst.Const(DbType.Boolean, isAuto);
-            DBConst dblookupid = DBConst.Int32(lookupid);
+            DBConst dblookupid = DBConst.String (lookupid);
             DBConst dbdefaultValue = DBConst.String(defaultValue);
             DBConst dbfileExtension = DBConst.String(fileExtension);
             DBConst dbregExp = DBConst.String(regExp);
+            DBConst dbAttributeType = DBConst.Int32(AttributeType);
+
 
             DBQuery insert = DBQuery.InsertInto(TzAccount.ComponentAttribute.Table).Fields(
               TzAccount.ComponentAttribute.ComponentID.Name,
@@ -67,7 +99,10 @@ namespace Tz.Data.Component
               TzAccount.ComponentAttribute.LookUpID.Name,
               TzAccount.ComponentAttribute.DefaultValue.Name, 
               TzAccount.ComponentAttribute.FileExtension.Name,
-              TzAccount.ComponentAttribute.RegExp.Name
+              TzAccount.ComponentAttribute.RegExp.Name,
+              TzAccount.ComponentAttribute.ClientID.Name,
+              TzAccount.ComponentAttribute.AttributeName.Name,
+              TzAccount.ComponentAttribute.AttributeType.Name
               )
               .Values(
               dbcomponentID,
@@ -81,7 +116,10 @@ namespace Tz.Data.Component
               dblookupid,
               dbdefaultValue,
               dbfileExtension,
-              dbregExp
+              dbregExp,
+              dbclientid,
+              dbAttributeName,
+              dbAttributeType
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -109,14 +147,22 @@ namespace Tz.Data.Component
             bool isReadOnly,
             bool isSecuired,
             bool isAuto,
-            int lookupid,
+            string lookupid,
             string defaultValue,
             string fileExtension,
-            string regExp)
+            string regExp,
+            string attributeName)
         {
+            lookupid = lookupid == null ? "" : lookupid;
+            defaultValue = defaultValue == null ? "" : defaultValue;
+            fileExtension = fileExtension == null ? "" : fileExtension;
+            regExp = regExp == null ? "" : regExp;
+            attributeName = attributeName == null ? "" : attributeName;
+            FieldID = FieldID == null ? "" : FieldID;
+
             DBDatabase db;
             db = base.Database;
-
+            DBConst dbattributeName = DBConst.String(attributeName);
             DBConst dbcomponentID = DBConst.String(componentID);
             DBConst dbclientid = DBConst.String(clientid);
             DBConst dbFieldID = DBConst.String(FieldID);
@@ -126,19 +172,18 @@ namespace Tz.Data.Component
             DBConst dbisReadOnly = DBConst.Const(DbType.Boolean, isReadOnly);
             DBConst dbisSecuired = DBConst.Const(DbType.Boolean, isSecuired);
             DBConst dbisAuto = DBConst.Const(DbType.Boolean, isAuto);
-            DBConst dblookupid = DBConst.Int32(lookupid);
+            DBConst dblookupid = DBConst.String(lookupid);
             DBConst dbdefaultValue = DBConst.String(defaultValue);
             DBConst dbfileExtension = DBConst.String(fileExtension);
             DBConst dbregExp = DBConst.String(regExp);
             DBComparison componentid = DBComparison.Equal(DBField.Field(TzAccount.ComponentAttribute.ComponentID.Name), dbcomponentID);
             DBComparison fieldid = DBComparison.Equal(DBField.Field(TzAccount.ComponentAttribute.FieldID.Name), dbFieldID);
+            DBComparison Client = DBComparison.Equal(DBField.Field(TzAccount.ComponentAttribute.ClientID.Name), dbclientid);
 
             DBQuery update = DBQuery.Update(TzAccount.ComponentAttribute.Table).Set(
-          TzAccount.ComponentAttribute.ComponentID.Name, dbcomponentID
-          ).Set(
-          TzAccount.ComponentAttribute.FieldID.Name, dbFieldID
-          ).Set(
           TzAccount.ComponentAttribute.IsRequired.Name, dbisrequired
+          ).Set(
+          TzAccount.ComponentAttribute.AttributeName.Name, dbattributeName
           ).Set(
           TzAccount.ComponentAttribute.IsCore.Name, dbiscore
           ).Set(
@@ -157,7 +202,7 @@ namespace Tz.Data.Component
           TzAccount.ComponentAttribute.FileExtension.Name, dbfileExtension
           ).Set(
           TzAccount.ComponentAttribute.RegExp.Name, dbregExp
-          ).WhereAll(componentid,fieldid);
+          ).WhereAll(componentid,fieldid, Client);
 
             int i = db.ExecuteNonQuery(update);
             if (i > 0)
@@ -180,6 +225,27 @@ namespace Tz.Data.Component
 
             DBQuery del = DBQuery.DeleteFrom(TzAccount.ComponentAttribute.Table)
                                 .WhereAll(field, component);
+            int i = db.ExecuteNonQuery(del);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool RemoveAll(string componentID)
+        {
+            DBDatabase db;
+            db = base.Database;
+            //DBConst dbfieldid = DBConst.String(fieldid);
+            DBConst dbcomponentID = DBConst.String(componentID);
+            //DBComparison field = DBComparison.Equal(DBField.Field(TzAccount.ComponentAttribute.FieldID.Name), dbfieldid);
+            DBComparison component = DBComparison.Equal(DBField.Field(TzAccount.ComponentAttribute.ComponentID.Name), dbcomponentID);
+
+            DBQuery del = DBQuery.DeleteFrom(TzAccount.ComponentAttribute.Table)
+                                .WhereAll( component);
             int i = db.ExecuteNonQuery(del);
             if (i > 0)
             {

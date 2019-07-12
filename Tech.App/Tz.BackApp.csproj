@@ -178,6 +178,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Authentication\AuthenticationController.cs" />
     <Compile Include="Controllers\Client\ClientController.cs" />
+    <Compile Include="Controllers\Component\ComponentManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Schema\SchemaController.cs" />
     <Compile Include="Controllers\Server\ServerController.cs" />
@@ -185,6 +186,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\ComponentModal.cs" />
     <Compile Include="Models\CustomAuthorizeAttribute.cs" />
     <Compile Include="Models\CustomMembership.cs" />
     <Compile Include="Models\CustomMembershipUser.cs" />
@@ -222,6 +225,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\NT-Node.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -263,6 +267,8 @@
     <Content Include="Scripts\Controls\Tokenizer\Tokenizer.js" />
     <Content Include="Scripts\Controls\Utility.js" />
     <Content Include="Scripts\Controls\Wizard\Wizard.js" />
+    <Content Include="Scripts\d3.js" />
+    <Content Include="Scripts\Jcookie.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -276,6 +282,10 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Controls\NumberSlider\Numberslider.css" />
     <Content Include="Scripts\Controls\NumberSlider\NumberSlider.js" />
+    <Content Include="Scripts\NT\ComponentModal.js" />
+    <Content Include="Scripts\NT\NT-Node.js" />
+    <Content Include="Scripts\NT\NT-NodeEdge.js" />
+    <Content Include="Scripts\NT\NT.js" />
     <Content Include="Scripts\WebChat.js" />
     <Content Include="Views\chat.html" />
     <Content Include="Web.config" />
@@ -299,9 +309,12 @@
     <Content Include="Views\Server\Server.cshtml" />
     <Content Include="Views\Schema\Schema.cshtml" />
     <Content Include="Views\Schema\DataScript.cshtml" />
+    <Content Include="Views\ComponentManager\Index.cshtml" />
+    <Content Include="Views\ComponentManager\Lookup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Component\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -324,6 +337,10 @@
     <ProjectReference Include="..\Tech.QScript\Tech.QScript.csproj">
       <Project>{0A03DAF8-213B-43B0-B704-4E032CAEA07F}</Project>
       <Name>Tech.QScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Core\Tz.Core.csproj">
+      <Project>{67584ee3-663a-48fb-9cde-ae164063ea09}</Project>
+      <Name>Tz.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.Net\Tz.Net.csproj">
       <Project>{55AB9F49-FA31-4EC1-B4E9-589A915EE221}</Project>

@@ -161,38 +161,52 @@ namespace Tz.Net.Entity
             dt.Columns.Add("isprimary", typeof(bool));
             dt.Columns.Add("length", typeof(int));
             DataRow dr;
+            bool isFieldExist = false;
             foreach (Field field in this.Fields)
             {
                 if (field.FieldID == "")
                 {
                     dr = dt.NewRow();
                     dr[0] = this.TableID;
-                    dr[1] = field.NewFieldName ==""? field.FieldName : field.NewFieldName;
+                    dr[1] = field.NewFieldName == "" ? field.FieldName : field.NewFieldName;
                     dr[2] = field.FieldType;
                     dr[3] = field.IsNullable;
                     dr[4] = field.IsPrimaryKey;
                     dr[5] = field.Length;
                     dt.Rows.Add(dr);
+
+                }
+                else {
+                    isFieldExist = true;
                 }
             }
             if (dt.Rows.Count > 0)
-            {
-                if (dField.Save(dt))
+            {                
+                if (dField.Save(ref dt))
                 {
-                    return true;
+                    foreach (Field field in this.Fields)
+                    {
+                        var drs= dt.Select("fieldname = '" + field.FieldName + "'").FirstOrDefault();
+                        if (drs != null) {
+                            field.setFieldID(drs["FieldID"].ToString());
+                        }                        
+                    }
+                      //  return true;
                 }
                 else
                 {
                     return false;
                 }
             }
-            foreach (Field field in this.Fields)
-            {
-                if (field.FieldID != "")
+            if (isFieldExist == true) {
+                foreach (Field field in this.Fields)
                 {
-                    field.Update();
+                    if (field.FieldID != "")
+                    {
+                        field.Update();
+                    }
                 }
-            }
+            }            
             return true;
         }
         /// <summary>
