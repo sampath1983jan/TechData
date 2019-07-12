@@ -531,10 +531,11 @@
 
 					added = added.merge(interNode).merge(source2inter).merge(inter2target);
 				} else {
-					// flat
+					// flat					
 					var source2target = cy.add(getEleJson({
 						group: 'edges',
-						data: {
+						data: {	
+							id: source.id() + "-" + target.id(),
 							source: source.id(),
 							target: target.id()
 						}

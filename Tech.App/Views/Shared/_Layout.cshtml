@@ -1,4 +1,5 @@
 ﻿@using CustomAuthentication
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,14 +19,17 @@
     <script src="~/Scripts/d3.js"></script>
     @*<script src="~/Scripts/WebChat.js"></script>*@
     @RenderSection("scripts", required: false)
-
+    <link href="~/Content/NT-Node.css" rel="stylesheet" />
     <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>"
     <script src="~/Scripts/NT/NT.js"></script>
     <script src="~/Scripts/NT/NT-NodeEdge.js"></script>
     <script src="~/Scripts/NT/NT-Node.js"></script>
     <script src="~/Scripts/NT/ComponentModal.js"></script>
+    <script src="~/Scripts/NT/NT-context.js"></script>
+    <script src="~/Scripts/NT/NT-NodeLabel.js"></script>
 
 </head>
 <body>
@@ -33,7 +37,7 @@
 
     <div id="header_container">
         <div id="header">
-            @*<i>=(^.^)= @ViewBag.Title</i>*@
+           
             <span style="color:#fff !important">
 
                 @if (HttpContext.Current.User.Identity.IsAuthenticated)
@@ -48,55 +52,13 @@
                                 @:<li class="nav-item "><a class="nav-link" style="color:#fff" href="/Client/Client">Client</a></li>
                                 @:<li class="nav-item "><a class="nav-link" style="color:#fff" href="/ComponentManager/Index">Component Manager</a></li>
                                 @:<li class="nav-item "><a class="nav-link" style="color:#fff" href="/Schema/DataScript">Data Script</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 @:<li class="nav-item"><div id="clnt" style="width:200px;padding-top:3px;" class="nav-link"></div></li>
-
-
-
-
-
-
-
-
                             @:</ul>
                             @:<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
                                 @:<li class="nav-item" style="float:right"><a class="nav-link" style="color:#fff" href="/Authentication/LogOut">@Html.Label(string.Format("{0} {1}", identity.FirstName, identity.LastName))</a></li>
                                 @:<li class="nav-item" style="float:right"><a class="nav-link" style="color:#fff" href="/Authentication/LogOut">Log out</a></li>
 
-
-
-
-
-
-
-
                             @:</ul>
-
-
-
-
-
-
-
-
-
-
-
 
                         @:</div>
                     @:</nav>

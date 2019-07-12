@@ -6,6 +6,7 @@
 
 <div id="container"></div>
 <div id="pv"></div>
+
 <script type="text/javascript">
 
     var fieldtype = [
@@ -45,7 +46,7 @@
                         name: "", linkbuttons:
                             ['<a class="nav-link active" href="#" name="vclist">Component List <span class="sr-only">(current)</span></a>',
                                 '<a class="nav-link " href="#" name="addcmb">Add Component<span class="sr-only">(current)</span></a>',                                
-                                '<a class="nav-link" name="vcmlist" href="#">Component Modal List</a>',
+                                '<a class="nav-link" name="vcmlist" href="#">Component Modals</a>',
                                 '<a class="nav-link" name="vcmadd" href="#">Add Component Modal</a>',
                                 '<a class="nav-link" name="vbTb" href="#">View Data</a>',
                                 '<a class="nav-link" name="vclookup" href="#">Lookups</a>']
@@ -302,7 +303,8 @@
                     $("#tbplc").html("");
                     $("#tbplc").append("<div class='row'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div><div class='col-md-6' id='fldTabtitle'></div><div class='col-md-6' id='fldTabcatype'></div></div>");
                     $("#tbplc").labelfields({
-                        items: [{
+                        items: [
+                            {
                             label: "Component Name",
                             field: {
                                 id: "fdtbName", 'note': "Enter Component Name",
@@ -1219,3 +1221,6 @@
       // $('#pv').load('Lookup');  
     })
 </script>
+
+
+<div id="window"></div>
