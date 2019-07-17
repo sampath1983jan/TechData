@@ -41,13 +41,12 @@
                 var comp = {};
                 var render = function () {
                     $("#" + _opt.plc).html("");
-                    $("#" + _opt.plc).append("<div class='col-md-12'><div id='navBtnList' style='padding-top:0px;'></div><div id='rstDiv' class='row'><div id='lftSchemacnt'  class='col-md-2'></div><div  class='col-md-10'><div id='rightcomp' style='border-left:4px solid #eee;' class='col-md-12'></div> <div id='saveaction'></div></div></div><div>")
+                    $("#" + _opt.plc).append("<div class='col-md-12'><div id='navBtnList' style='padding-top:0px;background-color:#eee'></div><div id='rstDiv' class='row'><div id='lftSchemacnt'  class='col-md-2'></div><div  class='col-md-10'><div id='rightcomp' style='border-left:4px solid #eee;' class='col-md-12'></div> <div id='saveaction'></div></div></div><div>")
                     $("#navBtnList").toolbar({
                         name: "", linkbuttons:
                             ['<a class="nav-link active" href="#" name="vclist">Component List <span class="sr-only">(current)</span></a>',
                                 '<a class="nav-link " href="#" name="addcmb">Add Component<span class="sr-only">(current)</span></a>',                                
-                                '<a class="nav-link" name="vcmlist" href="#">Component Modals</a>',
-                                '<a class="nav-link" name="vcmadd" href="#">Add Component Modal</a>',
+                                '<a class="nav-link" name="vcmlist" href="#">Component Modals</a>',                                
                                 '<a class="nav-link" name="vbTb" href="#">View Data</a>',
                                 '<a class="nav-link" name="vclookup" href="#">Lookups</a>']
                     })
@@ -56,6 +55,7 @@
                     });
                   
                     $("#navBtnList").find("a[name=vclookup]").click(function () {
+                        $(".popper-div").remove();
                         $("#rstDiv").html("");
                         $("#rstDiv").append("<div id='compLookup' class='col-md-12'></div>");
                         var cm = new $.Lookup({ plc: "compLookup" });
@@ -64,11 +64,13 @@
                     })
 
                     $("#navBtnList").find("a[name=vcmRm]").click(function () {
+                        $(".popper-div").remove();
                         removeComponent();
                         $("#navBtnList").find("a").removeClass("active");
                         $(this).addClass("active");
                     })
                     $("#navBtnList").find("a[name=vclist]").click(function () {
+                        $(".popper-div").remove();
                         //window.clientid;
                         render();
                         renderComponent();
@@ -80,6 +82,7 @@
                         $(this).addClass("active");
                     })
                     $("#navBtnList").find("a[name=addcmb]").click(function () {
+                        $(".popper-div").remove();
                         comp = new $CM.Component({
                             plc: "rightcomp",
                             ClientID: window.clientid,
@@ -93,11 +96,13 @@
                         $(this).addClass("active");
                         $("#rstDiv").html("");
                         $("#rstDiv").append("<div id='cmodal'  class='col-md-12'></div>");
+                        $(".popper-div").remove();
                         var cm = new $.ComponentModal({
                             plc:"cmodal",
                         })
                     })
                     $("#navBtnList").find("a[name=vcmadd]").click(function () {
+                        $(".popper-div").remove();
                         $("#navBtnList").find("a").removeClass("active");
                         $(this).addClass("active");
                     })
@@ -147,12 +152,12 @@
                     //list-group
                     var sq = "<div class='list'><div class='header'>Component List</div><ul class=''>"
                     $.each(data, function (id, d) {
-                        sq = sq + "<li name='" + d.ComponentID + "'><div class='row rowlight'><div class='col-md-10'>" + d.ComponentName + "</div><div class='col-md-2' ><a href='#' style='text-indent:-100%;' name='" + d.ComponentID + "'><span title='Delete' class='remove fa fa-remove'   ></span></a ></div></div></li>"
+                        sq = sq + "<li name='" + d.ComponentID + "'><div class='row rowlight'><div class='col-md-10'>" + d.ComponentName + "</div><div class='col-md-2' ><a href='#' style='text-indent:-100%;' name='" + d.ComponentID + "'><span title='Delete' act='del' class='remove fa fa-remove'   ></span></a ></div></div></li>"
                      //   sq = sq + "<li name='" + d.ComponentID + "'>" + d.ComponentName +"</li>";
                     });
                     sq = sq + "</ul></div>"
                     $plc.append(sq);
-                     
+                  
 
                     $plc.find("li").click(function () {
                         tbID = $(this).attr("name");

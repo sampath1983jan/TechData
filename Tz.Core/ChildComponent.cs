@@ -34,7 +34,15 @@ namespace Tz.Core
         /// <summary>
         /// 
         /// </summary>
-        public string ClientID { get; set; }        
+        public string ClientID { get; set; } 
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ParentName { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ChildName { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -42,16 +50,17 @@ namespace Tz.Core
         /// <param name="componentID"></param>
         /// <param name="childComponentid"></param>
         /// <param name="componentModalItemID"></param>
-        public ComponentNode(string clientID, 
-            string componentModalID, 
+        public ComponentNode(string clientID,             
             string componentID,
-            string childComponentid) {
-            ComponentModalID = componentModalID;
+            string childComponentid,
+            string componentmodalitemid) {
+            ComponentModalID = "";
             ComponentID = componentID;
-            ComponentModalItemID = "";
+            ComponentModalItemID = componentmodalitemid;
             ChildComponentID = childComponentid;
            // Component = new Component(clientID, componentID);
             ClientID = clientID;
+            this.Relations = new List<LinkComponentField>();
         }
         /// <summary>
         /// 
@@ -64,6 +73,7 @@ namespace Tz.Core
             ComponentID = "";   
             ClientID = clientID;
             ChildComponentID = "";
+            this.Relations = new List<LinkComponentField>();
         }
         /// <summary>
         /// 
@@ -71,8 +81,40 @@ namespace Tz.Core
         /// <param name="pfield"></param>
         /// <param name="rfield"></param>
         /// <param name="relationid"></param>
-        public void AddRelation(string pfield, string rfield,string relationid) {
-            this.Relations.Add(new LinkComponentField() { ParentField = pfield, RelatedField = rfield , ModalItemRelationID  = relationid});
+        public void AddRelation(string pfield, string rfield,string relationid,
+            string parent,string child) {
+            this.Relations.Add(new LinkComponentField() { ParentField = pfield,
+                RelatedField = rfield , ModalItemRelationID  = relationid,
+                Parent=parent,
+                Child=child
+            });
+        }
+        public void AddRelation(LinkComponentField lk )
+        {
+            this.Relations.Add(lk);
+        }
+        internal bool SaveRelation(string conn, List<LinkComponentField> lk) {
+            var dataComponentModal = new Data.Component.ComponentModal(conn);
+            foreach (LinkComponentField lf in lk)
+            {
+                if (this.Relations.Where(x => x.ModalItemRelationID == lf.ModalItemRelationID).FirstOrDefault() == null)
+                {
+                    dataComponentModal.SaveItemRelation(this.ClientID,
+                    this.ComponentModalItemID,
+                    lf.ParentField,
+                    lf.RelatedField,
+                    lf.Parent,
+                   lf.Child);
+                }
+                else {
+                    dataComponentModal.UpdateItemRelation(this.ClientID,
+                        lf.ModalItemRelationID,
+                    this.ComponentModalItemID,
+                    lf.ParentField,
+                    lf.RelatedField);
+                }                
+            }
+            return true;
         }
         /// <summary>
         /// 
@@ -81,13 +123,18 @@ namespace Tz.Core
         internal bool SaveModalItem(string conn) {            
             var dataComponentModal = new Data.Component.ComponentModal(conn);
             this.ComponentModalItemID = dataComponentModal.SaveModalItem(this.ClientID,
-                this.ComponentModalItemID,
+                this.ComponentModalID,
                 this.ComponentID,
                 this.ChildComponentID);
             if (this.ComponentModalItemID !="")
             {
                 foreach (LinkComponentField lf in this.Relations) {
-                    dataComponentModal.SaveItemRelation(this.ClientID, this.ComponentModalItemID, lf.ParentField, lf.RelatedField);
+                    dataComponentModal.SaveItemRelation(this.ClientID,
+                        this.ComponentModalItemID,
+                        lf.ParentField,
+                        lf.RelatedField,
+                        lf.Parent,
+                       lf.Child);
                 }                                
                 return true;
             }
@@ -135,11 +182,22 @@ namespace Tz.Core
             else {
                 return false;
             }
-        }                 
+        }
+        public bool RemoveAllRelations() {
+            var c = new Net.ClientServer(ClientID);
+            var dataComponentModal = new Data.Component.ComponentModal(c.GetServer().Connection());
+            dataComponentModal.RemoveAllItemRelation(this.ClientID, this.ComponentModalItemID);
+            return true;
+        }
+
     }
     public class LinkComponentField {
+        public string ParentFieldName { get; set; }
+        public string RelatedFieldName { get; set; }
         public string ParentField { get; set; }
         public string RelatedField { get; set; }
+        public string Parent { get; set; }
+        public string Child { get; set; }
         public string ModalItemRelationID { get; set; }
     }
 }

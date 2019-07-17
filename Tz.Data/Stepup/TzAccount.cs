@@ -206,7 +206,9 @@ namespace Tz.Data
           //  public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
           //  public static readonly DBColumn ChildComponentID = DBColumn.Column("ChildComponentID", System.Data.DbType.String, 255);
             public static readonly DBColumn ParentField = DBColumn.Column("ParentField", System.Data.DbType.String, 255);
-            public static readonly DBColumn RelatedField = DBColumn.Column("RelatedField", System.Data.DbType.String, 255);            
+            public static readonly DBColumn RelatedField = DBColumn.Column("RelatedField", System.Data.DbType.String, 255);
+            public static readonly DBColumn Parent = DBColumn.Column("Parent", System.Data.DbType.String, 255);
+            public static readonly DBColumn Child = DBColumn.Column("Child", System.Data.DbType.String, 255);
         }
 
         public class ComponentLookUpItem

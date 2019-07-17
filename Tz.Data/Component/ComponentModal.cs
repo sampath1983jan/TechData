@@ -24,31 +24,60 @@ namespace Tz.Data.Component
             DBDatabase db;
             db = base.Database;
             DBQuery select;
+
+
             select = DBQuery.Select()
-                .Field(TzAccount.ComponentModal.Table,TzAccount.ComponentModal.ClientID.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ParentComponent.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Name.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Catgory.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ChildComponentID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ClientID.Name)
-                .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.ParentField.Name)
-                .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.RelatedField.Name)
-                .From(TzAccount.ComponentModal.Table).LeftJoin(TzAccount.ComponentModalItem.Table)
-                .On(TzAccount.ComponentModal.Table,TzAccount.ComponentModal.ComponentModalID.Name,
-                Compare.Equals,TzAccount.ComponentModalItem.Table,
-                TzAccount.ComponentModalItem.ComponentModalID.Name)
-                .LeftJoin(TzAccount.ComponentModalRelation.Table)
-                .On(TzAccount.ComponentModalRelation.Table,TzAccount.ComponentModalItem.ComponentModalItemID.Name,
-                Compare.Equals, TzAccount.ComponentModalRelation.Table, 
-                TzAccount.ComponentModalRelation.ComponentModalItemID.Name)
-               .WhereField(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name,
+                 .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ClientID.Name)
+                 .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name)
+                 .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ParentComponent.Name)
+                 .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Name.Name)
+                 .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Catgory.Name)
+                 .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalID.Name)
+                 .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ChildComponentID.Name)
+                 .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentID.Name)
+                 .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name)
+                 .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ClientID.Name)
+                 .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.ComponentModalRelationID.Name)
+                 .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.ParentField.Name)
+                 .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.RelatedField.Name)
+                 .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.Parent.Name)
+                 .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.Child.Name)
+                 .Field(TzAccount.Component.Table, TzAccount.Component.ComponentName.Name).As("ParentName")
+                 .Field("ChildComponent", TzAccount.Component.ComponentName.Name).As("ChildName")
+                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeName.Name).As("ParentFieldName")
+                 .Field("ChildAttribute", TzAccount.ComponentAttribute.AttributeName.Name).As("ChildFieldName")
+                 //cf_component.ComponentName,ChildComponent.ComponentName as ChildName
+                 .From(TzAccount.ComponentModal.Table).LeftJoin(TzAccount.ComponentModalItem.Table)
+                 .On(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name,
+                 Compare.Equals, TzAccount.ComponentModalItem.Table,
+                 TzAccount.ComponentModalItem.ComponentModalID.Name)
+                 .LeftJoin(TzAccount.Component.Table)
+                 .On(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentID.Name,
+                 Compare.Equals, TzAccount.Component.Table,
+                 TzAccount.Component.ComponentID.Name)
+                 .LeftJoin(TzAccount.Component.Table).As("ChildComponent")
+                 .On(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ChildComponentID.Name,
+                 Compare.Equals, "ChildComponent",
+                 TzAccount.Component.ComponentID.Name)
+                 .LeftJoin(TzAccount.ComponentModalRelation.Table)
+               .On(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name,
+               Compare.Equals, TzAccount.ComponentModalRelation.Table,
+               TzAccount.ComponentModalRelation.ComponentModalItemID.Name)
+
+                 .LeftJoin(TzAccount.ComponentAttribute.Table)
+               .On(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FieldID.Name,
+               Compare.Equals, TzAccount.ComponentModalRelation.Table,
+               TzAccount.ComponentModalRelation.ParentField.Name)
+
+                 .LeftJoin(TzAccount.ComponentAttribute.Table).As("ChildAttribute")
+               .On("ChildAttribute", TzAccount.ComponentAttribute.FieldID.Name,
+               Compare.Equals, TzAccount.ComponentModalRelation.Table,
+               TzAccount.ComponentModalRelation.RelatedField.Name)
+              .WhereField(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name,
                Compare.Equals, DBConst.String(modalID))
                .AndWhere(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ClientID.Name, 
-               Compare.Equals, DBConst.String(clientID));
+               Compare.Equals, DBConst.String(clientID))
+               ;
             return db.GetDatatable(select);
         }
         /// <summary>
@@ -61,26 +90,52 @@ namespace Tz.Data.Component
             db = base.Database;
             DBQuery select;
             select = DBQuery.Select()
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ClientID.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ParentComponent.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Name.Name)
-                .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Catgory.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ChildComponentID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name)
-                .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ClientID.Name)
-                .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.ParentField.Name)
-                .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.RelatedField.Name)
-                .From(TzAccount.ComponentModal.Table).LeftJoin(TzAccount.ComponentModalItem.Table)
-                .On(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name,
-                Compare.Equals, TzAccount.ComponentModalItem.Table,
-                TzAccount.ComponentModalItem.ComponentModalID.Name)
-                .LeftJoin(TzAccount.ComponentModalRelation.Table)
-                .On(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name,
+                  .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ClientID.Name)
+                  .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name)
+                  .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ParentComponent.Name)
+                  .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Name.Name)
+                  .Field(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.Catgory.Name)
+                  .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalID.Name)
+                  .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ChildComponentID.Name)
+                  .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentID.Name)
+                  .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name)
+                  .Field(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ClientID.Name)
+                  .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.ComponentModalRelationID.Name)
+                  .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.ParentField.Name)
+                  .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.RelatedField.Name)
+                  .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.Parent.Name)
+                  .Field(TzAccount.ComponentModalRelation.Table, TzAccount.ComponentModalRelation.Child.Name)
+                  .Field(TzAccount.Component.Table, TzAccount.Component.ComponentName.Name).As("ParentName")
+                  .Field("ChildComponent", TzAccount.Component.ComponentName.Name).As("ChildName")
+                  .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeName.Name).As("ParentFieldName")
+                  .Field("ChildAttribute", TzAccount.ComponentAttribute.AttributeName.Name).As("ChildFieldName")
+                  //cf_component.ComponentName,ChildComponent.ComponentName as ChildName
+                  .From(TzAccount.ComponentModal.Table).LeftJoin(TzAccount.ComponentModalItem.Table)
+                  .On(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ComponentModalID.Name,
+                  Compare.Equals, TzAccount.ComponentModalItem.Table,
+                  TzAccount.ComponentModalItem.ComponentModalID.Name)
+                  .LeftJoin(TzAccount.Component.Table)
+                  .On(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentID.Name,
+                  Compare.Equals, TzAccount.Component.Table,
+                  TzAccount.Component.ComponentID.Name)
+                  .LeftJoin(TzAccount.Component.Table).As("ChildComponent")
+                  .On(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ChildComponentID.Name,
+                  Compare.Equals, "ChildComponent",
+                  TzAccount.Component.ComponentID.Name)
+                  .LeftJoin(TzAccount.ComponentModalRelation.Table)
+                .On(TzAccount.ComponentModalItem.Table, TzAccount.ComponentModalItem.ComponentModalItemID.Name,
                 Compare.Equals, TzAccount.ComponentModalRelation.Table,
                 TzAccount.ComponentModalRelation.ComponentModalItemID.Name)
+
+                  .LeftJoin(TzAccount.ComponentAttribute.Table)
+                .On(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FieldID.Name,
+                Compare.Equals, TzAccount.ComponentModalRelation.Table,
+                TzAccount.ComponentModalRelation.ParentField.Name)
+
+                  .LeftJoin(TzAccount.ComponentAttribute.Table).As("ChildAttribute")
+                .On("ChildAttribute", TzAccount.ComponentAttribute.FieldID.Name,
+                Compare.Equals, TzAccount.ComponentModalRelation.Table,
+                TzAccount.ComponentModalRelation.RelatedField.Name)
                .WhereField(TzAccount.ComponentModal.Table, TzAccount.ComponentModal.ClientID.Name,
                Compare.Equals, DBConst.String(clientID));
             return db.GetDatatable(select);
@@ -321,10 +376,10 @@ namespace Tz.Data.Component
             DBConst dbcomponentModalItemID = DBConst.String(componentModalItemID);
 
             DBComparison Client = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ClientID.Name), dbclientID);
-            DBComparison componentModalItem = DBComparison.In(DBField.Field(TzAccount.ComponentModalRelation.ComponentModalItemID.Name), dbcomponentModalItemID);
+            DBComparison componentModalItem = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ComponentModalItemID.Name), dbcomponentModalItemID);
 
 
-            DBQuery del = DBQuery.DeleteFrom(TzAccount.ComponentModalItem.Table)
+            DBQuery del = DBQuery.DeleteFrom(TzAccount.ComponentModalRelation.Table)
                                 .WhereAll(Client, componentModalItem);
             int i = db.ExecuteNonQuery(del);
             if (i > 0)
@@ -354,7 +409,7 @@ namespace Tz.Data.Component
             DBComparison compModalID = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ComponentModalRelationID.Name), dbcomponentitemrelationid);
 
 
-            DBQuery del = DBQuery.DeleteFrom(TzAccount.ComponentModalItem.Table)
+            DBQuery del = DBQuery.DeleteFrom(TzAccount.ComponentModalRelation.Table)
                                 .WhereAll(Client, compModalID);
             int i = db.ExecuteNonQuery(del);
             if (i > 0)
@@ -377,7 +432,9 @@ namespace Tz.Data.Component
         public bool SaveItemRelation(string clientid,
             string componentmodalitemid,
             string parentfield,
-            string childfield
+            string childfield,
+            string parent,
+            string child
             )
         {
             DBDatabase db;
@@ -387,20 +444,26 @@ namespace Tz.Data.Component
             DBConst dbclientID = DBConst.String(clientid);
             DBConst dbparentfield = DBConst.String(parentfield);
             DBConst dbrelated = DBConst.String(childfield);
+            DBConst dbparent = DBConst.String(parent);
+            DBConst dbchild = DBConst.String(child);
             DBConst dbcomponentmodalitemid = DBConst.String(componentmodalitemid);
             DBQuery insert = DBQuery.InsertInto(TzAccount.ComponentModalRelation.Table).Fields(
               TzAccount.ComponentModalRelation.ClientID.Name,
               TzAccount.ComponentModalRelation.ComponentModalItemID.Name,
               TzAccount.ComponentModalRelation.ComponentModalRelationID.Name,
               TzAccount.ComponentModalRelation.ParentField.Name,
-              TzAccount.ComponentModalRelation.RelatedField.Name
+              TzAccount.ComponentModalRelation.RelatedField.Name,
+                TzAccount.ComponentModalRelation.Parent.Name,
+              TzAccount.ComponentModalRelation.Child.Name
               )
               .Values(
               dbclientID,
               dbcomponentmodalitemid,
               dbcompoenntitemrelationid,
               dbparentfield,
-              dbrelated              
+              dbrelated ,
+              dbparent,
+              dbchild
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -440,16 +503,14 @@ namespace Tz.Data.Component
             DBConst dbclientID = DBConst.String(clientid);
             DBConst dbparentfield = DBConst.String(parentfield);
             DBConst dbrelated = DBConst.String(childfield);
-            DBConst dbcomponentmodalitemid = DBConst.String(componentmodalitemid);
-
-
+            DBConst dbcomponentmodalitemid = DBConst.String(componentmodalitemid);           
 
             DBComparison Client = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ClientID.Name),
                 dbclientID);
             DBComparison compModalID = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ComponentModalRelationID.Name),
                 dbcompoenntitemrelationid);
 
-            DBComparison componentmodalitem = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ComponentModalRelationID.Name),
+            DBComparison componentmodalitem = DBComparison.Equal(DBField.Field(TzAccount.ComponentModalRelation.ComponentModalItemID.Name),
              dbcomponentmodalitemid);
 
             DBQuery update = DBQuery.Update(TzAccount.ComponentModalRelation.Table).Set(

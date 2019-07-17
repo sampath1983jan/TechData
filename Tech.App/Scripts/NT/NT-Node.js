@@ -69,21 +69,25 @@
 								var relX = event.pageX - currentOffset.left;
 								var relY = event.pageY - currentOffset.top;
 								var cy = options.cy;
+								if (cy.getElementById(name).length > 0) {
+									return;
+								}
 								var data = {
 									id: name,
 									name: cname,
-									weight: 200
+									weight: 75
 								}
 								cy.add($.extend(true, {
 									group: "nodes",
 									renderedPosition: {
 										x: relX,
-										y: relY
+										y: relY,
+									
 									},
 									data: {
 										id: name,
 										name: cname,
-										weight: 200
+										weight: 75,										 
 									}
 								}, options.nodeParams()));
 								options.onAdded(data);

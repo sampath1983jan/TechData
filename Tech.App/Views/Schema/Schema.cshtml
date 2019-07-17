@@ -3,15 +3,16 @@
     ViewBag.Title = "Schema";
 }
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<h2>Schema</h2>
+
 <style>
    
 </style>
 <div class="padd5l">
-    <div class="row">
-        <div class="col-md-3"></div>
+    <div class="row " 
+style="border-bottom: 4px solid #eee;">
+        <div class="col-md-3"><h4 class='header rgline-4'>Table List</h4></div>
         <div class="col-md-9">
-            <div id="navBtnList"></div>
+            <div id="navBtnList" style="padding:0px"></div>
         </div>
     </div>
     <div class="row">
@@ -20,7 +21,7 @@
         </div>
 
         <div class="col-md-9">
-            <div class="row" id="rghtbinfo">
+            <div class="row " id="rghtbinfo">
                 @*<div class="col-md-9">
                     <div id="rghTable"></div>
                 </div>
@@ -58,23 +59,26 @@
                     var renderTableList = function ($plc, data) {
                         $plc.html("");
                         //list-group
-                        var sq = "<ul class='selectable'>"
-                        $.each(data, function (id, d) {
-                            sq = sq + "<li class=''><a href='#' name='" + d.TableID + "'>" + d.TableName + "</a></li>";
+                        var sq = "";
+                        sq = sq + "<div class='list'>";
+                        var sq =  sq + "<ul class=''>"
+                        $.each(data, function (id, d) {                            
+                            sq = sq + '<li  name=' + d.TableID + '><div class="row rowlight"><div class="col-md-10">' + d.TableName + '</div><div class="col-md-2"><a href="#" style="text-indent:-100%;" name=' + d.TableID + '><span title="Delete" act="del" class="remove fa fa-remove"></span></a></div></div></li>';
                         }); 
-                        sq=sq+"</ul>"
+                        sq = sq + "</ul>"
+                        sq = sq + "</div>";
                         $plc.append(sq);
-                        $plc.find("a").click(function () {
+                        $plc.find("li").click(function () {
                             tbID = $(this).attr("name");
                             renderViewTable();
                         })
                     }
-                    var getTableList = function (onComplete) {                        
+                    var getTableList = function (onComplete) {                      
                         $.ajax('/Schema/GetTables',
                             {
                                 type: "GET",
                                 dataType: 'jsonp', // type of response data
-                                data: ({ clientid: _opt.ClientID }),
+                                data: ({ clientid: window.clientid }),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function                                   
                                     onComplete(data);
@@ -88,7 +92,7 @@
                     var renderViewTable = function () {
                         renderView();
                         tbl = new $schema.Table({
-                            ClientID: _opt.ClientID,
+                            ClientID: window.clientid,
                             TableID: tbID,
                             plc: "rghTable",
                             onAdd: function (tbid) {
@@ -100,7 +104,7 @@
                     var renderNew = function () {
                         renderView();
                         tbl = new $schema.Table({
-                            ClientID: _opt.ClientID,
+                            ClientID: window.clientid,
                             TableID: "",
                             plc: "rghTable",
                             onAdd: function (tbid) {
@@ -113,7 +117,7 @@
                             type: "POST",
                             url: "/schema/GetData",
                             data: JSON.stringify({
-                                currentPage: cpage, pageSize: 10, clientid: _opt.ClientID, tbid: tbID
+                                currentPage: cpage, pageSize: 10, clientid: window.clientid, tbid: tbID
                             }),
                             dataType: "jsonp",
                             contentType: 'application/json; charset=utf-8',
@@ -130,18 +134,22 @@
                                 }
                                 $("#datalist").html("");
                                 //datalist
-                                str = "<table style='width:100%'>"
+                                str = "<table class='tztable' style='width:100%'>"
                                 str = str + "<tr>";
                                 $.each(keys, function (ir, r) {
 
-                                    str = str + "<td>" + r + "</td>";
+                                    str = str + "<th>" + r + "</th>";
 
                                 });
                                 str = str + "</tr>";
                                 $.each(data, function (ir, r) {
-                                    str = str + "<tr>";
+                                    str = str + "<tr class='rowlight tdrow'>";
                                     $.each(keys, function (ic, c) {
-                                        str = str + "<td>" + r[c] + "</td>";
+                                        if (r[c] == "null") {
+                                            str = str + "<td>empty</td>";
+                                        } else {
+                                            str = str + "<td>" + r[c] + "</td>";
+                                        }                                        
                                     })
                                     str = str + "</tr>";
                                 });
@@ -166,16 +174,21 @@
                                 '<a class="nav-link" name="vbTb" href="#">View Data</a>',
                                 '<a class="nav-link" name="csync" href="#">Sync</a>']
                         })
+                        $("#navBtnList").find("nav").css("padding", "0px");
                         $("#navBtnList").find("a[name=veSchema]").click(function () {
-                            if (_opt.ClientID != "") {
-                                renderView();
-                                renderViewTable();
+                            if (window.clientid != "") {
+                                getTableList(function (data) {
+                                    renderTableList($("#lftSchemacnt"), data);
+                                    renderView();
+                                    renderViewTable();
+                                })
+                                
                             } else {
                                 alert("Choose Client");
                             }
                         })
                         $("#navBtnList").find("a[name=addtb]").click(function () {
-                            if (_opt.ClientID != "") {
+                            if (window.clientid != "") {
                                 renderView();
                                 renderNew();
                             } else {
@@ -186,7 +199,7 @@
                             $.ajax('/Schema/syncSchema',
                                 {
                                     dataType: 'jsonp', // type of response data
-                                    data: (({ clientid: _opt.ClientID})),
+                                    data: (({ clientid: window.clientid})),
                                     // timeout milliseconds
                                     success: function (data, status, xhr) {   // success callback function
                                         // alert(data);
@@ -205,7 +218,7 @@
                                 message: "Are you Sure,Do you want remove this table?",
                                 onAction: function () {
                                     $("#mkd").dialogBox('hide');
-                                    if (_opt.ClientID != "") {
+                                    if (window.clientid != "") {
                                         removeTable(function () {
                                             render();
                                             renderNew();
@@ -224,16 +237,16 @@
                         })
                         $("#navBtnList").find("a[name=vbTb]").click(function () {
                             $("#rghtbinfo").html("");
-                            $("#rghtbinfo").append("<div col-md-12><div id='datalist'></div> </div>");
+                            $("#rghtbinfo").append("<div class='col-md-12'><div id='datalist' class='scrollbar-dusty-grass thin' style='overflow:scroll;position:relative;height:600px'></div> </div>");
                             RenderGrid(0);
                         })
-                    }
+                    }   
                   
                     var removeTable = function ( onComplete) {
                         $.ajax('/Schema/RemoveTable',
                             {
                                 dataType: 'jsonp', // type of response data
-                                data: (({ clientid: _opt.ClientID, tbID: tbID })),
+                                data: (({ clientid: window.clientid, tbID: tbID })),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function
                                     // alert(data);
@@ -243,95 +256,23 @@
                                     alert(errorMessage);
                                 }
                             });
-                    }
-                    var renderClients = function (data) {
-                        //var dv = "<div class='row'>"
-                        var aindex = 0;
-                        $("#lftSchemacnt").html("");
-                        var dv = "";
-                        $.each(data, function (i, d) {
-                            dv = dv + "<h3><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "</a></h3>";
-                            dv = dv + "<div plc='cont'   class='padd5 plns' name='" + d.ClientID + "'></div>"
-                            if (_opt.ClientID == "") {
-                                if (i == 0) {
-                                    _opt.ClientID = d.ClientID;
-                                }                                
-                            }
-                            if (d.ClientID == _opt.ClientID) {
-                                aindex = i;
-                            }                            
-                        })
-                        //dv = dv + "</div>"
-                        $("#lftSchemacnt").append(dv);
-                        $("#lftSchemacnt").find("a").click(function () {
-
-                            _opt.ClientID = $(this).attr("name");
-                            //renderTables();
-                        });
-                        var already_loaded = new Object();
-                        $("#lftSchemacnt").accordion({
-                            collapsible: true,
-                            heightStyle: "fill",
-                            //active: false,
-                            active: aindex,
-                            //heightStyle: 'fill', // http://jqueryui.com/accordion/#fillspace  -- Just sets the height of the accordion to the height of it's parent container.  We need a way to change the height of the parent to that of the newly added content.
-                            activate: function (e, ui) {
-                                // only fire when the accordion is opening..
-                                if (ui.newHeader.length > 0) {
-                                    // only retrieve the remote content once..
-                                    if (!already_loaded[ui.newHeader[0].id] == 1) {
-                                        var srcObj = $(ui.newHeader[0]).children('a');
-                                       // var url = srcObj.attr('name');
-                                        _opt.ClientID = srcObj.attr("name");
-                                        getTableList(function (data) {
-                                            renderTableList($(ui.newHeader[0]).next(), data);
-                                            var contentDiv = $(ui.newHeader[0]).next()[0];
-                                            $("#lftSchemacnt").accordion("refresh");
-                                            already_loaded[ui.newHeader[0].id] = 1;
-                                        });
-                                    }
-                                }
-                            }
-                        });
-                        $("#lftSchemacnt").find("div[plc=cont]").css("overflow-x", "hidden !important");
-                        getTableList(function (data) {
-                            var itm = $("#lftSchemacnt").find("div[plc=cont]")[aindex];
-                            renderTableList($(itm), data);
-                            //var contentDiv = itm[0];
-                            $("#lftSchemacnt").accordion("refresh");
-                           // already_loaded[ui.newHeader[0].id] = 1;
-                        });
-
-                    }
-                    var getClientlist = function (onComplete) {
-                        $.ajax('/Client/Gets',
-                            {
-                                type: "GET",
-                                dataType: 'jsonp', // type of response data
-                                data: "",
-                                // timeout milliseconds
-                                success: function (data, status, xhr) {   // success callback function
-                                    $("#lftSchemacnt").html("");
-                                    onComplete(data);
-                                },
-                                error: function (jqXhr, textStatus, errorMessage) { // error callback
-                                    alert(errorMessage);
-                                    //$('p').append('Error: ' + errorMessage);
-                                }
-                            });
-                    }
+                    }   
+                    
                     var renderView = function () {
                         $("#rghtbinfo").html("");
-                        $("#rghtbinfo").append('<div class="col-md-8"><div id = "rghTable" ></div ></div ><div class="col-md-4"><div id="rgfieldinfo"></div></div>');
+                        $("#rghtbinfo").append('<div class="col-md-8 rgline-4" ><div id = "rghTable" ></div ></div ><div class="col-md-4"><div id="rgfieldinfo" ></div></div>');
                     }
                     var render = function () {
                         $("#lftSchema").html("");
                         renderView();
-                        $("#lftSchema").append("<div id='lftSchemacnt' style='height:550px;'></div>")
+                        $("#lftSchema").append("<div id='lftSchemacnt' class='scrollbar-dusty-grass thin' style='height:600px;overflow-x:hidden;overflow-y:scroll;position:relative'></div>")
                         renderToolbar();
-                        getClientlist(function (data) {
-                            renderClients(data);
-                        });
+                        getTableList(function (data) {
+                            renderTableList($("#lftSchemacnt"), data);
+                        })
+                        //getClientlist(function (data) {
+                        //    renderClients(data);
+                        //});
                     }
                     render();
                 }
@@ -381,7 +322,7 @@
                         $.ajax('/Schema/SaveTableField',
                             {
                                 dataType: 'jsonp', // type of response data
-                                data: (({ clientid: _opt.ClientID, tb: JSON.stringify(tbl), fields: JSON.stringify(fs) })),
+                                data: (({ clientid: window.clientid, tb: JSON.stringify(tbl), fields: JSON.stringify(fs) })),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function
                                     // alert(data);
@@ -401,7 +342,7 @@
                     var _opt = $.extend({}, defaults, options);
                     var renderTable = function () {
                         $("#tbplc").html("");
-                        $("#tbplc").append("<div class='row'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div></div>");
+                        $("#tbplc").append("<h4 class='udline-4'>Table Info- " +tbName +"</h4><div class='row' style='margin-top:30px;'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div></div>");
                         $("#tbplc").labelfields({
                             items: [{
                                 label: "Table Name",
@@ -429,7 +370,7 @@
                             {
                                 type: "GET",
                                 dataType: 'jsonp', // type of response data
-                                data: ({ clientid: _opt.ClientID,tableid:_opt.TableID }),
+                                data: ({ clientid: window.clientid,tableid:_opt.TableID }),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function                                   
                                     tbName = data.TableName;
@@ -473,12 +414,20 @@
                     }
                     var renderFields = function () {
                         $("#fldinfo").html("");
-                        $("#fldinfo").append("<div class='row'><div class='col-md-8'>Field List</div><div class='col-md-4'><input type='button' id='btnAddField' value='Add Field'/></div></div><div class='row'><div  class='col-md-12'><div id='fldlist' class=''></div></div></div>");
-                        $.each(_opt.Fields, function (ifd, fd) {
-                            
-                            var finf = "<div class='row' name='"+ fd.FieldID +"'><div class='col-md-5'>" + fd.FieldName + "</div>";
-                            finf = finf + "<div class='col-md-3'>" + getFieldType(fd.FieldType) + "</div>";
-                            finf = finf + "<div class='col-md-1'>" + fd.Length + "</div>";
+                        $("#fldinfo").append("<div class='row udline-4'><div class='col-md-8' style='vertical-align: bottom;margin-top: 15px;'><h4>Field List</h4></div><div class='col-md-4'><button type='button' id='btnAddField' class='btn btn-primary' value='Add Field'><i class='fa fa-plus' style='margin-right:5px'></i>Add Field</button></div></div><div class='row'><div  class='col-md-12 pdd0'><div id='fldlist' class='scrollbar-dusty-grass thin'></div></div></div>");
+                        //row rowheader
+                        var finfh = "<div class='row rowheader'><div class='col-md-4'>Field Name</div>";
+                        finfh = finfh + "<div class='col-md-2'>Type</div>";
+                        finfh = finfh + "<div class='col-md-2'>Length</div>";
+                        finfh = finfh + "<div class='col-md-1'>Null</div>";
+                        finfh = finfh + "<div class='col-md-1'>Primary</div>";
+                        finfh = finfh + "<div class='col-md-1'>Remove</div>";
+                        finfh = finfh + "</div>";
+                        $("#fldlist").append(finfh);
+                        $.each(_opt.Fields, function (ifd, fd) {                            
+                            var finf = "<div action='row' class='row tdrow rowlight' name='"+ fd.FieldID +"'><div class='col-md-4'>" + fd.FieldName + "</div>";
+                            finf = finf + "<div class='col-md-2'>" + getFieldType(fd.FieldType) + "</div>";
+                            finf = finf + "<div class='col-md-2'>" + fd.Length + "</div>";
                             finf = finf + "<div class='col-md-1'>" + fd.IsNull + "</div>";
                             finf = finf + "<div class='col-md-1'>" + fd.IsPrimary + "</div>";                            
                             finf = finf + "<div class='col-md-1'><a href='#' na ='" + fd.FieldName + "' key='" + fd.FieldID + "' act='remove'>Remove</a></div>";
@@ -515,7 +464,7 @@
                                 renderFields();
                             }
                         })
-                        $("#fldlist").find("div[class=row]").click(function () {
+                        $("#fldlist").find(".row").click(function () {
                             var fid = $(this).attr("name");
                             renderField(fid);
                         })
@@ -528,7 +477,7 @@
                         $.ajax('/Schema/RemoveField',
                             {
                                 dataType: 'jsonp', // type of response data
-                                data: (({ clientid: _opt.ClientID, tbID: _opt.TableID, fieldID: (f) })),
+                                data: (({ clientid: window.clientid, tbID: _opt.TableID, fieldID: (f) })),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function
                                     // alert(data);
@@ -644,7 +593,7 @@
                     var renderField = function (fid) {
                         //fieldname,fieldtype,length,isprimary,isnull,
                         $("#rgfieldinfo").html("");
-                        var fld = "<div class='float-label '><div id='sfldinfo' class='row'>";
+                        var fld = "<div class='float-label'><div id='sfldinfo' class='row'>";
                         fld = fld + "<div id='tbfldName' class='col-md-12'></div>";
                         fld = fld + "<div id='tbfldType' class='col-md-12'></div>";
                         fld = fld + "</div>";
@@ -652,12 +601,13 @@
                         fld = fld + "<div id='tbfldlength' class='col-md-12'></div>";
                         fld = fld + "<div id='tbfldnull' class='col-md-12'></div>";
                         fld = fld + "<div id='tbfldprimary' class='col-md-12'></div>";
-                        fld = fld + "</div>";
+                        fld = fld + "</div>";   
                         fld = fld + "<div class='row'>";
                         fld = fld + '<button type="button" class="btn btn-primary" action="save">Save</button>'
+                        fld = fld + '<button type="button" class="btn btn-light" action="cancel">Reset</button>'
                         fld = fld + "</div>";
                         fld = fld + "</div>";
-                        $("#rgfieldinfo").append("<div class='col-md-12'><div class='col-md-12'>Field Information</div>" + fld + "</div>");
+                        $("#rgfieldinfo").append("<div class='col-md-12'><div class='col-md-12 udline-4'><h4>Field Information<h4></div>" + fld + "</div>");
                         renderFieldInfo(fid);
                         $("#rgfieldinfo").find("button[action=save]").click(function () {
                             if (_opt.TableID != "") {
@@ -687,7 +637,7 @@
                         $.ajax('/Schema/UpdateField',
                             {
                                 dataType: 'jsonp', // type of response data
-                                data: (({ clientid: _opt.ClientID, tbID: _opt.TableID, fields: JSON.stringify(f) })),
+                                data: (({ clientid: window.clientid, tbID: _opt.TableID, fields: JSON.stringify(f) })),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function
                                     // alert(data);
@@ -703,7 +653,7 @@
                         $.ajax('/Schema/AddField',
                             {
                                 dataType: 'jsonp', // type of response data
-                                data: (({ clientid: _opt.ClientID, btid: _opt.TableID, fields: JSON.stringify(f) })),
+                                data: (({ clientid: window.clientid, btid: _opt.TableID, fields: JSON.stringify(f) })),
                                 // timeout milliseconds
                                 success: function (data, status, xhr) {   // success callback function
                                     // alert(data);
@@ -720,7 +670,7 @@
                         $("#saveaction").html("");
                         $("#saveaction").append(' <input type="button" id="btnSaveTable" class="btn  btn-primary" value="Accept Changes" />');
                         $("#saveaction").append('<input type = "button" id = "btnReverse" value = "Retract" class= "btn  btn-default" />');
-                        $("#" + _opt.plc).append("<div><div id='tbplc' class='float-label '></div><div id='fldinfo' class=''></div><div class='row' id='fddetail'></div></div>");
+                        $("#" + _opt.plc).append("<div><div id='tbplc' class='float-label udline-4'></div><div id='fldinfo' class=''></div><div class='row' id='fddetail'></div></div>");
                         if (_opt.TableID != "") {
                             getTable(function () {
                                 renderTable();

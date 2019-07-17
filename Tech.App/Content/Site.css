@@ -32,6 +32,25 @@ textarea {
     background: #FECA40;
 }
 
+.pdd0 {
+    padding:0px;
+}
+.udline-1 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.udline-4 {
+    border-bottom: 4px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.lfline-4 {
+    border-left: 4px solid #eee; 
+}
+.rgline-4 {
+    border-right: 4px solid #eee;
+}
 .plns {
     overflow-x: hidden !important;
     overflow-y: auto !important;
@@ -137,8 +156,12 @@ is-floating-label {
     border-right: 2px solid green !important;
     background-color: #ddd !important;
 }
+.nav-link {
+    cursor:pointer;
+}
 .tdrow {
-     padding:10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 13px;
 }
 
 [contentEditable=true]:empty:not(:focus):before {
@@ -203,7 +226,8 @@ is-floating-label {
     color: red;  
 }
 .rowlight:hover {
-    background-color:rgba(204, 204, 204, 0.46);
+    background-color: rgba(204, 204, 204, 0.46);
+    cursor: pointer;
 }
 
 .plchighlight {
@@ -213,3 +237,300 @@ is-floating-label {
     background-color: rgba(254, 202, 64, 0.49);
     min-height: 30px;
 }
+.popper-div {
+    font-size: 13px;
+    color: #fff;    
+    
+}
+    .popper-div .first-child {
+        padding: 5px 10px 5px 10px;
+        margin:5px;
+        border: 1px solid rgba(243, 152, 20);
+        background-color: rgba(243, 152, 20, 0.86);
+        border-radius: 5px;
+    }
+.badge {
+    font-size:50% !important;
+}
+
+/*Custom Scroll bar with themes https://mdbootstrap.com/docs/jquery/javascript/scroll/#image*/
+.scrollbar-deep-purple::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #512da8;
+}
+
+.scrollbar-cyan::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-cyan::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-cyan::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #00bcd4;
+}
+
+.scrollbar-dusty-grass::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-dusty-grass::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-dusty-grass::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.bordered-deep-purple::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border: 1px solid #512da8;
+}
+
+.bordered-deep-purple::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none;
+}
+
+.bordered-cyan::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border: 1px solid #00bcd4;
+}
+
+.bordered-cyan::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none;
+}
+
+.square::-webkit-scrollbar-track {
+    border-radius: 0 !important;
+}
+
+.square::-webkit-scrollbar-thumb {
+    border-radius: 0 !important;
+}
+
+.thin::-webkit-scrollbar {
+    width: 6px;
+}
+.tztable {
+     
+}
+    .tztable > tbody > tr > th {
+        font-size: 13px;
+        padding: 5px 5px 5px 5px;
+        font-weight: bold;
+        margin: 5px;
+        border: 1px solid #ddd;
+    }
+    .tztable > tbody > tr > td {
+        font-size: 13px !important;
+        padding: 5px 5px 5px 5px;
+        border-bottom: 1px solid #eee;
+        margin:5px;
+        border:1px solid #ddd;
+    }
+
+    #fldlist {
+        position: relative;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 300px;
+    }
+h1, h2, h3, h4, h5, h6 {
+    color: #4f4f4f !important;
+}
+/*html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}*/
+/*.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}*/
+/*.float-label .control {
+    float: left;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+
+    .float-label .control.small {
+        width: 30%;
+        border-right: 1px solid #ddd;
+    }
+
+    .float-label .control.medium {
+        width: 70%;
+        padding-left: 10px;
+    }
+
+    .float-label .control:last-child {
+        border: 0;
+    }
+
+.float-label input,
+.float-label textarea select {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+}
+
+    .float-label input + label,
+    .float-label textarea + label
+    .float-label select + label {
+        position: absolute;
+        top: 10px;
+        transition: top .2s ease, opacity .2s ease;
+        -webkit-transition: top .2s ease, opacity .2s ease;
+        opacity: 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: #ccc;
+    }
+
+    .float-label input:valid + label,
+    .float-label textarea:valid + label {
+        opacity: 1;
+        top: 3px;
+    }
+
+.show {
+    color: #333;
+    opacity: 1;
+    top: 3px;
+}
+
+.hide {
+    color: #333;
+    opacity: 0;
+    top: 3px;
+}
+
+.float-label input:focus + label,
+.float-label textarea:focus + label {
+    color: #337ab7;
+}*/
+/* 
+ * Floating label styles
+ * Based on http://jsfiddle.net/RyanWalters/z9ymd852/
+ */
+.is-floating-label {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+    .is-floating-label input {
+        /*position: absolute;*/
+        left: 0;
+        background-color: transparent;
+    }
+
+    .is-floating-label select {
+        /*position: absolute;*/
+        left: 0;
+        background-color: transparent;
+    }
+
+    .is-floating-label label {
+        opacity: 0.8;
+        margin-left: 10px;
+        margin-top: 10px;
+        pointer-events: none;
+        position: absolute;
+        transform: translate3d(0, 0, 0) scale(1);
+        transform-origin: left top;
+        transition: 100ms;
+        font-size: 14px;
+    }
+
+    .is-floating-label.is-focused label {
+        color: #ff006e;
+        font-weight:bold;
+        transform: translateY(-40px) scale(1);
+    }
+
+
+
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    margin: 5px;
+    color: #337ab7;
+}
+
+    .breadcrumb-item:before {
+        padding: 0px !important;
+    }
+
+    .breadcrumb-item:after {
+        padding-left: 5px !important;
+        content: "";
+    }

@@ -18,7 +18,7 @@ namespace Tz.BackApp.Models
         /// <summary>
         /// 
         /// </summary>
-        public List<LinkComponentField> Relations { get; }
+        public List<LinkComponentField> Relations { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -32,8 +32,14 @@ namespace Tz.BackApp.Models
 
     public class LinkComponentField
     {
+        public string ParentFieldName { get; set; }
+        public string ChildFieldName { get; set; }
         public string ParentField { get; set; }
         public string RelatedField { get; set; }
         public string ModalItemRelationID { get; set; }
+        public string Parent { get; set; }
+        public string Child { get; set; }
+        public bool IsRemoved { get; set; }
+
     }
 }
