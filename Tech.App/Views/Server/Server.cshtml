@@ -31,7 +31,8 @@
                     <div class="col-md-6"></div>
                     <div class="col-md-6">
                         <div class="container">
-                            <input type="button" id="btnSave" value="Save" class="btn  btn-primary" style="float:left; width:45%" />
+                            <input type="button" id="btnTest" value="Test" class="btn  btn-default" style="float:left; width:25%" />
+                            <input type="button" id="btnSave" value="Save" class="btn  btn-primary" style="float:left; width:25%" />
                             <input type="button" id="btnCancel" class="btn btn-default" onclick='window.location = "@Url.Action("login", "Authentication")";' value="Cancel" style="float:left; width:50%" />
                         </div>
                     </div>
@@ -104,7 +105,7 @@
             u.dbName = $("#sDBName").Input("text");
             u.userName = $("#sUserName").Input("text");
             u.password = $("#sPassword").Input("text");
-            u.port = $("#sPort").Input("text");                     
+            u.port = $("#sPort").Input("text");
             $.ajax('/Server/Save',
                 {
                     dataType: 'jsonp', // type of response data
@@ -114,7 +115,28 @@
                         alert("success");
                     },
                     error: function (jqXhr, textStatus, errorMessage) { // error callback
-                        alert(errorMessage);                        
+                        alert(errorMessage);
+                    }
+                });
+        });
+        $("#btnTest").click(function () {
+            var u = {};
+            u.serverName = $("#sServer").Input("text");
+            u.host = $("#sHost").Input("text");
+            u.dbName = $("#sDBName").Input("text");
+            u.userName = $("#sUserName").Input("text");
+            u.password = $("#sPassword").Input("text");
+            u.port = $("#sPort").Input("text");                     
+            $.ajax('/Server/Test',
+                {
+                    dataType: 'jsonp', // type of response data
+                    data: (u),
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function                        
+                        alert("Test successed");
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert("Test Failed. Please check your server information");                        
                     }
                 });
         });

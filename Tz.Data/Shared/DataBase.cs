@@ -52,7 +52,7 @@ namespace Tz.Data
                 _Schema = _Schema.Replace("database=", "");
             }
         }
-
+       
         void database_HandleException(object sender, DBExceptionEventArgs args)
         {
             System.Console.WriteLine("Database encountered an error : {0}", args.Message);

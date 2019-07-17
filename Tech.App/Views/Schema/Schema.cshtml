@@ -98,6 +98,14 @@ style="border-bottom: 4px solid #eee;">
                             onAdd: function (tbid) {
                                 tbID = tbid;
                                 render();
+                            },
+                            onNew: function () {
+                                if (window.clientid != "") {
+                                    renderView();
+                                    renderNew();
+                                } else {
+                                    alert("Choose Client");
+                                }
                             }
                         });
                     }
@@ -109,6 +117,14 @@ style="border-bottom: 4px solid #eee;">
                             plc: "rghTable",
                             onAdd: function (tbid) {
                                 render();
+                            },
+                            onNew: function () {
+                                if (window.clientid != "") {
+                                    renderView();
+                                    renderNew();
+                                } else {
+                                    alert("Choose Client");
+                                }         
                             }
                         });
                     }
@@ -162,14 +178,15 @@ style="border-bottom: 4px solid #eee;">
                                 //})
                             },
                             error: function () {
-                                alert("Error occured!!")
+                                alert("Error occured!!")    
                             }
                         });
                     }
                     var renderToolbar = function () {
                         $("#navBtnList").toolbar({
-                            name: "", linkbuttons: ['<a class="nav-link " href="#" name="veSchema">View Schema <span class="sr-only">(current)</span></a>',
-                                '<a class="nav-link active" href="#" name="addtb">Add Table <span class="sr-only">(current)</span></a>',
+                            name: "", linkbuttons: ['<a class="nav-link " href="#" name="veSchema">View Tables <span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link active" href="#" name="dview">Data Views<span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link active" href="#" name="dsp">Data Scripts<span class="sr-only">(current)</span></a>',
                                 '<a class="nav-link" name="rmtb" href="#">Remove</a>',
                                 '<a class="nav-link" name="vbTb" href="#">View Data</a>',
                                 '<a class="nav-link" name="csync" href="#">Sync</a>']
@@ -187,10 +204,10 @@ style="border-bottom: 4px solid #eee;">
                                 alert("Choose Client");
                             }
                         })
-                        $("#navBtnList").find("a[name=addtb]").click(function () {
+                        $("#navBtnList").find("a[name=dview]").click(function () {
                             if (window.clientid != "") {
-                                renderView();
-                                renderNew();
+                                //renderView();
+                                //renderNew();
                             } else {
                                 alert("Choose Client");
                             }                                        
@@ -286,6 +303,9 @@ style="border-bottom: 4px solid #eee;">
                         onAdd: function (tbid) {
 
                         },
+                        onNew:function () {
+
+                        }
                     }
                     var tbName = "";
                     var category = "";
@@ -342,7 +362,14 @@ style="border-bottom: 4px solid #eee;">
                     var _opt = $.extend({}, defaults, options);
                     var renderTable = function () {
                         $("#tbplc").html("");
-                        $("#tbplc").append("<h4 class='udline-4'>Table Info- " +tbName +"</h4><div class='row' style='margin-top:30px;'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div></div>");
+                        if (tbName == "") {
+                            tbName = "New Table";
+                        }
+                        $("#tbplc").append("<div class='row udline-4'><div class='col-md-8'><h4 class=''>" + tbName + "</h4></div><div col-md-4><button action='new' class='btn btn-primary'><i class='fa fa-plus' style='margin-right:5px'></i>New</button></div></div><div class='row' style='margin-top:30px;'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div></div>");
+                        $("#tbplc").find("[action=new]").click(function () {
+                            _opt.onNew();
+                            
+                        })
                         $("#tbplc").labelfields({
                             items: [{
                                 label: "Table Name",

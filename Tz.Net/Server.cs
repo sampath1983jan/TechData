@@ -62,6 +62,22 @@ namespace Tz.Net
             this.Port = port;
             this.ServerName = serverName;
         }
+
+        public bool Test() {
+            try
+            {
+                var a = new Data.Server(this.Connection());
+                a.Test();
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+            finally {
+            
+            }
+            return true;
+        }
         /// <summary>
         /// 
         /// </summary>

@@ -47,6 +47,16 @@ namespace Tz.BackApp.Controllers.Server
             s.Save();
             return new JsonpResult(s.ServerID);
         }
+        public JsonpResult Test(string host,
+            string dbName,
+            string userName,
+            string password,
+            int port,
+            string serverName)
+        {
+            Tz.Net.Server s = new Net.Server(host, dbName, userName, password, port, serverName);
+            return new JsonpResult(s.Test());
+        }
 
         public JsonpResult Gets() {
             return new JsonpResult(Tz.Net.Server.GetServer());

@@ -17,7 +17,29 @@ namespace Tz.Data
             InitDbs("");
             db = base.Database;
         }
-        
+
+        public Server(string conn)
+        {
+            InitDbs(conn);
+            db = base.Database;
+        }
+
+        public bool Test()
+        {
+            try
+            {
+                db.CreateConnection().Open();
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+            finally {
+                db.CreateConnection().Close();
+            }
+            return true;
+        }
+
         /// <summary>
         /// 
         /// </summary>
