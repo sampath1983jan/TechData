@@ -78,7 +78,11 @@ namespace Tz.BackApp.Controllers.Component
         public JsonpResult AddLookupItems(string clientid, string lookupid, string Lookupitems) {
             var litems = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Tz.BackApp.Models.LookupItem>>(Lookupitems);
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
-            int a = lk.LookupItems.Max(x => x.Order);
+            int a = 0;
+            if (lk.LookupItems.Count > 0) {
+                a = lk.LookupItems.Max(x => x.Order);
+            }
+            
             foreach (Tz.BackApp.Models.LookupItem litm in litems) {
                 a = a + 1;
                 lk.AddLookupItem(litm.LookUpItemID,
