@@ -53,6 +53,9 @@
     <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
       <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -99,6 +102,9 @@
     <Compile Include="Account.cs" />
     <Compile Include="ClientServer.cs" />
     <Compile Include="DataManager.cs" />
+    <Compile Include="DataSchema\DataExport.cs" />
+    <Compile Include="DataSchema\DataImport.cs" />
+    <Compile Include="DataSchema\ImportExport.cs" />
     <Compile Include="DataScript.cs" />
     <Compile Include="DataScriptManager.cs" />
     <Compile Include="Entity\Field.cs" />

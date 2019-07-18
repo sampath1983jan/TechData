@@ -232,5 +232,18 @@ namespace Tz.Data
             public static readonly DBColumn LookupID = DBColumn.Column("LookupID", System.Data.DbType.String, 255, DBColumnFlags.PrimaryKey);
             public static readonly DBColumn LookUpName = DBColumn.Column("Name", System.Data.DbType.String, 255);            
         }
+
+        public class ImportExportEvents {
+            public const string Table = "cf_importexportevents";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ImportExportID = DBColumn.Column("ImportExportID", System.Data.DbType.String, 255, DBColumnFlags.PrimaryKey);
+            public static readonly DBColumn ExportSetting = DBColumn.Column("ExportSetting", System.Data.DbType.String, 10000);
+            public static readonly DBColumn Status = DBColumn.Column("Status", System.Data.DbType.Int32, 10);
+            public static readonly DBColumn Type = DBColumn.Column("Type", System.Data.DbType.Int32);
+            public static readonly DBColumn EventDateTime = DBColumn.Column("EventDateTime", System.Data.DbType.DateTime);
+            public static readonly DBColumn IgnoreSQLErrors = DBColumn.Column("IgnoreSQLErrors", System.Data.DbType.Boolean);
+            public static readonly DBColumn FilePath = DBColumn.Column("FilePath", System.Data.DbType.String, 500);
+            public static readonly DBColumn Errors = DBColumn.Column("Errors", System.Data.DbType.String, 120000);
+        }
     }    
 }

@@ -7,6 +7,9 @@ using System.Web;
 using System.Web.Mvc;
 using Tz.Net;
 using Tech.App.Models;
+using Tz.Net.DataSchema;
+using System.Web.Hosting;
+
 namespace Tz.BackApp.Controllers.Schema
 {
     [CustomAuthorize(Roles = "Admin")]
@@ -271,6 +274,22 @@ namespace Tz.BackApp.Controllers.Schema
                 return Task.Run(() =>
                 {
                     Net.DataManager.synSever(clientid);
+                });
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Task Export(string clientid) {
+            try
+            {
+               
+
+                return Task.Run(() =>
+                {
+                    HostingEnvironment.QueueBackgroundWorkItem(cancellationToken => new Models.Worker().StartProcessing(cancellationToken, clientid));
                 });
             }
             catch (System.Exception ex)

@@ -45,15 +45,32 @@
                     $("#navBtnList").toolbar({
                         name: "", linkbuttons:
                             ['<a class="nav-link active" href="#" name="vclist">Component List <span class="sr-only">(current)</span></a>',
-                                '<a class="nav-link " href="#" name="addcmb">Add Component<span class="sr-only">(current)</span></a>',                                
+                                '<a class="nav-link " href="#" name="addcmb">Add Component<span class="sr-only">(current)</span></a>',                                                                
+                                '<a class="nav-link" name="vbTb" href="#">View Data</a>',                                
+                                '<a class="nav-link" name="vbkrst" href="#">BackUp/Restore</a>',
                                 '<a class="nav-link" name="vcmlist" href="#">Component Modals</a>',                                
-                                '<a class="nav-link" name="vbTb" href="#">View Data</a>',
                                 '<a class="nav-link" name="vclookup" href="#">Lookups</a>']
                     })
                     $("#lftSchemacnt").css({
                         height: "94%",                       
                     });
-                  
+
+                    //$("#navBtnList").find("a[name=vbkrst]").click(function () {
+                    //    $.ajax('/Schema/Export',
+                    //        {
+                    //            dataType: 'jsonp', // type of response data
+                    //            data: (({ clientid: window.clientid })),
+                    //            // timeout milliseconds
+                    //            success: function (data, status, xhr) {   // success callback function
+                                   
+                    //            },
+                    //            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                    //                alert(errorMessage);
+                    //            }
+                    //        });
+                    //});
+
+
                     $("#navBtnList").find("a[name=vclookup]").click(function () {
                         $(".popper-div").remove();
                         $("#rstDiv").html("");
