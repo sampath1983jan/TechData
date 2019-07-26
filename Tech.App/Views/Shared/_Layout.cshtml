@@ -278,7 +278,7 @@
                 window.clientid = "";
                 if (data.length > 0) {
                     var al = $.cookie('clientkey');
-                    if (al != undefined) {
+                    if (al != undefined && al != null) {
                         window.clientid = al;
                     } else {
                         window.clientid = data[0].ClientID;

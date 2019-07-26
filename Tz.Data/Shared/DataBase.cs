@@ -46,7 +46,7 @@ namespace Tz.Data
                                                     , DbProvider);
             this._database = mysql;
             this._database.HandleException += new DBExceptionHandler(database_HandleException);
-           var il = conn.Split(';').Where(x => x.ToLower().IndexOf("initial") >= 0 || x.ToLower().IndexOf("database") >= 0).ToList();
+           var il = conn.Split(';').Where(x => x.ToLower().IndexOf("initial") >= 0 ).ToList();
             if (il.Count > 0) {
                 _Schema = il[0].ToLower().Replace("initial catalog=", "");
                 _Schema = _Schema.Replace("database=", "");

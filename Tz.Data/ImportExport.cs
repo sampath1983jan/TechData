@@ -80,6 +80,7 @@ namespace Tz.Data
                             mb.ExportInfo.RowsExportMode = RowsDataExportMode.Insert;
                             mb.ExportInfo.WrapWithinTransaction = true;
                             mb.ExportInfo.TextEncoding = new UTF8Encoding(false);
+                            mb.ExportInfo.ExportRoutinesWithoutDefiner = true;
                             // if (dropBlobExportMode.SelectedIndex < 1)
                             if (blobExportMode == 1)
                             {
@@ -125,6 +126,7 @@ namespace Tz.Data
                             //mb.ImportInfo.EnableEncryption = cbImEnableEncryption.Checked;
                             //mb.ImportInfo.EncryptionPassword = txtImPwd.Text;
                             mb.ImportInfo.IgnoreSqlError = ignoreError;
+                            
                             //mb.ImportInfo.TargetDatabase = txtImTargetDatabase.Text;
                             //mb.ImportInfo.DatabaseDefaultCharSet = txtImDefaultCharSet.Text;
                             mb.ImportInfo.ErrorLogFile = "";
@@ -149,29 +151,57 @@ namespace Tz.Data
                 throw ex;
             }
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="clientid"></param>
-        /// <returns></returns>
-        public DataTable GetPendingEvents(string clientid) {
-            DBDatabase db;
-            db = base.Database;
-            DBQuery select;
-
-            select = DBQuery.SelectAll(TzAccount.ImportExportEvents.Table).From(TzAccount.ImportExportEvents.Table)
-                .WhereField(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.ClientID.Name, Compare.Equals, DBConst.String(clientid))
-                .AndWhere(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.Status.Name, Compare.Equals, DBConst.Int32(1));
-            return db.GetDatatable(select);
-        }
-        public DataTable GetAllEvents(string clientid)
+        public DataTable GetExportEventByID(string clientid,string importexportid)
         {
             DBDatabase db;
             db = base.Database;
             DBQuery select;
 
             select = DBQuery.SelectAll(TzAccount.ImportExportEvents.Table).From(TzAccount.ImportExportEvents.Table)
-                .WhereField(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.ClientID.Name, Compare.Equals, DBConst.String(clientid));
+                .WhereField(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.ClientID.Name, Compare.Equals, DBConst.String(clientid))
+                .AndWhere(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.Status.Name, Compare.Equals, DBConst.Int32(2))
+                .AndWhere(TzAccount.ImportExportEvents.Table,TzAccount.ImportExportEvents.ImportExportID.Name, Compare.Equals,DBConst.String(importexportid))
+                .OrderBy(TzAccount.ImportExportEvents.EventDateTime.Name, Order.Descending);
+            return db.GetDatatable(select);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
+        /// <returns></returns>
+        public DataTable GetPendingEvents(string clientid,int status) {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+
+            select = DBQuery.SelectAll(TzAccount.ImportExportEvents.Table).From(TzAccount.ImportExportEvents.Table)
+                .WhereField(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.ClientID.Name, Compare.Equals, DBConst.String(clientid))
+                .AndWhere(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.Status.Name, Compare.Equals, DBConst.Int32(status))
+                .OrderBy(TzAccount.ImportExportEvents.EventDateTime.Name, Order.Descending);
+            return db.GetDatatable(select);
+        }
+        public DataTable GetAllImportEvents(string clientid)
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+
+            select = DBQuery.SelectAll(TzAccount.ImportExportEvents.Table).From(TzAccount.ImportExportEvents.Table)
+                .WhereField(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.ClientID.Name, Compare.Equals, DBConst.String(clientid)).
+                AndWhere(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.Type.Name, Compare.Equals, DBConst.Int32(1))
+                .OrderBy(TzAccount.ImportExportEvents.EventDateTime.Name, Order.Descending);
+            return db.GetDatatable(select);
+        }
+        public DataTable GetAllExportEvents(string clientid)
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+
+            select = DBQuery.SelectAll(TzAccount.ImportExportEvents.Table).From(TzAccount.ImportExportEvents.Table)
+                .WhereField(TzAccount.ImportExportEvents.Table, TzAccount.ImportExportEvents.ClientID.Name, Compare.Equals, DBConst.String(clientid)).
+                AndWhere(TzAccount.ImportExportEvents.Table,TzAccount.ImportExportEvents.Type.Name,Compare.Equals,DBConst.Int32(2))
+                .OrderBy(TzAccount.ImportExportEvents.EventDateTime.Name, Order.Descending) ;
             return db.GetDatatable(select);
         }
         /// <summary>

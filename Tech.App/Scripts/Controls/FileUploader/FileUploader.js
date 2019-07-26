@@ -78,7 +78,7 @@ ChunkedUploader.prototype = {
         othis.error(s, v);
     },
     // Event Handlers ____________________________________________________
-    _onChunkComplete: function () {
+    _onChunkComplete: function (fp) {
         // If the end range is already the same size as our file, we
         // can assume that our last chunk has been processed and exit
         // out of the function.
@@ -86,7 +86,8 @@ ChunkedUploader.prototype = {
         if (othis.range_end === othis.file_size) {
             var v = {};
             v.FileName = othis.file.name;
-            v.uniqueID = othis.upload_token;
+			v.uniqueID = othis.upload_token;
+			v.FullPath = fp;
             v.extension = othis.file.name.substring(othis.file.name.lastIndexOf('.') + 1);
             othis.success(v);
             othis.isError = false;

@@ -3,44 +3,52 @@
     ViewBag.Title = "Server";
 }
 
-<h2>Server</h2>
-
-<table style="width:100%">
-    <tr>
-        <td>
-            <div class="container">
-                <div id="slist"> </div>
-            </div>
-        </td>
-        <td width="80%">
-            <div id="onServer" class="float-label container">
-                <div class="row">
-                    <div id="sServer" class="control col-md-12"></div>                    
-                </div>
-                <div class="row">
-                    <div id="sHost" class="control col-md-5"></div>
-                    <div id="sDBName" class="control col-md-4"></div>
-                </div>
-                <div class="row">
-                    <div id="sUserName" class="control col-md-5"></div>
-                    <div id="sPassword" class="control col-md-4"></div>
-                    <div id="sPort" class="control col-md-3"></div>
-                    @*<div class="control col-md-6"></div>*@
-                </div>
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <div class="container">
-                            <input type="button" id="btnTest" value="Test" class="btn  btn-default" style="float:left; width:25%" />
-                            <input type="button" id="btnSave" value="Save" class="btn  btn-primary" style="float:left; width:25%" />
-                            <input type="button" id="btnCancel" class="btn btn-default" onclick='window.location = "@Url.Action("login", "Authentication")";' value="Cancel" style="float:left; width:50%" />
+<div class="row padd-20">
+    <div class="col-md-12 udline-4">
+        <h4 class="header ">Server</h4>
+    </div>
+    <div class="col-md-12">
+        <table style="width:100%">
+            <tr>
+                <td style="vertical-align:top">
+                    <div class="">
+                        <div id="slist"> </div>
+                    </div>
+                </td>
+                <td width="80%">
+                    <div id="onServer" class="float-label container">
+                        <div class="row">
+                            <div id="sServer" class="control col-md-12"></div>
+                        </div>
+                        <div class="row">
+                            <div id="sHost" class="control col-md-5"></div>
+                            <div id="sDBName" class="control col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div id="sUserName" class="control col-md-5"></div>
+                            <div id="sPassword" class="control col-md-4"></div>
+                            <div id="sPort" class="control col-md-3"></div>
+                            @*<div class="control col-md-6"></div>*@
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <div class="container">
+                                    <input type="button" id="btnTest" value="Test" class="btn  btn-default" style="float:left; width:25%" />
+                                    <input type="button" id="btnSave" value="Save" class="btn  btn-primary" style="float:left; width:25%" />
+                                    <input type="button" id="btnCancel" class="btn btn-default" onclick='window.location = "@Url.Action("login", "Authentication")";' value="Cancel" style="float:left; width:50%" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </td>
-    </tr>
-</table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -55,14 +63,17 @@
                     // timeout milliseconds
                     success: function (data, status, xhr) {   // success callback function
                         //$('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
-                        var dv = "<div class='row'>"
+                        var dv = "<div class='list'><ul class=''>"
                         $.each(data, function (i, d) {
-                            dv = dv + "<div class='col-md-12'><a href='#' name='"+d.ServerID+"'>" + d.ServerName + '-' + d.Host + "</a></div>"
-                           
+                            dv = dv + "<li class=''><div class='row rowlight'><div class='col-md-10'><a href='#' action='vwserver' name='" + d.ServerID + "'>" + d.ServerName + '-' + d.Host + ""
+                            dv = dv + "</a></div> <div class='col-md-2'> "
+                            dv = dv + '<a href="#" style="text-indent:-100%;" name="' + d.ServerID + '"><span title="Delete" act="del" class="remove fa fa-remove"></span></a>';
+                            dv = dv + "</div></div ></li >";
+                                
                         })
-                        dv = dv + "</div>"
+                        dv = dv + "</ul></div>"
                         $("#slist").append(dv);
-                        $("#slist").find("a").click(function () {
+                        $("#slist").find("a[action=vwserver]").click(function () {
                             sid = $(this).attr("name");
                             getServer(sid);
                         })

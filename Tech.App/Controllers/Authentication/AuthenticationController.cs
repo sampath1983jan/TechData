@@ -16,6 +16,8 @@ namespace Tz.BackApp.Controllers.Authentication
     public class AuthenticationController : Controller
     {
         // GET: Authentication
+        //https://www.codeproject.com/Tips/825266/ASP-NET-MVC-Dynamic-Routing
+        //https://blog.maartenballiauw.be/post/2009/05/20/aspnet-mvc-domain-routing.html
         public ActionResult Index()
         {
            

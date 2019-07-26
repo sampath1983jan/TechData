@@ -120,6 +120,18 @@ namespace Tz.Net
                         throw ex;
                     }
                 }
+                try
+                {
+                    s.CreateImportEvents();
+                }
+                catch (Exception ex)
+                {
+                    if (ex.Message.IndexOf("exist") == 0)
+                    {
+                        throw ex;
+                    }
+                }
+
 
             }
             catch (Exception ex) {
@@ -127,6 +139,112 @@ namespace Tz.Net
             }
             
 
+        }
+
+        public void ExecuteClientSetup(string conn) {
+            Tz.Data.Setup s = new Data.Setup(conn);
+            try
+            {
+                s.CreateComponent();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+            try
+            {
+                s.CreateComponentAttribute();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+            try
+            {
+                s.CreateComponentModal();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+            try
+            {
+                s.CreateComponentModalItem();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+            try
+            {
+                s.CreateComponentModalRelation();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+            try
+            {
+                s.CreateComponentLookup();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+            try
+            {
+                s.CreateComponentLookUpItem();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+
+            try
+            {
+                s.CreateTable();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
+
+
+            try
+            {
+                s.CreateField();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.IndexOf("exist") == 0)
+                {
+                    throw ex;
+                }
+            }
         }
    }
 }

@@ -3,16 +3,24 @@
     ViewBag.Title = "Client";
 }
 
-<div id="container">
+<div class="row padd-20">
+    <div class="col-md-12 udline-4">
+        <h4 class="header ">Client Information</h4>
+    </div>
+ 
+        <div id="container" class="col-md-12">
 
-    
+                       
+
+       
+    </div>
+   
+</div> 
 
 
-    
-</div>
 
-<script type="text/javascript">
-    $(document).ready(function () {        
+    <script type="text/javascript">
+    $(document).ready(function () {
         function getClient(clientID) {
             $.ajax('/Client/Get',
                 {
@@ -20,7 +28,7 @@
                     dataType: 'jsonp', // type of response data
                     data: ({ clientid: clientID }),
                     // timeout milliseconds
-                    success: function (data, status, xhr) {   // success callback function                        
+                    success: function (data, status, xhr) {   // success callback function
 
                      var c =new  $.Client({
                             plc: "onClient",
@@ -49,7 +57,7 @@
                     dataType: 'jsonp', // type of response data
                     data: ({ clientid: clientID }),
                     // timeout milliseconds
-                    success: function (data, status, xhr) {   // success callback function                        
+                    success: function (data, status, xhr) {   // success callback function
                         onComplete(data.ServerID);
                     },
                     error: function (jqXhr, textStatus, errorMessage) { // error callback
@@ -65,25 +73,36 @@
                     dataType: 'jsonp', // type of response data
                     data: "",
                     // timeout milliseconds
-                    success: function (data, status, xhr) {   // success callback function                        
+                    success: function (data, status, xhr) {   // success callback function
                         $("#clist").html("");
-                        var dv="<div class='row'>"
-                        $.each(data, function (i, d) {                            
-                            dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";                            
+                        //var dv="<div class='row'>"
+                        //$.each(data, function (i, d) {
+                        //    dv = dv + "<div class='col-md-12'><a href='#' name='" + d.ClientID + "'>" + d.OrganizationName + "-" + d.ClientName + "-" + d.ClientNo + "</a></div>";
+                        //})
+                        //dv = dv + "</div>"
+
+                        var dv = "<div class='list'><ul class=''>"
+                        $.each(data, function (i, d) {
+                            dv = dv + "<li class=''><div class='row rowlight'><div class='col-md-10'><a href='#' action='vwclient' name='" + d.ClientID + "'>" + d.ClientName + "-" + d.ClientNo + ""
+                            dv = dv + "</a></div> <div class='col-md-2'> "
+                            dv = dv + '<a href="#" style="text-indent:-100%;" name="' + d.ClientID + '"><span title="Delete" act="del" class="remove fa fa-remove"></span></a>';
+                            dv = dv + "</div></div ></li >";
+
                         })
-                        dv = dv + "</div>"
-                        $("#clist").append(dv);                       
-                        $("#clist").find("a").click(function () {
+                        dv = dv + "</ul></div>";
+
+                        $("#clist").append(dv);
+                        $("#clist").find("a[action=vwclient]").click(function () {
                             var cid = $(this).attr("name");
                             getClient(cid);
                         });
                     },
-                    error: function (jqXhr, textStatus, errorMessage) { // error callback 
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
                         alert(errorMessage);
                         //$('p').append('Error: ' + errorMessage);
                     }
                 });
-        }        
+        }
         (function ($Client) {
             $Client.Client = function (options) {
                 var defaults = {
@@ -104,7 +123,7 @@
                     }
                 };
                 var cthis = this;
-                var serverID = "";                
+                var serverID = "";
                 $.extend(this, defaults, options);
                 $("#server").hide();
                 $("#btnRemovesever").hide();
@@ -355,7 +374,7 @@
                                     //$('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
                                     loadClients();
                                 },
-                                error: function (jqXhr, textStatus, errorMessage) { // error callback 
+                                error: function (jqXhr, textStatus, errorMessage) { // error callback
                                     alert(errorMessage);
                                     //$('p').append('Error: ' + errorMessage);
                                 }
@@ -383,7 +402,7 @@
                     $("#btnRemovesever").unbind();
                     $("#btnAssignServer").click(function () {
                         var sid = $("#sServer").Input("text");
-                       
+
 
                         $.ajax('/Client/Assign',
                             {
@@ -400,7 +419,7 @@
                                 }
                             });
                     });
-                    $("#btnRemovesever").click(function () {                                             
+                    $("#btnRemovesever").click(function () {
                         $.ajax('/Client/RemoveServer',
                             {
                                 type: "GET",
@@ -470,32 +489,32 @@
                     })
                 } else {
                     render(this);
-                }               
-                
+                }
+
             }
-        })($);       
+        })($);
         $("#container").append($.ServerView());
-         $("#btnCancel").click(function () {
-            window.location = "@Url.Action("login", "Authentication")"; 
+        $("#btnCancel").click(function () {
+            window.location = "@Url.Action("login", "Authentication")";
         })
         var client = new $.Client({ plc: "onClient"});
         loadClients();
-        
+
     });
     //onclick='"window.location = "@Url.Action("login", "Authentication")"; "'
     (function ($Server) {
         $.ServerView = function () {
             var viewUI= '<table style="width:100%" >';
             viewUI = viewUI + '   <tr>';
-            viewUI = viewUI + '   <td>';
-            viewUI = viewUI + '   <div class="container">';
+            viewUI = viewUI + '   <td width="20%" style="vertical-align:top">';
+            viewUI = viewUI + '   <div class="">';
             viewUI = viewUI + '   <div id="clist"> </div>';
             viewUI = viewUI + '   </div>';
             viewUI = viewUI + '   </td>';
-            viewUI = viewUI + '   <td width="80%">';
-            viewUI = viewUI + '       <div id="onClient" class="float-label container">';
+            viewUI = viewUI + '   <td width="80%" >';
+            viewUI = viewUI + '       <div id="onClient" style="border-left: 4px solid #eee;" class="float-label container">';
             viewUI = viewUI + '   <div class="row">';
-            viewUI = viewUI + '   <div id="" class="col-md-12"><h3>Client information</h3></div>';
+            //viewUI = viewUI + '   <div id="" class="col-md-12"><h3></h3></div>';
             viewUI = viewUI + '           </div>';
             viewUI = viewUI + '           <div class="row">';
             viewUI = viewUI + '               <div id="cOrgName" class="control col-md-5"></div>';
@@ -505,11 +524,11 @@
             viewUI = viewUI + '           <div class="row">';
             viewUI = viewUI + '               <div id="cAddress" class="control col-md-5"></div>';
             viewUI = viewUI + '               <div id="cState" class="control col-md-4"></div>';
-            viewUI = viewUI + '               <div id="cCountry" class="control col-md-3"></div>';                        
+            viewUI = viewUI + '               <div id="cCountry" class="control col-md-3"></div>';
             viewUI = viewUI + '           </div>';
             viewUI = viewUI + '   <div class="row">';
             viewUI = viewUI + '               <div id="cEmail" class="control col-md-6"></div>';
-            viewUI = viewUI + '               <div id="cHostName" class="control col-md-6"></div>';            
+            viewUI = viewUI + '               <div id="cHostName" class="control col-md-6"></div>';
             viewUI = viewUI + '           </div>';
             viewUI = viewUI + '           <div class="row">';
             viewUI = viewUI + '               <div class="col-md-6"></div>';
@@ -523,7 +542,7 @@
            // if (isnew == false) {
             viewUI = viewUI + '       <div class="container"  id="server">';
                 viewUI = viewUI + '      <div class="row">';
-                viewUI = viewUI + '     <div class="col-md-12"> <h3>Server</h3></div>';
+                viewUI = viewUI + '     <div class="col-md-12"> <h5>Server</h5></div>';
                 viewUI = viewUI + '     </div>';
                 viewUI = viewUI + '     <div class="row" >';
                 viewUI = viewUI + '     <div id="sServer" class="control col-md-5"></div>';
@@ -537,7 +556,7 @@
                 viewUI = viewUI + '      </div>';
             viewUI = viewUI + '                  </div>';
             viewUI = viewUI + '               </div>';
-           // }           
+           // }
             viewUI = viewUI + '           </div>';
             viewUI = viewUI + '       </div>';
             viewUI = viewUI + '   </td>';
@@ -546,6 +565,5 @@
             return viewUI;
         }
     })($)
-</script>
+    </script>
 
-    

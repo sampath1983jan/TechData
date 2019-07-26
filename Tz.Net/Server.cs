@@ -137,6 +137,8 @@ namespace Tz.Net
                     Port,ServerName);
                 if (_serverID != "")
                 {
+                    Tz.Net.Setup s = new Tz.Net.Setup();
+                    s.ExecuteClientSetup(Connection());                    
                     return true;
                 }
                 else

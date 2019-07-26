@@ -9,6 +9,7 @@ using Tz.Net;
 using Tech.App.Models;
 using Tz.Net.DataSchema;
 using System.Web.Hosting;
+using System.IO;
 
 namespace Tz.BackApp.Controllers.Schema
 {
@@ -24,8 +25,14 @@ namespace Tz.BackApp.Controllers.Schema
         {
             return View();
         }
+        public ActionResult Backup() {
+            return PartialView(); 
+        }
         public ActionResult Schema() {
             return View();
+        }
+        public ActionResult Restore() {
+            return PartialView();
         }
 
         #region Schema Methods
@@ -281,15 +288,95 @@ namespace Tz.BackApp.Controllers.Schema
                 throw ex;
             }
         }
+        public JsonpResult GetExportHistory(string clientid) {
+            ImportExport im = new ImportExport(clientid);
+            return new JsonpResult(im.GetExportList());
+        }
+        [HttpPost]
+        public JsonpResult Upload(FormCollection collection) {
+            string _uploadFolder = "~/tempfiles";
+            string cn = collection["ChunkNumber"];
+            Int64 cz =  Convert.ToInt64(collection["ChunkSize"]);
+            Int64 tz = Convert.ToInt64(collection["totalSize"]);
+            string unique = collection["unique"];
+            string FileName = collection["FileName"];
+            string uploadingProcess = collection["uploadingProcess"];
+           // string file = collection["file"];
 
-        public Task Export(string clientid) {
+            string filePath;
+            filePath = string.Format("{0}/{1}/{1}.part{2}", _uploadFolder, unique, System.Convert.ToInt32(cn).ToString("0000"));
+            string localFilePath = Request.RequestContext.HttpContext.Server.MapPath(filePath);
+            string directory = System.IO.Path.GetDirectoryName(localFilePath);
+            if(!System.IO.Directory.Exists(localFilePath)) {
+                System.IO.Directory.CreateDirectory(directory);
+            }
+            if (!System.IO.File.Exists(localFilePath)) {
+                Request.Files[0].SaveAs(localFilePath);
+            }
+            IOrderedEnumerable<System.IO.FileInfo> filePaths = new DirectoryInfo(directory).GetFiles()
+.OrderBy(f => f.CreationTime);
+            var files = System.IO.Directory.GetFiles(directory);
+            if((files.Length) * Convert.ToInt64(cz) >= tz) {
+                filePath = string.Format("{0}/{1}{2}", _uploadFolder, unique, System.IO.Path.GetExtension(HttpContext.Request.Params["FileName"]));
+                localFilePath = Request.RequestContext.HttpContext.Server.MapPath(filePath);
+
+                var fs = new FileStream(localFilePath, FileMode.CreateNew);
+                foreach (FileInfo file in filePaths)
+                {
+                    var buffer = System.IO.File.ReadAllBytes(file.FullName);
+                    fs.Write(buffer, 0, buffer.Length);
+                    System.IO.File.Delete(file.FullName);
+                }
+                fs.Close();
+                fs.Dispose();                
+                System.IO.Directory.Delete(directory);
+                //filePath
+
+            }         
+
+
+            return new JsonpResult(filePath);
+
+        }
+        public ActionResult Download(string clientid, string historyid)
+        {
+
+            string filePath = @"D:/temp"; //Server.MapPath(System.Configuration.ConfigurationManager.AppSettings["FileManagementPath"]);
+            ImportExport im = new ImportExport(clientid);
+            ExportEvent ev= im.getExportEvent(historyid);
+
+            string actualFilePath = filePath + "" + ev.FolderPath;
+            string filename = Path.GetFileName(actualFilePath);
+            byte[] fileBytes = System.IO.File.ReadAllBytes(actualFilePath);
+            return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, filename);
+
+            
+        }
+        public Task Export(string clientid,string exportSetting) {
             try
-            {
-               
+            {              
 
                 return Task.Run(() =>
                 {
-                    HostingEnvironment.QueueBackgroundWorkItem(cancellationToken => new Models.Worker().StartProcessing(cancellationToken, clientid));
+                    HostingEnvironment.QueueBackgroundWorkItem(cancellationToken => new Models.Worker().StartProcessing(cancellationToken, clientid
+                        ,Newtonsoft.Json.JsonConvert.DeserializeObject<ExportSettings>(exportSetting)));
+                });
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public Task Import(string clientid, string path,bool ignore)
+        {
+            //string _uploadFolder = "~/tempfiles";
+            //path = _uploadFolder + "/" + path;
+            try
+            {
+                return Task.Run(() =>
+                {
+                    HostingEnvironment.QueueBackgroundWorkItem(cancellationToken => new Models.Worker().StartImportProcess(cancellationToken, clientid
+                        ,ignore,path));
                 });
             }
             catch (System.Exception ex)

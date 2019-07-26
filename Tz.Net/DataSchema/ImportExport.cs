@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.IO;
+using System.Reflection;
+
 namespace Tz.Net.DataSchema
 {
     public enum ImportExportStatus {
@@ -48,13 +51,26 @@ namespace Tz.Net.DataSchema
             exp.Save();
             return exp;
         }
+        public ExportEvent getExportEvent(string importExportID) {
+          
+            Data.ImportExport ie = new Data.ImportExport();
+            DataTable dt = ie.GetExportEventByID(this.ClientID,importExportID);
+            var a = dt.toList<ExportEvent>(new DataFieldMappings().Add("ClientID", "ClientID")
+               .Add("EventDateTime", "ExportDate")
+               .Add("ImportExportID", "ExportImportID", true)
+                .Add("FilePath", "FolderPath")
+                .Add("Errors", "Errors")
+                .Add("Status", "Status")
+                .Add("Settings", "ExportSetting"), null, (x, y) => dynamic(x, y));
+           return  a.FirstOrDefault();            
+        }
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public List<ImportEvent> GetPendingImportList() {
             Data.ImportExport ie = new Data.ImportExport();
-            DataTable dt = ie.GetAllEvents(this.ClientID);
+            DataTable dt = ie.GetPendingEvents(this.ClientID,1);
             var a = dt.toList<ImportEvent>(new DataFieldMappings().Add("ClientID", "ClientID")
                 .Add("EventDateTime", "ExportDate")
                 .Add("ImportExportID", "ExportImportID", true)
@@ -64,14 +80,27 @@ namespace Tz.Net.DataSchema
                   .Add("IgnoreSQLErrors", "IgnoreSQLErrors"), null, (x, y) => dynamic(x, y));
             a =a.Where(x => x.Status == ImportExportStatus.pending).ToList();
             return a;
-        }     
+        }
+        public List<ImportEvent> GetImportList()
+        {
+            Data.ImportExport ie = new Data.ImportExport();
+            DataTable dt = ie.GetAllImportEvents(this.ClientID);
+            var a = dt.toList<ImportEvent>(new DataFieldMappings().Add("ClientID", "ClientID")
+                .Add("EventDateTime", "ExportDate")
+                .Add("ImportExportID", "ExportImportID", true)
+                 .Add("FilePath", "FolderPath")
+                 .Add("Errors", "Errors")
+                 .Add("Status", "Status")
+                  .Add("IgnoreSQLErrors", "IgnoreSQLErrors"), null, (x, y) => dynamic(x, y));           
+            return a;
+        }
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public List<ExportEvent> GetPendingExportList() {
            Data.ImportExport ie = new Data.ImportExport();
-           DataTable dt= ie.GetAllEvents(this.ClientID);
+           DataTable dt= ie.GetPendingEvents(this.ClientID,2);
             var a =dt.toList<ExportEvent>(new DataFieldMappings().Add("ClientID", "ClientID")
                 .Add("EventDateTime", "ExportDate")
                 .Add("ImportExportID", "ExportImportID", true)
@@ -80,6 +109,22 @@ namespace Tz.Net.DataSchema
                  .Add("Status", "Status")
                  .Add("Settings", "ExportSetting"), null, (x, y) => dynamic(x, y));
             a = a.Where(x => x.Status == ImportExportStatus.pending).ToList();
+            return a;
+        }
+
+        public List<ExportEvent> GetExportList()
+        {
+            Data.ImportExport ie = new Data.ImportExport();
+            DataTable dt = ie.GetAllExportEvents(this.ClientID);
+            var a = dt.toList<ExportEvent>(new DataFieldMappings().Add("ClientID", "ClientID")
+                .Add("EventDateTime", "ExportDate")
+                .Add("ImportExportID", "ExportImportID", true)
+                 .Add("FilePath", "FolderPath")
+                 .Add("Errors", "Errors")
+                 .Add("Status", "Status")
+                 .Add("Settings", "ExportSetting"), null, (x, y) => dynamic(x, y));
+            
+            
             return a;
         }
 
@@ -129,15 +174,16 @@ namespace Tz.Net.DataSchema
             {
                 Status = ImportExportStatus.progress;
                 im.UpdateScheduleStatus(this.ClientID, ExportImportID, (int)Status, "");
-                var path = FolderPath + "/sqldump-" + Guid.NewGuid().ToString() + ".sql";
+                string fileName = @"/sqldump-" + Guid.NewGuid().ToString() + ".sql";
+                var path = FolderPath + fileName;
                 de.ExportTo(path);
                 Status = ImportExportStatus.completed;
-                im.UpdateScheduleStatus(this.ClientID, ExportImportID, (int)Status, "", path);
+                im.UpdateScheduleStatus(this.ClientID, ExportImportID, (int)Status, "", fileName);
             }
             catch (Exception ex)
             {
                 Status = ImportExportStatus.error;
-                im.UpdateScheduleStatus(this.ClientID, ExportImportID, (int)Status, "");
+                im.UpdateScheduleStatus(this.ClientID, ExportImportID, (int)Status, ex.Message );
                 throw ex;
             }
             finally {
@@ -169,9 +215,18 @@ namespace Tz.Net.DataSchema
 
             try
             {
+                string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
+                assemblyFolder = assemblyFolder.Replace("\\Debug", "");
+                assemblyFolder = assemblyFolder.Replace("\\bin", "");
+                assemblyFolder = assemblyFolder.Replace("\\netcoreapp2.1", "");
+                    assemblyFolder = assemblyFolder.Replace("file:\\", "");
+                if (ImportFilePath.StartsWith("~")) {
+                    ImportFilePath = ImportFilePath.Substring(1);
+                }
+                string impPath = assemblyFolder + ImportFilePath;
                 Status = ImportExportStatus.progress;
                 im.UpdateScheduleStatus(this.ClientID, ExportImportID, (int)Status, "");
-              string rst = di.ImportFrom(ImportFilePath, IgnoreSQLErrors);
+              string rst = di.ImportFrom(impPath, IgnoreSQLErrors);
                 if (rst == "done")
                 {
                     Status = ImportExportStatus.completed;

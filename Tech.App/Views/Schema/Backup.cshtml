@@ -1,0 +1,179 @@
+﻿
+<div id="plcBackUp" class="row"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        (function ($bk) {
+            $bk.BackManager = function (options) {
+                    var defaults = {
+                        plc: "plcBackUp",
+                    }           
+                    var _opt = $.extend({}, defaults, options);
+                var exporttype = [{ key: "0", value: "Structure Only" }, { key: "1", value: "Structure With Data" }]
+
+                var getbackup = function (es) {
+                    es = JSON.stringify(es);
+                    $.ajax({
+                        url: '/Schema/Export',
+                        dataType: 'jsonp', // type of response data
+                        data: ({ clientid: window.clientid, exportSetting: es }),
+                        success: function (result) {
+                             
+                            getHistory();
+                        },
+                        error: function () {
+                            getHistory();
+                        }
+                    });
+                };
+                var refresh = function () {
+                    //setTimeout(function () {
+                    //    getHistory();
+                    //    refresh();
+                    //}, 2000);
+                }   
+                var getHistory = function () {                    
+                    $.ajax({
+                        url: '/Schema/GetExportHistory',
+                        dataType: 'jsonp', // type of response data
+                        data: ({ clientid: window.clientid }),
+                        success: function (result) {
+                            renderHistory(result);
+                        }
+                    });
+                }
+            
+            var Download = function (path) {                
+                window.location = "/schema/Download?clientid=" + window.clientid + "&historyid=" + path;
+            }
+                var getStatus =function(s){
+                    if (s == 1) {
+                        return "Progress"
+                    } else if (s == 2) {
+                        return "Complete"
+                    } else if (s == 0) {
+                        return "Pending"
+                    } else if (s == 3) {
+                        return "Error";
+                    }
+                }
+                var renderHistory = function (data) {                
+                    $("#plchistory").html("");
+                    $("#plchistory").append("<div class='row'><div class='col-md-8'>Export Status</div><div class='col-md-4'>Date on Export</div></div>")
+                    $.each(data, function (k, v) {
+                        var st = "";
+                        if (v.Status != 2) {
+                            st = getStatus(v.Status);
+                            st = "<h5><span class='badge badge-info'>" + st +"</span></h5>"
+                        } else {
+                            st = v.FolderPath;
+                        }
+                        $("#plchistory").append("<div class='row rowlight tdrow'><div class='col-md-8'><a href='#' name='" + v.ExportImportID +"'>" + st + "</a></div><div class='col-md-4'>" + moment(v.ExportDate).format('MM/DD/YYYY') + "</div></div>");
+                    });
+                    $("#plchistory").find("a").click(function () {
+                        var path = $(this).attr("name");
+                        Download(path);
+                    });
+                    refresh();
+                }
+               
+                var RenderBackup = function () {                  
+                 
+                    var c = "";
+                    c = c + "<div></div>";
+                    c = c + "<div class='box mgtop-15 col-md-5'> <div id='cntsettings'  class='row'>";                    
+                    c = c + "<div id='fldedd' class='col-md-6'></div>";
+                    c = c + "<div id='fldecd' class='col-md-6'></div>";
+                    c = c + "<div id='fldedt' class='col-md-6'></div>";
+                    c = c + "<div id='fldType' class='col-md-5'></div>";
+                    c = c + "<div id='fldeef' class='col-md-12'></div>";                                                          
+                    c = c + '<div class="col-md-12"><button type="button" class="btn btn-primary" action="bksave">Backup Now</button></div>';
+                    c = c + "</div></div><div class ='col-md-6'><div id='plchistory'></div></div>";
+                   
+                  
+                    $("#plcBackUp").append(c);   
+                    getHistory();
+                    $("[action=bksave]").click(function () {
+                        var a = {};
+                        a.EnableDropDatabase = $("#fldedd").Input("text");
+                        a.EnableCreateDatabase = $("#fldecd").Input("text");
+                        a.EnableDropTable = $("#fldedt").Input("text");
+                        a.Type = $("#fldType").Input("text");                        
+                        if ($("#fldeef").Input("text") == true) {
+                            a.EnableExportFunction = true;
+                            a.EnableExportStoredProcedure = true;
+                            a.EnableExportTrigger = true;
+                            a.EnableExportEvent = true;
+                            a.EnableExportViews = true;
+                        } else {
+                            a.EnableExportFunction = false;
+                            a.EnableExportStoredProcedure = false;
+                            a.EnableExportTrigger = false;
+                            a.EnableExportEvent = false;
+                            a.EnableExportViews = false;
+                        }
+                        
+                        a.BlobExportMode = 1;
+                        getbackup(a);
+                    })
+                    $("#cntsettings").labelfields({
+
+                        items: [{
+                            label: "Enable Database Drop",
+                            field: {
+                                id: "fdEnableDropDatabase", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'fldedd'
+                        }, {
+                                label: "Enable Create Database",
+                            field: {
+                                id: "fdEnableCreateDatabase", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                format: "hex", range: false, isRequired: true,                               
+                            },
+                                id: 'fldecd'
+                        }, {
+                                label: "Enable Drop Table",
+                            field: {
+                                id: "fdEnableDropTable", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                format: "hex", range: false, isRequired: true,
+                            },
+                                id: 'fldedt'
+                        }, {
+                                label: "Enable Export Function,View,Trigger,SP and Events",
+                            field: {
+                                id: "fldothers", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                format: "hex", range: false, isRequired: true,
+                            },
+                                id: 'fldeef'
+                        }, {
+                                label: "Export Type",
+                            field: {
+                                id: "fdType", 'note': "",
+                                limit: true, maxlength: 50, inputType: 19, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                format: "hex", range: false, isRequired: true,
+                                selectPicker: {
+                                    datasource: exporttype,
+                                    displayField: "value",
+                                    valueField: "key",
+                                    selection: "single",
+                                    defaultSelection: "Choose Export Type"
+                                }
+                            },
+                                id: 'fldType'
+                        } ]
+                    });
+
+                }
+                RenderBackup();
+            }
+        })($)
+        var a = new $.BackManager({});
+    });
+</script>
+
+

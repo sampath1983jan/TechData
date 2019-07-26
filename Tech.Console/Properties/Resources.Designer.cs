@@ -61,7 +61,7 @@ namespace Tech.Console.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Server=40.118.212.124;Initial Catalog=talentoztest;Uid=admin;Pwd=SMRmme123*.
+        ///   Looks up a localized string similar to Server=talentozstagemysql.mysql.database.azure.com;Initial Catalog=grt_demo;Uid=adminstage@talentozstagemysql;Pwd=SMRmme123456*.
         /// </summary>
         internal static string Conn {
             get {

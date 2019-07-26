@@ -105,6 +105,7 @@ namespace Tech.Console
             {
                 ss.Reset(s);
                 ss.Execute(s);
+                ss.ExecuteClientSetup(s);
                 System.Console.Write("stepup created");
             }
             catch (Exception ex)
@@ -252,7 +253,7 @@ namespace Tech.Console
          static void Main(string[] args)
          {
 
-            //    Setup();
+                Setup();
 
             //var strings =Assembly.GetExecutingAssembly().Location ;
             ////Setup();
@@ -383,13 +384,13 @@ namespace Tech.Console
             ////System.Console.WriteLine(str);
             ////  System.Console.ReadKey();
             //     var program = "d:data= getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030,F_200140,F_200115,F_200160,F_200200,F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID,F_360010]:c with[c:PositionID equalto b:PositionID,c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]),and[(b:status isequalto value:1)]);"; /*System.Console.ReadLine();   */
-            var program = "p:pUserID;p:getfield;d:data= getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030,F_200140,F_200115,F_200160,F_200200,F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID,F_360010]:c with[c:PositionID equalto b:PositionID,c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]),and[(a:UserID isequalto value:90),(b:status isequalto value:1)]);d: result = getvalue(data, F_200005); result = orderby(data,[userid: asc]);";
-            //program = program + ";data=orderby(data,[F_200005:desc,F_200015:asc])";
-            EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
-            QScriptStatement sq = new QScriptStatement(program, ev);
-            var res = sq.Evaluation();
-            System.Console.WriteLine("Total:" + res.data);
-            System.Console.ReadLine();
+            //var program = "p:pUserID;p:getfield;d:data= getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030,F_200140,F_200115,F_200160,F_200200,F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID,F_360010]:c with[c:PositionID equalto b:PositionID,c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]),and[(a:UserID isequalto value:90),(b:status isequalto value:1)]);d: result = getvalue(data, F_200005); result = orderby(data,[userid: asc]);";
+            ////program = program + ";data=orderby(data,[F_200005:desc,F_200015:asc])";
+            //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+            //QScriptStatement sq = new QScriptStatement(program, ev);
+            //var res = sq.Evaluation();
+            //System.Console.WriteLine("Total:" + res.data);
+            //System.Console.ReadLine();
             //        try
             //        {                    
             //            //for (int i = 0; i < res.Count; i++)

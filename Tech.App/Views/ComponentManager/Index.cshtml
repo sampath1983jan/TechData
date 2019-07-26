@@ -52,23 +52,13 @@
                                 '<a class="nav-link" name="vclookup" href="#">Lookups</a>']
                     })
                     $("#lftSchemacnt").css({
-                        height: "94%",                       
+                        height: "94%",          
+                        padding:"0px"
                     });
 
-                    //$("#navBtnList").find("a[name=vbkrst]").click(function () {
-                    //    $.ajax('/Schema/Export',
-                    //        {
-                    //            dataType: 'jsonp', // type of response data
-                    //            data: (({ clientid: window.clientid })),
-                    //            // timeout milliseconds
-                    //            success: function (data, status, xhr) {   // success callback function
-                                   
-                    //            },
-                    //            error: function (jqXhr, textStatus, errorMessage) { // error callback
-                    //                alert(errorMessage);
-                    //            }
-                    //        });
-                    //});
+                    $("#navBtnList").find("a[name=vbkrst]").click(function () {
+                        renderBackupUI();
+                    });
 
 
                     $("#navBtnList").find("a[name=vclookup]").click(function () {
@@ -125,6 +115,58 @@
                     })
                     renderComponent();
                 }
+                var renderBackupUI = function () {
+                    $.ajax({
+                        url: '/Schema/Backup?' + new Date().toString(),
+                        contentType: 'application/html; charset=utf-8',
+                        type: 'GET',
+                        cache: false,
+                        dataType: 'html',
+                        success: function (result) {
+                            $("#rstDiv").html("");
+                            var a = "<div class='col-md-12'>";
+                            a = a + "<div id='nvlist'></div>";
+                            a = a + "<div id='plcsettings' style='margin-left:40px;' class='col-md-12'></div>";
+                            a = a + "</div>"
+                            $("#rstDiv").append(a);
+                            $('#plcsettings').html(result);                                                       
+                            renderBackupButtons();
+                        }
+                    });
+                }
+                var renderRestoreUI = function () {
+                    $.ajax({
+                        url: '/Schema/Restore?' + new Date().toString(),
+                        contentType: 'application/html; charset=utf-8',
+                        type: 'GET',
+                        cache: false,
+                        dataType: 'html',
+                        success: function (result) {
+                            $("#rstDiv").html(""); 
+                            var a = "<div class='col-md-12'>";
+                            a = a + "<div id='nvlist'></div>";
+                            a = a + "<div id='plcsettings' style='margin-left:40px;' class='col-md-12'></div>";
+                            a = a + "</div>"
+                            $("#rstDiv").append(a);
+                            $('#plcsettings').html(result);
+                            renderBackupButtons();
+                             
+                        }
+                    });
+                }
+                var renderBackupButtons = function () {
+                    $("#nvlist").toolbar({
+                        name: "", linkbuttons:
+                            ['<a class="nav-link active" href="#" name="vclist">Back Setting <span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link " href="#" name="addcmb">Restore setting</a>']
+                    });
+                    $("#nvlist").find("a[name=vclist]").click(function () {
+                        renderBackupUI();
+                    });
+                    $("#nvlist").find("a[name=addcmb]").click(function () {
+                        renderRestoreUI();
+                    });
+                };
                 var removeComponent = function () {
                     $.ajax('/ComponentManager/RemoveComponent',
                         {
@@ -792,7 +834,7 @@
                     fld = fld + '<button type="button" class="btn btn-primary" action="save">Save</button>'
                     fld = fld + "</div>";
                     fld = fld + "</div>";
-                    $("#fddetail").append("<div class='col-md-12'><div class='col-md-12'>Attribute</div>" + fld + "</div>");
+                    $("#fddetail").append("<div class='col-md-12' style='padding:0px;'><div class='col-md-12'>Attribute</div>" + fld + "</div>");
                     renderFieldInfo(fid);
                     $("#fddetail").find("button[action=save]").click(function () {
                         if (_opt.ComponentID != "") {
@@ -840,7 +882,7 @@
                     $("#saveaction").html("");
                     $("#saveaction").append(' <input type="button" id="btnSaveTable" class="btn  btn-primary" value="Accept Changes" />');
                     $("#saveaction").append('<input type = "button" id = "btnReverse" value = "Retract" class= "btn  btn-default" />');
-                    $("#" + _opt.plc).append("<div><div class='row'><div class='col-md-8'  style='border-right:4px solid #eee;'><div id='tbplc'  class='float-label '></div><div id='fldinfo' class=''></div></div><div class='col-md-4' id='fddetail'></div></div></div>");
+                    $("#" + _opt.plc).append("<div><div class='row'><div class='col-md-8'  style='border-right:4px solid #eee;'><div id='tbplc'  class='float-label '></div><div id='fldinfo' class=''></div></div><div class='col-md-4' style='padding:0px;' id='fddetail'></div></div></div>");
                     if (_opt.TableID != "") {
                         getTable(function () {
                             renderTable();

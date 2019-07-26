@@ -25,7 +25,8 @@
             stepmin: 10,
             overflowtime: false,
             datepickerType: 1,     // 1- single selection date picker,2 weekpicker,3-range picker 4-yearmonth picker
-            range: false,
+			range: false,
+			css:"",
             precision: 2,
             orientation: 'horizontal',
             enable: true,
@@ -577,10 +578,10 @@
                 var mlt = "";
                 if (prt.upload.selection == 'multiple') {
                     mlt = "multiple";
-                }
-                tmp = tmp  + '<label class="file-upload btn btn-default">';
+				}
+				tmp = tmp + '<label class="' + prt.css + '">';  //file-upload btn btn-default
                 tmp = tmp + "<input  " + db + " type='file' " + mlt + " id='" + prt.id +"' class='form-control' placeholder=''/>";
-                tmp = tmp + "Browse for file..";
+               // tmp = tmp + "Browse for file..";
                 tmp = tmp + '</label>';
                 if (prt.note != "") {
                     hlp = prt.note;
@@ -1990,7 +1991,9 @@
 				$("#" + ks.id).Input(ks.field);
 				$("#" + ks.id).Input("text", ks.field.text);
 				$($("#" + ks.id).find("input")[0]).parent().addClass("control");
-				$("#" + ks.id).addClass("is-floating-label");
+				if (ks.field.inputType != 12) {
+					$("#" + ks.id).addClass("is-floating-label");
+				}  
 				//$("#" + ks.id).find("input").attr("placeholder", ks.label);
 				//$("#" + ks.id).find("textarea").attr("placeholder", ks.label);
 				//$("#" + ks.id).find("input").removeClass("form-control");
@@ -2004,6 +2007,9 @@
 				$($("#" + ks.id).find("textarea")[0]).before("<label for=" + ks.field.id + ">" + ks.label + "</label>");
 				if (ks.field.enablefloating == undefined) {
 					ks.field.enablefloating = true;
+					if (ks.field.inputType == 12) {
+						ks.field.enablefloating = false;
+					}
 				}
 				if (ks.field.enablefloating === true) {
 					$("#" + ks.id).find("textarea").on('focus blur', function (e) {
@@ -2546,9 +2552,13 @@
     };
     var methods = {
         init: function (options) {
-            var self = $(this);
-            var _options = $.extend(true, $.toolbar.defaults, options || {});
-            self.data('toolbar', $.extend({}, _options, { initialized: true, waiting: false }));
+			var self = $(this);
+			var _options = $.extend({}, $.toolbar.defaults, options);
+			//var _options = $.extend(true, $.dialogBox.defaults, options || {});
+			self.data('toolbar', $.extend({}, _options, { initialized: true, waiting: false }));
+
+            //var _options = $.extend(true, $.toolbar.defaults, options || {});
+            //self.data('toolbar', $.extend({}, _options, { initialized: true, waiting: false }));
             methods._render.call(this);
         },
         _render: function () {
