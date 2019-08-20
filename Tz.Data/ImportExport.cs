@@ -58,8 +58,8 @@ namespace Tz.Data
                     using (MySqlCommand cmd = new MySqlCommand())
                     {
                         cmd.Connection = conn;
-                        conn.Open();
-                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        //conn.Open();
+                        using (MySqlBackup mb = new MySqlBackup(cmd, con))
                         {
                             mb.ExportInfo.AddDropDatabase = enableDropDatabase;
                             mb.ExportInfo.AddCreateDatabase = enableCreateDatabase;
@@ -92,7 +92,7 @@ namespace Tz.Data
                             }
                             mb.ExportInfo.BlobExportModeForBinaryStringAllow = false;
                             mb.ExportToFile(folder);
-                            conn.Close();
+                            //conn.Close();
                         }
                     }
                 }
@@ -118,10 +118,10 @@ namespace Tz.Data
                 {
                     using (MySqlCommand cmd = new MySqlCommand())
                     {
-                        cmd.Connection = conn;
-                        conn.Open();
+                        //cmd.Connection = conn;
+                        //conn.Open();
 
-                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        using (MySqlBackup mb = new MySqlBackup(cmd,con))
                         {
                             //mb.ImportInfo.EnableEncryption = cbImEnableEncryption.Checked;
                             //mb.ImportInfo.EncryptionPassword = txtImPwd.Text;
@@ -136,7 +136,7 @@ namespace Tz.Data
                             error = mb.LastError;
                         }
 
-                        conn.Close();
+                      //  conn.Close();
                     }
                 }
 

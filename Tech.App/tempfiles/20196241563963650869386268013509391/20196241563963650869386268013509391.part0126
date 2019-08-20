@@ -1,0 +1,803 @@
+ount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"03 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-14T00:00:00\",\"Description\":\"kopo\",\"Amount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"14 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 19:38:03');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,17,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-14T00:00:00\",\"Description\":\"kopo\",\"Amount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"14 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-13T00:00:00\",\"Description\":\"kopo\",\"Amount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"13 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 19:42:29');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1343,18,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":1140.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":95.0,\"CostPerMileage\":12.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":1999.8,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":9.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-22 13:02:35');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,19,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":1648.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":3,\"VehicleTypeName\":\"Van\",\"MileageDistance\":103.0,\"CostPerMileage\":16.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":1648.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":3,\"VehicleTypeName\":\"Van\",\"MileageDistance\":103.0,\"CostPerMileage\":16.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-22 13:10:50');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1343,20,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":1999.8,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":9.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":1999.8,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":9.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-22 13:11:34');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,21,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":1648.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":3,\"VehicleTypeName\":\"Van\",\"MileageDistance\":103.0,\"CostPerMileage\":16.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":1648.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":3,\"VehicleTypeName\":\"Van\",\"MileageDistance\":103.0,\"CostPerMileage\":16.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-22 13:11:42');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,22,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":1000.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":3,\"VehicleTypeName\":\"Van\",\"MileageDistance\":103.0,\"CostPerMileage\":16.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":2222.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-22 13:37:13');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,23,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":2222.0,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":222.2,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-22 13:37:40');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,24,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":222.2,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":444.4,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":2.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-26 14:54:19');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1343,25,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":1999.8,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":9.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2222.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-26 15:01:01');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1343,26,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2222.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2222.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-26 15:12:45');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,27,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":444.4,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":2.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":666.6,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":3.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-26 15:16:12');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1343,28,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2222.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2222.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-26 15:16:20');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1344,29,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":66.6,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":3.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1344,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-27T00:00:00\",\"Description\":\"uyi\",\"Amount\":666.6,\"ProjectID\":1,\"ProjectName\":\"Project 1\",\"ClaimDateString\":\"27 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1648.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":3.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-27 14:34:17');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11354,1343,30,'{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11354,\"CliamRequestItemID\":1343,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-26T00:00:00\",\"Description\":\"yuyi\",\"Amount\":2222.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"26 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1140.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":222.2,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-03-27 14:34:22');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11920,1418,31,'{\"ClientID\":2,\"CliamRequestID\":11920,\"CliamRequestItemID\":1418,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"\",\"Amount\":100.0,\"ProjectID\":4,\"ProjectName\":\"Project & Engineering - LIVE - Sustain\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11920,\"CliamRequestItemID\":1418,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"\",\"Amount\":200.0,\"ProjectID\":4,\"ProjectName\":\"Project & Engineering - LIVE - Sustain\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":2.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',90,'2019-04-01 17:28:42');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11920,1418,32,'{\"ClientID\":2,\"CliamRequestID\":11920,\"CliamRequestItemID\":1418,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"\",\"Amount\":200.0,\"ProjectID\":4,\"ProjectName\":\"Project & Engineering - LIVE - Sustain\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":2.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11920,\"CliamRequestItemID\":1418,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"\",\"Amount\":300.0,\"ProjectID\":4,\"ProjectName\":\"Project & Engineering - LIVE - Sustain\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":3.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',90,'2019-04-01 17:30:54');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11919,1417,33,'{\"ClientID\":2,\"CliamRequestID\":11919,\"CliamRequestItemID\":1417,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"asdf\",\"Amount\":100.0,\"ProjectID\":4,\"ProjectName\":\"Project & Engineering - LIVE - Sustain\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11919,\"CliamRequestItemID\":1417,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"asdf\",\"Amount\":1500.0,\"ProjectID\":4,\"ProjectName\":\"Project & Engineering - LIVE - Sustain\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":15.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',90,'2019-04-11 11:40:48');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,12009,1438,34,'{\"ClientID\":2,\"CliamRequestID\":12009,\"CliamRequestItemID\":1438,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":188,\"ClaimTypeName\":\"Claim Type 13\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-08T00:00:00\",\"Description\":\"resr\",\"Amount\":250.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"08 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":250.0,\"VehicleTypeID\":-1,\"VehicleTypeName\":\"\",\"MileageDistance\":0.0,\"CostPerMileage\":0.0,\"SubAmount\":250.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":12009,\"CliamRequestItemID\":1438,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":188,\"ClaimTypeName\":\"Claim Type 13\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-08T00:00:00\",\"Description\":\"resr\",\"Amount\":150.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"08 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":250.0,\"VehicleTypeID\":-1,\"VehicleTypeName\":\"\",\"MileageDistance\":0.0,\"CostPerMileage\":0.0,\"SubAmount\":250.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5128,'2019-04-17 12:41:25');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,12010,1439,35,'{\"ClientID\":0,\"CliamRequestID\":0,\"CliamRequestItemID\":1439,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-17T00:00:00\",\"Description\":\"\",\"Amount\":100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"17 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":100.0,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":0,\"CliamRequestID\":0,\"CliamRequestItemID\":1439,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-17T00:00:00\",\"Description\":\"\",\"Amount\":599.94,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"17 Apr 2019\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":100.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":2.7,\"CostPerMileage\":222.2,\"SubAmount\":100.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5128,'2019-04-17 15:01:11');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11972,1433,36,'{\"ClientID\":0,\"CliamRequestID\":0,\"CliamRequestItemID\":1433,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"sdfsd\",\"Amount\":1000.0,\"ProjectID\":2,\"ProjectName\":\"Project 2\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":10.0,\"CostPerMileage\":100.0,\"SubAmount\":1000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":0,\"CliamRequestID\":0,\"CliamRequestItemID\":1433,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"sdfsd\",\"Amount\":222.2,\"ProjectID\":2,\"ProjectName\":\"Project 2\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":222.2,\"SubAmount\":1000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-05-07 17:50:11');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11972,1433,37,'{\"ClientID\":0,\"CliamRequestID\":0,\"CliamRequestItemID\":1433,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"sdfsd\",\"Amount\":222.2,\"ProjectID\":2,\"ProjectName\":\"Project 2\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":222.2,\"SubAmount\":1000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":0,\"CliamRequestID\":0,\"CliamRequestItemID\":1433,\"ClaimGroupID\":34,\"GroupName\":\"Claim Group2\",\"ClaimTypeID\":176,\"ClaimTypeName\":\"Claim Type 1\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2019-04-01T00:00:00\",\"Description\":\"sdfsd\",\"Amount\":222.2,\"ProjectID\":2,\"ProjectName\":\"Project 2\",\"ClaimDateString\":\"01 Apr 2019\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":1000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":1.0,\"CostPerMileage\":222.2,\"SubAmount\":1000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',5127,'2019-05-07 17:53:35');
+COMMIT;
+/*!40000 ALTER TABLE `claim_requestitemsaudit` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_ta_accomodation
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_ta_accomodation` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `TravelAdvanceRequestID` int(10) unsigned NOT NULL,
+  `AccomodationID` int(10) unsigned NOT NULL,
+  `CheckIn` datetime DEFAULT NULL,
+  `CheckOut` datetime DEFAULT NULL,
+  `Preferences` text CHARACTER SET latin1,
+  PRIMARY KEY (`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_ta_accomodation
+-- 
+
+/*!40000 ALTER TABLE `claim_ta_accomodation` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6712,341,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6713,343,'2017-06-01 00:00:00','2017-06-01 00:00:00','dgfsdgdfgd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6714,345,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6715,347,'2017-06-01 00:00:00','2017-06-01 00:00:00','erterter');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6716,349,'2017-06-01 00:00:00','2017-06-01 00:00:00','dgfdgvfdg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6717,351,'2017-06-01 00:00:00','2017-06-01 00:00:00','dgfdsgdgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6718,353,'2017-06-09 00:00:00','2017-06-07 00:00:00','fdgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6719,355,'2017-06-01 00:00:00','2017-06-01 00:00:00','dsfsdfsdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6720,357,'2017-06-01 00:00:00','2017-06-02 00:00:00','dfgfdgfdgdfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6721,359,'2017-06-01 00:00:00','2017-06-01 00:00:00','rterter');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6722,361,'2017-06-01 00:00:00','2017-06-01 00:00:00','dvdfvd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6723,362,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6723,363,'2017-06-01 00:00:00','2017-06-01 00:00:00','fghfgh');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6723,364,'2017-06-08 00:00:00','2017-06-01 00:00:00','dfgdfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6724,365,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6725,367,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgbdfgbfd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6726,368,'2017-06-01 00:00:00','2017-06-01 00:00:00','dvdxfsvdfs');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6727,369,'2017-06-01 00:00:00','2017-06-01 00:00:00','cdvdfvdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6728,370,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6729,371,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6729,372,'2017-06-01 00:00:00','2017-06-01 00:00:00','vcbcb');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6730,373,'2017-06-01 00:00:00','2017-06-01 00:00:00','sdgfvdgfd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6731,374,'2017-06-01 00:00:00','2017-06-01 00:00:00','sdfsdfsd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6732,375,'2017-06-01 00:00:00','2017-06-01 00:00:00','gfhfgh');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6733,376,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgdg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6733,377,'2017-06-01 00:00:00','2017-06-01 00:00:00','hjng');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6733,378,'2017-06-01 00:00:00','2017-06-01 00:00:00','rthyrtyhtrh');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6734,379,'2017-06-01 00:00:00','2017-06-01 00:00:00','vbgbffg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6735,380,'2017-06-01 00:00:00','2017-06-01 00:00:00','rererfger');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6736,381,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgfdgfd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6737,382,'2017-06-01 00:00:00','2017-06-01 00:00:00','ghnhgnghn');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6738,383,'2017-06-01 00:00:00','2017-06-01 00:00:00','rterygrtgrt');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6739,384,'2017-06-01 00:00:00','2017-06-01 00:00:00','lkjmlcvkxjv');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6740,1,'2017-06-01 00:00:00','2017-06-01 00:00:00','dsfsdfsdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6740,2,'2017-06-01 00:00:00','2017-06-01 00:00:00','check');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6740,385,'2017-06-01 00:00:00','2017-06-01 00:00:00','fdgfdgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6741,3,'2017-06-01 00:00:00','2017-06-01 00:00:00','rfgrd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6741,4,'2017-06-01 00:00:00','2017-06-01 00:00:00','thgfhfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6743,6,'2017-06-01 00:00:00','2017-06-02 00:00:00','gfhfghfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,8,'2017-06-01 00:00:00','2017-06-01 00:00:00','fghfghngf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,9,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,10,'2017-06-01 00:00:00','2017-06-01 00:00:00','fdgbdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,11,'2017-06-01 00:00:00','2017-06-01 00:00:00','fdgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,12,'2017-06-01 00:00:00','2017-06-01 00:00:00','fdgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,13,'2017-06-01 00:00:00','2017-06-01 00:00:00','fdgfdgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,14,'2017-06-01 00:00:00','2017-06-01 00:00:00','fdgdfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,15,'2017-06-01 00:00:00','2017-06-01 00:00:00','xcvxcvbgdfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,16,'2017-06-01 00:00:00','2017-06-01 00:00:00','dvfdsfd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,17,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfg');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,18,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6747,19,'2017-06-01 00:00:00','2017-06-01 00:00:00','dfgdfgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6748,20,'2017-06-02 00:00:00','2017-06-02 00:00:00','');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6797,32,'2017-07-01 00:00:00','2017-07-05 00:00:00','fghgfgjngh');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6801,33,'2017-07-01 00:00:00','2017-07-05 00:00:00','dfhfgh');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6802,34,'2017-07-01 00:00:00','2017-07-05 00:00:00','FDHFGHGF');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6803,35,'2017-07-05 00:00:00','2017-07-17 00:00:00','FEDSGFDG43453545!@^#^&#$^#$^');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6806,36,'2017-07-01 00:00:00','2017-07-06 00:00:00','');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6851,37,'2017-07-19 00:00:00','2017-07-19 00:00:00','dfgdfgfdgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6852,38,'2017-07-19 00:00:00','2017-07-19 00:00:00','dfgdgdf');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,6853,39,'2017-07-20 00:00:00','2017-07-21 00:00:00','');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,8197,40,'2017-11-10 00:00:00','2017-11-10 00:00:00','rty');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,10720,41,'2018-11-02 00:00:00','2018-11-03 00:00:00','');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,10829,42,'2018-11-05 00:00:00','2018-11-06 00:00:00','jkjh');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,10918,43,'2018-11-05 00:00:00','2018-11-06 00:00:00','rty');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,11351,44,'2018-12-25 00:00:00','2018-12-27 00:00:00','dfgfd');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,11352,45,'2018-12-17 00:00:00','2018-12-19 00:00:00','tr');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,11352,46,'2018-12-20 00:00:00','2018-12-22 00:00:00','rt');
+INSERT INTO `claim_ta_accomodation`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`CheckIn`,`CheckOut`,`Preferences`) VALUES
+(2,11419,47,'2019-01-03 00:00:00','2019-01-18 00:00:00','sdfsdf');
+COMMIT;
+/*!40000 ALTER TABLE `claim_ta_accomodation` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_ta_accomodation_attachment
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_ta_accomodation_attachment` (
+  `ClientID` int(10) NOT NULL,
+  `TravelAdvanceRequestID` int(10) NOT NULL,
+  `AccomodationID` int(10) NOT NULL,
+  `AttachmentID` int(10) NOT NULL AUTO_INCREMENT,
+  `FileName` text CHARACTER SET latin1,
+  `EncodeFileName` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AttachmentID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_ta_accomodation_attachment
+-- 
+
+/*!40000 ALTER TABLE `claim_ta_accomodation_attachment` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6719,355,414,'Project Resource with Strength Report (3).xls','20175211498044376056.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6720,357,415,'Employee Goal (4).xls','20175211498044977722.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6723,362,416,'Project Resource with Strength Report (2).xls','20175211498049835654.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6723,363,417,'Project Resource with Expertise and Category Report.xls','20175211498049962086.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6723,364,418,'Position Vacancy Analysis Report (1).xls','20175211498050079992.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6738,383,419,'Project Resource with Strength Report (2).xls','20175221498102232032.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6740,385,420,'Employee Goal (5).xls','20175221498103562087.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6741,3,421,'Employee Goal (5).xls','20175221498105452774.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6741,3,422,'Position Vacancy Analysis Report (1).xls','20175221498105455266.xls',NULL);
+INSERT INTO `claim_ta_accomodation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AccomodationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6741,4,423,'Time Frame of Resource to be Released (2).xls','20175221498105462560.xls',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `claim_ta_accomodation_attachment` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_ta_anticipation
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_ta_anticipation` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `TravelAdvanceRequestID` int(10) unsigned NOT NULL,
+  `AnticipationID` int(10) unsigned NOT NULL,
+  `ClaimTypeID` int(10) DEFAULT NULL,
+  `Description` text CHARACTER SET latin1,
+  `Amount` decimal(12,2) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_ta_anticipation
+-- 
+
+/*!40000 ALTER TABLE `claim_ta_anticipation` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4544,277,140,'asdfasd',345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4549,280,140,'345',345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4550,281,140,'werwer',34.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4557,282,140,'fff',345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4564,283,140,'fff',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4566,284,140,'sdfadfadf',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4567,285,140,'asdfsd',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4587,286,147,'678',678678.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4588,287,140,'234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4589,288,140,'234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4590,289,147,'345',345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4590,290,143,'345',345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4597,291,140,'234',34.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4598,292,140,'345345',345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4600,293,140,'234',234234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4602,294,140,'234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4603,295,140,'234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4604,296,140,'2134234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4605,297,140,'3245',3245.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4650,304,140,'fff',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4651,305,140,'asf',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4652,306,140,'asdf',600.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4656,307,140,'asfd',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4658,308,140,'asdfsf',200.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4660,309,143,'123',100.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,4660,310,140,'345',200.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5185,311,140,'asdf',89.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5330,312,149,'asdf',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5649,313,152,'sdf',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5650,314,152,'asdf',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5651,315,152,'fd',800.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5652,316,152,'sdf',400.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5655,317,152,'asdf',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5734,318,147,'adf',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5735,319,147,'adf',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5795,320,152,'asdf',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5818,321,147,'124',2134.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5819,322,149,'1234234',234234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5820,323,140,'234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5821,324,150,'234',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,5822,325,151,'23424',23424.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6130,326,152,'dd',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6131,327,152,'ss',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6132,328,152,'aa',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6280,329,151,'658568',658.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6280,330,147,'5687',678.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6703,331,149,'',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6703,332,149,'',100000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6705,333,140,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6705,334,140,'',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6706,335,140,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6707,336,143,'',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6709,337,140,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6710,338,140,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6711,339,143,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6712,340,140,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6713,342,148,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6714,344,143,'',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6715,346,143,'',456456.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6716,348,143,'fdgdfg',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6717,350,143,'dfgdfgd',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6718,352,140,'cvdfxvc',345345.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6719,354,143,'',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6720,356,143,'',567575.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6721,358,149,'',45645.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6722,360,149,'',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6724,366,143,'',56756.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6800,386,140,'fghfghfghf@#%%%',100.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6801,387,140,'dfhgf@$%$%%',453.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6801,388,140,'sdfdgdr@$%%3',43534.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6802,389,147,'rtygtryhrt@#$$123',100.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6803,390,143,'FEWFEHRF23462356@#$%^&*&^%',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6832,391,140,'fghfg',54675.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6843,392,143,'fdgfgdf',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6843,393,143,'dfgdfgdf',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6843,394,147,'dfgdfgdfgdf',1000000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6852,395,147,'gfhfgh',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6852,396,148,'gfhf',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6852,397,143,'fghgf',10000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,6852,398,143,'fdgdfgdf',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8197,399,140,'fgh',567.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8207,400,149,'Trst',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8344,401,143,'hfgh',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8344,402,149,'',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8345,403,140,'dfds',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8345,404,143,'fdg',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8346,405,147,'gfh',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8346,406,140,'ghgh',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8347,407,140,'ghghjhj',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8347,408,143,'ghjhgjghjhgjtyu',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8348,409,140,'uio',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8348,410,143,'yuyu',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8350,411,143,'dfg',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8350,412,140,'dg',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8351,413,140,'fdg',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8351,414,143,'dfg',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8352,415,140,'sdsd',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,8352,416,143,'sdsdsdsd',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,9025,417,162,'test',4000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,9025,418,149,'test',7000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,9712,419,143,'test',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,9715,420,170,'test',200.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,10720,421,143,'12',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,10829,422,144,'dsf',1000.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,10918,423,177,'rty',4565.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11351,425,196,'dfsfdsf',234.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11352,426,196,'gfhgf',2500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11352,427,197,'fghgf',1500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11388,428,196,'sfdds sfs',2505.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11388,429,197,'s sdfsd fsdf sdfds',1324.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11419,430,196,'sd fsf',11.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11419,431,197,'sds fsf ds',12.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11419,432,176,'s fsd',12.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11419,433,188,'s fdsfsf',100.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11422,434,196,'234sdfsdf',344.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11422,435,176,'fsfssfsd',444.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,11914,436,197,'jhh',500.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,12068,437,196,'test',200.00);
+INSERT INTO `claim_ta_anticipation`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`ClaimTypeID`,`Description`,`Amount`) VALUES
+(2,12070,438,196,'fds',1500.00);
+COMMIT;
+/*!40000 ALTER TABLE `claim_ta_anticipation` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_ta_anticipation_attachment
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_ta_anticipation_attachment` (
+  `ClientID` int(10) NOT NULL,
+  `TravelAdvanceRequestID` int(10) NOT NULL,
+  `AnticipationID` int(10) NOT NULL,
+  `AttachmentID` int(10) NOT NULL AUTO_INCREMENT,
+  `FileName` text CHARACTER SET latin1,
+  `EncodeFileName` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AttachmentID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_ta_anticipation_attachment
+-- 
+
+/*!40000 ALTER TABLE `claim_ta_anticipation_attachment` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8197,399,481,'IVY_Clientname (1).xlsx','201710101510311428457.xlsx',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8207,400,483,'Employee Goal.xls','201710131510552737401.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8344,401,487,'File still not generated (3).xls','201710271511766514849.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8344,402,488,'Attendance Sheet (18).xls','201710271511766534249.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8345,403,490,'File still not generated (5).xls','201710271511767002848.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8345,404,491,'Attendance Sheet.xls','201710271511767020514.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8346,405,493,'File still not generated (6).xls','201710271511767499085.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8346,406,494,'File still not generated (7).xls','201710271511767504900.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8347,407,496,'File still not generated (3).xls','201710271511767778945.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8347,408,497,'File still not generated (6).xls','201710271511767793915.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8348,409,499,'File still not generated (5).xls','201710271511768429936.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8348,410,500,'Attendance Sheet.xls','201710271511768442398.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8350,411,502,'File still not generated (5).xls','201710271511770808847.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8351,413,504,'File still not generated (4).xls','201710271511774094006.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8352,415,506,'File still not generated (7).xls','201710271511774942399.xls',NULL);
+INSERT INTO `claim_ta_anticipation_attachment`(`ClientID`,`TravelAdvanceRequestID`,`AnticipationID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8352,416,507,'File still not generated (6).xls','201710271511774958167.xls',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `claim_ta_anticipation_attachment` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_ta_detail_attachment
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_ta_detail_attachment` (
+  `ClientID` int(11) NOT NULL,
+  `TravelAdvanceRequestID` int(11) NOT NULL,
+  `TravelDetailID` int(11) NOT NULL,
+  `AttachmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `FileName` text CHARACTER SET latin1,
+  `EncodeFileName` text CHARACTER SET latin1,
+  PRIMARY KEY (`AttachmentID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_ta_detail_attachment
+-- 
+
+/*!40000 ALTER TABLE `claim_ta_detail_attachment` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8197,394,480,'IVY_Clientname (1).xlsx','201710101510311422763.xlsx');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8207,396,482,'Employee Goal.xls','201710131510552718865.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8344,397,486,'File still not generated (4).xls','201710271511766451880.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8345,398,489,'File still not generated (5).xls','201710271511766984601.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8346,399,492,'File still not generated (3).xls','201710271511767466684.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8347,400,495,'File still not generated (7).xls','201710271511767761262.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8348,401,498,'File still not generated (6).xls','201710271511768414009.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8350,402,501,'File still not generated (1).xls','201710271511770751697.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8351,403,503,'File still not generated (5).xls','201710271511774081141.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,8352,404,505,'File still not generated (2).xls','201710271511774927602.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,9311,408,708,'SOCSO_2017.xls','20182231521803389612.xls');
+INSERT INTO `claim_ta_detail_attachment`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`AttachmentID`,`FileName`,`EncodeFileName`) VALUES
+(2,9313,409,710,'EPF_2017.xls','20182231521806509307.xls');
+COMMIT;
+/*!40000 ALTER TABLE `claim_ta_detail_attachment` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_ta_details
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_ta_details` (
+  `ClientID` int(11) NOT NULL,
+  `TravelAdvanceRequestID` int(11) NOT NULL,
+  `TravelDetailID` int(11) NOT NULL,
+  `DepartingFrom` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `Destination` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `FromDate` datetime DEFAULT NULL,
+  `ToDate` datetime DEFAULT NULL,
+  `ModeofTravel` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_ta_details
+-- 
+
+/*!40000 ALTER TABLE `claim_ta_details` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6131,326,'ss','ss','2017-03-09 00:00:00','2017-03-10 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6132,327,'aa','aa','2017-03-08 00:00:00','2017-03-09 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6280,328,'568','568','2017-03-11 00:00:00','2017-03-23 00:00:00',2);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6703,329,'dfgd','fdgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6703,330,'dfgdf','dfgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6705,331,'fdgdfg','dfgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6705,332,'dfgdf','fdgdfgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6706,333,'sdfsd','sdfsd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6707,334,'fghfg','fghfg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6709,335,'dsfs','dsfgsd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6710,336,'dfsgd','dfgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6711,337,'dsfsd','sdfsd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6712,338,'sdfds','dfgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6713,339,'dfgfd','fdhggfhf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6714,340,'fdgd','hgfghfg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6715,341,'fdgdfg','dfgdfgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6716,342,'dfgdfgd','dfgdfgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6716,343,'fdgdf','dfgdfgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6717,344,'fgdfg','dfgdgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6718,345,'fgnhfg','bc','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6719,346,'dfgdf','dsfgdgfd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6720,347,'dfgfd','dfgdgf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6721,348,'dfgdf','dfgdfg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6722,349,'dcvfx','xcvxc','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6723,350,'dsfsf','sdfsd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6724,351,'dsvfs','dfvdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6725,352,'xcvxcv','dfgdfg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6726,353,'xvxcv','xcvxv','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6727,354,'xfvdf','cvbcx','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6728,355,'dfgbfb','bfcggf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6729,356,'dfgdfg','dfgdfgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6730,357,'dfgvdgdf','dfgdfgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6731,358,'dsfsd','sdfsdfs','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6732,359,'fghfg','fghfgh','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6733,360,'dfgdfgd','dfgdfgdf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6734,361,'fdgf','fghfghf','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6735,362,'fgd','dfgdfg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6736,363,'dfgfdg','dfgfdgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6737,364,'Chennai','Malasiya','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6738,365,'gfhfgh','fghfghg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6739,366,'fdgdfg','dfgdfgd','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6741,368,'tghrth','gfhbgfh','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6743,369,'xcvxc','xcvxc','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6744,370,'fgnfgv','vbnvb','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6745,371,'fghbfg','fgbc','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6746,372,'VBCV','VCBCV','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6747,373,'gfhf','fghfg','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6748,374,'fjg','hgjghjgh','2017-06-01 00:00:00','2017-06-01 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6797,375,'GHJHG','GHJGHJ','2017-07-01 00:00:00','2017-07-05 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6800,376,'fghfg','fghfg','2017-07-01 00:00:00','2017-07-03 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6801,377,'gff','fgnhfg','2017-07-01 00:00:00','2017-07-05 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6802,378,'fghgfh','fghf','2017-07-01 00:00:00','2017-07-05 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6803,379,'silambu','silambu','2017-07-05 00:00:00','2017-07-18 00:00:00',2);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6804,380,'gfhfg','fghf','2017-07-01 00:00:00','2017-07-05 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6806,381,'fdhgf','gfhjgf','2017-07-06 00:00:00','2017-07-07 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6807,382,'hj','ghjghj','2017-07-06 00:00:00','2017-07-06 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6820,383,'gjhj','hgjhgj','2017-07-10 00:00:00','2017-07-10 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6832,384,'gfhfgh','fghfgh','2017-07-01 00:00:00','2017-07-18 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6843,385,'dfbg','hbgfhfg','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6845,386,'dfgdfg','dfgfdgdf','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6846,387,'fghf','fghf','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6849,388,'dfgd','fghfgh','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6850,389,'dfgdfg','dfgdfg','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6851,390,'dfgdfg','dfgdfgd','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6852,391,'fdhgf','fghfg','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,6853,392,'dfgdf','dfgdf','2017-07-19 00:00:00','2017-07-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,7100,393,'Chennai','Guindy','2017-08-18 00:00:00','2017-08-18 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8197,394,'tyutyu','tyutyu','2017-11-02 00:00:00','2017-11-10 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8202,395,'Chennai','Test','2017-11-13 00:00:00','2017-11-13 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8207,396,'Chennai','Chennai','2017-11-13 00:00:00','2017-11-13 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8344,397,'ret','rt','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8345,398,'as','ass','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8346,399,'gfh','gfh','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8347,400,'fghg','fghgh','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8348,401,'iuo','uio','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8350,402,'dfg','fdg','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8351,403,'dfg','dfgfdg','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8352,404,'dfdf','dfdfd','2017-11-27 00:00:00','2017-11-28 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8575,405,'Test','Test','2017-12-01 00:00:00','2017-12-31 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,8576,406,'Chennai','Trichy','2017-12-01 00:00:00','2017-12-31 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,9025,407,'Chennai','Bangalore','2018-02-01 00:00:00','2018-02-20 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,9311,408,'chennai','Dubai','2018-03-11 00:00:00','2018-03-12 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,9313,409,'chennia','goa','2018-03-18 00:00:00','2018-03-19 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,9712,410

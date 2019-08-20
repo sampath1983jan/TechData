@@ -1,0 +1,876 @@
+','');
+INSERT INTO `sys_entityviewfields2004`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1358','ShowLeave',0,'ShowLeave',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields2004`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1355','StartDate',0,'StartDate',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields2004`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1356','Status',0,'Status',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields2004`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1351','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityviewfields2004` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityviewfieldsev103
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityviewfieldsev103` (
+  `EVid` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `EFid` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `EVFid` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `EFInstanceID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `IsAliasField` tinyint(4) DEFAULT NULL,
+  `FieldName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Options` int(11) NOT NULL,
+  `Value` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `IsValueField` tinyint(4) DEFAULT NULL,
+  `IsDisplayField` bit(1) DEFAULT NULL,
+  `FieldOrder` int(11) DEFAULT NULL,
+  `GroupIndex` int(11) DEFAULT NULL,
+  `GroupType` int(11) DEFAULT NULL,
+  `ParentField` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ParentEntity` varchar(225) CHARACTER SET latin1 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_entityviewfieldsev103
+-- 
+
+/*!40000 ALTER TABLE `sys_entityviewfieldsev103` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1361','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1365','ClaimstatusID',0,'ClaimstatusID',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1366','ClaimtypeID',0,'ClaimtypeID',0,NULL,NULL,1,6,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1362','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1364','EmployeeType',0,'EmployeeType',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1367','Month',0,'Month',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1363','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF153','EVF1368','Year',0,'Year',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1361','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1365','ClaimStatusID',0,'ClaimstatusID',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1366','ClaimType',0,'ClaimType',0,NULL,NULL,1,6,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1362','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1364','EmployeeType',0,'EmployeeType',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1367','Month',0,'Month',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1363','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfieldsev103`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1368','Year',0,'Year',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityviewfieldsev103` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityviewfilter
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityviewfilter` (
+  `FilterID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `ViewID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `FilterName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`FilterID`,`ViewID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_entityviewfilter
+-- 
+
+/*!40000 ALTER TABLE `sys_entityviewfilter` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF001','EV001','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF002','EV001','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF004','EV001','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF005','EV001','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF006','EV001','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF007','EV078','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF008','EV080','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF009','EV082','AdvanceFilter');
+INSERT INTO `sys_entityviewfilter`(`FilterID`,`ViewID`,`FilterName`) VALUES
+('EVF010','EV085','AdvanceFilter');
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityviewfilter` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityviewfilterfields
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityviewfilterfields` (
+  `ViewID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `EFID` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `FilterFieldid` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `FilterOperator` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `LinkComponent` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `FieldOrder` int(11) DEFAULT NULL,
+  `IsMandatory` smallint(6) DEFAULT NULL,
+  `ParentField` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `LinkView` varchar(100) DEFAULT NULL COMMENT 'Overwirte link Component to Load Data',
+  PRIMARY KEY (`ViewID`,`FilterFieldid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_entityviewfilterfields
+-- 
+
+/*!40000 ALTER TABLE `sys_entityviewfilterfields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF082','F_200050',12,'2018-10-16 13:03:00','30000',23,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF082','F_200495',12,'2018-04-20 11:34:33','300000',19,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF082','F_200655',12,'2018-07-06 11:50:25','30000',20,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF082','F_200705',12,'2018-08-27 17:21:11','30000',21,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF082','F_200730',12,'2019-02-20 15:14:46','30000',22,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360025',12,'2018-02-28 12:36:13','300000',0,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360030',12,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360035',12,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360040',12,NULL,'350000',8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360050',12,NULL,'340000',9,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360090',12,NULL,'360000',10,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360105',12,NULL,'360000',12,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','F_360115',12,NULL,'360000',18,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF205','GradeID',12,'2019-02-13 19:00:35','30000',24,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF055','PositionID',12,NULL,'360000',11,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV005','ETF207','UserID',12,NULL,'30000',25,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV012','ETF055','F_360025',12,'2018-02-23 15:54:53','300000',0,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV012','ETF055','F_360030',12,'2016-09-19 13:15:27','360000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV012','ETF055','F_360035',12,'2016-09-19 13:15:28','360000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV012','ETF055','F_360040',12,'2016-09-19 13:15:30','360000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV012','ETF055','F_360090',12,NULL,'360000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV013','ETF003','F_10005',12,NULL,'10000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV013','ETF003','F_10010',12,NULL,'10000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV041','ETF011','F_320025',12,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV052','ETF020','RelationType',1,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV053','ETF079','WorkFlowID',1,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV054','ETF094','RequestID',1,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV055','ETF106','EndDate',3,NULL,'0',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV055','ETF106','StartDate',5,NULL,'0',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV055','ETF106','Type',0,NULL,'400000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV056','ETF109','UserID',1,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV057','ETF094','TotalAmount',1,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV060','ETF111','Duration',12,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV064','ETF120','OldInTime',3,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV065','ETF122','Name',1,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV066','ETF126','BusinessUnitID',0,NULL,'300000',1,1,NULL,'EV136');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV066','ETF126','DepartmentID',0,NULL,'320000',3,NULL,NULL,'EV137');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV066','ETF126','EmployeeType',0,'2016-02-26 14:25:22','',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV066','ETF124','ReportingDate',14,NULL,'0',4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV066','ETF126','WorkLocationID',0,NULL,'310000',2,NULL,NULL,'EV138');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV067','ETF143','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV067','ETF143','DepartmentID',0,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV067','ETF143','EmployeeType',0,'2016-02-26 14:25:24','',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV067','ETF118','ReportingDate',14,NULL,'0',4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV067','ETF143','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV068','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,'EV136');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV068','ETF126','DepartmentID',0,NULL,'320000',2,NULL,NULL,'EV137');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV068','ETF126','EmployeeType',0,'2016-02-26 14:25:23','',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV068','ETF126','jobid',0,'2016-03-22 12:24:04','350000',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV068','ETF127','ReportingDate',14,NULL,'0',4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV068','ETF126','WorkLocationID',0,NULL,'310000',3,NULL,NULL,'EV138');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,'EV136');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF126','DepartmentID',0,NULL,'320000',2,NULL,NULL,'EV137');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF126','EmployeeType',0,'2016-02-29 20:59:42','',6,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF126','GradeID',0,NULL,'340000',5,NULL,NULL,'EV139');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF128','LeaveDate',14,NULL,'0',6,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF126','PositionClassification',0,'2017-12-20 12:28:43',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV069','ETF126','WorkLocationID',0,NULL,'310000',3,NULL,NULL,'EV138');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','DepartmentID',0,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','EmployeeType',0,'2016-02-29 20:59:43','',5,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','LeaveType',12,'2018-12-24 19:13:58',NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','PositionClassification',0,'2019-06-12 13:18:39',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV070','ETF126','Year',0,NULL,'',7,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','DepartmentID',0,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','EmployeeType',0,'2016-02-29 20:59:43','',5,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','LeaveType',12,'2019-01-09 12:47:34',NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','PositionClassification',0,'2019-06-12 16:24:05',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV072','ETF126','Year',0,NULL,'',7,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV073','ETF126','BusinessUnitID',0,NULL,'300000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV073','ETF126','DepartmentID',0,NULL,'320000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV073','ETF132','EmployeeType',0,'2016-02-26 14:25:25','',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV073','ETF100','Year',0,NULL,'410000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV074','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV074','ETF126','DepartmentID',0,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV074','ETF126','EmployeeType',0,'0001-01-01 00:00:00','',4,1,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV074','ETF126','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV074','ETF100','Year',0,NULL,'410000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV075','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV075','ETF126','DepartmentID',0,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV075','ETF094','EndDate',0,NULL,'0',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV075','ETF094','StartDate',0,NULL,'0',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV075','ETF126','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV077','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV077','ETF126','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV077','ETF126','JobID',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV077','ETF126','PositionClassification',0,NULL,'360000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV077','ETF126','WorkLocationID',0,NULL,'310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV078','ETF126','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV078','ETF126','EmployeeNo',0,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV078','ETF044','Title',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV078','ETF126','WorkLocationName',0,NULL,'null',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV079','ETF131','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV079','ETF131','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV079','ETF131','StartDate',14,'0001-01-01 00:00:00','',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV079','ETF131','WorkLocationID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','EmployeeType',0,'2016-02-29 20:59:44','',5,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','jobid',0,'2016-03-22 12:31:19','350000',6,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','LeaveType',12,NULL,NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','PositionClassification',0,'2019-06-12 18:44:43',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','StartDate',14,NULL,NULL,9,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','UserID',12,NULL,'30000',8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV080','ETF132','WorkLocationID',0,'2016-03-22 12:31:50','310000',3,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV081','ETF133','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV081','ETF133','Category',0,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV081','ETF133','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV081','ETF133','StartDate',14,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV081','ETF133','WorkLocationID',0,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF132','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF132','DepartmentID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF132','EmployeeType',0,'2016-02-29 20:59:44','',5,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF132','LeaveType',12,'2019-01-03 11:54:46','',6,NULL,'','');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF132','PositionClassification',0,'2019-06-13 16:11:54',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF132','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV082','ETF126','Year',0,NULL,'',7,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV083','ETF134','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV083','ETF134','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV083','ETF134','WorkLocationID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV083','ETF134','Year',0,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV084','ETF135','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV084','ETF135','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV084','ETF135','Month',0,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV084','ETF135','WorkLocationID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV084','ETF135','Year',0,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV085','ETF132','BusinessUnitID',0,NULL,'300000',1,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV085','ETF132','UserID',0,NULL,'30000',4,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV085','ETF126','Year',0,NULL,'',5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV086','ETF136','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV086','ETF136','DepartmentID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV086','ETF136','WorkLocationID',0,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV086','ETF136','Year',0,NULL,NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV087','ETF137','Appointmentstatus',12,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV087','ETF137','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV087','ETF137','CompType',0,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV087','ETF137','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV087','ETF137','jobid',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV087','ETF137','positionclassification',12,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV088','ETF138','Appointmentstatus',12,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV088','ETF138','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV088','ETF138','CompetencyTypeID',0,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV088','ETF138','DepartmentID',0,NULL,'',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV088','ETF138','jobid',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV088','ETF138','positionclassification',12,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV089','ETF139','Appointmentstatus',12,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV089','ETF139','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV089','ETF139','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV089','ETF139','jobid',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV089','ETF139','positionclassification',12,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','Appointmentstatus',12,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','jobid',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','positionclassification',12,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','programcategory',0,NULL,NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV090','ETF140','programtype',0,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV091','ETF141','PerformanceAppraisalID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV092','ETF143','Appointmentstatus',12,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV092','ETF143','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV092','ETF143','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV092','ETF143','Employmentstatus',12,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV092','ETF143','jobid',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV092','ETF143','positionclassification',12,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV093','ETF144','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV093','ETF144','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV093','ETF144','UserID',0,NULL,'30000',3,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','DurationTypeID',0,'2016-02-23 14:44:21',NULL,7,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','IsBillable',0,'2017-07-19 17:44:16',NULL,8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','jobid',0,'2016-02-29 20:59:43','350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','Startdate',14,'2016-02-29 20:59:43','0',5,1,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','Status',0,NULL,NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','UserID',12,NULL,'30000',6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV094','ETF145','WorkLocationID',0,'2016-02-29 20:59:43','310000',3,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF082','F_200040',12,'2016-02-23 14:44:13','30000',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF082','F_200045',12,'2016-02-23 14:44:14','30000',5,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF082','F_200140',14,'2016-02-23 14:44:14','30000',6,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF082','F_200165',12,'2016-02-23 14:44:15','30000',7,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360025',12,'2016-02-23 14:44:16','300000',1,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360030',12,'2016-02-23 14:44:17','310000',2,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360035',12,'2016-02-23 14:44:17','320000',3,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360040',12,'2016-02-23 14:44:18','350000',8,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360050',12,'2016-02-23 14:44:19','340000',9,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360090',12,'2016-02-23 14:44:20','360000',10,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360105',12,'2017-06-05 17:49:09','360000',12,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','F_360115',12,'2017-12-01 18:51:02','360000',13,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV095','ETF055','PositionID',12,'2016-02-23 14:44:21','360000',11,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV096','ETF147','BusinessUnitID',0,'2016-04-08 12:30:28','300000',1,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV096','ETF147','DepartmentID',0,'2016-04-08 12:30:29','0',2,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV096','ETF147','EmployeeType',0,'2016-04-08 12:30:32','0',4,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV096','ETF147','Status',0,'2016-04-08 12:30:30','12',3,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV097','ETF148','BusinessUnitID',0,'2016-04-08 12:31:58','300000',1,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV097','ETF148','DepartmentID',0,'2016-04-08 12:31:58','0',2,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV097','ETF148','jobid',0,'2016-04-08 12:31:57','350000',4,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV097','ETF148','positionclassification',12,'2016-04-08 12:31:56','0',3,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200040',12,'2016-02-23 14:44:13','30000',4,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200045',12,'2016-02-23 14:44:14','30000',5,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200140',14,'2016-02-23 14:44:14','30000',6,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200165',12,'2016-02-23 14:44:15','30000',7,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200655',12,'2018-07-06 11:50:25','30000',14,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200705',12,'2018-08-27 17:21:11','30000',15,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF082','F_200730',12,'2019-02-20 15:40:03','30000',16,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360025',12,'2018-02-28 12:04:40','300000',1,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360030',12,'2016-02-23 14:44:17','310000',2,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360035',12,'2016-02-23 14:44:17','320000',3,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360040',12,'2016-02-23 14:44:18','350000',8,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360050',12,'2016-02-23 14:44:19','340000',9,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360090',12,'2016-02-23 14:44:20','360000',10,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360105',12,'2017-06-15 18:50:01','360000',12,0,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','F_360115',12,'2018-07-19 12:18:34','360000',13,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF205','GradeID',12,'2019-02-20 10:58:32','30000',18,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF055','PositionID',12,'2016-02-23 14:44:21','360000',11,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV098','ETF207','UserID',12,'2019-05-24 12:17:55','30000',19,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','DiffrenceDate',0,NULL,NULL,10,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','EmployeeType',0,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','jobid',0,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','LeaveType',0,NULL,'',6,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','ShowLeave',0,NULL,NULL,9,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','StartDate',14,NULL,NULL,7,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','Status',0,NULL,NULL,8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV102','ETF153','WorkLocationID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','BusinessUnitID',0,'2016-02-23 14:44:21',NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','ClaimCycle',0,'2016-02-23 14:44:21','',9,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','ClaimstatusID',0,'2016-02-23 14:44:21',NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','ClaimType',12,'2016-02-23 14:44:21',NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','DepartmentID',0,'2016-02-23 14:44:21',NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','EmployeeType',0,'2016-02-23 14:44:21',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV103','ETF154','WorkLocationID',0,'2016-02-23 14:44:21',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV105','ETF156','BusinessUnitID',0,'2016-02-23 14:44:21',NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV105','ETF156','DepartmentID',0,'2016-02-23 14:44:21',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV105','ETF156','SeparationDate',14,'2016-04-08 12:31:56',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV105','ETF156','SeparationType',0,'2016-02-23 14:44:21',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV105','ETF156','WorkLocationID',0,'2016-02-23 14:44:21',NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV106','ETF126','BusinessUnitID',0,NULL,'0',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV106','ETF126','DepartmentID',0,NULL,'0',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV106','ETF157','ProjectID',0,NULL,'0',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV106','ETF157','ReturnDate',14,NULL,'0',3,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV106','ETF126','WorkLocationID',0,NULL,'0',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV107','ETF160','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV107','ETF160','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV107','ETF160','Duration',14,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV107','ETF160','PositionClassification',0,'2019-06-14 10:34:56',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV107','ETF160','WorkLocationID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF161','F_2000005',12,NULL,'0',12,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200006',12,NULL,'30000',13,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200007',12,NULL,'30000',14,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200008',12,NULL,'30000',15,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200009',12,NULL,'30000',16,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200011',12,NULL,'30000',17,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200040',12,NULL,'30000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200045',12,NULL,'30000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200050',12,'2018-10-16 13:03:04','30000',23,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200140',14,NULL,'30000',6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200165',12,NULL,'30000',7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200495',12,'2018-04-20 12:27:35','300000',19,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200655',12,'2018-07-06 11:50:25','30000',20,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200705',12,'2018-08-27 17:21:11','30000',21,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF082','F_200730',12,'2019-02-20 15:14:46','30000',22,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('ev108','ETF055','F_360025',12,'2018-02-28 17:28:14','300000',1,0,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360030',12,NULL,'310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360035',12,NULL,'320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360040',12,NULL,'350000',8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360050',12,NULL,'340000',9,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360090',12,NULL,'360000',10,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360105',12,NULL,'360000',12,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','F_360115',12,NULL,'360000',18,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF205','GradeID',12,'2019-02-13 19:00:37','30000',24,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF055','PositionID',12,NULL,'360000',11,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV108','ETF207','UserID',12,NULL,'30000',25,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','ProjectID',0,NULL,NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','Startdate',14,NULL,NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','Status',0,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','UserID',12,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV110','ETF163','WorkLocationID',0,NULL,'310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','BusinessUnitID',0,'2016-02-23 14:44:21',NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','ClaimstatusID',0,'2016-02-23 14:44:21',NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','ClaimType',12,'2016-02-23 14:44:21','null',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','DepartmentID',0,'2016-02-23 14:44:21',NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','EmployeeType',0,'2016-02-23 14:44:21',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','Month',0,'2016-02-23 14:44:21',NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','WorkLocationID',0,'2016-02-23 14:44:21',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV111','ETF154','Year',0,'2016-02-23 14:44:21',NULL,8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV112','ETF164','BusinessunitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV112','ETF164','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV112','ETF164','HRServiceName',3,NULL,NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV112','ETF164','ServiceDate',14,NULL,NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV112','ETF164','Status',0,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV112','ETF164','WorkLocationID',0,NULL,'310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','BusinessunitID',0,'2017-02-20 12:52:43','300000',1,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','ClaimStatus',0,'2019-01-10 18:45:30','',7,1,'','');
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','DepartmentID',0,'2017-02-20 12:52:43','320000',2,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','Startdate',14,'2017-02-20 12:52:43','',5,1,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','Status',0,'2017-02-20 12:52:43','',6,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','UserID',12,'2017-02-20 12:52:43','',4,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV114','ETF166','WorkLocationID',0,'2017-02-20 12:52:43','310000',3,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF126','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF126','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF055','F_360045',0,NULL,NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF055','F_360115',0,NULL,NULL,8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF126','GradeID',0,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF126','JobID',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF126','PositionClassification',0,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV115','ETF126','WorkLocationID',0,NULL,'310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV116','ETF167','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV116','ETF167','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV116','ETF167','WorkLocationID',0,NULL,'310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV117','ETF168','BusinessUnitID',0,NULL,'300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV117','ETF168','DepartmentID',0,NULL,'320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV117','ETF168','GradeID',0,NULL,'340000',6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV117','ETF168','JobID',0,NULL,'350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV117','ETF168','PositionClassification',0,NULL,'360000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV117','ETF168','WorkLocationID',0,NULL,'310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','BusinessunitID',0,'2017-02-20 17:43:00','300000',1,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','ClaimStatus',0,'2017-02-20 17:43:00','',7,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','ClaimSubmittedStatus',0,'2017-02-20 17:43:00','',4,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','DepartmentID',0,'2017-02-20 17:43:00','320000',2,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','DepartureDate',14,'2017-02-20 17:43:00','',5,1,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','TravelAdvanceStatus',0,'2017-02-20 17:43:00','',6,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV118','ETF169','WorkLocationID',0,'2017-02-20 17:43:00','310000',3,NULL,'',NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV119','ETF170','BusinessUnitID',0,'2017-06-14 11:48:34','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV119','ETF170','Category',0,'2017-06-14 11:48:34',NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV119','ETF170','DepartmentID',0,'2017-06-14 11:48:34','320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV119','ETF170','Duration',14,'2017-06-14 11:48:34',NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV119','ETF170','Status',0,'2017-06-14 11:48:34',NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV119','ETF170','WorkLocationID',0,'2017-06-14 11:48:34','310000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV121','ETF172','BusinessUnitID',0,NULL,NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV121','ETF172','DepartmentID',0,NULL,NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV121','ETF172','Duration',14,NULL,NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV121','ETF172','EmployeeType',0,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV121','ETF172','JobID',0,NULL,NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV121','ETF172','WorkLocationID',0,NULL,NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','BusinessUnitID',0,'2017-08-04 14:31:44','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','DepartmentID',0,'2017-08-04 14:31:44','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','EmployeeType',0,'2017-08-04 14:31:44',NULL,6,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','jobid',0,'2017-08-04 14:31:44','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','LeaveType',12,'2017-08-04 14:31:44',NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','PositionClassification',0,'2019-06-14 11:21:55',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','StartDate',14,'2017-08-04 14:31:44',NULL,9,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','Status',0,'2017-08-04 14:31:44',NULL,8,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV122','ETF173','WorkLocationID',0,'2017-08-04 14:31:44','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','Appointmentstatus',0,'2017-09-13 18:15:03',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','BusinessUnitID',0,'2017-09-13 18:15:03','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','DepartmentID',0,'2017-09-13 18:15:03','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','IncludeClosedLeave',0,'2018-04-25 12:29:55',NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','jobid',0,'2017-09-13 18:15:03','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','StartDate',0,'2017-09-13 18:15:03',NULL,6,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV123','ETF174','WorkLocationID',0,'2017-09-13 18:15:03','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','BusinessUnitID',0,'2017-07-31 19:11:06','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','F_200040',0,'2017-07-31 19:11:06',NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','IncludeClosedLeave',0,'2018-04-26 10:31:03',NULL,7,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','jobid',0,'2017-07-31 19:11:06','350000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','PositionClassification',0,'2019-06-14 12:31:02',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','StartDate',0,'2017-07-31 19:11:06','320000',6,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV124','ETF175','WorkLocationID',0,'2017-07-31 19:11:06','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV125','ETF176','BusinessUnitID',0,'2017-08-21 15:22:49','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV125','ETF176','DepartmentID',0,'2017-08-21 15:22:49','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV125','ETF176','EmployeeType',0,'2017-08-21 15:22:49',NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV125','ETF176','StartDate',14,'2017-08-21 15:22:49',NULL,8,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV125','ETF176','WorkLocationID',0,'2017-08-21 15:22:49','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV126','ETF177','BusinessUnitID',12,'2018-04-02 19:07:08','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,

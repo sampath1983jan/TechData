@@ -1,0 +1,672 @@
+
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_jv_template` (
+  `ClientID` int(11) NOT NULL DEFAULT '0',
+  `JVTemplateCategory` int(11) NOT NULL DEFAULT '1' COMMENT '1- Payroll , 2-Claim, 3-OT',
+  `JVTemplateID` int(11) NOT NULL DEFAULT '0',
+  `JVTemplateName` varchar(45) DEFAULT NULL,
+  `JVTemplateDesc` varchar(45) DEFAULT NULL,
+  `JVGroup` int(11) NOT NULL DEFAULT '0' COMMENT '0- NoGroup',
+  `EmployeeGroupID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`JVTemplateCategory`,`JVTemplateID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_jv_template
+-- 
+
+/*!40000 ALTER TABLE `pr_jv_template` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,1,9,'Template','Sample template',0,1105,'2018-09-21 16:38:49');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,1,30,'sampleTem','sampleTem',0,1107,'2018-01-10 18:02:01');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,1,31,'Temp2','Temp2',0,1105,'2018-01-11 10:35:15');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,1,32,'aa','a',0,1105,'2018-01-11 11:03:08');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,1,33,'Test Template','Template 1',0,1105,'2018-01-24 16:10:07');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,2,34,'Claim Sample','Claim Sample',2,1123,'2018-10-05 09:59:17');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,2,39,'Claim JV Template','Claim JV Template',2,1125,'2018-10-05 16:06:40');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,2,40,'Claim Test','Claim Test',2,1125,'2018-10-08 10:33:44');
+INSERT INTO `pr_jv_template`(`ClientID`,`JVTemplateCategory`,`JVTemplateID`,`JVTemplateName`,`JVTemplateDesc`,`JVGroup`,`EmployeeGroupID`,`LastUPD`) VALUES
+(2,2,44,'Test','',1,1106,'2019-07-09 19:08:55');
+COMMIT;
+/*!40000 ALTER TABLE `pr_jv_template` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_jv_template_group_map
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_jv_template_group_map` (
+  `ClientID` int(11) NOT NULL,
+  `JVTemplateID` int(11) DEFAULT NULL,
+  `JVItemID` int(11) DEFAULT NULL,
+  `JVItemName` varchar(100) DEFAULT NULL,
+  `GroupLevelID` varchar(100) DEFAULT NULL,
+  `GroupLevelValue1` varchar(100) DEFAULT NULL,
+  `GroupLevelValue2` varchar(100) DEFAULT NULL,
+  `GroupLevelValue3` varchar(100) DEFAULT NULL,
+  `GroupLevelValue4` varchar(100) DEFAULT NULL,
+  `GroupLevelValue5` varchar(100) DEFAULT NULL,
+  `AccountCode` varchar(100) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `TableKey` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`TableKey`,`ClientID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_jv_template_group_map
+-- 
+
+/*!40000 ALTER TABLE `pr_jv_template_group_map` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451','1','-1','-1','-1','-1','','0001-01-01 00:00:00',12557);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441','1','-1','-1','-1','-1','','0001-01-01 00:00:00',12558);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236442','2','-1','-1','-1','-1','','0001-01-01 00:00:00',12559);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236452','2','-1','-1','-1','-1','','0001-01-01 00:00:00',12560);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236453','3','-1','-1','-1','-1','','0001-01-01 00:00:00',12561);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236443','3','-1','-1','-1','-1','','0001-01-01 00:00:00',12562);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236446','6','-1','-1','-1','-1','','0001-01-01 00:00:00',12563);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236456','6','-1','-1','-1','-1','','0001-01-01 00:00:00',12564);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364512','12','-1','-1','-1','-1','','0001-01-01 00:00:00',12565);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364412','12','-1','-1','-1','-1','','0001-01-01 00:00:00',12566);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364414','14','-1','-1','-1','-1','','0001-01-01 00:00:00',12567);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364514','14','-1','-1','-1','-1','','0001-01-01 00:00:00',12568);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364519','19','-1','-1','-1','-1','','0001-01-01 00:00:00',12569);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364419','19','-1','-1','-1','-1','','0001-01-01 00:00:00',12570);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364420','20','-1','-1','-1','-1','','0001-01-01 00:00:00',12571);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364520','20','-1','-1','-1','-1','','0001-01-01 00:00:00',12572);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364421','21','-1','-1','-1','-1','','0001-01-01 00:00:00',12573);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364521','21','-1','-1','-1','-1','','0001-01-01 00:00:00',12574);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364522','22','-1','-1','-1','-1','','0001-01-01 00:00:00',12575);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364422','22','-1','-1','-1','-1','','0001-01-01 00:00:00',12576);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364423','23','-1','-1','-1','-1','','0001-01-01 00:00:00',12577);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364523','23','-1','-1','-1','-1','','0001-01-01 00:00:00',12578);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364424','24','-1','-1','-1','-1','','0001-01-01 00:00:00',12579);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364524','24','-1','-1','-1','-1','','0001-01-01 00:00:00',12580);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364528','28','-1','-1','-1','-1','','0001-01-01 00:00:00',12581);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364428','28','-1','-1','-1','-1','','0001-01-01 00:00:00',12582);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364529','29','-1','-1','-1','-1','','0001-01-01 00:00:00',12583);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364429','29','-1','-1','-1','-1','','0001-01-01 00:00:00',12584);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364430','30','-1','-1','-1','-1','','0001-01-01 00:00:00',12585);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364530','30','-1','-1','-1','-1','','0001-01-01 00:00:00',12586);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364431','31','-1','-1','-1','-1','','0001-01-01 00:00:00',12587);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364531','31','-1','-1','-1','-1','','0001-01-01 00:00:00',12588);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364532','32','-1','-1','-1','-1','','0001-01-01 00:00:00',12589);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364432','32','-1','-1','-1','-1','','0001-01-01 00:00:00',12590);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364433','33','-1','-1','-1','-1','','0001-01-01 00:00:00',12591);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364533','33','-1','-1','-1','-1','','0001-01-01 00:00:00',12592);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364534','34','-1','-1','-1','-1','','0001-01-01 00:00:00',12593);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364434','34','-1','-1','-1','-1','','0001-01-01 00:00:00',12594);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364435','35','-1','-1','-1','-1','','0001-01-01 00:00:00',12595);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364535','35','-1','-1','-1','-1','','0001-01-01 00:00:00',12596);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364536','36','-1','-1','-1','-1','','0001-01-01 00:00:00',12597);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364436','36','-1','-1','-1','-1','','0001-01-01 00:00:00',12598);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364440','40','-1','-1','-1','-1','','0001-01-01 00:00:00',12599);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364540','40','-1','-1','-1','-1','','0001-01-01 00:00:00',12600);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364441','41','-1','-1','-1','-1','','0001-01-01 00:00:00',12601);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364541','41','-1','-1','-1','-1','','0001-01-01 00:00:00',12602);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364442','42','-1','-1','-1','-1','','0001-01-01 00:00:00',12603);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364542','42','-1','-1','-1','-1','','0001-01-01 00:00:00',12604);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364543','43','-1','-1','-1','-1','','0001-01-01 00:00:00',12605);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364443','43','-1','-1','-1','-1','','0001-01-01 00:00:00',12606);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364444','44','-1','-1','-1','-1','','0001-01-01 00:00:00',12607);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364544','44','-1','-1','-1','-1','','0001-01-01 00:00:00',12608);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364445','45','-1','-1','-1','-1','','0001-01-01 00:00:00',12609);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364545','45','-1','-1','-1','-1','','0001-01-01 00:00:00',12610);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364546','46','-1','-1','-1','-1','','0001-01-01 00:00:00',12611);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364446','46','-1','-1','-1','-1','','0001-01-01 00:00:00',12612);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364547','47','-1','-1','-1','-1','','0001-01-01 00:00:00',12613);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364447','47','-1','-1','-1','-1','','0001-01-01 00:00:00',12614);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364448','48','-1','-1','-1','-1','','0001-01-01 00:00:00',12615);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364548','48','-1','-1','-1','-1','','0001-01-01 00:00:00',12616);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364449','49','-1','-1','-1','-1','','0001-01-01 00:00:00',12617);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364549','49','-1','-1','-1','-1','','0001-01-01 00:00:00',12618);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364550','50','-1','-1','-1','-1','','0001-01-01 00:00:00',12619);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364450','50','-1','-1','-1','-1','','0001-01-01 00:00:00',12620);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364451','51','-1','-1','-1','-1','','0001-01-01 00:00:00',12621);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364551','51','-1','-1','-1','-1','','0001-01-01 00:00:00',12622);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364552','52','-1','-1','-1','-1','','0001-01-01 00:00:00',12623);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364452','52','-1','-1','-1','-1','','0001-01-01 00:00:00',12624);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364453','53','-1','-1','-1','-1','','0001-01-01 00:00:00',12625);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364553','53','-1','-1','-1','-1','','0001-01-01 00:00:00',12626);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364554','54','-1','-1','-1','-1','','0001-01-01 00:00:00',12627);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364454','54','-1','-1','-1','-1','','0001-01-01 00:00:00',12628);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364455','55','-1','-1','-1','-1','','0001-01-01 00:00:00',12629);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364555','55','-1','-1','-1','-1','','0001-01-01 00:00:00',12630);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364556','56','-1','-1','-1','-1','','0001-01-01 00:00:00',12631);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364456','56','-1','-1','-1','-1','','0001-01-01 00:00:00',12632);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364457','57','-1','-1','-1','-1','','0001-01-01 00:00:00',12633);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364557','57','-1','-1','-1','-1','','0001-01-01 00:00:00',12634);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364558','58','-1','-1','-1','-1','','0001-01-01 00:00:00',12635);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364458','58','-1','-1','-1','-1','','0001-01-01 00:00:00',12636);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364559','59','-1','-1','-1','-1','','0001-01-01 00:00:00',12637);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364459','59','-1','-1','-1','-1','','0001-01-01 00:00:00',12638);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364460','60','-1','-1','-1','-1','','0001-01-01 00:00:00',12639);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364560','60','-1','-1','-1','-1','','0001-01-01 00:00:00',12640);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364561','61','-1','-1','-1','-1','','0001-01-01 00:00:00',12641);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364461','61','-1','-1','-1','-1','','0001-01-01 00:00:00',12642);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364563','63','-1','-1','-1','-1','','0001-01-01 00:00:00',12643);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364463','63','-1','-1','-1','-1','','0001-01-01 00:00:00',12644);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364470','70','-1','-1','-1','-1','','0001-01-01 00:00:00',12645);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364570','70','-1','-1','-1','-1','','0001-01-01 00:00:00',12646);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364471','71','-1','-1','-1','-1','','0001-01-01 00:00:00',12647);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364571','71','-1','-1','-1','-1','','0001-01-01 00:00:00',12648);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364572','72','-1','-1','-1','-1','','0001-01-01 00:00:00',12649);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364472','72','-1','-1','-1','-1','','0001-01-01 00:00:00',12650);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364573','73','-1','-1','-1','-1','','0001-01-01 00:00:00',12651);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364473','73','-1','-1','-1','-1','','0001-01-01 00:00:00',12652);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364475','75','-1','-1','-1','-1','','0001-01-01 00:00:00',12653);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364575','75','-1','-1','-1','-1','','0001-01-01 00:00:00',12654);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364576','76','-1','-1','-1','-1','','0001-01-01 00:00:00',12655);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364476','76','-1','-1','-1','-1','','0001-01-01 00:00:00',12656);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364483','83','-1','-1','-1','-1','','0001-01-01 00:00:00',12657);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364583','83','-1','-1','-1','-1','','0001-01-01 00:00:00',12658);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364584','84','-1','-1','-1','-1','','0001-01-01 00:00:00',12659);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364484','84','-1','-1','-1','-1','','0001-01-01 00:00:00',12660);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364485','85','-1','-1','-1','-1','','0001-01-01 00:00:00',12661);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364585','85','-1','-1','-1','-1','','0001-01-01 00:00:00',12662);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364587','87','-1','-1','-1','-1','','0001-01-01 00:00:00',12663);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364487','87','-1','-1','-1','-1','','0001-01-01 00:00:00',12664);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364588','88','-1','-1','-1','-1','','0001-01-01 00:00:00',12665);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364488','88','-1','-1','-1','-1','','0001-01-01 00:00:00',12666);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364597','97','-1','-1','-1','-1','','0001-01-01 00:00:00',12667);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364497','97','-1','-1','-1','-1','','0001-01-01 00:00:00',12668);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364498','98','-1','-1','-1','-1','','0001-01-01 00:00:00',12669);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364598','98','-1','-1','-1','-1','','0001-01-01 00:00:00',12670);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364599','99','-1','-1','-1','-1','','0001-01-01 00:00:00',12671);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364499','99','-1','-1','-1','-1','','0001-01-01 00:00:00',12672);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645100','100','-1','-1','-1','-1','','0001-01-01 00:00:00',12673);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644100','100','-1','-1','-1','-1','','0001-01-01 00:00:00',12674);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644101','101','-1','-1','-1','-1','','0001-01-01 00:00:00',12675);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645101','101','-1','-1','-1','-1','','0001-01-01 00:00:00',12676);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644102','102','-1','-1','-1','-1','','0001-01-01 00:00:00',12677);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645102','102','-1','-1','-1','-1','','0001-01-01 00:00:00',12678);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645103','103','-1','-1','-1','-1','','0001-01-01 00:00:00',12679);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644103','103','-1','-1','-1','-1','','0001-01-01 00:00:00',12680);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645104','104','-1','-1','-1','-1','','0001-01-01 00:00:00',12681);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644104','104','-1','-1','-1','-1','','0001-01-01 00:00:00',12682);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644105','105','-1','-1','-1','-1','','0001-01-01 00:00:00',12683);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645105','105','-1','-1','-1','-1','','0001-01-01 00:00:00',12684);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645106','106','-1','-1','-1','-1','','0001-01-01 00:00:00',12685);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644106','106','-1','-1','-1','-1','','0001-01-01 00:00:00',12686);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644107','107','-1','-1','-1','-1','','0001-01-01 00:00:00',12687);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645107','107','-1','-1','-1','-1','','0001-01-01 00:00:00',12688);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645108','108','-1','-1','-1','-1','','0001-01-01 00:00:00',12689);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644108','108','-1','-1','-1','-1','','0001-01-01 00:00:00',12690);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644109','109','-1','-1','-1','-1','','0001-01-01 00:00:00',12691);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645109','109','-1','-1','-1','-1','','0001-01-01 00:00:00',12692);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645110','110','-1','-1','-1','-1','','0001-01-01 00:00:00',12693);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644110','110','-1','-1','-1','-1','','0001-01-01 00:00:00',12694);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644111','111','-1','-1','-1','-1','','0001-01-01 00:00:00',12695);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645111','111','-1','-1','-1','-1','','0001-01-01 00:00:00',12696);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645112','112','-1','-1','-1','-1','','0001-01-01 00:00:00',12697);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644112','112','-1','-1','-1','-1','','0001-01-01 00:00:00',12698);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644113','113','-1','-1','-1','-1','','0001-01-01 00:00:00',12699);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645113','113','-1','-1','-1','-1','','0001-01-01 00:00:00',12700);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644114','114','-1','-1','-1','-1','','0001-01-01 00:00:00',12701);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645114','114','-1','-1','-1','-1','','0001-01-01 00:00:00',12702);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645115','115','-1','-1','-1','-1','','0001-01-01 00:00:00',12703);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644115','115','-1','-1','-1','-1','','0001-01-01 00:00:00',12704);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645116','116','-1','-1','-1','-1','','0001-01-01 00:00:00',12705);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644116','116','-1','-1','-1','-1','','0001-01-01 00:00:00',12706);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644117','117','-1','-1','-1','-1','','0001-01-01 00:00:00',12707);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645117','117','-1','-1','-1','-1','','0001-01-01 00:00:00',12708);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644118','118','-1','-1','-1','-1','','0001-01-01 00:00:00',12709);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645118','118','-1','-1','-1','-1','','0001-01-01 00:00:00',12710);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645119','119','-1','-1','-1','-1','','0001-01-01 00:00:00',12711);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644119','119','-1','-1','-1','-1','','0001-01-01 00:00:00',12712);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645120','120','-1','-1','-1','-1','','0001-01-01 00:00:00',12713);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644120','120','-1','-1','-1','-1','','0001-01-01 00:00:00',12714);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644121','121','-1','-1','-1','-1','','0001-01-01 00:00:00',12715);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645121','121','-1','-1','-1','-1','','0001-01-01 00:00:00',12716);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644122','122','-1','-1','-1','-1','','0001-01-01 00:00:00',12717);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645122','122','-1','-1','-1','-1','','0001-01-01 00:00:00',12718);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645123','123','-1','-1','-1','-1','','0001-01-01 00:00:00',12719);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644123','123','-1','-1','-1','-1','','0001-01-01 00:00:00',12720);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644124','124','-1','-1','-1','-1','','0001-01-01 00:00:00',12721);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645124','124','-1','-1','-1','-1','','0001-01-01 00:00:00',12722);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645125','125','-1','-1','-1','-1','','0001-01-01 00:00:00',12723);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644125','125','-1','-1','-1','-1','','0001-01-01 00:00:00',12724);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644126','126','-1','-1','-1','-1','','0001-01-01 00:00:00',12725);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645126','126','-1','-1','-1','-1','','0001-01-01 00:00:00',12726);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645128','128','-1','-1','-1','-1','','0001-01-01 00:00:00',12727);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644128','128','-1','-1','-1','-1','','0001-01-01 00:00:00',12728);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364512','1','2','-1','-1','-1','','0001-01-01 00:00:00',12812);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364412','1','2','-1','-1','-1','','0001-01-01 00:00:00',12813);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364413','1','3','-1','-1','-1','','0001-01-01 00:00:00',12814);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364513','1','3','-1','-1','-1','','0001-01-01 00:00:00',12815);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364514','1','4','-1','-1','-1','','0001-01-01 00:00:00',12816);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364414','1','4','-1','-1','-1','','0001-01-01 00:00:00',12817);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364415','1','5','-1','-1','-1','','0001-01-01 00:00:00',12818);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364515','1','5','-1','-1','-1','','0001-01-01 00:00:00',12819);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364416','1','6','-1','-1','-1','','0001-01-01 00:00:00',12820);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364516','1','6','-1','-1','-1','','0001-01-01 00:00:00',12821);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364517','1','7','-1','-1','-1','','0001-01-01 00:00:00',12822);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364417','1','7','-1','-1','-1','','0001-01-01 00:00:00',12823);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364518','1','8','-1','-1','-1','','0001-01-01 00:00:00',12824);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364418','1','8','-1','-1','-1','','0001-01-01 00:00:00',12825);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','2364519','1','9','-1','-1','-1','','0001-01-01 00:00:00',12826);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','2364419','1','9','-1','-1','-1','','0001-01-01 00:00:00',12827);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644110','1','10','-1','-1','-1','','0001-01-01 00:00:00',12828);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645110','1','10','-1','-1','-1','','0001-01-01 00:00:00',12829);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644111','1','11','-1','-1','-1','','0001-01-01 00:00:00',12830);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645111','1','11','-1','-1','-1','','0001-01-01 00:00:00',12831);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645112','1','12','-1','-1','-1','','0001-01-01 00:00:00',12832);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644112','1','12','-1','-1','-1','','0001-01-01 00:00:00',12833);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644113','1','13','-1','-1','-1','','0001-01-01 00:00:00',12834);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645113','1','13','-1','-1','-1','','0001-01-01 00:00:00',12835);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644114','1','14','-1','-1','-1','','0001-01-01 00:00:00',12836);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645114','1','14','-1','-1','-1','','0001-01-01 00:00:00',12837);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644115','1','15','-1','-1','-1','','0001-01-01 00:00:00',12838);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645115','1','15','-1','-1','-1','','0001-01-01 00:00:00',12839);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645116','1','16','-1','-1','-1','','0001-01-01 00:00:00',12840);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644116','1','16','-1','-1','-1','','0001-01-01 00:00:00',12841);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644136','1','36','-1','-1','-1','','0001-01-01 00:00:00',12842);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645136','1','36','-1','-1','-1','','0001-01-01 00:00:00',12843);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644137','1','37','-1','-1','-1','','0001-01-01 00:00:00',12844);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645137','1','37','-1','-1','-1','','0001-01-01 00:00:00',12845);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644139','1','39','-1','-1','-1','','0001-01-01 00:00:00',12846);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645139','1','39','-1','-1','-1','','0001-01-01 00:00:00',12847);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645142','1','42','-1','-1','-1','','0001-01-01 00:00:00',12848);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644142','1','42','-1','-1','-1','','0001-01-01 00:00:00',12849);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645143','1','43','-1','-1','-1','','0001-01-01 00:00:00',12850);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644143','1','43','-1','-1','-1','','0001-01-01 00:00:00',12851);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644144','1','44','-1','-1','-1','','0001-01-01 00:00:00',12852);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645144','1','44','-1','-1','-1','','0001-01-01 00:00:00',12853);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644145','1','45','-1','-1','-1','','0001-01-01 00:00:00',12854);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645145','1','45','-1','-1','-1','','0001-01-01 00:00:00',12855);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644146','1','46','-1','-1','-1','','0001-01-01 00:00:00',12856);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645146','1','46','-1','-1','-1','','0001-01-01 00:00:00',12857);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644148','1','48','-1','-1','-1','','0001-01-01 00:00:00',12858);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645148','1','48','-1','-1','-1','','0001-01-01 00:00:00',12859);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644149','1','49','-1','-1','-1','','0001-01-01 00:00:00',12860);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645149','1','49','-1','-1','-1','','0001-01-01 00:00:00',12861);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644150','1','50','-1','-1','-1','','0001-01-01 00:00:00',12862);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645150','1','50','-1','-1','-1','','0001-01-01 00:00:00',12863);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644154','1','54','-1','-1','-1','','0001-01-01 00:00:00',12864);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645154','1','54','-1','-1','-1','','0001-01-01 00:00:00',12865);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645155','1','55','-1','-1','-1','','0001-01-01 00:00:00',12866);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644155','1','55','-1','-1','-1','','0001-01-01 00:00:00',12867);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644156','1','56','-1','-1','-1','','0001-01-01 00:00:00',12868);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645156','1','56','-1','-1','-1','','0001-01-01 00:00:00',12869);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644161','1','61','-1','-1','-1','','0001-01-01 00:00:00',12870);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645161','1','61','-1','-1','-1','','0001-01-01 00:00:00',12871);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644166','1','66','-1','-1','-1','','0001-01-01 00:00:00',12872);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645166','1','66','-1','-1','-1','','0001-01-01 00:00:00',12873);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644168','1','68','-1','-1','-1','','0001-01-01 00:00:00',12874);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645168','1','68','-1','-1','-1','','0001-01-01 00:00:00',12875);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644176','1','76','-1','-1','-1','','0001-01-01 00:00:00',12876);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645176','1','76','-1','-1','-1','','0001-01-01 00:00:00',12877);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644181','1','81','-1','-1','-1','','0001-01-01 00:00:00',12878);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645181','1','81','-1','-1','-1','','0001-01-01 00:00:00',12879);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644182','1','82','-1','-1','-1','','0001-01-01 00:00:00',12880);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645182','1','82','-1','-1','-1','','0001-01-01 00:00:00',12881);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644184','1','84','-1','-1','-1','','0001-01-01 00:00:00',12882);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645184','1','84','-1','-1','-1','','0001-01-01 00:00:00',12883);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645185','1','85','-1','-1','-1','','0001-01-01 00:00:00',12884);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644185','1','85','-1','-1','-1','','0001-01-01 00:00:00',12885);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644186','1','86','-1','-1','-1','','0001-01-01 00:00:00',12886);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645186','1','86','-1','-1','-1','','0001-01-01 00:00:00',12887);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644187','1','87','-1','-1','-1','','0001-01-01 00:00:00',12888);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645187','1','87','-1','-1','-1','','0001-01-01 00:00:00',12889);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644188','1','88','-1','-1','-1','','0001-01-01 00:00:00',12890);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645188','1','88','-1','-1','-1','','0001-01-01 00:00:00',12891);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644189','1','89','-1','-1','-1','','0001-01-01 00:00:00',12892);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645189','1','89','-1','-1','-1','','0001-01-01 00:00:00',12893);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644190','1','90','-1','-1','-1','','0001-01-01 00:00:00',12894);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645190','1','90','-1','-1','-1','','0001-01-01 00:00:00',12895);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644191','1','91','-1','-1','-1','','0001-01-01 00:00:00',12896);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645191','1','91','-1','-1','-1','','0001-01-01 00:00:00',12897);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645192','1','92','-1','-1','-1','','0001-01-01 00:00:00',12898);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644192','1','92','-1','-1','-1','','0001-01-01 00:00:00',12899);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645193','1','93','-1','-1','-1','','0001-01-01 00:00:00',12900);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644193','1','93','-1','-1','-1','','0001-01-01 00:00:00',12901);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645194','1','94','-1','-1','-1','','0001-01-01 00:00:00',12902);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644194','1','94','-1','-1','-1','','0001-01-01 00:00:00',12903);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644195','1','95','-1','-1','-1','','0001-01-01 00:00:00',12904);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645195','1','95','-1','-1','-1','','0001-01-01 00:00:00',12905);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645196','1','96','-1','-1','-1','','0001-01-01 00:00:00',12906);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644196','1','96','-1','-1','-1','','0001-01-01 00:00:00',12907);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644197','1','97','-1','-1','-1','','0001-01-01 00:00:00',12908);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645197','1','97','-1','-1','-1','','0001-01-01 00:00:00',12909);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644198','1','98','-1','-1','-1','','0001-01-01 00:00:00',12910);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645198','1','98','-1','-1','-1','','0001-01-01 00:00:00',12911);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','23644199','1','99','-1','-1','-1','','0001-01-01 00:00:00',12912);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','23645199','1','99','-1','-1','-1','','0001-01-01 00:00:00',12913);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441100','1','100','-1','-1','-1','','0001-01-01 00:00:00',12914);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451100','1','100','-1','-1','-1','','0001-01-01 00:00:00',12915);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451101','1','101','-1','-1','-1','','0001-01-01 00:00:00',12916);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441101','1','101','-1','-1','-1','','0001-01-01 00:00:00',12917);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441102','1','102','-1','-1','-1','','0001-01-01 00:00:00',12918);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451102','1','102','-1','-1','-1','','0001-01-01 00:00:00',12919);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451103','1','103','-1','-1','-1','','0001-01-01 00:00:00',12920);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441103','1','103','-1','-1','-1','','0001-01-01 00:00:00',12921);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441104','1','104','-1','-1','-1','','0001-01-01 00:00:00',12922);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451104','1','104','-1','-1','-1','','0001-01-01 00:00:00',12923);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441105','1','105','-1','-1','-1','','0001-01-01 00:00:00',12924);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451105','1','105','-1','-1','-1','','0001-01-01 00:00:00',12925);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441106','1','106','-1','-1','-1','','0001-01-01 00:00:00',12926);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451106','1','106','-1','-1','-1','','0001-01-01 00:00:00',12927);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441107','1','107','-1','-1','-1','','0001-01-01 00:00:00',12928);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451107','1','107','-1','-1','-1','','0001-01-01 00:00:00',12929);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451108','1','108','-1','-1','-1','','0001-01-01 00:00:00',12930);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441108','1','108','-1','-1','-1','','0001-01-01 00:00:00',12931);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451109','1','109','-1','-1','-1','','0001-01-01 00:00:00',12932);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441109','1','109','-1','-1','-1','','0001-01-01 00:00:00',12933);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441110','1','110','-1','-1','-1','','0001-01-01 00:00:00',12934);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451110','1','110','-1','-1','-1','','0001-01-01 00:00:00',12935);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451111','1','111','-1','-1','-1','','0001-01-01 00:00:00',12936);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441111','1','111','-1','-1','-1','','0001-01-01 00:00:00',12937);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451112','1','112','-1','-1','-1','','0001-01-01 00:00:00',12938);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,44,'samp','236441112','1','112','-1','-1','-1','','0001-01-01 00:00:00',12939);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`GroupLevelValue5`,`AccountCode`,`LastUPD`,`TableKey`) VALUES
+(2,36,45,'aa','236451113','1','113','-1','-1','-1','','0001-01-01 00:00:00',12940);
+INSERT INTO `pr_jv_template_group_map`(`ClientID`,`JVTemplateID`,`JVItemID`,`JVItemName`,`GroupLevelID`,`GroupLevelValue1`,`GroupLevelValue2`,`GroupLevelValue3`,`GroupLevelValue4`,`Grou

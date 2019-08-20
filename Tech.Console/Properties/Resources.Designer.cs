@@ -61,11 +61,20 @@ namespace Tech.Console.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Server=talentozstagemysql.mysql.database.azure.com;Initial Catalog=grt_demo;Uid=adminstage@talentozstagemysql;Pwd=SMRmme123456*.
+        ///   Looks up a localized string similar to Server=smrdbserver;Initial Catalog=talentozdev;Uid=admin;Pwd=admin312.
         /// </summary>
         internal static string Conn {
             get {
                 return ResourceManager.GetString("Conn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Server=talentozstagemysql.mysql.database.azure.com;Initial Catalog=grt_demo;Uid=adminstage@talentozstagemysql;Pwd=SMRmme123456*.
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
     }

@@ -1,0 +1,1379 @@
+CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=oV2QuBtUT4KcNLX8pvN5uA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','vijay','7431','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=oV2QuBtUT4KcNLX8pvN5uA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','vijay','7431','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=oV2QuBtUT4KcNLX8pvN5uA==');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_portal_session` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_portalurl
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_portalurl` (
+  `ClientID` int(11) NOT NULL,
+  `URLID` int(11) NOT NULL,
+  `URLKey` varchar(500) CHARACTER SET latin1 NOT NULL COMMENT 'Unique GUIDs',
+  `URLTitle` varchar(500) CHARACTER SET latin1 NOT NULL COMMENT 'Portal URL Title',
+  `BusinessUnitIDs` varchar(255) CHARACTER SET latin1 NOT NULL COMMENT 'Business Unit IDs',
+  `Status` bit(1) DEFAULT b'1' COMMENT 'Enable URL Status',
+  `AccessCount` int(11) DEFAULT '0' COMMENT 'URL Access Count',
+  `LastUPD` datetime DEFAULT NULL,
+  `CareerUrl` text CHARACTER SET latin1,
+  PRIMARY KEY (`ClientID`,`URLID`,`URLKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_portalurl
+-- 
+
+/*!40000 ALTER TABLE `recruitment_portalurl` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_portalurl`(`ClientID`,`URLID`,`URLKey`,`URLTitle`,`BusinessUnitIDs`,`Status`,`AccessCount`,`LastUPD`,`CareerUrl`) VALUES
+(2,11,'c0af3363-a5e6-4ed5-9d0e-4ad084c58f0a','India Url','-1',1,56,'2019-06-18 16:04:41','http://localhost/CareerPortal/Home.aspx?CID=c0af3363-a5e6-4ed5-9d0e-4ad084c58f0a');
+INSERT INTO `recruitment_portalurl`(`ClientID`,`URLID`,`URLKey`,`URLTitle`,`BusinessUnitIDs`,`Status`,`AccessCount`,`LastUPD`,`CareerUrl`) VALUES
+(2,12,'f3325727-98cc-45dc-be71-1392a2cb6763','Demo','71',1,13,'2017-05-17 12:19:48','http://localhost/CareerPortal/Home.aspx?CID=f3325727-98cc-45dc-be71-1392a2cb6763');
+INSERT INTO `recruitment_portalurl`(`ClientID`,`URLID`,`URLKey`,`URLTitle`,`BusinessUnitIDs`,`Status`,`AccessCount`,`LastUPD`,`CareerUrl`) VALUES
+(2,13,'89fddba2-0d66-45f0-8d21-30a20ecd0770','testURL','20',1,27,'2017-08-30 14:45:13','http://localhost/CareerPortal/Home.aspx?CID=89fddba2-0d66-45f0-8d21-30a20ecd0770');
+INSERT INTO `recruitment_portalurl`(`ClientID`,`URLID`,`URLKey`,`URLTitle`,`BusinessUnitIDs`,`Status`,`AccessCount`,`LastUPD`,`CareerUrl`) VALUES
+(2,14,'1bd3b57c-5e1e-4bad-b0d5-b8fcfbf2c116','test1','12',1,26,'2017-08-30 15:04:16','http://localhost/CareerPortal/Home.aspx?CID=1bd3b57c-5e1e-4bad-b0d5-b8fcfbf2c116');
+INSERT INTO `recruitment_portalurl`(`ClientID`,`URLID`,`URLKey`,`URLTitle`,`BusinessUnitIDs`,`Status`,`AccessCount`,`LastUPD`,`CareerUrl`) VALUES
+(2,15,'86eb4a61-fc2d-43be-82c7-fce8d17a2b68','Kali Mark Soda','144',1,1,'2019-03-11 16:26:06','http://localhost:61247/CareerPortal/Home.aspx?CID=86eb4a61-fc2d-43be-82c7-fce8d17a2b68');
+INSERT INTO `recruitment_portalurl`(`ClientID`,`URLID`,`URLKey`,`URLTitle`,`BusinessUnitIDs`,`Status`,`AccessCount`,`LastUPD`,`CareerUrl`) VALUES
+(2,16,'7b4bc851-10c5-4159-9b4d-62b6f3701281','Testttt','33',1,2,'2019-06-18 16:06:16','http://localhost:57901/CareerPortal/Home.aspx?CID=7b4bc851-10c5-4159-9b4d-62b6f3701281');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_portalurl` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_request_qualification
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_request_qualification` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `RequestID` int(10) unsigned NOT NULL,
+  `QualificationID` int(11) unsigned NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`,`QualificationID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_request_qualification
+-- 
+
+/*!40000 ALTER TABLE `recruitment_request_qualification` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11784,133,'2019-03-19 13:14:00');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11790,133,'2019-03-19 14:20:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11791,133,'2019-03-19 14:23:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11793,133,'2019-03-19 14:30:10');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11795,132,'2019-03-19 14:34:19');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11796,132,'2019-03-19 14:36:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11936,133,'2019-05-10 16:06:15');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11938,132,'2019-04-11 15:22:11');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11939,133,'2019-04-04 18:11:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11942,132,'2019-04-04 16:16:45');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11943,133,'2019-04-04 16:26:44');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11944,133,'2019-04-05 11:48:51');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11945,132,'2019-04-05 12:09:57');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11946,133,'2019-04-05 13:23:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11947,130,'2019-04-05 13:37:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11947,132,'2019-04-05 13:37:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11947,133,'2019-04-05 13:37:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11952,132,'2019-04-09 12:29:59');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11960,133,'2019-04-10 19:00:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11961,133,'2019-04-11 15:02:11');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11965,132,'2019-04-11 13:55:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11977,133,'2019-04-12 12:22:44');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11979,133,'2019-04-12 17:09:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11991,133,'2019-04-15 13:00:22');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,11993,132,'2019-04-16 12:32:51');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12006,133,'2019-04-16 18:16:06');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12007,133,'2019-04-16 18:25:42');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12008,133,'2019-04-17 10:26:56');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12011,132,'2019-04-17 14:40:10');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12012,125,'2019-04-17 15:11:43');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12013,133,'2019-04-17 15:50:44');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12014,132,'2019-04-17 17:25:13');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12072,133,'2019-05-10 13:50:54');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12073,133,'2019-05-10 15:07:48');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12074,134,'2019-05-10 15:21:08');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12079,134,'2019-05-14 18:21:23');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12080,135,'2019-05-14 18:30:43');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12083,135,'2019-05-15 11:30:23');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12084,135,'2019-05-15 11:40:15');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12088,135,'2019-05-15 15:03:35');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12122,135,'2019-06-09 01:14:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12123,135,'2019-05-24 12:12:39');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12124,135,'2019-06-09 00:55:25');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12125,135,'2019-05-24 12:49:52');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12130,109,'2019-05-24 16:28:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12131,135,'2019-05-24 16:45:57');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12132,135,'2019-05-24 17:19:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12133,135,'2019-05-24 17:31:25');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12134,109,'2019-05-24 17:58:34');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12135,135,'2019-05-27 11:27:21');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12136,135,'2019-05-27 14:05:46');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12137,135,'2019-05-27 14:58:44');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12138,135,'2019-05-27 17:19:03');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12139,135,'2019-05-28 10:25:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12140,135,'2019-05-28 10:42:25');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12141,135,'2019-05-28 11:29:51');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12143,135,'2019-06-03 10:20:28');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12145,135,'2019-06-03 18:54:51');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12147,137,'2019-06-04 16:08:42');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12148,135,'2019-06-06 11:45:31');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12156,135,'2019-06-06 14:27:19');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12161,135,'2019-06-07 10:22:21');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12162,136,'2019-06-07 14:09:45');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12164,133,'2019-06-07 14:53:58');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12164,134,'2019-06-07 14:53:58');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12164,135,'2019-06-07 14:53:58');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12164,136,'2019-06-07 14:53:58');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12165,133,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12165,134,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12165,135,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12166,135,'2019-06-07 18:37:43');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12167,135,'2019-06-08 00:19:14');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12168,135,'2019-06-08 00:25:35');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12169,134,'2019-06-08 00:32:06');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12169,135,'2019-06-08 00:32:06');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12170,135,'2019-06-08 00:40:57');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12171,135,'2019-06-10 14:13:18');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12172,135,'2019-06-10 14:14:08');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12174,135,'2019-06-10 14:20:02');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12175,135,'2019-06-10 14:23:08');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12176,135,'2019-06-10 14:45:13');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12177,135,'2019-06-10 14:48:36');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12178,137,'2019-06-10 14:53:09');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12179,136,'2019-06-10 14:57:02');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12180,137,'2019-06-10 14:59:00');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12181,135,'2019-06-10 15:13:35');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12182,135,'2019-06-10 15:17:07');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12183,135,'2019-06-10 15:19:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12184,135,'2019-06-10 15:33:53');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12187,137,'2019-06-12 10:55:10');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12188,136,'2019-06-12 10:56:32');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12189,136,'2019-06-12 11:11:40');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12190,136,'2019-06-12 11:23:08');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12191,135,'2019-06-12 11:23:31');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12192,135,'2019-06-12 11:27:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12193,136,'2019-06-12 11:32:40');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12194,135,'2019-06-12 14:31:42');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12195,135,'2019-06-12 14:37:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12196,135,'2019-06-12 15:53:19');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12197,135,'2019-06-12 16:02:14');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12198,135,'2019-06-12 16:59:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12199,135,'2019-06-12 17:45:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12200,135,'2019-06-12 18:21:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12201,135,'2019-06-12 18:25:00');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12202,135,'2019-06-12 18:55:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12203,135,'2019-06-12 19:01:23');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12204,135,'2019-06-13 10:13:26');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12205,135,'2019-06-13 12:26:48');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12206,137,'2019-06-13 12:42:48');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12207,135,'2019-06-13 14:52:14');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12208,135,'2019-06-13 15:26:26');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12209,135,'2019-06-13 15:40:32');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12210,137,'2019-06-13 16:13:01');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12211,137,'2019-06-13 16:17:33');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12212,137,'2019-06-13 16:30:53');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12213,135,'2019-06-13 16:49:25');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12214,135,'2019-06-13 16:56:29');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12215,137,'2019-06-13 17:00:52');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12216,137,'2019-06-13 17:06:48');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12217,137,'2019-06-17 15:54:18');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12218,135,'2019-06-17 16:59:27');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12219,135,'2019-06-17 17:05:39');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12220,135,'2019-06-17 17:06:47');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12221,135,'2019-06-17 17:09:06');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12222,135,'2019-06-17 17:10:39');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12223,137,'2019-06-17 17:40:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12224,135,'2019-06-17 18:27:13');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12225,136,'2019-06-17 18:29:06');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12226,135,'2019-06-17 18:31:55');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12227,135,'2019-06-17 18:35:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12228,135,'2019-06-17 18:38:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12229,135,'2019-06-17 19:17:22');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12230,135,'2019-06-18 09:48:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12231,135,'2019-06-18 10:22:32');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12232,135,'2019-06-18 10:23:44');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12233,135,'2019-06-18 10:28:45');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12234,135,'2019-06-18 10:31:06');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12235,135,'2019-06-18 10:32:23');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12236,136,'2019-06-18 10:41:46');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12237,135,'2019-06-18 10:52:58');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12238,137,'2019-06-18 11:00:54');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12239,135,'2019-06-18 11:03:28');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12240,135,'2019-06-18 12:52:10');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12241,135,'2019-06-18 12:53:46');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12242,136,'2019-06-18 13:02:17');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12243,135,'2019-06-18 13:03:43');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12244,136,'2019-06-18 13:07:59');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12245,135,'2019-06-18 13:11:29');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12246,135,'2019-06-18 13:27:22');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12247,136,'2019-06-18 13:30:35');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12248,137,'2019-06-18 13:41:19');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12249,137,'2019-06-18 13:47:02');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12250,137,'2019-06-18 13:51:58');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12251,135,'2019-06-18 14:22:43');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12252,137,'2019-06-18 14:32:17');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12253,137,'2019-06-18 15:23:15');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12254,137,'2019-06-18 15:14:07');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12255,135,'2019-06-18 16:58:03');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12256,135,'2019-06-18 17:02:21');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12257,135,'2019-06-18 17:06:54');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12258,136,'2019-06-18 23:52:21');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12259,137,'2019-06-18 23:53:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12260,137,'2019-06-19 09:57:21');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12261,137,'2019-06-19 10:00:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12262,137,'2019-06-19 10:57:56');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12263,137,'2019-06-19 11:18:54');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12264,137,'2019-06-19 11:50:57');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12265,137,'2019-06-19 14:59:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12266,137,'2019-06-19 16:52:34');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12267,137,'2019-06-19 17:12:53');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12268,135,'2019-06-19 17:15:07');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12269,137,'2019-06-19 17:40:18');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12270,137,'2019-06-19 17:46:47');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12271,137,'2019-06-19 18:35:28');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12275,135,'2019-06-19 19:16:38');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12276,137,'2019-06-19 19:24:43');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12277,137,'2019-06-19 23:01:05');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12287,137,'2019-06-20 12:10:04');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12289,135,'2019-06-20 14:32:27');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12290,137,'2019-06-20 15:00:27');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12291,137,'2019-06-20 15:05:44');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12292,136,'2019-06-20 15:08:23');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12293,135,'2019-06-20 15:12:59');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12295,135,'2019-06-20 15:27:41');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12298,137,'2019-06-20 15:39:45');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12314,135,'2019-06-21 11:33:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12428,137,'2019-07-15 15:44:16');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12429,137,'2019-07-15 15:58:23');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12431,137,'2019-07-15 16:22:49');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12432,136,'2019-07-15 16:32:39');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12445,134,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12445,135,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12445,136,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_qualification`(`ClientID`,`RequestID`,`QualificationID`,`LastUPD`) VALUES
+(2,12445,137,'2019-07-16 17:58:50');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_request_qualification` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_request_skills
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_request_skills` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `RequestID` int(10) unsigned NOT NULL,
+  `SkillID` int(11) unsigned NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`,`SkillID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_request_skills
+-- 
+
+/*!40000 ALTER TABLE `recruitment_request_skills` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11784,225,'2019-03-19 13:14:00');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11790,225,'2019-03-19 14:20:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11791,225,'2019-03-19 14:23:33');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11793,225,'2019-03-19 14:30:10');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11795,224,'2019-03-19 14:34:19');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11796,225,'2019-03-19 14:36:49');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11936,224,'2019-05-10 16:06:15');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11938,225,'2019-04-11 15:22:11');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11939,225,'2019-04-04 18:11:49');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11942,225,'2019-04-04 16:16:45');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11943,225,'2019-04-04 16:26:44');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11944,225,'2019-04-05 11:48:51');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11945,224,'2019-04-05 12:09:57');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11946,225,'2019-04-05 13:23:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11947,222,'2019-04-05 13:37:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11947,223,'2019-04-05 13:37:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11947,225,'2019-04-05 13:37:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11952,223,'2019-04-09 12:29:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11960,224,'2019-04-10 19:00:34');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11961,225,'2019-04-11 15:02:11');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11965,224,'2019-04-11 13:55:34');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11977,225,'2019-04-12 12:22:44');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11979,225,'2019-04-12 17:09:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11991,225,'2019-04-15 13:00:22');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,11993,224,'2019-04-16 12:32:51');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12006,225,'2019-04-16 18:16:06');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12007,225,'2019-04-16 18:25:42');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12008,225,'2019-04-17 10:26:58');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12011,225,'2019-04-17 14:40:10');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12012,220,'2019-04-17 15:11:43');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12013,225,'2019-04-17 15:50:44');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12014,225,'2019-04-17 17:25:13');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12072,225,'2019-05-10 13:50:54');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12073,226,'2019-05-10 15:07:48');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12074,226,'2019-05-10 15:21:08');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12079,226,'2019-05-14 18:21:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12080,226,'2019-05-14 18:30:43');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12083,226,'2019-05-15 11:30:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12084,226,'2019-05-15 11:40:15');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12088,224,'2019-05-15 15:03:35');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12122,106,'2019-06-09 01:14:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12122,186,'2019-06-09 01:14:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12123,2,'2019-05-24 12:12:39');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12123,3,'2019-05-24 12:12:39');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12124,2,'2019-06-09 00:55:25');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12124,3,'2019-06-09 00:55:25');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12125,2,'2019-05-24 12:49:52');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12125,4,'2019-05-24 12:49:52');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12130,112,'2019-05-24 16:28:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12130,113,'2019-05-24 16:28:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12131,222,'2019-05-24 16:45:57');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12132,4,'2019-05-24 17:19:33');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12132,5,'2019-05-24 17:19:33');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12133,224,'2019-05-24 17:31:25');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12134,108,'2019-05-24 17:58:34');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12134,170,'2019-05-24 17:58:34');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12135,2,'2019-05-27 11:27:21');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12135,3,'2019-05-27 11:27:21');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12136,2,'2019-05-27 14:05:46');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12137,142,'2019-05-27 14:58:44');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12138,186,'2019-05-27 17:19:03');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12139,2,'2019-05-28 10:25:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12140,9,'2019-05-28 10:42:25');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12141,2,'2019-05-28 11:29:51');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12143,218,'2019-06-03 10:20:28');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12143,219,'2019-06-03 10:20:28');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12145,213,'2019-06-03 18:54:51');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12147,231,'2019-06-04 16:08:42');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12148,187,'2019-06-06 11:45:32');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12156,2,'2019-06-06 14:27:21');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12161,187,'2019-06-07 10:22:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12162,231,'2019-06-07 14:09:45');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12164,228,'2019-06-07 14:53:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12164,229,'2019-06-07 14:53:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12164,230,'2019-06-07 14:53:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12164,231,'2019-06-07 14:53:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12165,227,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12165,228,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12165,229,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12165,230,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12165,231,'2019-06-07 14:54:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12166,103,'2019-06-07 18:37:43');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12167,217,'2019-06-08 00:19:14');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12168,122,'2019-06-08 00:25:36');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12169,213,'2019-06-08 00:32:06');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12170,222,'2019-06-08 00:40:57');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12171,140,'2019-06-10 14:13:18');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12172,58,'2019-06-10 14:14:09');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12174,2,'2019-06-10 14:20:02');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12175,89,'2019-06-10 14:23:08');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12176,222,'2019-06-10 14:45:13');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12177,186,'2019-06-10 14:48:36');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12178,230,'2019-06-10 14:53:09');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12179,231,'2019-06-10 14:57:02');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12180,227,'2019-06-10 14:59:01');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12181,119,'2019-06-10 15:13:35');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12182,229,'2019-06-10 15:17:07');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12183,102,'2019-06-10 15:19:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12184,66,'2019-06-10 15:33:53');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12187,231,'2019-06-12 10:55:10');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12188,231,'2019-06-12 10:56:32');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12189,231,'2019-06-12 11:11:40');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12190,230,'2019-06-12 11:23:08');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12191,106,'2019-06-12 11:23:31');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12192,3,'2019-06-12 11:27:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12193,229,'2019-06-12 11:32:40');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12194,229,'2019-06-12 14:31:42');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12195,230,'2019-06-12 14:37:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12196,229,'2019-06-12 15:53:20');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12197,101,'2019-06-12 16:02:14');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12198,229,'2019-06-12 16:59:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12199,126,'2019-06-12 17:45:33');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12200,229,'2019-06-12 18:21:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12201,213,'2019-06-12 18:25:00');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12202,230,'2019-06-12 18:55:33');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12203,224,'2019-06-12 19:01:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12204,223,'2019-06-13 10:13:26');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12205,83,'2019-06-13 12:26:48');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12206,224,'2019-06-13 12:42:48');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12207,217,'2019-06-13 14:52:14');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12208,181,'2019-06-13 15:26:26');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12209,217,'2019-06-13 15:40:32');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12210,215,'2019-06-13 16:13:01');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12211,2,'2019-06-13 16:17:33');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12212,186,'2019-06-13 16:30:53');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12213,229,'2019-06-13 16:49:25');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12214,219,'2019-06-13 16:56:30');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12215,230,'2019-06-13 17:00:52');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12216,214,'2019-06-13 17:06:48');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12217,231,'2019-06-17 15:54:19');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12218,230,'2019-06-17 16:59:27');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12219,229,'2019-06-17 17:05:39');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12220,229,'2019-06-17 17:06:47');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12221,230,'2019-06-17 17:09:06');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12222,230,'2019-06-17 17:10:41');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12223,231,'2019-06-17 17:40:25');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12224,229,'2019-06-17 18:27:14');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12225,229,'2019-06-17 18:29:06');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12226,225,'2019-06-17 18:31:55');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12227,217,'2019-06-17 18:35:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12228,229,'2019-06-17 18:38:52');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12229,224,'2019-06-17 19:17:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12230,229,'2019-06-18 09:48:49');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12231,192,'2019-06-18 10:22:32');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12232,224,'2019-06-18 10:23:44');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12233,224,'2019-06-18 10:28:45');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12234,127,'2019-06-18 10:31:06');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12235,220,'2019-06-18 10:32:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12236,229,'2019-06-18 10:41:46');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12237,220,'2019-06-18 10:52:58');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12238,224,'2019-06-18 11:00:54');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12239,229,'2019-06-18 11:03:28');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12240,84,'2019-06-18 12:52:10');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12241,229,'2019-06-18 12:53:46');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12242,229,'2019-06-18 13:02:17');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12243,229,'2019-06-18 13:03:43');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12244,228,'2019-06-18 13:07:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12245,230,'2019-06-18 13:11:29');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12246,228,'2019-06-18 13:27:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12247,229,'2019-06-18 13:30:35');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12248,229,'2019-06-18 13:41:19');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12249,229,'2019-06-18 13:47:02');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12250,228,'2019-06-18 13:51:58');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12251,229,'2019-06-18 14:22:43');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12252,230,'2019-06-18 14:32:17');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12253,229,'2019-06-18 15:23:15');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12254,230,'2019-06-18 15:14:08');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12255,230,'2019-06-18 16:58:03');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12256,229,'2019-06-18 17:02:21');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12257,229,'2019-06-18 17:06:54');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12258,230,'2019-06-18 23:52:21');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12259,230,'2019-06-18 23:53:49');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12260,224,'2019-06-19 09:57:21');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12261,230,'2019-06-19 10:00:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12262,230,'2019-06-19 10:57:58');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12263,230,'2019-06-19 11:18:54');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12264,230,'2019-06-19 11:50:57');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12265,230,'2019-06-19 14:59:49');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12266,229,'2019-06-19 16:52:34');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12267,231,'2019-06-19 17:12:54');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12268,229,'2019-06-19 17:15:07');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12269,230,'2019-06-19 17:40:18');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12270,230,'2019-06-19 17:46:47');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12271,230,'2019-06-19 18:35:28');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12275,229,'2019-06-19 19:16:38');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12276,231,'2019-06-19 19:24:43');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12277,224,'2019-06-19 23:01:05');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12287,229,'2019-06-20 12:10:04');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12289,229,'2019-06-20 14:32:27');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12290,230,'2019-06-20 15:00:27');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12291,230,'2019-06-20 15:05:44');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12292,230,'2019-06-20 15:08:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12293,230,'2019-06-20 15:12:59');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12295,229,'2019-06-20 15:27:41');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12298,230,'2019-06-20 15:39:45');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12314,229,'2019-06-21 11:33:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12428,231,'2019-07-15 15:44:16');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12429,231,'2019-07-15 15:58:23');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12431,230,'2019-07-15 16:22:49');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12432,230,'2019-07-15 16:32:39');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12445,226,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12445,227,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12445,228,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12445,229,'2019-07-16 17:58:50');
+INSERT INTO `recruitment_request_skills`(`ClientID`,`RequestID`,`SkillID`,`LastUPD`) VALUES
+(2,12445,230,'2019-07-16 17:58:50');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_request_skills` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_address
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_address` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `AddressID` int(11) unsigned NOT NULL COMMENT 'Lookup 117',
+  `Address` text,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`AddressID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_address
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_address` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(0,5499,1,'Arun colony, subramaniyapuram Aranthangi (T.K','2018-07-04 16:45:25');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(0,5499,2,'Arun colony Subramaniyapuram Aranthangi (T. k, Pudukkottai, 614805','2018-07-04 16:45:14');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5501,2,'No 1/75 Murugan Kovil Street, Kattupakkam, Chennai, 600056, India','2018-07-04 17:45:38');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5502,1,'51, Mettu Street, Woraiyur','2018-07-17 15:23:18');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5502,2,'51 Mettu Street Woraiyur, Trichy, 620003','2018-07-17 15:23:18');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5503,2,'179/58 9th Street Kamaraj Nagar Korukkupet, Chennai, 600021','2018-07-17 14:31:56');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5504,2,'Vinayaga apartment Srinivasan st Egmore, Chennai, 600008','2018-07-17 14:41:12');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5506,2,'No-17A-4/1 Devunaidu street ContactNo. West Saidapet, Chennai, Tamil Nadu, 600015, India','2018-07-17 14:32:09');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5536,2,'South Street kumaratchi, 608302','2018-07-17 13:20:09');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5539,1,'5-19, Middle Street, Arumanalloor','2018-07-17 14:41:19');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5539,2,'5-19 Middle Street Arumanalloor, Kanyakumari, 629851','2018-07-17 14:41:19');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5540,2,'Panchayat Main Road Perungudi, Chennai, 600096','2018-07-17 14:41:23');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5541,1,'5-19, Middle Street, Arumanalloor','2018-07-17 14:59:23');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5541,2,'5-19 Middle Street Arumanalloor, Kanyakumari, 629851','2018-07-17 14:59:23');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5542,2,'26-A Holy family street Melaramanputhur Nagercoil, Kanya Kumari, 629004','2018-07-17 15:00:55');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5543,2,'South Street kumaratchi, 608302','2018-07-17 15:01:00');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5546,1,'51, Mettu Street, Woraiyur','2018-07-17 15:24:24');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5546,2,'51 Mettu Street Woraiyur, Trichy, 620003','2018-07-17 15:24:24');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5547,2,'F1 ASWIN FALTS # 145 B BLOCK LAKSHMI NAGAR MAIN ROAD MADIPAKKAM, Chennai','2018-07-17 15:25:53');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5548,1,'fdgd','2018-08-03 16:47:46');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5548,2,'F1 ASWIN FALTS # 145 B BLOCK LAKSHMI NAGAR MAIN ROAD MADIPAKKAM, Chennai','2018-07-17 16:00:48');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5549,1,'51, Mettu Street, Woraiyur','2018-07-17 16:13:08');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5549,2,'51 Mettu Street Woraiyur, Trichy, 620003','2018-07-17 16:13:08');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5550,1,'tyr','2018-08-09 16:34:46');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5550,2,'yurty','2018-08-09 16:35:33');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5551,1,'ffd','2018-08-03 16:44:18');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5551,2,'Qasim, Al','2018-07-17 16:30:12');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5552,1,'address permanaen','2018-08-03 19:20:36');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5552,2,'iu9oiuoiuoi','2018-08-03 17:55:54');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5557,1,'gggggggggggggggggggggggggggggffffg','2018-08-06 12:56:32');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5564,1,'K.Suresh\nManager – Process Improvement\n99400 44429\nNew No.1, First Floor, Industrial Estate, Perungudi, Off Old Mahabalipuram Road,  Chennai-600096 \n +(91) 44-4321 6999 /  4320 7999   www.forziatech.com','2018-08-09 18:13:15');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,5564,2,'SMR , New No.1, First Floor, Industrial Estate, Perungudi, Off Old Mahabalipuram Road, Chennai-600096\n +(91) 44-4321 6999 /  4320 7999   www.forziatech.com','2018-08-09 18:14:00');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,6744,1,'sdfdsfsd','2018-10-12 17:46:52');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,6762,1,'tyutyuty','2018-09-27 16:37:19');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,6776,1,'tryrtyrtyrty','2018-10-15 17:13:08');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,6812,1,'fghgfh','2018-10-31 13:56:31');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,6838,1,'tettststestset','2018-11-16 13:37:10');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,6928,1,'Chennai','2019-04-26 11:46:02');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7223,1,'fghfg','2019-05-17 12:32:19');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7224,1,'KurukkuPet','2019-05-17 13:00:36');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7262,1,'ff','2019-06-07 15:29:09');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7410,1,'gfdg','2019-07-11 17:39:44');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7425,1,'gkgj','2019-07-10 11:11:27');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7425,2,'ads','2019-07-11 10:47:33');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7427,1,'Permanent Address\n\nFORZIA Tech Pvt. Ltd., \nPlot No.6, Khivraj Building, Ground Floor,\nDeveloped Electricals & Electronics, Industrial Estate,\nRajiv Gandhi Salai, OMR, Perungudi, Chennai, 600096\nMobile : +91 12345 67890 Off : 044 - 4321 6999, 4320 7999','2019-07-11 18:27:50');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7427,2,'Temporary Address\n\nFORZIA Tech Pvt. Ltd., \nPlot No.6, Khivraj Building, Ground Floor,\nDeveloped Electricals & Electronics, Industrial Estate,\nRajiv Gandhi Salai, OMR, Perungudi, Chennai, 600096\nMobile : +91 12345 67890 Off : 044 - 4321 6999, 4320 7999','2019-07-11 18:28:27');
+INSERT INTO `recruitment_resumebank_address`(`ClientID`,`CandidateID`,`AddressID`,`Address`,`LastUPD`) VALUES
+(2,7431,2,'hjk','2019-07-15 16:03:13');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_address` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_emergencycontact
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_emergencycontact` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `EmergencyContactID` int(11) unsigned NOT NULL,
+  `ContactPerson` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Person',
+  `Relationship` int(10) DEFAULT NULL COMMENT 'Relationship lookup 104',
+  `FullAddress` text CHARACTER SET latin1 COMMENT 'Full Address',
+  `ContactNumber1` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Number 1',
+  `ContactNumber2` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Number 2',
+  `EmailAddress` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Email Address',
+  `Remarks` text CHARACTER SET latin1 COMMENT 'Remarks',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`EmergencyContactID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_emergencycontact
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_emergencycontact` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_emergencycontact`(`ClientID`,`CandidateID`,`EmergencyContactID`,`ContactPerson`,`Relationship`,`FullAddress`,`ContactNumber1`,`ContactNumber2`,`EmailAddress`,`Remarks`,`LastUPD`) VALUES
+(2,7410,16,'hjkjh',1,'','jhkjh','','','','2019-07-11 17:51:09');
+INSERT INTO `recruitment_resumebank_emergencycontact`(`ClientID`,`CandidateID`,`EmergencyContactID`,`ContactPerson`,`Relationship`,`FullAddress`,`ContactNumber1`,`ContactNumber2`,`EmailAddress`,`Remarks`,`LastUPD`) VALUES
+(2,7425,23,'zxczxczxc',5,'zxczxczxc','zxcerwerwe','','','','2019-07-12 17:34:25');
+INSERT INTO `recruitment_resumebank_emergencycontact`(`ClientID`,`CandidateID`,`EmergencyContactID`,`ContactPerson`,`Relationship`,`FullAddress`,`ContactNumber1`,`ContactNumber2`,`EmailAddress`,`Remarks`,`LastUPD`) VALUES
+(2,7425,24,'aaa',5,'aaa','12345','6789','rameshp203@gmail.com','aaaaa','2019-07-12 17:34:31');
+INSERT INTO `recruitment_resumebank_emergencycontact`(`ClientID`,`CandidateID`,`EmergencyContactID`,`ContactPerson`,`Relationship`,`FullAddress`,`ContactNumber1`,`ContactNumber2`,`EmailAddress`,`Remarks`,`LastUPD`) VALUES
+(2,7427,21,'Appa',1,'Full address','985895986','86435963495','appa@gmail.com','Ok','2019-07-11 18:48:52');
+INSERT INTO `recruitment_resumebank_emergencycontact`(`ClientID`,`CandidateID`,`EmergencyContactID`,`ContactPerson`,`Relationship`,`FullAddress`,`ContactNumber1`,`ContactNumber2`,`EmailAddress`,`Remarks`,`LastUPD`) VALUES
+(2,7427,22,'Amma',2,'Full','2309754962346','3246294862946','fff','ok1','2019-07-11 18:49:08');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_emergencycontact` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_experience
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_experience` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `ExperienceID` int(11) unsigned NOT NULL,
+  `EmployerName` varchar(255) DEFAULT NULL,
+  `StartDate` date DEFAULT NULL,
+  `EndDate` date DEFAULT NULL,
+  `IsCurrent` int(11) DEFAULT NULL,
+  `JobTitle` varchar(255) DEFAULT NULL,
+  `City` varchar(255) DEFAULT NULL,
+  `State` int(11) DEFAULT NULL COMMENT 'Lookup 120',
+  `Country` int(11) DEFAULT NULL COMMENT 'Lookup 106',
+  `JobDescription` text,
+  `StartMonth` int(10) DEFAULT NULL,
+  `StartYear` int(10) DEFAULT NULL,
+  `EndMonth` int(10) DEFAULT NULL,
+  `EndYear` int(10) DEFAULT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`ExperienceID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_experience
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_experience` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(0,6762,32,'fdg',NULL,NULL,0,'gfdg','dfg',-1,-1,'dfg',1,2017,9,2005,'2018-10-10 16:25:34');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5550,10,'fghg',NULL,NULL,1,'','',-1,-1,'',-1,-1,-1,-1,'2018-08-09 16:13:57');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5550,11,'d3d tech',NULL,NULL,1,'','',-1,249,'dfs',2,2018,11,2005,'2018-08-09 16:38:13');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5552,8,'5435',NULL,NULL,1,'gdg','345',-1,1,'',-1,-1,-1,-1,'2018-08-06 15:54:43');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5557,6,'fdsfsd','2018-08-20 00:00:00',NULL,0,'hj','gj',-1,1,NULL,NULL,NULL,NULL,NULL,'2018-08-06 10:48:08');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5557,7,'jhfghh',NULL,NULL,1,'fghgf','gfhfg',-1,-1,'',-1,-1,-1,-1,'2018-08-06 14:09:12');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5560,12,'FYT',NULL,NULL,1,'FGHGF','',-1,-1,'',-1,-1,-1,-1,'2018-08-09 17:34:22');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5560,13,'sdfdsf',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2018-08-09 17:54:08');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5560,14,'dfgfdgfdg',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2018-08-09 17:54:15');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5560,15,'fhgfhgf',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2018-08-09 17:54:34');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5564,16,'SMR Technologies PVT LTD',NULL,NULL,0,'Sr. QA Engg','Chennai',-1,101,'3.5 years of Emp ijn Manual Test',7,2011,10,2014,'2018-08-09 18:07:23');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,5564,17,'FORZIA TEch ltd',NULL,NULL,1,'Test lead (Level I)','Blr',-1,101,'',12,2016,-1,-1,'2018-08-09 18:09:27');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,6744,38,'sdf',NULL,NULL,0,'dsf','sdf',-1,249,'dsfsadasd',3,2015,8,2007,'2018-11-15 17:08:09');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,6762,31,'teststt',NULL,NULL,0,'test','sdf',-1,1,'sf',3,2013,4,2015,'2018-10-01 10:44:29');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,6776,37,'gfh',NULL,NULL,0,'fgh','gfh',-1,1,'fghgfh',3,2017,11,2008,'2018-10-15 17:53:18');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,6821,41,'jhkjhkhjk',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2018-11-17 12:18:51');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,6838,39,'dfgfdg',NULL,NULL,0,'fdgdfgdg','dfgfdg',-1,101,'sdfsdfsdfsfsdf',1,2012,12,2013,'2018-11-16 13:37:51');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,6928,43,'affsdfsdfsdf',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2019-04-26 11:46:18');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7224,44,'Dubakkur Company',NULL,NULL,1,'Dubakkur Company','Chennai',1,101,'Dubakkur Company',1,2019,-1,-1,'2019-05-17 13:01:18');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7262,45,'sdfsdfsf',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2019-06-07 15:29:14');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7410,51,'werew',NULL,NULL,1,'werew','',-1,-1,'',-1,-1,-1,-1,'2019-07-11 17:50:31');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7417,50,'fhfgh',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2019-07-10 11:53:47');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7420,48,'xcvxcv',NULL,NULL,0,'xcvx','xcvxcv',1,101,'sdfsdf',1,2018,-1,2019,'2019-07-08 13:59:56');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7425,49,'dfgdfg',NULL,NULL,1,'fdgdfgdfg','',-1,-1,'',-1,-1,-1,-1,'2019-07-10 10:55:06');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7427,55,'SMR FORZIA TECH',NULL,NULL,0,'SOFTWARE ENGINEER','Chennai',1,101,'TESTING team must test all modules and all scenario in GRT and SPIC in “MYSQL FOR AZUR',2,2017,6,2019,'2019-07-11 18:30:18');
+INSERT INTO `recruitment_resumebank_experience`(`ClientID`,`CandidateID`,`ExperienceID`,`EmployerName`,`StartDate`,`EndDate`,`IsCurrent`,`JobTitle`,`City`,`State`,`Country`,`JobDescription`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`LastUPD`) VALUES
+(2,7431,58,'dfgfd',NULL,NULL,0,'','',-1,-1,'',-1,-1,-1,-1,'2019-07-15 15:36:44');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_experience` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_familymembers
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_familymembers` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `DependentID` int(11) unsigned NOT NULL,
+  `Name` text,
+  `DOB` datetime DEFAULT NULL,
+  `Gender` int(11) DEFAULT NULL COMMENT 'Lookup 102',
+  `EmployerName` text,
+  `Relationship` int(10) DEFAULT NULL COMMENT 'Relationship lookup 104',
+  `ContactNumber` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Number',
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`DependentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_familymembers
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_familymembers` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_familymembers`(`ClientID`,`CandidateID`,`DependentID`,`Name`,`DOB`,`Gender`,`EmployerName`,`Relationship`,`ContactNumber`,`LastUPD`) VALUES
+(2,7410,25,'hjkhjkjh','2019-07-31 00:00:00',-1,'',4,'jhkjh','2019-07-11 17:50:50');
+INSERT INTO `recruitment_resumebank_familymembers`(`ClientID`,`CandidateID`,`DependentID`,`Name`,`DOB`,`Gender`,`EmployerName`,`Relationship`,`ContactNumber`,`LastUPD`) VALUES
+(2,7410,33,'rtertre','2019-07-24 00:00:00',-1,'',1,'rtre','2019-07-11 19:03:35');
+INSERT INTO `recruitment_resumebank_familymembers`(`ClientID`,`CandidateID`,`DependentID`,`Name`,`DOB`,`Gender`,`EmployerName`,`Relationship`,`ContactNumber`,`LastUPD`) VALUES
+(2,7425,34,'aaa','2019-07-11 00:00:00',1,'tttete',1,'12345','2019-07-12 11:12:33');
+INSERT INTO `recruitment_resumebank_familymembers`(`ClientID`,`CandidateID`,`DependentID`,`Name`,`DOB`,`Gender`,`EmployerName`,`Relationship`,`ContactNumber`,`LastUPD`) VALUES
+(2,7427,32,'Anthony Raj A','1919-06-01 00:00:00',2,'Nothing',5,'+91-783456873457837','2019-07-11 18:31:43');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_familymembers` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_languages
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_languages` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `LanguageName` varchar(255) DEFAULT NULL COMMENT 'Language Name',
+  `IsRead` int(11) DEFAULT NULL,
+  `IsSpeak` int(10) DEFAULT NULL,
+  `IsWrite` int(10) DEFAULT NULL,
+  `LastUPD` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table recruitment_resumebank_languages
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_languages` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7418,'Tamil',1,1,0,'2019-07-04 13:00:21');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7418,'English',1,0,0,'2019-07-04 13:00:21');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7418,'Telugu',0,1,0,'2019-07-04 13:00:21');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7418,'Hindi',0,0,1,'2019-07-04 13:00:21');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7419,'Tamil',1,0,0,'2019-07-04 16:13:07');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7424,'dfgfdgfd',1,1,0,'2019-07-10 13:32:46');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7417,'sdfff',1,1,1,'2019-07-11 11:29:27');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7417,'sdfsdfsd',1,0,0,'2019-07-11 11:29:27');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7417,'sdfsdfsd',0,1,0,'2019-07-11 11:29:27');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7393,'English (US)',1,1,1,'2019-07-11 18:05:37');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7427,'Tamil',1,1,1,'2019-07-11 18:43:27');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7427,'English',1,1,1,'2019-07-11 18:43:27');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7427,'Hindi',1,1,1,'2019-07-11 18:43:27');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7427,'Thelugu',1,1,1,'2019-07-11 18:43:28');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7431,'tamil',1,1,1,'2019-07-12 11:47:01');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7209,'dfgfdg',0,0,0,'2019-07-12 16:00:53');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7209,'fgdfg',0,0,0,'2019-07-12 16:00:54');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7209,'dfgfdg',0,1,0,'2019-07-12 16:00:54');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7213,'vbvcbv',1,1,1,'2019-07-12 16:05:49');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7213,'vcbvcb',0,0,0,'2019-07-12 16:05:49');
+INSERT INTO `recruitment_resumebank_languages`(`ClientID`,`CandidateID`,`LanguageName`,`IsRead`,`IsSpeak`,`IsWrite`,`LastUPD`) VALUES
+(2,7208,'Tamil',1,0,0,'2019-07-12 16:25:56');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_languages` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_morefields
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_morefields` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `MoreFieldsID` int(11) unsigned NOT NULL,
+  `Age` text,
+  `Race` int(11) DEFAULT NULL COMMENT 'Lookup 500014',
+  `Interest` text,
+  `Bond` text,
+  `Explain` text,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`MoreFieldsID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_morefields
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_morefields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7393,94,'80',3,'','1','State','2019-07-11 18:06:43');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7410,84,'12',-1,'','0','','2019-07-11 17:51:26');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7410,85,'12',2,'dfgfd','1','dfgfdg','2019-07-11 17:52:28');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7410,92,'56',-1,'','0','','2019-07-11 18:00:45');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7410,96,'25',2,'fdgfd','1','dfgfdg','2019-07-11 19:03:05');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7417,77,'34',3,'dfg','1','dfgfd','2019-07-11 12:54:37');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7424,76,'25',1,'ghjghj','1','jjjjjjjjjjjjjjjjjjjjjj','2019-07-11 12:36:26');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7425,140,'12',1,'aa sdsdsd','1','sdfsdfsdfsfd','2019-07-12 18:51:05');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7427,95,'46',2,'Fishing, Driving , Cinema , Web Surfing','1','I am State level kabadi player','2019-07-11 18:42:45');
+INSERT INTO `recruitment_resumebank_morefields`(`ClientID`,`CandidateID`,`MoreFieldsID`,`Age`,`Race`,`Interest`,`Bond`,`Explain`,`LastUPD`) VALUES
+(2,7431,141,'23',2,'sad','1','dfgfd','2019-07-15 15:39:25');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_morefields` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_otherinfo
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_otherinfo` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `InfoID` int(11) unsigned NOT NULL,
+  `IsFriendsHere` text,
+  `Name` text,
+  `Position` text,
+  `Department` text,
+  `AlreadyApplied` text,
+  `Details` text,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`InfoID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_otherinfo
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_otherinfo` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7417,2,'1','dvdf','dfgfd','dfgfd','1','fdgfd','2019-07-11 15:23:24');
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7425,4,'1','dgfgg','','','1','dddd','2019-07-11 15:41:38');
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7425,12,'1','Suresh','dfsdfsfd','sdfsdfsdf','1','sdfsdfsdf','2019-07-12 17:33:00');
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7425,13,'1','dfsdfsdf','sdfsdf','sdfsdf','1','sdfsfd','2019-07-12 17:33:08');
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7427,10,'1','Silambu','Watchman','Watchman','1','Yes','2019-07-11 18:47:08');
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7427,11,'1','Kokila','Office Assistance','Cleaning','0','','2019-07-11 18:47:26');
+INSERT INTO `recruitment_resumebank_otherinfo`(`ClientID`,`CandidateID`,`InfoID`,`IsFriendsHere`,`Name`,`Position`,`Department`,`AlreadyApplied`,`Details`,`LastUPD`) VALUES
+(2,7431,15,'1','fhfgh','fghfg','fghfg','1','fgh','2019-07-15 15:57:45');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_resumebank_otherinfo` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_resumebank_qualification
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_resumebank_qualification` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CandidateID` int(10) unsigned NOT NULL,
+  `QualificationID` int(11) unsigned NOT NULL,
+  `InstitutionTypeID` int(11) DEFAULT NULL COMMENT 'Institution Type Lookup 109',
+  `InstitutionName` varchar(255) DEFAULT NULL COMMENT 'Institution Name',
+  `Major` varchar(255) DEFAULT NULL,
+  `IsCurrent` int(11) DEFAULT NULL,
+  `StartMonth` int(10) DEFAULT NULL,
+  `StartYear` int(10) DEFAULT NULL,
+  `EndMonth` int(10) DEFAULT NULL,
+  `EndYear` int(10) DEFAULT NULL,
+  `StartDate` date DEFAULT NULL,
+  `EndDate` date DEFAULT NULL,
+  `Aggregate` varchar(50) DEFAULT NULL COMMENT 'Aggregate Percentage/Marks',
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`CandidateID`,`QualificationID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_resumebank_qualification
+-- 
+
+/*!40000 ALTER TABLE `recruitment_resumebank_qualification` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(0,5500,103,7,'ANNA UNIVERSITY',NULL,NULL,NULL,NULL,NULL,NULL,'2002-01-01 00:00:00','2006-12-31 00:00:00','74.11','2018-07-04 16:55:11');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(0,5500,104,0,'',NULL,NULL,NULL,NULL,NULL,NULL,'0001-01-01 00:00:00','2002-12-31 00:00:00','77.8','2018-07-04 16:58:03');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(0,5500,105,0,'',NULL,NULL,NULL,NULL,NULL,NULL,'0001-01-01 00:00:00','2000-12-31 00:00:00','92.4','2018-07-04 16:58:08');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(0,6744,47,-1,'df','sdf',0,8,2017,1,2018,NULL,NULL,'dsf','2018-10-12 10:11:31');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4835,91,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-04-24 11:58:08');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4835,92,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-04-24 11:58:08');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4835,93,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-04-24 11:58:08');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4836,91,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-04-24 12:15:56');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4836,92,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-04-24 12:15:56');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4873,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-09-22 15:53:13');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4875,92,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 13:50:31');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4875,94,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 13:50:31');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4875,95,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 13:50:31');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4875,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 13:50:31');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4876,92,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 15:43:53');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4876,94,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 15:43:53');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4876,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 15:43:53');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) VALUES
+(2,4877,92,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2017-10-11 15:47:22');
+INSERT INTO `recruitment_resumebank_qualification`(`ClientID`,`CandidateID`,`QualificationID`,`InstitutionTypeID`,`InstitutionName`,`Major`,`IsCurrent`,`StartMonth`,`StartYear`,`EndMonth`,`EndYear`,`StartDate`,`EndDate`,`Aggregate`,`LastUPD`) V

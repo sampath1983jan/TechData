@@ -1,0 +1,802 @@
+LL,NULL,NULL,NULL,5,0,'2015-09-07 10:17:18');
+INSERT INTO `task_notification`(`TaskNotificationID`,`ClientID`,`ModuleID`,`GroupID`,`NotifyType`,`NotificationName`,`IsNotify`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`BUHead`,`DeptHead`,`HRManager`,`EmployeeTemplateID`,`OwnerTemplateID`,`FollowerTemplateID`,`ManagerTemplateID`,`BuddyTemplateID`,`HRContactTemplateID`,`BUHeadTemplateID`,`DeptHeadTemplateID`,`HRManagerTemplateID`,`UserType`,`IsCustomeUserType`,`LastUPD`) VALUES
+(793,33,12,3,1,'Notify HR Contact as employee Separation is published & the user is assigned as HR Contact',1,4,4,4,4,4,1,4,4,4,NULL,NULL,NULL,NULL,NULL,105,NULL,NULL,NULL,3,0,'2015-09-07 10:17:18');
+INSERT INTO `task_notification`(`TaskNotificationID`,`ClientID`,`ModuleID`,`GroupID`,`NotifyType`,`NotificationName`,`IsNotify`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`BUHead`,`DeptHead`,`HRManager`,`EmployeeTemplateID`,`OwnerTemplateID`,`FollowerTemplateID`,`ManagerTemplateID`,`BuddyTemplateID`,`HRContactTemplateID`,`BUHeadTemplateID`,`DeptHeadTemplateID`,`HRManagerTemplateID`,`UserType`,`IsCustomeUserType`,`LastUPD`) VALUES
+(794,33,12,4,8,'Notify when Separation for employee is Closed',1,1,1,1,1,4,1,4,4,4,121,106,107,108,NULL,109,NULL,NULL,NULL,0,0,'2015-09-07 10:17:18');
+INSERT INTO `task_notification`(`TaskNotificationID`,`ClientID`,`ModuleID`,`GroupID`,`NotifyType`,`NotificationName`,`IsNotify`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`BUHead`,`DeptHead`,`HRManager`,`EmployeeTemplateID`,`OwnerTemplateID`,`FollowerTemplateID`,`ManagerTemplateID`,`BuddyTemplateID`,`HRContactTemplateID`,`BUHeadTemplateID`,`DeptHeadTemplateID`,`HRManagerTemplateID`,`UserType`,`IsCustomeUserType`,`LastUPD`) VALUES
+(795,33,12,4,9,'Notify for Bulk Reminder',1,3,1,3,3,4,3,4,4,4,NULL,113,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-07 10:17:18');
+INSERT INTO `task_notification`(`TaskNotificationID`,`ClientID`,`ModuleID`,`GroupID`,`NotifyType`,`NotificationName`,`IsNotify`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`BUHead`,`DeptHead`,`HRManager`,`EmployeeTemplateID`,`OwnerTemplateID`,`FollowerTemplateID`,`ManagerTemplateID`,`BuddyTemplateID`,`HRContactTemplateID`,`BUHeadTemplateID`,`DeptHeadTemplateID`,`HRManagerTemplateID`,`UserType`,`IsCustomeUserType`,`LastUPD`) VALUES
+(796,33,12,6,11,'Notify when a task is completed',1,1,1,1,3,4,3,4,4,4,110,111,112,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-07 10:17:18');
+INSERT INTO `task_notification`(`TaskNotificationID`,`ClientID`,`ModuleID`,`GroupID`,`NotifyType`,`NotificationName`,`IsNotify`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`BUHead`,`DeptHead`,`HRManager`,`EmployeeTemplateID`,`OwnerTemplateID`,`FollowerTemplateID`,`ManagerTemplateID`,`BuddyTemplateID`,`HRContactTemplateID`,`BUHeadTemplateID`,`DeptHeadTemplateID`,`HRManagerTemplateID`,`UserType`,`IsCustomeUserType`,`LastUPD`) VALUES
+(797,33,12,6,12,'Notify for task reopening',1,1,1,1,3,4,3,4,4,4,120,117,118,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-07 10:17:18');
+INSERT INTO `task_notification`(`TaskNotificationID`,`ClientID`,`ModuleID`,`GroupID`,`NotifyType`,`NotificationName`,`IsNotify`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`BUHead`,`DeptHead`,`HRManager`,`EmployeeTemplateID`,`OwnerTemplateID`,`FollowerTemplateID`,`ManagerTemplateID`,`BuddyTemplateID`,`HRContactTemplateID`,`BUHeadTemplateID`,`DeptHeadTemplateID`,`HRManagerTemplateID`,`UserType`,`IsCustomeUserType`,`LastUPD`) VALUES
+(798,33,12,6,13,'Notify for Comments',1,1,1,1,1,4,3,4,4,4,114,115,116,119,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-07 10:17:18');
+COMMIT;
+/*!40000 ALTER TABLE `task_notification` ENABLE KEYS */;
+
+-- 
+-- Definition of task_notification_group
+-- 
+
+CREATE TABLE IF NOT EXISTS `task_notification_group` (
+  `ClientID` int(11) NOT NULL,
+  `ModuleID` int(11) NOT NULL,
+  `GroupID` int(11) NOT NULL,
+  `GroupUserType` int(11) DEFAULT NULL,
+  `GroupName` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`ModuleID`,`GroupID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table task_notification_group
+-- 
+
+/*!40000 ALTER TABLE `task_notification_group` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(2,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(2,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(2,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(2,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(2,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(2,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(3,11,14,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(3,11,15,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(3,11,18,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(3,12,16,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(3,12,17,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(3,12,19,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(6,11,35,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(6,11,36,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(6,11,39,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(6,12,37,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(6,12,38,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(6,12,40,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(7,11,42,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(7,11,43,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(7,11,46,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(7,12,44,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(7,12,45,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(7,12,47,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(8,11,49,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(8,11,50,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(8,11,53,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(8,12,51,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(8,12,52,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(8,12,54,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(9,11,56,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(9,11,57,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(9,11,60,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(9,12,58,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(9,12,59,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(9,12,61,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(10,11,63,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(10,11,64,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(10,11,67,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(10,12,65,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(10,12,66,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(10,12,68,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(11,11,70,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(11,11,71,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(11,11,74,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(11,12,72,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(11,12,73,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(11,12,75,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(12,11,77,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(12,11,78,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(12,11,81,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(12,12,79,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(12,12,80,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(12,12,82,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(13,11,84,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(13,11,85,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(13,11,88,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(13,12,86,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(13,12,87,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(13,12,89,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(14,11,91,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(14,11,92,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(14,11,95,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(14,12,93,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(14,12,94,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(14,12,96,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(15,11,98,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(15,11,99,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(15,11,102,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(15,12,100,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(15,12,101,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(15,12,103,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(16,11,105,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(16,11,106,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(16,11,109,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(16,12,107,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(16,12,108,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(16,12,110,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(17,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(17,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(17,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(17,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(17,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(17,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(18,11,119,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(18,11,120,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(18,11,123,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(18,12,121,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(18,12,122,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(18,12,124,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(19,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(19,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(19,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(19,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(19,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(19,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(27,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(27,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(27,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(27,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(27,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(27,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(28,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(28,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(28,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(28,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(28,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(28,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(29,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(29,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(29,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(29,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(29,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(29,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(30,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(30,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(30,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(30,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(30,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(30,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(31,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(31,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(31,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(31,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(31,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(31,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(32,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(32,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(32,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(32,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(32,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(32,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(33,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(33,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(33,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(33,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(33,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(33,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(100000,11,1,1,'Please select the notifications required on publishing onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(100000,11,2,2,'Please select the notifications required during onboarding','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(100000,11,5,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(100000,12,3,1,'Please select the Notifications required during Separation Publish','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(100000,12,4,2,'Please select the Notifications required during Separation','2015-09-07 10:17:18');
+INSERT INTO `task_notification_group`(`ClientID`,`ModuleID`,`GroupID`,`GroupUserType`,`GroupName`,`LastUPD`) VALUES
+(100000,12,6,2,'Please select the Notifications required during Task Activities','2015-09-07 10:17:18');
+COMMIT;
+/*!40000 ALTER TABLE `task_notification_group` ENABLE KEYS */;
+
+-- 
+-- Definition of task_notify
+-- 
+
+CREATE TABLE IF NOT EXISTS `task_notify` (
+  `ClientID` int(11) NOT NULL,
+  `TaskID` int(11) NOT NULL,
+  `TaskNotifyID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `Status` int(11) NOT NULL DEFAULT '0' COMMENT '0-Not Started,1-In-Pogress,2-Completed,3-Error',
+  `StatusMessage` text CHARACTER SET latin1,
+  `CommentID` int(11) DEFAULT NULL,
+  `NotifyID` int(11) NOT NULL,
+  `AssignedEmployee` bit(1) DEFAULT b'0',
+  `Owner` bit(1) DEFAULT b'0',
+  `Follower` bit(1) DEFAULT b'0',
+  `Manager` bit(1) DEFAULT b'0',
+  `Buddy` bit(1) DEFAULT b'0',
+  `HRContact` bit(1) DEFAULT b'0',
+  `HRManager` bit(1) DEFAULT b'0',
+  `BUHead` bit(1) DEFAULT b'0',
+  `DeptHead` bit(1) DEFAULT b'0',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`TaskNotifyID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table task_notify
+-- 
+
+/*!40000 ALTER TABLE `task_notify` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1353,248,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2017-03-01 14:40:16');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1357,249,2,NULL,317,45,1,1,1,0,1,0,0,0,0,'2017-03-13 12:10:22');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1362,250,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2017-03-14 10:49:53');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1362,251,2,NULL,318,53,1,1,1,1,0,0,0,0,0,'2017-03-14 10:50:43');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1356,252,2,NULL,319,45,1,1,1,0,1,0,0,0,0,'2017-03-14 16:28:21');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1356,253,2,NULL,319,45,1,1,1,0,1,0,0,0,0,'2017-03-14 16:30:42');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1356,254,2,NULL,319,45,1,1,1,0,1,0,0,0,0,'2017-03-14 16:30:52');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1356,255,2,NULL,319,45,1,1,1,0,1,0,0,0,0,'2017-03-14 16:31:00');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1356,256,2,NULL,319,45,1,1,1,0,1,0,0,0,0,'2017-03-14 16:38:12');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1399,257,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2017-03-16 17:09:37');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1400,258,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2017-03-16 17:09:40');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1401,259,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2017-03-16 17:09:44');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1425,260,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2017-04-17 19:17:28');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1441,261,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2017-04-21 18:18:35');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1442,262,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2017-04-21 18:18:37');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1528,263,2,NULL,320,45,1,1,1,0,1,0,0,0,0,'2017-11-29 18:42:40');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1528,264,2,NULL,321,45,1,1,1,0,1,0,0,0,0,'2017-11-29 18:42:49');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1528,265,2,NULL,321,45,1,1,1,0,1,0,0,0,0,'2017-11-29 18:43:17');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1528,266,2,NULL,321,45,1,1,1,0,1,0,0,0,0,'2017-11-29 18:43:24');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1546,267,2,NULL,322,53,1,1,1,1,0,0,0,0,0,'2017-12-19 15:52:06');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1546,268,2,NULL,323,53,1,1,1,1,0,0,0,0,0,'2017-12-19 15:52:54');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1549,269,2,NULL,324,53,1,1,1,1,0,0,0,0,0,'2017-12-19 16:10:49');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1519,270,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-02-22 14:34:44');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1519,271,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-02-22 14:35:13');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1596,272,2,NULL,325,45,1,1,1,0,1,0,0,0,0,'2018-08-24 10:12:26');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1613,273,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-09-26 16:42:06');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1613,274,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-09-28 17:30:40');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1637,275,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-09-28 17:35:52');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1638,276,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-09-28 17:36:07');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,277,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-01 16:29:11');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1642,278,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-01 16:29:13');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1642,279,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-01 16:30:25');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,280,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-01 16:31:35');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1644,281,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-01 17:26:59');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1644,282,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-01 17:27:09');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1649,283,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-03 11:25:44');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1649,284,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-03 11:26:45');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1642,285,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-03 11:46:18');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,286,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-03 11:47:24');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1586,287,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-03 11:49:24');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1576,288,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-03 16:21:31');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1576,289,2,NULL,0,52,1,1,1,0,0,0,0,0,0,'2018-10-03 16:21:45');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1575,290,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-03 18:32:24');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1662,291,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-03 20:10:19');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1663,292,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-03 20:12:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1664,293,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-03 20:17:09');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1657,294,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 11:16:15');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1659,295,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 11:19:16');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1667,296,2,NULL,326,53,1,1,1,1,0,0,0,0,0,'2018-10-04 13:35:01');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1667,297,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 13:35:06');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,298,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-04 13:41:05');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,299,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 13:42:13');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,300,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-04 13:42:25');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1641,301,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 13:43:29');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,302,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 13:45:40');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1672,303,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 13:48:01');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1672,304,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 13:48:01');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1672,305,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 13:48:01');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1672,306,2,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-10-04 13:48:01');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,307,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-04 16:16:43');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,308,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,309,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,310,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,311,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,312,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,313,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,314,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,315,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,316,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,317,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,318,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,319,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,320,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:52');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,321,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:52');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,322,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:16:52');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,323,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,324,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,325,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,326,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,327,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,328,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,329,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,330,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,331,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,332,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,333,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,334,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,335,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,336,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,337,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,338,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,339,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,340,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,341,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,342,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,343,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,344,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,345,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,346,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,347,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,348,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:34');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1640,349,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-04 16:21:34');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,350,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-04 16:21:45');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1678,351,2,NULL,327,45,1,1,1,0,1,0,0,0,0,'2018-10-08 13:11:36');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1678,352,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-08 13:12:14');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,353,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-09 17:25:15');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1675,354,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-10-09 17:25:23');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1680,355,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-16 18:04:03');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1680,356,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-10-16 18:04:03');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1682,357,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 12:13:50');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1682,358,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 12:14:01');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1682,359,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 12:17:09');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1682,360,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 12:20:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,361,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 15:04:11');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,362,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 15:04:23');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,363,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 15:04:36');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,364,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 15:04:55');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,365,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 15:05:12');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,366,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 15:08:22');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,367,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 18:04:57');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,368,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 18:28:22');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,369,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 18:29:00');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,370,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 18:54:37');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,371,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 18:54:56');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,372,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 18:56:55');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,373,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 18:57:14');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,374,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 19:04:24');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,375,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 19:04:33');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,376,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 19:31:47');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,377,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 19:44:44');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,378,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 19:44:56');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,379,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 19:46:19');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,380,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 19:46:28');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,381,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-01 20:23:28');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,382,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 20:23:36');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,383,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-01 20:37:08');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,384,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 09:59:56');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,385,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:00:09');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,386,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:03:19');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,387,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:03:36');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,388,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:18:05');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,389,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:18:13');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,390,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:27:07');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,391,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:27:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,392,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:29:11');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,393,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:30:48');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,394,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:32:53');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,395,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:33:27');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,396,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:33:42');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,397,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:33:53');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,398,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:35:10');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,399,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-02 10:42:42');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,400,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-02 10:42:54');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,401,2,NULL,328,45,1,1,1,0,1,0,0,0,0,'2018-11-02 13:13:20');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1694,402,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 09:59:11');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1694,403,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 09:59:13');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,404,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 15:48:45');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,405,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 15:49:21');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,406,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 15:51:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,407,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 16:11:47');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,408,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 16:16:27');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,409,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 16:16:53');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,410,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 16:21:49');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,411,2,NULL,329,45,1,1,1,0,1,0,0,0,0,'2018-11-09 16:23:25');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,412,2,NULL,330,45,1,1,1,0,1,0,0,0,0,'2018-11-09 16:28:05');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,413,2,NULL,332,45,1,1,1,0,1,0,0,0,0,'2018-11-09 16:30:59');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,414,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 16:33:57');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1683,415,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 16:34:11');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,416,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 16:54:34');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,417,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 16:54:37');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1697,418,2,NULL,0,43,1,0,1,0,1,1,0,0,0,'2018-11-09 16:56:49');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1697,419,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 16:56:54');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,420,2,NULL,334,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:02:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,421,2,NULL,335,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:10:06');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,422,2,NULL,336,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:11:42');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,423,2,NULL,337,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:15:32');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,424,2,NULL,338,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:27:51');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,425,2,NULL,339,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:34:44');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,426,2,NULL,340,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:37:35');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,427,2,NULL,341,45,1,1,1,0,1,0,0,0,0,'2018-11-09 17:39:16');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,428,2,NULL,342,45,0,0,0,0,0,0,0,0,0,'2018-11-09 17:40:36');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,429,2,NULL,343,45,0,0,0,0,0,0,0,0,0,'2018-11-09 17:40:57');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,430,2,NULL,344,45,0,0,0,0,0,0,0,0,0,'2018-11-09 17:41:11');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,431,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-09 17:44:20');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,432,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 17:45:02');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,433,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-09 17:46:59');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,434,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 18:11:16');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,435,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-09 18:18:45');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1695,436,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-09 18:19:08');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,437,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 18:19:40');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,438,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-09 18:23:29');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,439,2,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-09 18:44:30');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,440,2,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-09 18:46:23');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1695,441,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-12 15:53:12');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,442,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-12 17:49:25');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,443,0,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-12 18:27:46');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,444,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-12 18:28:13');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1716,445,0,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-12 19:26:07');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1716,446,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-12 19:26:42');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1716,447,0,NULL,351,45,1,1,1,0,1,0,0,0,0,'2018-11-12 19:29:18');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1628,448,0,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-13 11:15:52');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1628,449,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-13 11:15:55');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1628,450,0,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-13 11:15:57');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1628,451,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-13 11:15:59');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1628,452,0,NULL,0,43,1,1,1,0,1,1,0,0,0,'2018-11-13 11:16:17');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1628,453,0,NULL,0,44,1,1,1,0,1,1,0,0,0,'2018-11-13 11:16:18');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,454,0,NULL,0,43,0,0,0,0,1,1,0,0,0,'2018-11-13 15:51:05');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1735,455,0,NULL,0,51,1,1,1,0,0,0,0,0,0,'2018-11-13 16:17:22');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1735,456,0,NULL,0,52,1,1,1,0,0,0,0,0,0,'2018-11-13 16:19:50');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1735,457,0,NULL,352,53,1,1,1,1,0,0,0,0,0,'2018-11-13 16:20:21');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1735,458,0,NULL,353,53,1,1,1,1,0,0,0,0,0,'2018-11-13 16:20:54');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,459,0,NULL,0,44,0,0,0,0,1,1,0,0,0,'2018-11-13 16:38:47');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,460,0,NULL,0,43,0,0,0,0,1,1,0,0,0,'2018-11-13 16:38:49');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,461,0,NULL,0,44,0,0,0,0,1,1,0,0,0,'2018-11-13 16:39:00');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,462,0,NULL,354,45,1,1,1,0,1,0,0,0,0,'2018-11-13 16:39:04');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,463,0,NULL,0,43,0,0,0,0,1,1,0,0,0,'2018-11-13 19:16:23');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,464,0,NULL,0,44,0,0,0,0,1,1,0,0,0,'2018-11-13 19:16:34');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,465,0,NULL,0,43,0,0,0,0,1,1,0,0,0,'2018-11-13 19:19:16');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,466,0,NULL,0,44,0,0,0,0,1,1,0,0,0,'2018-11-13 19:19:20');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,467,0,NULL,0,43,0,0,0,0,1,1,0,0,0,'2018-11-13 19:30:19');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,1696,468,0,NULL,0,44,0,0,0,0,1,1,0,0,0,'2018-11-13 19:30:23');
+INSERT INTO `task_notify`(`ClientID`,`TaskID`,`TaskNotifyID`,`Status`,`StatusMessage`,`CommentID`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`) VALUES
+(2,

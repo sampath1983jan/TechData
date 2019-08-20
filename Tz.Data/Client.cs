@@ -34,7 +34,8 @@ namespace Tz.Data
             DBQuery select;
 
             select = DBQuery.SelectAll(TzAccount.Client.Table).From(TzAccount.Client.Table);
-               // .WhereField(TzAccount.Client.Table, TzAccount.Client.ClientID.Name, Compare.Equals, DBConst.String(ClientID));
+               //.WhereField(TzAccount.Client.Table, TzAccount.Client.ClientID.Name, Compare.In, DBConst.String("12,3,4,5"));
+            
             return db.GetDatatable(select);
         }
 

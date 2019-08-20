@@ -1,0 +1,970 @@
+LUES
+(2,'PR',26,'2018-03-01 18:15:05');
+INSERT INTO `purchase_entity`(`ClientID`,`PrefixText`,`GeneratorID`,`LastUPD`) VALUES
+(2,'PR',27,'2018-04-05 10:18:38');
+INSERT INTO `purchase_entity`(`ClientID`,`PrefixText`,`GeneratorID`,`LastUPD`) VALUES
+(2,'PR',28,'2018-11-07 17:32:11');
+COMMIT;
+/*!40000 ALTER TABLE `purchase_entity` ENABLE KEYS */;
+
+-- 
+-- Definition of purchase_order_request
+-- 
+
+CREATE TABLE IF NOT EXISTS `purchase_order_request` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `OrderID` int(10) unsigned NOT NULL,
+  `RequestID` int(10) unsigned NOT NULL,
+  `VendorID` int(10) unsigned NOT NULL,
+  `CreatedBy` int(10) unsigned NOT NULL,
+  `PO_Number` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `PO_Date` datetime NOT NULL,
+  `PO_TotalAmount` decimal(12,2) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `GST` decimal(12,2) DEFAULT NULL,
+  `GSTValue` decimal(12,2) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`,`OrderID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table purchase_order_request
+-- 
+
+/*!40000 ALTER TABLE `purchase_order_request` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,42,5675,17,90,'PO - 10113','2016-02-11 00:00:00',20175.00,'2016-10-18 15:06:35',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,45,5675,17,90,'1234','2016-10-14 00:00:00',20175.00,'2016-10-14 10:20:06',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,52,5675,17,90,'test','2016-11-18 00:00:00',20175.00,'2016-11-04 10:09:53',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,53,5675,17,90,'test','2016-11-11 00:00:00',20175.00,'2016-11-04 10:41:43',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,54,5675,17,90,'asdasd','2016-11-12 00:00:00',20175.00,'2016-11-04 11:04:08',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,55,5675,17,90,'PO-12334','2017-01-24 00:00:00',20175.00,'2017-01-23 12:09:02',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,46,5678,17,90,'PO-1212','2016-10-20 00:00:00',56000.00,'2016-10-18 15:01:20',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,47,5746,17,90,'PO-123','2016-10-10 00:00:00',15000.00,'2016-10-27 17:12:41',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,49,5746,17,90,'PO1234','2016-11-01 00:00:00',15000.00,'2016-11-01 09:42:44',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,48,5770,18,90,'PO-123','2016-10-31 00:00:00',12000.00,'2016-10-31 11:55:49',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,50,5788,18,90,'PO-123','2016-11-03 00:00:00',21000.00,'2016-11-03 12:51:49',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,51,5788,18,90,'11111111111','2016-11-24 00:00:00',21000.00,'2016-11-03 13:02:34',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,56,5788,18,90,'87979','2017-05-13 00:00:00',21000.00,'2017-05-13 11:47:29',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,59,8149,17,163,'hgjghj','2017-11-05 00:00:00',30.00,'2017-11-06 14:30:29',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,60,8149,17,163,'uyiuyi','2017-11-06 00:00:00',30.00,'2017-11-06 14:31:22',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,62,8149,18,163,'uyio','2017-11-07 00:00:00',6.00,'2017-11-06 14:33:52',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,71,8149,17,90,'5676','2018-01-11 00:00:00',6.00,'2018-01-12 11:59:41',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,72,8149,17,90,'7657','2018-01-11 00:00:00',6.00,'2018-01-12 12:04:23',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,73,8149,17,90,'678','2018-01-19 00:00:00',113.00,'2018-01-17 14:07:11',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,75,8149,17,90,'56767','2018-01-12 00:00:00',2.00,'2018-01-12 12:30:28',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,76,8149,17,90,'65876','2018-01-12 00:00:00',8.00,'2018-01-12 12:34:20',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,78,8149,17,90,'65765','2018-01-12 00:00:00',6.00,'2018-01-12 12:56:18',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,86,8149,17,90,'45645','2018-01-16 00:00:00',36.00,'2018-01-16 15:51:59',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,87,8149,17,90,'4565','2018-01-15 00:00:00',36.00,'2018-01-16 15:54:53',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,89,8149,17,90,'1234','2018-01-01 00:00:00',50.50,'2018-01-16 16:48:42',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,58,8158,18,163,'tyutu','2017-11-10 00:00:00',48.00,'2017-11-06 10:49:46',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,61,8158,18,163,'ghj','2017-11-06 00:00:00',48.00,'2017-11-06 14:32:26',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,67,8158,18,90,'gg','2018-01-11 00:00:00',40.00,'2018-01-12 00:01:55',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,68,8158,18,90,'8799','2018-01-11 00:00:00',48.00,'2018-01-12 00:02:53',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,69,8158,18,90,'565','2018-01-12 00:00:00',48.00,'2018-01-12 09:16:04',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,70,8158,18,90,'rtytr','2018-01-12 00:00:00',80.00,'2018-01-12 11:52:28',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,77,8158,18,90,'45457','2018-01-04 00:00:00',100.00,'2018-01-12 12:38:54',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,79,8158,18,90,'5676','2018-01-17 00:00:00',48.00,'2018-01-16 15:21:19',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,80,8158,18,90,'668','2018-01-17 00:00:00',48.00,'2018-01-16 15:26:28',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,81,8158,18,90,'657657','2018-01-17 00:00:00',48.00,'2018-01-16 15:32:31',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,82,8158,18,90,'65767','2018-01-15 00:00:00',49.00,'2018-01-16 15:35:23',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,83,8158,18,90,'65767','2018-01-10 00:00:00',50.00,'2018-01-16 15:39:49',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,84,8158,18,90,'67657','2018-01-15 00:00:00',50.00,'2018-01-16 15:42:13',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,85,8158,18,90,'436546','2018-01-17 00:00:00',100.00,'2018-01-16 15:51:33',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,88,8158,18,90,'45654645','2018-01-17 00:00:00',101.76,'2018-01-16 18:37:53',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,90,8158,18,90,'5676','2018-01-15 00:00:00',101.76,'2018-01-16 17:36:24',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,91,8158,18,90,'45645','2018-01-16 00:00:00',101.76,'2018-01-16 17:40:15',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,92,8158,18,90,'645645','2018-01-15 00:00:00',101.76,'2018-01-16 18:08:39',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,93,8158,18,90,'5676','2018-01-16 00:00:00',101.76,'2018-01-16 18:22:41',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,94,8158,18,90,'4565','2018-01-16 00:00:00',0.00,'2018-01-16 18:28:45',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,95,8158,18,90,'4565','2018-01-16 00:00:00',0.00,'2018-01-16 18:33:31',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,96,8158,18,90,'56756','2018-01-16 00:00:00',110.00,'2018-01-16 18:39:16',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,97,8158,18,90,'765','2018-01-16 00:00:00',0.00,'2018-01-16 18:45:37',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,98,8158,18,90,'6767','2018-01-16 00:00:00',0.00,'2018-01-16 18:50:25',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,99,8158,18,90,'567','2018-01-16 00:00:00',0.00,'2018-01-16 18:53:16',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,100,8158,18,90,'5654','2018-01-16 00:00:00',70.00,'2018-01-16 19:00:00',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,101,8158,18,90,'765','2018-01-16 00:00:00',80.00,'2018-01-16 19:08:07',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,102,8158,18,90,'546546','2018-01-16 00:00:00',70.00,'2018-01-16 19:14:26',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,103,8158,18,90,'5654','2018-01-16 00:00:00',0.00,'2018-01-16 19:17:09',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,104,8158,18,90,'456','2018-01-16 00:00:00',0.00,'2018-01-16 19:20:42',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,105,8158,18,90,'546','2018-01-16 00:00:00',0.00,'2018-01-16 19:26:34',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,106,8158,18,90,'567','2018-01-16 00:00:00',100.00,'2018-01-16 19:38:03',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,107,8158,18,90,'4564','2018-01-16 00:00:00',120.01,'2018-01-16 19:41:23',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,108,8158,18,90,'45654','2018-01-16 00:00:00',130.52,'2018-01-16 19:43:01',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,111,8158,18,90,'6756','2018-01-16 00:00:00',70.00,'2018-01-16 19:59:27',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,112,8158,18,90,'111','2018-01-16 00:00:00',600.00,'2018-01-16 20:21:26',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,113,8158,18,90,'454','2018-01-16 00:00:00',80.00,'2018-01-16 20:22:14',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,115,8158,18,90,'5465','2018-01-17 00:00:00',50.88,'2018-01-17 12:03:04',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,116,8158,18,90,'7567','2018-01-17 00:00:00',50.88,'2018-01-17 12:12:51',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,117,8158,18,90,'5465','2018-01-17 00:00:00',50.88,'2018-01-17 12:20:22',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,118,8158,18,90,'464','2018-01-17 00:00:00',8760.90,'2018-01-17 12:29:15',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,119,8158,18,90,'565','2018-01-17 00:00:00',50.88,'2018-01-17 12:38:14',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,120,8158,18,90,'546','2018-01-17 00:00:00',120.00,'2018-01-17 12:40:38',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,121,8158,18,90,'343','2018-01-17 00:00:00',50.88,'2018-01-17 12:41:49',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,122,8158,18,90,'454','2018-01-17 00:00:00',50.88,'2018-01-17 12:44:23',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,123,8158,18,90,'54','2018-01-17 00:00:00',50.88,'2018-01-17 12:46:01',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,124,8158,18,90,'345','2018-01-17 00:00:00',60.00,'2018-01-17 12:47:22',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,125,8158,18,90,'4354','2018-01-17 00:00:00',50.85,'2018-01-17 13:37:29',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,63,8303,17,90,'676','2018-01-11 00:00:00',510.00,'2018-01-11 17:56:29',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,64,8303,17,90,'676','2018-01-11 00:00:00',510.00,'2018-01-11 17:57:43',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,65,8303,17,90,'7567','2018-01-12 00:00:00',600.00,'2018-01-12 11:56:38',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,66,8303,17,90,'tet','2018-01-11 00:00:00',510.00,'2018-01-11 18:38:58',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,74,8303,17,90,'56765','2018-01-12 00:00:00',520.00,'2018-01-12 12:07:52',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,109,8303,17,90,'456','2018-01-16 00:00:00',1000.00,'2018-01-16 19:44:39',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,110,8367,16,90,'123987','2018-01-07 00:00:00',700.00,'2018-01-16 19:48:37',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,114,8367,16,90,'222','2018-01-16 00:00:00',3562.00,'2018-01-16 20:26:05',NULL,NULL);
+INSERT INTO `purchase_order_request`(`ClientID`,`OrderID`,`RequestID`,`VendorID`,`CreatedBy`,`PO_Number`,`PO_Date`,`PO_TotalAmount`,`LastUPD`,`GST`,`GSTValue`) VALUES
+(2,126,8812,19,176,'3434','2018-01-17 00:00:00',1059989.40,'2018-01-17 17:09:21',NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `purchase_order_request` ENABLE KEYS */;
+
+-- 
+-- Definition of purchase_order_request_attachment
+-- 
+
+CREATE TABLE IF NOT EXISTS `purchase_order_request_attachment` (
+  `ClientID` int(11) NOT NULL,
+  `OrderID` int(11) NOT NULL,
+  `AttachmentID` int(11) NOT NULL,
+  `FileName` varchar(500) CHARACTER SET latin1 NOT NULL,
+  `EncodeFileName` varchar(500) CHARACTER SET latin1 NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`OrderID`,`AttachmentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table purchase_order_request_attachment
+-- 
+
+/*!40000 ALTER TABLE `purchase_order_request_attachment` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,45,63,'Purchase Request List Report.xls','20169141476420594353.xls','2016-10-14 10:20:06');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,50,78,'20-09-2016 Purchase.txt','20161031478157689799.txt','2016-11-03 12:51:49');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,51,99,'Approval Mail Metric.pdf','20161031478158330240.pdf','2016-11-03 13:02:34');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,51,100,'Book1.xlsx','20161031478158341698.xlsx','2016-11-03 13:02:34');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,51,101,'Absent Email Notifocation.pdf','20161031478158350865.pdf','2016-11-03 13:02:34');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,52,102,'5_logo.jpg','20161041478234363279.jpg','2016-11-04 10:09:54');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,52,103,'2_logo.jpg','20161041478234376118.jpg','2016-11-04 10:09:54');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,53,104,'5_logo.jpg','20161041478236287347.jpg','2016-11-04 10:41:43');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,53,105,'1_logo.jpg','20161041478236290869.jpg','2016-11-04 10:41:43');
+INSERT INTO `purchase_order_request_attachment`(`ClientID`,`OrderID`,`AttachmentID`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,54,106,'4_logo.jpg','20161041478237634507.jpg','2016-11-04 11:04:08');
+COMMIT;
+/*!40000 ALTER TABLE `purchase_order_request_attachment` ENABLE KEYS */;
+
+-- 
+-- Definition of purchase_order_request_item
+-- 
+
+CREATE TABLE IF NOT EXISTS `purchase_order_request_item` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `OrderID` int(10) unsigned NOT NULL,
+  `ItemID` int(10) unsigned NOT NULL,
+  `CampusID` int(10) unsigned NOT NULL,
+  `DepartmentID` int(10) unsigned NOT NULL,
+  `ProgramName` int(10) unsigned NOT NULL,
+  `Category` int(10) unsigned NOT NULL,
+  `SubCategory` int(10) unsigned NOT NULL,
+  `Description` text CHARACTER SET latin1 NOT NULL,
+  `Qty` int(10) unsigned NOT NULL,
+  `Cost` decimal(12,2) NOT NULL,
+  `Amount` decimal(12,2) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`OrderID`,`ItemID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table purchase_order_request_item
+-- 
+
+/*!40000 ALTER TABLE `purchase_order_request_item` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,42,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,'2016-09-28 15:11:37');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,45,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,'2016-10-14 10:20:06');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,46,207,12,4,2,9,12,'uyiyui',7000,8.00,56000.00,'2016-10-18 15:01:20');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,47,215,20,43,1,33,49,'cxfvxgf',15,1000.00,15000.00,'2016-10-27 17:12:31');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,48,221,12,4,1,3,4,'new Items',12,1000.00,12000.00,'2016-10-31 11:55:49');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,49,215,20,43,1,33,49,'cxfvxgf',15,1000.00,15000.00,'2016-11-01 09:42:44');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,50,225,12,4,1,35,53,'FGFGFG',21,1000.00,21000.00,'2016-11-03 10:14:59');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,51,225,12,4,1,35,53,'FGFGFG',21,1000.00,21000.00,'2016-11-03 12:59:28');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,52,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,'2016-11-04 10:09:54');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,53,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,'2016-11-04 10:41:43');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,54,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,'2016-11-04 11:04:08');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,55,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,'2017-01-23 12:08:55');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,56,225,12,4,1,35,53,'FGFGFG',21,1000.00,21000.00,'2017-05-13 11:47:29');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,58,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2017-11-06 10:49:46');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,59,246,20,84,1,1,2,'yui',5,6.00,30.00,'2017-11-06 14:30:29');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,60,246,20,84,1,1,2,'yui',5,6.00,30.00,'2017-11-06 14:31:22');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,61,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2017-11-06 14:32:26');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,62,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2017-11-06 14:33:52');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,63,266,12,54,1,1,2,'dsfdsf',10,51.00,510.00,'2018-01-11 17:56:29');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,65,266,12,54,1,1,2,'dsfdsf',10,51.00,510.00,'2018-01-11 18:12:47');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,66,266,12,54,1,1,2,'dsfdsf',10,51.00,510.00,'2018-01-11 18:38:58');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,67,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-11 19:30:42');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,68,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-12 00:02:53');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,69,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-12 09:16:04');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,70,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-12 09:17:48');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,71,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-12 11:59:41');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,72,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-12 12:04:24');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,73,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-12 12:06:26');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,74,266,12,54,1,1,2,'dsfdsf',10,51.00,510.00,'2018-01-12 12:07:52');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,75,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-12 12:24:28');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,76,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-12 12:34:20');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,77,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-12 12:38:54');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,78,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-12 12:56:06');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,79,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 15:21:19');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,80,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 15:26:28');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,81,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 15:31:36');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,82,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 15:34:25');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,83,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 15:38:40');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,84,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 15:41:42');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,85,249,20,84,1,1,2,'tyu',12,8.00,96.00,'2018-01-16 15:51:16');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,86,246,20,84,1,1,2,'yui',5,6.00,30.00,'2018-01-16 15:52:00');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,86,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-16 15:52:00');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,87,246,20,84,1,1,2,'yui',5,6.00,30.00,'2018-01-16 15:54:53');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,87,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-16 15:54:53');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,88,249,20,84,1,1,2,'tyu',12,8.00,96.00,'2018-01-16 15:56:45');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,89,246,20,84,1,1,2,'yui',5,6.00,30.00,'2018-01-16 16:48:35');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,89,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,'2018-01-16 16:48:35');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,90,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 17:36:24');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,91,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 17:40:15');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,92,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:08:39');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,93,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:22:41');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,94,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:28:45');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,95,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:33:31');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,96,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:39:16');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,97,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:45:37');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,98,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:50:25');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,99,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:53:16');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,100,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 18:55:11');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,101,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:05:19');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,102,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:11:43');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,103,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:17:09');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,104,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:20:42');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,105,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:26:34');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,106,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:34:56');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,107,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:40:29');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,108,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:42:49');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,109,266,12,54,1,1,2,'dsfdsf',10,51.00,510.00,'2018-01-16 19:44:21');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,110,273,20,84,2,1,2,'sdf',77,5.75,442.75,'2018-01-16 19:47:48');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,111,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 19:59:27');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,112,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 20:00:51');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,113,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-16 20:22:03');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,114,272,20,84,1,1,2,'as',101,45.50,4595.50,'2018-01-16 20:25:50');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,114,273,20,84,2,1,2,'sdf',15,5.00,75.00,'2018-01-16 20:25:50');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,115,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:02:59');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,116,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:12:35');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,117,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:20:22');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,118,249,20,84,1,1,2,'tyu',95,87.00,8265.00,'2018-01-17 12:29:06');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,119,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:38:14');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,120,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:40:26');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,121,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:41:49');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,122,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:44:08');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,123,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:46:01');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,124,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 12:47:22');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,125,249,20,84,1,1,2,'tyu',6,8.00,48.00,'2018-01-17 13:37:19');
+INSERT INTO `purchase_order_request_item`(`ClientID`,`OrderID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`LastUPD`) VALUES
+(2,126,275,12,103,2,13,19,'wewe',18,55555.00,999990.00,'2018-01-17 17:07:18');
+COMMIT;
+/*!40000 ALTER TABLE `purchase_order_request_item` ENABLE KEYS */;
+
+-- 
+-- Definition of purchase_request
+-- 
+
+CREATE TABLE IF NOT EXISTS `purchase_request` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `RequestID` int(10) unsigned NOT NULL,
+  `Purchase_RequestID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `RequestedBy` int(10) unsigned NOT NULL,
+  `MajorCategory` int(10) unsigned NOT NULL,
+  `ExpectedDate` datetime NOT NULL,
+  `Currencytype` int(10) unsigned NOT NULL,
+  `Purpose` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`,`Purchase_RequestID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table purchase_request
+-- 
+
+/*!40000 ALTER TABLE `purchase_request` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5675,'PR_2016_79',183,2,'2016-09-30 00:00:00',3,' jhgfjh gjh gjh gkjg j gj gk hgk jhgj gkg khgkj hgk gtiuyg kju','2016-09-28 15:07:06');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5676,'PR_2016_80',90,2,'2016-09-30 00:00:00',8,NULL,'2016-09-28 17:34:09');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5678,'PR_2016_81',90,2,'2016-09-29 00:00:00',4,NULL,'2016-10-04 12:28:01');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5702,'PR_2016_82',90,2,'2016-10-06 00:00:00',7,NULL,'2016-10-06 15:14:47');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5730,'PR_2016_83',90,3,'2016-10-12 00:00:00',3,NULL,'2016-10-17 12:26:44');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5742,'PR_2016_84',90,4,'2016-10-23 00:00:00',2,NULL,'2016-10-20 14:33:42');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5743,'PR_2016_85',90,4,'2016-10-23 00:00:00',2,'Sample Demo Febrics.','2016-10-20 15:43:37');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5746,'PR_2016_86',90,3,'2016-10-23 00:00:00',2,'The items are Damages','2016-10-20 18:24:10');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5770,'PR_2016_88',90,1,'2016-11-01 00:00:00',2,NULL,'2016-10-31 11:52:35');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5785,'PR_2016_89',500,2,'2016-11-30 00:00:00',3,'dd','2016-11-02 16:10:04');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5786,'PR_2016_90',500,6,'2016-11-30 00:00:00',3,'Testing','2016-11-02 16:34:21');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5787,'PR_2016_91',90,3,'2016-11-05 00:00:00',2,'Need to new Items','2016-11-02 17:57:56');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5788,'PR_2016_92',90,4,'2016-11-05 00:00:00',4,'WE NEED NEW FABRICS','2016-11-03 10:09:34');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5791,'PR_2016_93',90,5,'2016-11-05 00:00:00',2,'New Equipment''s','2016-11-03 16:17:33');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5793,'PR_2016_94',90,5,'2016-11-08 00:00:00',1,'sertyyutfdsty','2016-11-04 16:00:51');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5848,'PR_2016_1',90,1,'2016-12-08 00:00:00',2,'','2017-01-23 12:08:05');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5886,'PR_2017_2',90,1,'2017-07-05 00:00:00',7,'','2017-01-12 09:17:48');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,5919,'PR_2017_3',152,1,'2017-01-12 00:00:00',2,'iiopi','2017-01-12 11:34:31');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,6247,'PR_2017_4',90,5,'2017-03-01 00:00:00',2,'','2017-03-28 09:34:31');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,6574,'PR_2017_5',90,1,'2017-05-13 00:00:00',5,'tyu','2017-05-13 11:54:14');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,6575,'PR_2017_6',90,1,'2017-05-13 00:00:00',6,'rty','2017-05-13 12:03:08');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,7901,'PR_2017_7',90,2,'2017-09-27 00:00:00',6,'','2017-11-01 10:01:01');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8149,'PR_2017_8',90,1,'2017-11-16 00:00:00',6,'','2017-11-02 15:26:29');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8158,'PR_2017_9',90,1,'2017-11-03 00:00:00',3,'uu','2017-11-02 18:59:30');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8165,'PR_2017_10',90,1,'2017-11-06 00:00:00',6,'test','2017-11-14 09:12:02');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8237,'PR_2017_11',90,2,'2017-11-14 00:00:00',5,'ytu','2017-11-14 09:13:30');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8260,'PR_2017_12',90,1,'2017-11-15 00:00:00',5,'test','2017-11-17 09:31:40');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8269,'PR_2017_13',90,1,'2017-11-17 00:00:00',6,'jg','2017-11-17 11:35:15');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8271,'PR_2017_14',90,1,'2017-11-30 00:00:00',6,'xv','2017-11-17 11:45:43');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8288,'PR_2017_15',90,1,'2017-11-21 00:00:00',5,'Test','2017-11-20 11:52:39');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8291,'PR_2017_16',183,1,'2017-11-21 00:00:00',6,'tryrty','2017-11-20 12:33:40');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8303,'PR_2017_17',90,1,'2017-11-22 00:00:00',5,'wedsfsdf','2017-11-20 17:19:01');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8304,'PR_2017_18',90,7,'2017-11-23 00:00:00',3,'dgg','2017-11-20 17:26:07');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8367,'PR_2017_19',90,1,'2017-11-01 00:00:00',5,'mbnm','2018-01-16 16:21:03');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8811,'PR_2018_20',90,2,'2018-01-30 00:00:00',3,'ghfg','2018-01-17 12:50:49');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8812,'PR_2018_21',90,2,'2018-01-23 00:00:00',3,'rer','2018-01-17 12:51:21');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8813,'PR_2018_22',90,8,'2018-01-18 00:00:00',12,'tryytuty','2018-01-17 12:59:55');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,8814,'PR_2018_23',90,5,'2018-01-17 00:00:00',7,'df','2018-01-17 13:00:49');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,9005,'PR_2018_24',90,1,'2018-02-23 00:00:00',5,'','2018-02-23 11:26:37');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,9006,'PR_2018_25',90,1,'2018-02-28 00:00:00',3,'test','2018-02-23 13:00:24');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,9438,'PR_2018_27',90,1,'2018-04-28 00:00:00',8,'cfzdf','2018-04-05 10:18:38');
+INSERT INTO `purchase_request`(`ClientID`,`RequestID`,`Purchase_RequestID`,`RequestedBy`,`MajorCategory`,`ExpectedDate`,`Currencytype`,`Purpose`,`LastUPD`) VALUES
+(2,10726,'PR_2018_28',90,1,'2018-11-16 00:00:00',3,'[object Object]','2018-12-27 17:03:47');
+COMMIT;
+/*!40000 ALTER TABLE `purchase_request` ENABLE KEYS */;
+
+-- 
+-- Definition of purchase_request_item
+-- 
+
+CREATE TABLE IF NOT EXISTS `purchase_request_item` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `RequestID` int(10) unsigned NOT NULL,
+  `ItemID` int(10) unsigned NOT NULL,
+  `CampusID` int(10) unsigned NOT NULL,
+  `DepartmentID` int(10) unsigned NOT NULL,
+  `ProgramName` int(10) unsigned NOT NULL,
+  `Category` int(10) unsigned NOT NULL,
+  `SubCategory` int(10) unsigned NOT NULL,
+  `Description` text CHARACTER SET latin1 NOT NULL,
+  `Qty` int(10) unsigned NOT NULL,
+  `Cost` decimal(12,2) NOT NULL,
+  `Amount` decimal(12,2) NOT NULL,
+  `VendorID` int(10) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`,`ItemID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table purchase_request_item
+-- 
+
+/*!40000 ALTER TABLE `purchase_request_item` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5675,150,12,4,1,9,14,'Test - 1',15,1345.00,20175.00,17,'2016-09-28 15:10:42');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5675,151,3,68,2,20,26,'Test - 2',89,451.78,40208.42,16,'2016-09-28 15:10:37');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5676,152,3,68,1,9,14,'fff',33,4444.00,146652.00,18,'2016-10-06 14:40:51');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5678,207,12,4,2,9,12,'uyiyui',7000,8.00,56000.00,17,'2016-10-06 14:47:53');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5678,208,12,4,1,9,14,'tyutyu',5,7.00,35.00,18,'2016-10-06 14:48:14');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5702,209,12,4,1,9,14,'tyuyt',6,8.00,48.00,16,'2016-10-06 15:26:58');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5730,210,12,4,1,24,31,'iuouio',8,8.00,64.00,NULL,'2016-10-17 12:26:44');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5742,211,1,3,1,35,53,'vdsfg',12,1000.00,12000.00,NULL,'2016-10-20 16:41:55');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5743,213,6,68,1,35,53,'uniforms',50,500.00,25000.00,0,'2016-10-20 15:43:37');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5746,215,20,43,1,33,49,'cxfvxgf',15,1000.00,15000.00,17,'2016-10-24 17:21:21');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5770,221,12,4,1,3,4,'new Items',12,1000.00,12000.00,18,'2016-10-31 11:54:07');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5785,222,12,4,1,9,14,'sdf',5,20.00,100.00,NULL,'2016-11-02 16:10:04');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5786,223,1,2,1,52,75,'dd',100,100.00,10000.00,NULL,'2016-11-02 16:34:21');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5787,224,12,4,1,24,31,'earewr',12,1000.00,12000.00,16,'2016-11-02 18:00:05');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5788,225,12,4,1,35,53,'FGFGFG',21,1000.00,21000.00,18,'2016-11-03 10:11:22');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5791,226,20,43,2,40,60,'ffdgf',25,100.00,2500.00,NULL,'2016-11-03 16:17:33');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5793,227,6,61,1,40,60,'rtr',23,345.00,7935.00,NULL,'2016-11-04 16:00:52');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5848,232,12,54,1,1,6,'fgh',5,7.00,35.00,0,'2017-01-23 12:08:05');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5886,230,12,54,1,1,6,'ert',4,6.00,24.00,0,'2017-01-12 09:17:48');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,5919,231,12,54,1,1,6,'uyi',78,67.00,5226.00,NULL,'2017-01-12 11:34:31');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,6247,233,12,54,1,41,59,'hkujk',10,100.00,1000.00,NULL,'2017-03-28 09:34:31');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,6574,234,12,54,1,1,2,'rtyr',6,7.00,42.00,NULL,'2017-05-13 11:54:14');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,6574,235,12,54,2,1,2,'rty',7,8.00,56.00,NULL,'2017-05-13 11:54:14');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,6575,236,1,2,1,1,2,'ry',5,7.00,35.00,NULL,'2017-05-13 12:03:09');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,6575,237,12,54,1,1,2,'y',6,6.00,36.00,NULL,'2017-05-13 12:03:09');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,7901,242,12,54,1,13,19,'sdf',3,3.00,9.00,0,'2017-11-01 10:01:01');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,7901,243,12,54,2,13,19,'234',44,5.00,220.00,0,'2017-11-01 10:01:01');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8149,246,20,84,1,1,2,'yui',5,6.00,30.00,17,'2017-11-02 16:53:21');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8149,247,20,84,2,1,2,'tyutyu',2,3.00,6.00,18,'2017-11-02 16:53:23');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8158,249,20,84,1,1,2,'tyu',6,8.00,48.00,18,'2017-11-06 10:44:57');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8165,252,20,84,1,1,2,'test',20,314.17,6283.40,0,'2018-01-17 11:56:43');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8165,253,20,84,2,1,2,'rty',546,6456.00,3524976.00,NULL,'2018-01-17 11:02:37');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8165,254,12,54,1,3,6,'ytu',567,7.00,3969.00,NULL,'2017-11-14 09:12:02');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8237,255,20,43,1,13,19,'ytu',18,5555.00,99990.00,NULL,'2018-01-17 12:48:16');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8237,256,12,54,1,13,19,'tyu',787,8.00,6296.00,NULL,'2017-11-14 09:13:30');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8260,259,20,84,1,1,2,'test',25,125365645.00,3134141125.00,0,'2018-01-17 12:36:41');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8260,260,20,84,2,1,2,'erwer',1,10.00,10.00,0,'2018-01-17 12:34:35');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8269,261,20,84,2,1,2,'tyu',89,578.00,51442.00,NULL,'2018-01-17 12:33:43');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8271,263,20,84,1,1,2,'ert',4,9.00,36.00,0,'2017-11-17 11:45:43');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8288,264,12,54,1,1,2,'Test',1,4545454545.00,4545454545.00,NULL,'2018-01-17 12:31:22');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8291,265,12,54,1,1,2,'rtry',18,5555.00,99990.00,NULL,'2018-01-17 12:49:06');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8303,266,12,54,1,1,2,'dsfdsf',10,51.00,510.00,17,'2017-11-20 17:24:03');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8304,267,12,54,1,56,78,'fdgdfg',10,50.00,499.99,17,'2017-11-20 17:27:22');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8367,272,20,84,1,1,2,'as',101,45.50,4595.50,16,'2018-01-16 16:44:57');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8367,273,20,84,2,1,2,'sdf',35,5.00,175.00,19,'2018-01-16 16:28:22');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8811,274,12,103,1,13,19,'dgsd',18,55555.00,999990.00,NULL,'2018-01-17 12:52:12');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8812,275,12,103,2,13,19,'wewe',18,55555.00,999990.00,19,'2018-01-17 17:06:24');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8813,276,12,103,2,58,80,'dfgdf',18,5555.00,99990.00,NULL,'2018-01-17 13:03:03');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,8814,277,12,103,1,41,60,'rytr',18,5555.00,99990.00,NULL,'2018-01-17 13:06:31');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,9005,278,12,103,1,1,2,'yui',5,1000.00,5000.00,NULL,'2018-02-23 12:02:02');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,9006,279,12,103,1,1,2,'tu',500,100.00,50000.00,NULL,'2018-02-23 13:00:24');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,9438,280,71,104,1,1,2,'frde',5,100.00,500.00,NULL,'2018-04-05 10:18:38');
+INSERT INTO `purchase_request_item`(`ClientID`,`RequestID`,`ItemID`,`CampusID`,`DepartmentID`,`ProgramName`,`Category`,`SubCategory`,`Description`,`Qty`,`Cost`,`Amount`,`VendorID`,`LastUPD`) VALUES
+(2,10726,282,98,112,1,1,2,'test',10,100.00,1000.00,0,'2018-12-27 17:03:47');
+COMMIT;
+/*!40000 ALTER TABLE `purchase_request_item` ENABLE KEYS */;
+
+-- 
+-- Definition of quarters
+-- 
+
+CREATE TABLE IF NOT EXISTS `quarters` (
+  `ClientID` int(11) NOT NULL,
+  `QuarterID` int(11) NOT NULL,
+  `F_210005` varchar(100) NOT NULL,
+  `RentAmount` decimal(10,0) NOT NULL,
+  `ServiceTaxAmount` decimal(10,0) NOT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`QuarterID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table quarters
+-- 
+
+/*!40000 ALTER TABLE `quarters` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `quarters`(`ClientID`,`QuarterID`,`F_210005`,`RentAmount`,`ServiceTaxAmount`,`ActionBy`,`LastUPD`) VALUES
+(2,1,'Q1',60000,32,30,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `quarters` ENABLE KEYS */;
+
+-- 
+-- Definition of r_23
+-- 
+
+CREATE TABLE IF NOT EXISTS `r_23` (
+  `Client` varchar(22) NOT NULL,
+  `ffff` varchar(33) DEFAULT NULL,
+  PRIMARY KEY (`Client`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table r_23
+-- 
+
+/*!40000 ALTER TABLE `r_23` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `r_23` ENABLE KEYS */;
+
+-- 
+-- Definition of rec_candidateimport
+-- 
+
+CREATE TABLE IF NOT EXISTS `rec_candidateimport` (
+  `ClientID` int(11) NOT NULL,
+  `ImportID` int(11) NOT NULL,
+  `ImportedON` datetime DEFAULT NULL,
+  `ImportedBy` int(11) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `StatusText` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `UploadFilePath` varchar(1000) CHARACTER SET latin1 DEFAULT NULL,
+  `FileName` varchar(1000) CHARACTER SET latin1 DEFAULT NULL,
+  `ErrorLogPath` varchar(1000) CHARACTER SET latin1 DEFAULT NULL,
+  `TotalRecord` int(11) DEFAULT NULL,
+  `SuccessFullCount` int(11) DEFAULT NULL,
+  `ErrorCount` int(11) DEFAULT NULL,
+  `DuplicateCount` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`ImportID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table rec_candidateimport
+-- 
+
+/*!40000 ALTER TABLE `rec_candidateimport` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `rec_candidateimport` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_activity_track
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_activity_track` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `OpeningID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `Action` varchar(1000) DEFAULT NULL,
+  `ActionBy` int(10) unsigned DEFAULT NULL,
+  `ActionOn` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+-- 
+-- Dumping data for table recruitment_activity_track
+-- 
+
+/*!40000 ALTER TABLE `recruitment_activity_track` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been published.',90,'2017-12-18 17:36:47','2017-12-18 17:36:47');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 15:02:52','2017-12-20 15:02:52');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'1 - Candidate(s) has been imported from resume bank.',90,'2017-12-20 16:01:50','2017-12-20 16:01:50');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'gghh is Forwarded from Candidate Application to Application Screening.',90,'2017-12-20 16:01:59','2017-12-20 16:01:59');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'gghh is Forwarded from Application Screening to evaluation.',90,'2017-12-20 16:02:04','2017-12-20 16:02:04');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for TY on - 12/20/2017 from 01:00 AM to 01:30 AM at   gfhfgh. The Evaluators are Bowya.N,AA',90,'2017-12-20 16:03:02','2017-12-20 16:03:02');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:03:57','2017-12-20 16:03:57');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:04:53','2017-12-20 16:04:53');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:05:48','2017-12-20 16:05:48');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:07:18','2017-12-20 16:07:18');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:08:45','2017-12-20 16:08:45');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:11:26','2017-12-20 16:11:26');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for iouuo on - 12/20/2017 from 01:00 AM to 01:30 AM at   ghj. The Evaluators are A.Sampath Kumar',90,'2017-12-20 16:12:33','2017-12-20 16:12:33');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:15:08','2017-12-20 16:15:08');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:17:09','2017-12-20 16:17:09');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for iouuo on - 12/20/2017 from 01:00 AM to 01:30 AM at   ghj. The Evaluators are A.Sampath Kumar,A.Suresh Kumar',90,'2017-12-20 16:21:18','2017-12-20 16:21:18');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:23:17','2017-12-20 16:23:17');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for iouuo on - 12/20/2017 from 01:00 AM to 01:30 AM at   gfh. The Evaluators are A.Sampath Kumar,A.Suresh Kumar',90,'2017-12-20 16:24:56','2017-12-20 16:24:56');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:26:56','2017-12-20 16:26:56');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for iouuo on - 12/20/2017 from 01:00 AM to 01:30 AM at   iuouio. The Evaluators are A.Suresh Kumar',90,'2017-12-20 16:33:04','2017-12-20 16:33:04');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:34:27','2017-12-20 16:34:27');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:36:32','2017-12-20 16:36:32');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for fdhghghfghgfhfghgfh on - 12/20/2017 from 01:00 AM to 01:30 AM at   yui. The Evaluators are A.Sampath Kumar',90,'2017-12-20 16:47:14','2017-12-20 16:47:14');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-20 16:52:49','2017-12-20 16:52:49');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for fdhghghfghgfhfghgfh on - 12/13/2017 from 01:00 AM to 01:30 AM at   ert. The Evaluators are A.Sampath Kumar',90,'2017-12-22 10:24:35','2017-12-22 10:24:35');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-22 10:24:52','2017-12-22 10:24:52');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-22 10:25:27','2017-12-22 10:25:27');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2017-12-27 18:32:07','2017-12-27 18:32:07');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/28/2017 from 01:00 AM to 01:30 AM at   fgh. The Evaluators are A.Suresh Kumar',90,'2017-12-28 10:57:50','2017-12-28 10:57:50');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/28/2017 from 01:00 AM to 01:30 AM at   rt. The Evaluators are A.Suresh Kumar',90,'2017-12-28 10:59:45','2017-12-28 10:59:45');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/8/2017 from 01:00 AM to 01:30 AM at   rgre. The Evaluators are A.Suresh Kumar,AA',90,'2017-12-28 16:14:03','2017-12-28 16:14:03');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/28/2017 from 01:00 AM to 01:30 PM at   ert. The Evaluators are AA',90,'2017-12-28 16:32:17','2017-12-28 16:32:17');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/21/2017 from 01:00 AM to 01:30 AM at   768. The Evaluators are AA',90,'2017-12-28 16:40:52','2017-12-28 16:40:52');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/28/2017 from 01:00 AM to 01:30 AM at   nbn. The Evaluators are Balaguru S',90,'2017-12-28 16:48:47','2017-12-28 16:48:47');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/28/2017 from 02:30 AM to 03:30 AM at   hj. The Evaluators are A.Suresh Kumar',90,'2017-12-28 17:07:14','2017-12-28 17:07:14');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 12/28/2017 from 01:00 AM to 03:30 AM at   hjk. The Evaluators are AA',90,'2017-12-28 17:39:11','2017-12-28 17:39:11');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2018-01-03 09:47:25','2018-01-03 09:47:25');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/3/2018 from 01:00 AM to 01:30 AM at   yuiyu. The Evaluators are A.Sampath Kumar',90,'2018-01-03 10:05:31','2018-01-03 10:05:31');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/4/2018 from 01:00 AM to 01:30 AM at   qwe. The Evaluators are A.Sampath Kumar',90,'2018-01-04 18:46:09','2018-01-04 18:46:09');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/3/2018 from 01:00 AM to 05:30 AM at   ertr. The Evaluators are A.Sampath Kumar',90,'2018-01-04 19:23:49','2018-01-04 19:23:49');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/5/2018 from 01:00 AM to 01:30 AM at   dfg. The Evaluators are A.Sampath Kumar',90,'2018-01-05 11:55:34','2018-01-05 11:55:34');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'The Evaluator has been changed for ghjghjhgj. The Evaluators are Dato  Dr. Palaniappan A/L Ramanathan Chettia,A.Sampath Kumar',90,'2018-01-05 12:39:45','2018-01-05 12:39:45');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/5/2018 from 01:00 AM to 01:30 AM at   dfg ok',90,'2018-01-05 14:52:10','2018-01-05 14:52:10');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/5/2018 from 01:00 AM to 01:30 AM at   dfg ok dfdf',90,'2018-01-05 14:55:50','2018-01-05 14:55:50');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Opening has been modified.',90,'2018-01-05 14:59:52','2018-01-05 14:59:52');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for hfgh on - 1/31/2018 from 11:00 AM to 11:30 AM at   ok. The Evaluators are K.Suresh,A.Suresh Kumar',90,'2018-01-05 15:00:53','2018-01-05 15:00:53');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for hfgh on - 1/30/2018 from 10:00 AM to 10:30 AM at   ok okkkk',90,'2018-01-05 15:04:51','2018-01-05 15:04:51');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/5/2018 from 01:00 AM to 03:30 AM at   wer. The Evaluators are A.Sampath Kumar',90,'2018-01-05 15:57:53','2018-01-05 15:57:53');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/5/2018 from 01:00 AM to 03:30 AM at   rty. The Evaluators are A.Sampath Kumar',90,'2018-01-05 16:08:23','2018-01-05 16:08:23');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for hfgh on - 1/4/2018 from 01:00 AM to 05:30 AM at   dfg. The Evaluators are A.Sampath Kumar',90,'2018-01-05 16:55:02','2018-01-05 16:55:02');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/4/2018 from 01:00 AM to 05:00 AM at   wer. The Evaluators are A.Sampath Kumar',90,'2018-01-05 16:59:23','2018-01-05 16:59:23');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/4/2018 from 01:00 AM to 05:00 AM at   wer',90,'2018-01-05 17:01:06','2018-01-05 17:01:06');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/4/2018 from 01:00 AM to 05:00 AM at   wer',90,'2018-01-05 17:14:51','2018-01-05 17:14:51');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/9/2018 from 01:00 AM to 03:30 AM at   ytuy. The Evaluators are A.Sampath Kumar',90,'2018-01-08 10:31:45','2018-01-08 10:31:45');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/9/2018 from 01:00 AM to 03:30 AM at   ytuy',90,'2018-01-08 10:33:11','2018-01-08 10:33:11');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/9/2018 from 01:00 AM to 03:30 AM at   kl;. The Evaluators are A.Sampath Kumar',90,'2018-01-08 10:35:22','2018-01-08 10:35:22');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/9/2018 from 01:00 AM to 03:30 AM at   kl;',90,'2018-01-08 10:36:40','2018-01-08 10:36:40');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'dfgdfg has been added to this opening.',90,'2018-01-08 12:47:46','2018-01-08 12:47:46');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'uiuiu has been added to this opening.',90,'2018-01-08 13:07:17','2018-01-08 13:07:17');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'gghh is Forwarded from evaluation to selection.',90,'2018-01-16 10:44:17','2018-01-16 10:44:17');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'dfgdfg is Forwarded from Candidate Application to Application Screening.',90,'2018-01-19 17:06:36','2018-01-19 17:06:36');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'dfgdfg is Forwarded from Application Screening to evaluation.',90,'2018-01-19 17:06:39','2018-01-19 17:06:39');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'uiuiu is Forwarded from Candidate Application to Application Screening.',90,'2018-01-19 17:07:10','2018-01-19 17:07:10');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'uiuiu is Forwarded from Application Screening to evaluation.',90,'2018-01-19 17:07:23','2018-01-19 17:07:23');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'dfgdfg is Backwarded from evaluation.',90,'2018-01-19 17:07:40','2018-01-19 17:07:40');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'gghh has been made as employee.',90,'2018-01-19 17:14:44','2018-01-19 17:14:44');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds. The Evaluators are Dato  Dr. Palaniappan A/L Ramanathan Chettia',90,'2018-01-23 14:16:45','2018-01-23 14:16:45');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been scheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds. The Evaluators are Dato  Dr. Palaniappan A/L Ramanathan Chettia',90,'2018-01-23 14:17:06','2018-01-23 14:17:06');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 13:52:59','2018-02-01 13:52:59');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 14:01:28','2018-02-01 14:01:28');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 15:00:33','2018-02-01 15:00:33');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 15:47:28','2018-02-01 15:47:28');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 16:34:33','2018-02-01 16:34:33');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 16:45:22','2018-02-01 16:45:22');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 16:50:35','2018-02-01 16:50:35');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 17:20:35','2018-02-01 17:20:35');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-01 17:32:15','2018-02-01 17:32:15');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-02 11:03:02','2018-02-02 11:03:02');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-02 16:16:17','2018-02-02 16:16:17');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-02 16:37:38','2018-02-02 16:37:38');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 10:30:08','2018-02-05 10:30:08');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'dfgdfg is Forwarded from Application Screening to evaluation.',90,'2018-02-05 10:37:20','2018-02-05 10:37:20');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 10:42:22','2018-02-05 10:42:22');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 10:44:09','2018-02-05 10:44:09');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 11:29:47','2018-02-05 11:29:47');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 11:54:45','2018-02-05 11:54:45');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 11:57:35','2018-02-05 11:57:35');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 11:59:59','2018-02-05 11:59:59');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 12:02:43','2018-02-05 12:02:43');
+INSERT INTO `recruitment_activity_track`(`ClientID`,`OpeningID`,`UserID`,`Action`,`ActionBy`,`ActionOn`,`LastUPD`) VALUES
+(2,307,90,'Interview has been rescheduled for ghjghjhgj on - 1/1/2018 from 12:00 AM to 04:30 AM at   dsdsds',90,'2018-02-05 12:08:33','2018-02-05 12:08:33');
+INSERT INTO `recruitment_activity_track`(`ClientID

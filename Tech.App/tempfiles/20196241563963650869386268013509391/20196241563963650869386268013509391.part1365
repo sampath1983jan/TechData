@@ -1,0 +1,659 @@
+\"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Position');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40825,'Relationship',3,40800,'Relationship',9,2,'{\"FieldInstanceLookUpID\":\"104\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"Father\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Relationship');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40825,'Relationship',3,40800,'Relationship',9,3,'{\"FieldInstanceLookUpID\":\"104\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"Father\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Relationship');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40825,'Relationship',3,40800,'Relationship',9,4,'{\"FieldInstanceLookUpID\":\"104\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"Father\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Relationship');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40825,'Relationship',3,40800,'Relationship',9,100000,'{\"FieldInstanceLookUpID\":\"104\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"Father\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Relationship');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40905,'InfoID',1,40900,'InfoID',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,0,1,'InfoID');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40910,'IsFriendsHere',15,40900,'Do you have friends or relatives in this organization',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Do you have friends or relatives in this organization');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40915,'Name',2,40900,'Name',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Name');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40920,'Position',2,40900,'Position',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Position');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40925,'Department',2,40900,'Department',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Department');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40930,'AlreadyApplied',15,40900,'AlreadyApplied',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'AlreadyApplied');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40935,'Details',2,40900,'Kindly state the details',10,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Kindly state the details');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41005,'SPID',1,41000,'SPID',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,0,1,'SPID');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41010,'CriminalRecord',15,41000,'Do you have any criminal record orpending court case',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Do you have any criminal record orpending court case');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41015,'ExplainCriminalRecord',2,41000,'Please explain ',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Please explain');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41020,'Bankruptcy',15,41000,'Declared for bankruptcy in any bank ',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Declared for bankruptcy in any bank ');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41025,'ExplainBankruptcy',2,41000,'State the details',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Please explain');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41030,'Dismissed',15,41000,'Have you ever been dismissed or terminated before',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Do you have any illness or health problems');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41035,'ExplainDismissed',2,41000,'Please explain the details',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Please explain');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41040,'Illness',15,41000,'Do you have any illness or health problems',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Do you have any illness or health problems');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41045,'ExplainIllness',2,41000,'Please explain all the details',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Please explain');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41050,'Dissabilities',15,41000,'Do you have any dissabilities',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"10\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Do you have any dissabilities');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41055,'ExplainDissabilities',2,41000,'What kind of assistance or facilities that you require',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"11\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'What kind of assistance or facilities that you require');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41060,'Surgery',15,41000,'Indicate major illness or surgery of mental history',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"12\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Indicate major illness or surgery of mental history');
+INSERT INTO `recruitment_fieldinstance`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(41065,'ExplainSurgery',2,41000,'Please state the details',11,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Please state the details');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_fieldinstance` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_fieldinstance1
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_fieldinstance1` (
+  `FieldInstanceID` int(10) NOT NULL,
+  `FieldName` varchar(255) DEFAULT NULL,
+  `FieldTypeID` int(10) NOT NULL,
+  `CompType` int(10) NOT NULL,
+  `FieldDescription` varchar(255) DEFAULT NULL,
+  `FieldGroupID` int(10) DEFAULT NULL,
+  `ClientID` int(10) NOT NULL,
+  `FieldAttribute` varchar(1000) DEFAULT NULL,
+  `isListField` tinyint(1) DEFAULT NULL,
+  `isCRField` tinyint(1) DEFAULT NULL,
+  `isAutoIncrement` tinyint(1) DEFAULT NULL,
+  `isSysIncrement` tinyint(1) DEFAULT NULL,
+  `FieldDescription_AR` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_fieldinstance1
+-- 
+
+/*!40000 ALTER TABLE `recruitment_fieldinstance1` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40105,'AddressID',3,40100,'Address Type',2,2,'{\"FieldInstanceLookUpID\":\"117\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'AddressID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40105,'AddressID',3,40100,'Address Type',2,3,'{\"FieldInstanceLookUpID\":\"117\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'AddressID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40105,'AddressID',3,40100,'Address Type',2,4,'{\"FieldInstanceLookUpID\":\"117\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'AddressID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40105,'AddressID',3,40100,'Address Type',2,100000,'{\"FieldInstanceLookUpID\":\"117\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'AddressID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40110,'Address',6,40100,'Address',2,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Address');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40110,'Address',6,40100,'Address',2,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Address');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40110,'Address',6,40100,'Address',2,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Address');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40110,'Address',6,40100,'Address',2,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Address');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40205,'SkillID',2,40200,'Skill',3,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40205,'SkillID',3,40200,'Skill',3,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40205,'SkillID',3,40200,'Skill',3,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40205,'SkillID',3,40200,'Skill',3,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40210,'SkillTypeID',3,40200,'Skill Type',3,2,'{\"FieldInstanceLookUpID\":\"276\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40210,'SkillTypeID',3,40200,'Skill Type',3,3,'{\"FieldInstanceLookUpID\":\"276\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40210,'SkillTypeID',3,40200,'Skill Type',3,4,'{\"FieldInstanceLookUpID\":\"276\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40210,'SkillTypeID',3,40200,'Skill Type',3,100000,'{\"FieldInstanceLookUpID\":\"276\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Skill Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40305,'QualificationID',3,40300,'Qualification',4,2,'{\"FieldInstanceLookUpID\":\"116\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Qualification');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40305,'QualificationID',3,40300,'Qualification',4,3,'{\"FieldInstanceLookUpID\":\"116\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Qualification');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40305,'QualificationID',3,40300,'Qualification',4,4,'{\"FieldInstanceLookUpID\":\"116\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Qualification');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40305,'QualificationID',3,40300,'Qualification',4,100000,'{\"FieldInstanceLookUpID\":\"116\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Qualification');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40310,'InstitutionTypeID',3,40300,'Institution Type',4,2,'{\"FieldInstanceLookUpID\":\"109\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40310,'InstitutionTypeID',3,40300,'Institution Type',4,3,'{\"FieldInstanceLookUpID\":\"109\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40310,'InstitutionTypeID',3,40300,'Institution Type',4,4,'{\"FieldInstanceLookUpID\":\"109\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40310,'InstitutionTypeID',3,40300,'Institution Type',4,100000,'{\"FieldInstanceLookUpID\":\"109\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Type');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40315,'InstitutionName',2,40300,'Institution Name',4,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40315,'InstitutionName',2,40300,'Institution Name',4,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40315,'InstitutionName',2,40300,'Institution Name',4,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40315,'InstitutionName',2,40300,'Institution Name',4,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Institution Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40320,'StartDate',0,40300,'Start Date',4,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40320,'StartDate',0,40300,'Start Date',4,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40320,'StartDate',0,40300,'Start Date',4,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40320,'StartDate',0,40300,'Start Date',4,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40325,'EndDate',0,40300,'End Date',4,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40325,'EndDate',0,40300,'End Date',4,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40325,'EndDate',0,40300,'End Date',4,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40325,'EndDate',0,40300,'End Date',4,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40330,'Aggregate',2,40300,'Aggregate',4,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Aggregate');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40330,'Aggregate',2,40300,'Aggregate',4,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Aggregate');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40330,'Aggregate',2,40300,'Aggregate',4,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Aggregate');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40330,'Aggregate',2,40300,'Aggregate',4,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Aggregate');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40405,'ExperienceID',2,40400,'ExperienceID',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,0,1,'ExperienceID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40405,'ExperienceID',2,40400,'ExperienceID',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,0,1,'ExperienceID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40405,'ExperienceID',2,40400,'ExperienceID',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,0,1,'ExperienceID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40405,'ExperienceID',2,40400,'ExperienceID',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,0,1,'ExperienceID');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40410,'EmployerName',2,40400,'Employer Name',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Employer Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40410,'EmployerName',2,40400,'Employer Name',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Employer Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40410,'EmployerName',2,40400,'Employer Name',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Employer Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40410,'EmployerName',2,40400,'Employer Name',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Employer Name');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40415,'StartDate',0,40400,'Start Date',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40415,'StartDate',0,40400,'Start Date',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40415,'StartDate',0,40400,'Start Date',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40415,'StartDate',0,40400,'Start Date',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Start Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40420,'EndDate',0,40400,'End Date',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40420,'EndDate',0,40400,'End Date',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40420,'EndDate',0,40400,'End Date',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40420,'EndDate',0,40400,'End Date',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'End Date');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40425,'IsCurrent',15,40400,'Is Current',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Is Current');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40425,'IsCurrent',15,40400,'Is Current',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Is Current');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40425,'IsCurrent',15,40400,'Is Current',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Is Current');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40425,'IsCurrent',15,40400,'Is Current',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Is Current');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40430,'JobTitle',2,40400,'Job Title',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Job Title');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40430,'JobTitle',2,40400,'Job Title',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Job Title');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40430,'JobTitle',2,40400,'Job Title',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Job Title');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40430,'JobTitle',2,40400,'Job Title',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Job Title');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40435,'City',2,40400,'City',5,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'City');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40435,'City',2,40400,'City',5,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'City');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40435,'City',2,40400,'City',5,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'City');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40435,'City',2,40400,'City',5,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'City');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40440,'State',3,40400,'State',5,2,'{\"FieldInstanceLookUpID\":\"120\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'State');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40440,'State',3,40400,'State',5,3,'{\"FieldInstanceLookUpID\":\"120\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'State');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40440,'State',3,40400,'State',5,4,'{\"FieldInstanceLookUpID\":\"120\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'State');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40440,'State',3,40400,'State',5,100000,'{\"FieldInstanceLookUpID\":\"120\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'State');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40445,'Country',3,40400,'Country',5,2,'{\"FieldInstanceLookUpID\":\"106\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Country');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40445,'Country',3,40400,'Country',5,3,'{\"FieldInstanceLookUpID\":\"106\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Country');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40445,'Country',3,40400,'Country',5,4,'{\"FieldInstanceLookUpID\":\"106\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Country');
+INSERT INTO `recruitment_fieldinstance1`(`FieldInstanceID`,`FieldName`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`isAutoIncrement`,`isSysIncrement`,`FieldDescription_AR`) VALUES
+(40445,'Country',3,40400,'Country',5,100000,'{\"FieldInstanceLookUpID\":\"106\" , \"isRequired\":\"false\", \"isCore\":\"true\", \"isUnique\":\"false\",\"DefaultValue\":\"-1\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,0,0,'Country');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_fieldinstance1` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_fieldtype
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_fieldtype` (
+  `FieldTypeID` int(10) NOT NULL,
+  `CompAttribute` text CHARACTER SET latin1,
+  `LD` text CHARACTER SET latin1,
+  `VLD` text CHARACTER SET latin1,
+  `WLD` text CHARACTER SET latin1,
+  `TagID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`FieldTypeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_fieldtype
+-- 
+
+/*!40000 ALTER TABLE `recruitment_fieldtype` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40100,'{\"TableName\":\"recruitment_resumebank_address\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"AddressID\",\"IDField4Name\":\"\",\"TitleField\":\"AddressID\",\"ComboField\":\"AddressID\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"AddressDetails\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"AddressID\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"Address\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40200,'{\"TableName\":\"recruitment_resumebank_skills\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"SkillID\",\"IDField4Name\":\"\",\"TitleField\":\"SkillID\",\"ComboField\":\"SkillID,SkillTypeID\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Skills\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"SkillID\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"SkillTypeID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40300,'{\"TableName\":\"recruitment_resumebank_qualification\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"QualificationID\",\"IDField4Name\":\"\",\"TitleField\":\"QualificationID\",\"ComboField\":\"QualificationID\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Qualification\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"InstitutionTypeID\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"InstitutionName\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"Major\",\"value\": \"\",\"Css\":\"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40400,'{\"TableName\":\"recruitment_resumebank_experience\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"ExperienceID\",\"IDField4Name\":\"\",\"TitleField\":\"EmployerName\",\"ComboField\":\"State,Country\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Experience\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"EmployerName\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"IsCurrent\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"JobTitle\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"City\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40500,'{\"TableName\":\"recruitment_resumebank_morefields\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"MoreFieldsID\",\"IDField4Name\":\"\",\"TitleField\":\"MoreFields\",\"ComboField\":\"Race\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"MoreFields\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"MoreFieldsID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40600,'{\"TableName\":\"recruitment_resumebank_familymembers\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"DependentID\",\"IDField4Name\":\"\",\"TitleField\":\"FamilyMembers\",\"ComboField\":\"Race\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"FamilyMembers\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"DependentID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40700,'{\"TableName\":\"recruitment_resumebank_emergencycontact\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"EmergencyContactID\",\"IDField4Name\":\"\",\"TitleField\":\"EmergencyContact\",\"ComboField\":\"Race\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"EmergencyContact\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"EmergencyContactID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40800,'{\"TableName\":\"recruitment_resumebank_reference\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"ReferenceID\",\"IDField4Name\":\"\",\"TitleField\":\"FamilyMembers\",\"ComboField\":\"Race\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Reference\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"ReferenceID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40900,'{\"TableName\":\"recruitment_resumebank_otherinfo\" ,\r\n\"IDField1Name\":\"ClientID\",\r\n\"IDField2Name\":\"CandidateID\",\r\n\"IDField3Name\":\"InfoID\",\r\n\"IDField4Name\":\"\",\r\n\"TitleField\":\"OtherInformation\",\r\n\"ComboField\":\"Race\",\r\n\"TitlePattern\":\",\",\"ComponentType\":\"3\",\r\n\"CustomTable\":\"\",\"ComponentName\":\"OtherInformation\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"InfoID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(41000,'{\"TableName\":\"recruitment_resumebank_sensitiveparticulars\" ,\r\n\"IDField1Name\":\"ClientID\",\r\n\"IDField2Name\":\"CandidateID\",\r\n\"IDField3Name\":\"SPID\",\r\n\"IDField4Name\":\"\",\r\n\"TitleField\":\"SensitiveParticulars\",\r\n\"ComboField\":\"Race\",\r\n\"TitlePattern\":\",\",\"ComponentType\":\"3\",\r\n\"CustomTable\":\"\",\"ComponentName\":\"SensitiveParticulars\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"SPID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_fieldtype` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_fieldtype1
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_fieldtype1` (
+  `FieldTypeID` int(10) NOT NULL,
+  `CompAttribute` text CHARACTER SET latin1,
+  `LD` text CHARACTER SET latin1,
+  `VLD` text CHARACTER SET latin1,
+  `WLD` text CHARACTER SET latin1,
+  `TagID` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_fieldtype1
+-- 
+
+/*!40000 ALTER TABLE `recruitment_fieldtype1` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_fieldtype1`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40000,'{ \"TableName\":\"recruitment_resumebank\" , \"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"\",\"IDField4Name\":\"\",\"TitleField\":\"CandidateID,Name,Email,PhoneNumber,DOB\",\"ComboField\":\"CurrentCtcType,ExpectedCtcType\",\"TitlePattern\":\",\",\"ComponentType\":\"1\",\"CustomTable\":\"\",\"ComponentName\":\"Basic\"}','{\"Rows\":[{\"Css\":\"\",\"Cells\":[{\"Css\":\"\",\"UIFields\":[{\"id\":\"Emp1\",\"key\":\"Name\",\"value\":\"\",\"Css\":\"\"}]}]},{\"Css\":\"\",\"Cells\":[{\"Css\":\"\",\"UIFields\":[{\"id\":\"Emp2\",\"key\":\"Email\",\"value\":\"\",\"Css\":\"mai\"}]}]},{\"Css\":\"\",\"Cells\":[{\"Css\":\"\",\"UIFields\":[{\"id\":\"Emp3\",\"key\":\"PhoneNumber\",\"value\":\"\",\"Css\":\"phn\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype1`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40100,'{\"TableName\":\"recruitment_resumebank_address\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"AddressID\",\"IDField4Name\":\"\",\"TitleField\":\"AddressID\",\"ComboField\":\"AddressID\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"AddressDetails\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"AddressID\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"Address\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype1`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40200,'{\"TableName\":\"recruitment_resumebank_skills\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"SkillID\",\"IDField4Name\":\"\",\"TitleField\":\"SkillID\",\"ComboField\":\"SkillID,SkillTypeID\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Skills\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"SkillID\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"SkillTypeID\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype1`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40300,'{ \"TableName\":\"recruitment_resumebank_qualification\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"QualificationID\",\"IDField4Name\":\"\",\"TitleField\":\"QualificationID\",\"ComboField\":\"QualificationID\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Qualification\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"InstitutionTypeID\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"InstitutionName\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"StartDate\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"EndDate\",\"value\": \"\",\"Css\":\"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"Aggregate\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+INSERT INTO `recruitment_fieldtype1`(`FieldTypeID`,`CompAttribute`,`LD`,`VLD`,`WLD`,`TagID`) VALUES
+(40400,'{\"TableName\":\"recruitment_resumebank_experience\" ,\"IDField1Name\":\"ClientID\",\"IDField2Name\":\"CandidateID\",\"IDField3Name\":\"ExperienceID\",\"IDField4Name\":\"\",\"TitleField\":\"EmployerName\",\"ComboField\":\"State,Country\",\"TitlePattern\":\",\",\"ComponentType\":\"3\",\"CustomTable\":\"\",\"ComponentName\":\"Experience\"}','{\"Rows\": [{\"Css\": \"\",\"Cells\": [{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"EmployerName\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"StartDate\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"EndDate\",\"value\": \"\",\"Css\":\"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"IsCurrent\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"JobTitle\",\"value\": \"\",\"Css\": \"\"}]},{\"Css\": \"\",\"UIFields\": [{\"id\": \"\",\"key\": \"City\",\"value\": \"\",\"Css\": \"\"}]}]}]}',NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_fieldtype1` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_general_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_general_settings` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `SettingsID` int(10) unsigned NOT NULL COMMENT ' ID of the Settings',
+  `DueCount` int(10) unsigned NOT NULL,
+  `DueType` int(10) unsigned NOT NULL COMMENT '1-Month , 2-Day',
+  `IsEnableEmailNotification` int(10) DEFAULT '0' COMMENT '0-False , 1-True',
+  `CreatedBy` int(10) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `IsHRConatct` bit(1) DEFAULT NULL,
+  `Grade` bit(1) DEFAULT b'0',
+  `Gender` bit(1) DEFAULT b'0',
+  `ReportsTo` bit(1) DEFAULT b'0',
+  `Location` bit(1) DEFAULT b'0',
+  `JobDescription` bit(1) DEFAULT b'0',
+  `Designation` bit(1) DEFAULT b'0',
+  PRIMARY KEY (`ClientID`,`SettingsID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_general_settings
+-- 
+
+/*!40000 ALTER TABLE `recruitment_general_settings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_general_settings`(`ClientID`,`SettingsID`,`DueCount`,`DueType`,`IsEnableEmailNotification`,`CreatedBy`,`LastUPD`,`IsHRConatct`,`Grade`,`Gender`,`ReportsTo`,`Location`,`JobDescription`,`Designation`) VALUES
+(2,1,2,1,1,90,'2019-06-18 16:56:58',0,0,0,0,0,0,0);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_general_settings` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_hiring_approval
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_hiring_approval` (
+  `ClientID` int(10) NOT NULL,
+  `HiringApprovalID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `OpeningID` int(11) DEFAULT NULL,
+  `CandidateID` int(11) DEFAULT NULL,
+  `ApproverID` text,
+  `ApproverLevel` int(11) DEFAULT NULL,
+  `ApprovalStatus` int(11) DEFAULT NULL,
+  `ApprovalRemarks` text,
+  `MonthlySalary` decimal(12,2) DEFAULT NULL,
+  `AnnualSalary` decimal(12,2) DEFAULT NULL,
+  `ExpectedDOJ` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `SubmittedBy` varchar(200) DEFAULT NULL,
+  `IsInitiate` int(11) DEFAULT '0',
+  PRIMARY KEY (`HiringApprovalID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table recruitment_hiring_approval
+-- 
+
+/*!40000 ALTER TABLE `recruitment_hiring_approval` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,290,530,5549,'90',1,1,'',NULL,NULL,NULL,'2019-06-06 11:10:07','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,291,530,5549,'90,155',2,0,'',NULL,NULL,NULL,'2019-06-06 11:10:09','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,292,534,5165,'111,122',1,1,'Thanks',1000.00,1000.00,'2019-07-01 00:00:00','2019-06-06 13:50:02','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,293,534,5165,'112',2,0,'Thanks',1000.00,1000.00,'2019-07-01 00:00:00','2019-06-06 13:50:03','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,294,534,6745,'151,153,183,177',1,0,'',NULL,NULL,NULL,'2019-06-06 14:01:01','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,295,534,6745,'153,175',2,0,'',NULL,NULL,NULL,'2019-06-06 14:01:03','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,296,534,6745,'155,178',3,-1,'',NULL,NULL,NULL,'2019-06-06 14:01:04','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,297,532,5418,'90,165',1,0,'',NULL,NULL,NULL,'2019-06-06 17:38:43','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,298,532,5418,'6927',2,0,'',NULL,NULL,NULL,'2019-06-06 17:38:45','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,299,546,5548,'6926',1,1,'',NULL,NULL,NULL,'2019-06-19 12:54:05','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,300,546,5548,'6927',2,1,'',NULL,NULL,NULL,'2019-06-19 12:54:06','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,301,511,7427,'6926',1,1,'Suresh',1000.00,1000.00,'2000-01-01 00:00:00','2019-07-11 19:09:17','90',1);
+INSERT INTO `recruitment_hiring_approval`(`ClientID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`ApprovalRemarks`,`MonthlySalary`,`AnnualSalary`,`ExpectedDOJ`,`LastUPD`,`SubmittedBy`,`IsInitiate`) VALUES
+(2,302,555,7417,'90',1,0,'',NULL,NULL,NULL,'2019-07-16 18:51:26','90',1);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_hiring_approval` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_hiring_approval_audittrial
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_hiring_approval_audittrial` (
+  `ClientID` int(10) NOT NULL,
+  `AuditID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `OpeningID` int(11) DEFAULT NULL,
+  `CandidateID` int(11) DEFAULT NULL,
+  `StatusText` text,
+  `ActionOn` datetime DEFAULT NULL,
+  `ActionByName` text,
+  `ActionByEmpNo` text,
+  `ActionByID` int(11) DEFAULT '0',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AuditID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table recruitment_hiring_approval_audittrial
+-- 
+
+/*!40000 ALTER TABLE `recruitment_hiring_approval_audittrial` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,344,532,7348,'Submitted','2019-06-04 21:04:31',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,345,532,7348,'Approved','2019-06-04 21:04:59',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,346,532,7348,'Approved','2019-06-04 21:05:32',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,347,532,7348,'Approved','2019-06-04 21:06:33',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,348,532,7348,'Retracted','2019-06-04 21:10:34',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,349,532,7348,'Rejected','2019-06-04 21:10:43',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,350,532,6928,'Submitted','2019-06-04 21:26:51',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,351,526,90,'Submitted','2019-06-06 13:04:47',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,352,530,5549,'Submitted','2019-06-06 13:40:09',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,353,530,5549,'Approved','2019-06-06 13:40:30',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,354,534,5165,'Submitted','2019-06-06 16:20:03',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,355,534,6745,'Submitted','2019-06-06 16:31:04',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,356,534,5165,'Approved','2019-06-06 16:31:57',NULL,NULL,111,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,357,532,5418,'Submitted','2019-06-06 20:08:45',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,358,546,5548,'Submitted','2019-06-19 15:24:06',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,359,546,5548,'Approved','2019-06-19 15:24:33',NULL,NULL,6926,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,360,546,5548,'Approved','2019-06-19 18:25:21',NULL,NULL,6927,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,361,511,7427,'Submitted','2019-07-11 21:39:17',NULL,NULL,90,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,362,511,7427,'Approved','2019-07-11 21:40:18',NULL,NULL,6926,NULL);
+INSERT INTO `recruitment_hiring_approval_audittrial`(`ClientID`,`AuditID`,`OpeningID`,`CandidateID`,`StatusText`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,363,555,7417,'Submitted','2019-07-16 21:21:27',NULL,NULL,90,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_hiring_approval_audittrial` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_hiring_approval_log
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_hiring_approval_log` (
+  `ClientID` int(10) NOT NULL,
+  `AuditID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `HiringApprovalID` int(10) NOT NULL,
+  `OpeningID` int(11) DEFAULT NULL,
+  `CandidateID` int(11) DEFAULT NULL,
+  `ApproverID` text,
+  `ApproverLevel` int(11) DEFAULT NULL,
+  `Comments` text,
+  `ActionOn` datetime DEFAULT NULL,
+  `ActionByName` text,
+  `ActionByEmpNo` text,
+  `ActionByID` int(11) DEFAULT '0',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AuditID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table recruitment_hiring_approval_log
+-- 
+
+/*!40000 ALTER TABLE `recruitment_hiring_approval_log` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_hiring_approval_log`(`ClientID`,`AuditID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`Comments`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,459,285,532,7348,'90',NULL,'','2019-06-04 18:40:45',NULL,NULL,90,'2019-06-04 18:40:45');
+INSERT INTO `recruitment_hiring_approval_log`(`ClientID`,`AuditID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`Comments`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,461,290,530,5549,'90',NULL,'','2019-06-06 11:10:31',NULL,NULL,90,'2019-06-06 11:10:31');
+INSERT INTO `recruitment_hiring_approval_log`(`ClientID`,`AuditID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`Comments`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,462,292,534,5165,'111',NULL,NULL,'2019-06-06 14:01:56',NULL,NULL,111,'2019-06-06 14:01:56');
+INSERT INTO `recruitment_hiring_approval_log`(`ClientID`,`AuditID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`Comments`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,464,299,546,5548,'6926',NULL,'','2019-06-19 12:54:33',NULL,NULL,6926,'2019-06-19 12:54:33');
+INSERT INTO `recruitment_hiring_approval_log`(`ClientID`,`AuditID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`Comments`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,466,300,546,5548,'6927',NULL,'','2019-06-19 12:55:22',NULL,NULL,6927,'2019-06-19 12:55:22');
+INSERT INTO `recruitment_hiring_approval_log`(`ClientID`,`AuditID`,`HiringApprovalID`,`OpeningID`,`CandidateID`,`ApproverID`,`ApproverLevel`,`Comments`,`ActionOn`,`ActionByName`,`ActionByEmpNo`,`ActionByID`,`LastUPD`) VALUES
+(2,467,301,511,7427,'6926',NULL,NULL,'2019-07-11 19:10:17',NULL,NULL,6926,'2019-07-11 19:10:17');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_hiring_approval_log` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_hiring_approval_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_hiring_approval_settings` (
+  `ClientID` int(10) NOT NULL,
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `OpeningID` int(11) DEFAULT NULL,
+  `ApproverID` text,
+  `ApproverLevel` int(11) DEFAULT NULL,
+  `ApprovalStatus` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `SubmittedBy` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table recruitment_hiring_approval_settings
+-- 
+
+/*!40000 ALTER TABLE `recruitment_hiring_approval_settings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,314,532,'90,165',1,0,'2019-06-04 18:34:18','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,315,532,'6926,6927',2,-1,'2019-06-04 18:34:18','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,316,530,'90',1,0,'2019-06-06 11:08:04','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,317,530,'155,90',2,-1,'2019-06-06 11:08:04','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,324,534,'153,183,151',1,0,'2019-06-06 14:00:03','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,325,534,'153,175',2,-1,'2019-06-06 14:00:03','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,326,534,'155',3,-1,'2019-06-06 14:00:03','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,327,546,'6926',1,0,'2019-06-19 12:56:34','90');
+INSERT INTO `recruitment_hiring_approval_settings`(`ClientID`,`ID`,`OpeningID`,`ApproverID`,`ApproverLevel`,`ApprovalStatus`,`LastUPD`,`SubmittedBy`) VALUES
+(2,328,546,'6927',2,-1,'2019-06-19 12:56:34','90');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_hiring_approval_settings` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_hiring_attachment
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_hiring_attachment` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `AttachmentID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `OpeningID` int(10) unsigned DEFAULT NULL,
+  `CandidateID` int(10) unsigned DEFAULT NULL,
+  `FileName` text,
+  `EncodeFilename` text,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`AttachmentID`,`ClientID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_hiring_attachment
+-- 
+
+/*!40000 ALTER TABLE `recruitment_hiring_attachment` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_hiring_attachment`(`ClientID`,`AttachmentID`,`OpeningID`,`CandidateID`,`FileName`,`EncodeFilename`,`LastUPD`,`LastActionBy`) VALUES
+(2,7,534,5165,'Candidate Profile Import.xls','2019561559809187811274000556779741.xls','2019-06-06 13:50:03',2);
+INSERT INTO `recruitment_hiring_attachment`(`ClientID`,`AttachmentID`,`OpeningID`,`CandidateID`,`FileName`,`EncodeFilename`,`LastUPD`,`LastActionBy`) VALUES
+(2,8,511,7427,'Image 6.png','20196111562852344706578129241085831.png','2019-07-11 19:09:17',2);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_hiring_attachment` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_hiring_attachment_approver
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_hiring_attachment_approver` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `AttachmentID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `OpeningID` int(10) unsigned DEFAULT NULL,
+  `CandidateID` int(10) unsigned DEFAULT NULL,
+  `HiringApprovalID` int(10) unsigned DEFAULT NULL,
+  `StepID` int(11) DEFAULT NULL,
+  `FileName` text,
+  `EncodeFilename` text,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`AttachmentID`,`ClientID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_hiring_attachment_approver
+-- 
+
+/*!40000 ALTER TABLE `recruitment_hiring_attachment_approver` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_hiring_attachment_approver` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_importcandidate
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_importcandidate` (
+  `ClientID` int(11) NOT NULL,
+  `ImportID` int(11) NOT NULL,
+  `ImportOn` datetime NOT NULL,
+  `ImportBy` int(11) NOT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `StatusText` text CHARACTER SET latin1 NOT NULL,
+  `UploadFilePath` varchar(150) CHARACTER SET latin1 NOT NULL,
+  `FileName` varchar(150) CHARACTER SET latin1 NOT NULL,
+  `ErrorLogPath` varchar(150) CHARACTER SET latin1 DEFAULT NULL,
+  `TotalRecord` int(11) DEFAULT NULL,
+  `SuccessFullCount` int(11) DEFAULT NULL,
+  `ErrorCount` int(11) DEFAULT NULL,
+  `NewCandidateCount` int(11) DEFAULT NULL,
+  `UpdateCandidateCount` int(11) DEFAULT NULL,
+  `OverWritePastData` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `CandidateFieldMap` text CHARACTER SET latin1,
+  `ErrorLog` longtext CHARACTER SET latin1,
+  `VirtualPath` varchar(2000) CHARACTER SET latin1 DEFAULT NULL,
+  `UpdateImportID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ImportID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_importcandidate
+-- 
+
+/*!40000 ALTER TABLE `recruitment_importcandidate` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,184,'2019-04-22 19:01:41',90,3,'','2019322155593988628345723225666511.xlsx','import.xlsx','',0,0,0,0,0,1,'2019-04-22 19:16:41','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Development\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,189,'2019-04-23 17:28:18',90,3,'','20193231556020688893724177240441991.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:08','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Development\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,190,'2019-04-24 10:55:52',90,3,'','20193241556083498919759522410454071.xls','import2.xls','',0,0,0,0,0,0,'2019-04-29 16:17:21','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"3\",\"FieldName\":\"DOB\",\"MappingFieldName\":\"DOB\",\"FieldDataType\":\"Date\",\"MappingFieldDataType\":\"System.DateTime\"},{\"FieldID\":\"4\",\"FieldName\":\"Location\",\"MappingFieldName\":\"Location\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"5\",\"FieldName\":\"Phone\",\"MappingFieldName\":\"Phone Number\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"6\",\"FieldName\":\"Experience\",\"MappingFieldName\":\"Experience\",\"FieldDataType\":\"Integer\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"13\",\"FieldName\":\"LanguageKnown\",\"MappingFieldName\":\"Language\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"11\",\"FieldName\":\"Keywords\",\"MappingFieldName\":\"Current Position\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"1\",\"CandidatesUpdated\":\"0\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Development\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,191,'2019-04-29 15:13:04',90,3,'','20193291556530960429330728951129411.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:22','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"3\",\"FieldName\":\"DOB\",\"MappingFieldName\":\"DOB\",\"FieldDataType\":\"Date\",\"MappingFieldDataType\":\"System.DateTime\"},{\"FieldID\":\"4\",\"FieldName\":\"Location\",\"MappingFieldName\":\"Location\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"5\",\"FieldName\":\"Phone\",\"MappingFieldName\":\"Phone Number\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"6\",\"FieldName\":\"Experience\",\"MappingFieldName\":\"Experience\",\"FieldDataType\":\"Integer\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"13\",\"FieldName\":\"LanguageKnown\",\"MappingFieldName\":\"Language\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"11\",\"FieldName\":\"Keywords\",\"MappingFieldName\":\"Current Position\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,192,'2019-04-29 15:49:03',90,3,'','20193291556533108250677437332987651.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:23','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"3\",\"FieldName\":\"DOB\",\"MappingFieldName\":\"DOB\",\"FieldDataType\":\"Date\",\"MappingFieldDataType\":\"System.DateTime\"},{\"FieldID\":\"4\",\"FieldName\":\"Location\",\"MappingFieldName\":\"Location\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"5\",\"FieldName\":\"Phone\",\"MappingFieldName\":\"Phone Number\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"6\",\"FieldName\":\"Experience\",\"MappingFieldName\":\"Experience\",\"FieldDataType\":\"Integer\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"13\",\"FieldName\":\"LanguageKnown\",\"MappingFieldName\":\"Language\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"11\",\"FieldName\":\"Keywords\",\"MappingFieldName\":\"Current Position\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,193,'2019-04-29 15:52:50',90,3,'','20193291556533338638376378839285471.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:24','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"3\",\"FieldName\":\"DOB\",\"MappingFieldName\":\"DOB\",\"FieldDataType\":\"Date\",\"MappingFieldDataType\":\"System.DateTime\"},{\"FieldID\":\"4\",\"FieldName\":\"Location\",\"MappingFieldName\":\"Location\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"5\",\"FieldName\":\"Phone\",\"MappingFieldName\":\"Phone Number\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"6\",\"FieldName\":\"Experience\",\"MappingFieldName\":\"Experience\",\"FieldDataType\":\"Integer\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"13\",\"FieldName\":\"LanguageKnown\",\"MappingFieldName\":\"Language\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"11\",\"FieldName\":\"Keywords\",\"MappingFieldName\":\"Current Position\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,194,'2019-04-29 16:07:19',90,3,'','20193291556534128589573855226547151.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:25','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"3\",\"FieldName\":\"DOB\",\"MappingFieldName\":\"DOB\",\"FieldDataType\":\"Date\",\"MappingFieldDataType\":\"System.DateTime\"},{\"FieldID\":\"4\",\"FieldName\":\"Location\",\"MappingFieldName\":\"Location\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"5\",\"FieldName\":\"Phone\",\"MappingFieldName\":\"Phone Number\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"6\",\"FieldName\":\"Experience\",\"MappingFieldName\":\"Experience\",\"FieldDataType\":\"Integer\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"13\",\"FieldName\":\"LanguageKnown\",\"MappingFieldName\":\"Language\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"11\",\"FieldName\":\"Keywords\",\"MappingFieldName\":\"Current Position\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,195,'2019-04-29 16:11:09',90,3,'','20193291556534436765874650420691691.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:25','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"2\",\"FieldName\":\"Email\",\"MappingFieldName\":\"Email\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"3\",\"FieldName\":\"DOB\",\"MappingFieldName\":\"DOB\",\"FieldDataType\":\"Date\",\"MappingFieldDataType\":\"System.DateTime\"},{\"FieldID\":\"4\",\"FieldName\":\"Location\",\"MappingFieldName\":\"Location\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"5\",\"FieldName\":\"Phone\",\"MappingFieldName\":\"Phone Number\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"6\",\"FieldName\":\"Experience\",\"MappingFieldName\":\"Experience\",\"FieldDataType\":\"Integer\",\"MappingFieldDataType\":\"System.Double\"},{\"FieldID\":\"13\",\"FieldName\":\"LanguageKnown\",\"MappingFieldName\":\"Language\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"},{\"FieldID\":\"11\",\"FieldName\":\"Keywords\",\"MappingFieldName\":\"Current Position\",\"FieldDataType\":\"String\",\"MappingFieldDataType\":\"System.String\"}]','{\"ErrorLogCount\":[{\"CandidatesAdded\":\"0\",\"CandidatesUpdated\":\"1\",\"ErrorCount\":\"0\"}],\"ErrorSummary\":[]}','D:\\TALENTOZ\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\ImportCandidate\\',NULL);
+INSERT INTO `recruitment_importcandidate`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`NewCandidateCount`,`UpdateCandidateCount`,`OverWritePastData`,`LastUPD`,`CandidateFieldMap`,`ErrorLog`,`VirtualPath`,`UpdateImportID`) VALUES
+(2,196,'2019-04-29 16:14:26',90,3,'','20193291556534634700478268884527791.xls','import2.xls','',0,0,0,0,0,1,'2019-04-29 16:17:26','[{\"FieldID\":\"1\",\"FieldName\":\"Name\",\"MappingFieldName\":\"Name\

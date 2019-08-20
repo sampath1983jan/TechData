@@ -1,0 +1,653 @@
+-- MySqlBackup.NET 2.3
+-- Dump Time: 2019-07-19 16:35:37
+-- --------------------------------------
+-- Server version 5.6.43-log MySQL Community Server (GPL)
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- 
+-- Definition of ams_asset_allocation
+-- 
+
+CREATE TABLE IF NOT EXISTS `ams_asset_allocation` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `AllocatID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `AssetID` int(10) NOT NULL DEFAULT '0',
+  `AssetGroupID` int(10) DEFAULT NULL,
+  `AssetTypeID` int(10) DEFAULT NULL,
+  `AssetNameID` int(11) DEFAULT NULL,
+  `ModelID` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Status` int(10) DEFAULT NULL,
+  `AllocatDate` datetime DEFAULT NULL,
+  `ReturnDate` datetime DEFAULT NULL,
+  `Remarks` text CHARACTER SET latin1,
+  `CreatedBY` int(10) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`AssetID`,`AllocatID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table ams_asset_allocation
+-- 
+
+/*!40000 ALTER TABLE `ams_asset_allocation` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,226,96,0,0,0,0,'0',6,'2018-04-09 00:00:00','0001-01-01 00:00:00','',90,'2018-04-10 19:28:52');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,227,5128,0,0,0,0,'0',6,'2018-04-11 00:00:00','0001-01-01 00:00:00','',90,'2018-04-11 10:12:43');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,228,5382,0,0,0,0,'0',6,'2018-04-09 00:00:00','0001-01-01 00:00:00','',90,'2018-04-11 10:12:46');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,231,96,0,0,0,0,'0',6,'2018-04-11 00:00:00','2018-04-15 00:00:00','',90,'2018-04-11 10:43:27');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,232,96,0,0,0,0,'0',6,'2018-04-09 00:00:00','2018-04-15 00:00:00','',90,'2018-04-11 10:43:27');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,233,96,0,0,0,0,'0',6,'2018-04-11 00:00:00','2018-04-15 00:00:00','',90,'2018-04-11 10:44:27');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,234,96,0,0,0,0,'0',6,'2018-04-09 00:00:00','2018-04-15 00:00:00','',90,'2018-04-11 10:44:28');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,236,96,0,0,0,0,'0',6,'2018-04-09 00:00:00','2018-04-15 00:00:00','',90,'2018-04-11 10:47:24');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,237,5487,158,2,1,0,'0',6,'2018-06-01 00:00:00','2018-06-05 00:00:00','',90,'2018-06-28 12:45:09');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,238,134,160,1,1,0,'0',6,'2018-12-10 00:00:00','2018-12-31 00:00:00','',90,'2018-12-24 10:08:50');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,230,156,161,0,0,0,'0',7,'2018-04-11 00:00:00','2018-04-15 00:00:00','',90,'2018-04-11 10:44:05');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,235,96,161,0,0,0,'0',7,'2018-04-11 00:00:00','2018-04-15 00:00:00','',90,'2018-04-19 13:44:40');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,229,241,162,0,0,0,'0',7,'2018-04-09 00:00:00','2018-04-15 00:00:00','',90,'2018-04-19 13:42:57');
+INSERT INTO `ams_asset_allocation`(`ClientID`,`AllocatID`,`UserID`,`AssetID`,`AssetGroupID`,`AssetTypeID`,`AssetNameID`,`ModelID`,`Status`,`AllocatDate`,`ReturnDate`,`Remarks`,`CreatedBY`,`LastUPD`) VALUES
+(2,239,5179,163,0,0,0,'0',6,'2019-02-06 00:00:00','2019-02-11 00:00:00','ewdsgfhhdg',90,'2019-02-26 16:26:16');
+COMMIT;
+/*!40000 ALTER TABLE `ams_asset_allocation` ENABLE KEYS */;
+
+-- 
+-- Definition of ams_assetallocation_attachments
+-- 
+
+CREATE TABLE IF NOT EXISTS `ams_assetallocation_attachments` (
+  `ClientID` int(11) NOT NULL,
+  `AttachmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `AllocatID` int(11) DEFAULT '0',
+  `FileName` text,
+  `EncodeFileName` text,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT NULL,
+  PRIMARY KEY (`AttachmentID`,`ClientID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table ams_assetallocation_attachments
+-- 
+
+/*!40000 ALTER TABLE `ams_assetallocation_attachments` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `ams_assetallocation_attachments`(`ClientID`,`AttachmentID`,`AllocatID`,`FileName`,`EncodeFileName`,`LastUPD`,`LastActionBy`) VALUES
+(2,2,239,'Statutory Details.xls','20191261551178569450461079875936081.xls','2019-02-26 16:26:16',2);
+COMMIT;
+/*!40000 ALTER TABLE `ams_assetallocation_attachments` ENABLE KEYS */;
+
+-- 
+-- Definition of announcement
+-- 
+
+CREATE TABLE IF NOT EXISTS `announcement` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `AnnouncementID` int(10) unsigned NOT NULL,
+  `Title` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `Description` text CHARACTER SET latin1,
+  `EffectiveFrom` datetime DEFAULT NULL,
+  `ValidTill` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `TagID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`AnnouncementID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table announcement
+-- 
+
+/*!40000 ALTER TABLE `announcement` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `announcement`(`ClientID`,`AnnouncementID`,`Title`,`Description`,`EffectiveFrom`,`ValidTill`,`LastUPD`,`Status`,`TagID`) VALUES
+(2,252,'TEST1','TEST1 #Position#  #PerformanceTitle#  #PerformanceCurrentStage#  #PerformanceCurrentStatus#  #EndDateofCurrentStage# <br>','2019-02-11 00:00:00','2019-02-28 00:00:00','2019-03-29 18:26:05',1,1119);
+COMMIT;
+/*!40000 ALTER TABLE `announcement` ENABLE KEYS */;
+
+-- 
+-- Definition of announcement_attachment
+-- 
+
+CREATE TABLE IF NOT EXISTS `announcement_attachment` (
+  `ClientID` int(11) NOT NULL,
+  `AttachmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `AnnouncementID` int(11) DEFAULT NULL,
+  `FileName` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `EncodeFileName` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AttachmentID`,`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table announcement_attachment
+-- 
+
+/*!40000 ALTER TABLE `announcement_attachment` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `announcement_attachment` ENABLE KEYS */;
+
+-- 
+-- Definition of announcementunit
+-- 
+
+CREATE TABLE IF NOT EXISTS `announcementunit` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `AnnouncementID` int(10) NOT NULL,
+  `BusinessUnitID` int(10) NOT NULL,
+  `BusinessUnitName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `WorkLocationID` int(10) NOT NULL,
+  `WorkLocationName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `DepartmentID` int(10) NOT NULL,
+  `DepartmentName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table announcementunit
+-- 
+
+/*!40000 ALTER TABLE `announcementunit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `announcementunit`(`ClientID`,`AnnouncementID`,`BusinessUnitID`,`BusinessUnitName`,`WorkLocationID`,`WorkLocationName`,`DepartmentID`,`DepartmentName`,`LastUPD`) VALUES
+(2,157,-1,'All',-1,'All',-1,'All','2016-04-28 14:19:06');
+INSERT INTO `announcementunit`(`ClientID`,`AnnouncementID`,`BusinessUnitID`,`BusinessUnitName`,`WorkLocationID`,`WorkLocationName`,`DepartmentID`,`DepartmentName`,`LastUPD`) VALUES
+(2,158,-1,'All',-1,'All',-1,'All','2016-04-28 15:48:54');
+INSERT INTO `announcementunit`(`ClientID`,`AnnouncementID`,`BusinessUnitID`,`BusinessUnitName`,`WorkLocationID`,`WorkLocationName`,`DepartmentID`,`DepartmentName`,`LastUPD`) VALUES
+(2,159,-1,'All',-1,'All',-1,'All','2016-04-28 15:49:19');
+INSERT INTO `announcementunit`(`ClientID`,`AnnouncementID`,`BusinessUnitID`,`BusinessUnitName`,`WorkLocationID`,`WorkLocationName`,`DepartmentID`,`DepartmentName`,`LastUPD`) VALUES
+(2,160,-1,'All',-1,'All',-1,'All','2016-04-28 15:49:43');
+COMMIT;
+/*!40000 ALTER TABLE `announcementunit` ENABLE KEYS */;
+
+-- 
+-- Definition of apiintegrationmodules
+-- 
+
+CREATE TABLE IF NOT EXISTS `apiintegrationmodules` (
+  `ModuleID` int(10) unsigned NOT NULL DEFAULT '0',
+  `ModuleName` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ModuleID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table apiintegrationmodules
+-- 
+
+/*!40000 ALTER TABLE `apiintegrationmodules` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `apiintegrationmodules`(`ModuleID`,`ModuleName`,`LastUPD`) VALUES
+(0,'None','2016-01-07 10:11:26');
+INSERT INTO `apiintegrationmodules`(`ModuleID`,`ModuleName`,`LastUPD`) VALUES
+(1,'Payroll','2016-01-07 10:11:26');
+COMMIT;
+/*!40000 ALTER TABLE `apiintegrationmodules` ENABLE KEYS */;
+
+-- 
+-- Definition of apiintegrationsettings
+-- 
+
+CREATE TABLE IF NOT EXISTS `apiintegrationsettings` (
+  `ClientID` int(11) NOT NULL,
+  `BusinessUnitID` int(11) NOT NULL,
+  `ModuleID` int(11) NOT NULL,
+  `ModuleName` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `URLSecurity` text CHARACTER SET latin1,
+  `EnableModule` bit(1) DEFAULT NULL,
+  `LastUPD` datetime NOT NULL,
+  `APISettingsID` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`ClientID`,`BusinessUnitID`,`ModuleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table apiintegrationsettings
+-- 
+
+/*!40000 ALTER TABLE `apiintegrationsettings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `apiintegrationsettings`(`ClientID`,`BusinessUnitID`,`ModuleID`,`ModuleName`,`URLSecurity`,`EnableModule`,`LastUPD`,`APISettingsID`) VALUES
+(2,12,1,'Payroll','',1,'2016-09-27 17:16:28',23);
+COMMIT;
+/*!40000 ALTER TABLE `apiintegrationsettings` ENABLE KEYS */;
+
+-- 
+-- Definition of apitransactionlog
+-- 
+
+CREATE TABLE IF NOT EXISTS `apitransactionlog` (
+  `ClientID` int(10) unsigned NOT NULL DEFAULT '0',
+  `BusinessUnitID` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `IntegrateModuleID` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '0-NONE,1-Payroll',
+  `ActionBy` int(10) unsigned NOT NULL,
+  `TransactionStatusID` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '0-NONE,1-SUCCESS,2-FAILED',
+  `StatusMessage` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  `ProcessModuleID` int(10) unsigned DEFAULT NULL COMMENT '0-NONE,1-USERLOGIN,2-EMPLOYEE,3-SALARY',
+  `ActionID` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '0-NONE,1-ADD,2-EDIT,3-DELETE',
+  `APILogID` int(10) unsigned NOT NULL,
+  `ActionFor` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`APILogID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table apitransactionlog
+-- 
+
+/*!40000 ALTER TABLE `apitransactionlog` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalo','2016-01-19 14:55:06',1,0,10,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>BC69B10A00A4ACC10A3EF840541F439D-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 14:57:12',1,0,11,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>F21A8A1FADBBB8E900B1374469F5186A-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 17:01:22',1,0,12,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,513,1,'true','2016-01-19 17:26:42',2,1,13,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>472403D1D90FF4B2653E8B903CACA8DE-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 17:27:33',1,0,14,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,513,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-FOUND\">F_BASIC</entry></details></exception>','2016-01-19 17:33:13',3,1,15,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>0CA3BD2C811A77C610BD1F16D767BE43-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 17:33:21',1,0,16,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,513,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-FOUND\">F_BASIC</entry><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-19 18:02:45',3,1,17,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>F11553FC631AD21F239D2C6BE4701391-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 18:02:51',1,0,18,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>9F4F57509A94A726E85684BDCE1B6921-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 18:42:16',1,0,19,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>8A907E4D7805B4D3FDB408328FCC7293-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 18:47:47',1,0,20,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,514,1,'true','2016-01-19 19:02:29',2,1,21,514);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,515,1,'true','2016-01-19 19:14:19',2,1,22,515);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>2E30108B6D833A3A21BB1E401E06E861-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-19 19:14:27',1,0,23,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,516,1,'true','2016-01-19 19:19:07',2,1,24,516);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,517,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-19 20:05:54',2,1,25,517);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,518,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-20 10:02:33',2,1,26,518);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,519,1,'true','2016-01-20 10:12:30',2,1,27,519);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,520,1,'true','2016-01-20 10:19:30',2,1,28,520);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,521,1,'true','2016-01-20 10:36:37',2,1,29,521);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,521,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-20 10:38:32',2,2,30,521);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,521,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 10:38:33',3,1,31,521);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,522,1,'true','2016-01-20 10:40:11',2,1,32,522);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,522,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-20 10:40:42',2,2,33,522);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,522,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 10:40:43',3,1,34,522);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,523,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-20 10:45:01',2,1,35,523);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,524,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-20 10:51:16',2,1,36,524);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,525,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''dateOfJoin'': rejected value [null]; codes [NotNull.employeeForm.dateOfJoin,NotNull.dateOfJoin,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.dateOfJoin,dateOfJoin]; arguments []; default message [dateOfJoin]]; default message [Date of Join cannot be blank]</message><details><entry key=\"field-dateOfJoin\">Date of Join cannot be blank</entry></details></exception>','2016-01-20 10:54:23',2,1,37,525);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,526,1,'true','2016-01-20 10:56:05',2,1,38,526);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,526,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 10:56:48',3,1,39,526);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,526,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-FOUND\">F_BASIC</entry></details></exception>','2016-01-20 10:57:16',3,1,40,526);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,526,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-FOUND\">F_BASIC</entry></details></exception>','2016-01-20 10:58:14',3,1,41,526);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,526,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-FOUND\">F_BASIC</entry></details></exception>','2016-01-20 10:58:44',3,1,42,526);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>66A069AEDB0E5697D66E9947C1A1BD46-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-20 10:58:59',1,0,43,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,526,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-FOUND\">F_BASIC</entry></details></exception>','2016-01-20 11:01:06',3,1,44,526);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>1C3CC1241FC08C76F208DA62951F7F10-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-20 11:01:12',1,0,45,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,527,1,'true','2016-01-20 11:03:29',2,1,46,527);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>29462021D995D74FEB8AACDFBDA9FF85-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-20 11:03:57',1,0,47,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,527,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 11:04:54',3,1,48,527);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>C59AD0F2D26A81AC8E5E076DF865870B-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-20 11:04:57',1,0,49,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>CCA6568C5541276DD7A444DE83D5C1CB-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-20 15:10:05',1,0,50,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-20 19:30:54',3,1,51,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-20 19:32:59',3,1,52,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,176,0,'<html>\n<head>\n	<TITLE>Server Error</TITLE>\n</head>\n\n<body>\n<table border=\"0\" class=\"common\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\">\n	<tr class=\"flange\">\n		<td colspan=\"2\">&#160;</td>\n	</tr>\n	<tr>\n		<td>\n			<center>\n				<h2>Sorry, there seems to be a server error!</h2>	\n			</center>\n		</td>\n	</tr>\n	<tr height=\"50\" style=\"border-top: 2px solid black; background: #eee;\">\n		<td colspan=\"2\" align=\"center\">\n			If this problem persists, <a href=\"mailto:majordomo@greytip.com?subject=server exception\">get in touch</a> with your contact details. Our support team will contact you.\n		</td>\n	</tr>\n	<tr>\n		<td colspan=\"2\" align=\"center\">			\n			<small style=\"color: #ccc;\">Greytip Software Pvt. Ltd.<br/></small>\n		</td>\n	</tr>\n</table>\n</body>\n</html>\n\n','2016-01-20 19:36:13',2,2,53,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:38:40',3,1,54,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:39:20',3,1,55,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:41:26',3,1,56,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:41:36',3,1,57,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:43:02',3,1,58,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:43:37',3,1,59,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-20 19:44:16',3,1,60,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>2752EBFF2AF5BC7E5477EDA53237CE94-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-21 15:14:13',1,0,61,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>F8216414DD41056B4C89C579A574AA8A-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-21 16:53:26',1,0,62,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>0C0762E7EFFB048CCEAED14435A89954-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-21 17:00:34',1,0,63,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-21 17:12:15',3,1,64,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-21 17:13:42',3,1,65,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>FFD4BCB5D8C975749A38B88042B2F8F4-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-21 17:13:48',1,0,66,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-EXISTS\">LOP</entry></details></exception>','2016-01-21 17:15:27',3,1,67,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>5B9CCBBDD9118036034BF9FA443C2AA0-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-21 18:58:40',1,0,68,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>7FA9F0EBC34E35FB4BAF39D720A59A4C-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-21 19:25:06',1,0,69,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-22 10:47:56',2,2,70,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-22 10:50:43',2,1,71,528);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-22 10:57:53',2,1,72,529);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-22 10:58:53',2,2,73,529);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-22 10:59:59',3,1,74,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,0,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-22 11:01:36',3,1,75,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-22 11:02:17',3,1,76,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-22 11:03:07',3,2,77,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,178,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>60E21C4A2F99162C1F044A6033AD5831-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 11:21:44',1,0,78,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>C3EF7066F4AD6605826EFFEFC00C9235-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:08:24',1,0,79,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>591F0C7A6A3CE1BB59912BADF35B21FC-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:20:59',1,0,80,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,178,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>222CCD881525D87BBFF35716CBC29929-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:23:52',1,0,81,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,183,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>33B78B5C628DDCA5E7DFF9011CD483A1-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:28:35',1,0,82,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,183,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>596007AF431D3100D8EB0616E75ED627-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:33:34',1,0,83,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>1A52CD1C66FA4F2F453223856967D9DB-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:35:36',1,0,84,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>66EB4CE0207823610708F3F8AF5FE40D-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:41:28',1,0,85,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>615C99CF6D4A586B381C3002E948569B-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:50:45',1,0,86,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>4098A4CEE4BC68EBFC5B56F3841B1167-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 12:58:45',1,0,87,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>E229B48BE6D8E1514149EE19318FD85D-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 14:20:20',1,0,88,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>E58AAA7767A2C338FC06AEAA6CB63C52-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 15:51:20',1,0,89,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-22 17:23:16',2,2,90,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-22 17:23:46',2,2,91,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>F2EFE5E73850060A387C616945D24600-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-22 19:09:54',1,0,92,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>47BD787EE7C5EBB5217E62B32E962381-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 10:19:33',1,0,93,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>785E1FA18FD72F8954F846C700EFAE5B-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 10:53:07',1,0,94,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>1D39BAC1B7130CF7BF1ABDF95DB74E5B-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 10:59:33',1,0,95,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>A361B7051E40BF2D615595BA3A1C9895-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 10:59:37',1,0,96,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>C43EA4A35966D879C707613065E90932-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 14:20:56',1,0,97,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>70397C6BA55DED119C71EB1E2440FC1C-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 14:26:43',1,0,98,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:15:20',3,1,99,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:33:32',3,1,100,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:35:13',3,1,101,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:35:22',3,1,102,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:36:36',3,1,103,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:37:23',3,1,104,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:38:12',3,1,105,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:39:04',3,1,106,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:39:45',3,1,107,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 15:42:59',3,1,108,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>USER_NOT_FOUND_EXCEPTION</key><message>Unable to find the user with name SMR001</message></exception>','2016-01-23 15:43:38',1,0,109,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>USER_NOT_FOUND_EXCEPTION</key><message>Unable to find the user with name SMR001</message></exception>','2016-01-23 15:44:23',1,0,110,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>ED1E03B273F25B82F378237C2AC5C2A1-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 15:45:14',1,0,111,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>558827E5E3A804275F08F90DD7EF20C8-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-23 15:45:40',1,0,112,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-23 15:56:56',3,1,113,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 15:57:32',3,2,114,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:01:01',3,1,115,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:08:38',3,1,116,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:13:00',3,1,117,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:14:34',3,2,118,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:16:21',3,1,119,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:17:20',3,1,120,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 16:19:26',3,3,121,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 16:20:31',3,1,122,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 16:47:54',3,2,123,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:51:33',3,1,124,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:54:36',3,1,125,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-23 16:54:37',3,1,126,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:54:53',3,1,127,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-23 16:54:54',3,1,128,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-23 16:55:31',3,1,129,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-23 16:55:36',3,1,130,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Unable to find employee with employee no E1989.</message></exception>','2016-01-23 17:01:55',2,2,131,136);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Unable to find employee with employee no EMP-9090.</message></exception>','2016-01-23 17:02:21',2,2,132,150);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Unable to find employee with employee no 96.</message></exception>','2016-01-23 17:02:51',2,2,133,172);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Unable to find employee with employee no 96.</message></exception>','2016-01-23 17:03:04',2,2,134,172);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 17:06:35',2,2,135,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>BINDING_EXCEPTION</key><message>org.springframework.validation.BeanPropertyBindingResult: 1 errors\nField error in object ''employeeForm'' on field ''category'': rejected value [{\"name\":\"Department\",\"value\":\"Sales ,{\"name\":\"Designation\",\"value\":\"Accounts Executive\",\"effectiveDate\":\"23 Jan 2016\"}]; codes [methodInvocation.employeeForm.category,methodInvocation.category,methodInvocation.java.util.List,methodInvocation]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeForm.category,category]; arguments []; default message [category]]; default message [Property ''category'' threw exception; nested exception is java.lang.RuntimeException: org.codehaus.jackson.JsonParseException: Unexpected character (''n'' (code 110)): was expecting comma to separate OBJECT entries\n at [Source: java.io.StringReader@4ca65bd9; line: 1, column: 41]]</message><details><entry key=\"field-category\">Property ''category'' threw exception; nested exception is java.lang.RuntimeException: org.codehaus.jackson.JsonParseException: Unexpected character (''n'' (code 110)): was expecting comma to separate OBJECT entries\n at [Source: java.io.StringReader@4ca65bd9; line: 1, column: 41]</entry></details></exception>','2016-01-23 17:08:37',2,2,136,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 17:12:34',2,2,137,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-23 17:13:09',2,2,138,513);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>FD7F7367681471AF70CC41A09D6A8AB6-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-24 12:11:31',1,0,139,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 10:35:07',3,1,140,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 10:35:48',3,1,141,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 10:36:42',3,1,142,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 10:38:47',3,1,143,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 10:48:28',3,1,144,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>75F7CA0364F097FAEE647D9B7D96D4AC-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-25 11:09:13',1,0,145,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>346BA2EA6B444CE9318746A05689E3EE-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-25 11:09:28',1,0,146,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>C24E32B220850ED20B84C93122E55032-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-25 11:09:35',1,0,147,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>58B870CCDA95FA27FB9CD5BE6F610A72-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-25 11:09:44',1,0,148,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>E20D2BB535B9409C7D200E56510A59C1-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-25 11:09:58',1,0,149,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>B61303814D5122F9A5B5AEAD8C7BB1AE-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-25 12:03:29',1,0,150,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-25 16:31:53',3,1,151,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-LOCKED</key><message>Selected payroll is locked</message></exception>','2016-01-25 16:34:12',3,2,152,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-25 16:35:35',3,1,153,176);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-25 17:35:35',3,3,154,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-25 17:36:36',3,3,155,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-25 17:51:00',3,3,156,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-25 17:54:39',3,3,157,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 18:00:03',3,1,158,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-25 18:00:06',3,1,159,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>PAYROLL-NOT-FOUND</key><message>Requested payroll not valid</message></exception>','2016-01-25 18:04:56',3,2,160,90);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-25 18:05:07',3,2,161,183);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-27 10:37:00',2,1,162,530);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>01E8E0F23C18523C279FAA587A420146-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 10:37:21',1,0,163,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 10:44:52',2,2,164,530);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>3350E2C197F5C27C9BFB48A10E0D33EC-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 11:50:01',1,0,165,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>3A0E626E78EE448F9D74E6418934DA30-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 14:20:30',1,0,166,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>1DD29698C9B4428509858210EB00ED8D-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 14:22:41',1,0,167,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>14EAC2313487437C54178D4AA49712D2-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 14:29:03',1,0,168,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>INTERNAL_EXCEPTION</key><message>Could not execute JDBC batch update; SQL [insert into tblEmployee (employeeNo, name, dob, joinDate, confirmDate, status, email, addedBy, photoFile, sex, maritalStatus, leftorg, firstName, midName, lastName, leavingDate, donotincludeinpayroll, panNo, mobile, guid, fatherName, nickName, title, originalHireDate, probationPeriod, noticePeriod, recStatus, cid) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.DataException: Could not execute JDBC batch update</message></exception>','2016-01-27 14:31:01',2,1,169,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>CB8773253FBA2A7AE29529EDCBC2973B-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 14:49:19',1,0,170,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-27 14:49:34',3,2,171,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Unable to find employee with employee no SenthillllFred09.</message></exception>','2016-01-27 14:53:24',2,2,172,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>INTERNAL_EXCEPTION</key><message>Could not execute JDBC batch update; SQL [insert into tblEmployee (employeeNo, name, dob, joinDate, confirmDate, status, email, addedBy, photoFile, sex, maritalStatus, leftorg, firstName, midName, lastName, leavingDate, donotincludeinpayroll, panNo, mobile, guid, fatherName, nickName, title, originalHireDate, probationPeriod, noticePeriod, recStatus, cid) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.DataException: Could not execute JDBC batch update</message></exception>','2016-01-27 14:58:03',2,1,173,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-27 15:03:47',2,1,174,534);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-27 15:06:22',2,1,175,535);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 15:06:55',2,2,176,535);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-27 15:16:34',2,1,177,536);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-27 15:19:32',2,1,178,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 15:19:44',2,2,179,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-EXISTS\">LOP</entry></details></exception>','2016-01-27 15:26:19',3,2,180,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>D3713833B0D364C3CEE53A8718A8DF48-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 15:26:36',1,0,181,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-EXISTS\">LOP</entry></details></exception>','2016-01-27 15:28:51',3,2,182,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-NOT-EXISTS\">LOP</entry></details></exception>','2016-01-27 15:32:07',3,2,183,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 15:38:34',3,1,184,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-27 15:39:18',3,2,185,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-27 15:39:22',3,1,186,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-27 15:42:41',3,1,187,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-27 15:43:24',3,1,188,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 15:43:42',3,2,189,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,155,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>EMPLOYEE-NOT-FOUND</key><message>Employee Not Found</message></exception>','2016-01-27 15:44:08',3,3,190,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'true','2016-01-27 15:45:43',2,1,191,538);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>INTERNAL_EXCEPTION</key><message>Could not execute JDBC batch update; SQL [insert into tblEmployee (employeeNo, name, dob, joinDate, confirmDate, status, email, addedBy, photoFile, sex, maritalStatus, leftorg, firstName, midName, lastName, leavingDate, donotincludeinpayroll, panNo, mobile, guid, fatherName, nickName, title, originalHireDate, probationPeriod, noticePeriod, recStatus, cid) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.DataException: Could not execute JDBC batch update</message></exception>','2016-01-27 15:52:18',2,1,192,532);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 16:15:11',3,2,193,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 16:16:05',3,2,194,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-27 16:46:48',3,1,195,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 16:46:49',3,2,196,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>1D03CDFCD35266E8EBEF2A3345989C35-n1</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 16:46:57',1,0,197,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 16:47:37',3,3,198,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 16:47:49',3,1,199,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-27 16:49:56',3,1,200,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 16:49:57',3,2,201,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,2,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><exception><is-exception>true</is-exception><key>SALARY-INPUT-EXCEPTION</key><message>Error while processing the request</message><details><entry key=\"ITEM-ALREADY-EXISTS\">LOP</entry></details></exception>','2016-01-27 17:51:37',3,1,202,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><success-model><success>true</success></success-model>','2016-01-27 17:51:37',3,2,203,537);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID`,`IntegrateModuleID`,`ActionBy`,`TransactionStatusID`,`StatusMessage`,`LastUPD`,`ProcessModuleID`,`ActionID`,`APILogID`,`ActionFor`) VALUES
+(2,'',1,90,1,'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><login-response><guid>797A02AA743030FF082CD555FA4C8814-n2</guid><domainName>talentoz.greythr.com</domainName></login-response>','2016-01-27 17:51:47',1,0,204,0);
+INSERT INTO `apitransactionlog`(`ClientID`,`BusinessUnitID

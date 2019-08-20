@@ -1,0 +1,975 @@
+FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1157','NoOfDays',0,'Total No of Days',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `tempsys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1153','PositionName',0,'Position',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `tempsys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1155','StartDate',0,'Leave Start Date',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `tempsys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1158','StatusText',0,'Status',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `tempsys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1150','UserID',0,'Employee Name',0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `tempsys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1161','WorkLocationID',0,'Work Location',0,NULL,NULL,0,13,NULL,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `tempsys_entityviewfields` ENABLE KEYS */;
+
+-- 
+-- Definition of tempsys_entityviewfilterfields
+-- 
+
+CREATE TABLE IF NOT EXISTS `tempsys_entityviewfilterfields` (
+  `ViewID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `EFID` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `FilterFieldid` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `FilterOperator` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `LinkComponent` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `FieldOrder` int(11) DEFAULT NULL,
+  `IsMandatory` smallint(6) DEFAULT NULL,
+  `ParentField` varchar(255) CHARACTER SET latin1 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table tempsys_entityviewfilterfields
+-- 
+
+/*!40000 ALTER TABLE `tempsys_entityviewfilterfields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `tempsys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV085','ETF132','BusinessUnitID',0,NULL,'300000',1,NULL,NULL);
+INSERT INTO `tempsys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV085','ETF132','DepartmentID',0,NULL,NULL,3,NULL,NULL);
+INSERT INTO `tempsys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV085','ETF132','UserID',0,NULL,'30000',4,NULL,NULL);
+INSERT INTO `tempsys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV085','ETF132','WorkLocationID',0,NULL,'310000',2,NULL,NULL);
+INSERT INTO `tempsys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV085','ETF100','Year',0,NULL,'410000',5,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `tempsys_entityviewfilterfields` ENABLE KEYS */;
+
+-- 
+-- Definition of temptardiness
+-- 
+
+CREATE TABLE IF NOT EXISTS `temptardiness` (
+  `c` bigint(21) NOT NULL DEFAULT '0',
+  `RecordID` int(10) unsigned DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table temptardiness
+-- 
+
+/*!40000 ALTER TABLE `temptardiness` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `temptardiness`(`c`,`RecordID`) VALUES
+(1,268);
+COMMIT;
+/*!40000 ALTER TABLE `temptardiness` ENABLE KEYS */;
+
+-- 
+-- Definition of temptbl1
+-- 
+
+CREATE TABLE IF NOT EXISTS `temptbl1` (
+  `DepartmentID` bigint(11) NOT NULL DEFAULT '0',
+  `DepartmentName` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Department Name',
+  `AppointmentStatus` varchar(255) DEFAULT NULL,
+  `TotalEmployees` decimal(23,0) DEFAULT NULL,
+  `AbsentPercentage` varchar(29) DEFAULT NULL,
+  `TotalPresent` decimal(23,0) DEFAULT NULL,
+  `TotalAbsent` decimal(23,0) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table temptbl1
+-- 
+
+/*!40000 ALTER TABLE `temptbl1` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,NULL,8,'233%',0,7);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,NULL,8,'88%',0,7);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,NULL,8,'5%',0,7);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,NULL,8,'88%',0,7);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,NULL,8,'700%',0,7);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,NULL,8,'350%',0,7);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Contract',1,'13%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Contract',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Contract',1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Contract',1,'13%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Contract',1,'1%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'None',142,'14200%',0,142);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'None',142,'7100%',0,142);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'None',142,'4733%',0,142);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'None',142,'1775%',0,142);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'None',142,'100%',0,142);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'None',142,'1775%',0,142);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Part Time',3,'38%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Part Time',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Part Time',3,'150%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Part Time',3,'100%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Part Time',3,'38%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Part Time',3,'2%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Permanent',8,'267%',0,8);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Permanent',8,'100%',0,8);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Permanent',8,'6%',0,8);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Permanent',8,'100%',0,8);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Permanent',8,'800%',0,8);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Permanent',8,'400%',0,8);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Probationary',2,'67%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Probationary',2,'25%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Probationary',2,'1%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Probationary',2,'25%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Probationary',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(0,NULL,'Probationary',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(2,'Accounts & Finance','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(2,'Accounts & Finance','None',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(2,'Accounts & Finance','Permanent',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(2,'Accounts & Finance','Permanent',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','None',11,'100%',0,11);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','None',11,'1100%',0,11);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','None',11,'220%',0,11);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','Permanent',5,'500%',0,5);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','Permanent',5,'100%',0,5);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','Permanent',5,'45%',0,5);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','Probationary',1,'9%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(3,'Human Resource','Probationary',1,'20%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ',NULL,1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ',NULL,1,'10%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ',NULL,1,'8%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ','None',10,'83%',0,10);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ','None',10,'1000%',0,10);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ','None',10,'100%',0,10);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ','Permanent',12,'1200%',0,12);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ','Permanent',12,'120%',0,12);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(4,'Process Improvement ','Permanent',12,'100%',0,12);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(5,'Business Analysis','None',4,'100%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(5,'Business Analysis','None',4,'200%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(5,'Business Analysis','Permanent',2,'50%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(5,'Business Analysis','Permanent',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing',NULL,1,'10%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing',NULL,1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing',NULL,1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing','None',10,'333%',0,10);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing','None',10,'100%',0,10);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing','None',10,'1000%',0,10);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing','Permanent',3,'30%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing','Permanent',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(6,'Sales & Marketing','Permanent',3,'100%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(7,'PMO','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(7,'PMO','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(7,'PMO','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(7,'PMO','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(10,'Development','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(10,'Development','None',1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(10,'Development','Permanent',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(10,'Development','Permanent',3,'100%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(11,'Quality Assurance','Permanent',3,'100%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(11,'Quality Assurance','Permanent',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(11,'Quality Assurance','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(11,'Quality Assurance','Probationary',1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','None',4,'400%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','None',4,'100%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','None',4,'400%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','Permanent',1,'25%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','Probationary',1,'25%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(12,'Development','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(13,'MIS','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','Contract',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','None',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','None',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','None',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','Permanent',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(14,'Documentation','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(15,'Graphic Design ','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(37,'Research And Development','None',4,'100%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(37,'Research And Development','None',4,'400%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(37,'Research And Development','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(37,'Research And Development','Permanent',1,'25%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(48,'Human Resource','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(50,'Development','None',4,'100%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(50,'Development','None',4,'200%',0,4);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(50,'Development','Permanent',2,'50%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(50,'Development','Permanent',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Contract',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','None',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','None',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','None',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Permanent',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(56,'BUSINESS DEVELOPMENT','Part Time',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(61,'Documentation','None',2,'200%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(61,'Documentation','None',2,'100%',0,2);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(61,'Documentation','Permanent',1,'50%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(61,'Documentation','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Contract',1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Contract',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','None',3,'100%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','None',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','None',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','None',3,'300%',0,3);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Permanent',1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Probationary',1,'33%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Probationary',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(86,'tEST dEPARTMENT sIALMBU','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(86,'tEST dEPARTMENT sIALMBU','None',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(86,'tEST dEPARTMENT sIALMBU','Permanent',1,'100%',0,1);
+INSERT INTO `temptbl1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`AbsentPercentage`,`TotalPresent`,`TotalAbsent`) VALUES
+(86,'tEST dEPARTMENT sIALMBU','Permanent',1,'100%',0,1);
+COMMIT;
+/*!40000 ALTER TABLE `temptbl1` ENABLE KEYS */;
+
+-- 
+-- Definition of temptotal1
+-- 
+
+CREATE TABLE IF NOT EXISTS `temptotal1` (
+  `DepartmentID` bigint(11) NOT NULL DEFAULT '0',
+  `DepartmentName` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Department Name',
+  `AppointmentStatus` varchar(255) DEFAULT NULL,
+  `TotalEmployees` decimal(23,0) DEFAULT NULL,
+  `TotalPresent` decimal(23,0) DEFAULT NULL,
+  `TotalLeave` decimal(23,0) DEFAULT NULL,
+  `TotalAbsent` decimal(23,0) DEFAULT NULL,
+  `AbsentPercentage` varchar(29) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table temptotal1
+-- 
+
+/*!40000 ALTER TABLE `temptotal1` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(0,NULL,NULL,8,0,1,7,'88%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(0,NULL,'None',142,0,0,142,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(0,NULL,'Permanent',8,0,0,8,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(0,NULL,'Contract',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(0,NULL,'Probationary',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(0,NULL,'Part Time',3,0,0,3,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(2,'Accounts & Finance','None',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(2,'Accounts & Finance','Permanent',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(3,'Human Resource','None',11,0,0,11,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(3,'Human Resource','Permanent',5,0,0,5,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(3,'Human Resource','Probationary',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(4,'Process Improvement ',NULL,1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(4,'Process Improvement ','None',10,0,0,10,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(4,'Process Improvement ','Permanent',12,0,0,12,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(5,'Business Analysis','None',4,0,0,4,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(5,'Business Analysis','Permanent',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(6,'Sales & Marketing',NULL,1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(6,'Sales & Marketing','None',10,0,0,10,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(6,'Sales & Marketing','Permanent',3,0,0,3,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(7,'PMO','None',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(7,'PMO','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(10,'Development','None',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(10,'Development','Permanent',3,0,0,3,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(11,'Quality Assurance','Permanent',3,0,0,3,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(11,'Quality Assurance','Probationary',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(12,'Development','None',4,0,0,4,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(12,'Development','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(12,'Development','Probationary',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(13,'MIS','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(14,'Documentation','None',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(14,'Documentation','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(14,'Documentation','Contract',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(15,'Graphic Design ','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(37,'Research And Development','None',4,0,0,4,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(37,'Research And Development','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(48,'Human Resource','None',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(50,'Development','None',4,0,0,4,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(50,'Development','Permanent',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','None',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(55,'ACADEMIC AFFAIRS MANAGEMENT','Contract',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(56,'BUSINESS DEVELOPMENT','Part Time',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(61,'Documentation','None',2,0,0,2,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(61,'Documentation','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','None',3,0,0,3,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Permanent',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Contract',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','Probationary',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(86,'tEST dEPARTMENT sIALMBU','None',1,0,0,1,'100%');
+INSERT INTO `temptotal1`(`DepartmentID`,`DepartmentName`,`AppointmentStatus`,`TotalEmployees`,`TotalPresent`,`TotalLeave`,`TotalAbsent`,`AbsentPercentage`) VALUES
+(86,'tEST dEPARTMENT sIALMBU','Permanent',1,0,0,1,'100%');
+COMMIT;
+/*!40000 ALTER TABLE `temptotal1` ENABLE KEYS */;
+
+-- 
+-- Definition of temptotal2
+-- 
+
+CREATE TABLE IF NOT EXISTS `temptotal2` (
+  `DepartmentID` bigint(11) NOT NULL DEFAULT '0',
+  `OverallEmployee` decimal(23,0) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table temptotal2
+-- 
+
+/*!40000 ALTER TABLE `temptotal2` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(0,8);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(0,142);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(0,8);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(0,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(0,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(0,3);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(2,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(2,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(3,11);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(3,5);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(3,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(4,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(4,10);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(4,12);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(5,4);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(5,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(6,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(6,10);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(6,3);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(7,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(7,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(10,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(10,3);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(11,3);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(11,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(12,4);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(12,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(12,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(13,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(14,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(14,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(14,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(15,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(37,4);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(37,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(48,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(50,4);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(50,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(55,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(55,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(55,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(56,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(61,2);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(61,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(68,3);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(68,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(68,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(68,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(86,1);
+INSERT INTO `temptotal2`(`DepartmentID`,`OverallEmployee`) VALUES
+(86,1);
+COMMIT;
+/*!40000 ALTER TABLE `temptotal2` ENABLE KEYS */;
+
+-- 
+-- Definition of test_emp
+-- 
+
+CREATE TABLE IF NOT EXISTS `test_emp` (
+  `Eno` int(11) NOT NULL,
+  `Name` text,
+  `Gender` text,
+  `Addr` text,
+  `Language` text,
+  `Dob` text,
+  `Password` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table test_emp
+-- 
+
+/*!40000 ALTER TABLE `test_emp` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(101,'Ramesh','Male','HYD','English\r\nTelugu','2018-12-02 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(101,'Syam','Male','HYD,KDP','English\r\nTelugu','2018-12-04 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(103,'Chandra','Male','HYD','Tamil\r\nEnglish','2018-12-11 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(104,'','Female','','','0001-01-01 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(105,'sdfds sd ds fd sf sd','Female','sdddd sdfsd dfd sfds','All\r\nTelugu','2018-12-11 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(106,'Surendra','Male','HYD','Telugu','2018-12-03 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(107,'Dheraj','Male','HYD','Telugu\r\nHindi','2018-12-03 00:00:00','ram123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(108,'Gan','Male','ABCD','','0001-01-01 00:00:00','');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(109,'tjyju','Male','jujuj','Telugu','2018-12-03 00:00:00','gvgbg');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(110,'ytjyj','Male','tyhytjy','Telugu','2018-12-10 00:00:00','yhytjnyuj');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(111,'grtrh','Male','tgrthrth','Telugu\r\nHindi','2018-12-03 00:00:00','thtrrht');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(112,'Kiran','Male','JMD','Telugu\r\nHindi','2018-12-06 00:00:00','kiran123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(113,'Harsha','Male','Pune','Hindi','2018-12-11 00:00:00','harsha333');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(114,'Jagan','Male','PLVD','Telugu','2018-12-10 00:00:00','jagan12');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(115,'Uday','Male','JMD','Telugu','2018-12-17 00:00:00','uday123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(116,'Sruthi','Male','KNL','Telugu','2018-12-19 00:00:00','sruthi123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(117,'Raja','Male','RTPP','Telugu','2018-12-06 00:00:00','raja123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(118,'Kiran','Male','SGPL','Telugu','2018-12-07 00:00:00','kiran123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(119,'Gowri','Male','KDP','Telugu Hindi English','2018-12-10 00:00:00','gowri22');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(120,'Yuva','Male','RTPP','Telugu Hindi English','2018-12-12 00:00:00','yuva532');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(121,'Hari','Male','PLVD','Telugu','2018-12-03 00:00:00','hari123');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(122,'Indhu','Male','KNL','Telugu Hindi English','2018-12-03 00:00:00','indhu66');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(123,'ghhhjj','Male','jmhmjm','Telugu','2018-12-13 00:00:00','hjkmjkm');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(124,'Darma','Male','NLR','Telugu Hindi English','2018-12-04 00:00:00','nlrd');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(125,'babu','Male','SGPL','Telugu','2018-12-02 00:00:00','babu78');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(126,'Jana','Male','SGPL','Telugu','2018-12-03 00:00:00','jana67');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(127,'Saha','Male','ATP','Telugu','2018-12-12 00:00:00','saha234');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(128,'fbh','Male','jyukjmukm','Telugu','2018-12-03 00:00:00','jytj');
+INSERT INTO `test_emp`(`Eno`,`Name`,`Gender`,`Addr`,`Language`,`Dob`,`Password`) VALUES
+(129,'fgfggn','Male','dhtgnyhg','Telugu','2018-12-03 00:00:00','gnn');
+COMMIT;
+/*!40000 ALTER TABLE `test_emp` ENABLE KEYS */;
+
+-- 
+-- Definition of test_employee
+-- 
+
+CREATE TABLE IF NOT EXISTS `test_employee` (
+  `Keyid` int(10) unsigned NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Gender` varchar(45) NOT NULL,
+  `Address` text NOT NULL,
+  `Language` varchar(45) NOT NULL,
+  `Dob` datetime NOT NULL,
+  `password` varchar(100) NOT NULL,
+  PRIMARY KEY (`Keyid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table test_employee
+-- 
+
+/*!40000 ALTER TABLE `test_employee` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `test_employee`(`Keyid`,`Name`,`Gender`,`Address`,`Language`,`Dob`,`password`) VALUES
+(47,'rubesh','Male','mint','Tamil English Telugu','1996-02-11 00:00:00','123');
+INSERT INTO `test_employee`(`Keyid`,`Name`,`Gender`,`Address`,`Language`,`Dob`,`password`) VALUES
+(48,'Ajith','Male','Sowcarpet','Tamil English Telugu','2000-08-07 00:00:00','321');
+INSERT INTO `test_employee`(`Keyid`,`Name`,`Gender`,`Address`,`Language`,`Dob`,`password`) VALUES
+(49,'','','','','0001-01-01 00:00:00','123');
+INSERT INTO `test_employee`(`Keyid`,`Name`,`Gender`,`Address`,`Language`,`Dob`,`password`) VALUES
+(50,'','','','','0001-01-01 00:00:00','');
+COMMIT;
+/*!40000 ALTER TABLE `test_employee` ENABLE KEYS */;
+
+-- 
+-- Definition of test_jaan
+-- 
+
+CREATE TABLE IF NOT EXISTS `test_jaan` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `Phone Number` varchar(45) NOT NULL,
+  `Gender` varchar(45) NOT NULL,
+  `Age` varchar(45) NOT NULL,
+  `Address` varchar(45) NOT NULL,
+  `City` varchar(45) NOT NULL,
+  `State` varchar(45) NOT NULL,
+  `DOB` varchar(45) NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table test_jaan
+-- 
+
+/*!40000 ALTER TABLE `test_jaan` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `test_jaan` ENABLE KEYS */;
+
+-- 
+-- Definition of test_stu
+-- 
+
+CREATE TABLE IF NOT EXISTS `test_stu` (
+  `Sid` int(11) NOT NULL,
+  `Name` text,
+  `Mobile` text,
+  `Email` text,
+  `Address` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table test_stu
+-- 
+
+/*!40000 ALTER TABLE `test_stu` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(3,'Rajesh','9502690116','raj@gmail.com','');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(4,'Ramesh','9502690114','ramesh@gmail.com','');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(5,'Dheeraj','9502645645','dher@gmail.com','');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(6,'Tarun','9502694565','tar@gmail.com','HYD');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(7,'jujjujm','9502690112','dvfbfg@gmail.com','fghjnhjjh');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(8,'Sankar','9502690114','sankar@gmail.com','Guntur');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(9,'Gopi','8985745785','gopi@gmail.com','KNL');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(10,'Sukesh','9545789988','sukesh@gmail.com','BPL');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(11,'Amar','8985857745','amar@gmail.com','RTPP');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(12,'Saha','8985857745','saha@gmail.com','Anantapur');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(13,'Sahasra','9502654587','sahasra@gmail.com','fhjkuki');
+INSERT INTO `test_stu`(`Sid`,`Name`,`Mobile`,`Email`,`Address`) VALUES
+(14,'ghnh','9555522555','yhytyjytj','fbfgn hn');
+COMMIT;
+/*!40000 ALTER TABLE `test_stu` ENABLE KEYS */;
+
+-- 
+-- Definition of testing
+-- 
+
+CREATE TABLE IF NOT EXISTS `testing` (
+  `td` int(11) NOT NULL,
+  `fff` text,
+  PRIMARY KEY (`td`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table testing
+-- 
+
+/*!40000 ALTER TABLE `testing` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `testing` ENABLE KEYS */;
+
+-- 
+-- Definition of testtable
+-- 
+
+CREATE TABLE IF NOT EXISTS `testtable` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL DEFAULT '0',
+  `F_200005` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Employee Number\r\n',
+  `F_200010` int(10) unsigned DEFAULT NULL COMMENT 'Prefix (Encik/cik/puan/Dato/Dr/Prof)\r\n',
+  `F_200015` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Employee Name\r\n',
+  `F_200025` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Identity Card Number\r\n',
+  `F_200030` datetime DEFAULT NULL COMMENT 'Date of Birth\r\n',
+  `F_200035` int(11) DEFAULT NULL COMMENT 'Age',
+  `F_200040` int(11) DEFAULT NULL COMMENT 'Gender\r\n',
+  `F_200045` int(11) DEFAULT NULL COMMENT 'Marital Status',
+  `F_200050` int(11) DEFAULT NULL COMMENT 'Nationality\r\n',
+  `F_200055` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Address',
+  `F_200060` varchar(50) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Post Code\r\n',
+  `F_200065` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'City',
+  `F_200070` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'State',
+  `F_200075` int(10) unsigned DEFAULT NULL COMMENT 'Country',
+  `F_200080` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-Address',
+  `F_200085` varchar(50) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-Post Code',
+  `F_200090` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-City\r\n',
+  `F_200095` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-State',
+  `F_200100` int(10) unsigned DEFAULT NULL COMMENT 'Correspondence Address-Country',
+  `F_200105` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-Mobile',
+  `F_200110` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-Phone',
+  `F_200115` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Correspondence Address-Email',
+  `F_200120` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Pastport no',
+  `F_200125` int(10) unsigned DEFAULT NULL COMMENT 'Place issued-Country',
+  `F_200130` datetime DEFAULT NULL COMMENT 'Date issued',
+  `F_200135` datetime DEFAULT NULL COMMENT 'Expiration Date',
+  `F_200140` datetime DEFAULT NULL COMMENT 'Service Date\r\n',
+  `F_200145` datetime DEFAULT NULL COMMENT 'Contract Date\r\n',
+  `F_200150` datetime DEFAULT NULL COMMENT 'Contract Expiration\r\n',
+  `F_200155` datetime DEFAULT NULL COMMENT 'Seperation Date\r\n',
+  `F_200160` datetime DEFAULT NULL COMMENT 'Retirement Date\r\n',
+  `F_200165` int(11) DEFAULT NULL COMMENT 'Appointment status\r\n',
+  `F_200170` int(10) DEFAULT '1' COMMENT 'Employement Status\r\n',
+  `F_200175` int(11) DEFAULT NULL COMMENT 'Work Location\r\n',
+  `F_200180` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Employee Grade\r\n',
+  `F_200185` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Cost Center\r\n',
+  `F_200190` decimal(10,2) DEFAULT NULL COMMENT 'Gross Salary\r\n',
+  `F_200195` decimal(10,2) DEFAULT NULL COMMENT 'Net Salary\r\n',
+  `F_200200` varchar(250) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Account No.\r\n',
+  `F_200205` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Bank Name\r\n',
+  `F_200210` varchar(50) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Branch Code\r\n',
+  `F_200215` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Branch Name\r\n',
+  `F_200220` text CHARACTER SET latin1 COMMENT 'Branch Address\r\n',
+  `F_200225` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Beneficiary Name',
+  `F_200245` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Password',
+  `LastUPD` datetime DEFAULT NULL,
+  `F_200250` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Staff Photo',
+  `F_200255` int(11) DEFAULT '1',
+  `F_200260` varchar(250) CHARACTER SET latin1 DEFAULT NULL,
+  `F_200265` decimal(10,2) DEFAULT NULL COMMENT 'Basic Salary',
+  `isFirstLoginOccured` tinyint(1) DEFAULT NULL,
+  `LoginStatus` int(10) unsigned DEFAULT NULL COMMENT '1. Login 2.LoginOut 3. Login without access',
+  `LastAccess` datetime DEFAULT NULL,
+  `ContextRole` int(11) DEFAULT NULL,
+  `F_200270` decimal(10,2) DEFAULT NULL,
+  `F_200275` mediumtext CHARACTER SET latin1 COMMENT 'Passport Attachment',
+  `F_200280` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `F_200285` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `F_200290` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `F_200295` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `F_200300` mediumtext CHARACTER SET latin1,
+  `check1` varchar(9) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table testtable
+-- 
+
+/*!40000 ALTER TABLE `testtable` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,90,'SMR001',2,'Dato  Dr. Palaniappan A/L Ramanathan Chettia','','1981-12-01 00:00:00',34,1,1,109,'123123','123','1223123','qw',101,'SMR Group\nadads asd \nadasdasd asd asd asd asd asd asd asd asd','504470','Kuala Lumpur','Kuala Lumpur',131,'60322799199','8989898986','demo@talentoz.com','fff4542',249,NULL,'2020-01-01 00:00:00','2016-08-02 00:00:00','2020-10-27 00:00:00','2020-10-28 00:00:00','2016-10-27 00:00:00',NULL,1,1,-1,'','',0.10,45.90,'','','','','','test test','GgcmFbrO/610UC+HBYAnwQ==','2016-10-24 12:09:40','20161081478581878489.jpg',1,'',245.00,1,1,'2016-11-09 14:45:08',3,NULL,'tempfiles/20168141473838487088.txt','test123','test123','sdfsf','1231',NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,92,'E023',1,'Emp-003','',NULL,NULL,1,0,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Manager1@gmail.con','rtr565657',1,NULL,'2029-01-18 00:00:00','2011-02-15 00:00:00',NULL,'2015-02-20 00:00:00','2015-02-10 00:00:00','2015-01-29 00:00:00',0,4,0,'','',1000.00,2000.00,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-02-04 15:03:57',NULL,2,NULL,NULL,1,1,'2015-12-31 14:24:38',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,96,'E004',1,'EMP4','',NULL,NULL,1,-1,0,'Dubai main Road 123','8007','Dubai','Dubai',153,'Senthi cross cut road66','65849','Tanjay','TamilNadu',101,'9894695496','','emp4@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,'2017-07-31 00:00:00',NULL,NULL,1,1,101,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-09-21 11:43:17','2016681467980809292.jpg',2,NULL,NULL,1,1,'2016-08-09 15:16:52',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,105,'EMP100',1,'EMP100','',NULL,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'EMP100@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,'2014-11-27 00:00:00','2014-12-11 00:00:00','2014-12-31 00:00:00',0,4,0,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-29 21:02:26',NULL,2,NULL,NULL,1,1,'2016-04-08 17:50:54',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,106,'1001',1,'James','15412486651',NULL,NULL,1,1,47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'5415422','James@ACT.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2015-10-29 00:00:00','2015-10-30 00:00:00',3,1,136,'','100',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-01-11 10:46:09','2016681467980014736.jpg',1,NULL,NULL,1,1,'2016-07-27 18:56:18',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,109,'1004',1,'Steve Bob','878541241',NULL,NULL,1,1,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'steve@ACT.con',NULL,NULL,NULL,NULL,'2000-07-24 00:00:00',NULL,NULL,'2015-05-10 00:00:00','2024-09-09 00:00:00',1,2,131,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-11 15:29:16',NULL,2,NULL,NULL,1,2,'2015-04-23 19:20:42',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,110,'1005',1,'Merry Janes','321655913',NULL,NULL,2,2,0,'wetrwerwre','werwer','werwer','werwer',44,'ghey','456456','6456','rtyrty',101,'465456345345','','Merry@ACT.con',NULL,NULL,NULL,NULL,'2014-01-27 00:00:00',NULL,NULL,NULL,'2039-10-10 00:00:00',3,1,131,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-09-22 11:57:57','41b473db-34e8-48ea-809b-9d0870fac44f.JPG',1,NULL,NULL,1,1,'2016-09-06 17:47:53',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,111,'1006',1,'Ethan Hunt','223485612',NULL,NULL,1,2,27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ethan@ACT.con',NULL,NULL,NULL,NULL,'1998-05-04 00:00:00',NULL,'2014-12-03 00:00:00',NULL,'2022-11-21 00:00:00',1,4,131,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-11 15:42:21',NULL,2,NULL,NULL,1,1,'2015-02-27 17:20:30',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,112,'1007',1,'Richard Parker','853215524',NULL,NULL,1,2,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'prabhushankarf@forziatech.con',NULL,NULL,NULL,NULL,'2010-04-15 00:00:00',NULL,NULL,NULL,'2023-12-27 00:00:00',1,1,131,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-01-07 17:56:24','20167301472533479521.png',1,NULL,NULL,1,1,'2016-08-22 17:03:14',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,114,'1008',1,'Thomas','3215921365',NULL,NULL,1,3,20,NULL,NULL,NULL,NULL,NULL,'dsfsdf','234','234','3244',103,'123213',NULL,'Thomas@act.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00','2014-12-02 00:00:00','2015-12-01 00:00:00',NULL,NULL,2,1,131,'','',324.00,234.00,'1234','ank Information','312','324','234',NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-10-27 19:29:12',NULL,1,NULL,23.00,1,1,'2016-07-21 11:04:37',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,117,'77',1,'w1','',NULL,NULL,1,0,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'','w1@t.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,1,2,1,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-08-10 17:32:02',NULL,2,NULL,NULL,1,1,'2015-02-26 18:53:15',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,120,'234',0,'Saranya','',NULL,NULL,2,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'saranya@gmail.con','PPP565656',1,NULL,'2029-01-19 00:00:00','2011-02-15 00:00:00',NULL,NULL,'2015-07-30 00:00:00',NULL,0,2,0,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-01-30 15:53:47','d6428a50-2a18-4587-94ee-cfefa4d12533.png',2,NULL,NULL,1,1,'2015-07-09 17:52:39',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,122,'P001',2,'Perumal','E1001',NULL,NULL,1,1,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'perumal@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,0,1,0,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-01-29 10:34:33','1d1da549-cfc3-44ea-a681-00ea5440a1f3.png',1,NULL,NULL,1,1,'2016-11-08 11:59:15',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,123,'E1002',0,'Karthik','',NULL,NULL,1,1,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'karthik@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2015-05-13 00:00:00',NULL,0,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-16 17:44:41',NULL,2,NULL,NULL,1,1,'2015-10-15 13:10:28',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,124,'E1003',4,'Princy','',NULL,NULL,2,1,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'princy@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,0,1,0,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-24 16:05:06','fb0c8953-3f86-4e36-9f8a-09e4a581a234.png',1,NULL,NULL,1,1,'2015-06-08 17:23:54',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,125,'E1005',0,'Sahay','',NULL,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'sahay@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-16 17:51:42',NULL,1,NULL,NULL,1,1,'2016-02-24 09:30:03',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,128,'e11',4,'Rakesh','12356',NULL,NULL,1,2,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'rakesh@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-19 10:29:23',NULL,1,NULL,NULL,1,1,'2016-02-23 18:58:35',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,130,'E108',5,'Vijayakumar','108',NULL,NULL,1,1,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'gvk@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2015-08-07 00:00:00',NULL,0,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-07-02 12:07:50','2e1f97e3-63bf-4ae5-882e-df76d754ef3c.png',2,NULL,NULL,1,1,'2015-08-21 14:24:39',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,132,'testing demo',0,'testing demo','',NULL,NULL,2,3,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'9677506048','testing@sdd.cvom',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00','2015-09-16 00:00:00','2015-09-19 00:00:00','2015-09-24 00:00:00','2015-09-30 00:00:00',0,4,1,NULL,'256888',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-09-07 16:38:59','abcc1bd8-1742-411f-8104-706182db02fc.png',2,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,133,'Rajesh',4,'Rajesh','E1008',NULL,NULL,1,1,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'rajesh@gmail.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-24 20:05:25','a8a1939e-9c2a-4a9e-a3d4-22afef7efecf.png',1,NULL,NULL,1,1,'2016-07-29 15:46:01',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,134,'4387',0,'Ranjith Kumar. D','4387',NULL,NULL,1,2,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'','ranjith@yahoo.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,1,1,0,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-10-26 19:09:25','74f0a40f-82d1-4893-aa16-06e5d1dd214c.png',1,NULL,NULL,1,1,'2016-08-22 17:14:26',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,136,'E1989',4,'SathishKumar G','',NULL,NULL,1,1,58,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'gangaram@hrdpower.co',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2014-12-30 14:59:22',NULL,1,NULL,NULL,1,1,'2016-03-09 11:07:37',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,150,'EMP-9090',0,'Mani','Enter Identity Card Number',NULL,NULL,1,2,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'mani@gmail.con','ER5678',1,NULL,'2029-01-18 00:00:00','2011-02-15 00:00:00',NULL,NULL,'2016-08-10 00:00:00',NULL,0,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-08-10 08:59:20','bc81148c-b031-4736-b4cd-77a4e9450f43.png',2,NULL,NULL,1,1,'2016-08-10 08:36:06',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,151,'4',7,'K.Suresh','4',NULL,NULL,1,0,82,NULL,'600 096','Chennai','Tamilnadu',0,'AKB Aiswaryam Flats, 14/22 Krishna Nagar Second main road, chrompet, chennai, TamilNadu, 600044, India',NULL,NULL,NULL,NULL,NULL,'','suresh@forziatech.com',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,'2015-08-07 00:00:00',1,1,0,'','',NULL,2342323.00,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-10-05 19:24:55','8239411d-2d06-4614-aff1-ea151d5d41ad.png',1,NULL,NULL,1,1,'2016-11-08 11:20:02',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,152,'16',0,'A.Sampath Kumar','16',NULL,NULL,1,0,0,NULL,'600 096','Chennai','Tamilnadu',0,'TamilNadu, India',NULL,NULL,NULL,NULL,NULL,'','sampathkumar@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2016-07-06 00:00:00','2016-07-06 00:00:00',1,1,-1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-07-06 15:25:58','20169241477306716592.jpg',1,NULL,NULL,1,1,'2016-11-08 15:28:22',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,153,'17',7,'C.Vinod Kumaar','17',NULL,NULL,1,0,82,NULL,'600 096','Chennai','Tamilnadu',0,'OLD No. 95, New No. 20, Muthu Amman Koil Street, Ayanavaram, Chennai, TamilNadu, 600023, India',NULL,NULL,NULL,NULL,NULL,NULL,'vinod@forziatech.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,1,1,0,'','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-09-02 15:19:28','20166291469770067653.JPG',1,NULL,NULL,1,1,'2016-11-08 11:20:59',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,154,'18',7,'N.Murari','18',NULL,NULL,1,NULL,82,NULL,'600 096','Chennai','Tamilnadu',0,'TamilNadu, India',NULL,NULL,NULL,NULL,NULL,NULL,'murari@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-02-10 16:03:45',NULL,1,NULL,NULL,1,1,'2016-10-19 12:17:50',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,155,'21',8,'Sudandira Devi.K','21',NULL,NULL,2,0,0,'test','600 096','Chennai','Tamilnadu',1,'TamilNadu, India','600020','Chennai','TN',101,'3434','34343','sudandira@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2029-08-15 00:00:00',NULL,1,1,-1,NULL,'',NULL,NULL,'345345345','','','','',NULL,'GgcmFbrO/610UC+HBYAnwQ==','2016-09-08 11:13:57','07376159-7d6f-437c-a1d4-6763bfc4e604.png',1,NULL,NULL,1,1,'2016-11-08 15:29:11',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,156,'23',7,'Hari Kumar.D','23',NULL,NULL,1,NULL,82,NULL,'600 096','Chennai','Tamilnadu',0,'32B, St.Thomas Mount,Chrompet, Chennai, TamilNadu, 600044, India',NULL,NULL,NULL,NULL,NULL,NULL,'hari@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-02-10 16:03:45','38a46392-596a-4b4d-aebd-b21d8eff2df1.png',1,NULL,NULL,1,1,'2015-06-26 16:08:03',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,157,'33',7,'Prakash.V','33',NULL,NULL,1,NULL,82,NULL,'600 096','Chennai','Tamilnadu',0,'E136/1, 31st cross street, Besant Nagar, chennai, TamilNadu, 600090, India',NULL,NULL,NULL,NULL,NULL,'','prakash@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2015-07-08 00:00:00',NULL,1,2,0,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-10-20 17:27:35','7c880c17-b839-4ba4-9d68-5b8c069da4ac.png',2,NULL,NULL,1,1,'2015-10-20 18:03:03',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,158,'35',7,'Gangaram.B','35',NULL,NULL,1,NULL,82,NULL,'600 096','Chennai','Tamilnadu',0,'26/15, Kutchery Lane,, Mylapore, Chennai, TamilNadu, 600004, India',NULL,NULL,NULL,NULL,NULL,NULL,'gangaram@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,'2015-07-31 00:00:00',NULL,1,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-02-10 16:03:45',NULL,2,NULL,NULL,1,1,'2015-11-13 15:10:54',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1,2,3,4,5');
+INSERT INTO `testtable`(`ClientID`,`UserID`,`F_200005`,`F_200010`,`F_200015`,`F_200025`,`F_200030`,`F_200035`,`F_200040`,`F_200045`,`F_200050`,`F_200055`,`F_200060`,`F_200065`,`F_200070`,`F_200075`,`F_200080`,`F_200085`,`F_200090`,`F_200095`,`F_200100`,`F_200105`,`F_200110`,`F_200115`,`F_200120`,`F_200125`,`F_200130`,`F_200135`,`F_200140`,`F_200145`,`F_200150`,`F_200155`,`F_200160`,`F_200165`,`F_200170`,`F_200175`,`F_200180`,`F_200185`,`F_200190`,`F_200195`,`F_200200`,`F_200205`,`F_200210`,`F_200215`,`F_200220`,`F_200225`,`F_200245`,`LastUPD`,`F_200250`,`F_200255`,`F_200260`,`F_200265`,`isFirstLoginOccured`,`LoginStatus`,`LastAccess`,`ContextRole`,`F_200270`,`F_200275`,`F_200280`,`F_200285`,`F_200290`,`F_200295`,`F_200300`,`check1`) VALUES
+(2,159,'37',7,'Sethu Raman.R','37',NULL,NULL,1,NULL,82,NULL,'600 096','Chennai','Tamilnadu',0,'TamilNadu, India',NULL,NULL,NULL,NULL,NULL,NULL,'sethuraman@hrdpower.con',NULL,NULL,NULL,NULL,'2011-02-15 00:00:00',NULL,NULL,NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GgcmFbrO/610UC+HBYAnwQ==','2015-02-1

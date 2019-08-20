@@ -1,0 +1,880 @@
+NSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('9f47bf823da646a58d9dabe979bcf67a899814015','d984dab5c2084bab91ef16dda9264ff6899852019','LastUPD','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f901b003c37942be867bdfee996de622335499579','d985ba906dc141abb04a0a632aa87096335537583','Description','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d356236717ad46ddafa32f90e2518e05322587288','d98f621d8b7343f4a3153519759f7c2e322632293','SmsJobID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2f740113ffc546568c8b48af37a8b8e5186045635','d9934fa6cc484a55a706bd6ad6853de2186081639','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0dae2dace777442e9e5ff8682062f6ff803926427','d99b59d31cca4e96929effe63643de18803987433','EncodeFileName','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c1778111d8c742e8bca2d4be28aabaf7424657494','d9a389f8e21f4c719004399d8684534c424706499','CategoryID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b55ffaeeda8b48b6866aeefee0ad1673418138842','d9a5b3c74d844ad4884947b7944f50b1418183847','ReviewerType','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('26f4830c1cc34883a0c98a8d3e94df40159125944','d9aeb67c3a124bb09323e97efc18277c159166948','DisplayInPaySlip','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c139cd048177436388ed3ef6ce87d718878232857','d9beb40b1bb443a7b3b3702b19a730c6878267861','ItemID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0fcbe7823e564d15b5a3d0b1f6004075355041533','d9d0b6af063e4d3abc7f4cfe0873bef2355087538','ReminderName','16','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5bc8909314de48c7a9d0e566f58e559d226071638','d9d0ee15688944bc81782639f5f051e2226107641','ExplainCriminalRecord','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f879841cc16341969a0641faff39997a140070038','d9e184f975f74965aaea2558d38fbc59140186050','FixedValue','15','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('50aab3cf6d97486b8cf6c0383980ace3332650294','d9e8bcd503134eb78f5ec3cde4e3d9fb332702300','StepCategory','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5fd8c0b4fa244d2baff51b9df8935090909887022','da0135a8ac7943398187905427b9be5e909933027','Staying','7','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4d9538c21b9945bcb3ef96dc02aeb7bb343112341','da063e629a96436e890e293f11778631343158345','OTID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7f71220cd69841bfa553f2c1f72f570a282622292','da06969d3f5447c780323c75b9b86656282691299','TempSchema','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1884eb4e0b804960b8f111f8510cb324426880717','da096d790b7445268683ebfa3b0daf9f426926721','StepID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c60c59404a0b4a0fa1965d82f9c78102981951228','da20056025e14e76af242f7cbd6c877a982007234','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e4a2e41658284c6b904a74c69db2ead5183909422','da21c816988d40959e6d86b64fa6f7e9183957427','ActionBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d8602bcbdb9145a5994db2514e62b0af193018333','da228c35977c465490b03c813e481f40193078339','OpeningID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('416c758da6ee4defb40ade15e067dc4b106170649','da24b1c131584cd7906bbde551633944106271659','CreatedBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7e0633ab7f5746cb928d9103b16e79fc312419272','da301debb565427c94527f42e43d7ecc312511281','ExpireDate','5','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6999353367a9450aa964cf12917ea77616283661','da32d1104ce845c78cfc35b91244bbd116329666','NotificationID','12','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ffde6035742540dda511199469aa6cbc52384271','da3a5cce8fb24b4a85a71beedb0e92a452447277','IsNewTemplate','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('929614a3dbee4437bd5812f9738b847753927425','da3cabfbadf045e1975b8c5c679cacc353968429','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e15e724380bf46cf9f8d501deedbc486849351969','da3d989529bf4c3592f819eedb192e21849438978','Source_Type','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b5472e82cab94c57ad3c8d6046211f06246360666','da4a9429d5b142c084d0854952ee28da246410671','HRContact','0','500',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7fb6475b0aa24cf08e3300177daefe56223896420','da5531b0486c40fba8da8c3b19318991223939424','StartMonth','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('393b8f56d69a4d30b985bc80070aab2e416313660','da556e77e312415c822ec887768f3481416370666','Perspective','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('40ee8a77a4bc4af0af4edcb2d814f2b3861182152','da58413e921441f7937bb44f25ca49cf861228157','SearchedUser','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ff1b0d34ce554447abd8bcf4e23b5729149871018','da59912f08d645a199761ec7979bd46c149932024','Fyear','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('89a73269a9bf48b6b5b82875f1d57163222449275','da68ea68b513481cb7ee5e4d05f939eb222497280','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('227549f6430a4d359d77140040b20d30780560091','da711dd2b91148eda8019794d2464c2e780599095','ComponentModalItemID','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c03bcf3ae6374cfd9fdc4f1f088306ee46522685','da72bddc28614135aad4f3d97f96bcfb46551687','ScoringOrder','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ea0af8415c9d4fa693e8306394e7f33423436376','da74eea194b643aba5e13983f63e19fb23483381','TemplateID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('59ec2720b607469ead65d8c9bbcc2902162632294','da75db2e83d541008438df281af37b5b162681299','ComponentCode','16','255',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('9538e587af1c4b958478088da2bfbc64787696805','da79a2bad00a44dcb5fe04f50d1d913d787739809','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','da7f4226facd41c38218361f5f0d83e9254970527','F_200825','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e6202b35fb774fdf8dc1d4c93365b992856827717','da7f7f63403c4f58a78ce7d99a3c8add856874722','F_30515','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5e7c74eacac54f9a9df0f0e32975a71340018034','da7fefb69fbd47258c7776b12569503240048037','ReviewerID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('645092d4afd54f14a60b71b49b5bacf8288057836','da8234824e94406d88f87335660c1203288093839','EVid','0','100',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('18aefb7383f54c6f9353aee594c48cf8816772712','da888070260e4f0486df520f2386f936816823717','F_10020','0','45',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('de923deb7f5042b09237747f272a1fda920887122','da971d6804834aebab6769d2faced354920937127','Remarks','0','150',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6f314a988b434b6599c74b22a3c7dbc7307939824','da9bf62e66404a5f9ae11c388a60fe6e307977827','BUHead','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('917bedea8e6349b293fb5a21b6224c98948975931','da9cee4303c642a586484ee8a52f3858949032937','HolidayID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ab50ecfe9115487e8c9cb8c736af85e9896976731','da9cefa381cd45038c972c0894f580d5897018736','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b37ab248a47644f286dfcda82a321a75414934522','da9fffab463c4c16b5557c201d617c51414976526','CreatedBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('faf20db26205426fa657247f8affd968406939723','daa54bb456c4422f8ec6546a5489814d406984727','AllocationPercentage','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('81a128d6226847e6b3eaf829a916bd32413444373','daab571acad640e6bf6535145bea503b413488377','ReportID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dcaa677763a346dab46e601380bbf26e977398773','daad8dcf44784fe8810a993c95f38c3d977437777','IsFullDayOverlapping','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('92385e72012e4d06b631da87ae9f5d3c281908221','dab437a25e314ceda57e932130b89d6c281959226','rKey','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2f221e6466f747b4888a6d48c243ff9a852390273','dab533544d82485abcfcf49f51852d8e852437278','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0c4fb0f5de514297b9e825a7329fad3e3830416','dab589b7b0d54d46828bea1eef888dcb3873420','PhotoFileName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6a673a3111184ef6904fc2b4b359f3b1112117243','dabc77622c3d41079bbe9e7354ec3546112156247','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5c9b8a207d544d41a9311af5fef85776151188150','daca210448514761b9e51e4b265d9e6f151235155','LOPTakeFrom','14','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('74ce8de667f74b5682da7f775090b39d196599691','dad2882ff86e4de9bced8d6a6cc0c3a7196662697','LastUpDate','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d7a5d2e2df5a4784b077d228a5043517169085940','dad4ed8134cc49a499ba7902f6c66b53169129944','Location','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4d2ade03f7ac4b6596e772629a5a7ac0218218852','dae6c22358bf4013a96c765de6f2c8f8218252856','QualitficationSummary','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('55cc4126b8554208a3ab59ca77326cb827018734','daf834f491174df7b440efa39a4d0d9c27065739','SelfCompDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','db0ab849cf674625879aa59f32a607a1254970527','isFirstLoginOccured','14','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('387a5236e8f8467b82024eb6e3af534c863383372','db1207680ebb4fc0ba61dca501d586a2863436378','F_31005','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('70fd343505c7401681cd7dfa920efa23402543283','db18298ead3f4ab1aa674222612c0b14402584287','WorkFlowID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5d06d3e7f49640b7993a98cecb1d2efa347524600','db1bacd441f24acf8eb0e6038133a7cd349825831','mmmm','16','444',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b9c06631cc5d48dcb705975fe961569494790511','db1e26b7bc064142a43a99fbf6a9831e94849517','Designation','16','100',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6d500d30468f44d5bb11735a5874d5cb809532988','db2b059c58164855a4b972b4504ecd07809574992','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('96d575f91dfa497eb1e1ddf8f1e548ca327308760','db2f2a92dfcd4f0f88a1e5cd0ead6a93327358765','F_200006','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('25dae61497b24c559100ca91a61b0491934407474','db346f4f00df4625830579eee0fa048c934443478','Details','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('35c4b2aea4254fca9a97b6e96e39c9b9769066942','db38f719ec2d4edeb342d85c782df6dc769143949','Email','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('baad61d750e840acbcfad7df3cccbcac760851120','db38ff1f43654324a2c8b39ee617369f760914127','ActionBy','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dcaa677763a346dab46e601380bbf26e977398773','db48a5505f6644f08213ec423945589e977437777','GraceTime','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('aabd0e0d2f9448868f18aabf1e2f1ba9783894424','db4e5d756f2b4b0fb0de0f49f028785f783940429','Port','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8818f2a76e4d445f8393a4db9ff061d239315964','db57c4cc9cdd444ba81282e5a76d4e7039355968','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fba8af1012e8475e96d4b4b1038c7134269924022','db5e16806c7c4fdc8c41731b234eda9b269977028','StatusMessage','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('484b3c47146a4af4a7c2ae4691332d51996655698','db6123f3582b4855ad778258bc0e03e4996695702','ActionBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('be6a59eb2b6b4d75991ed70288f72459954631496','db6705fbceb341c8a4289a6759f3683a954679501','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('58a6ab2d8fae4dd0b6d44b999a0b1f15805424577','db69245b470945d3a3cf3069abbd8e13805467581','FileName','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ee01dfabb78440df89247e32ff20affb121885220','db6ab0683eb046e594d39cc13b77fa71121926224','ComponentDetails','13','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2b5c3e563de748fb8a9f963ebd2ed239882418276','db6c287d897542ed8635abb3e89d4045882464280','ClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b7241bdb2891477fa6c0f7660e4f735c328181848','db792c90d7c84c62a445ac3226e80587328226852','UserID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6098b3e73c1449358262e903dc033b29935105544','db82ab59dd514299965bc903fd194e8a935143548','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('db62b5fd5db74938a9b76fa8023c27b5193759407','db860747698e4f50b230bccde0291ef4193802411','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1d9f0ef6bdcb46b6a1a5644e843005f6914945528','db8c7a725c5a4c4fb0b2cd6a4d7a785c914987532','LeaveEntitySchema','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('db95bdf7a0ba4676a90568a7b970fee6939406974','db9458b2c4134b57844cd6f60ceedbe0939436977','CarryForwardDays','7','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1825533e2d96406ba4b27816a400d6fb8911924','db9f92991df243c7aabcf79bba6785ae8975930','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c2c183f3259e43dca9e8b48ee7e36a08898399874','dbb6d19471a34ce0bc983a2c44f8a7a2898435877','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e39a2084a293406fbb224f22206eb913212332264','dbb80377bf01479c967dc92ff2aea8fe212369268','Item','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8a798bb61a49489ea24108bfb8a53640384078437','dbbaab7dc0b343f280254edff9e886fc384129442','DepartmentID','12','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5c407b5791984bc2979e6ad071e806de426095638','dbc4aeccc63d40c594b38484de078ef8426174646','WorkFlowID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('26f4830c1cc34883a0c98a8d3e94df40159125944','dbc51feda08b4e14b9e5a9b491915502159166948','FixedValue','15','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b6e08a4bd8524b6b83c15c54bfa5aedc403978427','dbcb4e78082c42aeab6cf26f361eecf2404020431','StepID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7311bd78737f4d7480ce61fa3786ec4e401949224','dbdc4d2202ed4d1ea809618b0a5df42c401995228','NotifyUsers','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dbda33c9dca748d9ba406dbeeb73e8c750873120','dbe71be14ec140c298aecf19f3c1074a50904123','ScoreRemarks','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fa6e18b4b96d4df7b1e10f7184a6ce5073375370','dbecccef24fd4ae99cac220eca98d74573418374','AuditDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3d319a0194254fed91d554ef4695b33d377185748','dbf4c768fb6d4e57b555485045001f85377242753','PositionID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4e88cf0676b64765959c16077556062e812433278','dbf6d008708546f0b329172eae8d989f812488283','BusinessUnitID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2508c50fe70041f88c060f7b225d94c8929357969','dbf88be8c5d64a46a86083e292bdf938929399973','IsEnableFirstWeek','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('188ba43bbe37440fb4fd82aab7e48a00869673001','dbfa3e454882478a8576ebfd8e6fc616869714005','F_30270','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a264095960a242288de082c8963b2077357047734','dbfaaafd13f04e7da8fab1b52d5e3338357104740','DependantTaskID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('363cb0556eb84f50900d5f2ab897c1a0771323167','dbfdf8c6650f480a83b607e8d205619b771363171','F_300025','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a0f140162cc14ba29c37b5caef382fb1959121945','dbffcb81dd8c4333a1efe93b01bd3957959178951','EntitlementID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d3fe40dba2ed493c9ce27dcb6a6a9bb2194469478','dc010788492b4553b8bcba843f158bc5194519483','IsSpeak','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7fb6475b0aa24cf08e3300177daefe56223896420','dc0210dceca84abe867d7e2095340836223939424','CandidateID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ed759b1607b94074902d43bca61dcbad401192148','dc155dd143ee42119ec7dd7a0c536141401273156','CurrentNumber','12','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ecab708204ec4a4fbaf4361baecc4c31919307964','dc203ab9679a4920bfd11b024acc391e919345968','WebType','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d715d6b9b4ae4b9c998eae98f865a6e2864834518','dc2e29ec42684d30846a34f6fb08ff19864880522','F_30370','13','16777215',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1f387ab585a8465887cbc6abd59c655a124128444','dc3168cf31e042899586dc1a288a6d78124173449','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ba79b21a91f34248bae4e92440f8c71397062738','dc364ff24e8a43be9e1255f86815512897103742','FinancialYearID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4c27b9f8402045b48673c8ae71d84d58837964831','dc36cddda7234dc9a75a30722513429d837998834','CreatedBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1eaca302778540d59f829cb6b0b8de7d359202949','dc404282168b4b7c91ea2d68fa7d0047359249954','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ea2d23898c38414f9dec5582402846a3850916126','dc457b2bdfdd4c2ebeea370d4347379b850958130','IsAgreePromotion','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3bb739f0300d4aaa9d22feb9067e557c199410972','dc52556ef2164a109a85e7a87299a32e199454976','OpeningID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8a32a0abfb074dd9b3ab90e1ff8f7449294395469','dc618c5871f94f609610697f2d34b633294446474','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5f6c9254164f457ea406ebdd14f3c3a1120307062','dc6e61be62024c06b81eb4015b269d8b120349066','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('eaa17bd1f495422e8ff4f9f4e16d9948357757805','dc73558bdc9745bcacee625afca26be6357805810','UserType','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fbcbcbf615044f9eb714eb5081c6117b274761506','dc78603a2ba648798bc0c9b46b7f946f274812511','ClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a10a6ce33d7343308b91d7697250facf962006234','dc814768e52b4268b44dba80002b00b5962056239','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('49de00b1f031474e8194ecf3c4ed996b372277257','dc87c10f96d7479d8c7531cb3c06edfc372357265','F_200085','0','50',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dcaa677763a346dab46e601380bbf26e977398773','dc8b2b0c07b94322b39a914b93ba88dc977437777','LunchToTime','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a3e24f96fc694267986eb13bf0f8d075914239458','dc8e212a159e4080a588432af15ead46914276461','CompetencyID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4d2ade03f7ac4b6596e772629a5a7ac0218218852','dc8f4b4e82a84323904e27757e992706218252856','OutputJson','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2ead04473282449d9ecc84a2fa0fd05c69802012','dc93a3f38b5646319f3fa50cc4f3166769842016','AttendancePayID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c182ecd0c7124fbb9b6959073b44958f970686102','dc93cb29f9b948b694da533055c8972b970744107','ErrorMsg','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('09ffa39e645f4024a2a6c8fe4b70008c90511083','dc995672f22d45f896583f0cb0cf211d90547087','Status','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a82c76f323e44439ad860d781bd053c1434123441','dca1d3b451504b6cbc2e0b6e035f06dc434172446','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e1b44db9eb9142caad416335821aff19206641695','dca67d16e524498db14adfd80bc6e14c206682699','OpeningID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('abc260d15cf743cfb9e74576471aa1d4928598893','dcab3edade8549ca9309bd214da4a28c928643898','LeaveTypeID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0e68a5c7c1fa49c5a6d38700e7dbeab0986651698','dcab6c93cb4547c790fbe2360f5c56a2986707704','ClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5bce45c0b854448b9f42c12a409568f7949709004','dcafb2de8e09469b9d9824c0e4c5e010949753009','ISAllEmployee','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1eaca302778540d59f829cb6b0b8de7d359202949','dcb61ffb426c4438bb8064aeffaa9680359249954','HRManager','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('64decbae6a524275aa6326f84faa2988887094743','dcb904026f12479b95872182b27ea8de887139748','IsApprovalNeeded','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','dcb95461d5fa4bf2b21831a1f9962e3e254970527','F_200405','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('cad5b36768dc4a21ab1e03f3dfe7a00a137859817','dcbea4d922fa44d0a102fe1267b6b9cd137951827','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e6202b35fb774fdf8dc1d4c93365b992856827717','dcc5131b587848759c63537b1a3e7690856874722','F_30640','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('484b3c47146a4af4a7c2ae4691332d51996655698','dcc640bf8d144b9a9d882b2309ecd627996695702','OnBoardJoiningDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('93386c62c7514faf87cad5e497e6cb07874823516','dcd6f5259c684d1c8aec611c28605acf874857520','F_30515','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6999353367a9450aa964cf12917ea77616283661','dcdace2439c54086af2654f033a8506916329666','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b207ffc90fb04515ba6bc0f0499e0c726737706','dcdd44dc822d4551a6c21d0769181fc46783711','OnBoardID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5917c7c73fa14ea8a9ef733a8e51dce1340860115','dce26cd9af9c4eb2a85f2857169f2d12340917121','ActionDescription','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ce562661325d41cdacbfd19390e800d6912021236','dce4ec2627584854a479a010fca28f5f912059240','ProviderName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('242b67e806f2447db74f341ce51fa791348749904','dd195d33d656439285abf4043962d758348794909','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','dd1a43929dd1484bbff77c73a51cba1a254970527','F_200010','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8770e363739f4df880b5e3c8aefc2645394648494','dd1ec77d5fd341c7a87f7dbc7f5480cc394683497','WorkFlowID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1bc326a4d7b045be905d8b5dd7b408aa134933525','dd1efa47d041469bb5e15ebe87e20965134985530','PublishITStatement','14','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4cde12c70b9b407d8d3c5fdbab26ded258286861','dd2ed79f6fe7420087fe45839373debe58328865','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8c6e848747494b5ebe5e0e0438506b23405494578','dd31b72459604a058337fd3553ef4175405531582','Subject','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5b50117f7acb4cc0904a23dd70a8d997917778811','dd3618b8d4444d85864f2878cbe2d291917852819','AccrualID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0c8b0157f5264e34b818690a9d55dca9284714501','dd392bf676d1408683912e4bf23aacf1284775507','EFInstanceID','0','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','dd394ccc84194c43b30d80972ae02f1b254970527','F_200685','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8818f2a76e4d445f8393a4db9ff061d239315964','dd44d3ddadf54826afca2e66ee31e90b39355968','PerformanceAppraisalID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('35c4b2aea4254fca9a97b6e96e39c9b9769066942','dd47e53cc68d4a7ab916454658f6d506769143949','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f500ac5a7e5442ecba4d730ce319154791217154','dd4864dc4600460c8b8aa0b7cbfa695b91259158','LastUPD','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('212044624fb84f52bf77967cc53ce9c7824036438','dd48965eb94a4206ad0102ad15332555824106445','ProposalID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5235d9bcf898412a912a50f0cf45166c876232657','dd49a3f593bb45a999b91990ef8f8637876277662','GoalID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2e33bf511c0d4a2a92b358d46960386b794452480','dd4a3ed264124b7e934d371f6c9560fd794563491','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7628c15829854bceb9c6e59d041befc6249364967','dd4c6ef39d9d4f8599f7b935a9323615249408971','UserID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0284d74789a746128f018f339747a387204455476','dd581493a3b34ed0afdaea0d57d202e6204499481','EvaluationFormActualName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b30e132c5a4848cb9f2b4654bbd39c7f888532887','dd5fea46c14a4b938c00842f47b0bdb0888576892','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d75b6125a0644b5386133b995c2032d0960566090','dd66920fd23e40e3a663f75c998c3d24960624096','OrderNumber','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('76e688d32f4546039a09804c1e0161f9321115141','dd68f1169462413189c318ffcf2d63db321166146','Participants','0','5000',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('187f887af6fe45a687dfb8ea7bbe7c0e993745407','dd6a95c874664a3e9792c1a23986d0df993785411','RemainingBalanceAction','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a4cb855cd42e4b309abd59df25af45e4846264661','dd6ed7562b5f4ea6b790a30feb26898b846306665','BusinessUnitID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0c4fb0f5de514297b9e825a7329fad3e3830416','dd75b0934c2f42bfac6e9458780bf4563873420','Gender','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0dad2884b9e3416eb6c367e1db3e53b7991528186','dd7991c75d6a4c37a2c352c36d8f132b991570190','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6f338673f1184461b1d34542caee7e77985694602','dd99cecff62f4e6e9215348dfa9a7aff985732606','ServiceStatusID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('681e18988e1b49599a58e4f1fd3bb7a9989132','dda51e158cf64dc89cb00e820ae9a0121039137','UserID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','dda64ab487e14ee6a21c3761f6da5bfe254970527','F_200610','5','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6f338673f1184461b1d34542caee7e77985694602','ddaf122d78634ba2b1e92266239ebbba985732606','FrequencyType','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a44e824d5d5e48dba77d0f340a5fdc23320398069','dde1929797a34585a41d72a18e2c75c4320439073','RoleID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7e9d125e9f5546dfae964e4c890f009a9650998','ddecf191a2394847afca060b5ae62e309704003','TemplateID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d7a5d2e2df5a4784b077d228a5043517169085940','ddf1d6f682b64192a8720e5116f18336169129944','Desgination','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('deb6a9f7d0af48f7b47bfe8b5b992cc8430503079','ddf24902464b440d86ba81b3e131e045430540082','UserID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0fcbe7823e564d15b5a3d0b1f6004075355041533','ddfa2a721a334b96a41fc95bd61cad2d355087538','ReminderTimeZone','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('42c05ec1a2ec49768db1b0a0d54413e9927855819','ddfd470230f54cbe841dff553cdbc76e927899823','IsAllowOTCompOff','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('363cb0556eb84f50900d5f2ab897c1a0771323167','ddfdf5feda70465b940f4c3d1495c17a771363171','F_300060','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b5472e82cab94c57ad3c8d6046211f06246360666','de0a73366179427e9965027e25d2e6b0246410671','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0d941b8b5ed748e080b10f874ae6f51835003533','de0ab18d21e54a4780401c4ca7bba46835062539','UserID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('06976bc54a3a496fa2095c3380fd5019414181447','de128a55993c4c3080d4b50ba0a75f7e414233452','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b3781ec1c1914ff79f9bd0ad33a0f9b9789858021','de1e398840094725946864e7658b51ac789902025','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('58e61e5e91524527a8192e2048c006f4792141249','de23e372d4b3460fb261b7240a49ebee792183253','ProjectID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c9f7feeb9d9b4f458480f58850b7311d221156146','de2c5857e030417f814091f349117001221198150','Relationship','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f113eb6c2418492c930312191324f31889032935','de31ea2f33c046a5bc1c1b8e6efe2fc289071939','ProcessHistory','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ea8a8d4641ac46999c48da9245ca99af340153045','de3296b0916243c58faec27bab5a5820340195049','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','de335d1eb62f45d89bbeb88c286af195254970527','F_200195','7','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dcaa677763a346dab46e601380bbf26e977398773','de35f5e74506406b832bd585b29f84f5977437777','ScheduleID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('bcfc46decec546aabf66c95640bfcdc5315904620','de4fa22b12bc452ba0d5b85a9afe0ba3316006630','ReportTemplateID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6b661280c8a242b389916d49965717b7203002331','de55f04b41aa422f82fa22d501741586203057336','Remarks','0','1000',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('51e1ad1f8c9a40dd91811c6d6d682b8a47935826','de5b80e91ec8494a9983e3b11af6f14b47982831','ManagerPercentage','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7bf4f147b0b4414d8212f193e1874eb9957509784','de72d26921df43be85f0e43e0115ff77957553789','IsHRApply','14','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d75b6125a0644b5386133b995c2032d0960566090','de75693601c84997947f8010728b7e57960624096','PaymentPercentage','7','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c1d259d03ad74fcd97dde8db95dec0fa288771907','de76738feaec45b9b9c7d89f7c2dfcb8288830913','Italic','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4388be90154f4886b9dc92cb3fda5b08924443478','de76b2bda68c45f4bbf4fba57d7fcbe7924480482','EmailSubject','16','250',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('728a44cdbb9b4432887860bbab17e608258744905','de77d2f8b7ef49348e5639c8734a5c6a258788909','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('eba18b5eb9604e488b40d1b6a9b723ce410573086','de80c25f5b8340bdb08528308db8da81410610090','UserID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('475fc315ef364a3cb18a15a92de3c1a4884908525','de842eb4e48a49ba879a4aa26701e52d884954529','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e46b4a8608454ea8a41972efb175f362942362270','de95d5fbbce840f4abeff17f7718c69f942396273','ActionOn','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','de9bc6d9c6fe4619b68a9f5ce32967b7254970527','F_200540','16','150',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1246877ad5934daa81bd784a4d887262378631892','de9dc053f4aa486ca2204ec88f2bb2d7378666896','Type','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('06e04d2c62224e778cba5ca585b5ae0a284130443','dea8251520c64e3e88096e808aa813c0284174447','EFInstanceID','0','255',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ce562661325d41cdacbfd19390e800d6912021236','dea8e53e2efd421b86f957edc0be0911912059240','WebLink','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8c6e848747494b5ebe5e0e0438506b23405494578','deaa1c2d3b6041f081ffcdc66f4b0e58405531582','ReminderName','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5235d9bcf898412a912a50f0cf45166c876232657','deab83b301e9432a97c3f6a4612ce977876277662','ParentGoalID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('77273b898cde41d1841c968d770528bb247100740','deb18d49202c4d63be33b5be91fabcd8247149745','EmployeeCanRaiseVRSRequest','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b5aff685d59f4e6fb3ea0c634add75d4214914522','deb5cba1341f4ba8b5f32255cd0c1c4f214957526','Status','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('855b3327e0074f10952ea96c1ff10a18918547888','deb916b92a0945239d5ad4f21b4a73fb918611895','NotifyTo','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0cde31d138724a3dac67009f1946d442760150050','dec13d266df1495c9688768faaeb0f60760187054','URLSecurity','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5b50117f7acb4cc0904a23dd70a8d997917778811','dec24b06a82c4c1dada7e122782184fa917852819','RangeVal','16','250',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f387ed9a3bdd432f81cf59b6746ac66b84768509','dec9bea3079e43f68212559938465d5284802512','Reason','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e1066496eadf42aebb784816cdb89873257152745','ded45872b5cf4ec6bb5353b6e6aa7e6e257213752','Api_integration_schema','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('929614a3dbee4437bd5812f9738b847753927425','ded9fbdafb28465cb4c70b51fcddc6eb53968429','CreatedBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('06e04d2c62224e778cba5ca585b5ae0a284130443','dee201582cb546408e92bbfa3a972777284174447','IsDisplayField','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5b79e7990ad648cfaafd4cd5949bd911102170249','dee7c595ddb044d5a07f4e8542a45c90102214253','TaxType','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('75842eab4d4342ce8e25fbefcada1144109924024','deed7f43ef6f4eb5b4ef4c2a0e4b37c3109969029','Provisional','7','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3f9b6aaea5e14e7abe473b5d21dc5b9c44182451','def22e9c534d48f48863c9c4c126eeef44224455','Actual','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('58a6ab2d8fae4dd0b6d44b999a0b1f15805424577','df006ae00eb14b569024e10466798f13805467581','AttachmentID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d9e9e284f3e74072971ef59a255ad54b907765810','df039c09a01b41c49ac27820f09c49d5907807814','isChildCreated','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('faf20db26205426fa657247f8affd968406939723','df053cd02774460d91e6fc231edc496d406984727','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('414485a8215a44e29268660944dcb20b219708001','df09725bd3f744aaa32e886c5211d21d219747005','CandidateID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ff1b0d34ce554447abd8bcf4e23b5729149871018','df11d0ca76494a05bbbe966ef92ee609149932024','AdjustmentID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2d8638ed5504463c84b9651f352cb31e373498379','df1b482efdf441f4ae99be71bced7cc5373547384','PositionName','0','500',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('05e49698547a445380f1128229f7191c921596193','df1ca812661e4b3b9473bff705575e16921640198','StatusText','0','65535',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('abbac54f75ae4c7db28252a41ac342f3941658199','df1eb52d123f43a6b368f943aed73db7941696203','IsDefaultSchedule','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('77273b898cde41d1841c968d770528bb247100740','df1eb84cfeb94156ab6ca55c7ffa01f6247149745','LastUPDBY','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('75d080e09d4b42159ed285e2a6b5d1ee381660195','df208e11211244948501d530d716fefd381707200','IsDisplayField','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('09eaee226ec14af7bd3b3276427b1562917058739','df2e30f3ae2641e0a901f9ddfbb6ceb0917103744','Body','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('55cc4126b8554208a3ab59ca77326cb827018734','df30d41c978747cead680e280525805227065739','Approval3EndDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('142152e39c6a4315a94cefca6dcb30417457778','df32b1808bf244e9bbdfdc648e1b66d97500783','ModuleID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c3e36411237e4de0a7a0ed467e5ed9f7147004732','df32c282bf43445cb1f35f908a018641147051736','ProcessID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ecab708204ec4a4fbaf4361baecc4c31919307964','df37f225171d430b85d39747ff245027919345968','UserId','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a8ea13c648f64bdd84cae2b4a6184c31763155351','df396abaf4d744549267d2242b262f06763205356','Seperator','0','45',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('26f4830c1cc34883a0c98a8d3e94df40159125944','df3f0510bb4b46079c00060b742babbe159166948','CustomLogic','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2e0d454d58b0471b8f2f513c9e614332813866421','df451ea54c404981b46f046215123048813909426','StartDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('187f887af6fe45a687dfb8ea7bbe7c0e993745407','df4ef2c957dd42a09532fe501f75e461993785411','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ffde6035742540dda511199469aa6cbc52384271','df52c36cc2ae4229bdb043c8880c93f052447277','IsRequiredGoal','14','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('08ed3ed773c34439b2339ffa583bde8464634496','df52e50fc16a49ada8fa90ecd639537664681500','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('121896afcb9444b89df403c778fd818732822315','df5db060d31246f99f9afeb35587404d32868319','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3a24fdbdac124390a50730b268f54783870423076','df60a0f5b3904e98a97f822fe87a5f66870475082','EmployeeQuarterID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a51fec11f43e4604a92a2837833550e6857574792','df641d005e4b455ca2927af69411dac6857616796','EmergencyContact','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('9928e125f50f486e98db481eaec941c314114444','df72c4b4cf1e43ef866215c3bb0bdf6014153448','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5bc8909314de48c7a9d0e566f58e559d226071638','df74b0da1efa449980ce7791be9baf5a226107641','Surgery','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('56affecf1a074bf590fda96375493edc986010378','df7d160020ff49708e9b83811d60e3ab986091378','Category','16','266',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fd9049c1c6704c0da3e5cdf99b3aa0cf51585191','df7e604e6b114dd995d253eb4cee141a51649197','PerformanceAppraisalID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7fb6475b0aa24cf08e3300177daefe56223896420','df82526bfa74464da10028ccf79c6a72223939424','InstitutionName','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b55ffaeeda8b48b6866aeefee0ad1673418138842','df89c8136c95434ea9dddf293dd5af7a418183847','Score','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7d7441dfcec4f4693e4fc205155023c254907521','df8f1a99ab624af48bdf51f345859aea254970527','F_200630','16','200',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dcaa677763a346dab46e601380bbf26e977398773','df91a0f006bf4c6e83fb742b67bae56d977437777','WorkLocationID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('57de7e13f76044519631ee42ba228e21160589090','df93108e5a5e46e6a85532da7d449482160647096','jvcode','16','45',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('19782e4483654f539a088100b53cc264337963826','df97cdd33c8a420b866ab4a99e3fd488338000829','IsIncludePaidLeaves','14','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3e02b217dd1a4ca381cd0b3cb9eeb922867554790','df9849b57fc7462ca5b8331484edba83867600794','DepartmentName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e5c46281c2b14db78d645b48d9f67fab8192852','df98ac3d852d4463b3673714871414d68249858','TaskOrderTypeID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8b6c606a5b7c4e2fa1115a13f4c05d9b152609292','df9a35feb60048e3bec5d16fe6c29349152663298','FStartYear','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('188ba43bbe37440fb4fd82aab7e48a00869673001','dfa7087f74644b0096a9fa1bb992fca6869714005','F_30260','13','16777215',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('929614a3dbee4437bd5812f9738b847753927425','dfa8a1a999ce43819ee48cdd5dd8766c53968429','IsGradeChange','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c3426a14d0b74c6cbba453bdf84b37a9286765706','dfa8accf7b454528a14a851f2f8d4a5e286809711','ViewID','0','255',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('79bb2bc0f4974ec9a633bc125ff61e73777082743','dfa8fac8692f40c998245434561e3216777124747','NewLayout','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d8a4cae681a24733aee861ec880897ca879651999','dfb941d7a42a4ad3b670d2dd362bb184879693003','ReminderDate','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c55c2c1a3f324eee9f4f87deb97f009d186620693','dfc8d1a0f1d5438b9490963c57a8b522186682699','isSysIncrement','14','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4c27b9f8402045b48673c8ae71d84d58837964831','dfcfa47db0ca4de184f3e443a86f9f88837998834','FieldAttributes','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('43159a0c864244b9ad3f9ad07b19c8be987887822','dfcfb40c8a7340539ab529d1eb8e0bfb987934826','WeekDaysID','0','150',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('14ca00bbb9314036b9f5c4f7fc1fbbc3345296559','dfd6f336510d4a91bda9ae52aac2a7ae345337563','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1f6d245cf83c45239c96605d8e73d113158415873','dfe522eba3c54647a98f9c51ba7694e3158457877','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5da05a6e5d2f4dbf9b060729489a5d67321859215','dfe795e48ca14530a268fc23dfab25a6321923222','Status','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e97c53e99ddb42babee88f257ba43f0c216657696','dfec23bff28943bbbd076b202c17526d216694700','RequestID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0fcbe7823e564d15b5a3d0b1f6004075355041533','dfefe150fdef4b2496c602b822a274cd355087538','IsLastDayOfMonth','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('24359d89feeb467ea64fec4b95ffbc8322816314','dffbec2cd5b6457d92efaa15d921492422864319','ReviewerRemarks','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d7c5e4ffc7ce4877b967795f45526cef824672502','e00b67678d2142cc8cdf8ae58dc4a2c6824721507','OTStatus','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('56b79ad0d3d842acaf6655f6bbb77826774977533','e0144174da004a81920ce1d8e9053249775013536','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('60f400060f4a41aba19abb7233fb28c1808204855','e01e8aeb5b5f47a1b0ff25aeb2eb6ad4808248860','GradeID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a8862953674b43aeb2e4d7a71907fa2e319693999','e02381e2864b4bf085f005ee79d2fcc3319731003','RoleID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8c6e848747494b5ebe5e0e0438506b23405494578','e023cc74cfc64f2d81ce59564c47b2ef405531582','ReminderFieldID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0c7fd0b0ca2840e58b47cc297f8ea836833897424','e026c2319d554acab18936d7887a2f77833947429','FieldOrder','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3536a128736b439a9eaab1384c880ed510389072','e02ab9173582457a8a882a4a7c56ea6510427075','PaidStatusID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('212861b02dfd4da0b11407323e18f18883297362','e02ad7379fd4431bb9cb87a414914ab583336366','EmployeeID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c86e283b76d444e486197a9996de20fd250163047','e02fbb539e404121bf8a42ef6199d8b0250201050','AgreeSeparation','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6b661280c8a242b389916d49965717b7203002331','e03469b7c5f34b36ad559eb04468691a203057336','AnswerOptionID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a3014e6a726d4e00a289be1c55c5bcbd871850219','e03872a422374665a7103f383ced1910871892223','ActionRemarks','16','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ffde6035742540dda511199469aa6cbc52384271','e0409267e39043d594f07247317936a052447277','IsAllowPositionCompentency','14','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('745184fec7ba4f8db18faa0230319419853836418','e045ad4598dd48789f6c555d67a319ea853874422','DateOfAward','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('87c48b438b7f4fe68343ce2e7b20ab7f876950729','e0475fc4e4bc4f23b25fc4b725fea280876994733','HierarchyFileName','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('80d218bd6d884a159874505b9360f21428462879','e0490e8cde45435baa07eaf6021a81d428509883','RemarksManagerCanView','16','500',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('212044624fb84f52bf77967cc53ce9c7824036438','e04f95b58b49436095c4c80bc5cc8f76824106445','AdditionalOutTime','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('760ca7db4a9d4131813f8613be66b0d2181316163','e0546cbec9f345b8a1c733b1d221db90181354166','ErrorCount','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0dae0390385748758a37b3f2ee3a89e6984144447','e05b8f6ca0f24a7a9893ab42f1b6ac17984248458','CreatedBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('550bca1d14b7432fa759cc8d1f894b38274060','e067cd297ac24a83b35746794fce1925313064','AnnualFactor','7','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2e33bf511c0d4a2a92b358d46960386b794452480','e0733ff71d3547ae9116f693109cc48a794563491','CriteriaID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d10aa8459d66465882323a70e227b49375528585','e077186a053544bd92a3afee0c3263a375598592','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4d0eeb1eaf434202be8acbfd84d114a3273307361','e08c6addee824e4aa57a987d6d6ccaff273366367','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('9e7d78d4fd4748579865b2cc80bbd009937759809','e091d992a5914ca3bd96de854e6a850a937827816','FromDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4ee5a41a15d645389062b80a50ea4193932089242','e09407e3a1d34014a67513b58dde8654932142248','IsAdjusted','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6f314a988b434b6599c74b22a3c7dbc7307939824','e0946bc8e0114422a2f1ce718661a755307977827','Manager','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5a67eea30d894214a8727eb9953f916081881220','e09f418871bc48acbb7cae034166621781922224','PreviousMonthlyFactor','15','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b37ab248a47644f286dfcda82a321a75414934522','e0a57eddd4c84d3ba45ffbb7c9392192414976526','VendorCode','0','100',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('61c1fb5f39a943b49ddcac63a90bf34b79251957','e0b1de37efbf4baaba6c2aeea3b377b379370969','Amount','7','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('142152e39c6a4315a94cefca6dcb30417457778','e0d4804c001745709ecc53b1d12dcb1b7500783','EndDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dbda33c9dca748d9ba406dbeeb73e8c750873120','e0da030165eb4b65863c32444669861d50904123','IsPreLoaded','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('75842eab4d4342ce8e25fbefcada1144109924024','e0e0f7c307f54989a24a9032f6f8df04109969029','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ab47d9dbfb614605b513d88935d57745982678301','e0ef42a4718b4849bbae4f5743747d42982741307','IsSuggestEmp','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7e0633ab7f5746cb928d9103b16e79fc312419272','e0f4860e03e6441bb2764f069c9ec493312511281','ReceiverID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('eaf44e5c9df04478a0a3767da188fcc3171237155','e0fcb1dd5f9244049f948f6ce0d81887171294160','CategoryID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('42d23074e9f845fa938fd0cf86b12512247948825','e103274959c6439a834970d962bd7f83247983829','ISChildCreated','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a031768083b94304803c6a803c86f10c948242858','e10684ca1b5f4f2a8e7f59dcb0202c5b948282862','isAllWorkLocation','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e7259bcf3036410c9e3fc6616a709bdb149148946','e10d99b873454e5bb6c7ea988ffa509c149188950','CurrentBalance','7','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('96d575f91dfa497eb1e1ddf8f1e548ca327308760','e10dd27fc9eb483f8a15d3c0ed71d343327359765','F_200090','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('76e688d32f4546039a09804c1e0161f9321115141','e10ff431e7b64e88a4b77b4ef15fac0a321166146','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('855b3327e0074f10952ea96c1ff10a18918547888','e110921da5884e7689572bfedf48c841918611895','Subject','16','1000',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3f9b6aaea5e14e7abe473b5d21dc5b9c44182451','e113aeb9bbd04e12815f3205574957b744224455','UserID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ebdba195f17a4bd7b2be25fdfd40b193237982829','e11b88c05e02496c9818f230fc4f3b95238021833','ProjectID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6fb85363ae874d27a5858f145f39e932352181247','e1215786a36d478b8fd5a78ec1538ca1352228252','IsUnderTime','3','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e28d22337f1b4e649b1d394d0fac1537850173052','e12248f19e704e5db1b1c64c9a3a5562850215056','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d46b41b052f44250a5de1d42facc0925906323666','e1253b19620c45b49016d14016e534cf906364670','EndDate','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('feed6f42006f4eeb8c1837d13822e674380503079','e1259aa9872145dca5185994d6317d98380546084','SubMenu','16','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d7a5d2e2df5a4784b077d228a5043517169085940','e13bcf5c2b784bf6a739d23d1fa84dc5169129944','LimitedStartDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('8a798bb61a49489ea24108bfb8a53640384078437','e144a267a34e408abfc50d78436d9b13384129442','AppointmentStatus','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('58a6ab2d8fae4dd0b6d44b999a0b1f15805424577','e152b269f9fb4d39b440343fce2f406e805467581','AnticipationID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d8602bcbdb9145a5994db2514e62b0af193018333','e15433444bfd4ae28fe844b2b4577a74193078339','StepID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d75b6125a0644b5386133b995c2032d0960566090','e16d8218efb748e9a45993604b43d62f960624096','LeaveEncashmentComponentID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a03a2954b306478a8f15352a311f096b399697999','e173567dba9041c1949c052f3322d53c399760005','Status','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e39a2084a293406fbb224f22206eb913212332264','e18072b507a84d159ee30b6f7c5c0967212369268','AnswerText','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('aa4f194ddf214f08bdf37528c31d5a12889297964','e18f2d7bcd014ae6a0b4fc399eb67427889336968','ActionOn','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1a0cf03141474c25bab6800b475d2d7d66829715','e19322c1db0f499c87959658eb46531f66911723','AssignDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('05e49698547a445380f1128229f7191c921596193','e196f10fcff449e7859fb82069a2af50921640198','SuccessFullCount','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c314d95dfa274233a8d01c466c5eee58347436773','e197b13ae5d94e44abd0f88e7591c4ab347484778','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d06821281b694aa28017ed74e440bfa9854546489','e1b0b41d5da94313a1fb60c5a44e6ea6854584493','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ce562661325d41cdacbfd19390e800d6912021236','e1baedb5ef82424fb955ee8f1b14f189912059240','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('37896fecafc742cd9e7bb2369fac0b20772038239','e1c46e7d202147568621de536216ef25772084243','PICPosition','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('929614a3dbee4437bd5812f9738b847753927425','e1d170e0111c4b4ba177c7e00434ed6853968429','IsPositionChange','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1c2df1b39e1f4d98a28d20804531e37233529385','e1d51a2d53fd41ca9893d3438970cb2133578390','GoalName','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a82c76f323e44439ad860d781bd053c1434123441','e1d74aa4e53141459936efb92f662a6c434172446','StepID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('80922cd143db487ab2542eb441ab354e38599892','e1dcf81f19e343cea474048dbdea312f38646897','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('53ae3f69af2e4431baf4b805f1014652290831113','e1dfb17267cf4ea583e430e2c904e929290877118','IsCoreField','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e1afba94240e4d689ab5f5b737a5ec65223193350','e1e054585f0a4df0aa2a89275d4f2e15223231354','Position','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('09b9618e34b04c419906464d15c64aee436266655','e1e31b3f92bf451b88ea0b27bbc25184436301659','F_310085','0','45',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('22b93c931c8d486994d587969786262e59593992','e1ee3bc2f9344e7482d7f59918c8697459675000','b','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fc75d76901f9427ca8f79f14215a1838385932622','e1f24405bfcd452d866fa9029ca33b42385984627','password','16','100',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7dd887f8c34b4042bb13aec581875dfc356339663','e1fa33af730e41e1aef0519051c2c3bf356376667','TagID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d7c5e4ffc7ce4877b967795f45526cef824672502','e1fc612c289544f38cf29e147c9d1ba3824721507','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5286edb0116647b19428bd534bbf5853119428974','e1fe3f3d33c54126b1869ccaf72a7f6c119476979','ReferenceNo','16','100',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f36c471e9c3a41df91b754dcf05f7652933699403','e1ff232c9b0c455484da860d52e430cd933744408','Status','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c3e36411237e4de0a7a0ed467e5ed9f7147004732','e2035fe7ad8e408daaddb117f73916c8147051736','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('79bb2bc0f4974ec9a633bc125ff61e73777082743','e20a763b199740ec9afb18c3cb824a79777124747','componentId','16','255',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('63eec16c527c461bb5ab6ce38c8c6fb8374084437','e20aada94abe4f48b0743f24c49a406f374123441','Tardiness','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('76e688d32f4546039a09804c1e0161f9321115141','e21044c667d8423992a58335afa07982321166146','RecordID2','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('53ec038e6e8d418fb126247bce9c3a6d755736609','e2156ae572d748719b2e99354ef5e2b5755819617','Remarks','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('cb7e3ae73e114a9bbb40f66e3046974a117979830','e21b8e10b5e644a58c2afa10ab13dc8b118025834','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d90b64fb258d4b82aa0ebd0fbe6005ba767624798','e22f24f430f749febdf5b270bbd9a261767667802','PrivilegeID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5917c7c73fa14ea8a9ef733a8e51dce1340860115','e2305dee4d2c4c10bfe33b6cda77ce29340917121','ProposalID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('96d575f91dfa497eb1e1ddf8f1e548ca327308760','e23398713bec498d9d2c686b41b400df327359765','F_200210','0','50',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('abc260d15cf743cfb9e74576471aa1d4928598893','e233ca8a63234ea797bfb45c5d6baa0b928643898','ClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ac6f4a13f339459689521ca1d0bdfb6a86174649','e23ebc0956b24d3294f76b53554d80d986215653','Type','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2fed9bdac7d44ffc973eb6c9dfdc5b84287352765','e26d517624c542229413d5241b5c5d29287394769','ViewID','0','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e5d1baa065454abb8d824f9e03ce9f3e874046439','e271cb4805664cf6874575dc66e54358874143448','TagID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7e502c7fc0454eb080eaafe12f1bb368418733902','e27af6202e0a4e869a528af1c054af14418792908','WorkLocationName','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('f8ed38b3429645c1bdf3d8ed8fe81175107767808','e28bfe4273554af1a79cb556bb9c4c01107807812','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c86e283b76d444e486197a9996de20fd250163047','e293929c572d42b8a03d13580b00a41d250201050','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('cd50d586e3284b0692775f45f5bb58ee956784712','e29c4fb414a5458e8ccb5e92932a45d6956819715','NoOfDays','7','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ffde6035742540dda511199469aa6cbc52384271','e29ec1be99044de394344992de40989652447277','IsRequiredCompetency','14','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4654a5ba7b114473a9596057e44d2a45865551589','e29f72a9fa324237b244e2775a24c856865589593','PositionID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('62584e9d74014e4daf60c18a2701244d940107044','e2a629f03bee43f183bed36a497f2acc940154049','ShiftPolicyStatus','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a3e24f96fc694267986eb13bf0f8d075914239458','e2a6d1a791f54c16b09aa863a0220f35914276461','PositionMatch','7','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4f52bfd740c14bc5820606b97911d5f695600592','e2acb5c2d52a4e8ca87f3f940903e90395642596','PayCycleID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('911fb1bc80b1404c8361edd87c7188f9409120941','e2ace9fad66a45b99d7571148ca2108f409154944','Createdby','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('67bb6774f1274cda8617e9ef52b0e5e7118696901','e2b1019e503246ab9b91e50f289384f5118737905','LoanID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('7977de109bf047c1ab3f018d0f1ddcd4103879420','e2b31e3f472d4547b01281d4384953f9103924424','ProcessedID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5eccdcf1eeab4e9ba1ccc3c345ac6e6d139344966','e2cf0ab40ef3481a9438dd2ec404ea08139386970','TemplateID','16','45',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5fd277f072f14192a3143ae86fcba0ee261094140','e2e7950a059d4d77a75f3fc6c8addd83261466177','ISExpired','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('e28d22337f1b4e649b1d394d0fac1537850173052','e2ed7a0725cb4f00bf992b6bf3ffe24f850215056','IsAgreePromotion','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1b74191bf7944ab39d040c2cea360de8925715605','e2f4fa7470e44b6e9ec56301cf8d316d925755609','EntitleID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5a67c662e16544b69861b9bdfb1a66f6266911721','e2f62f3d215742fabab8f49c45e7dacb267243754','GroupID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('70477f03a6fc40aa97e2c73dae1fcab8137117743','e2f9c93fcdb44bd78dbdb3c6dcab6b25137157747','PaidBy','16','100',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b7241bdb2891477fa6c0f7660e4f735c328181848','e30052f2a3fb459eb2688b2b86398f17328226852','F_2000040','0','1000',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('debd76567fa14db29f60f45e629b2bac974196453','e307993c391d47759358b0a4cc67ad49974260459','EntitleType','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('cb022f423fd24bbc9ef73d837ac38997388556885','e3081930a39943a2a7956ff958ccbb86388598889','F_200125','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c89b4837d5f34236bcdd0a6b942cbf0d244208451','e31b9752fbd749ed9d22afe5277f5bac244247455','Name','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('484a70d971464261ae0a873ff6202b0857559788','e31cedc0791e43578b6fb6402fb5095d57598792','SubCanView','16','250',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b1bf6c1d89cf4138a0d9db2c0280cf56773524387','e32353b5b0e241f08a1002cc36a55cb2773567392','LastUPD','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1fa9887be12b462cbdc87023b4671bf2851662200','e3249c9751fb44ef9f54e45e2c5b24b4851698204','ClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('4d2ade03f7ac4b6596e772629a5a7ac0218218852','e32c41e0264c499ba748382656f6c8a6218252856','PassportNo','16','50',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('435046bb056a4afd804bbc4d6dbeb9ef161933224','e3336cee990f469fba78540edecdd701161971228','SlabIntervalStartsFrom','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('618cfb7f4d674127b939d44bce841b4e351459175','e33b5611bc454672916bcec0d748b96a351502179','WorkFlowName','16','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('60f400060f4a41aba19abb7233fb28c1808204855','e33f014b74e241179e81c92825bfca7b808248860','DepartmentName','16','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('9a83916ded4342e39ce248f08d855e5470517084','e3477ea9c4214dcf983af64773839a9470555088','ConsiderMaxWages','14','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0a0fc796b8ad4f4baed287f1600ce53f300758106','e34877f2113a4321a2e7e4dcdbac5b0e300806110','AuthenticationKey','0','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d02730e3f019497dbd60955301a968e2804680503','e34b314bcd9c464da5a8f004bb435c58804724507','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('628a43a2b144498db75cd843cf136bdc245638594','e34db474cd69432990c111897aee8e34245674598','Order','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('96d575f91dfa497eb1e1ddf8f1e548ca327308760','e34fd71e5e204dc39ff2d0b70e168d25327359765','F_200150','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('911fb1bc80b1404c8361edd87c7188f9409120941','e35d2b6162214da7a47dbb1deddc5691409154944','TaskName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('0594c3f94027440486399dd1bfbbfe01905602594','e35e8f3165244fe7a37d95fe8bbde91e905664600','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('19782e4483654f539a088100b53cc264337963826','e36045f2030046f98e66d3cdf2b9ee2d338000829','ClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('53ec038e6e8d418fb126247bce9c3a6d755736609','e360b3cd18e44104877644cef369794b755819617','ReturnDate','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5e0442dde8a44b67b508f7004bf1b253390765105','e360d2fdc60e4e02ac033bb0ebce833f390807110','InTime','6','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('65f00b14f23c4258b96b61cc4836e2bf890777112','e361ed9f544244418453d689df18057c890832117','F_340010','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('90cfddce5eea45428ebdf4d76cf187a6323209350','e3639af899184f009f5fe5a7e7431d0f323259355','StatusMessage','0','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('276247e258624f448b955dfca7ec8667393815410','e36af8bc44bb42408c5c0c5d5229c0d0393925421','StepName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('6f367e00483c43ea9d18a0bb75c83a2319949027','e36bb1f7d76e4e49b17739d3497ec44e19989031','LevelName','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('24c01e48b157457da12016f413813b21763907426','e36fc08966384532a2a4770466d69e9b763966432','CubeMode','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1c4d8cce15df42ffbd46a63b9dd0d8a865359568','e378cc16eeac46b9ba50467a1fcc571665408573','F_360100','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('24359d89feeb467ea64fec4b95ffbc8322816314','e37d0b903671491ba1acb9efe4f0cbf422864319','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('53d4b74d3d5c4acb8dcd876f9ae17ed5766108646','e37de94f0a734f43b0e5fa93188245da766150650','ClientID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ea0af8415c9d4fa693e8306394e7f33423436376','e383cc6c76c04353b0327e4d3d2f504923483381','Description','16','65535',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ad8949c13782416386b1a5f8b279f1f5826178652','e387c33827d74ed38a6da84872c7137d826233658','F_370005','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('21474579f06e44b7908ff9bed590e577166881719','e38a6f9e6af840e08612cd97a54088d7166925724','CurPosDay','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('a5c3634b2af34d8c8ac9f6c7e03fcec4890004034','e3928f39917741dfa7ebb47278cae817890082042','ActionBy','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c1778111d8c742e8bca2d4be28aabaf7424657494','e39cd1257074429a8a06f2f04958ef27424706499','DelegateID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('48e8cbe733a04323ac3db75307ee7a36248661896','e3a1b82adff24697aadd708824b904dc248689899','StepID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5afe6394e5ad4d9c9645365ce955a26342135246','e3b3be112cdc43a88af72105bc8b02b742214254','PerformanceAppraisalID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b338453db9e942fa93e6b3f593ae5310416947723','e3c585337366481b90390dd305fca023417003729','pClientID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('bcb2062120e043d0ad89ffdcf4583536318966926','e3c895b7ab7d428795981ab505acd5be319016931','FeatureID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('10db3c7d846b42a3b0d95bec684a3038275527583','e3cfc1a79d09491d90816c7a19e70583275579588','FileName','0','500',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('346487013a6b41d98d9f0e32e10bd386292976327','e3dcfbb35640466196bfd520d5d50d29293021332','FeatureType','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('c03bcf3ae6374cfd9fdc4f1f088306ee46522685','e3df615793d744a8b1b96be8c395d01446551687','reviewertype','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dbda33c9dca748d9ba406dbeeb73e8c750873120','e3e030532aa04898a5a3fd355055cb1550904123','RemarksUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('911fb1bc80b1404c8361edd87c7188f9409120941','e3ec8c2987ee4c73b0a3b48f687ca738409154944','EstimateinMin','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2838988661984b5e8e962e1af5b6c2d4406210650','e3ef53186de542f1b6458d660792bfbc406249654','ProjectStatus','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b0049802f6774428898d402fae22595e339419971','e3f075d35b48443aa3c20d936b45db48339475977','Type','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('daeda68e018b47ed9e15324b42d5ec72360661095','e3f3e497f81a43bdb848e847f528160a360701099','TaskOwnerID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('faf20db26205426fa657247f8affd968406939723','e4040bfc7f5b4f58800a35dbf77bee5a406984727','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('ba874fc0c0534923a1b4e201a8c5d0e1887826817','e408d6cb9f6d4324a46ee355314f7467887871821','GoalPlanID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b8e7def23e904c39ae1881b05e3e2160994470480','e41539a4719c40c7b5e6711931d3fa1b994510484','id','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d3fe40dba2ed493c9ce27dcb6a6a9bb2194469478','e419655386cb4233b84a611295aae1ca194519483','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('dbda33c9dca748d9ba406dbeeb73e8c750873120','e4306004c26544ce8b4aaa5178bd9f2350904123','ItemType','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('14a9f1297815452c978404ee9c53866c799547990','e4317ff763354b06b98ee00c74139ec1799588994','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('25c312ef90a34318b777431383d69d09329357965','e4353e7e6015431b8470f4ac072cb17a329388968','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('9928e125f50f486e98db481eaec941c314114444','e43758461d4c43708c3b3efe8ef7ecf814153448','NextAuditID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('49bb04af766a4e6f96ed229c650f1fec363505380','e449e8d4277e41daa0a4225e0566c2db363536383','GroupID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5e841fdee02542c0bef459ac80304af4359932022','e44e50581be24ea9b6e11f011dc73224359976027','TaskID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('41ed3be13abc4d159c200b444f501295271863216','e462da714fbd4838b91bb0e91cde304c271920222','Signature','0','255',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fb64e0dc4a1a4b6dbb33e359a45ffda7893697404','e4638a43612b465cbd731953d9aa6d1c893734407','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('2508c50fe70041f88c060f7b225d94c8929357969','e469eaeeb8174c21bdabeec632aaf034929399973','IsCOffForWorkingDay','3','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('b0b16af8754d490aaa9ee2c7447cdadd331924222','e4783b7bf5aa439081e42315ed60f9a4331980227','ViewName','0','255',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('d06821281b694aa28017ed74e440bfa9854546489','e487f52738c24ac6a1bac6d45339bc33854584493','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1f021f6cd37c4c5f90e4ec3944919cb6198649896','e48f2de4b80b427c9db161db520bff7a198686899','RequestID','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('43159a0c864244b9ad3f9ad07b19c8be987887822','e4a046f784054a5f8dcb2b7c0d381d29987934826','LastUPD','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('85d4b85c32484f7186ca2fcfb73586d1978149848','e4a8e4cca2d24d649721903a6a1af5cb978188852','ClientID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('37bcd7e9ae664cdca7132e8eecd22364969271960','e4bb643929734ce88852fe08a84a00a9969308964','EndTime','6','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('fb4b5d461fb24838af7a133b356c061021382171','e4c36df9e937424da0aacc9bc9f74b2221430176','ReviewerID','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('1f387ab585a8465887cbc6abd59c655a124128444','e4c5362cf8424889820ae6864b1ddd41124173449','ForYear','11','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('5229c7d92e7549f69a5f8c28bb1abedb965726606','e4d9f98d63b4424ba2de3477048618e4965766610','EmployeeGroupID','11','-1',0,1);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('cf97042c67ef4311b60bf284f5006ef4781872222','e4e10cb0298547f59bcdd46869832439781912226','Script','13','16777215',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3bacd14bff47416bb113dbce2873560e161176149','e4e15f639adb48c29e875ace7b6e2ce1161231154','RangeFrom','7','-1',0,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('3f9b6aaea5e14e7abe473b5d21dc5b9c44182451','e4ed880a41674fd2ad2819d6d5761eca44224455','ContributeMyGoal','11','-1',1,0);
+INSERT INTO `cf_fields`(`TableID`,`FieldID`,`FieldName`,`FieldType`,`Length`,`IsNullable`,`ISPrimaryKey`) VALUES
+('49de00b1f031474e8194ecf3c4ed996b372277257','e4ef1485cddb4aae870ebf12ac9f11d2372357265','F_2

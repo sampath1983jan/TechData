@@ -1,0 +1,713 @@
+2-07 14:08:17');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,416,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-02-07 14:08:17');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,5,15,'Leave accrue',1,'false','5',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,6,15,'Leave carryforward',1,'false','6',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,11,23,'Days validation',1,'1','11',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,14,15,'Enable Overdrawn',1,'true','14',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,15,15,'Apply in Advance',1,'true','15',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,16,3,'No. of days in advance',1,'','15',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,19,14,'Occurrence Type',2,'1','19',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,20,3,'No. of Occurrence',2,'','20',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,25,3,'No. of days',1,'','24',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,27,3,'No. of days',1,'','26',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,29,3,'No. of days',1,'','28',NULL,'2018-01-29 13:49:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,417,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-01-29 13:49:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,5,15,'Leave accrue',1,'false','5',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,6,15,'Leave carryforward',1,'false','6',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,11,23,'Days validation',1,'1','11',NULL,'2018-01-29 14:28:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,14,15,'Enable Overdrawn',1,'false','14',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,15,15,'Apply in Advance',1,'true','15',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,16,3,'No. of days in advance',1,'','15',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-01-29 14:28:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,19,14,'Occurrence Type',2,'1','19',NULL,'2018-01-29 14:28:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,20,3,'No. of Occurrence',2,'','20',NULL,'2018-01-29 14:28:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,25,3,'No. of days',1,'','24',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,27,3,'No. of days',1,'','26',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,29,3,'No. of days',1,'','28',NULL,'2018-01-29 14:28:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,418,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-01-29 14:28:43');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,5,15,'Leave accrue',1,'false','5',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,6,15,'Leave carryforward',1,'true','6',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,11,23,'Days validation',1,'1','11',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,14,15,'Enable Overdrawn',1,'true','14',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,15,15,'Apply in Advance',1,'true','15',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,16,3,'No. of days in advance',1,'','15',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,19,14,'Occurrence Type',2,'1','19',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,20,3,'No. of Occurrence',2,'','20',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-03-01 15:07:20');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,25,3,'No. of days',1,'','24',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,27,3,'No. of days',1,'','26',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,29,3,'No. of days',1,'','28',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,419,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-03-01 15:07:21');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,5,15,'Leave accrue',1,'false','5',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,6,15,'Leave carryforward',1,'false','6',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,11,23,'Days validation',1,'1','11',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,14,15,'Enable Overdrawn',1,'true','14',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,15,15,'Apply in Advance',1,'true','15',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,16,3,'No. of days in advance',1,'','15',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,19,14,'Occurrence Type',2,'1','19',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,20,3,'No. of Occurrence',2,'','20',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-02-05 15:35:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,25,3,'No. of days',1,'','24',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,27,3,'No. of days',1,'','26',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,29,3,'No. of days',1,'','28',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,420,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-02-05 15:35:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-03-01 15:01:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-03-01 15:01:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-03-01 15:01:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-03-01 15:01:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,5,15,'Leave accrue',1,'false','5',NULL,'2018-03-01 15:01:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,6,15,'Leave carryforward',1,'true','6',NULL,'2018-03-01 15:01:44');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,11,23,'Days validation',1,'1','11',NULL,'2018-03-01 15:01:46');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,14,15,'Enable Overdrawn',1,'true','14',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,15,15,'Apply in Advance',1,'true','15',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,16,3,'No. of days in advance',1,'','15',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,19,14,'Occurrence Type',2,'1','19',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,20,3,'No. of Occurrence',2,'','20',NULL,'2018-03-01 15:01:46');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,25,3,'No. of days',1,'','24',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,27,3,'No. of days',1,'','26',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,28,15,'Do you want to set expiry for manual entitlemrnt',1,'true','28',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,29,3,'No. of days',1,'1','28',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,421,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-03-01 15:01:45');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,5,15,'Leave accrue',1,'false','5',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,6,15,'Leave carryforward',1,'false','6',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,11,23,'Days validation',1,'1','11',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,14,15,'Enable Overdrawn',1,'true','14',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,15,15,'Apply in Advance',1,'true','15',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,16,3,'No. of days in advance',1,'','15',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,19,14,'Occurrence Type',2,'1','19',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,20,3,'No. of Occurrence',2,'','20',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-02-05 16:27:08');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,25,3,'No. of days',1,'','24',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,27,3,'No. of days',1,'','26',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,29,3,'No. of days',1,'','28',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,422,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-02-05 16:27:09');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,5,15,'Leave accrue',1,'false','5',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,6,15,'Leave carryforward',1,'true','6',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,11,23,'Days validation',1,'1','11',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,14,15,'Enable Overdrawn',1,'true','14',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,15,15,'Apply in Advance',1,'true','15',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,16,3,'No. of days in advance',1,'','15',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,19,14,'Occurrence Type',2,'1','19',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,20,3,'No. of Occurrence',2,'','20',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-02-28 16:35:03');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,25,3,'No. of days',1,'','24',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,27,3,'No. of days',1,'','26',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,29,3,'No. of days',1,'','28',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,423,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-02-28 16:35:04');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,453,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,1,15,'Employees can apply for this leave type',1,'true','1',90,'2019-06-20 17:56:54');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,2,15,'Allow admin to assign leave for employees',1,'true','2',90,'2019-06-20 17:56:54');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,3,15,'Allow Manager to apply for his subordinates',1,'true','3',90,'2019-06-20 17:56:54');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,4,15,'Admin can add/adjust leave entitlements',1,'true','4',90,'2019-06-20 17:56:54');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,5,15,'Leave accrue',1,'false','5',90,'2019-06-20 17:56:54');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,6,15,'Leave carryforward',1,'false','6',90,'2019-06-20 17:56:54');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,9,15,'Employees can apply for the past leave',1,'true','9',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,10,3,'Allowable consecutive leave days',1,'5','10',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,11,23,'Days validation',1,'2','11',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,13,15,'Half day leave',1,'true','13',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,14,15,'Enable Overdrawn',1,'false','14',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,15,15,'Apply in Advance',1,'true','15',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,16,3,'No. of days in advance',1,'','15',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,18,15,'Enable Occurrence',2,'false','18',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,19,14,'Occurrence Type',2,'1','19',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,20,3,'No. of Occurrence',2,'','20',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,21,15,'Notify to Manager and HR',1,'false','14',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,22,15,'Is attachment(s) Mandatory ?',1,'false','22',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,23,15,'While Applying Leave Notify to Processor',1,'false','23',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,24,15,'Validate minimum leave days per leave transaction',1,'false','24',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,25,3,'No. of days',1,'','24',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,26,15,'Validate minimum leave days per leave transaction',1,'false','26',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,27,3,'No. of days',1,'','26',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,29,3,'No. of days',1,'','28',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,30,3,'Validate only when leave days is greater than (in days)',1,'','22',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,31,3,'Calculate as calendar days when leave days greater than (in days)',1,'','31',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,32,15,'Enable Duty Resumption Form',1,'true','32',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,33,3,'No. of days to send reminder',1,'1','32',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,34,15,'Do you want show this leave type in leave balance summary ?',1,'true','34',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,35,15,'Enable hourly leave?',1,'true','35',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,36,3,'No. of days eligible for duty resumption',1,'','32',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,38,15,'Enable Slary Advance in Leave Application Form',1,'false','38',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,39,15,'Enable Halfday Occurrence',2,'false','39',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,40,14,'Occurrence Type',2,'-1','40',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,41,3,'No. of Occurrence',2,'','41',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,42,15,'Override the validation when the balance is lesser',1,'false','26',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,43,3,'with in days',1,'','9',90,'2019-06-20 17:56:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,456,44,15,'Half-day Day type to be consider as full day',1,'false','44',90,'2019-06-20 17:56:56');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,1,15,'Employees can apply for this leave type',1,'true','1',90,'2019-06-20 15:20:29');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,2,15,'Allow admin to assign leave for employees',1,'true','2',90,'2019-06-20 15:20:29');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,3,15,'Allow Manager to apply for his subordinates',1,'true','3',90,'2019-06-20 15:20:29');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,4,15,'Admin can add/adjust leave entitlements',1,'true','4',90,'2019-06-20 15:20:29');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,5,15,'Leave accrue',1,'false','5',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,6,15,'Leave carryforward',1,'false','6',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,9,15,'Employees can apply for the past leave',1,'true','9',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,10,3,'Allowable consecutive leave days',1,'','10',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,11,23,'Days validation',1,'1','11',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,14,15,'Enable Overdrawn',1,'false','14',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,15,15,'Apply in Advance',1,'true','15',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,16,3,'No. of days in advance',1,'','15',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,18,15,'Enable Occurrence',2,'false','18',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,19,14,'Occurrence Type',2,'1','19',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,20,3,'No. of Occurrence',2,'','20',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,21,15,'Notify to Manager and HR',1,'false','14',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,22,15,'Is attachment(s) Mandatory ?',1,'false','22',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,23,15,'While Applying Leave Notify to Processor',1,'false','23',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,24,15,'Validate minimum leave days per leave transaction',1,'false','24',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,25,3,'No. of days',1,'','24',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,26,15,'Validate minimum leave days per leave transaction',1,'false','26',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,27,3,'No. of days',1,'','26',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,29,3,'No. of days',1,'','28',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,30,3,'Validate only when leave days is greater than (in days)',1,'','22',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,31,3,'Calculate as calendar days when leave days greater than (in days)',1,'','31',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,32,15,'Enable Duty Resumption Form',1,'true','32',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,33,3,'No. of days to send reminder',1,'3','32',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,34,15,'Do you want show this leave type in leave balance summary ?',1,'true','34',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,35,15,'Enable hourly leave?',1,'true','35',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,36,3,'No. of days eligible for duty resumption',1,'','32',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,38,15,'Enable Slary Advance in Leave Application Form',1,'true','38',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,39,15,'Enable Halfday Occurrence',2,'false','39',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,40,14,'Occurrence Type',2,'-1','40',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,41,3,'No. of Occurrence',2,'','41',90,'2019-06-20 15:20:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,42,15,'Override the validation when the balance is lesser',1,'false','26',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,43,3,'with in days',1,'','9',90,'2019-06-20 15:20:30');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,457,44,15,'Half-day Day type to be consider as full day',1,'false','44',90,'2019-06-20 15:20:31');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,1,15,'Employees can apply for this leave type',1,'true','1',90,'2018-12-18 11:47:34');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,2,15,'Allow admin to assign leave for employees',1,'true','2',90,'2018-12-18 11:47:34');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,3,15,'Allow Manager to apply for his subordinates',1,'true','3',90,'2018-12-18 11:47:35');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,4,15,'Admin can add/adjust leave entitlements',1,'true','4',90,'2018-12-18 11:47:35');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,5,15,'Leave accrue',1,'true','5',90,'2018-12-18 11:47:35');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,6,15,'Leave carryforward',1,'false','6',90,'2018-12-18 11:47:35');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,9,15,'Employees can apply for the past leave',1,'true','9',90,'2018-12-18 11:47:36');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,10,3,'Allowable consecutive leave days',1,'','10',90,'2018-12-18 11:47:37');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,11,23,'Days validation',1,'1','11',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,14,15,'Enable Overdrawn',1,'true','14',90,'2018-12-18 11:47:37');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,15,15,'Apply in Advance',1,'true','15',90,'2018-12-18 11:47:37');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,16,3,'No. of days in advance',1,'','15',90,'2018-12-18 11:47:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',90,'2018-12-18 11:47:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,18,15,'Enable Occurrence',2,'false','18',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,19,14,'Occurrence Type',2,'1','19',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,20,3,'No. of Occurrence',2,'','20',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,21,15,'Notify to Manager and HR',1,'false','14',90,'2018-12-18 11:47:37');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,22,15,'Is attachment(s) Mandatory ?',1,'false','22',90,'2018-12-18 11:47:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,23,15,'While Applying Leave Notify to Processor',1,'false','23',90,'2018-12-18 11:47:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,24,15,'Validate minimum leave days per leave transaction',1,'false','24',90,'2018-12-18 11:47:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,25,3,'No. of days',1,'','24',90,'2018-12-18 11:47:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,26,15,'Validate minimum leave days per leave transaction',1,'false','26',90,'2018-12-18 11:47:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,27,3,'No. of days',1,'','26',90,'2018-12-18 11:47:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',90,'2018-12-18 11:47:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,29,3,'No. of days',1,'','28',90,'2018-12-18 11:47:41');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,30,3,'Validate only when leave days is greater than (in days)',1,'','22',90,'2018-12-18 11:47:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,31,3,'Calculate as calendar days when leave days greater than (in days)',1,'','31',90,'2018-12-18 11:47:41');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,32,15,'Enable Duty Resumption Form',1,'false','32',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,33,3,'No. of days to send reminder',1,'','32',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,34,15,'Do you want show this leave type in leave balance summary ?',1,'true','34',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,35,15,'Enable hourly leave?',1,'false','35',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,36,3,'No. of days eligible for duty resumption',1,'','32',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,38,15,'Enable Slary Advance in Leave Application Form',1,'false','38',90,'2018-12-18 11:47:42');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,39,15,'Enable Halfday Occurrence',2,'false','39',NULL,'2019-01-02 19:13:10');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,40,14,'Occurrence Type',2,NULL,'40',NULL,'2019-01-02 19:13:10');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,41,3,'No. of Occurrence',2,NULL,'41',NULL,'2019-01-02 19:13:10');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,42,15,'Override the validation when the balance is lesser',1,'false','26',NULL,'2019-01-04 09:08:55');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,43,3,'with in days',1,'0','9',NULL,'2019-01-21 17:15:12');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,458,44,15,'Half-day Day type to be consider as full day',1,'false','44',NULL,'2019-03-01 13:41:48');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,459,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,460,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,461,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,462,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,463,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,464,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,465,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,466,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,3,15,'Allow Manager to apply for his subordinates',1,'true','3',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,5,15,'Leave accrue',1,'false','5',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,6,15,'Leave carryforward',1,'false','6',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,11,23,'Days validation',1,'1','11',NULL,'2018-03-09 15:30:41');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,14,15,'Enable Overdrawn',1,'false','14',NULL,'2018-03-09 15:30:38');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,15,15,'Apply in Advance',1,'true','15',NULL,'2018-03-09 15:30:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,16,3,'No. of days in advance',1,'','15',NULL,'2018-03-09 15:30:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-03-09 15:30:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,19,14,'Occurrence Type',2,'1','19',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,20,3,'No. of Occurrence',2,'','20',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-03-09 15:30:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-03-09 15:30:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,24,15,'Validate minimum leave days per leave transaction',1,'false','24',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,25,3,'No. of days',1,'','24',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,26,15,'Validate minimum leave days per leave transaction',1,'false','26',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,27,3,'No. of days',1,'','26',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,28,15,'Do you want to set expiry for manual entitlemrnt',1,'false','28',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,29,3,'No. of days',1,'','28',NULL,'2018-03-09 15:30:40');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,30,3,'Validate only when leave days is greater than (in days)',1,'','22',NULL,'2018-03-09 15:30:39');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,467,31,3,'Calculate as calendar days when leave days greater than (in days)',1,NULL,'31',NULL,'2018-04-19 10:54:32');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,1,15,'Employees can apply for this leave type',1,'true','1',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,2,15,'Allow admin to assign leave for employees',1,'true','2',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,3,15,'Allow Manager to apply for his subordinates',1,'false','3',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,4,15,'Admin can add/adjust leave entitlements',1,'true','4',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,5,15,'Leave accrue',1,'false','5',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,6,15,'Leave carryforward',1,'false','6',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,9,15,'Employees can apply for the past leave',1,'true','9',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,10,3,'Allowable consecutive leave days',1,'','10',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,11,23,'Days validation',1,'1','11',NULL,'2018-12-18 11:14:59');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,14,15,'Enable Overdrawn',1,'false','14',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,15,15,'Apply in Advance',1,'true','15',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,16,3,'No. of days in advance',1,'','15',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,17,3,'Apply in advance is applicable only when leave days is greater than',1,'','15',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,18,15,'Enable Occurrence',2,'false','18',NULL,'2018-12-18 11:14:59');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,19,14,'Occurrence Type',2,'1','19',NULL,'2018-12-18 11:14:59');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,20,3,'No. of Occurrence',2,'','20',NULL,'2018-12-18 11:14:59');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,21,15,'Notify to Manager and HR',1,'false','14',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,22,15,'Is attachment(s) Mandatory ?',1,'false','22',NULL,'2018-12-18 11:14:58');
+INSERT INTO `lms_leavetype_configuration`(`ClientID`,`LeaveTypeID`,`ConfigurationID`,`ConfigurationType`,`Name`,`GroupBy`,`ConfigurationValue`,`DependantConfiguration`,`CreatedBy`,`LastUPD`) VALUES
+(2,468,23,15,'While Applying Leave Notify to Processor',1,'false','23',NULL,'2018-12-18 11:

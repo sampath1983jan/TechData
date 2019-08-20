@@ -1,0 +1,519 @@
+,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 10:52:47','No parameterless constructor defined for type of ''System.String''.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8584);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 10:54:47','No parameterless constructor defined for type of ''System.String''.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8585);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 10:56:03','No parameterless constructor defined for type of ''System.String''.','192.168.0.147',90,'http://localhost:50091/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8586);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 10:57:27','Column ''CompensationRange'' does not belong to table .','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler3.ashx?target=LoadPRRequest','','LoadPRRequest',8587);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 11:00:38','Column ''CompensationRange'' does not belong to table .','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler3.ashx?target=LoadPRRequest','','LoadPRRequest',8588);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 11:00:54','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.147',90,'http://localhost:50091/Handler/WorkflowHandler.ashx?target=GetWFStepCustomFields','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetWFStepCustomFields',8589);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 12:04:49','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',8590);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 12:15:28','Duplicate entry ''2-115-90-474'' for key ''PRIMARY''','192.168.0.150',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=AdjustLeaveBalancewithotherleaves','','AdjustLeaveBalancewithotherleaves',8591);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 12:21:20','Duplicate entry ''2-115-90-474'' for key ''PRIMARY''','192.168.0.150',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=AdjustLeaveBalancewithotherleaves','','AdjustLeaveBalancewithotherleaves',8592);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 12:56:48','Duplicate entry ''2-115-90-474'' for key ''PRIMARY''','192.168.0.150',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=AdjustLeaveBalancewithotherleaves','','AdjustLeaveBalancewithotherleaves',8593);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 13:07:22','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler.ashx?target=GetResourceType','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetResourceType',8594);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 16:10:44','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8595);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 17:08:18','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8596);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 17:20:23','Procedure or function ''`TA_Sp_GetAttendanceSheetLeave`'' cannot be found in database ''`talentozdev`''.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',8597);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 17:24:57','Operation is not valid for a partial merged cell.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',8598);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 17:32:51','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetGenerateReportList','Timeout in IO operation','GetGenerateReportList',8599);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 18:09:38','SMRD.1201: SQL Query Errors Occured - Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=SwapEntry','Result consisted of more than one row','SwapEntry',8600);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 18:12:35','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',8601);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 18:14:23','Operation is not valid for a partial merged cell.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',8602);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 18:14:28','is not a valid value for Int32.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','Index was outside the bounds of the array.','LoadAttendanceRegularizationList',8603);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 18:15:15','Operation is not valid for a partial merged cell.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',8604);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-18 18:22:20','Operation is not valid for a partial merged cell.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',8605);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 10:29:09','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8606);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 11:32:34','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8607);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 11:47:19','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.157',5127,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=UpdateEmployeeGoalStaus','Input string was not in a correct format.','UpdateEmployeeGoalStaus',8608);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 11:49:32','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.157',5127,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=UpdateEmployeeGoalStaus','Input string was not in a correct format.','UpdateEmployeeGoalStaus',8609);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 11:56:39','No parameterless constructor defined for type of ''System.String''.','192.168.0.157',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8610);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 12:08:54','SMRD.1406: The table supplied with the where condition was not included in the table collection. Please add the missing table and retry.','192.168.0.150',5382,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=GetAppraisalForm','','GetAppraisalForm',8611);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 12:10:06','A generic error occurred in GDI+.','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',8612);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 12:11:20','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.157',5127,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=UpdateEmployeeGoalStaus','Input string was not in a correct format.','UpdateEmployeeGoalStaus',8613);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 15:33:57','Parameter ''pItemType'' has already been defined.','192.168.0.150',5382,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=GetAppraisalForm','','GetAppraisalForm',8614);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 15:47:38','Unknown column ''performanceappraisal'' in ''where clause''','192.168.0.150',5382,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=GetAppraisalForm','','GetAppraisalForm',8615);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 15:55:19','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/UIHandler2.ashx','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeToDoSource',8616);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 16:09:16','Conversion from string \"\" to type ''Integer'' is not valid.','192.168.0.157',5127,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=DeleteAssignedEmployeeGoals','Input string was not in a correct format.','DeleteAssignedEmployeeGoals',8617);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 16:52:57','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8618);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 17:16:24','Unknown column ''a.IsDayOverlapping'' in ''field list''','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8619);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 17:24:51','Unknown column ''pForDate'' in ''field list''','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8620);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 17:35:29','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8621);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:27:37','Type ''TalentOZ.TA.Business.AttendanceRegularization'' is not supported for deserialization of an array.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8622);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:30:48','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularization[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8623);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:34:30','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8624);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:34:40','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8625);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:34:46','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8626);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:36:22','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8627);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:40:57','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8628);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:53:23','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8629);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:57:41','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8630);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 18:58:50','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularizationBulkImport[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8631);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 19:11:33','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularization[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8632);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 19:16:59','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularization[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8633);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 19:18:41','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularization[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8634);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-21 19:23:14','No parameterless constructor defined for type of ''TalentOZ.TA.Business.AttendanceRegularization[]''.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SaveBulkDTRTimeEntries','','SaveBulkDTRTimeEntries',8635);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 10:49:48','No parameterless constructor defined for type of ''System.String''.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8636);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 10:52:43','is not a valid value for Decimal.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveOnetimeComponents','Input string was not in a correct format.','SaveOnetimeComponents',8637);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 11:05:51','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8638);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 11:18:34','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8639);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 11:28:44','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8640);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 12:03:42','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8641);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 13:03:40','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8642);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 13:08:08','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8643);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 13:08:45','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8644);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 14:11:51','Conversion from string \"5/22/2018\" to type ''Date'' is not valid.','192.168.0.104',90,'http://localhost:64319/Handler/LMSHandler.ashx?target=DateCompare','','DateCompare',8645);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 14:12:37','Conversion from string \"05/22/2018\" to type ''Date'' is not valid.','192.168.0.104',90,'http://localhost:64319/Handler/LMSHandler.ashx?target=DateCompare','','DateCompare',8646);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 14:13:02','Conversion from string \"05/22/2018\" to type ''Date'' is not valid.','192.168.0.104',90,'http://localhost:64319/Handler/LMSHandler.ashx?target=DateCompare','','DateCompare',8647);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 14:22:00','Conversion from string \"5/22/2018\" to type ''Date'' is not valid.','192.168.0.104',90,'http://localhost:64319/Handler/LMSHandler.ashx?target=DateCompare','','DateCompare',8648);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 14:22:25','Conversion from string \"05/22/2018\" to type ''Date'' is not valid.','192.168.0.104',90,'http://localhost:64319/Handler/LMSHandler.ashx?target=DateCompare','','DateCompare',8649);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 15:02:30','SMRD.1201: SQL Query Errors Occured - Unknown column ''lms_leave_request.pISPartialDay'' in ''field list''','192.168.0.150',90,'http://localhost/TalentOZ/Handler/WorkflowHandler.ashx?target=SaveRequest','Unknown column ''lms_leave_request.pISPartialDay'' in ''field list''','SaveRequest',8650);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 15:33:33','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8651);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 15:52:48','is not a valid value for Int32.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/LMSHandler.ashx?target=SaveWorkDefinition','Index was outside the bounds of the array.','SaveWorkDefinition',8652);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:08:47','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8653);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:13:34','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8654);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:23:50','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8655);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:28:33','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8656);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:30:25','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8657);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:34:28','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8658);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:38:24','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8659);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:42:05','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8660);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:45:11','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8661);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 16:47:32','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8662);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 17:06:45','SMRD.1201: SQL Query Errors Occured - Unknown column ''employee_dependantdetails.F_30565'' in ''field list''','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetFieldElements','Unknown column ''employee_dependantdetails.F_30565'' in ''field list''','GetFieldElements',8663);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 17:07:39','SMRD.1201: SQL Query Errors Occured - Unknown column ''employee_dependantdetails.F_30565'' in ''field list''','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetFieldElements','Unknown column ''employee_dependantdetails.F_30565'' in ''field list''','GetFieldElements',8664);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 17:08:49','C:\\TALENTOZ_Mythili\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\20184221526989123944.jpg','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',8665);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 17:36:39','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8666);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 17:41:41','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8667);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-22 17:51:15','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8668);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 09:51:44','SMRD.1201: SQL Query Errors Occured - Unknown column ''lms_leave_request.ispartialdays'' in ''field list''','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/WorkflowHandler.ashx?target=SaveRequest','Unknown column ''lms_leave_request.ispartialdays'' in ''field list''','SaveRequest',8669);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:19:30','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8670);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:45:11','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',8671);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:45:21','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',8672);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:45:34','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',8673);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:46:10','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',8674);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:46:57','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',8675);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 10:48:18','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8676);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:01:09','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=GetComponentList','Timeout in IO operation','GetComponentList',8677);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:08:02','Table ''talentozdev.pr_it_exemptions'' doesn''t exist','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=GetComponentList','','GetComponentList',8678);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:08:02','Table ''talentozdev.pr_it_exemptions'' doesn''t exist','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=LoadComponentList','','LoadComponentList',8678);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:08:02','Table ''talentozdev.pr_it_exemptions'' doesn''t exist','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=GetComponentList','','GetComponentList',8678);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:10:57','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.154',90,'http://localhost:63862/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',8679);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:10:58','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8680);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:13:05','is not a valid value for Int32.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveComponentAdvanceSettings','Index was outside the bounds of the array.','SaveComponentAdvanceSettings',8681);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:14:17','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveComponentAdvanceSettings','','SaveComponentAdvanceSettings',8682);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:22:44','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8683);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:23:30','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8684);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:34:56','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8685);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:35:12','Conversion from string \"\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveComponentAdvanceSettings','Input string was not in a correct format.','SaveComponentAdvanceSettings',8686);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:35:44','Conversion from string \"2\" to type ''Date'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SwapEntry','','SwapEntry',8687);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:35:55','Conversion from string \"\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveComponentAdvanceSettings','Input string was not in a correct format.','SaveComponentAdvanceSettings',8688);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:41:34','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8689);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:46:21','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SwapEntry','Input string was not in a correct format.','SwapEntry',8690);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:49:52','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8691);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:50:59','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SwapEntry','Input string was not in a correct format.','SwapEntry',8692);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:51:46','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8693);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 11:54:14','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8694);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 12:00:32','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8695);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 12:19:38','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8696);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 12:51:27','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8697);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 12:58:45','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8698);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 13:36:25','SMRD.1201: SQL Query Errors Occured - Timeout in IO operation','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=LoadComponentDetail','Timeout in IO operation','LoadComponentDetail',8699);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:24:36','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8700);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:52:42','Parameter ''pUsrID'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8701);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:53:20','Parameter ''pUsrID'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8702);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:53:25','Parameter ''pUsrID'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8703);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:53:32','Parameter ''pUsrID'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8704);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:54:04','Parameter ''pUsrID'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=LoadAttendanceRegularizationList','','LoadAttendanceRegularizationList',8705);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 14:57:42','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8706);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 16:32:08','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-2-2'' for key ''PRIMARY''','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveITExemptions','Duplicate entry ''2-2-2'' for key ''PRIMARY''','SaveITExemptions',8707);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 16:45:05','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-4-2'' for key ''PRIMARY''','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveITExemptions','Duplicate entry ''2-4-2'' for key ''PRIMARY''','SaveITExemptions',8708);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 16:48:49','SMRD.1201: SQL Query Errors Occured - Out of range value for column ''TaxationType'' at row 1','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveITExemptions','Out of range value for column ''TaxationType'' at row 1','SaveITExemptions',8709);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 17:40:18','Conversion from string \"\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8710);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 17:42:05','Conversion from string \"\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8711);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 17:43:33','Conversion from string \"\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8712);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 17:46:44','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-21-1'' for key ''PRIMARY''','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveITExemptions','Duplicate entry ''2-21-1'' for key ''PRIMARY''','SaveITExemptions',8713);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 18:40:51','Index was outside the bounds of the array.','192.168.0.148',90,'http://localhost:59354/Handler/PayRollHandler.ashx?target=SaveITExemptions','','SaveITExemptions',8714);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-23 19:04:03','Conversion from string \"\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8715);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 09:56:19','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SwapEntry','Input string was not in a correct format.','SwapEntry',8716);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 10:46:19','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8717);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 10:46:32','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8718);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 10:53:19','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8719);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 10:54:11','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8720);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 10:54:52','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8721);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 12:39:36','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.157',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetLinkedGoalDetailsForCascade','Input string was not in a correct format.','GetLinkedGoalDetailsForCascade',8722);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 12:40:31','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.157',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetLinkedGoalDetailsForCascade','Input string was not in a correct format.','GetLinkedGoalDetailsForCascade',8723);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 14:01:29','Unknown column ''T1.StartDate'' in ''order clause''','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8724);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 14:02:19','PROCEDURE talentozdev.TA_SP_GetEmployeeScheduleList does not exist','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetEmployeeScheduleList','','GetEmployeeScheduleList',8725);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 15:14:12','Operation is not valid for a partial merged cell.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',8726);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 15:21:41','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8727);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 15:34:34','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8728);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 15:35:54','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8729);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 18:28:09','Column ''ExemptionLineType'' does not belong to table .','192.168.0.153',90,'http://localhost:62023/Handler/PayRollHandler.ashx?target=ProcessPayroll','','ProcessPayroll',8730);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-24 18:34:52','Column ''ExemptionLineType'' does not belong to table .','192.168.0.153',90,'http://localhost:62023/Handler/PayRollHandler.ashx?target=IndividualPayrollProcess','','IndividualPayrollProcess',8731);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-25 09:57:02','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetMenu_New','Timeout in IO operation','GetMenu_New',8732);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 11:44:38','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8733);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 12:15:52','on is not a valid value for Int32.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=PASaveTemplate','Input string was not in a correct format.','PASaveTemplate',8734);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 12:18:14','on is not a valid value for Int32.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=PASaveTemplate','Input string was not in a correct format.','PASaveTemplate',8735);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 12:39:12','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8736);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 13:00:45','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8737);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 13:54:06','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8738);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 14:16:11','Unknown column ''PerformarType'' in ''where clause''','192.168.0.150',167,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=GetAppraisalForm','','GetAppraisalForm',8739);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 14:25:44','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.153',90,'http://localhost:62023/Handler/TAHandler.ashx?target=GetEmployeeCardDetails','Input string was not in a correct format.','GetEmployeeCardDetails',8740);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 14:26:40','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.153',90,'http://localhost:62023/Handler/TAHandler.ashx?target=GetEmployeeCardDetails','Input string was not in a correct format.','GetEmployeeCardDetails',8741);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 14:30:15','Column ''CaclBasedOnRCL'' does not belong to table Table.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=GetTemplateDetails','','GetTemplateDetails',8742);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:05:10','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8743);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:05:11','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8744);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:34:27','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8745);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:42:12','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8746);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:42:34','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=SaveShiftChangePolicySetting','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveShiftChangePolicySetting',8747);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:52:29','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=SaveShiftChangePolicySetting','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveShiftChangePolicySetting',8748);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:52:58','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=SaveShiftChangePolicySetting','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveShiftChangePolicySetting',8749);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 15:59:29','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=SaveShiftChangePolicySetting','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveShiftChangePolicySetting',8750);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 16:04:00','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=SaveShiftChangePolicySetting','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveShiftChangePolicySetting',8751);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 16:59:50','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetWOffCOffEligibleEmployee','Input string was not in a correct format.','GetWOffCOffEligibleEmployee',8752);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 17:00:35','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8753);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 17:00:48','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8754);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 18:07:57','Parameter ''pShftChgeID'' not found in the collection.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetShiftChangePolicyEligibleEmployee','','GetShiftChangePolicyEligibleEmployee',8755);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 18:17:27','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8756);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 19:06:22','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8757);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 09:52:47','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8758);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:18:03','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8759);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:18:09','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8760);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:18:15','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8761);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:18:22','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8762);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:31:58','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8763);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 22:08:53','Object reference not set to an instance of an object.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/WorkflowHandler.ashx?target=GetNewWFRequest','','GetNewWFRequest',8764);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-28 22:11:28','Object reference not set to an instance of an object.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/WorkflowHandler.ashx?target=GetNewWFRequest','','GetNewWFRequest',8765);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:44:12','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8766);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 10:44:17','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8767);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:04:03','The handle is invalid.\r\n','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=SaveShiftChangePolicySetting','','SaveShiftChangePolicySetting',8768);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:13:22','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8769);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:17:54','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8770);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:29:32','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8771);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:36:48','SMRD.1201: SQL Query Errors Occured - Timeout in IO operation','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8772);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:58:33','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8773);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:58:35','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8774);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 11:58:45','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8775);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:02:27','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/WorkflowHandler.ashx?target=GetWorkFlowDetails','Instance validation error: ''0'' is not a valid value for TalentOZNET.Workflow.Workflow.WorkflowType.','GetWorkFlowDetails',8776);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:02:46','There was an error generating the XML document.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/WorkflowHandler.ashx?target=GetWorkFlowDetails','Instance validation error: ''0'' is not a valid value for TalentOZNET.Workflow.Workflow.WorkflowType.','GetWorkFlowDetails',8777);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:04:50','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8778);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:08:45','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetCompOffSettingsStages','','GetCompOffSettingsStages',8779);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:12:07','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8780);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:17:23','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8781);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:18:52','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8782);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:19:05','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8783);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:28:10','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8784);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:33:18','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8785);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:36:10','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8786);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 12:39:52','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8787);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:04:26','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=PublishAppraisal','','PublishAppraisal',8788);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:19:28','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8789);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:23:05','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8790);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:35:58','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8791);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:38:16','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8792);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:49:22','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8793);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:59:12','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8794);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:59:18','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8795);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 13:59:59','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8796);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 14:03:02','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8797);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 01:40:16','The file ''/TalentOZdevelopment/Handler/            LMSHandler.ashx'' does not exist.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/%20%20%20%20%20%20%20%20%20%20%20%20LMSHandler.ashx?target=GetShiftChangeSetting','','GetShiftChangeSetting',8798);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 01:40:45','The file ''/TalentOZdevelopment/Handler/            LMSHandler.ashx'' does not exist.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/%20%20%20%20%20%20%20%20%20%20%20%20LMSHandler.ashx?target=GetShiftChangeSetting','','GetShiftChangeSetting',8799);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 01:41:29','The file ''/TalentOZdevelopment/Handler/            LMSHandler.ashx'' does not exist.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/%20%20%20%20%20%20%20%20%20%20%20%20LMSHandler.ashx?target=GetShiftChangeSetting','','GetShiftChangeSetting',8800);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 14:25:48','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8801);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 14:52:37','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8802);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 15:11:45','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8803);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 15:15:39','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8804);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 15:44:04','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8805);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 15:46:37','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8806);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 03:25:28','Conversion from string \"-1\" to type ''Date'' is not valid.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetCurrentShiftDetails','','GetCurrentShiftDetails',8807);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 03:26:00','Conversion from string \"-1\" to type ''Date'' is not valid.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetCurrentShiftDetails','','GetCurrentShiftDetails',8808);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 03:26:28','Conversion from string \"-1\" to type ''Date'' is not valid.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetCurrentShiftDetails','','GetCurrentShiftDetails',8809);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 03:31:37','Conversion from string \"\" to type ''Date'' is not valid.','192.168.0.108',5129,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetCurrentShiftDetails','','GetCurrentShiftDetails',8810);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 16:09:49','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8811);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 17:28:45','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8812);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 17:33:46','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8813);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 17:57:20','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8814);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 18:05:22','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8815);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 19:02:00','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8816);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-29 19:55:13','Index was outside the bounds of the array.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=ExtendEndDate','','ExtendEndDate',8817);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:04:56','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8818);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:06:13','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8819);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:13:17','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8820);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:13:33','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8821);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:13:42','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8822);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:13:43','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8823);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:14:14','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8824);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:15:54','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8825);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:16:55','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8826);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:22:05','Object reference not set to an instance of an object.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',8827);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 10:37:59','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8828);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 11:13:44','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8829);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 11:41:18','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8830);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 12:32:48','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8831);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 13:08:01','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8832);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 15:24:49','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',8833);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 15:37:27','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',8834);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 15:37:54','Duplicate entry ''2018-05-08 00:00:00-5423'' for key ''PRIMARY''','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SwapEntry','','SwapEntry',8835);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 15:40:27','Duplicate entry ''2018-05-01 00:00:00-174'' for key ''PRIMARY''','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=SwapEntry','','SwapEntry',8836);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 15:41:05','Table ''talentozdev.ta_shiftchgepolicy_eligibleemployees'' doesn''t exist','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetShiftChangePolicyEligibleEmployee','','GetShiftChangePolicyEligibleEmployee',8837);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 15:52:18','Parameter ''pWebType'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',8838);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 16:33:55','Conversion from string \"false\" to type ''Integer'' is not valid.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SaveOverAllScoreCalculationcustomlogic','Input string was not in a correct format.','SaveOverAllScoreCalculationcustomlogic',8839);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-05-30 16:35:36','Conversion from string \"false\" to type ''Integer'' is not valid.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SaveOverAllScoreCalculationcustomlogic','Input string was not in a correct format.','SaveOverAllScoreCalculationcustomlogic',8840);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`U

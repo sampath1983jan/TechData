@@ -1,0 +1,1173 @@
+NE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_bandgrade
+-- 
+
+/*!40000 ALTER TABLE `employee_bandgrade` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,6,4694,1,45,1,'2016-12-15 00:00:00',NULL,'2016-12-15 13:10:25');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,7,4700,1,19,1,'2016-12-14 00:00:00',NULL,'2016-12-15 15:13:30');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,16,490,2,32,1,'2017-07-19 00:00:00',NULL,'2017-07-20 19:54:21');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,18,4814,2,28,2,'2017-07-04 00:00:00','2017-07-08 00:00:00','2017-07-21 16:04:17');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,20,178,2,19,2,'2017-07-01 00:00:00','2017-07-23 00:00:00','2017-07-24 10:13:44');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,21,513,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 10:16:29');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,22,576,1,17,1,'2017-07-23 00:00:00',NULL,'2017-07-24 11:50:46');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,23,529,1,17,1,'2017-07-23 00:00:00',NULL,'2017-07-24 11:54:17');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,24,239,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 11:58:45');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,25,4829,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 12:03:20');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,26,260,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 12:24:18');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,27,186,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 12:27:20');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,31,495,2,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 13:45:30');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,38,605,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 17:42:11');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,39,276,1,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 17:44:21');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,40,4838,2,19,1,'2017-07-23 00:00:00',NULL,'2017-07-24 17:58:37');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,41,278,1,19,1,'2017-07-17 00:00:00',NULL,'2017-07-24 19:13:39');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,42,593,1,28,1,'2017-07-19 00:00:00',NULL,'2017-07-24 19:57:13');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,47,621,1,19,1,'2017-07-12 00:00:00',NULL,'2017-07-25 11:57:48');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,48,4813,1,19,1,'2017-07-24 00:00:00',NULL,'2017-07-25 12:07:12');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,51,4824,1,17,1,'2017-07-24 00:00:00',NULL,'2017-07-25 15:46:15');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,63,4827,1,28,1,'2017-07-03 00:00:00',NULL,'2017-07-27 11:34:59');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,66,516,1,19,1,'2017-07-26 00:00:00',NULL,'2017-07-28 18:06:45');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,67,4802,1,19,1,'2017-07-27 00:00:00',NULL,'2017-07-28 18:15:11');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,68,4839,2,19,1,'2017-07-12 00:00:00',NULL,'2017-07-28 18:16:04');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,71,228,1,17,1,'2017-07-26 00:00:00',NULL,'2017-07-28 19:36:02');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,72,496,4,19,1,'2017-07-13 00:00:00',NULL,'2017-07-28 19:43:33');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,97,4784,1,17,2,'2017-07-01 00:00:00','2017-07-05 00:00:00','2017-08-04 17:51:11');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,106,4859,1,19,1,'2017-08-02 00:00:00',NULL,'2017-08-04 19:37:37');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,122,490,4,19,2,'2017-07-01 00:00:00','2017-08-01 00:00:00','2017-08-07 15:21:28');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,157,153,1,18,1,'2017-08-01 00:00:00',NULL,'2017-12-29 16:45:30');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,167,292,1,19,1,'2017-09-01 00:00:00',NULL,'2017-09-19 15:47:56');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,168,292,2,28,2,'2017-09-02 00:00:00','2017-09-06 00:00:00','2017-09-19 15:48:20');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,169,4845,2,19,1,'2017-09-01 00:00:00',NULL,'2017-09-21 18:35:18');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,171,4961,1,19,1,'2017-11-06 00:00:00',NULL,'2017-11-10 13:02:54');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,172,4969,3,33,1,'2017-11-07 00:00:00',NULL,'2017-11-10 16:06:42');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,173,225,1,17,2,'2017-11-01 00:00:00','2017-11-02 00:00:00','2017-11-10 16:22:41');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,175,106,3,19,1,'2017-11-01 00:00:00',NULL,'2017-11-20 19:14:08');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,176,5212,1,33,1,'2018-01-01 00:00:00',NULL,'2018-04-27 14:29:44');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,177,5212,3,48,2,'2017-12-04 00:00:00','2017-12-14 00:00:00','2018-04-27 14:31:08');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,178,5082,3,19,1,'2018-05-01 00:00:00',NULL,'2018-05-02 16:58:46');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,184,151,1,18,1,'2018-05-09 00:00:00',NULL,'2018-05-09 12:32:21');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,185,5423,1,17,1,'2018-05-09 00:00:00',NULL,'2018-05-09 13:08:57');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,188,5277,2,17,1,'2018-05-09 00:00:00',NULL,'2018-05-09 18:04:31');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,189,5097,1,19,1,'2018-05-10 00:00:00',NULL,'2018-05-10 17:55:56');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,192,5245,5,28,1,'2018-05-16 00:00:00',NULL,'2018-07-20 16:29:16');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,193,262,1,45,1,'2018-06-20 00:00:00',NULL,'2018-06-26 15:11:28');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,194,122,2,19,1,'2018-12-06 00:00:00',NULL,'2018-12-12 18:31:05');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,195,5245,1,17,2,'2018-05-15 00:00:00','2018-05-30 00:00:00','2018-07-20 16:30:44');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,198,111,1,45,1,'2018-07-24 00:00:00',NULL,'2018-07-24 11:27:56');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,199,175,1,34,1,'2018-11-08 00:00:00',NULL,'2018-11-08 15:21:33');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,200,5179,1,19,1,'2018-05-03 00:00:00',NULL,'2018-12-13 12:41:36');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,201,5128,1,17,1,'2018-01-01 00:00:00',NULL,'2019-01-02 14:36:05');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,202,5214,5,19,1,'2019-01-01 00:00:00',NULL,'2019-01-22 17:31:14');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,204,6519,2,19,1,'2014-07-01 00:00:00',NULL,'2019-01-30 17:48:10');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,205,6630,1,19,1,'2014-07-01 00:00:00',NULL,'2019-01-30 18:08:26');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,207,5548,1,17,1,'2019-02-04 00:00:00',NULL,'2019-03-06 18:33:07');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,212,105,2,51,1,'2019-03-05 00:00:00',NULL,'2019-03-11 14:38:44');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,213,6936,1,17,1,'2019-03-11 00:00:00',NULL,'2019-03-12 15:47:32');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,214,112,2,19,1,'2019-03-08 00:00:00',NULL,'2019-03-13 10:30:07');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,216,5549,5,57,1,'2019-06-01 00:00:00',NULL,'2019-06-17 18:10:50');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,217,6993,5,33,1,'2019-06-04 00:00:00',NULL,'2019-06-18 11:03:07');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,218,161,0,0,1,'2019-06-11 00:00:00',NULL,'2019-06-18 17:47:32');
+INSERT INTO `employee_bandgrade`(`ClientID`,`BGID`,`UserID`,`BandID`,`GradeID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(2,219,110,1,59,1,'2019-07-01 00:00:00',NULL,'2019-07-04 19:42:30');
+COMMIT;
+/*!40000 ALTER TABLE `employee_bandgrade` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_competency
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_competency` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `CompetencyID` int(10) unsigned NOT NULL,
+  `CCL` int(10) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`CompetencyID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_competency
+-- 
+
+/*!40000 ALTER TABLE `employee_competency` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,58,5,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,59,5,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,64,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,65,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,78,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,79,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,80,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,81,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,82,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,83,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,84,1,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,85,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,94,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,90,208,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,58,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,59,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,60,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,61,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,78,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,79,5,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,80,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,81,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,82,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,83,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,84,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,85,1,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,99,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,128,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,129,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,131,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,132,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,133,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,134,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,135,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,152,136,1,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,165,58,2,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,165,128,4,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,58,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,59,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,60,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,64,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,65,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,78,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,79,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,80,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,81,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,82,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,83,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,84,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,85,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,94,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,225,208,NULL,'2017-11-13 11:46:30');
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,5565,58,3,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,5565,59,5,NULL);
+INSERT INTO `employee_competency`(`ClientID`,`UserID`,`CompetencyID`,`CCL`,`LastUPD`) VALUES
+(2,5565,60,3,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `employee_competency` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_costcenter
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_costcenter` (
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `CostCenterID` int(11) NOT NULL,
+  `UserCostCenterID` int(11) NOT NULL DEFAULT '0',
+  `EffectiveDate` datetime DEFAULT NULL,
+  `EndDate` datetime DEFAULT NULL,
+  `Distribution` double DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_costcenter
+-- 
+
+/*!40000 ALTER TABLE `employee_costcenter` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,-1,1,0,'2018-10-17 00:00:00',NULL,65,'2018-10-01 11:09:39');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,90,1,0,'2018-10-06 00:00:00','0001-01-01 00:00:00',47,'2018-11-19 13:38:31');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,90,2,150,'2018-10-12 00:00:00',NULL,53,'2018-12-17 12:00:42');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,92,2,0,'2018-08-06 00:00:00',NULL,50,'2018-11-15 10:45:31');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,105,2,0,'2018-09-25 00:00:00',NULL,100,NULL);
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,161,1,0,'2018-08-06 00:00:00',NULL,25,'2018-10-12 11:24:31');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,176,1,0,'2018-12-01 00:00:00',NULL,100,'2018-10-05 17:11:12');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,176,2,0,'2018-10-17 00:00:00',NULL,100,'2018-10-05 17:03:37');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,176,3,0,'2018-10-04 00:00:00',NULL,90,'2018-10-05 17:12:00');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5082,1,147,'2018-12-01 00:00:00','2018-12-10 00:00:00',100,'2018-12-11 18:00:24');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5082,1,148,'2018-12-11 00:00:00','2018-12-20 00:00:00',30,'2018-12-11 18:00:24');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5082,1,149,'2018-12-11 00:00:00','2018-12-20 00:00:00',70,'2018-12-11 18:00:26');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5127,2,154,'2019-03-01 00:00:00',NULL,26,'2019-03-26 13:20:52');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5129,2,0,'2018-09-13 00:00:00',NULL,80,NULL);
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5179,1,0,'2018-09-25 00:00:00',NULL,60,NULL);
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5181,1,156,'2019-04-01 00:00:00',NULL,100,'2019-04-02 10:50:28');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,5214,1,46,'2018-12-01 00:00:00','2018-12-07 00:00:00',100,'2018-12-05 10:26:00');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6500,1,140,'2018-12-01 00:00:00','2018-12-10 00:00:00',100,'2018-12-11 18:00:16');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6500,1,141,'2018-12-11 00:00:00','2018-12-20 00:00:00',30,'2018-12-11 18:00:17');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6500,1,142,'2018-12-11 00:00:00','2018-12-20 00:00:00',40,'2018-12-11 18:00:18');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6500,1,143,'2018-12-11 00:00:00','2018-12-20 00:00:00',30,'2018-12-11 18:00:19');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6513,1,144,'2018-12-01 00:00:00','2018-12-10 00:00:00',100,'2018-12-11 18:00:19');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6513,1,145,'2018-12-11 00:00:00','2018-12-20 00:00:00',30,'2018-12-11 18:00:22');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6513,1,146,'2018-12-11 00:00:00','2018-12-20 00:00:00',70,'2018-12-11 18:00:22');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,1,99,'2018-12-04 00:00:00',NULL,54,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,1,108,'2018-12-01 00:00:00','2018-12-03 00:00:00',1,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,2,109,'2018-12-01 00:00:00','2018-12-03 00:00:00',1,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,48,111,'2018-12-04 00:00:00','2018-12-06 00:00:00',1,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,48,112,'2018-12-07 00:00:00',NULL,1,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,49,106,'2018-12-04 00:00:00','2018-12-06 00:00:00',11,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,49,110,'2018-12-01 00:00:00','2018-12-03 00:00:00',1,'2018-12-06 16:27:02');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6544,57,102,'2018-12-04 00:00:00',NULL,25,'2018-12-07 14:35:45');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6550,49,164,'2019-04-01 00:00:00','2019-04-20 00:00:00',100,'2019-04-02 12:35:05');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6628,49,162,'2019-04-01 00:00:00','2019-04-20 00:00:00',80,'2019-04-02 12:35:04');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6716,2,0,'2018-10-01 00:00:00','2018-10-03 00:00:00',2,'2018-10-12 13:17:28');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6716,2,113,'2018-12-01 00:00:00',NULL,100,'2018-12-10 17:19:04');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6716,3,114,'2019-01-05 00:00:00',NULL,50,'2018-12-10 18:24:56');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6926,48,161,'2019-04-02 00:00:00','2019-04-10 00:00:00',5,'2019-04-02 11:39:21');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6926,49,157,'2019-04-02 00:00:00','2019-04-20 00:00:00',75,'2019-04-02 11:39:15');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6926,49,159,'2019-04-02 00:00:00','2019-04-20 00:00:00',20,'2019-04-02 11:38:29');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6936,55,153,'1996-02-11 00:00:00','2050-02-11 00:00:00',30,'2019-03-12 15:49:51');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6977,1,151,'2019-03-04 00:00:00','2019-03-07 00:00:00',50,'2019-03-08 17:41:14');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6977,49,152,'2019-03-04 00:00:00','2019-03-05 00:00:00',50,'2019-03-08 17:41:34');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,6983,3,155,'2019-04-02 00:00:00',NULL,12,'2019-04-01 18:09:46');
+INSERT INTO `employee_costcenter`(`ClientID`,`UserID`,`CostCenterID`,`UserCostCenterID`,`EffectiveDate`,`EndDate`,`Distribution`,`LastUPD`) VALUES
+(2,7004,49,163,'2019-04-01 00:00:00','2019-04-20 00:00:00',80,'2019-04-02 12:35:04');
+COMMIT;
+/*!40000 ALTER TABLE `employee_costcenter` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_dependantdetails
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_dependantdetails` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer ID of this record',
+  `UserID` int(10) unsigned NOT NULL COMMENT 'who''s dependant detail',
+  `DependantID` int(10) unsigned NOT NULL COMMENT 'Unique Key of the table',
+  `F_30405` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Dependant Name',
+  `F_30410` int(11) DEFAULT NULL COMMENT 'Gender',
+  `F_30415` datetime DEFAULT NULL COMMENT 'Date of Birth',
+  `F_30420` int(11) DEFAULT NULL COMMENT 'Relationship',
+  `F_30425` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Number',
+  `F_30430` text CHARACTER SET latin1 COMMENT 'Remarks',
+  `F_30435` mediumtext CHARACTER SET latin1,
+  `F_30440` bit(1) DEFAULT NULL,
+  `F_30445` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `F_30450` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL COMMENT 'Last Updated Datetime',
+  `F_30455` varchar(255) DEFAULT NULL,
+  `F_30460` int(10) DEFAULT NULL COMMENT 'Studying',
+  `F_30505` int(11) DEFAULT NULL COMMENT 'Nationality',
+  `F_30500` varchar(150) DEFAULT NULL COMMENT 'Medical Policy for Dependent',
+  `F_30490` varchar(150) DEFAULT NULL COMMENT 'Visa cover eligibility',
+  `F_30485` date DEFAULT NULL COMMENT 'Visa Expiry date',
+  `F_30480` date DEFAULT NULL COMMENT 'Visa issue date',
+  `F_30475` varchar(150) DEFAULT NULL COMMENT 'Visa Sponsered by',
+  `F_30515` int(11) DEFAULT NULL COMMENT 'Visa type',
+  `F_30510` int(11) DEFAULT NULL COMMENT 'Passport country',
+  `F_30465` date DEFAULT NULL COMMENT 'Passport issue date',
+  `F_30470` date DEFAULT NULL COMMENT 'Passport expiry date',
+  `F_30565` date DEFAULT NULL COMMENT 'Residence Visa Issue Date',
+  `F_30570` varchar(200) DEFAULT NULL COMMENT 'Residence Expiry Date',
+  `F_30575` varchar(200) DEFAULT NULL COMMENT 'Emirates ID No',
+  `F_30590` varchar(200) DEFAULT NULL COMMENT 'Place of Visa Issuance',
+  `F_30625` text COMMENT 'Spouse Employer Name',
+  `F_30630` text COMMENT 'Spouse Position',
+  `F_30635` int(11) DEFAULT NULL COMMENT 'Local ID (Client-56)',
+  `F_30640` varchar(255) DEFAULT NULL COMMENT 'Visa UID (Client-56)',
+  `F_30645` bit(1) DEFAULT NULL COMMENT 'Gratuity Nominee',
+  `F_30650` bit(1) DEFAULT NULL COMMENT 'Gratuity %',
+  `F_30655` bit(1) DEFAULT NULL COMMENT 'PF Nominee',
+  `F_30660` bit(1) DEFAULT NULL COMMENT 'PF %',
+  PRIMARY KEY (`DependantID`),
+  KEY `FK_employee_dependantdetails_2` (`ClientID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_dependantdetails
+-- 
+
+/*!40000 ALTER TABLE `employee_dependantdetails` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,5245,159,'Dpendant 1',2,'2018-06-06 00:00:00',5,'','','tempfiles/2018541528106270565.JPG',0,NULL,NULL,'2018-06-04 15:28:03','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,90,160,'ERWFW',2,'2018-06-07 00:00:00',5,'','','',0,NULL,NULL,'2018-06-04 16:28:24','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,5245,162,'test',4,'2018-06-07 00:00:00',4,'','','',0,NULL,NULL,'2018-06-05 11:41:24','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,5214,164,'ipoip',3,'2018-08-12 00:00:00',1,'lk;lk','k;k','',0,NULL,NULL,'2018-08-01 15:11:34',';kl;',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,5382,167,'Arun',1,'2010-08-04 00:00:00',5,'8989956561','goodf','',0,NULL,NULL,'2018-08-07 10:56:57','B+',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,161,169,'Dpendant 1',2,'2018-10-12 00:00:00',5,'','','',0,NULL,NULL,'2018-10-30 17:32:30','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,6513,170,'test',3,'2018-12-07 00:00:00',4,'','','tempfiles/20181131543821002222899204412360271.jpg',0,NULL,NULL,'2018-12-03 12:40:05','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,161,171,'test',2,'2018-12-06 00:00:00',5,'stet','','',0,NULL,NULL,'2018-12-10 15:18:24','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,161,172,'test',1,'2018-12-01 00:00:00',5,'','','',0,NULL,NULL,'2018-12-10 15:33:43','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,'tes','test',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,5219,173,'hhg',1,'2019-02-07 00:00:00',5,'','','',0,NULL,NULL,'2019-02-07 18:57:43','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,'hg','fhfd',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,90,174,'testes',2,'2018-12-07 00:00:00',5,'','','',0,NULL,NULL,'2019-02-08 11:35:50','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,'test','testets',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,6993,175,'testte',3,'2019-02-08 00:00:00',5,'','','',0,NULL,NULL,'2019-02-18 17:38:55','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,'tes','tes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,6936,176,'JaaN',1,'1996-02-11 00:00:00',5,'9874563210','Anjaan','tempfiles/20191281551343955699395595452510191.jpg',1,NULL,NULL,'2019-02-28 14:23:01','A1+',2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-02-28 00:00:00','2034-02-28 00:00:00','619619',NULL,'Anjaan','Java devops',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee_dependantdetails`(`ClientID`,`UserID`,`DependantID`,`F_30405`,`F_30410`,`F_30415`,`F_30420`,`F_30425`,`F_30430`,`F_30435`,`F_30440`,`F_30445`,`F_30450`,`LastUPD`,`F_30455`,`F_30460`,`F_30505`,`F_30500`,`F_30490`,`F_30485`,`F_30480`,`F_30475`,`F_30515`,`F_30510`,`F_30465`,`F_30470`,`F_30565`,`F_30570`,`F_30575`,`F_30590`,`F_30625`,`F_30630`,`F_30635`,`F_30640`,`F_30645`,`F_30650`,`F_30655`,`F_30660`) VALUES
+(2,6544,177,'yutuy',4,'2019-07-04 00:00:00',1,'','','',0,NULL,NULL,'2019-07-04 17:44:27','',-1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,'uyt','uyut',NULL,NULL,0,NULL,0,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `employee_dependantdetails` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_dependentdetails_malaysia
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_dependentdetails_malaysia` (
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `DependentID` int(11) NOT NULL AUTO_INCREMENT,
+  `Relationship` int(11) DEFAULT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  `ICNo` varchar(255) DEFAULT NULL,
+  `BirthDate` date DEFAULT NULL,
+  `Age` int(11) DEFAULT NULL,
+  `Occupation` varchar(255) DEFAULT NULL,
+  `Address` text,
+  `ContactNo` varchar(50) DEFAULT NULL,
+  `EmergencyContact` bit(1) DEFAULT NULL,
+  `Disabled` bit(1) DEFAULT NULL,
+  `StaffMarriedStaff` bit(1) DEFAULT NULL,
+  `MarriageDate` date DEFAULT NULL,
+  `SpouseTaxNo` varchar(255) DEFAULT NULL,
+  `ChildEducation` int(11) DEFAULT NULL,
+  `ChildEligibleRate` int(11) DEFAULT NULL,
+  `BirthCertificate` text,
+  `Remarks` text,
+  `ActionBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`DependentID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_dependentdetails_malaysia
+-- 
+
+/*!40000 ALTER TABLE `employee_dependentdetails_malaysia` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,161,2,1,'Suganya','23423','2018-03-01 00:00:00',23,'','','-1',0,1,0,'2018-03-08 00:00:00','',-1,-1,'','',90,'2018-03-08 12:20:53');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,161,4,3,'Sara','234a','2018-03-04 00:00:00',15,'','','-1',0,0,0,'2018-03-12 00:00:00','',5,2,'','fgfasasdf',90,'2018-03-12 10:56:55');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5082,7,3,'aefaf','asdasd','2018-03-08 00:00:00',-1,'adfsdf','adf','-1',0,0,0,'2018-03-13 00:00:00','',0,1,'','',90,'2018-03-13 11:27:14');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5082,8,7,'eee','fff345','2018-03-01 00:00:00',-1,'','','-1',0,1,0,'2018-03-13 00:00:00','',-1,-1,'','',90,'2018-03-13 11:29:27');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,90,9,4,'SS','333','2000-03-01 00:00:00',18,'','','-1',0,1,0,'2018-03-14 00:00:00','',4,3,'','',90,'2018-03-14 13:03:49');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,90,10,4,'AAA','AA','2002-01-02 00:00:00',16,'','','-1',0,0,0,'2018-03-14 00:00:00','',0,3,'','',90,'2018-03-14 12:18:51');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5427,11,4,'Dhrmesh','IC2325356','2010-12-03 00:00:00',8,'','','-1',0,0,0,NULL,'',0,1,'','',90,'2018-05-02 19:13:32');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,90,12,5,'DFGHGS','HHFH','2018-06-01 00:00:00',0,'','','345535',0,0,0,NULL,'',-1,-1,'','',90,'2018-06-29 10:44:51');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5426,14,1,'Silambu','123654789369','1992-03-06 00:00:00',26,'sr','','2',0,0,1,'2019-01-01 00:00:00','12433',-1,-1,'','',90,'2019-07-18 12:19:05');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(-1,5426,16,1,'Malaysian Employee 1','','1996-08-10 00:00:00',22,'Test','Test','-1',1,1,1,NULL,'A001',-1,-1,'','Test',-1,'2019-07-18 11:30:58');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5426,18,1,'Test1','A001','1996-10-08 00:00:00',22,'Test','Test','987654321',1,1,1,'2019-07-17 00:00:00','A001',-1,-1,'','Test',90,'2019-07-18 12:21:45');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5426,19,1,'Test2','A001','1996-10-08 00:00:00',22,'Test','Test','987654322',1,1,1,'2019-07-17 00:00:00','A001',-1,-1,'','Test',90,'2019-07-18 12:21:45');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5427,20,1,'Test1','A001','1996-10-08 00:00:00',22,'Test','Test','987654323',1,1,1,'2019-07-17 00:00:00','A001',-1,-1,'','Test',90,'2019-07-18 12:21:45');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5427,21,1,'Test2','A001','1996-10-08 00:00:00',22,'Test','Test','987654324',1,1,1,'2019-07-17 00:00:00','A001',-1,-1,'','Test',90,'2019-07-18 12:21:45');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5426,22,4,'Test3','A001','1996-10-08 00:00:00',22,'Test','Test','987654321',1,1,1,'2019-07-17 00:00:00','A001',1,-1,'Test','Test',90,'2019-07-18 12:32:46');
+INSERT INTO `employee_dependentdetails_malaysia`(`ClientID`,`UserID`,`DependentID`,`Relationship`,`Name`,`ICNo`,`BirthDate`,`Age`,`Occupation`,`Address`,`ContactNo`,`EmergencyContact`,`Disabled`,`StaffMarriedStaff`,`MarriageDate`,`SpouseTaxNo`,`ChildEducation`,`ChildEligibleRate`,`BirthCertificate`,`Remarks`,`ActionBy`,`LastUPD`) VALUES
+(2,5427,23,4,'Test3','A001','1996-10-08 00:00:00',22,'Test','Test','987654323',1,1,1,'2019-07-17 00:00:00','A001',1,-1,'Test','Test',90,'2019-07-18 12:32:51');
+COMMIT;
+/*!40000 ALTER TABLE `employee_dependentdetails_malaysia` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_disciplinaryaction
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_disciplinaryaction` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer ID',
+  `UserID` int(10) unsigned NOT NULL COMMENT 'User ID',
+  `DisciplinaryID` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Disciplinary ID',
+  `ActionType` int(11) DEFAULT NULL,
+  `EffectiveDate` datetime DEFAULT NULL COMMENT 'Action Effective from Date',
+  `EndingDate` datetime DEFAULT NULL COMMENT 'Action Ending Date',
+  `Events` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Events',
+  `ActionTaken` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Action taken',
+  `Remarks` text CHARACTER SET latin1 COMMENT 'Remarks if any',
+  `Attachments` varchar(255) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL COMMENT 'Last Updated Dat Time',
+  PRIMARY KEY (`DisciplinaryID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_disciplinaryaction
+-- 
+
+/*!40000 ALTER TABLE `employee_disciplinaryaction` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_disciplinaryaction`(`ClientID`,`UserID`,`DisciplinaryID`,`ActionType`,`EffectiveDate`,`EndingDate`,`Events`,`ActionTaken`,`Remarks`,`Attachments`,`LastUPD`) VALUES
+(2,90,10,1,'2018-04-01 00:00:00','2018-04-30 00:00:00','gfdgt','','','tempfiles/20183241524561279693.jpg','2018-04-24 14:46:28');
+INSERT INTO `employee_disciplinaryaction`(`ClientID`,`UserID`,`DisciplinaryID`,`ActionType`,`EffectiveDate`,`EndingDate`,`Events`,`ActionTaken`,`Remarks`,`Attachments`,`LastUPD`) VALUES
+(2,5481,11,4,'2018-06-26 00:00:00','2018-06-26 00:00:00','sdfsd','dsfsd','fsdfsdf','','2018-06-26 16:01:23');
+INSERT INTO `employee_disciplinaryaction`(`ClientID`,`UserID`,`DisciplinaryID`,`ActionType`,`EffectiveDate`,`EndingDate`,`Events`,`ActionTaken`,`Remarks`,`Attachments`,`LastUPD`) VALUES
+(2,5214,12,3,'2019-02-01 00:00:00','2019-02-05 00:00:00','asdfsdf','','','','2019-02-06 14:41:01');
+INSERT INTO `employee_disciplinaryaction`(`ClientID`,`UserID`,`DisciplinaryID`,`ActionType`,`EffectiveDate`,`EndingDate`,`Events`,`ActionTaken`,`Remarks`,`Attachments`,`LastUPD`) VALUES
+(2,6993,13,2,'2019-02-01 00:00:00','2019-02-08 00:00:00','testes','','','','2019-02-19 14:40:53');
+INSERT INTO `employee_disciplinaryaction`(`ClientID`,`UserID`,`DisciplinaryID`,`ActionType`,`EffectiveDate`,`EndingDate`,`Events`,`ActionTaken`,`Remarks`,`Attachments`,`LastUPD`) VALUES
+(2,5549,14,2,'2019-07-01 00:00:00','2019-07-04 00:00:00','jhg','','','tempfiles/20196181563436176269239810374821641.xls','2019-07-18 13:19:40');
+INSERT INTO `employee_disciplinaryaction`(`ClientID`,`UserID`,`DisciplinaryID`,`ActionType`,`EffectiveDate`,`EndingDate`,`Events`,`ActionTaken`,`Remarks`,`Attachments`,`LastUPD`) VALUES
+(2,5549,15,1,'2019-07-18 00:00:00','2019-07-19 00:00:00','gfgf[p;.','','','','2019-07-18 19:07:12');
+COMMIT;
+/*!40000 ALTER TABLE `employee_disciplinaryaction` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_document
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_document` (
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `EmployeeDocumentID` int(11) NOT NULL,
+  `F_30605` int(11) DEFAULT NULL,
+  `F_30610` varchar(255) DEFAULT NULL,
+  `F_30615` datetime DEFAULT NULL,
+  `F_30620` mediumtext,
+  `LastUPD` datetime DEFAULT NULL,
+  `F_30625` datetime DEFAULT NULL COMMENT 'Expiry Date',
+  PRIMARY KEY (`ClientID`,`UserID`,`EmployeeDocumentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_document
+-- 
+
+/*!40000 ALTER TABLE `employee_document` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,90,38,2,'confirm','2018-04-02 00:00:00','','2018-04-20 18:32:20',NULL);
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,90,39,1,'Tset','2019-02-20 00:00:00','tempfiles/20191111549865752133469712224728821.pdf','2019-02-11 11:58:09',NULL);
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,90,40,1,'Test','2019-02-13 00:00:00','tempfiles/2019111154986751098824785644900571.pdf','2019-02-11 12:16:09',NULL);
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,5549,45,1,'fdsfds',NULL,'tempfiles/20196181563436253024110245173048291.xls','2019-07-18 13:20:57',NULL);
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,6936,43,3,'Certificate','1996-02-11 00:00:00','tempfiles/20191281551343628992548007164301731.xls','2019-02-28 14:17:10',NULL);
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,6993,41,1,'test','2019-02-15 00:00:00','','2019-02-18 13:45:18',NULL);
+INSERT INTO `employee_document`(`ClientID`,`UserID`,`EmployeeDocumentID`,`F_30605`,`F_30610`,`F_30615`,`F_30620`,`LastUPD`,`F_30625`) VALUES
+(2,6993,42,2,'l;l;l;l;','2019-02-07 00:00:00','tempfiles/20191181550484145649674722194287941.xls','2019-02-18 15:32:30',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `employee_document` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_emergencycontact
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_emergencycontact` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer ID of this record',
+  `UserID` int(10) unsigned NOT NULL COMMENT 'who''s emergengy contact',
+  `EmergencyContactID` int(10) unsigned NOT NULL COMMENT 'Unique Key of the table',
+  `F_30105` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Person',
+  `F_30110` int(10) unsigned DEFAULT NULL COMMENT 'Relationship',
+  `F_30115` text CHARACTER SET latin1 COMMENT 'Full Address',
+  `F_30120` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Number 1',
+  `F_30125` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Contact Number 2',
+  `F_30130` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Email Address',
+  `F_30135` text CHARACTER SET latin1 COMMENT 'Remarks',
+  `LastUPD` datetime DEFAULT NULL,
+  `F_30140` varchar(100) DEFAULT NULL COMMENT 'Current Location',
+  PRIMARY KEY (`EmergencyContactID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_emergencycontact
+-- 
+
+/*!40000 ALTER TABLE `employee_emergencycontact` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,90,155,'ABC',5,'Perungudi ,\nChennai-600110','9879876767','','abc@gmail.com','good','2018-04-20 18:11:58',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,90,156,'sdfafdadf',5,'asdf','589898','','','','2018-06-25 15:39:30',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5481,157,'father',1,'34543','34543534','5435','ssss@sdf.com','gsdfsd','2018-06-26 15:51:15',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5481,158,'sss',6,'sfdf','sdfsdfsd','sdfsdf','dfds@sdf.com','fsdfdsf','2018-06-26 15:55:43',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5481,159,'dfsfs',5,'sdfsdfds','234234','23432','sfsd@sd.com','sdfsdfds','2018-06-26 15:56:52',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5130,163,'dfdf',2,'','fdsfd','','','','2018-07-04 11:31:26',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5130,164,'sfdfds',1,'','dsfds','','','','2018-07-04 11:31:50',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5245,165,'Arun',5,'','8955222751','','arun@gamil.com','','2018-07-19 15:28:42',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5214,166,'iuyi',5,'','yui','yiy','iyi@dfg.fgd','fdg','2018-08-03 18:08:08',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,5214,167,'yuiy',5,'yui','yui','uyi','yui@fdgfd.dfg','yui','2018-08-03 18:08:43',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,6993,170,'test',5,'hhhgh','test','','','','2019-02-18 18:14:48',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,6936,171,'Anjaan',5,'Dubai','7563214809','9745102368','Dubai@gmail.com','Brother','2019-02-28 14:13:58',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,90,172,'test person 1',5,'address 1','111111111','22222222','emailm@gm.cn','remarksssssssssssss','2019-07-04 10:54:05',NULL);
+INSERT INTO `employee_emergencycontact`(`ClientID`,`UserID`,`EmergencyContactID`,`F_30105`,`F_30110`,`F_30115`,`F_30120`,`F_30125`,`F_30130`,`F_30135`,`LastUPD`,`F_30140`) VALUES
+(2,6927,173,'dsadddsad',1,'asdasd','asdasd','asdasd','','','2019-07-11 18:57:56',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `employee_emergencycontact` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_employment_status
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_employment_status` (
+  `EmploymentDetailsID` int(11) NOT NULL,
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `EmploymentStatusID` int(11) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `FromDate` datetime DEFAULT NULL,
+  `ToDate` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`EmploymentDetailsID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_employment_status
+-- 
+
+/*!40000 ALTER TABLE `employee_employment_status` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(87,2,496,2,1,'2017-07-01 00:00:00',NULL,'2017-07-31 12:22:44');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(88,2,227,2,1,'2017-07-20 00:00:00',NULL,'2017-07-31 12:33:22');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(95,2,161,3,1,'2017-11-08 00:00:00',NULL,'2017-11-08 12:36:57');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(98,2,4960,5,2,'2017-12-01 00:00:00','2017-12-05 00:00:00','2017-12-06 14:49:34');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(99,2,4813,5,2,'2017-12-01 00:00:00','2017-12-03 00:00:00','2017-12-06 15:40:46');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(102,2,105,1,1,'2019-03-08 00:00:00',NULL,'2019-03-11 14:44:56');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(103,2,111,1,1,'2019-03-06 00:00:00',NULL,'2019-03-12 10:57:26');
+INSERT INTO `employee_employment_status`(`EmploymentDetailsID`,`ClientID`,`UserID`,`EmploymentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(104,2,112,7,1,'2019-07-01 00:00:00',NULL,'2019-07-04 16:50:22');
+COMMIT;
+/*!40000 ALTER TABLE `employee_employment_status` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_hierarchy_search
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_hierarchy_search` (
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `SearchedUser` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_hierarchy_search
+-- 
+
+/*!40000 ALTER TABLE `employee_hierarchy_search` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,90,'165,90,106,174,183,4637,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,155,3,5,3,3,3,3,4,3,3,3,3,4,7,3,3,16,3,158,110,105,156,155,105,6579',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,121,'121',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,153,'153',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,155,'106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106,106',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,167,'167',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,175,'175',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,176,'176,228',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,178,'4680,306,500,4684',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,181,'3,3',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,183,'183',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,217,'217',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,495,'174',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,4680,'3',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,4741,'3',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,4864,'3,7,11,3,3,3',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,5127,'110,112',NULL);
+INSERT INTO `employee_hierarchy_search`(`ClientID`,`UserID`,`SearchedUser`,`LastUPD`) VALUES
+(2,6734,'90,96,105',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `employee_hierarchy_search` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_lic_details
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_lic_details` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `LICDetailID` int(10) unsigned NOT NULL,
+  `F_30705` varchar(100) NOT NULL COMMENT 'LIC no',
+  `F_30710` varchar(100) DEFAULT NULL COMMENT 'Policy Name',
+  `F_30715` datetime DEFAULT NULL COMMENT 'Date of  LIC Policy',
+  `F_30720` decimal(18,2) NOT NULL COMMENT 'Installment Premium',
+  `F_30725` datetime DEFAULT NULL COMMENT 'FromDate',
+  `F_30730` datetime DEFAULT NULL COMMENT 'ToDate',
+  `F_30735` int(11) DEFAULT NULL COMMENT 'Status',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`LICDetailID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_lic_details
+-- 
+
+/*!40000 ALTER TABLE `employee_lic_details` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,90,5,'PO-12312','Policy Name1','2017-11-13 00:00:00',1200.00,NULL,NULL,1,'2017-11-14 19:28:06');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,5245,17,'te','rte',NULL,5454.00,NULL,NULL,2,'2018-06-04 09:45:43');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,5487,18,'12344','',NULL,4.00,NULL,NULL,1,'2018-06-28 18:57:32');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,5549,20,'sdrfd','sfdg','2019-02-05 00:00:00',12333.00,'2019-02-12 00:00:00','2018-10-08 00:00:00',1,'2019-02-22 12:55:01');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,5549,21,'67676767','hfyuikfyuykjhkyufuykfyufk','2019-02-05 00:00:00',4567898.00,'2019-01-07 00:00:00','2019-03-07 00:00:00',1,'2019-02-22 12:48:39');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,5549,22,'678','gujhk,hgjlk','2019-02-04 00:00:00',68.00,'2019-02-06 00:00:00','2018-09-11 00:00:00',1,'2019-02-22 12:55:41');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,5549,23,'876','gjk','2019-02-04 00:00:00',5678.00,'2019-02-12 00:00:00','2018-06-12 00:00:00',1,'2019-02-22 12:56:21');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,6936,24,'619619619','JAANJAAN','2019-02-12 00:00:00',5611541.00,'2019-02-28 00:00:00','2034-02-28 00:00:00',1,'2019-02-28 14:18:31');
+INSERT INTO `employee_lic_details`(`ClientID`,`UserID`,`LICDetailID`,`F_30705`,`F_30710`,`F_30715`,`F_30720`,`F_30725`,`F_30730`,`F_30735`,`LastUPD`) VALUES
+(2,6993,19,'fggfg','',NULL,43.00,NULL,NULL,1,'2019-02-18 15:26:16');
+COMMIT;
+/*!40000 ALTER TABLE `employee_lic_details` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_licencedetails
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_licencedetails` (
+  `ClientID` int(10) NOT NULL,
+  `UserID` int(10) NOT NULL,
+  `LicenceID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `F_31305` varchar(150) DEFAULT NULL COMMENT 'License No',
+  `F_31310` date DEFAULT NULL COMMENT 'date of issue',
+  `F_31315` date DEFAULT NULL COMMENT 'date of expiry',
+  `F_31320` int(10) DEFAULT NULL COMMENT 'Type',
+  `F_31325` mediumtext COMMENT 'Attachment',
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`LicenceID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_licencedetails
+-- 
+
+/*!40000 ALTER TABLE `employee_licencedetails` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `employee_licencedetails` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_malaysian_statutory_details
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_malaysian_statutory_details` (
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `F_31005` int(11) DEFAULT NULL COMMENT 'EPF Applicable Combo',
+  `F_31010` int(11) DEFAULT NULL COMMENT 'SOCSO',
+  `F_31015` int(11) DEFAULT NULL COMMENT 'HRDF',
+  `F_31020` varchar(100) DEFAULT NULL COMMENT 'Name as per IC',
+  `F_31025` int(11) DEFAULT NULL COMMENT 'Employeement Status',
+  `F_31030` varchar(50) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `F_31035` int(10) DEFAULT NULL COMMENT 'EIS Applicable',
+  `F_31040` int(10) DEFAULT NULL COMMENT 'ZAKAT Applicable',
+  `F_31045` float DEFAULT NULL COMMENT 'ZAKAT Fixed Applicable',
+  `F_31050` float DEFAULT NULL COMMENT 'ZAKAT amount Given by Parents  ',
+  `F_31055` int(10) DEFAULT NULL COMMENT 'Region',
+  `F_31060` varchar(50) DEFAULT NULL COMMENT 'SOCSO No.',
+  `F_31065` varchar(50) DEFAULT NULL COMMENT 'ZAKAT Member No.',
+  `F_31070` int(11) DEFAULT NULL COMMENT 'Tax Category',
+  `F_31075` int(11) DEFAULT NULL COMMENT 'Marital Status',
+  `F_31080` int(10) DEFAULT NULL COMMENT 'Disabled Individual',
+  `F_31085` int(10) DEFAULT NULL COMMENT 'Disabled Spouse',
+  `F_31090` varchar(50) DEFAULT NULL,
+  `F_31100` varchar(45) DEFAULT NULL COMMENT 'Identification No',
+  `F_31095` int(11) DEFAULT NULL COMMENT 'Identification Type',
+  `F_31105` int(10) DEFAULT NULL COMMENT 'Tax paid by',
+  `F_31110` varchar(50) DEFAULT NULL COMMENT 'Name Of EPF',
+  `F_31170` int(11) DEFAULT '1' COMMENT 'Income Tax Deduction Applicable',
+  PRIMARY KEY (`ClientID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_malaysian_statutory_details
+-- 
+
+/*!40000 ALTER TABLE `employee_malaysian_statutory_details` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,90,4,1,1,NULL,NULL,'1231567878','2019-07-11 13:52:54',1,3,1500,1000,3,'654','789',1,1,2,2,'22334455',NULL,NULL,2,'ABCDEF',1);
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,5179,1,1,2,NULL,NULL,'11111','2018-12-11 19:40:26',1,2,2000,1500,1,'22222','33333',1,1,2,2,'11223344',NULL,NULL,123465,NULL,1);
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,5426,5,0,2,NULL,NULL,'311084521','2019-05-28 15:10:25',2,0,NULL,500,3,'58214525','92255412',1,1,2,2,'725631',NULL,NULL,1,'EPF-ABC',2);
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,5427,0,0,0,'Malaysian Employee 2',NULL,'3562895','2019-05-07 11:16:02',2,1,100,300,1,'5625862','9222111',2,2,2,2,'12gt',NULL,NULL,1,'EPF ABC',1);
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,5428,0,0,2,NULL,NULL,'145266','2018-11-19 16:37:36',2,0,NULL,NULL,3,'236958','147852',1,1,2,2,'1236',NULL,NULL,1,'EPF-ACA',1);
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,6720,1,1,0,NULL,NULL,'123654789','2019-01-22 12:25:34',1,2,0,0,1,'123456789','14782',1,1,2,2,'Employee',NULL,NULL,-1,NULL,1);
+INSERT INTO `employee_malaysian_statutory_details`(`ClientID`,`UserID`,`F_31005`,`F_31010`,`F_31015`,`F_31020`,`F_31025`,`F_31030`,`LastUPD`,`F_31035`,`F_31040`,`F_31045`,`F_31050`,`F_31055`,`F_31060`,`F_31065`,`F_31070`,`F_31075`,`F_31080`,`F_31085`,`F_31090`,`F_31100`,`F_31095`,`F_31105`,`F_31110`,`F_31170`) VALUES
+(2,6936,2,1,2,NULL,NULL,'4735673','2019-02-28 14:12:54',1,1,8500,5400,2,'4534864','4534535453',1,2,2,2,'345345.42',NULL,NULL,1,NULL,1);
+COMMIT;
+/*!40000 ALTER TABLE `employee_malaysian_statutory_details` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_medicalinsurance
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_medicalinsurance` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `UserID` int(10) unsigned DEFAULT NULL,
+  `MedicalInsuranceID` int(10) unsigned NOT NULL,
+  `F_31105` varchar(150) DEFAULT NULL COMMENT 'Medical ID',
+  `F_31110` varchar(100) DEFAULT NULL COMMENT 'Category',
+  `F_31115` varchar(100) DEFAULT NULL COMMENT 'Issued By',
+  `F_31120` varchar(100) DEFAULT NULL COMMENT 'PolicyType',
+  `F_31125` date DEFAULT NULL COMMENT 'Issued date',
+  `F_31130` date DEFAULT NULL COMMENT 'Expiry date',
+  `F_31135` mediumtext COMMENT 'Attachment',
+  `F_31140` varchar(150) DEFAULT NULL COMMENT 'Medical Cover',
+  `F_31145` int(11) DEFAULT NULL COMMENT 'Relationship',
+  `F_31150` double DEFAULT NULL COMMENT 'Cost',
+  `LastUPD` datetime NOT NULL,
+  `F_31155` int(11) DEFAULT NULL COMMENT 'Paid by',
+  `F_31160` int(11) DEFAULT NULL COMMENT 'Region',
+  PRIMARY KEY (`MedicalInsuranceID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_medicalinsurance
+-- 
+
+/*!40000 ALTER TABLE `employee_medicalinsurance` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `employee_medicalinsurance` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_pastworkexperience
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_pastworkexperience` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer Id of this record',
+  `UserID` int(10) unsigned NOT NULL COMMENT 'who'' ''s past work experience',
+  `PastWorkExperienceID` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Unique key of the table',
+  `F_30305` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Employer',
+  `F_30310` datetime DEFAULT NULL COMMENT 'DateofJoined',
+  `F_30315` datetime DEFAULT NULL COMMENT 'Date of left',
+  `F_30320` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Position held upon joining',
+  `F_30325` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Last position held',
+  `F_30330` varchar(255) CHARACTER SET latin1 COLLATE latin1_bin DEFAULT NULL COMMENT 'Last drawn held',
+  `F_30335` int(11) DEFAULT NULL COMMENT 'Appointment type',
+  `F_30340` int(11) DEFAULT NULL COMMENT 'Years of Service',
+  `F_30345` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Reasons for leaving',
+  `F_30350` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Last employer Address',
+  `F_30355` int(11) DEFAULT NULL COMMENT 'Seperation Type',
+  `F_30360` int(11) DEFAULT NULL,
+  `F_30365` bit(1) DEFAULT NULL,
+  `F_30370` mediumtext CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL COMMENT 'Last Updated Date',
+  `F_30375` varchar(200) DEFAULT NULL COMMENT 'Attachment 2',
+  `F_30380` varchar(200) DEFAULT NULL COMMENT 'Attachment 3',
+  `F_30385` int(11) DEFAULT '0' COMMENT 'IsGroupCompany(Current Employee)',
+  PRIMARY KEY (`PastWorkExperienceID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_pastworkexperience
+-- 
+
+/*!40000 ALTER TABLE `employee_pastworkexperience` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,90,66,'SMR001','2006-05-04 00:00:00','2012-07-02 00:00:00','test','Team Lead','3',1,6,'Not Good Salary','Chennai.',1,1,1,'','2019-05-29 15:55:35',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,90,67,'SMR001','2012-08-02 00:00:00','2016-07-01 00:00:00','fdsfsf','Manager',NULL,1,3,'dsabhdui','Bangalore.',1,0,0,'','2018-07-09 16:54:55',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,151,68,'4','2011-07-01 00:00:00','2012-07-03 00:00:00','sadasda','Senior Developer.',NULL,1,1,'fdsfsfsf','Chennai',1,0,1,'','2018-07-09 16:56:52',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,5245,69,'SW 079','2014-07-01 00:00:00','2017-07-01 00:00:00','fgygf','System Engineer',NULL,1,3,'vfdvgdgd','',1,0,0,'','2018-07-09 17:07:33',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,5382,70,'FTPL222','2012-07-01 00:00:00','2015-07-01 00:00:00','','Team Lead','2',1,3,'fggdg','',6,0,0,'','2018-07-09 19:01:02',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,5430,72,'FTPL167','2013-07-01 00:00:00','2017-12-31 00:00:00','','Design Lead','30',1,4,'','Mumbai.',1,5,1,'','2018-07-10 10:18:09',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,6983,73,'tertr',NULL,NULL,'','hg',NULL,-1,3,'','',-1,3,0,'','2019-02-07 18:26:20',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,6977,74,'testts',NULL,NULL,'','tse',NULL,-1,2,'','',-1,2,0,'','2019-02-08 11:12:45',NULL,NULL,0);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,6936,76,'619','2017-02-01 00:00:00','2018-01-31 00:00:00','.NET DEVELOPER','.NET DEVELOPER','8',1,1,'SALARY','Dubai',0,6,1,'tempfiles/20191281551343802972527110158220941.xls','2019-02-28 14:20:09',NULL,NULL,1);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,6993,78,'Tedt','2019-01-01 00:00:00','2019-05-09 00:00:00','sdfdf','dfsdfsd',NULL,1,0,'gfgs','dfgdfgdf',0,4,1,'','2019-05-10 18:17:02',NULL,NULL,1);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,90,79,'TCS','2017-05-05 00:00:00','2019-05-05 00:00:00','Trainee','Software Engineer',NULL,1,NULL,'Career Growth','TCS',1,NULL,1,NULL,'2019-05-14 17:31:01',NULL,NULL,1);
+INSERT INTO `employee_pastworkexperience`(`ClientID`,`UserID`,`PastWorkExperienceID`,`F_30305`,`F_30310`,`F_30315`,`F_30320`,`F_30325`,`F_30330`,`F_30335`,`F_30340`,`F_30345`,`F_30350`,`F_30355`,`F_30360`,`F_30365`,`F_30370`,`LastUPD`,`F_30375`,`F_30380`,`F_30385`) VALUES
+(2,6544,80,'oipopi','2019-07-04 00:00:00',NULL,'','oipo',NULL,-1,NULL,'','',-1,NULL,0,'','2019-07-04 17:44:05',NULL,NULL,0);
+COMMIT;
+/*!40000 ALTER TABLE `employee_pastworkexperience` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_position
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_position` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `PositionID` int(10) unsigned NOT NULL,
+  `EffectiveDate` datetime DEFAULT NULL,
+  `Status` tinyint(1) DEFAULT NULL,
+  `EffectiveTill` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `EmployeeMovement` int(10) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`PositionID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_position
+-- 
+
+/*!40000 ALTER TABLE `employee_position` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,0,0,'0001-01-01 00:00:00',1,NULL,'2018-07-02 14:50:36',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,0,196,'2015-10-30 00:00:00',0,NULL,'2015-10-26 17:54:22',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,90,357,'2019-07-02 00:00:00',1,NULL,'2019-07-17 18:07:13',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,92,163,'2015-08-07 00:00:00',1,NULL,'2015-08-07 20:09:46',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,96,550,'2019-07-01 00:00:00',1,NULL,'2019-07-11 16:02:09',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,105,489,'2019-04-11 00:00:00',1,NULL,'2019-04-11 18:43:49',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,106,374,'2018-03-15 00:00:00',1,NULL,'2018-03-15 12:25:42',4);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,107,136,'2015-02-05 00:00:00',1,NULL,'2015-02-05 13:28:33',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,109,161,'2015-02-16 00:00:00',1,NULL,'2015-02-16 17:59:36',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,110,551,'2019-05-06 00:00:00',1,NULL,'2019-07-11 16:03:17',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,111,559,'2019-07-12 00:00:00',1,NULL,'2019-07-12 11:01:17',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,112,158,'2015-06-22 00:00:00',1,NULL,'2015-06-22 11:22:40',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,114,558,'2019-07-01 00:00:00',1,NULL,'2019-07-11 19:04:53',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,117,123,'2015-06-19 00:00:00',1,NULL,'2015-06-19 14:46:10',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,120,158,'2015-06-22 00:00:00',1,NULL,'2015-06-22 20:13:38',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,122,138,'2015-11-24 00:00:00',0,NULL,'2015-11-21 18:39:10',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,122,555,'2019-07-01 00:00:00',1,NULL,'2019-07-11 18:48:53',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,123,133,'2014-12-16 00:00:00',1,NULL,'2014-12-16 18:13:55',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,124,404,'2018-07-02 00:00:00',1,NULL,'2018-07-18 14:50:56',3);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,125,141,'2015-08-29 00:00:00',0,NULL,'2015-08-14 11:40:33',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,126,129,'2015-01-21 00:00:00',1,NULL,'2015-01-21 18:25:17',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,128,554,'2019-07-03 00:00:00',1,NULL,'2019-07-11 18:39:05',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,129,158,'2015-06-23 00:00:00',1,NULL,'2015-06-23 18:46:38',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,130,123,'2019-07-01 00:00:00',1,NULL,'2019-07-12 11:09:20',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,132,227,'2017-08-28 00:00:00',1,NULL,'2017-08-28 16:02:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,133,231,'2016-01-01 00:00:00',1,NULL,'2016-02-17 11:46:28',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,134,128,'2017-07-01 00:00:00',1,NULL,'2015-11-27 12:36:53',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,136,355,'2017-11-01 00:00:00',1,NULL,'2017-11-14 11:49:15',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,150,231,'2016-01-01 00:00:00',1,NULL,'2016-02-17 11:46:28',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,151,297,'2018-01-01 00:00:00',1,NULL,'2018-08-29 12:44:43',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,153,362,'2018-03-27 00:00:00',1,NULL,'2018-03-28 18:16:17',3);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,154,152,'2015-02-10 16:03:45',1,NULL,'2015-02-10 16:03:45',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,155,364,'2018-10-06 00:00:00',1,NULL,'2019-02-04 19:30:15',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,156,151,'2015-02-10 16:03:45',1,NULL,'2015-02-10 16:03:45',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,157,155,'2015-02-10 16:03:45',1,NULL,'2015-02-10 16:03:45',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,158,556,'2019-07-02 00:00:00',1,NULL,'2019-07-11 18:51:06',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,159,557,'2019-07-02 00:00:00',1,NULL,'2019-07-11 18:53:43',1);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,160,153,'2015-02-10 16:03:45',1,NULL,'2015-02-10 16:03:45',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,162,141,'2015-02-10 16:03:45',1,NULL,'2015-02-10 16:03:45',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,163,156,'2015-02-10 16:03:45',1,NULL,'2015-02-10 16:03:45',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,164,138,'2015-07-26 00:00:00',1,NULL,'2015-07-26 11:48:31',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,165,394,'2018-01-01 00:00:00',1,NULL,'2018-11-27 10:51:44',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,166,142,'2015-02-10 16:03:46',1,NULL,'2015-02-10 16:03:46',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,167,376,'2018-03-27 00:00:00',1,NULL,'2018-03-28 18:45:33',3);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,168,149,'2015-02-10 00:00:00',1,NULL,'2015-02-11 19:15:54',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,169,204,'2018-02-05 00:00:00',1,NULL,'2018-02-05 13:40:21',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,170,157,'2015-02-10 16:03:46',1,NULL,'2015-02-10 16:03:46',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,171,144,'2015-02-10 16:03:46',1,NULL,'2015-02-10 16:03:46',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,172,296,'2018-05-16 00:00:00',1,NULL,'2018-06-21 11:46:20',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,174,242,'2016-08-03 00:00:00',1,NULL,'2016-11-23 12:51:57',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,175,123,'2017-12-25 00:00:00',0,NULL,'2017-12-06 16:30:49',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,175,364,'2017-12-01 00:00:00',1,NULL,'2017-12-06 16:31:30',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,176,129,'2016-03-30 00:00:00',1,NULL,'2016-03-31 11:03:18',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,177,156,'2015-02-10 16:03:47',1,NULL,'2015-02-10 16:03:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,178,143,'2015-02-10 16:03:47',1,NULL,'2015-02-10 16:03:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,179,140,'2015-02-10 16:03:47',1,NULL,'2015-02-10 16:03:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,180,153,'2015-02-10 16:03:47',1,NULL,'2015-02-10 16:03:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,181,501,'2019-07-31 00:00:00',0,NULL,'2019-07-04 15:28:38',0);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,182,146,'2015-02-10 16:03:47',1,NULL,'2015-02-10 16:03:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,183,137,'2017-09-26 00:00:00',1,NULL,'2017-09-26 12:46:27',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,184,146,'2015-02-10 16:03:47',1,NULL,'2015-02-10 16:03:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,185,137,'2015-02-10 16:03:47',1,NULL,'2019-06-20 12:43:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,186,141,'2016-01-12 00:00:00',1,NULL,'2016-01-12 16:10:54',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,187,141,'2016-01-12 00:00:00',1,NULL,'2016-01-12 16:08:39',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,193,123,'2017-11-17 00:00:00',1,NULL,'2017-11-17 14:32:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,208,130,'2017-08-20 00:00:00',1,NULL,'2017-08-23 18:39:19',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,210,123,'2017-11-17 00:00:00',1,NULL,'2017-11-17 14:32:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,213,123,'2017-11-17 00:00:00',1,NULL,'2017-11-17 14:32:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,214,189,'2015-06-01 00:00:00',1,NULL,'2015-06-01 14:27:00',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,215,123,'2017-11-17 00:00:00',1,NULL,'2017-11-17 14:32:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,217,145,'2015-11-30 00:00:00',1,NULL,'2015-11-30 12:39:47',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,218,141,'2016-01-12 00:00:00',1,NULL,'2016-01-12 16:46:32',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,219,196,'2016-03-25 00:00:00',1,NULL,'2016-03-25 12:19:18',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,220,123,'2017-11-17 00:00:00',1,NULL,'2017-11-17 14:32:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`EffectiveTill`,`LastUPD`,`EmployeeMovement`) VALUES
+(2,221,123,'2017-11-17 00:00:00',1,NULL,'2017-11-17 14:32:04',NULL);
+INSERT INTO `employee_position`(`ClientID`,`UserID`,`PositionID`,`EffectiveDate`,`Status`,`Effectiv

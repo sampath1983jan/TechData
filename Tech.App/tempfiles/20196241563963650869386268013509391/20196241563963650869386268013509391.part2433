@@ -1,0 +1,632 @@
+ \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"DEPT-001\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"320000\",\"SourceView\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360025\", \"ChildField\":\"320025\", \"fn\":\"\"}',0,0,'الادارة\r\n');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360035,22,360000,'Department',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"DEPT-001\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"320000\",\"SourceView\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360025\", \"ChildField\":\"320025\", \"fn\":\"\"}',0,0,'الادارة\r\n');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360035,22,360000,'Department',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"DEPT-001\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"320000\",\"SourceView\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360025\", \"ChildField\":\"320025\", \"fn\":\"\"}',0,0,'الادارة\r\n');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360040,22,360000,'Job',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"350000\",\"SourceView\":\"\",\"TableName\":\"job\",\"ParentField\":\"JobID\",\"FieldDesc\":\"350015\"}',1,0,'وظيفة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360040,22,360000,'Job',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"350000\",\"SourceView\":\"\",\"TableName\":\"job\",\"ParentField\":\"JobID\",\"FieldDesc\":\"350015\"}',1,0,'وظيفة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360040,22,360000,'Job',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"350000\",\"SourceView\":\"\",\"TableName\":\"job\",\"ParentField\":\"JobID\",\"FieldDesc\":\"350015\"}',1,0,'وظيفة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360045,3,360000,'Band',17,2,'{\"FieldInstanceLookUpID\":\"122\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Top Level Management\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'نطاق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360045,3,360000,'Band',17,3,'{\"FieldInstanceLookUpID\":\"122\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Top Level Management\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'نطاق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360045,3,360000,'Band',17,100000,'{\"FieldInstanceLookUpID\":\"122\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Top Level Management\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'نطاق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360050,22,360000,'Grade',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"A\",\"FieldDisplayOrder\":\"10\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"340000\",\"SourceView\":\"\"}',0,0,'درجة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360050,22,360000,'Grade',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"A\",\"FieldDisplayOrder\":\"10\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"340000\",\"SourceView\":\"\"}',0,0,'درجة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360050,22,360000,'Grade',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"A\",\"FieldDisplayOrder\":\"10\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldComponent\":\"340000\",\"SourceView\":\"\"}',0,0,'درجة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360055,1,360000,'Minimum Experience',17,2,'{\"FieldInstanceLookUpID\":\"127\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"1\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360065\"}',0,0,'الحد الأدنى من الخبرة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360055,1,360000,'Minimum Experience',17,3,'{\"FieldInstanceLookUpID\":\"127\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"1\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360065\"}',0,0,'الحد الأدنى من الخبرة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360055,1,360000,'Minimum Experience',17,100000,'{\"FieldInstanceLookUpID\":\"127\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"1\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360065\"}',0,0,'الحد الأدنى من الخبرة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360060,1,360000,'Maximum Experience',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"3\",\"FieldDisplayOrder\":\"12\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360065\"}',0,0,'الحد الأقصى من الخبرة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360060,1,360000,'Maximum Experience',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"3\",\"FieldDisplayOrder\":\"12\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360065\"}',0,0,'الحد الأقصى من الخبرة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360060,1,360000,'Maximum Experience',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"3\",\"FieldDisplayOrder\":\"12\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"isDependant\":\"true\",\"ParentField\":\"360065\"}',0,0,'الحد الأقصى من الخبرة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360065,3,360000,'Experience In',17,2,'{\"FieldInstanceLookUpID\":\"127\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Year/Month\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'خبرة في');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360065,3,360000,'Experience In',17,3,'{\"FieldInstanceLookUpID\":\"127\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Year/Month\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'خبرة في');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360065,3,360000,'Experience In',17,100000,'{\"FieldInstanceLookUpID\":\"127\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Year/Month\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'خبرة في');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360070,2,360000,'Minimum Qualification',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"B.E\",\"FieldDisplayOrder\":\"14\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'اقل مؤهل');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360070,2,360000,'Minimum Qualification',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"B.E\",\"FieldDisplayOrder\":\"14\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'اقل مؤهل');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360070,2,360000,'Minimum Qualification',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"B.E\",\"FieldDisplayOrder\":\"14\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'اقل مؤهل');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360075,20,360000,'File Attachment',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"15\",\"FileExtension\":\"pdf,xls,xlsx,doc,docx,ppt,pptx,txt,jpeg,jpg,png\",\"FieldHelp\":\"\"}',0,0,'ملحق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360075,20,360000,'File Attachment',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"15\",\"FileExtension\":\"pdf,xls,xlsx,doc,docx,ppt,pptx,txt,jpeg,jpg,png\",\"FieldHelp\":\"\"}',0,0,'ملحق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360075,20,360000,'File Attachment',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"15\",\"FileExtension\":\"pdf,xls,xlsx,doc,docx,ppt,pptx,txt,jpeg,jpg,png\",\"FieldHelp\":\"\"}',0,0,'ملحق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360080,0,360000,'Effective From',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"dd/MM/yyyy\",\"FieldDisplayOrder\":\"16\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'التاريخ نافذ');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360080,0,360000,'Effective From',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"dd/MM/yyyy\",\"FieldDisplayOrder\":\"16\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'التاريخ نافذ');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360080,0,360000,'Effective From',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"dd/MM/yyyy\",\"FieldDisplayOrder\":\"16\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'التاريخ نافذ');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360085,3,360000,'Status',17,2,'{\"FieldInstanceLookUpID\":\"128\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Active\",\"FieldDisplayOrder\":\"17\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'الحالة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360085,3,360000,'Status',17,3,'{\"FieldInstanceLookUpID\":\"128\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Active\",\"FieldDisplayOrder\":\"17\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'الحالة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360085,3,360000,'Status',17,100000,'{\"FieldInstanceLookUpID\":\"128\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Active\",\"FieldDisplayOrder\":\"17\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'الحالة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360090,3,360000,'Position Classification',17,2,'{\"FieldInstanceLookUpID\":\"165\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Engineers\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'تصنيف المنصب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360090,3,360000,'Position Classification',17,3,'{\"FieldInstanceLookUpID\":\"165\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Engineers\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'تصنيف المنصب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360090,3,360000,'Position Classification',17,100000,'{\"FieldInstanceLookUpID\":\"165\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Engineers\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'تصنيف المنصب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360095,1,360000,'Notice Period(in Days)',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"60\",\"FieldDisplayOrder\":\"18\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'فترة الاشعار (ايام)');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360100,3,360000,'Position Function',17,2,'{\"FieldInstanceLookUpID\":\"199\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Management\",\"FieldDisplayOrder\":\"21\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'وظيفة المنصب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360105,3,360000,'Division',17,2,'{\"FieldInstanceLookUpID\":\"199\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Management\",\"FieldDisplayOrder\":\"22\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'الشعبة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360110,1,360000,'Required Head Count',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"23\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'عدد الاشخاص المطلوب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360110,1,360000,'Required Head Count',17,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"23\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'عدد الاشخاص المطلوب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360110,1,360000,'Required Head Count',17,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"23\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'عدد الاشخاص المطلوب');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360115,3,360000,'Section',17,2,'{\"FieldInstanceLookUpID\":\"236\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"24\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'نطاق');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360120,2,360000,'Section Code',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"25\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Section Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360125,2,360000,'Section Name',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"26\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Section Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360130,2,360000,'Section Name in Arabic',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"27\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Section Name in Arabic');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360135,2,360000,'Sector Code',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"28\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Sector Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360140,2,360000,'Sector Name',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"29\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Sector Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360145,2,360000,'Sector Name in Arabic',17,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"0\",\"FieldDisplayOrder\":\"30\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Sector Name in Arabic');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360150,2,360000,'JD Code',17,93,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"JD CODE\",\"FieldDisplayOrder\":\"30\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'JD Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(360155,2,360000,'Sub Grade',17,93,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Sub Grade1\",\"FieldDisplayOrder\":\"30\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'Sub Grade');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370005,2,370000,'Code',35,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"true\",\"DefaultValue\":\"CC0001\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"6\",\"EnableContentLimit\":false}',1,0,'Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370005,2,370000,'Code',35,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"true\",\"DefaultValue\":\"CC0001\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"6\",\"EnableContentLimit\":false}',1,0,'Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370005,2,370000,'Code',35,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"true\",\"DefaultValue\":\"CC0001\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"6\",\"EnableContentLimit\":false}',1,0,'Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370005,2,370000,'Code',35,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"true\",\"DefaultValue\":\"CC0001\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"6\",\"EnableContentLimit\":false}',1,0,'Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370010,2,370000,'Name',35,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"30\",\"EnableContentLimit\":false}',1,1,'Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370010,2,370000,'Name',35,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"30\",\"EnableContentLimit\":false}',1,1,'Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370010,2,370000,'Name',35,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"30\",\"EnableContentLimit\":false}',1,1,'Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370010,2,370000,'Name',35,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"30\",\"EnableContentLimit\":false}',1,1,'Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370015,6,370000,'Description',35,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"500\"}',0,1,'Description');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370015,6,370000,'Description',35,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"500\"}',0,1,'Description');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370015,6,370000,'Description',35,4,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"500\"}',0,1,'Description');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(370015,6,370000,'Description',35,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"DefaultValue\":\"Software Development\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\",\"MaxLength\":\"500\"}',0,1,'Description');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(410005,1,410000,'Employee No',1,2,'{\"FieldInstanceID\":200005,\"FieldTypeID\":2,\"FieldInstanceLookUpID\":-1,\"ComponentID\":30000,\"FieldDescription\":\"Employee No\",\"isRequired\":true,\"isCore\":true,\"isUnique\":true,\"DefaultValue\":\"E0001\",\"FieldGroupID\":-1,\"FieldDisplayOrder\":2,\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldValue\":null,\"FieldLookUpValue\":null,\"ClientID\":0,\"IsCR\":false,\"IsDependant\":false,\"ParentField\":\"\",\"ChildField\":\"\",\"FieldExpression\":null,\"ExpressionFields\":null,\"EnableContentLimit\":false,\"MaxLength\":0,\"NoOfDecimalPlaces\":0,\"AutoFieldFormat\":null,\"AutoIndex\":null,\"isReadOnly\":false,\"FieldComponent\":\"\",\"ViewSource\":\"\"}',1,0,'نوع الاجازة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(410005,1,410000,'LeaveTypeID',1,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'نوع الاجازة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(410005,1,410000,'LeaveTypeID',1,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'نوع الاجازة');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(410010,1,420000,'Employee No',1,2,'{\"FieldInstanceID\":200005,\"FieldTypeID\":2,\"FieldInstanceLookUpID\":-1,\"ComponentID\":30000,\"FieldDescription\":\"Employee No\",\"isRequired\":true,\"isCore\":true,\"isUnique\":true,\"DefaultValue\":\"E0001\",\"FieldGroupID\":-1,\"FieldDisplayOrder\":2,\"FileExtension\":\"\",\"FieldHelp\":\"\",\"FieldValue\":null,\"FieldLookUpValue\":null,\"ClientID\":0,\"IsCR\":false,\"IsDependant\":false,\"ParentField\":\"\",\"ChildField\":\"\",\"FieldExpression\":null,\"ExpressionFields\":null,\"EnableContentLimit\":false,\"MaxLength\":0,\"NoOfDecimalPlaces\":0,\"AutoFieldFormat\":null,\"AutoIndex\":null,\"isReadOnly\":false,\"FieldComponent\":\"\",\"ViewSource\":\"\"}',1,0,'نوع الجدول');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(410010,1,420000,'ScheduleID',1,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'نوع الجدول');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(410010,1,420000,'ScheduleID',1,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',1,0,'نوع الجدول');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(500010,2,500000,'Time Zone Description',0,2,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'تعريف المنطقة الزمنية');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(500010,2,500000,'Time Zone Description',22,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'تعريف المنطقة الزمنية');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(500010,2,500000,'Time Zone Description',22,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"true\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,0,'تعريف المنطقة الزمنية');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000010,2,30000,'Payment Mode',20,2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',0,NULL,'Payment Mode');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000010,2,30000,'Old IC',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Payment Mode');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000010,2,30000,'Old IC',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Payment Mode');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000020,2,30000,'4',20,2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',0,NULL,'SOCSO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000020,2,30000,'SOCSO',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'SOCSO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000020,2,30000,'SOCSO',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'SOCSO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000030,2,30000,'Bank Account No',20,2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":\"100\",\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',0,NULL,NULL);
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000030,2,30000,'EPF',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'EPF');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000030,2,30000,'EPF',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'EPF');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000040,2,30000,'Bank Account No1',20,2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":\"100\",\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',0,NULL,NULL);
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000040,2,30000,'Income Tax NO',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Income Tax NO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000040,2,30000,'Income Tax NO',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Income Tax NO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000050,2,30000,'ASB NO',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'ASB NO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000050,2,30000,'ASB NO',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'ASB NO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000060,2,30000,'Tabung Haji NO',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Tabung Haji NO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000060,2,30000,'Tabung Haji NO',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Tabung Haji NO');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000070,15,30000,'Union Member',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Union Member');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000070,15,30000,'Union Member',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Union Member');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000080,2,30000,'Spouse Name',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000080,2,30000,'Spouse Name',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"8\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Name');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000090,2,30000,'Spouse Old IC',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Old IC');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000090,2,30000,'Spouse Old IC',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"9\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Old IC');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000100,2,30000,'Spouse New IC',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"10\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse New IC');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000100,2,30000,'Spouse New IC',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"10\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse New IC');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000110,2,30000,'Currently Working',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"11\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Currently Working');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000110,2,30000,'Currently Working',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"11\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Currently Working');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000120,2,30000,'Spouse Company',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"12\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Company');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000120,2,30000,'Spouse Company',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"12\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Company');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000130,2,30000,'Spouse Position',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Position');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000130,2,30000,'Spouse Position',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"13\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Spouse Position');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000135,2,30000,'Access Code',20,3,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"14\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Access Code');
+INSERT INTO `sys_fieldinstance`(`FieldInstanceID`,`FieldTypeID`,`CompType`,`FieldDescription`,`FieldGroupID`,`ClientID`,`FieldAttribute`,`isListField`,`isCRField`,`FieldDescription_AR`) VALUES
+(2000135,2,30000,'Access Code',20,100000,'{\"FieldInstanceLookUpID\":\"-1\" , \"isRequired\":\"false\", \"isCore\":\"true\",\"isUnique\":\"false\",\"Default Value\":\"\",\"FieldDisplayOrder\":\"14\",\"FileExtension\":\"\",\"FieldHelp\":\"\"}',0,NULL,'Access Code');
+COMMIT;
+/*!40000 ALTER TABLE `sys_fieldinstance` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_fieldinstancelookup
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_fieldinstancelookup` (
+  `FieldInstanceID` int(10) NOT NULL,
+  `LookUpID` int(10) NOT NULL,
+  `LookUpDescription` text,
+  `LastUPD` datetime DEFAULT NULL,
+  `ChildFieldInstanceID` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ClientID` int(10) unsigned NOT NULL,
+  `LookUpOrder` int(10) unsigned DEFAULT NULL,
+  `LookUpDescription_AR` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `LookupCode` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`LookUpID`,`FieldInstanceID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_fieldinstancelookup
+-- 
+
+/*!40000 ALTER TABLE `sys_fieldinstancelookup` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(0,0,NULL,NULL,NULL,0,NULL,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,0,'Report Header','2015-10-30 00:00:00',NULL,0,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,1,'Report Sub Title','2015-10-30 00:00:00',NULL,0,2,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(274,1,'Salary','2018-06-01 18:36:11','',0,1,'Salary',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,2,'Report Filter Fields','2015-10-30 00:00:00',NULL,0,3,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(274,2,'Director Fee','2018-06-01 18:36:11','',0,2,'Directory Fee',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,3,'Report Details Header','2015-10-30 00:00:00',NULL,0,4,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(274,3,'Commission Fee','2018-06-01 18:36:11','',0,2,'Commission Fee',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,4,'Report Group Header','2015-10-30 00:00:00',NULL,0,5,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,5,'Report Details','2015-10-30 00:00:00',NULL,0,6,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(115,6,'Professional Degree',NULL,NULL,0,6,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,6,'Report Footer','2015-10-30 00:00:00',NULL,0,7,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(252,1,'Selangor','2018-02-07 14:31:56','',1,1,'Selangor',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(253,1,'Resident','2018-02-07 14:31:56','',1,1,'Resident',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(254,1,'Single/Spouse Not Claimed Children','2018-02-07 14:31:56','',1,1,'Single/Spouse Not Claimed Children',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,1,'Husband','2018-08-29 17:05:27',NULL,1,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(273,1,'Employee','2018-08-29 17:05:26','',1,1,'Employee',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(252,2,'Negeri Sembilan','2018-02-07 14:31:56','',1,2,'Negeri Sembilan',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(253,2,'Non-Resident','2018-02-07 14:31:56','',1,2,'Non-Resident',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(254,2,'Married and Spouse Not Working','2018-02-07 14:31:56','',1,2,'Married and Spouse Not Working',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,2,'Wife','2018-08-29 17:05:27',NULL,1,2,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(273,2,'Employer','2018-08-29 17:05:26','',1,2,'Employer',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(252,3,'Kuala Lumpur','2018-02-07 14:31:56','',1,3,'Kuala Lumpur',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(253,3,'Returning Expert Program (REP)','2018-02-07 14:31:56','',1,3,'Returning Expert Program (REP)',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(254,3,'Married and Spouse Working','2018-02-07 14:31:56','',1,3,'Married and Spouse Working',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,3,'Daughter','2018-08-29 17:05:27',NULL,1,3,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(253,4,'Knowledge Worker (IRDA)','2018-02-07 14:31:56','',1,4,'Knowledge Worker (IRDA)',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(254,4,'Divorce/Widow/Widower','2018-02-07 14:31:56','',1,4,'Divorce/Widow/Widower',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,4,'Son','2018-08-29 17:05:27',NULL,1,4,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,5,'Aunty','2018-08-29 17:05:27',NULL,1,5,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,6,'Niece','2018-08-29 17:05:27',NULL,1,6,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,7,'Uncle','2018-08-29 17:05:27',NULL,1,7,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(255,8,'Nephew','2018-08-29 17:05:27',NULL,1,8,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(179,-1,'Both','2016-03-16 21:03:05',NULL,2,3,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(-1,0,'True','2018-01-02 15:24:11',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(101,0,'None','2015-01-12 12:35:02',NULL,2,0,NULL,'None');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(104,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(105,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(108,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(109,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(111,0,'None','2016-04-15 10:40:25',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(112,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(113,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(114,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(115,0,'vd','2015-09-04 10:16:50',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(116,0,'None','2018-04-20 17:08:07',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(118,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(119,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(154,0,'Not started','2014-11-04 09:24:48',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(158,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(170,0,'Yearly',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(173,0,'Better Prospects','2015-07-26 11:19:33',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(181,0,'All','2016-06-06 00:00:00',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(205,0,'None',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(219,0,'--Select--','2017-05-11 15:25:07',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(220,0,'--Select--','2017-05-11 15:25:07',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(221,0,'--Select--','2017-05-11 15:25:07',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(242,0,'No','2019-01-22 12:19:00',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(243,0,'NO','2019-05-28 12:46:11','',2,0,'','');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(244,0,'No','2019-01-22 12:19:00',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(247,0,'No','2018-02-26 14:04:37',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(249,0,'No','2019-01-22 12:19:01',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(259,0,'None',NULL,NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(260,0,'Not Applicable ','2018-05-07 18:17:04',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(268,0,'Sunday','2018-04-23 12:34:14',NULL,2,6,'Sunday',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(269,0,'Rounding Two Decimal Points','2018-08-07 13:50:12',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(292,0,'India','2019-05-23 15:30:37',NULL,2,0,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(294,0,'Paid through payroll','2017-03-23 19:02:22','',2,0,'Payment Through Payroll','');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(101,1,'Encik',NULL,NULL,2,4,NULL,'Encik');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(102,1,'Male',NULL,NULL,2,1,NULL,'M');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(103,1,'Married',NULL,NULL,2,4,NULL,'M');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(104,1,'Father',NULL,NULL,2,4,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(105,1,'Human Resources',NULL,NULL,2,4,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(106,1,'Afghanistan',NULL,NULL,2,1,NULL,'AF');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(107,1,'Afghan',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(108,1,'Primary Report Person',NULL,NULL,2,3,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(109,1,' Primary School',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(110,1,'Suspension',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(111,1,'Permanent','2016-04-15 10:40:25','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(112,1,'Active',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(113,1,'Active',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(114,1,'Business/Tourist Visa',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(115,1,'Coaching and Mentoring','2015-10-16 17:04:08',NULL,2,3,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(116,1,'Bachelors in Science',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(117,1,'Permanent',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(118,1,'Resignation',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(119,1,'Finance',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(120,1,'Tamilnadu','2018-12-07 00:00:00',NULL,2,1,'Tamilnadu',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(121,1,'Chennai',NULL,'1',2,2,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(122,1,'Top Level Management',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(123,1,'Rupees',NULL,'106_101',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(125,1,'Direct Manager',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(126,1,'Tactical',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(127,1,'Months',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(128,1,'Active',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(129,1,'Behavioural',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(130,1,'English',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(131,1,'Organisational',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(132,1,'Internal','2014-07-03 11:08:54',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(133,1,'10','2014-07-03 11:10:33',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(134,1,'1-20','2014-07-03 11:14:43',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(135,1,'Draft',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(136,1,'90 Degree',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(137,1,'Active',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(138,1,'Approved',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(139,1,'Self',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(140,1,'Pending',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(141,1,'Behaviour','2014-07-21 00:00:00',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(142,1,'0','2015-09-30 17:38:19','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(143,1,'Pending','2014-07-31 12:13:18',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(144,1,'Offer Pending','2014-07-31 17:52:34',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(146,1,'Learning','2014-08-23 11:49:12',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(147,1,'Lag','2014-08-23 11:51:57',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(148,1,'Percentage','2014-08-23 11:52:41',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(149,1,'Programming','2014-08-23 11:57:21',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(150,1,'Learning','2014-08-23 11:57:25',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(151,1,'Replacement','2014-08-27 14:44:29',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(152,1,'Self','2014-09-24 17:55:33',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(153,1,'Performance Appraisal','2014-09-24 17:55:34',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(154,1,'Pending','2014-11-04 09:24:48',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(155,1,'Dinar','2014-11-27 12:04:03',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(156,1,'January','2014-11-28 10:46:01',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(157,1,'Active','2014-12-02 00:00:00',NULL,2,1,NULL,'0');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(158,1,'Active',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(159,1,'Recurring Annually','2015-01-27 10:22:35',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(160,1,'Electronics','2015-08-10 14:38:03',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(161,1,'Monthly','2016-12-19 09:48:51',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(162,1,'Yearly','2015-02-05 18:13:01',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(163,1,'General Configuration','2015-02-06 12:51:42',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(164,1,'Initiator','2015-02-11 18:51:38',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(165,1,'Engineers',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(166,1,'Project 1',NULL,NULL,2,1,'المشروع 1',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(167,1,'All days',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(168,1,'Morning',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(169,1,'All',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(170,1,'HalfYearly',NULL,NULL,2,2,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(171,1,'Program 1',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(172,1,'Internal',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(173,1,'Education','2015-07-26 11:19:42',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(174,1,'Retirement',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(175,1,'No Source Specified','2015-09-21 23:09:49','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(178,1,'0','2015-10-01 10:35:51','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(179,1,'Active','2016-03-16 21:03:05',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(180,1,'Regular',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(181,1,'development','2016-02-10 14:35:35',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(182,1,'Active','2016-01-01 00:00:00','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(183,1,'Airways','2016-04-18 11:45:56',NULL,2,1,'طيران',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(184,1,'DD','2016-04-18 11:47:43',NULL,2,1,'DD',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(185,1,'Pending',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(187,1,'Room',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(188,1,'Pending','2016-08-16 13:11:46','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(189,1,'Pending','2014-11-04 09:24:48',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(190,1,'Client Visit','2016-08-02 12:30:58',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(191,1,'General Document','2016-08-16 13:11:46','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(192,1,'tttt','2016-08-29 20:08:36',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(193,1,'Capital Expenditure','2016-09-09 15:23:55','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(194,1,'Books','2016-09-09 15:23:55','193_1',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(195,1,'Referance books','2016-09-09 15:23:56','194_1',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(196,1,'Program 1','2016-09-09 15:18:06',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(197,1,'Active','2016-09-28 18:01:45',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(198,1,'Active','2016-09-28 17:27:38',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(199,1,'Management','2016-11-16 12:27:00',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(200,1,'Beginner','2016-11-24 18:10:56',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(201,1,'Submitted Date',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(202,1,'Pending','2014-11-04 09:24:48',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(203,1,'B+','2016-12-20 17:45:46',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(204,1,'Flat Interest','2016-12-22 18:53:06',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(205,1,'Daily',NULL,NULL,2,2,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(206,1,'Morning',NULL,NULL,2,1,'صباحي',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(207,1,'Yes',NULL,NULL,2,1,NULL,'Y');
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(208,1,'Andhra Pradesh',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(209,1,'Paid','2017-02-16 14:57:32','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(210,1,'Yes','2017-02-16 14:57:32','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(212,1,'Monthly','2017-02-27 12:35:07','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(213,1,'2019',NULL,NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(214,1,'Personal',NULL,NULL,2,2,'شخصي',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(215,1,'IT Assets','2017-03-23 19:02:22',NULL,2,2,'الأصول المتعلقة بتكنولوجيا المعلومات',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(216,1,'Laptop','2017-04-17 12:27:07',NULL,2,2,'لابتوب',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(217,1,'Active','2017-03-23 19:02:22',NULL,2,1,'نشيط',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(218,1,'Applicable','2017-04-21 11:45:24',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(219,1,'Self','2017-05-11 15:25:07',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(220,1,'Single','2017-05-11 15:25:07',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(221,1,'Yes','2017-05-11 15:25:07',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(222,1,'Development','2017-06-22 16:41:17',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(223,1,'Red','2017-06-22 16:42:13',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(224,1,'Yes','2017-06-22 16:41:44',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(225,1,'OnHold','2017-06-27 00:00:00','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(226,1,'Double OT','2017-07-19 15:03:02',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(227,1,'Yes','2017-07-19 17:19:31',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(228,1,'Appointment Letter','2017-07-26 12:15:47',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(229,1,'Chennai','2017-07-26 12:15:47','',2,1,'',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(230,1,'GST-E1 - 0%','2017-10-31 10:48:13',NULL,2,1,'GST-E1 - 0%',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(231,1,'Text Local','2017-11-07 12:31:31',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(232,1,'Active','2017-11-07 12:31:31','',2,1,'Active',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(233,1,'test','2017-11-14 09:31:59',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(234,1,'Change Position details','2019-07-12 11:17:47',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(235,1,'Leave Replacement','2017-11-21 14:16:38',NULL,2,1,'Leave Replacement',NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(236,1,'Test','2017-11-22 18:30:17','',2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`LookupCode`) VALUES
+(237,1,'Employee of the Year','2017-12-05 16:58:55',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_fieldinstancelookup`(`FieldInstanceID`,`LookUpID`,`LookUpDescription`,`LastUPD`,`ChildFieldInstanceID`,`ClientID`,`LookUpOrder`,`LookUpDescription_AR`,`Look

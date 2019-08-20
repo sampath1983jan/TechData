@@ -1,0 +1,639 @@
+`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1093','Program Type',0,'Program Title',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1094','ProgramID',0,'ProgramID',0,'0',0,0,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1112','ProgramTypeID',0,'ProgramTypeID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1273','SessionID',0,'SessionID',0,'0',0,1,0,0,0,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1095','StartDate',0,'Start Date',0,'0',0,1,5,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1096','Title',0,'Title',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1097','UserID',0,'UserID',0,'0',0,0,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1114','WorkLocationID',0,'WorkLocationID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV079','ETF131','EVF1079','Year',0,'Year',0,'',0,0,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1109','BusinessUnitID',0,'Business Unit',0,NULL,NULL,0,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1098','ClientID',0,'',0,NULL,NULL,0,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1111','DepartmentID',0,'Department',0,NULL,NULL,0,14,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1108','Description',0,'Reason',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1101','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1100','EmployeeNo',0,'Employee No',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1279','EmployeeType',NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1105','EndDate',0,'Leave End Date',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1269','EndDuration',0,'',0,NULL,NULL,1,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1168','IsCancelRequest',0,'IsCancelRequest',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1320','jobid',0,'Job Name',0,'',NULL,0,NULL,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1103','LeaveType',0,'Leave Type',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1106','NoOfDays',0,'Total No of Days',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1631','PositionClassification',NULL,'Position Classification',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1102','PositionName',0,'Position',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1104','StartDate',0,'Leave Start Date',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1268','StartDuration',0,'',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1107','StatusText',0,'Status',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1099','UserID',0,'Employee Name',0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV080','ETF132','EVF1110','WorkLocationID',0,'Work Location',0,NULL,NULL,0,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1115','BusinessUnitID',0,'BusinessUnitID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1116','Category',0,'Category',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1241','CategoryID',0,'CategoryID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1117','CategoryName',0,'CategoryName',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1118','ClientID',0,'ClientID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1119','DateJoined',0,'Date Joined',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1120','DepartmentID',0,'DepartmentID',0,'0',0,1,0,0,0,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1121','DepartmentName',0,'DepartmentName',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1122','EmployeeName',0,'Employee Name',0,'0',0,1,2,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1123','EmployeeNo',0,'Employee No',0,'0',0,1,1,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1124','EndDate',0,'End Date',0,'0',0,1,6,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1125','Month',0,'Month',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1126','NoofHours',0,'No.of Hours',0,'0',0,1,4,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1127','PositionID',0,'PositionID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1128','PositionName',0,'Position Title',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1129','Program Type',0,'Program Title',0,'0',0,1,3,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1130','ProgramID',0,'ProgramID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1131','ProgramTypeID',0,'ProgramTypeID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1274','SessionID',0,'SessionID',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1132','StartDate',0,'Start Date',0,'0',0,1,5,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1133','Title',0,'Title',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1134','UserID',0,'UserID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1135','WorkLocationID',0,'WorkLocationID',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV081','ETF133','EVF1136','Year',0,'Year',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF126','EVF1140','Year',0,'Year',0,NULL,NULL,0,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF132','EVF1137','BusinessUnitID',0,'Business Unit',0,NULL,NULL,0,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF132','EVF1139','DepartmentID',0,'Department',0,NULL,NULL,0,3,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF132','EVF1280','EmployeeType',NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF132','evf1616','LeaveType',0,'Leave Type',0,'',NULL,1,11,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF132','EVF1632','PositionClassification',NULL,'Position Classification',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV082','ETF132','EVF1138','WorkLocationID',0,'Work Location',0,NULL,NULL,0,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV083','ETF134','EVF1142','BusinessUnitID',NULL,'Business Unit',0,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV083','ETF134','EVF1143','DepartmentID',NULL,'Department',0,NULL,NULL,NULL,3,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV083','ETF134','EVF1144','WorkLocationID',NULL,'Work Location',0,NULL,NULL,NULL,4,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV083','ETF134','EVF1141','Year',0,'Year',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV084','ETF135','EVF1144','BusinessunitID',0,'Business Unit',0,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV084','ETF135','EVF1145','DepartmentID',0,'Department',0,NULL,NULL,NULL,3,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV084','ETF135','EVF1148','Month',0,'Month',0,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV084','ETF135','EVF1146','WorkLocationID',0,'Work Location',0,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV084','ETF135','EVF1147','Year',0,'Year',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF126','EVF1140','Year',0,'Year',0,NULL,NULL,0,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1160','BusinessUnitID',0,'Business Unit',0,NULL,NULL,0,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1149','ClientID',0,'',0,NULL,NULL,0,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1162','DepartmentID',0,'Department',0,NULL,NULL,0,14,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1159','Description',0,'Reason',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1152','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,4,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1151','EmployeeNo',0,'Employee No',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1281','EmployeeType',NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1156','EndDate',0,'Leave End Date',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1168','LeaveColorCode',0,'LeaveColorCode',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1154','LeaveType',0,'Leave Type',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1157','NoOfDays',0,'Total No of Days',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1153','PositionName',0,'Position',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1155','StartDate',0,'Leave Start Date',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1158','StatusText',0,'Status',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1150','UserID',0,'Employee Name',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV085','ETF132','EVF1161','WorkLocationID',0,'Work Location',0,NULL,NULL,0,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV086','ETF136','EVF1164','BusinessunitID',0,'Business Unit',0,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV086','ETF136','EVF1165','DepartmentID',0,'Department',0,NULL,NULL,NULL,3,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV086','ETF136','EVF1166','WorkLocationID',0,'Work Location',0,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV086','ETF136','EVF1167','Year',0,'Year',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1170','Appointmentstatus',0,'Appointment status',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1168','BusinessunitID',0,'Business Unit',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1202','CCL',0,'CCL',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1198','CompetencyCode',0,'CompetencyCode',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1197','CompetencyName',0,'CompetencyName',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1173','CompType',0,'Competency Type',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1169','DepartmentID',0,'Department',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1200','DepartmentName',0,'DepartmentName',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1205','DevPriority',0,'DevPriority',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1196','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1195','EmployeeNo',0,'EmployeeNo',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1204','GAP',0,'GAP',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1203','ITJ',0,'ITJ',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1172','Jobid',0,'Jobid',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1207','MatchPercentage',0,'MatchPercentage',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1206','NormalizedPercentage',0,'NormalizedPercentage',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1171','positionclassification',0,'Position Classification',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1199','PositionName',0,'PositionName',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1201','RCL',0,'RCL',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV087','ETF137','EVF1194','UserID',0,'UserID',0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1187','Appointmentstatus',0,'Appointmentstatus',0,NULL,NULL,0,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1183','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,0,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1190','CCL',0,'CCL',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1177','Code',0,'Code',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1175','CompetencyID',0,'CompetencyID',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1178','CompetencyName',0,'CompetencyName',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1180','CompetencyType',0,'CompetencyType',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1181','CompetencyTypeID',0,'CompetencyTypeID',0,NULL,NULL,0,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1174','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,10,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1182','DepartmentName',0,'DepartmentName',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1193','DevPriority',0,'DevPriority',0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1179','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1192','GapLevel',0,'GapLevel',0,NULL,NULL,1,14,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1191','ITJ',0,'ITJ',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1185','jobid',0,'jobid',0,NULL,NULL,0,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1186','positionclassification',0,'positionclassification',0,NULL,NULL,0,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1188','PositionName',0,'PositionName',0,NULL,NULL,1,17,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1189','RCL',0,'RCL',0,NULL,NULL,1,18,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1176','UserID',0,'UserID',0,NULL,NULL,1,19,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV088','ETF138','EVF1184','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,0,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1208','Appointmentstatus',0,'Appointmentstatus',0,NULL,NULL,0,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1209','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,0,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1219','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,10,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1220','DepartmentName',0,'DepartmentName',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1215','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1214','EmployeeNo',0,'EmployeeNo',0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1217','GapPercentage',0,'GapPercentage',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1210','jobid',0,'jobid',0,NULL,NULL,0,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1218','MatchPercentage',0,'MatchPercentage',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1211','positionclassification',0,'Position Classification',0,NULL,NULL,0,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1216','PositionName',0,'PositionName',0,NULL,NULL,1,17,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1213','UserID',0,'UserID',0,NULL,NULL,1,19,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV089','ETF139','EVF1212','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,0,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1240','Appointmentstatus',0,'Appointmentstatus',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1221','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1230','CCL',0,'CCL',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1237','CompTypeName',0,'CompTypeName',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1231','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,10,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1232','DepartmentName',0,'DepartmentName',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1227','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1226','EmployeeNo',0,'EmployeeNo',0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1235','GAP',0,'GAP',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1234','ITJ',0,'ITJ',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1222','jobid',0,'jobid',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1236','Name',0,'Name',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1233','PCL',0,'PCL',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1223','positionclassification',0,'positionclassification',0,NULL,NULL,1,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1228','PositionName',0,'PositionName',0,NULL,NULL,1,17,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1239','programcategory',0,'programcategory',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1224','programtype',0,'programtype',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1229','RCL',0,'RCL',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1238','Title',0,'Title',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV090','ETF140','EVF1225','UserID',0,'UserID',0,NULL,NULL,1,19,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV091','ETF141','EVF1241','PerformanceAppraisalID',0,'Performance Title',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV091','ETF142','EVF1242','Title',0,'Title',0,'0',0,1,0,0,0,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV092','ETF143','EVF1245','Appointmentstatus',0,'Appointmentstatus',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV092','ETF143','EVF1243','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,1,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV092','ETF143','EVF1244','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV092','ETF143','EVF1248','Employmentstatus',0,'Employmentstatus',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV092','ETF143','EVF1247','jobid',0,'jobid',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV092','ETF143','EVF1246','positionclassification',0,'Position Classification',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1264','appraisalstartdate',0,'appraisalstartdate',0,NULL,NULL,1,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1263','Appraisaltitle',0,'Appraisaltitle',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1249','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1254','BusinessUnitName',0,'BusinessUnitName',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1250','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1255','DepartmentName',0,'DepartmentName',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1252','EmployeeName',0,'EmployeeName',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1251','EmployeeNo',0,'EmployeeNo',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1260','IsRequiredCompentency',0,'IsRequiredCompentency',0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1261','IsRequiredGoal',0,'IsRequiredGoal',0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1262','IsRequiredPotential',0,'IsRequiredPotential',0,NULL,NULL,1,14,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1259','OverallAppraisalScore',0,'OverallAppraisalScore',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1256','OverallCompetencyScore',0,'OverallCompetencyScore',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1257','OverallGoalScore',0,'OverallGoalScore',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1258','OverallPotentialScore',0,'OverallPotentialScore',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1265','PositionName',0,'PositionName',0,NULL,NULL,1,17,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1253','UserID',0,'Employee Name',0,NULL,NULL,1,5,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV093','ETF144','EVF1266','year',0,'year',0,NULL,NULL,1,18,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1267','BusinessUnitID',0,'Business Unit',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1268','DepartmentID',0,'Department',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1433','DurationTypeID',0,'DurationTypeID',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1500','IsBillable',0,'IsBillable',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1269','Jobid',0,'Job Name',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1271','Month',0,'Month',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1271','Startdate',0,'Claim Duration',0,'',NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1282','Status',0,'Status',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1272','UserID',0,'Employee Name',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1360','WorkLocationID',0,'WorkLocationID',0,'',NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV094','ETF145','EVF1270','Year',0,'Year',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF001','EVF115','F_300015',1,NULL,0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF011','EVF117','F_320005',1,NULL,0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF018','EVF121','Status',1,NULL,0,NULL,NULL,1,100,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF027','EVF125','F_340005',1,NULL,0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF027','EVF126','F_340010',1,NULL,0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF028','EVF116','F_350015',2,NULL,0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF122','F_360005',2,NULL,0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF123','F_360010',2,NULL,0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF115','F_360025',2,NULL,0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF139','F_360030',2,NULL,0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF118','F_360035',2,NULL,0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF141','F_360040',2,NULL,0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF127','F_360050',3,NULL,0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF142','F_360090',3,NULL,0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF1467','F_360105',3,NULL,0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF1524','F_360115',3,NULL,0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF055','EVF1000','PositionID',3,NULL,0,NULL,NULL,1,101,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF081','EVF138','F_310035',3,NULL,0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF145','F_200005',3,NULL,0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF144','F_200015',3,NULL,0,NULL,NULL,1,0,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF1053','F_200040',3,NULL,0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF971','F_200045',3,NULL,0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF146','F_200140',1,'Service Period',2,'NOW>Month',1,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF150','F_200165',1,NULL,0,NULL,NULL,1,100,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF149','F_200170',1,NULL,0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF082','EVF143','UserID',1,NULL,0,NULL,NULL,1,100,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF146','EVF1277','DOB',1,'Date Of Birth',0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV095','ETF146','EVF1276','EmployeeName',1,'Employee Name',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1300','Achieved',NULL,'Achieved',0,NULL,NULL,1,18,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1303','Actual',0,'Actual',0,'0',0,1,18,0,0,'0','0');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1292','Business Unit',NULL,'Business Unit',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1283','BusinessUnitID',NULL,'BusinessunitID',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1290','clientid',NULL,'clientid',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1289','Department',NULL,'Department',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1284','DepartmentID',NULL,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1288','Employee Name',NULL,'Employee Name',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1287','Employee Number',NULL,'Employee No',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1286','EmployeeType',NULL,'EmployeeType',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1293','Goal Code',NULL,'Goal Code',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1294','Goal Name',NULL,'Goal Name',0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1297','Measure',NULL,'Measure',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1295','Perspective',NULL,'Perspective',0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1302','Position Name',NULL,'Position Title',0,NULL,NULL,1,21,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1285','Status',NULL,'Status',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1302','StatusText',NULL,'StatusText',0,NULL,NULL,1,20,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1296','Target',NULL,'Target',0,NULL,NULL,1,14,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1298','Target Rational',NULL,'Target Rational',0,NULL,NULL,1,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1299','Unit Type',NULL,'Unit Type',0,NULL,NULL,1,17,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1291','Userid',NULL,'Userid',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV096','ETF147','EVF1301','Weightage',NULL,'Weightage',0,NULL,NULL,1,19,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1319','BusinessUnitID',NULL,'BusinessunitID',0,NULL,NULL,1,18,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1312','BusinessUnitName',NULL,'BusinessUnitName',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1306','clientid',NULL,'clientid',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1313','Code',NULL,'Competency Code',0,NULL,NULL,1,12,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1316','Competency Group',NULL,'Competency Group',0,NULL,NULL,1,21,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1314','CompetencyName',NULL,'Competency Title',0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1315','CompetencyType',NULL,'Competency Type',0,NULL,NULL,1,13,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1304','DepartmentID',NULL,'DepartmentID',0,NULL,NULL,1,10,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1311','DepartmentName',NULL,'DepartmentName',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1318','ITJ',NULL,'ITJ',0,NULL,NULL,1,20,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1305','jobid',NULL,'Job Name',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1310','Position Classification',NULL,'Position Classification',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1308','Position Code',NULL,'Position Code',0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1309','Position Name',NULL,'Position Name',0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1307','positionclassification',NULL,'Position Classification',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV097','ETF148','EVF1317','RCl',NULL,'RCL',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF001','EVF1322','F_300015',1,NULL,0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF011','EVF1323','F_320005',1,NULL,0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF018','EVF1324','Status',1,NULL,0,NULL,NULL,1,100,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF027','EVF1325','F_340005',1,NULL,0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF027','EVF1326','F_340010',1,NULL,0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF028','EVF1327','F_350015',2,NULL,0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1328','F_360005',2,NULL,0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1329','F_360010',2,NULL,0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1330','F_360025',2,NULL,0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1331','F_360030',2,NULL,0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1332','F_360035',2,NULL,0,NULL,NULL,1,4,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1333','F_360040',2,NULL,0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1334','F_360050',3,NULL,0,NULL,NULL,1,6,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1335','F_360090',3,NULL,0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1474','F_360105',3,NULL,0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1524','F_360115',3,'',0,'',NULL,1,13,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF055','EVF1336','PositionID',3,NULL,0,NULL,NULL,1,101,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF081','EVF1337','F_310035',3,NULL,0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1338','F_200005',3,NULL,0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1339','F_200015',3,NULL,0,NULL,NULL,1,0,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1340','F_200040',3,NULL,0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1341','F_200045',3,NULL,0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1342','F_200140',1,'Service Period',2,'NOW>Month',1,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1343','F_200165',1,NULL,0,NULL,NULL,1,100,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1344','F_200170',1,NULL,0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1348','F_200255',NULL,NULL,0,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF15241','F_200655',NULL,NULL,0,NULL,NULL,1,14,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF15241','F_200705',NULL,NULL,0,NULL,NULL,1,15,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF15242','F_200730',NULL,NULL,0,NULL,NULL,1,16,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF082','EVF1345','UserID',1,NULL,0,NULL,NULL,1,100,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF146','EVF1346','DOB',1,'Date Of Birth',0,NULL,NULL,1,2,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF146','EVF1347','EmployeeName',1,'Employee Name',0,NULL,NULL,1,1,NULL,NULL,NULL,'');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF205','EVF1623','GradeID',NULL,NULL,1,NULL,NULL,0,18,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV098','ETF207','EVF1625','UserID',NULL,NULL,1,NULL,NULL,0,19,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1349','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1359','ChooseAfterStartDate',0,'ChooseAfterStartDate',0,NULL,NULL,1,11,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1350','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1357','DiffrenceDate',0,'DiffrenceDate',0,NULL,NULL,1,9,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1353','EmployeeType',0,'EmployeeType',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1352','jobid',0,'jobid',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1354','LeaveType',0,'LeaveType',0,NULL,NULL,1,6,NULL,NULL,'','');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1358','ShowLeave',0,'ShowLeave',0,NULL,NULL,1,10,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1355','StartDate',0,'StartDate',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1356','Status',0,'Status',0,NULL,NULL,1,8,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV102','ETF153','EVF1351','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1361','BusinessUnitID',0,'BusinessUnitID',0,NULL,NULL,1,1,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1409','ClaimCycle',0,'ClaimCycle',0,'',NULL,1,9,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1365','ClaimStatusID',0,'ClaimstatusID',0,NULL,NULL,1,5,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1366','ClaimType',0,'ClaimType',0,NULL,NULL,1,6,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1362','DepartmentID',0,'DepartmentID',0,NULL,NULL,1,2,NULL,NULL,'BusinessUnitID','ETF001');
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1364','EmployeeType',0,'EmployeeType',0,NULL,NULL,1,4,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1367','Month',0,'Month',0,NULL,NULL,1,7,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,`GroupType`,`ParentField`,`ParentEntity`) VALUES
+('EV103','ETF154','EVF1363','WorkLocationID',0,'WorkLocationID',0,NULL,NULL,1,3,NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfields`(`EVid`,`EFid`,`EVFid`,`EFInstanceID`,`IsAliasField`,`FieldName`,`Options`,`Value`,`IsValueField`,`IsDisplayField`,`FieldOrder`,`GroupIndex`,

@@ -1,0 +1,1159 @@
+EY (`CubeID`,`FieldID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_cube_fields
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_cube_fields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(18,'leavecount','int','2015-05-14 16:00:05',43);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(18,'DepartmentName','text','2015-05-14 16:00:05',44);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(22,'positioncount','int','2015-07-14 10:55:58',334);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(22,'positionname','text','2015-07-14 10:55:58',335);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(23,'departmentcount','int','2015-06-02 17:08:02',57);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(23,'departmentname','text','2015-06-02 17:08:02',58);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(24,'nationalitycount','int','2015-06-02 17:07:35',55);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(24,'nationality','text','2015-06-02 17:07:35',56);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(46,'totalbudget','double','2015-06-15 10:53:11',157);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(49,'Depatment','text','2015-06-15 13:44:34',183);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(49,'Budget','double','2015-06-15 13:44:34',184);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(49,'Expenditure','double','2015-06-15 13:44:34',185);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(50,'Utilites','text','2015-06-30 12:55:14',273);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(50,'Bill_Amount','double','2015-06-30 12:55:14',274);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(51,'Year','double','2015-06-15 11:23:25',168);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(51,'Profit','decimal','2015-06-15 11:23:25',169);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Year','double','2015-06-16 12:04:34',229);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Devlopment','double','2015-06-16 12:04:34',230);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Testing','double','2015-06-16 12:04:34',231);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Human_Resources','double','2015-06-16 12:04:34',232);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Business_Analyst','double','2015-06-16 12:04:34',233);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Marketing','double','2015-06-16 12:04:35',234);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(52,'Administration','double','2015-06-16 12:04:35',235);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(53,'Depatment','text','2015-06-15 12:54:52',181);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(53,'Allocation_Budget','double','2015-06-15 12:54:52',182);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(54,'gender','text','2015-06-15 12:46:35',179);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(54,'num','int','2015-06-15 12:46:35',180);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(55,'appointment_status','text','2015-06-12 15:47:32',143);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(55,'c','int','2015-06-12 15:47:32',144);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(56,'bugcount','double','2015-06-15 15:16:24',209);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(59,'Sprint','text','2015-06-15 09:43:20',150);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(59,'Budget_','double','2015-06-15 09:43:20',151);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(59,'Expenditure','double','2015-06-15 09:43:21',152);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(60,'Technology','text','2015-06-15 10:22:47',153);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(60,'Precentage','double','2015-06-15 10:22:47',154);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(61,'expenses','double','2015-06-15 10:58:43',158);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(62,'utilitiessum','double','2015-06-15 11:08:04',160);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(63,'profit','decimal','2015-06-15 11:13:27',161);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(65,'totsalary','double','2015-06-15 14:32:40',189);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(66,'location','text','2015-06-15 17:04:47',210);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(66,'num','int','2015-06-15 17:04:47',211);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(67,'Project_Name','text','2015-06-15 15:00:27',190);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(67,'Priority','text','2015-06-15 15:00:27',191);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(67,'Bugs_Count','double','2015-06-15 15:00:27',192);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(68,'Sprint','text','2015-06-15 15:01:26',193);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(68,'Budget_','double','2015-06-15 15:01:26',194);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(68,'Expenditure','double','2015-06-15 15:01:26',195);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(69,'Department','text','2015-06-15 15:12:21',196);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(69,'Project','text','2015-06-15 15:12:21',197);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(69,'Project_Members','double','2015-06-15 15:12:21',198);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(69,'Completed','double','2015-06-15 15:12:21',199);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(69,'Pending','double','2015-06-15 15:12:21',200);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(69,'In_Progess','double','2015-06-15 15:12:21',201);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(70,'Sprint','text','2015-06-15 15:14:06',202);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(70,'Test_Cases','double','2015-06-15 15:14:07',203);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(70,'Test_Case_Excecuted','double','2015-06-15 15:14:07',204);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(70,'Pass','double','2015-06-15 15:14:07',205);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(70,'Fail','double','2015-06-15 15:14:07',206);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(70,'Removed','double','2015-06-15 15:14:07',207);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(71,'Expr1000','int','2015-06-15 17:11:51',214);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(72,'totaltest','double','2015-06-15 17:33:17',215);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(73,'cpass','double','2015-06-15 17:37:15',216);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(74,'cfail','double','2015-06-15 17:38:27',217);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(75,'sales_product','text','2015-06-15 18:20:21',218);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(75,'customers','double','2015-06-15 18:20:22',219);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(76,'sales_product','text','2015-06-15 18:21:20',220);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(76,'customers','double','2015-06-15 18:21:20',221);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(77,'totcust','double','2015-06-15 18:26:10',222);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(78,'year','double','2015-06-15 18:30:15',223);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(78,'profit','double','2015-06-15 18:30:15',224);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(79,'Modal','text','2015-06-15 18:35:33',225);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(79,'SALECOUNT','double','2015-06-15 18:35:33',226);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(80,'year','double','2015-06-15 18:43:45',227);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(80,'expenses','double','2015-06-15 18:43:45',228);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(97,'Depatment','text','2015-06-17 10:20:41',270);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(97,'Budget','double','2015-06-17 10:20:41',271);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(97,'Expenditure','double','2015-06-17 10:20:41',272);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(106,'Country','text','2015-07-02 16:51:43',275);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(106,'Income','decimal','2015-07-02 16:51:43',276);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(107,'Country','text','2015-07-02 16:58:24',279);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(107,'Average','double','2015-07-02 16:58:25',280);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'Education','text','2015-07-02 17:28:54',285);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'Carter','double','2015-07-02 17:28:55',286);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'Johnson','double','2015-07-02 17:28:55',287);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'Sullivan','double','2015-07-02 17:28:55',288);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'Unicoi','double','2015-07-02 17:28:56',289);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'Washington','double','2015-07-02 17:28:57',290);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(108,'US','double','2015-07-02 17:28:57',291);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(109,'RaceEthnicity','text','2015-07-02 17:21:08',281);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(109,'Number','double','2015-07-02 17:21:08',282);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(110,'Country','text','2015-07-02 17:21:26',283);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(110,'Poverty','double','2015-07-02 17:21:26',284);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(113,'Month','text','2015-07-03 09:18:12',292);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(113,'Admissions','double','2015-07-03 09:18:12',293);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(113,'Application','double','2015-07-03 09:18:12',294);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(114,'Source','text','2015-07-03 09:24:34',295);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(114,'Enrollment','double','2015-07-03 09:24:34',296);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(114,'Degree','double','2015-07-03 09:24:34',297);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(115,'year','double','2015-07-03 09:29:55',298);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(115,'enrollment','double','2015-07-03 09:29:55',299);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(116,'male','double','2015-07-03 09:36:01',303);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(116,'female','double','2015-07-03 09:36:01',304);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(119,'Subject','text','2015-07-03 09:44:03',305);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(119,'Year1','double','2015-07-03 09:44:03',306);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(119,'Year2','double','2015-07-03 09:44:03',307);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(120,'year','double','2015-07-03 10:13:27',308);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(120,'enrollment','double','2015-07-03 10:13:27',309);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(121,'year','double','2015-07-03 10:20:14',310);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(121,'classsize','double','2015-07-03 10:20:14',311);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(122,'year','double','2015-07-03 10:24:33',312);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(122,'onlinecourse','double','2015-07-03 10:24:34',313);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(122,'hybridcourse','double','2015-07-03 10:24:34',314);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(123,'year','double','2015-07-03 10:34:44',315);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(123,'parttime','double','2015-07-03 10:34:44',316);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(123,'fulltime','double','2015-07-03 10:34:44',317);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(124,'year','double','2015-07-03 10:42:03',318);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(124,'enrollment','double','2015-07-03 10:42:03',319);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(124,'totalcourse','double','2015-07-03 10:42:03',320);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(125,'parttime','double','2015-07-03 10:51:08',321);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(125,'fulltime','double','2015-07-03 10:51:08',322);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(125,'online','double','2015-07-03 10:51:09',323);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(125,'hybrid','double','2015-07-03 10:51:09',324);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(126,'year','double','2015-07-03 11:39:11',325);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(126,'awarded','double','2015-07-03 11:39:12',326);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(127,'year','double','2015-07-03 11:44:51',327);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(127,'studentservices','double','2015-07-03 11:44:51',328);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(127,'scholarship','double','2015-07-03 11:44:51',329);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(127,'maintenance','double','2015-07-03 11:44:52',330);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(132,'userid','int','2015-07-07 14:57:10',331);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(132,'cprno','decimal','2015-07-07 14:57:10',332);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(132,'employeename','text','2015-07-07 14:57:11',333);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(148,'Depatment','text','2015-07-14 16:30:28',336);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(148,'Budget','double','2015-07-14 16:30:28',337);
+INSERT INTO `bix_sys_cube_fields`(`CubeID`,`FieldName`,`FieldType`,`LastUPD`,`FieldID`) VALUES
+(148,'Expenditure','double','2015-07-14 16:30:28',338);
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_cube_fields` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_cube_privileges
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_cube_privileges` (
+  `cubeID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `ClientID` int(11) DEFAULT NULL,
+  `IsEdit` bit(1) DEFAULT NULL,
+  `IsDelete` bit(1) DEFAULT NULL,
+  PRIMARY KEY (`cubeID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_cube_privileges
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_cube_privileges` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(97,2,2,1,1);
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(154,2,2,1,1);
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(155,1,-1,1,1);
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(156,1,-1,1,1);
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(157,2,2,1,1);
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(161,1,-1,1,1);
+INSERT INTO `bix_sys_cube_privileges`(`cubeID`,`UserID`,`ClientID`,`IsEdit`,`IsDelete`) VALUES
+(162,1,-1,1,1);
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_cube_privileges` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_customer
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_customer` (
+  `ClientID` int(10) unsigned NOT NULL DEFAULT '0',
+  `ClientName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `CompanyName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `CompanyAddress` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Email` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Phone` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_customer
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_customer` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_customer`(`ClientID`,`ClientName`,`CompanyName`,`CompanyAddress`,`Email`,`Phone`) VALUES
+(2,'Forzia',NULL,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_customer` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_dashboard
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_dashboard` (
+  `DashboardID` int(11) NOT NULL,
+  `ClientID` int(11) DEFAULT NULL,
+  `DashboardName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `DashboardSchema` longtext CHARACTER SET latin1,
+  PRIMARY KEY (`DashboardID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_dashboard
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_dashboard` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_dashboard`(`DashboardID`,`ClientID`,`DashboardName`,`DashboardSchema`) VALUES
+(61,2,'Employee Dashboard','[{\"MetricID\":345,\"DashboardID\":61,\"MetricName\":null,\"MetricType\":9,\"Attributes\":{\"EnableChartAnimation\":true,\"AnimationType\":\"elastic\",\"Title\":[],\"Graphs\":[],\"Value\":null,\"Category\":{\"GridPosition\":\"start\",\"EnableLabel\":true,\"MinPeriod\":\"\",\"EnableParseDate\":false,\"Position\":2,\"AutoRotateAngle\":0,\"AutoRotateCount\":0,\"FontSize\":12,\"FontColor\":\"\",\"AxisLabelInside\":false,\"GridAlpha\":0.4,\"GridLineColor\":\"\",\"GridDashLength\":1},\"ChartCursor\":{\"CursorColor\":\"\",\"CategoryBallonEnable\":true,\"ValueBallonEnable\":false,\"CursorAlpha\":0.45},\"Legend\":{\"EnableLegend\":true,\"Align\":3,\"Position\":4,\"Width\":10},\"CategoryField\":\"\",\"EnableHandrawn\":false,\"ValueField\":\"nationalitycount\",\"TextField\":\"nationality\",\"Radius\":20,\"InnerRadius\":0,\"Font\":\"arial\",\"FontSize\":12,\"DataDateFormat\":\"\",\"BalloonText\":\"\",\"Depth\":30.0,\"Angle\":40.0,\"Colors\":\"\",\"PulloutEffect\":\"elastic\",\"PulloutOneByOne\":false,\"LableText\":null,\"LablePosition\":\"LEFT\",\"TextColor\":\"#000000\",\"LabelsEnabled\":true,\"Axes\":[],\"Arrows\":[],\"BackgroundColor\":\"#FFFFFF\",\"Tile\":{\"Title\":\"Tile 1\",\"ValueField\":\"\",\"TextField\":\"\",\"Position\":3,\"FontColor\":\"\",\"FillColor\":\"\",\"FontSize\":14},\"Table\":{\"KeyField\":\"\",\"font\":\"arial\",\"FontSize\":12,\"HeaderColor\":\"\",\"HoverColor\":\"\",\"EnableHeader\":true,\"Columns\":[]}},\"CubeID\":24,\"Width\":5,\"Height\":5,\"PositionX\":0,\"PositionY\":0,\"Cube\":null,\"Title\":\"Pie with 3D\"},{\"MetricID\":351,\"DashboardID\":61,\"MetricName\":null,\"MetricType\":2,\"Attributes\":{\"EnableChartAnimation\":true,\"AnimationType\":\"elastic\",\"Title\":[],\"Graphs\":[{\"Type\":1,\"BalloonText\":\"[[value]] - [[category]]\",\"ValueField\":\"\",\"FieldColorFields\":\"\",\"BulletType\":1,\"BulletColor\":\"#090332\",\"BulletSize\":8,\"ShowBalloon\":true,\"DateField\":\"\",\"Title\":\"Graph 1\",\"visibleInLegend\":false,\"markerType\":0,\"TopRadius\":0,\"NegativeNumberColor\":\"\",\"ValueAxis\":\"Devlopment\",\"LineColor\":\"#aec6cf\",\"FillColor\":\"#068775\",\"Position\":\"TOP\",\"Font\":\"\",\"FontSize\":12}],\"Value\":[{\"ID\":\"01\",\"Position\":2,\"StackType\":0,\"Title\":\"Value Axis\",\"EnableTitleBold\":true,\"Unit\":\"\",\"UnitPosition\":\"\",\"LabelsEnabled\":true,\"GridType\":\"\",\"FontSize\":12,\"FontColor\":\"#000000\",\"Inside\":false,\"AxisColor\":\"#07070c\",\"AxisThick\":2,\"GridAlpha\":0.4,\"GridColor\":\"\",\"GridDashLength\":0}],\"Category\":{\"GridPosition\":\"start\",\"EnableLabel\":true,\"MinPeriod\":\"\",\"EnableParseDate\":false,\"Position\":2,\"AutoRotateAngle\":20,\"AutoRotateCount\":0,\"FontSize\":12,\"FontColor\":\"#000000\",\"AxisLabelInside\":false,\"GridAlpha\":0.4,\"GridLineColor\":\"\",\"GridDashLength\":1},\"ChartCursor\":{\"CursorColor\":\"\",\"CategoryBallonEnable\":true,\"ValueBallonEnable\":true,\"CursorAlpha\":0.45},\"Legend\":{\"EnableLegend\":true,\"Align\":3,\"Position\":4,\"Width\":10},\"CategoryField\":\"Year\",\"EnableHandrawn\":false,\"ValueField\":\"\",\"TextField\":\"\",\"Radius\":0,\"InnerRadius\":0,\"Font\":\"arial\",\"FontSize\":12,\"DataDateFormat\":\"\",\"BalloonText\":\"\",\"Depth\":65.0,\"Angle\":40.0,\"Colors\":\"\",\"PulloutEffect\":\"\",\"PulloutOneByOne\":false,\"LableText\":null,\"LablePosition\":\"\",\"TextColor\":\"\",\"LabelsEnabled\":true,\"Axes\":[],\"Arrows\":[],\"BackgroundColor\":\"#FFFFFF\",\"Tile\":{\"Title\":\"Tile 1\",\"ValueField\":\"\",\"TextField\":\"\",\"Position\":3,\"FontColor\":\"\",\"FillColor\":\"\",\"FontSize\":14},\"Table\":{\"KeyField\":\"\",\"font\":\"arial\",\"FontSize\":12,\"HeaderColor\":\"\",\"HoverColor\":\"\",\"EnableHeader\":true,\"Columns\":[]}},\"CubeID\":52,\"Width\":6,\"Height\":4,\"PositionX\":5,\"PositionY\":0,\"Cube\":null,\"Title\":\"Sample Lable angle\"}]');
+INSERT INTO `bix_sys_dashboard`(`DashboardID`,`ClientID`,`DashboardName`,`DashboardSchema`) VALUES
+(64,2,'Test Dashboard',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_dashboard` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_dashboard_privileges
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_dashboard_privileges` (
+  `DashboardID` int(11) NOT NULL,
+  `PrivilegeType` int(11) NOT NULL COMMENT '1-USERID , 2-ROLEID',
+  `PrivilegeID` int(11) NOT NULL,
+  `ClientID` int(11) DEFAULT NULL,
+  `IsView` bit(1) DEFAULT NULL,
+  `IsModify` bit(1) DEFAULT NULL,
+  `IsAdd` bit(1) DEFAULT NULL,
+  `IsRemove` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`DashboardID`,`PrivilegeID`,`PrivilegeType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_dashboard_privileges
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_dashboard_privileges` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,2,2,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,1,90,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,1,92,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,1,153,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,1,173,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,1,223,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(61,1,230,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(64,2,2,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(64,2,10,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(64,1,132,2,1,NULL,NULL,NULL,NULL);
+INSERT INTO `bix_sys_dashboard_privileges`(`DashboardID`,`PrivilegeType`,`PrivilegeID`,`ClientID`,`IsView`,`IsModify`,`IsAdd`,`IsRemove`,`LastUPD`) VALUES
+(64,1,152,2,1,NULL,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_dashboard_privileges` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_entity
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_entity` (
+  `entityid` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `NextID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`entityid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_entity
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_entity` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('ClientID',1,'2015-07-14 00:00:00');
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('connectorID',115,'0001-01-01 00:00:00');
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('CUBEFIELDID',338,'2015-05-06 11:20:02');
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('CUBEID',171,'2015-05-06 11:20:02');
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('DashboardID',64,'2015-05-15 00:00:00');
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('MetricID',352,'2015-05-15 00:00:00');
+INSERT INTO `bix_sys_entity`(`entityid`,`NextID`,`LastUPD`) VALUES
+('UserID',2,'0001-01-01 00:00:00');
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_entity` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_user
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_user` (
+  `UserID` int(11) NOT NULL,
+  `ClientID` int(11) NOT NULL,
+  `UserName` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `Password` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `DOB` date DEFAULT NULL,
+  `SecurityQuestion` text CHARACTER SET latin1,
+  `Answer` text CHARACTER SET latin1,
+  `IsActiveUser` bit(1) DEFAULT NULL,
+  `UserType` int(11) DEFAULT NULL COMMENT '"1- Normal User 2-AdminUser"',
+  `LastUPD` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `Name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Email` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Phone` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_user
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_user` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_user`(`UserID`,`ClientID`,`UserName`,`Password`,`DOB`,`SecurityQuestion`,`Answer`,`IsActiveUser`,`UserType`,`LastUPD`,`Name`,`Email`,`Phone`) VALUES
+(2,2,'Forzia','bFnnP41FsQkg+zk+7riMMQ==',NULL,NULL,NULL,1,2,NULL,'','','');
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_user` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_user_connector
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_user_connector` (
+  `ConnectorID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `ClientID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ConnectorID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_user_connector
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_user_connector` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `bix_sys_user_connector`(`ConnectorID`,`UserID`,`ClientID`) VALUES
+(111,2,2);
+INSERT INTO `bix_sys_user_connector`(`ConnectorID`,`UserID`,`ClientID`) VALUES
+(112,2,2);
+INSERT INTO `bix_sys_user_connector`(`ConnectorID`,`UserID`,`ClientID`) VALUES
+(113,1,0);
+INSERT INTO `bix_sys_user_connector`(`ConnectorID`,`UserID`,`ClientID`) VALUES
+(114,1,0);
+INSERT INTO `bix_sys_user_connector`(`ConnectorID`,`UserID`,`ClientID`) VALUES
+(115,2,2);
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_user_connector` ENABLE KEYS */;
+
+-- 
+-- Definition of bix_sys_user_relation
+-- 
+
+CREATE TABLE IF NOT EXISTS `bix_sys_user_relation` (
+  `UserID` int(11) NOT NULL,
+  `RelatedUserID` int(11) NOT NULL,
+  PRIMARY KEY (`UserID`,`RelatedUserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table bix_sys_user_relation
+-- 
+
+/*!40000 ALTER TABLE `bix_sys_user_relation` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `bix_sys_user_relation` ENABLE KEYS */;
+
+-- 
+-- Definition of businessunit
+-- 
+
+CREATE TABLE IF NOT EXISTS `businessunit` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer Id of the record',
+  `BusinessUnitID` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Inique key of the table',
+  `F_300005` int(10) NOT NULL COMMENT 'Parent Unit ID of this Business Unit',
+  `F_300010` mediumtext CHARACTER SET latin1 COMMENT 'Logo of the Business Unit',
+  `F_300015` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Business Unit Name',
+  `F_300020` varchar(2000) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Business Unit Description',
+  `F_300025` int(10) unsigned DEFAULT NULL COMMENT 'Currency type',
+  `F_300030` int(11) DEFAULT NULL COMMENT 'Country of Businessunit',
+  `F_300035` varchar(100) DEFAULT NULL,
+  `F_300040` varchar(100) DEFAULT NULL,
+  `F_300045` decimal(10,2) DEFAULT NULL COMMENT 'Currency In USD',
+  `F_300060` text,
+  `F_300050` decimal(10,6) DEFAULT NULL COMMENT 'Currency In USD',
+  `LastUPD` datetime DEFAULT NULL,
+  `Left` int(10) unsigned DEFAULT NULL,
+  `Right` int(10) unsigned DEFAULT NULL,
+  `Depth` int(10) unsigned DEFAULT NULL,
+  `F_300055` text COMMENT 'Name in Arabic',
+  PRIMARY KEY (`BusinessUnitID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table businessunit
+-- 
+
+/*!40000 ALTER TABLE `businessunit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,1,20,'dada299a-2465-4e7f-8f11-836afd03aeb4.png','SMR GROUP45','SMR Group121',1,131,NULL,NULL,NULL,NULL,NULL,'2018-05-04 15:13:54',134,135,0,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,2,1,'a0b16537-af2b-4a3c-b5dc-0b974723fdb6.png','SMR INDIA677898090','Indian Buisness Unit of SMR Group67868',3,131,NULL,NULL,NULL,NULL,NULL,'2018-05-07 18:30:15',153,154,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,3,1,'','SMR BAHRAIN','<font color=\"#0b5394\">Bahrain Buisness Unit of SMR Group</font>',2,131,NULL,NULL,NULL,NULL,NULL,'2018-11-14 14:41:40',135,136,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,6,2,'2016681467987584172.jpg','SMR','',6,101,NULL,NULL,NULL,NULL,NULL,'2018-08-13 17:44:31',196,197,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,12,2,'20190141547458671528285516592394731.png','SMR HR TECHNOLOGIES PVT LTD','smr India',5,101,NULL,NULL,NULL,'',NULL,'2019-01-14 15:08:00',154,155,NULL,'test');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,14,1,'NULL','TEST0703','test',1,49,NULL,NULL,NULL,NULL,NULL,'2016-06-07 17:07:07',27,28,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,19,2,'1a459668-5403-4653-9583-7e372a17fdcb.png','TEST VAN','asad',2,101,NULL,NULL,NULL,NULL,NULL,'2015-06-19 12:06:20',488,489,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,20,6,'20181091541761035965702948346433671.JPG','FORZIA','SMR group admin',16,101,NULL,NULL,NULL,NULL,NULL,'2018-11-09 16:27:24',197,198,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,21,2,'NULL','HGF','',3,101,NULL,NULL,NULL,NULL,NULL,'2015-07-23 18:37:02',422,423,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,22,2,'','FGHI','',3,101,NULL,NULL,NULL,NULL,NULL,'2018-05-07 14:52:31',60,61,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,23,12,'99853407-c199-4569-8676-fce95461022e.png','TEST BU678979','78979',1,101,NULL,NULL,NULL,NULL,NULL,'2015-08-11 20:35:00',441,442,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,24,6,'NULL','BGGSG','dfhg',4,131,NULL,NULL,NULL,NULL,NULL,'2016-06-07 17:07:27',577,578,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,28,12,'UploadedFiles/Image/UploadedFiles/Image/3e01a759-bc4e-49e6-9da7-2bde64b253b1.png','FDGDFG','dfgfdgfd',4,101,NULL,NULL,NULL,NULL,NULL,'2015-08-08 20:21:17',475,476,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,29,1,'116829b1-2dc4-4bc8-b4da-766644cee660.png','BU1','',18,101,NULL,NULL,NULL,NULL,NULL,'2018-10-05 13:05:02',137,138,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,30,1,'e4db228c-5a48-48b9-a398-b97e527aeb91.png','BU2675','',1,131,NULL,NULL,NULL,NULL,NULL,'2018-05-11 15:38:18',147,148,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,31,1,'d8d7573e-2175-4caf-b0c7-ff9b3d542edc.png','BU3567','567',2,101,NULL,NULL,NULL,NULL,NULL,'2015-08-11 19:37:40',379,380,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,32,6,'331b70c5-213a-4e0c-a25d-cafbc80d0f45.png','TEST BU NO PARENT345','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-08-17 13:11:26',585,586,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,33,0,'NULL','DDD','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-08-12 17:51:12',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,34,1,'25f98334-a661-48ed-acc4-74825c7a7128.png','FDSFDFD','fdssss',1,101,NULL,NULL,NULL,NULL,NULL,'2015-08-17 11:31:51',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,35,1,'NULL','SHEIK','',1,101,NULL,NULL,NULL,NULL,NULL,'2015-08-17 12:32:58',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,36,12,'NULL','TTTT','',3,44,NULL,NULL,NULL,NULL,NULL,'2016-06-07 17:08:08',329,330,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,40,12,'NULL','PRIVILEDGE HR MANAGER','',1,101,NULL,NULL,NULL,NULL,NULL,'2015-12-11 14:19:18',339,340,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,41,2,'NULL','TTT','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 09:52:08',326,327,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,42,1,'NULL','TTT','',1,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 09:58:43',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,43,2,'NULL','DADFA','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 10:01:01',324,325,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,44,1,'NULL','3453','345345',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 10:04:01',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,45,3,'NULL','SDFASDF','',1,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 10:21:03',609,610,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,46,2,'NULL','SDFASDF','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 10:26:00',320,321,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,47,14,'NULL','TESTSDFFA','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 10:27:11',560,561,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,48,6,'NULL','FFF','',3,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 10:44:44',581,582,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,49,2,'NULL','SADF','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-14 11:30:39',318,319,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,50,12,'NULL','GGG','',3,101,NULL,NULL,NULL,NULL,NULL,'2015-12-18 14:15:27',337,338,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,51,2,'NULL','GSDF','',3,101,NULL,NULL,NULL,NULL,NULL,'2015-12-18 14:16:43',316,317,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,52,2,'NULL','GGGG','',2,101,NULL,NULL,NULL,NULL,NULL,'2015-12-18 14:18:57',312,313,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,53,21,'NULL','SSS','',3,101,NULL,NULL,NULL,NULL,NULL,'2015-12-18 14:20:17',423,424,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,54,2,'NULL','FFF','',4,101,NULL,NULL,NULL,NULL,NULL,'2015-12-18 14:40:39',310,311,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,55,12,'NULL','BU FOR NEO LOAD','123',4,101,NULL,NULL,NULL,NULL,NULL,'2015-12-22 10:47:56',335,336,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,56,1,'NULL','345','345',3,101,NULL,NULL,NULL,NULL,NULL,'2016-06-07 12:36:56',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,57,46,'a.jpg','FFFFFFFFF','',1,1,NULL,NULL,NULL,NULL,NULL,'2016-07-04 19:17:33',321,322,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,58,0,'2016681467987540258.jpg','567','567',1,249,NULL,NULL,NULL,NULL,NULL,'2016-07-08 19:49:08',0,1,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,59,1,'0','SMR123','sdf',1,249,NULL,NULL,NULL,NULL,NULL,'2018-05-07 16:17:58',281,282,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,60,1,NULL,'5687','5686578',2,6,NULL,NULL,NULL,NULL,NULL,'2016-09-13 10:13:28',17,18,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,61,2,NULL,'345','345',1,6,NULL,NULL,NULL,NULL,NULL,'2016-09-13 11:23:28',112,113,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,63,2,'0','DDD123','DDD',1,249,NULL,NULL,NULL,NULL,NULL,'2016-11-07 10:22:03',96,97,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,70,20,NULL,'FORZIA EXCEL IMPORT','Forzia Excel import',3,101,NULL,NULL,NULL,NULL,NULL,'2016-11-14 14:54:29',300,301,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,71,0,'','Test Silambu Business','<font color=\"#351c75\">345345345345345345345345</font>',2,139,NULL,NULL,NULL,NULL,446.035560,'2018-11-14 14:44:30',0,1,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,72,1,NULL,'Forzia1',NULL,4,101,NULL,NULL,NULL,NULL,NULL,'2016-12-26 15:38:37',15,16,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,73,12,NULL,'Forzia1',NULL,4,101,NULL,NULL,NULL,NULL,NULL,'2016-12-28 12:13:24',101,102,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,75,6,NULL,'Forzia 123','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2017-01-02 11:57:33',295,296,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,76,12,'20170171484634907796.jpg','TestBirthdayBusinessUnit','TestBirthdayBusinessUnit',4,101,NULL,NULL,NULL,NULL,NULL,'2017-01-17 12:05:38',99,100,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,83,0,'','ads','ad',1,101,NULL,NULL,NULL,NULL,NULL,'2017-07-27 12:43:27',0,1,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,84,1,NULL,'SMR INDIA67789344554545','india',3,101,NULL,NULL,NULL,NULL,NULL,'2018-04-16 14:51:37',9,10,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,85,6,NULL,'FORZIA 1234444','',2,101,NULL,NULL,NULL,NULL,NULL,'2018-04-16 14:56:43',127,128,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,87,12,NULL,'test123','',3,101,NULL,NULL,NULL,NULL,NULL,'2018-04-16 15:14:01',75,76,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,88,12,NULL,'test12345','',3,101,NULL,NULL,NULL,NULL,NULL,'2018-04-16 15:16:46',71,72,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,97,126,'','New BU1','',4,101,NULL,NULL,NULL,NULL,15.000000,'2018-08-14 16:35:59',1,2,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,98,12,'','Cognizant','',4,101,NULL,NULL,NULL,NULL,NULL,'2018-04-30 14:34:51',63,64,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,99,0,'','Malaysian BU','Software consulting and development, HR development solutions covering training, consulting, outsourcing, events, learning resources and advisory support services',6,131,NULL,NULL,NULL,NULL,NULL,'2018-05-02 18:12:09',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,100,1,'','Test Suriya','',2,48,NULL,NULL,NULL,NULL,NULL,'2018-05-04 15:16:42',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,101,19,'','test1234454','',5,49,NULL,NULL,NULL,NULL,NULL,'2018-05-07 16:02:55',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,102,24,'','Test455','',6,102,NULL,NULL,NULL,NULL,NULL,'2018-05-07 16:03:43',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,103,1,'','smr45','',7,101,NULL,NULL,NULL,NULL,NULL,'2018-05-07 16:05:15',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,104,0,'2018481525754680515.png','Gulf BU','',2,191,NULL,NULL,NULL,NULL,NULL,'2018-05-08 10:15:05',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,105,0,'','TEST','ASAS',2,131,NULL,NULL,NULL,NULL,NULL,'2018-05-09 10:46:47',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,106,1,'','smr223','',6,131,NULL,NULL,NULL,NULL,NULL,'2018-05-09 10:45:02',149,150,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,107,6,NULL,'Forzia122343444444','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-06-19 10:08:19',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,108,6,NULL,'Forzia122344455555','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-06-19 10:12:53',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,109,2,NULL,'Forzia12323442552','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-07-30 10:47:42',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,110,2,NULL,'Forzia Tech','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-07-30 10:47:44',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,111,2,NULL,'Demo2133','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-07-30 10:47:47',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,112,2,'201810191542615898005729211412033981.jpg','SMR HR TECHNOLOGIES PVT LTD2','smr India',6,131,NULL,NULL,NULL,NULL,NULL,'2018-11-19 13:55:05',178,179,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,113,2,'201810191542615917845474333266291991.jpg','SMR HR TECHNOLOGIES PVT LTD444','smr India',2,138,NULL,NULL,NULL,NULL,NULL,'2018-11-19 13:55:26',176,177,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,114,12,'2018771533623691445360664640988631.jpg','FTPL 12334','Chennai, perungudi-6000140',6,131,NULL,NULL,NULL,NULL,NULL,'2018-08-07 12:09:55',233,234,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,115,2,NULL,'Test Forzia','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:18:09',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,116,0,'','Dubai Islamic Insurance & Reinsurance Co. (AMAN) P.J.S.C','',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:52:21',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,117,116,NULL,'Head Office','Head Office',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:58:08',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,118,116,NULL,'Dubai Branch','Dubai Branch',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:58:09',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,119,116,NULL,'Jebel Ali Branch','Jebel Ali Branch',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:58:09',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,120,116,NULL,'Dragon Mart Branch','Dragon Mart Branch',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:58:10',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,121,116,NULL,'Sharjah Branch','Sharjah Branch',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:58:11',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,122,116,NULL,'Abu Dhabi Branch','Abu Dhabi Branch',8,232,NULL,NULL,NULL,NULL,NULL,'2018-08-06 15:58:12',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,123,2,NULL,'Forzia2','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-08-07 11:21:59',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,124,2,NULL,'Forzia3','Forzia',4,101,NULL,NULL,NULL,NULL,NULL,'2018-08-07 11:22:00',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,125,2,NULL,'Forzia4','Forzia',4,251,NULL,NULL,NULL,NULL,52.000000,'2018-08-07 11:22:01',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,126,0,'0','New BU Roopa','',5,47,NULL,NULL,NULL,NULL,52.000000,'2018-08-14 16:35:26',0,1,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,128,1,'','gdfgdfgdgdfgdfg','',4,101,NULL,NULL,NULL,NULL,NULL,'2018-08-14 11:09:06',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,131,1,'0','test jhyukyuj','<p style=\"box-sizing: inherit; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\">The&nbsp;<code class=\"w3-codespan\" style=\"box-sizing: inherit; font-family: Consolas, &quot;courier new&quot;; font-size: 16.5px; padding: 2px 4px; color: crimson; background-color: rgb(241, 241, 241); border-radius: 4px;\">.navbar-right</code>&nbsp;class is used to right-align navigation bar buttons.</p><p style=\"box-sizing: inherit; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\">In the following example we insert a \"Sign Up\" button and a \"Login\" button to the right in the navigation bar. We also add a glyphicon on each of the two new buttons:</p><p style=\"box-sizing: inherit; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; background-color: rgb(255, 255, 204);\"><a jqte-setlink=\"\" style=\"color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; background-color: rgb(255, 255, 204);\">Add the</a>&nbsp;</span><code class=\"w3-codespan\" style=\"box-sizing: inherit; font-family: Consolas, &quot;courier new&quot;; font-size: 16.5px; color: crimson; word-break: break-word; background-color: rgb(241, 241, 241); padding-left: 4px; padding-right: 4px;\">.</code><br></p>',4,43,NULL,NULL,NULL,NULL,50.000000,'2018-10-03 15:36:09',139,140,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,132,28,'','BU 1','',18,46,NULL,NULL,NULL,NULL,NULL,'2018-10-04 18:49:22',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,133,32,'','Test BU2','',16,101,NULL,NULL,NULL,NULL,NULL,'2018-10-04 19:19:23',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,134,0,'','DRB-HICOM EZ-DRIVE SDN BHD','',2,101,NULL,NULL,NULL,NULL,NULL,'2018-11-02 19:21:05',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,135,0,'','EON AUTO MART SDN BHD','',2,101,NULL,NULL,NULL,NULL,NULL,'2018-11-02 19:22:23',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,136,0,'','EON BERHAD','',13,101,NULL,NULL,NULL,NULL,NULL,'2018-11-02 19:48:52',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,137,0,'','EUROMOBIL SDN BHD','',6,101,NULL,NULL,NULL,NULL,NULL,'2018-11-02 19:49:36',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,138,6,NULL,'BU123','Forzia',2,101,NULL,NULL,NULL,NULL,NULL,'2018-11-07 10:34:49',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,139,0,'','CNBU','',2,101,NULL,NULL,NULL,NULL,75.000000,'2018-11-13 16:07:50',NULL,NULL,NULL,NULL);
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,140,2,'','BU133434','',23,105,NULL,NULL,NULL,NULL,556.000000,'2018-11-26 17:21:52',NULL,NULL,NULL,'BU1');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,141,36,'','Test BUNIT 1','',2,101,NULL,NULL,NULL,'Test bu111222',NULL,'2018-12-21 13:19:56',330,331,NULL,'Test BUNIT 1');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,142,0,'','Test  BUnit 1','',2,101,NULL,NULL,NULL,'Test BU 1',NULL,'2019-01-28 12:38:57',NULL,NULL,NULL,'Test  BUnit 1');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,143,0,'','Test bu111222','',2,101,NULL,NULL,NULL,'Test bu12',NULL,'2019-02-04 18:53:38',0,1,NULL,'Test bu111222');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,144,0,'','Kali Mark Soda','Kali Mark Soda',2,101,NULL,NULL,NULL,'KMS',60.000000,'2019-03-11 15:49:13',NULL,NULL,NULL,'Kaalio markko Sodavooo');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,145,0,'','GRT BU 001','',2,101,NULL,NULL,NULL,'GRTBU001',NULL,'2019-03-21 17:13:29',NULL,NULL,NULL,'GRTBU001');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,146,145,'','GRT BU 002','',2,101,NULL,NULL,NULL,'GRT BU 002',NULL,'2019-03-21 17:14:05',NULL,NULL,NULL,'GRT BU 002');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,147,146,'','GRT BU 003','',2,101,NULL,NULL,NULL,'GRT BU 003',NULL,'2019-03-21 17:14:39',NULL,NULL,NULL,'GRT BU 003');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,148,147,'','GRT BU 004','',2,101,NULL,NULL,NULL,'GRT BU 004',NULL,'2019-03-21 17:15:05',NULL,NULL,NULL,'GRT BU 004');
+INSERT INTO `businessunit`(`ClientID`,`BusinessUnitID`,`F_300005`,`F_300010`,`F_300015`,`F_300020`,`F_300025`,`F_300030`,`F_300035`,`F_300040`,`F_300045`,`F_300060`,`F_300050`,`LastUPD`,`Left`,`Right`,`Depth`,`F_300055`) VALUES
+(2,149,148,'','GRT BU 005','',2,101,NULL,NULL,NULL,'GRT BU 005',NULL,'2019-03-21 17:15:44',NULL,NULL,NULL,'GRT BU 005');
+COMMIT;
+/*!40000 ALTER TABLE `businessunit` ENABLE KEYS */;
+
+-- 
+-- Definition of ams_asset
+-- 
+
+CREATE TABLE IF NOT EXISTS `ams_asset` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `AssetID` int(10) unsigned NOT NULL,
+  `BusinessUnit` int(10) unsigned NOT NULL,
+  `AssetGroup` int(10) unsigned NOT NULL,
+  `AssetType` int(10) unsigned NOT NULL,
+  `AssetName` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `Model` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `Serial` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `AssetCost` decimal(12,2) DEFAULT NULL,
+  `Status` int(10) unsigned NOT NULL,
+  `PurchaseDate` datetime DEFAULT NULL,
+  `FileName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `EnCodeFileName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Description` text CHARACTER SET latin1,
+  `CreatedBY` int(10) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `IsReturn` tinyint(1) DEFAULT '0',
+  `AllocatID` int(10) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`AssetID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table ams_asset
+-- 
+
+/*!40000 ALTER TABLE `ams_asset` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `ams_asset`(`ClientID`,`AssetID`,`BusinessUnit`,`AssetGroup`,`AssetType`,`AssetName`,`Model`,`Serial`,`AssetCost`,`Status`,`PurchaseDate`,`FileName`,`EnCodeFileName`,`Description`,`CreatedBY`,`LastUPD`,`IsReturn`,`AllocatID`) VALUES
+(2,158,1,1,1,'Acer','Acer01','nfijsh76237',20000.00,1,'2018-04-02 00:00:00','','','',90,'2018-04-10 19:10:44',1,237);
+INSERT INTO `ams_asset`(`ClientID`,`AssetID`,`BusinessUnit`,`AssetGroup`,`AssetType`,`AssetName`,`Model`,`Serial`,`AssetCost`,`Status`,`PurchaseDate`,`FileName`,`EnCodeFileName`,`Description`,`CreatedBY`,`LastUPD`,`IsReturn`,`AllocatID`) VALUES
+(2,160,20,2,1,'lennova','lennova12','ewq',0.00,1,'2018-04-04 00:00:00','','','',90,'2018-04-10 19:11:42',1,238);
+INSERT INTO `ams_asset`(`ClientID`,`AssetID`,`BusinessUnit`,`AssetGroup`,`AssetType`,`AssetName`,`Model`,`Serial`,`AssetCost`,`Status`,`PurchaseDate`,`FileName`,`EnCodeFileName`,`Description`,`CreatedBY`,`LastUPD`,`IsReturn`,`AllocatID`) VALUES
+(2,161,12,3,1,'dell','dell01','1234',0.00,1,'2018-02-01 00:00:00','','','',90,'2018-04-19 13:45:01',0,0);
+INSERT INTO `ams_asset`(`ClientID`,`AssetID`,`BusinessUnit`,`AssetGroup`,`AssetType`,`AssetName`,`Model`,`Serial`,`AssetCost`,`Status`,`PurchaseDate`,`FileName`,`EnCodeFileName`,`Description`,`CreatedBY`,`LastUPD`,`IsReturn`,`AllocatID`) VALUES
+(2,162,71,2,1,'HP','HP112','',300000.00,1,'2018-04-11 00:00:00','','','',90,'2018-04-11 10:17:47',0,0);
+INSERT INTO `ams_asset`(`ClientID`,`AssetID`,`BusinessUnit`,`AssetGroup`,`AssetType`,`AssetName`,`Model`,`Serial`,`AssetCost`,`Status`,`PurchaseDate`,`FileName`,`EnCodeFileName`,`Description`,`CreatedBY`,`LastUPD`,`IsReturn`,`AllocatID`) VALUES
+(2,163,12,1,1,'2qwqqwq','wqcewewew','ewewcew',1000.00,1,'2019-02-05 00:00:00','Test Template.xls','20191261551178507029977273555372661.xls','',90,'2019-02-26 16:25:39',1,239);
+COMMIT;
+/*!40000 ALTER TABLE `ams_asset` ENABLE KEYS */;
+
+-- 
+-- Definition of businessunit_otherdetails
+-- 
+
+CREATE TABLE IF NOT EXISTS `businessunit_otherdetails` (
+  `ClientID` int(11) NOT NULL,
+  `BusinessUnitID` int(11) NOT NULL,
+  `PERKESONo` int(11) NOT NULL,
+  `EPFNo` int(11) NOT NULL,
+  `CompanyRegistrationNo` varchar(50) DEFAULT NULL,
+  `CompanyTaxAccountNo` varchar(50) DEFAULT NULL,
+  `EmployerCode` varchar(255) DEFAULT NULL,
+  `EmployerCode_HQ` varchar(50) DEFAULT NULL,
+  `PICICNo` varchar(100) DEFAULT NULL,
+  `PICName` varchar(100) DEFAULT NULL,
+  `PICSignature` varchar(100) DEFAULT NULL,
+  `PICPosition` varchar(255) DEFAULT NULL,
+  `PICPhoneNo` varchar(50) DEFAULT NULL,
+  `PICEmail` varchar(50) DEFAULT NULL,
+  `PICDate` datetime DEFAULT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`BusinessUnitID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table businessunit_otherdetails
+-- 
+
+/*!40000 ALTER TABLE `businessunit_otherdetails` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `businessunit_otherdetails`(`ClientID`,`BusinessUnitID`,`PERKESONo`,`EPFNo`,`CompanyRegistrationNo`,`CompanyTaxAccountNo`,`EmployerCode`,`EmployerCode_HQ`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`ActionBy`,`LastUPD`) VALUES
+(2,1,1,1,'1','1','1','dfg','1','fgdf','dfg','fdg','dfg','dfg@s.op','2018-07-31 00:00:00',90,'2018-07-31 13:52:13');
+INSERT INTO `businessunit_otherdetails`(`ClientID`,`BusinessUnitID`,`PERKESONo`,`EPFNo`,`CompanyRegistrationNo`,`CompanyTaxAccountNo`,`EmployerCode`,`EmployerCode_HQ`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`ActionBy`,`LastUPD`) VALUES
+(2,2,12345,32136434,'weqeq12FDFS','wasedaeSR','E1244','E63278663','23qw','test123676','sample231','123456435','+91-14543535366','abc@gmail.com','2018-07-21 00:00:00',90,'2018-07-20 10:24:23');
+INSERT INTO `businessunit_otherdetails`(`ClientID`,`BusinessUnitID`,`PERKESONo`,`EPFNo`,`CompanyRegistrationNo`,`CompanyTaxAccountNo`,`EmployerCode`,`EmployerCode_HQ`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`ActionBy`,`LastUPD`) VALUES
+(2,12,12345,32136,'weqeq12','wasedae','ewqe','saeda','23qw','test123','sample','123456','+91-144-20029929','abc@gmail.con','2018-05-02 00:00:00',90,'2018-07-20 10:22:25');
+INSERT INTO `businessunit_otherdetails`(`ClientID`,`BusinessUnitID`,`PERKESONo`,`EPFNo`,`CompanyRegistrationNo`,`CompanyTaxAccountNo`,`EmployerCode`,`EmployerCode_HQ`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`ActionBy`,`LastUPD`) VALUES
+(2,22,1323,321414,'sdfafr','rewrwr','cads','e23w','erw43324','4324','sample1','pos123','+91-26566763213','abcd@gmail.com','2018-05-04 00:00:00',90,'2018-05-07 15:51:41');
+INSERT INTO `businessunit_otherdetails`(`ClientID`,`BusinessUnitID`,`PERKESONo`,`EPFNo`,`CompanyRegistrationNo`,`CompanyTaxAccountNo`,`EmployerCode`,`EmployerCode_HQ`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`ActionBy`,`LastUPD`) VALUES
+(2,99,11111,11223344,'987654321','123456','147852',NULL,'963852','Sample','Test','Position 1','632145789','sample@test.com','1992-05-01 00:00:00',NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `businessunit_otherdetails` ENABLE KEYS */;
+
+-- 
+-- Definition of businessunit_report_pic_details
+-- 
+
+CREATE TABLE IF NOT EXISTS `businessunit_report_pic_details` (
+  `ClientID` int(11) NOT NULL,
+  `BusinessUnitID` int(11) NOT NULL,
+  `ReportID` int(11) NOT NULL,
+  `PICICNo` varchar(100) DEFAULT NULL,
+  `PICName` varchar(100) DEFAULT NULL,
+  `PICSignature` varchar(100) DEFAULT NULL,
+  `PICPosition` varchar(255) DEFAULT NULL,
+  `PICPhoneNo` varchar(50) DEFAULT NULL,
+  `PICEmail` varchar(50) DEFAULT NULL,
+  `PICDate` datetime DEFAULT NULL,
+  `OrgCode` varchar(100) DEFAULT NULL,
+  `CompanyZakatAcNo` varchar(100) DEFAULT NULL,
+  `OrgBankName` varchar(100) DEFAULT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`BusinessUnitID`,`ReportID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table businessunit_report_pic_details
+-- 
+
+/*!40000 ALTER TABLE `businessunit_report_pic_details` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `businessunit_report_pic_details`(`ClientID`,`BusinessUnitID`,`ReportID`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`OrgCode`,`CompanyZakatAcNo`,`OrgBankName`,`ActionBy`,`LastUPD`) VALUES
+(2,98,119,'A123456','User Test','Testa','Test Position','123456789','test@gmail.com','1901-01-01 00:00:00','','','test name',90,'2019-05-13 11:25:18');
+INSERT INTO `businessunit_report_pic_details`(`ClientID`,`BusinessUnitID`,`ReportID`,`PICICNo`,`PICName`,`PICSignature`,`PICPosition`,`PICPhoneNo`,`PICEmail`,`PICDate`,`OrgCode`,`CompanyZakatAcNo`,`OrgBankName`,`ActionBy`,`LastUPD`) VALUES
+(2,99,121,'56789','Test USername','Test1','Test1','123468789','test@gmail.com','0001-01-01 00:00:00','','',NULL,90,'2019-05-10 10:38:07');
+COMMIT;
+/*!40000 ALTER TABLE `businessunit_report_pic_details` ENABLE KEYS */;
+
+-- 
+-- Definition of butoppeople
+-- 
+
+CREATE TABLE IF NOT EXISTS `butoppeople` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `BusinessUnitID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `CreatedBy` int(10) unsigned NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`BusinessUnitID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table butoppeople
+-- 
+
+/*!40000 ALTER TABLE `butoppeople` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,90,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,153,90,'2017-11-17 14:39:22');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,165,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,181,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,228,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,292,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,442,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,522,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,539,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,4784,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,1,4867,90,'2017-11-17 14:39:06');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,6,90,90,'2017-11-06 16:35:55');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,6,153,90,'2017-11-06 16:35:32');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,6,161,90,'2017-11-06 16:35:36');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,12,153,90,'2017-11-06 16:28:09');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,12,161,90,'2017-11-06 16:22:22');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,12,165,90,'2017-11-06 16:27:44');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,12,181,90,'2017-11-06 16:29:49');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,14,5549,90,'2019-03-04 15:15:07');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,14,6977,90,'2019-03-04 15:15:07');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,71,90,90,'2017-11-06 16:55:49');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,71,161,90,'2017-11-06 16:32:43');
+INSERT INTO `butoppeople`(`ClientID`,`BusinessUnitID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,71,183,90,'2017-11-06 16:54:10');
+COMMIT;
+/*!40000 ALTER TABLE `butoppeople` ENABLE KEYS */;
+
+-- 
+-- Definition of ca_assignemployee_process
+-- 
+
+CREATE TABLE IF NOT EXISTS `ca_assignemployee_process` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `CompetencyProcessID` int(10) unsigned NOT NULL,
+  `CompetencyAssesmentID` int(10) unsigned NOT NULL,
+  `ProcessOrder` int(10) unsigned NOT NULL,
+  `Status` int(10) unsigned NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`CompetencyProcessID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table ca_assignemployee_process
+-- 
+
+/*!40000 ALTER TABLE `ca_assignemployee_process` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,36,410,1,1,'2017-04-20 15:34:02');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,37,411,2,1,'2017-04-20 15:36:50');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,48,422,2,1,'2017-06-20 12:52:37');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,50,424,1,1,'2017-06-22 14:58:06');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,51,425,6,1,'2017-06-23 11:33:20');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,52,426,1,1,'2017-06-23 14:09:26');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,54,427,1,1,'2017-06-23 14:38:37');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,61,433,2,1,'2017-07-03 09:39:57');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,62,434,1,1,'2017-07-03 09:42:04');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,63,435,3,1,'2017-07-03 16:18:10');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,64,436,7,1,'2017-07-05 17:38:17');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,67,439,1,1,'2017-08-08 11:27:51');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,71,441,8,1,'2017-12-21 17:34:18');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,96,458,9,0,'2018-02-26 11:19:31');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,97,459,9,0,'2018-02-26 11:26:31');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,106,464,9,0,'2018-02-26 12:59:13');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,109,466,9,0,'2018-02-26 13:30:49');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,110,467,9,0,'2018-02-26 13:32:03');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,111,468,5,1,'2018-02-26 14:04:25');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,116,472,6,0,'2018-03-01 11:38:56');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,117,472,6,0,'2018-03-01 11:39:34');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,118,473,8,0,'2018-03-01 11:41:00');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,121,474,9,1,'2018-03-01 13:09:59');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,125,478,9,1,'2018-03-02 16:04:06');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,90,139,490,1,1,'2018-05-15 18:43:03');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,71,441,13,1,'2017-12-21 17:34:21');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,96,458,13,0,'2018-02-26 11:19:31');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,97,459,13,0,'2018-02-26 11:26:31');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,106,464,13,0,'2018-02-26 12:59:13');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,107,465,8,0,'2018-02-26 13:14:53');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,108,465,8,0,'2018-02-26 13:15:12');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,109,466,13,0,'2018-02-26 13:30:49');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,110,467,13,0,'2018-02-26 13:32:03');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,111,468,9,1,'2018-02-26 14:04:28');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,116,472,7,0,'2018-03-01 11:38:56');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,117,472,9,0,'2018-03-01 11:39:34');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,118,473,9,0,'2018-03-01 11:41:00');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,121,474,13,1,'2018-03-01 13:10:01');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,96,125,478,13,1,'2018-03-02 16:04:07');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,71,441,36,1,'2017-12-21 17:34:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,96,458,35,0,'2018-02-26 11:19:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,97,459,35,0,'2018-02-26 11:26:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,106,464,35,0,'2018-02-26 12:59:15');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,109,466,35,0,'2018-02-26 13:30:51');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,110,467,35,0,'2018-02-26 13:32:05');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,121,474,35,1,'2018-03-01 13:10:09');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,106,125,478,35,1,'2018-03-02 16:04:14');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,71,441,43,1,'2017-12-21 17:34:36');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,96,458,42,0,'2018-02-26 11:19:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,97,459,42,0,'2018-02-26 11:26:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,106,464,42,0,'2018-02-26 12:59:16');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,109,466,42,0,'2018-02-26 13:30:52');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,110,467,42,0,'2018-02-26 13:32:06');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,121,474,42,1,'2018-03-01 13:10:11');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,110,125,478,42,1,'2018-03-02 16:04:16');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,71,441,58,1,'2017-12-21 17:34:43');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,96,458,57,0,'2018-02-26 11:19:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,97,459,57,0,'2018-02-26 11:26:33');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,106,464,57,0,'2018-02-26 12:59:17');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,109,466,57,0,'2018-02-26 13:30:53');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,110,467,57,0,'2018-02-26 13:32:07');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,121,474,57,1,'2018-03-01 13:10:16');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,112,125,478,57,1,'2018-03-02 16:04:22');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,71,441,79,1,'2017-12-21 17:34:52');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,96,458,76,0,'2018-02-26 11:19:33');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,97,459,76,0,'2018-02-26 11:26:33');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,106,464,76,0,'2018-02-26 12:59:18');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,109,466,76,0,'2018-02-26 13:30:55');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,110,467,76,0,'2018-02-26 13:32:08');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,121,474,77,1,'2018-03-01 13:10:23');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,114,125,478,77,0,'2018-03-02 16:04:00');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,71,441,48,1,'2017-12-21 17:34:38');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,96,458,48,0,'2018-02-26 11:19:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,97,459,48,0,'2018-02-26 11:26:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,106,464,48,0,'2018-02-26 12:59:16');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,109,466,48,0,'2018-02-26 13:30:52');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,110,467,48,0,'2018-02-26 13:32:06');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,121,474,48,1,'2018-03-01 13:10:13');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,122,475,3,1,'2018-03-01 15:18:28');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,122,125,478,48,1,'2018-03-02 16:04:18');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,124,71,441,50,1,'2017-12-21 17:34:39');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,124,96,458,50,0,'2018-02-26 11:19:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,124,97,459,50,0,'2018-02-26 11:26:32');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(2,124,106,464,50,0,'2018-02-26 12:59:16');
+INSERT INTO `ca_assignemployee_process`(`ClientID`,`UserID`,`CompetencyProcessID`,`CompetencyAssesmentID`,`ProcessOrder`,`Status`,`LastUPD`) VALUES
+(

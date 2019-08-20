@@ -1,0 +1,709 @@
+`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1225,'CL for Female','',2,-1,1,1,1,2,1224,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1226,'CL for Female','',2,-1,1,1,1,3,1224,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1227,'','',3,-1,1,1,0,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1228,'Casual Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1229,'Casual Leave','',2,-1,1,1,1,2,1228,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1230,'Casual Leave','',2,-1,1,1,1,3,1228,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1231,'','',16,-1,1,1,1,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1232,'Sick Leave','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1233,'Sick Leave','',2,-1,1,0,1,2,1232,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1234,'Sick Leave','',2,-1,1,0,1,3,1232,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1235,'Comp Off','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1236,'Comp Off','',2,-1,1,1,1,2,1235,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1237,'Comp Off','',2,-1,1,1,1,3,1235,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1238,'test','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1239,'test','',2,-1,1,1,1,2,1238,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1240,'test','',2,-1,1,1,1,3,1238,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1241,'TEST1','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1242,'TEST1','',2,-1,1,0,1,2,1241,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1243,'TEST1','',2,-1,1,0,1,3,1241,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1244,'test1','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1245,'test1','',2,-1,1,0,1,2,1244,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1246,'test1','',2,-1,1,0,1,3,1244,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1247,'test2','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1248,'test2','',2,-1,1,0,1,2,1247,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1249,'test2','',2,-1,1,0,1,3,1247,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1250,'t2','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1251,'t2','',2,-1,1,0,1,2,1250,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1252,'t2','',2,-1,1,0,1,3,1250,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1253,'t2','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1254,'t2','',2,-1,1,1,1,2,1253,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1255,'t2','',2,-1,1,1,1,3,1253,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1256,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1257,'Casual Leave','',2,-1,1,0,1,2,1256,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1258,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1259,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1260,'Casual Leave','',28,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1261,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1262,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1263,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1264,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1265,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1266,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1267,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1268,'Casual Leave','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1269,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1270,'Casual Leave','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1271,'Casual Leave','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1272,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1273,'compoff','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1274,'compoff','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1275,'compoff','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1276,'compoff','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1277,'compoff','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1278,'compoff','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1279,'compoff','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1280,'','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1281,'compoff','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1282,'compoff','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1283,'Over Drawn','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1284,'Over Drawn','',2,-1,1,1,1,2,1283,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1285,'Over Drawn','',2,-1,1,1,1,3,1283,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1286,'Leave Adjustment','',2,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1287,'Leave Adjustment','',2,-1,1,1,0,2,1286,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1288,'Leave Adjustment','',2,-1,1,1,0,3,1286,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1289,'Reserved Holiday','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1290,'Reserved Holiday','',2,-1,1,1,1,2,1289,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1291,'Reserved Holiday','',2,-1,1,1,1,3,1289,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1292,'compoff','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1293,'compoff','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1294,'EntPaid','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1295,'EntPaid','',2,-1,1,1,1,2,1294,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1296,'EntPaid','',2,-1,1,1,1,3,1294,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1297,'EntUnPaid','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1298,'EntUnPaid','',2,-1,1,1,1,2,1297,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1299,'EntUnPaid','',2,-1,1,1,1,3,1297,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1300,'1','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1301,'1','',2,-1,1,1,1,2,1300,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1302,'1','',2,-1,1,1,1,3,1300,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1303,'2','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1304,'2','',2,-1,1,1,1,2,1303,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1305,'2','',2,-1,1,1,1,3,1303,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1306,'Test','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1307,'Test','',2,-1,1,1,1,2,1306,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1308,'Test','',2,-1,1,1,1,3,1306,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1310,'Casul Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1311,'Casul Leave','',2,-1,1,1,1,2,1310,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1312,'Casul Leave','',2,-1,1,1,1,3,1310,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1313,'Sick Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1314,'Sick Leave','',2,-1,1,1,1,2,1313,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1315,'Sick Leave','',2,-1,1,1,1,3,1313,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1316,'OD','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1317,'OD','',2,-1,1,1,1,2,1316,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1318,'OD','',2,-1,1,1,1,3,1316,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1319,'Comp Off','',2,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1320,'Comp Off','',2,-1,1,1,0,2,1319,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1321,'Comp Off','',2,-1,1,1,0,3,1319,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1322,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1324,'hgh','',17,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1325,'test casual','',2,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1326,'test casual','',2,-1,1,1,0,2,1325,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1327,'test casual','',2,-1,1,1,0,3,1325,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1328,'d','',2,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1329,'d','',2,-1,1,1,0,2,1328,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1330,'d','',2,-1,1,1,0,3,1328,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1331,'Reimbursement','',25,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1332,'','',3,-1,1,0,1,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1333,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1334,'myleave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1335,'myleave','',2,-1,1,1,1,2,1334,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1336,'myleave','',2,-1,1,1,1,3,1334,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1337,'uououiouo','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1338,'uououiouo','',2,-1,1,1,1,2,1337,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1339,'uououiouo','',2,-1,1,1,1,3,1337,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1340,'AL','',2,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1341,'AL','',2,-1,1,1,0,2,1340,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1342,'AL','',2,-1,1,1,0,3,1340,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1343,'AD1','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1344,'AD1','',2,-1,1,1,1,2,1343,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1345,'AD1','',2,-1,1,1,1,3,1343,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1346,'AD2','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1347,'AD2','',2,-1,1,1,1,2,1346,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1348,'AD2','',2,-1,1,1,1,3,1346,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1349,'AD3','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1350,'AD3','',2,-1,1,1,1,2,1349,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1351,'AD3','',2,-1,1,1,1,3,1349,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1352,'','',3,-1,1,1,0,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1354,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1356,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1358,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1359,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1361,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1364,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1365,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1368,'ShiftChangeSetting2','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1369,'ShiftChangeSetting3','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1370,'ShiftChangeSetting4','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1371,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1372,'ShiftChangeSetting4','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1374,'ShiftChangeSetting6','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1375,'ShiftChangeSetting7','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1376,'ShiftChangeSetting4','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1377,'ShiftChangeSetting6','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1378,'tes','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1379,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1380,'Test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1381,'ShiftChangeSetting4','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1382,'COFF Test','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1383,'COFF Test','',2,-1,1,1,1,2,1382,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1384,'COFF Test','',2,-1,1,1,1,3,1382,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1385,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1386,'tetst123','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1387,'Test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1388,'shift','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1389,'gfdfgd','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1391,'Test Workflow','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1392,'Shift Change Setting 1','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1393,'Shift Change Policy 1','',29,-1,1,1,0,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1394,'teset','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1395,'','',24,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1396,'','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1397,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1398,'Shift 1','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1399,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1400,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1401,'testrwer','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1402,'Shift Change 2','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1403,'eerre','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1404,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1405,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1406,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1407,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1408,'test123','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1409,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1410,'testes','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1411,'testteseteteette','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1412,'tesdfdfd','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1414,'test','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1415,'test','',29,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1416,'test leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1417,'test leave','',2,-1,1,1,1,2,1416,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1418,'test leave','',2,-1,1,1,1,3,1416,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1419,'','',3,-1,1,1,1,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1420,'tette','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1421,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1422,'tes','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1423,'teste','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1424,'5errewer','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1425,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1426,'fvfgd','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1427,'hfghgf','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1428,'sfd','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1429,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1430,'fgfg','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1431,'Shift Change Policy 2','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1432,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1433,'testttest','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1434,'fgfgfgfd','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1435,'tetrtrtrtetrrt','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1436,'kkkkkkkkkkkkkkh','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1437,'fggggggggggd','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1438,'6ut','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1439,'yi b','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1440,'aaaaaqtest','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1441,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1442,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1443,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1444,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1445,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1446,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1447,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1448,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1449,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1450,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1451,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1452,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1453,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1454,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1455,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1456,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1457,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1458,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1459,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1460,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1461,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1462,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1463,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1464,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1465,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1466,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1467,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1468,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1469,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1470,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1471,'COFF Test','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1472,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1473,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1474,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1475,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1476,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1477,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1478,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1479,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1480,'Annual Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1481,'Annual Leave','',2,-1,1,1,1,2,1480,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1482,'Annual Leave','',2,-1,1,1,1,3,1480,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1483,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1484,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1485,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1486,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1487,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1488,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1489,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1490,'COFF Test','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1491,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1492,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1493,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1494,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1495,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1496,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1497,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1498,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1499,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1500,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1501,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1502,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1503,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1504,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1505,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1506,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1507,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1508,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1509,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1510,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1511,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1512,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1513,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1514,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1515,'Comp Off','',28,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1516,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1517,'test','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1518,'','',18,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1519,'','',18,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1520,'Annual leavee123','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1521,'Annual leavee123','',2,-1,1,0,1,2,1520,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1522,'Annual leavee123','',2,-1,1,0,1,3,1520,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1523,'Test Leave123','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1524,'Test Leave123','',2,-1,1,0,1,2,1523,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1525,'Test Leave123','',2,-1,1,0,1,3,1523,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1526,'Test Leave123333','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1527,'Test Leave123333','',2,-1,1,0,1,2,1526,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1528,'Test Leave123333','',2,-1,1,0,1,3,1526,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1529,'Test123','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1530,'demo12','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1531,'Leave1333','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1532,'Leave1333','',2,-1,1,0,1,2,1531,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1533,'Leave1333','',2,-1,1,0,1,3,1531,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1534,'Leave123','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1535,'Leave123','',2,-1,1,0,1,2,1534,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1536,'Leave123','',2,-1,1,0,1,3,1534,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1537,'123','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1538,'123','',2,-1,1,1,1,2,1537,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1539,'123','',2,-1,1,1,1,3,1537,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1540,'12345','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1541,'12345','',2,-1,1,1,1,2,1540,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1542,'12345','',2,-1,1,1,1,3,1540,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1543,'demo1','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1544,'Leave Type Code','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1545,'Leave Type Code','',2,-1,1,1,1,2,1544,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1546,'Leave Type Code','',2,-1,1,1,1,3,1544,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1547,'Leave Type Code','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1548,'Leave Type Code','',2,-1,1,1,1,2,1547,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1549,'Leave Type Code','',2,-1,1,1,1,3,1547,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1550,'yuiyuiyui','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1551,'yuiyuiyui','',2,-1,1,0,1,2,1550,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1552,'yuiyuiyui','',2,-1,1,0,1,3,1550,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1553,'Leave Type Code1','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1554,'Leave Type Code1','',2,-1,1,1,1,2,1553,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1555,'Leave Type Code1','',2,-1,1,1,1,3,1553,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1556,'Leave Type Code1','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1557,'Leave Type Code1','',2,-1,1,1,1,2,1556,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1558,'Leave Type Code1','',2,-1,1,1,1,3,1556,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1559,'Spacial Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1560,'Spacial Leave','',2,-1,1,1,1,2,1559,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1561,'Spacial Leave','',2,-1,1,1,1,3,1559,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1562,'Business Unit Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1563,'Business Unit Leave','',2,-1,1,1,1,2,1562,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1564,'Business Unit Leave','',2,-1,1,1,1,3,1562,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1565,'Business Unit Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1566,'Business Unit Leave','',2,-1,1,1,1,2,1565,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1567,'Business Unit Leave','',2,-1,1,1,1,3,1565,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1568,'Business Unit Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1569,'Business Unit Leave','',2,-1,1,1,1,2,1568,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1570,'Business Unit Leave','',2,-1,1,1,1,3,1568,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1571,'Ann 123','',2,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1572,'Ann 123','',2,-1,1,0,1,2,1571,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1573,'Ann 123','',2,-1,1,0,1,3,1571,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1574,'Leave Type Code2','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1575,'Leave Type Code2','',2,-1,1,1,1,2,1574,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1576,'Leave Type Code2','',2,-1,1,1,1,3,1574,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1577,'Privilege Leave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1578,'Privilege Leave','',2,-1,1,1,1,2,1577,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1579,'Privilege Leave','',2,-1,1,1,1,3,1577,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1580,'V CASUAL LEAVE','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1581,'V CASUAL LEAVE','',2,-1,1,1,1,2,1580,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1582,'V CASUAL LEAVE','',2,-1,1,1,1,3,1580,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1583,'','',24,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1584,'tytyt','',29,-1,1,0,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1585,'Display LEave','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1586,'Display LEave','',2,-1,1,1,1,2,1585,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1587,'Display LEave','',2,-1,1,1,1,3,1585,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1588,'Comp Off','',28,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1589,'','',3,-1,1,0,1,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1590,'','',3,-1,1,1,0,1,0,0,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerType`,`Status`,`AllowToChooseApprover`,`ProcessType`,`ParentID`,`HasChild`,`EnableEmailNotification`,`NeedFinalRetract`,`LastUPD`) VALUES
+(2,1591,'LOSS OF PAY','',2,-1,1,1,1,1,0,1,0,0,NULL);
+INSERT INTO `toz_workflow`(`ClientID`,`WorkflowID`,`Name`,`Description`,`Category`,`Owner`,`OwnerTy

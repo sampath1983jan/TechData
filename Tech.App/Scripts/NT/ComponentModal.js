@@ -627,7 +627,8 @@
 								onClickFunction: function (event) {
 									selectAllOfTheSameType(event.target || event.cyTarget);
 								}
-							}, {
+							},
+							{
 								id: 'change-relation',
 								content: 'Change Relation',
 								tooltipText: 'Change Relation',

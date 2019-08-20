@@ -1,0 +1,523 @@
+idTermReviewEndDate'' in ''field list''','GetPASummaryDetails',13330);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 10:56:06','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetAppraisalForm','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetAppraisalForm',13331);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 10:57:49','Unknown column ''a.StartDate'' in ''field list''','172.19.60.81',90,'http://localhost:61247/Handler/PayRollHandler.ashx?target=GetEmployeesPendingLeaves','','GetEmployeesPendingLeaves',13332);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 10:59:43','Unknown column ''a.StartDate'' in ''field list''','172.19.60.81',90,'http://localhost:61247/Handler/PayRollHandler.ashx?target=GetEmployeesPendingLeaves','','GetEmployeesPendingLeaves',13333);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 11:03:00','Unknown column ''b.ClientID'' in ''on clause''','172.19.60.81',90,'http://localhost:61247/Handler/PayRollHandler.ashx?target=GetEmployeesPendingLeaves','','GetEmployeesPendingLeaves',13334);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 11:03:41','Arithmetic operation resulted in an overflow.','172.19.60.81',90,'http://localhost:61247/Handler/PayRollHandler.ashx?target=GetEmployeesPendingLeaves','','GetEmployeesPendingLeaves',13335);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 11:06:22','Arithmetic operation resulted in an overflow.','172.19.60.81',90,'http://localhost:61247/Handler/PayRollHandler.ashx?target=GetEmployeesPendingLeaves','','GetEmployeesPendingLeaves',13336);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 14:30:05','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13337);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 14:32:10','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13338);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:05:26','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13339);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:07:37','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13340);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 03:10:02','Unknown column ''a.StartDate'' in ''where clause''','172.19.60.81',90,'http://localhost:61247/Handler/PayRollHandler.ashx?target=GetEmployeesPendingLeaves','','GetEmployeesPendingLeaves',13341);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:16:34','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=SaveToDoRemainderDetails','','SaveToDoRemainderDetails',13342);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:17:54','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=SaveToDoRemainderDetails','','SaveToDoRemainderDetails',13343);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 03:18:09','Conversion from string \"\" to type ''Date'' is not valid.','172.19.60.81',90,'http://localhost:61247/Handler/TAHandler.ashx?target=GetWeekWorkMetric','','GetWeekWorkMetric',13344);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 03:20:30','Exception of type ''System.Web.HttpUnhandledException'' was thrown.','172.19.60.81',90,'http://localhost:61247/Home.aspx?scsio=pwjdi37_7nh8mSku8gjHGg==&cssi=GGcF!V4bIkHP8Gqoth!CVw==&cipc=kqko1!CMFdYrJMwSBEOcUw==','Object reference not set to an instance of an object.','RedirectToPayrollUserAuthentication',13345);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 03:22:41','Conversion from string \"\" to type ''Date'' is not valid.','172.19.60.81',90,'http://localhost:61247/Handler/TAHandler.ashx?target=GetWeekWorkMetric','','GetWeekWorkMetric',13346);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:23:28','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13347);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:30:33','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13348);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:42:57','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13349);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:55:34','Result consisted of more than one row','192.168.0.108',5127,'http://localhost:57701/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13350);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 15:58:56','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13351);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:04:45','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13352);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:04:55','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13353);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:05:05','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13354);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:05:15','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13355);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:05:31','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13356);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:06:36','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13357);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:10:37','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13358);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:10:41','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13359);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:10:56','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13360);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:11:35','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13361);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:11:47','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13362);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:11:58','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13363);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:12:43','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13364);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:14:42','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13365);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:15:23','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13366);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:21:37','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13367);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:21:42','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13368);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:22:16','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13369);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:22:33','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13370);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:24:43','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13371);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:26:00','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13372);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:30:53','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.113',90,'http://localhost:61247/Handler/UIHandler.ashx?target=SaveUserActivities','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','SaveUserActivities',13373);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:32:48','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13374);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:32:52','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13375);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:39:21','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.113',90,'http://localhost:61247/Handler/UIHandler.ashx?target=SaveUserActivities','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','SaveUserActivities',13376);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:42:35','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13377);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:42:37','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13378);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-02 17:42:40','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13379);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:46:08','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13380);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:46:38','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13381);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:51:19','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13382);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:51:20','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13383);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:53:04','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13384);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:53:06','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13385);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:53:08','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13386);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:53:16','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13387);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 09:53:18','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13388);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 10:41:38','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.110',90,'http://localhost/TalentOZDevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',13389);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 10:48:31','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.110',90,'http://localhost/TalentOZDevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',13390);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 10:55:08','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.110',90,'http://localhost/TalentOZDevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',13391);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 12:22:55','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=SaveToDoRemainderDetails','','SaveToDoRemainderDetails',13392);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:16:30','No parameterless constructor defined for type of ''System.String''.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=ValidateClaimLimitOnSubmit','','ValidateClaimLimitOnSubmit',13393);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:16:40','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13394);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:16:56','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13395);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:17:18','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13396);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:17:34','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13397);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:17:42','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13398);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:17:51','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13399);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:18:17','No parameterless constructor defined for type of ''System.String''.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=ValidateClaimLimitOnSubmit','','ValidateClaimLimitOnSubmit',13400);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:19:24','No parameterless constructor defined for type of ''System.String''.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=ValidateClaimLimitOnSubmit','','ValidateClaimLimitOnSubmit',13401);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:26:39','Error reading string. Unexpected token: StartObject. Path ''[0].FieldAttribute'', line 1, position 138.','192.168.0.106',90,'http://localhost:50360/Handler/WorkflowHandler.ashx?target=SaveWFRequestCustomFields','','SaveWFRequestCustomFields',13402);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:38:15','No parameterless constructor defined for type of ''System.String''.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=ValidateClaimLimitOnSubmit','','ValidateClaimLimitOnSubmit',13403);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 14:40:07','No parameterless constructor defined for type of ''System.String''.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=SaveClaimRequest','','SaveClaimRequest',13404);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 16:36:57','Result consisted of more than one row','192.168.0.117',6736,'http://localhost:63687/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13405);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:37:00','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13406);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:37:09','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13407);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:42:14','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13408);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:43:43','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13409);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:44:55','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13410);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:45:03','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13411);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:46:35','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13412);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:47:23','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13413);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:49:58','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13414);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:50:03','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13415);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:50:40','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetPeridiumDetails','Input string was not in a correct format.','GetPeridiumDetails',13416);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:51:05','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13417);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:51:08','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13418);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 17:54:55','Result consisted of more than one row','192.168.0.113',5127,'http://localhost:61247/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13419);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:07:56','SMRD.1008: Error Opening / Closing Database Connection.','172.19.60.81',90,'http://localhost/TalentOZ_Stage/Handler/UIHandler.ashx?target=usDetail','Unable to connect to any of the specified MySQL hosts.','usDetail',13420);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:07:56','SMRD.1008: Error Opening / Closing Database Connection.','172.19.60.81',90,'http://localhost/TalentOZ_Stage/Handler/UIHandler.ashx?target=GetCompanyInfo','Unable to connect to any of the specified MySQL hosts.','GetCompanyInfo',13420);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:07:56','SMRD.1008: Error Opening / Closing Database Connection.','172.19.60.81',90,'http://localhost/TalentOZ_Stage/Handler/UIHandler3.ashx?target=getST','Unable to connect to any of the specified MySQL hosts.','getST',13420);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:08:38','SMRD.1008: Error Opening / Closing Database Connection.','172.19.60.81',90,'http://localhost/TalentOZ_Stage/Handler/TAHandler.ashx?target=LoadSearchData','Unable to connect to any of the specified MySQL hosts.','LoadSearchData',13421);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:08:42','SMRD.1008: Error Opening / Closing Database Connection.','172.19.60.81',90,'http://localhost/TalentOZ_Stage/Handler/UIHandler.ashx?target=SaveUserActivities','Unable to connect to any of the specified MySQL hosts.','SaveUserActivities',13422);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:08:44','SMRD.1008: Error Opening / Closing Database Connection.','172.19.60.81',90,'http://localhost/TalentOZ_Stage/Handler/OnBoardHandler.ashx?target=GetOnBoardingLList','Unable to connect to any of the specified MySQL hosts.','GetOnBoardingLList',13423);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:10:07','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13424);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:10:08','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13425);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:10:50','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13426);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:10:52','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13427);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:10:59','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13428);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:11:01','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13429);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:11:26','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13430);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:11:34','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13431);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:11:56','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13432);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:20:29','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13433);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:20:32','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13434);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:20:35','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13435);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:21:23','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13436);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:21:26','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13437);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:21:43','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13438);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:21:44','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13439);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-03 18:21:48','The file ''/Handler/.ashx'' does not exist.','192.168.0.113',90,'http://localhost:61247/Handler/.ashx?target=GetToDoRemainderDetails','','GetToDoRemainderDetails',13440);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 11:58:00','Incorrect integer value: '''' for column ''pBusinessUnitID'' at row 2','192.168.0.105',90,'http://localhost:57838/Handler/LMSHandler.ashx?target=SaveCompOffRequestHR','','SaveCompOffRequestHR',13441);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 12:21:39','hy52 is not a valid value for Int32.','192.168.0.113',90,'http://localhost:61247/Handler/WorkflowHandler.ashx?target=SaveToDoRemainderDetails','Input string was not in a correct format.','SaveToDoRemainderDetails',13442);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 12:30:00','Result consisted of more than one row','192.168.0.105',159,'http://localhost:57838/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13443);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 12:33:24','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=DeleteTravelAdvanceClaimLink','Input string was not in a correct format.','DeleteTravelAdvanceClaimLink',13444);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 12:33:24','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=DeleteTravelAdvanceClaimLink','Input string was not in a correct format.','DeleteTravelAdvanceClaimLink',13444);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 12:37:36','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=DeleteTravelAdvanceClaimLink','Input string was not in a correct format.','DeleteTravelAdvanceClaimLink',13445);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 12:56:58','SMRD.1201: SQL Query Errors Occured - Incorrect string value: ''\\xEF\\x83\\xA0sud...'' for column ''RequestedForm'' at row 1','192.168.0.105',165,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveRequest','Incorrect string value: ''\\xEF\\x83\\xA0sud...'' for column ''RequestedForm'' at row 1','SaveRequest',13446);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:11:11','Cannot find table 0.','192.168.0.154',90,'http://localhost:58530/Handler/RecHandler.ashx?target=GetHiringApproval','','GetHiringApproval',13447);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:34:44','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13448);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:38:11','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13449);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:38:27','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13450);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:38:39','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13451);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:38:56','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13452);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:39:09','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13453);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 13:39:42','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',161,'http://localhost:63687/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13454);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 14:52:02','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/UIHandler3.ashx?target=GetExternalCandidateDet','Input string was not in a correct format.','GetExternalCandidateDet',13455);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 14:59:02','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13456);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 14:59:22','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13457);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 14:59:25','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13458);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:00:18','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13459);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:05:04','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13460);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:10:41','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13461);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:10:52','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13462);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:10:56','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveShortlistedCandidate','Input string was not in a correct format.','SaveShortlistedCandidate',13463);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:12:28','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13464);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:12:40','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13465);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:12:50','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13466);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:13:20','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13467);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:14:09','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13468);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:16:26','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13469);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 15:18:57','Prepared statement needs to be re-prepared','192.168.0.106',90,'http://localhost:50360/Handler/ClaimsHandler.ashx?target=GetEligibleClaimTypesforEmployee','','GetEligibleClaimTypesforEmployee',13470);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:02:47','is not a valid value for Int32.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Index was outside the bounds of the array.','SaveHiringApproval',13471);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:19:47','is not a valid value for Int32.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Index was outside the bounds of the array.','SaveHiringApproval',13472);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:25:09','00/00/0001 is not a valid value for DateTime.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13473);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:26:59','110,111 is not a valid value for Int32.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13474);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:27:08','110,111 is not a valid value for Int32.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13475);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:29:22','96,110 is not a valid value for Int32.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13476);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:36:30','00/00/0001 is not a valid value for DateTime.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13477);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:46:24','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13478);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:47:04','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13479);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:47:06','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13480);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:47:38','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13481);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:48:17','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13482);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:49:34','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13483);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:56:51','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13484);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:57:01','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13485);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:57:29','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13486);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 16:58:15','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.105',90,'http://localhost:62023/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',13487);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:09:28','D:\\TalentOZ_2014\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\2019041546601963280622256203382291.jpg','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13488);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:09:54','The process cannot access the file ''D:\\TalentOZ_2014\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\2019041546601990894533826434014461.jpg'' because it is being used by another process.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13489);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:17:20','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13490);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:18:43','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','','SaveHiringApproval',13491);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:21:55','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13492);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:23:26','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13493);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:24:26','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','','SaveHiringApproval',13494);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:30:27','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13495);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:30:47','The process cannot access the file ''D:\\TalentOZ_2014\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\2019041546603245085580430282212001.jpg'' because it is being used by another process.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13496);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:50:03','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetPASummaryDetails','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetPASummaryDetails',13497);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:50:03','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetPASummaryDetails','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetPASummaryDetails',13497);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 17:51:45','The process cannot access the file ''D:\\TalentOZ_2014\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\2019041546604502541138969193472391.jpg'' because it is being used by another process.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13498);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 18:10:36','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13499);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 18:10:52','Unknown column ''app.ApproverRemarks'' in ''field list''','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=GetHiringApproval','','GetHiringApproval',13500);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 18:39:04','The process cannot access the file ''D:\\TalentOZ_2014\\MasterCodeRoot-Support\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\2019041546607341178131275156569071.jpg'' because it is being used by another process.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13501);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 18:39:30','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13502);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 18:51:01','Unknown column ''CleintID'' in ''where clause''','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=GetHiringApproval','','GetHiringApproval',13503);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 18:51:38','Unknown column ''CleintID'' in ''where clause''','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=GetHiringApproval','','GetHiringApproval',13504);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 19:38:50','Object reference not set to an instance of an object.','172.19.60.81',90,'http://localhost/TalentOZ/Handler/PayrollHandler.ashx?target=SavePayrollPaymentDetails','','SavePayrollPaymentDetails',13505);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 19:46:50','Object reference not set to an instance of an object.','172.19.60.81',90,'http://localhost/TalentOZ/Handler/PayrollHandler.ashx?target=SavePayrollPaymentDetails','','SavePayrollPaymentDetails',13506);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 20:15:35','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.117',165,'http://localhost:56011/Handler/UIHandler.ashx?target=getphoto','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','getphoto',13507);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-04 20:23:00','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.117',165,'http://localhost:56011/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','Timeout in IO operation','GetEmployeeWidgetSource',13508);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 14:21:21','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.117',90,'http://localhost:56011/Handler/UIHandler.ashx?target=GetMenu_New','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetMenu_New',13509);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 14:21:22','Object reference not set to an instance of an object.','192.168.0.117',90,'http://localhost:56011/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',13510);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 17:26:50','Conversion from string \"2|90\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=GetHiringApprovalList','Input string was not in a correct format.','GetHiringApprovalList',13511);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 17:33:21','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.117',90,'http://localhost:56011/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','Timeout in IO operation','GetEmployeeWidgetSource',13512);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 17:33:21','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.117',90,'http://localhost:56011/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',13512);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 17:40:00','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=GetHiringApprovalList','Input string was not in a correct format.','GetHiringApprovalList',13513);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 17:40:07','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=GetHiringApprovalList','Input string was not in a correct format.','GetHiringApprovalList',13514);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-05 17:40:46','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=GetHiringApprovalList','Input string was not in a correct format.','GetHiringApprovalList',13515);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:23:12','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=GetHiringApprovalList','Input string was not in a correct format.','GetHiringApprovalList',13516);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:24:19','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=GetHiringApprovalList','Input string was not in a correct format.','GetHiringApprovalList',13517);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:27:22','Conversion from string \"2|90|453|6810|1\" to type ''Integer'' is not valid.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','Input string was not in a correct format.','ApproveHiringApprovals',13518);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:30:45','SMRD.1201: SQL Query Errors Occured - Unknown column ''recruitment_hiring_approval.sUserID'' in ''where clause''','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','Unknown column ''recruitment_hiring_approval.sUserID'' in ''where clause''','ApproveHiringApprovals',13519);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:50:22','SMRD.1201: SQL Query Errors Occured - SMRD.1418: Supplied Value is not valid for the Question Field.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','SMRD.1418: Supplied Value is not valid for the Question Field.','ApproveHiringApprovals',13520);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:51:42','SMRD.1201: SQL Query Errors Occured - SMRD.1418: Supplied Value is not valid for the Question Field.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','SMRD.1418: Supplied Value is not valid for the Question Field.','ApproveHiringApprovals',13521);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:52:16','SMRD.1201: SQL Query Errors Occured - SMRD.1418: Supplied Value is not valid for the Question Field.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','SMRD.1418: Supplied Value is not valid for the Question Field.','ApproveHiringApprovals',13522);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 03:54:10','SMRD.1201: SQL Query Errors Occured - SMRD.1418: Supplied Value is not valid for the Question Field.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','SMRD.1418: Supplied Value is not valid for the Question Field.','ApproveHiringApprovals',13523);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 04:27:49','00/00/0001 is not a valid value for DateTime.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13524);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 10:24:15','00/00/0001 is not a valid value for DateTime.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13525);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 10:45:41','Index was outside the bounds of the array.','172.19.60.81',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetPaymentDocumentsDetails','','GetPaymentDocumentsDetails',13526);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 10:46:27','Index was outside the bounds of the array.','172.19.60.81',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetPaymentDocumentsDetails','','GetPaymentDocumentsDetails',13527);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 11:19:28','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13528);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:11:28','00/00/0001 is not a valid value for DateTime.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13529);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:11:35','00/00/0001 is not a valid value for DateTime.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13530);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:28:37','00/00/0001 is not a valid value for DateTime.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','String was not recognized as a valid DateTime.','SaveHiringApproval',13531);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:33:43','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.106',90,'http://localhost:50360/Handler/WorkflowHandler.ashx?target=ValidateWFStep','Input string was not in a correct format.','ValidateWFStep',13532);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:40:36','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-5234-182'' for key ''PRIMARY''','192.168.0.106',90,'http://localhost:50360/Handler/UIHandler.ashx?target=GetAssignedDepatments','Duplicate entry ''2-5234-182'' for key ''PRIMARY''','GetAssignedDepatments',13533);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:44:30','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13534);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:46:10','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13535);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:53:28','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13536);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:56:54','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13537);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 12:58:43','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13538);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:12:23','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13539);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:15:19','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13540);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:18:36','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13541);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:20:12','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13542);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:28:10','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13543);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:36:06','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13544);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:37:05','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13545);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:46:13','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13546);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:46:44','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13547);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:47:18','There was an error generating the XML document.','192.168.0.106',5214,'http://localhost:50360/Handler/WorkflowHandler.ashx?target=SaveWFStepRequestCustomFields','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveWFStepRequestCustomFields',13548);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:49:22','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13549);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:49:58','There was an error generating the XML document.','192.168.0.106',5214,'http://localhost:50360/Handler/WorkflowHandler.ashx?target=SaveWFStepRequestCustomFields','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveWFStepRequestCustomFields',13550);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 13:51:17','There was an error generating the XML document.','192.168.0.106',5214,'http://localhost:50360/Handler/WorkflowHandler.ashx?target=SaveWFStepRequestCustomFields','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveWFStepRequestCustomFields',13551);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 14:44:19','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13552);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 14:47:56','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13553);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 14:49:06','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13554);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 14:50:19','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13555);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 14:53:29','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13556);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:11:21','is not a valid value for Decimal.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13557);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:14:15','is not a valid value for Decimal.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13558);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:15:08','is not a valid value for Decimal.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13559);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:19:11','is not a valid value for Decimal.','192.168.0.117',90,'http://localhost:56011/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13560);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:49:31','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetPASummaryDetails','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetPASummaryDetails',13561);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:49:31','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetPASummaryDetails','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetPASummaryDetails',13561);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:49:35','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetAppraisalForm','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetAppraisalForm',13562);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:53:54','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13563);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:54:12','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13564);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 15:58:11','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13565);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:00:00','Out of memory.','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',13566);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:00:42','Conversion from string \"undefined\" to type ''Integer'' is not valid.','172.19.60.81',90,'http://localhost/TalentOZ/Handler/PayrollHandler.ashx?target=LoadPayrollPaymentDetails','Input string was not in a correct format.','LoadPayrollPaymentDetails',13567);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:04:06','Conversion from string \"undefined\" to type ''Integer'' is not valid.','172.19.60.81',90,'http://localhost/TalentOZ/Handler/PayrollHandler.ashx?target=LoadPayrollPaymentDetails','Input string was not in a correct format.','LoadPayrollPaymentDetails',13568);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:14:03','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetAppraisalForm','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetAppraisalForm',13569);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:14:18','SMRD.1201: SQL Query Errors Occured - Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','192.168.0.129',90,'http://localhost/TalentOZsupport/Handler/PerfHandler.ashx?target=GetAppraisalForm','Unknown column ''performanceappraisal.MidTermReviewEndDate'' in ''field list''','GetAppraisalForm',13570);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:19:06','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13571);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:21:10','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13572);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:45:06','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13573);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:47:16','is not a valid value for Decimal.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13574);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 16:47:56','is not a valid value for Decimal.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=SaveHiringApproval','Input string was not in a correct format.','SaveHiringApproval',13575);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 17:03:53','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/UIHandler.ashx?target=GetFieldElements','Timeout in IO operation','GetFieldElements',13576);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 17:11:15','Result consisted of more than one row','192.168.0.154',5127,'http://localhost/TalentOZsupport/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13577);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 17:23:32','Parameter ''pApproverID'' not found in the collection.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=GetHiringApproval','','GetHiringApproval',13578);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 17:23:37','Parameter ''pApproverID'' not found in the collection.','192.168.0.154',90,'http://localhost/TalentOZsupport/Handler/RecHandler.ashx?target=GetHiringApproval','','GetHiringApproval',13579);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-07 17:52:26','Result consisted of more than one row','192.168.0.105',252,'http://localhost:62023/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13580);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-08 00:59:58','Index was outside the bounds of the array.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','','ApproveHiringApprovals',13581);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-08 01:04:59','Index was outside the bounds of the array.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','','ApproveHiringApprovals',13582);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-08 01:15:22','Parameter ''pComments'' not found in the collection.','192.168.0.117',90,'http://localhost:56011/Handler/RECHandler.ashx?target=ApproveHiringApprovals','','ApproveHiringApprovals',13583);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-01-08 10:22:24','Result consisted of more than one row','192.168.0.106',5214,'http://localhost:50360/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',13584);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019

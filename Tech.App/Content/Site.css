@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     font-family: "Segoe UI","Helvetica Neue","Arial","sans-serif"
 }
 
@@ -18,12 +18,23 @@
     white-space: normal;
 }
 
+.editor {
+     
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 /*input,
 select,
 textarea {
     max-width: 280px;
 }*/
+.isError {
+    color: #D8000C;
+    
+}
 .help-text-muted {
     color: #bbbbbb;
     font-size: 70% !important;
@@ -85,6 +96,7 @@ textarea {
 .mrg-20 {
     margin:5px 20px 5px 20px;
 }
+
 .padd5 {
     padding: 10px 0px 10px 0px !important;
 }

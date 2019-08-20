@@ -1,0 +1,392 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+@*<script src="~/Scripts/vue/vue.esm.js"></script>*@
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="https://unpkg.com/http-vue-loader"></script>
+<script src="https://unpkg.com/requirejs@2.3.5/require.js" data-main="/vue/main"></script>
+<script src="~/dist/build.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+
+
+
+</script>
+
+@*<script type="text/x-template" id="grid-template">
+
+        <div>
+            <transition-group tag="ul" name="slide">
+                <li v-for="item in limitUser" :key="item.name">
+                    {{ item.name }}
+                </li>
+            </transition-group>
+            <div id="mount-point"></div>
+
+            <input type="text" v-model="msg" v-on:keyup="counting" id='search' :key="txtid" />
+            <span>{{ msg | concat 'my ' }}</span>
+            <span>{{cstate}}</span>
+            <table style="width:100%; height:300px;">
+                <thead>
+                    <tr>
+                        <th v-for="key in gcolumn">
+                            {{key}}
+                        </th>
+                    </tr>
+                </thead>
+                <tr v-for="val in limitUser">
+                    <td v-for="key in gcolumn">
+                        <span>{{ val[key] | reverse | capitalize |concat 'abc'}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </script>*@
+
+
+
+<script type="text/javascript">
+
+</script>
+
+@*<script type="text/x-template" id="grid-template_1">
+
+        <div>
+            <input type="text" v-model="msg" />
+            <span>{{ msg | concat 'my ' }}</span>
+            <table style="width:100%; height:300px;">
+                <thead>
+                    <tr>
+                        <th v-for="key in gcolumn">
+                            {{key}}
+                        </th>
+                    </tr>
+                </thead>
+                <tr v-for="val in limitUser">
+                    <td v-for="key in gcolumn">
+                        <span>{{ val[key] | reverse | capitalize |concat 'abc'}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </script>*@
+
+<script type="text/x-template" id="grid-search">
+
+</script>
+
+<div id="demo">
+    <demogrid v-bind:data="griddata" :size="3" v-bind:gcolumn="columns">
+
+    </demogrid>
+</div>
+@*<div id="hook-arguments-example" v-demo1="message"></div>*@
+<div id="app">Loading...</div>
+
+
+
+<div id="appmain">
+    <h1>Hello App!</h1>
+    <p>
+        <!-- use router-link component for navigation. -->
+        <!-- specify the link by passing the `to` prop. -->
+        <!-- <router-link> will be rendered as an `<a>` tag by default -->
+        <router-link to="/foo">Go to Foo</router-link>
+        <router-link to="/bar">Go to Bar</router-link>
+    </p>
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+</div>
+<div id="ele">
+    <where></where>
+    <div>sdfsasdf jlsjflsd jlkdsjf</div>
+</div>
+<script type="text/javascript">
+
+     
+</script>
+<script type="text/javascript">
+     ///import Vues from 'https://unpkg.com/vue@2.6.0/dist/vue.esm.browser.min.js';
+   // import axios from 'https://unpkg.com/axios/dist/axios.min.js';
+
+    var a = httpVueLoader('/vue/FileReader.vue');
+   // var axios = httpVueLoader('https://unpkg.com/axios/dist/axios.min.js'); 
+    new Vue({
+        el: '#ele',
+        components: {
+            'where': a
+        }
+    });
+
+
+    //require(
+    //    // configuration
+    //    {
+    //        paths: {
+    //            // the Vue lib
+    //            'Vue': 'https://unpkg.com/vue@2.5.11/dist/vue.min',
+    //            // Vue RequireJS loader
+    //            'vue': 'https://unpkg.com/requirejs-vue@1.1.5/requirejs-vue',
+    //           'VueRouter': 'https://unpkg.com/vue-router/dist/vue-router',
+    //        }
+    //    },
+    //    // load libs right now
+    //    ['Vue', 'vue','VueRouter'],
+    //    function (Vue, vue, VueRouter) {
+    //        //require(['vue!/vue/app'], function (theApp) {
+    //        //    alert(theApp);
+    //        //    theApp.$mount('#app');
+    //        //});
+
+
+
+
+
+
+    //    }
+    //);
+    function view(name) {
+        return function (resolve) {
+             require(
+        // configuration
+        {
+            paths: {
+                // the Vue lib
+                'Vue': 'https://unpkg.com/vue@2.5.11/dist/vue.min',
+                // Vue RequireJS loader
+                'vue': 'https://unpkg.com/requirejs-vue@1.1.5/requirejs-vue',
+            }
+        },
+        // load libs right now
+        ['Vue', 'vue'],
+         function (Vue, vue, VueRouter) {
+            //require(['vue!/vue/app'], function (theApp) {
+            //    alert(theApp);
+            //    theApp.$mount('#app');
+            //});
+            require(['vue!/vue/' + name], resolve);
+        }
+    );
+
+
+        }
+    };
+    // 0. If using a module system (e.g. via vue-cli), import Vue and VueRouter
+    // 0. If using a module system (e.g. via vue-cli), import Vue and VueRouter
+    // and then call `Vue.use(VueRouter)`.
+
+    // 1. Define route components.
+    // These can be imported from other files
+    const Bar = { template: '<div>bar</div>' }
+    const fff = httpVueLoader('/vue/login.vue');
+    const routes = [
+        { path: '/foo', component: fff },
+        { path: '/bar', component: Bar }
+    ]
+    // 3. Create the router instance and pass the `routes` option
+    // You can pass in additional options here, but let's
+    // keep it simple for now.
+    const router = new VueRouter({
+        routes: routes // short for `routes: routes`
+    })
+
+    // 4. Create and mount the root instance.
+    // Make sure to inject the router with the router option to make the
+    // whole app router-aware.
+    const myapp = new Vue({
+        router: router
+    })
+    myapp.$mount('#appmain');
+
+     
+
+
+
+
+
+
+
+
+
+    // 2. Define some routes
+    // Each route should map to a component. The "component" can
+    // either be an actual component constructor created via
+    // Vue.extend(), or just a component options object.
+    // We'll talk about nested routes later.
+
+
+    // 3. Create the router instance and pass the `routes` option
+    // You can pass in additional options here, but let's
+    // keep it simple for now.
+
+
+    // 4. Create and mount the root instance.
+    // Make sure to inject the router with the router option to make the
+    // whole app router-aware.
+
+
+    //var state = Vue.observable({ count: 0 })
+    //Vue.directive('pin', {
+    //    bind: function (el, binding, vnode) {
+
+
+    //    }, inserted: function (el, binding, vnode) {
+    //        binding.value(el, binding.arg);
+    //    }
+    //})
+
+    //var demo = new Vue({
+    //    el: '#demo',
+    //    data: {
+    //        searchQuery: '',
+    //        direction: 'left',
+    //        columns: ['name', 'power'],
+    //        pagesize: 0,
+    //        cstate: state,
+    //        griddata: [
+    //            { name: 'Chuck Norris', power: Infinity },
+    //            { name: 'Bruce Lee', power: 9000 },
+    //            { name: 'Jackie Chan', power: 7000 },
+    //            { name: 'Jet Li', power: 8000 },
+    //            { name: 'sampathkumar', power: Infinity },
+    //            { name: 'Mithran', power: 19000 },
+    //            { name: 'Pavithra', power: 27000 },
+    //            { name: 'siddhish', power: 8400 }
+    //        ]
+    //    },
+    //    components: {
+    //        'demogrid': {
+    //            template: "#grid-template",
+    //            props: {
+    //                data: Array,
+    //                gcolumn: Array,
+    //                size: 4,
+    //            },
+    //            data: function () {
+    //                return {
+    //                    msg: "Search Now",
+    //                    userInput: "",
+    //                    direction: 'left',
+    //                    cstate: state.count,
+    //                    txtid: "search"
+    //                }
+    //            },
+    //            filters: {
+    //                capitalize: function (value) {
+    //                    if (!value) return ''
+    //                    value = value.toString()
+    //                    return value.charAt(0).toUpperCase() + value.slice(1)
+    //                },
+    //                reverse: function (value) {
+    //                    value = value + "";
+    //                    return value.split('').reverse().join('')
+    //                },
+    //                concat: function (value, input) {
+    //                    // here `input` === `this.userInput`
+    //                    return value + input
+    //                },
+    //                limitBy: function (v, size) {
+    //                    return this.data.slice(0, size);
+    //                }
+    //            },
+    //            computed: {
+    //                limitUser: function () {
+    //                    return this.data.slice(0, this.size);
+    //                }
+    //            },
+    //            methods: {
+    //                counting: function (el) {
+
+    //                    this.cstate = $("#search").val().length;
+    //                }
+    //            }
+    //        }
+    //    },
+    //    methods: {
+    //        methods: {
+    //            counting: function (el) {
+    //               // alert("a");
+    //            }
+    //        },
+    //        setPosition: function (el,position) {
+    //            el.style.position = 'fixed'
+    //            if (position == 'left') {
+    //                el.style.left = binding.value + 'px'
+    //            } else {
+    //                el.style.top = binding.value + 'px'
+    //            }
+    //        }
+    //    }
+    //})
+
+    //var Profile = Vue.extend({
+    //    template: '<p>{{firstName}} {{lastName}} aka {{alias}}</p>',
+    //    data: function () {
+    //        return {
+    //            firstName: 'Walter',
+    //            lastName: 'White',
+    //            alias: 'Heisenberg'
+    //        }
+    //    }
+    //})
+    //Vue.directive('demo1', {
+    //    bind: function (el, binding, vnode) {
+    //        var s = JSON.stringify
+    //        el.innerHTML =
+    //            'name: ' + s(binding.name) + '<br>' +
+    //            'value: ' + s(binding.value) + '<br>' +
+    //            'expression: ' + s(binding.expression) + '<br>' +
+    //            'argument: ' + s(binding.arg) + '<br>' +
+    //            'modifiers: ' + s(binding.modifiers) + '<br>' +
+    //            'vnode keys: ' + Object.keys(vnode).join(', ');
+
+
+    //    },
+    //    inserted: function (element, binding, vnode) {
+    //        alert('done');
+
+    //    }, update: function () {
+    //        alert('updated');
+    //    }
+    //});
+
+
+
+    //new Vue({
+    //    el: '#hook-arguments-example',
+    //    data: {
+    //        message: 'hello!'
+    //    },
+    //    methods: {
+    //        setPosition: function () {
+
+    //        }
+    //    }
+    //})
+
+
+
+    // create an instance of Profile and mount it on an element
+  //  new Profile().$mount('#mount-point')
+
+    //Vue.filter('wrap', function (value, begin, end) {
+    //    return begin + value + end
+    //})
+    //Vue.filter('reverse', function (value) {
+    //    return value.split('').reverse().join('')
+    //})
+
+    //
+</script>
+
+
+
+

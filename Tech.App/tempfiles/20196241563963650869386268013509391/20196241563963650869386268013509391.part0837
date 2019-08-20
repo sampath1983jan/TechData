@@ -1,0 +1,629 @@
+IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,85,'sample plan','sample plan','',2,1,3,1,1,0,0,0,0,0,2,1,1,'',25,0,1,1,1,1,10,0,1,'',50,0,1,1,1,10,1,'',25,0,1,1,1,10,1,1,1,1,'2019-03-25 11:50:27',0,0,'-1',0,0,0,0,0,0,0,2,1,1,1,1,0,1,1,1,0,0,1,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,86,'suri test plan','suri test plan','',3,2,3,4,1,3,NULL,NULL,NULL,1,0,1,1,NULL,25,1,1,1,1,1,10,NULL,1,NULL,25,1,1,1,1,10,1,NULL,50,1,1,1,1,10,1,1,1,1,'2017-12-14 16:05:39',0,0,'-1',1,1,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,87,'HR FORM','HR FORM','',4,0,3,1,1,3,NULL,NULL,NULL,1,2,0,1,NULL,50,0,1,1,1,1,10,NULL,1,NULL,50,0,1,1,1,10,0,NULL,0,0,0,0,0,0,1,1,1,1,'2018-02-12 12:53:45',1,1,'0,1,2,3',1,1,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,88,'SELF & MANAGER FORM','SELF & MANAGER FORM','',3,2,3,3,1,0,NULL,NULL,NULL,0,2,1,1,NULL,75,0,1,1,1,1,10,0,1,NULL,25,0,1,1,1,10,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-13 13:04:33',0,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,89,'Potential','Potential','',2,0,2,1,1,2,NULL,NULL,NULL,0,0,0,1,NULL,50,0,1,1,1,1,100,NULL,0,NULL,0,0,0,0,0,0,1,NULL,50,1,1,1,1,100,0,0,0,0,'2018-03-08 10:21:27',0,0,'-1',0,0,0,1,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,90,'Test for Multi','Test for Multi','',2,0,2,1,1,2,0,0,0,0,0,0,1,'',100,1,1,1,1,1,100,0,0,'',0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,0,'2019-05-03 13:04:05',0,0,'-1',0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,0,1,1,0,0,0,0,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,100,'Test Tempale 100','Test Tempale 100','',3,2,3,1,1,1,0,0,0,0,0,1,1,'',100,1,1,1,1,1,100,0,0,'',0,0,0,0,0,0,0,'',0,0,0,0,0,0,1,1,1,1,'2019-05-03 13:52:43',0,0,'-1',0,0,0,0,0,0,0,2,1,1,1,1,0,1,1,1,0,0,0,0,1,1,0,0,0,0,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,101,'101','101','',3,2,3,5,1,3,NULL,NULL,NULL,1,0,0,1,NULL,50,1,1,1,1,1,100,0,1,NULL,50,1,1,1,1,100,0,NULL,0,0,0,0,0,0,1,1,1,1,'2018-08-28 18:04:36',0,0,'-1',2,2,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,109,'102','102','',3,0,3,1,1,1,NULL,NULL,NULL,0,0,0,1,NULL,100,1,1,1,1,1,100,NULL,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-05-03 13:38:53',0,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,140,'121','121','',3,8,2,1,1,2,NULL,NULL,NULL,0,0,0,1,NULL,100,0,1,1,1,1,10,NULL,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-04-26 15:38:39',0,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,141,'testnew','testnew','testnewDesc',3,2,3,1,1,3,NULL,NULL,NULL,0,0,0,0,NULL,0,0,0,0,0,0,0,0,1,NULL,100,0,1,0,2,5,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-06 18:03:06',0,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,142,'Score','Score','',4,0,2,4,1,0,NULL,NULL,NULL,0,0,1,1,NULL,100,0,1,1,1,1,100,1,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-05-28 12:49:11',1,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,151,'testtempl1','testtemp1','desc',3,2,3,1,1,3,NULL,NULL,NULL,0,2,1,1,NULL,100,1,1,1,0,1,100,1,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-07 11:37:31',0,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,152,'Temp 1','Template 1 (Auto - Publish)','',4,0,3,2,1,0,NULL,NULL,NULL,0,0,0,1,NULL,100,0,1,1,1,1,10,0,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-07 19:05:47',1,0,'-1',0,0,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,157,'M001','Multi Reivew Testing','',3,2,3,1,1,3,NULL,NULL,NULL,1,3,0,1,NULL,30,0,1,1,1,3,10,0,1,NULL,70,1,1,1,3,10,0,NULL,0,0,0,0,0,0,1,0,1,0,'2018-07-30 13:29:53',0,0,'-1',1,1,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,182,'TESTT990001','TEST SURI','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,1,1,NULL,50,1,1,1,1,1,50,0,1,NULL,50,1,1,1,1,50,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-05-28 12:52:30',0,0,'-1',2,2,1,1,36,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,190,'2000','222','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,0,1,NULL,100,1,1,1,1,1,100,1,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,1,1,0,0,'2018-07-30 13:09:16',0,0,'-1',2,2,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,191,'TEST sURIYA PREEIO','HJJG','JHGJG',3,2,3,1,1,3,NULL,NULL,NULL,1,2,1,1,NULL,50,1,1,1,1,1,50,1,1,NULL,50,1,1,1,1,50,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-04 17:39:36',0,0,'-1',2,2,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,192,'555555','fdst','rt',3,2,3,1,1,3,NULL,NULL,NULL,1,2,1,1,NULL,50,1,1,1,1,1,50,1,1,NULL,50,1,1,1,1,50,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-04 17:47:34',0,0,'-1',2,2,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,195,'Score Template','Score Template','Score Template',3,0,3,2,1,3,NULL,NULL,NULL,1,2,1,1,NULL,50,0,1,1,1,1,10,0,1,NULL,50,0,1,1,1,10,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-06-05 17:42:22',0,0,'-1',1,1,0,0,0,0,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,216,'dEMO tETS pLAN','dEMO tETS pLAN','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,0,1,NULL,100,1,1,1,1,10,100,0,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,1,1,0,0,'2018-07-30 11:51:29',0,0,'-1',2,2,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,217,'FDHSI','FDHSI','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,1,1,NULL,100,1,1,0,1,10,100,0,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,1,1,1,0,'2018-07-30 11:52:32',0,0,'-1',2,2,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,222,'test 12344','test 12344','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,0,1,NULL,100,1,1,1,1,10,100,1,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,1,1,0,0,'2018-07-30 12:21:16',0,0,'-1',2,2,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,223,'Tesrttytuyt','Tesrttytuyt','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,1,1,NULL,100,1,1,1,1,10,100,0,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,1,1,0,1,'2018-07-30 13:07:20',0,0,'-1',2,2,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,224,'Test Demo12333','Test Demo12333','',2,0,2,1,1,2,NULL,NULL,NULL,1,0,1,1,NULL,100,1,1,0,1,10,100,0,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,1,0,1,0,'2018-07-30 13:08:58',0,0,'-1',2,2,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,228,'test hide','test hide','test hide',4,0,2,1,1,1,NULL,NULL,NULL,0,0,0,0,NULL,0,0,0,0,0,0,0,0,1,NULL,100,0,1,1,2,5,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-08-03 18:14:21',0,1,'0,1,2,3',0,0,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,241,'Test Preload 1','Test Preload 1','',4,0,2,2,1,0,NULL,NULL,NULL,0,0,1,1,NULL,50,0,1,1,1,2,15,0,1,NULL,50,1,1,1,2,4,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-08-14 13:07:51',1,1,'0,1,2,3',0,0,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,245,'S&M','S&M','',3,0,3,2,1,0,NULL,NULL,NULL,0,0,1,1,NULL,20,0,1,1,1,1,10,0,1,NULL,80,1,1,1,2,10,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-08-14 11:27:27',0,0,'-1',0,0,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,267,'test one and one','test one and one','test one and one meeting',3,0,2,2,1,0,NULL,NULL,NULL,0,0,0,0,NULL,0,0,0,0,0,0,0,0,1,NULL,100,0,1,1,2,5,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-08-16 15:11:46',0,0,'-1',0,0,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,268,'test one meeting','test one meeting title','test one meeting desc',3,0,2,2,1,3,1,4,2,0,0,0,0,'',0,0,0,0,0,0,0,0,1,'',100,0,1,1,2,5,0,'',0,0,0,0,0,0,0,0,0,0,'2019-03-15 11:55:20',0,0,'-1',0,0,0,0,0,1,0,0,1,1,1,1,0,1,1,1,0,0,1,1,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,271,'hjhj','ghjh','ghjh',4,0,2,1,1,0,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,1,NULL,100,0,1,1,2,5,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-08-16 18:28:05',0,0,'-1',0,0,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,272,'1:1  - 1','1:1  - 1','',4,0,2,3,1,1,1,2,2,0,0,0,1,NULL,100,0,1,1,1,1,2,0,0,NULL,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,'2018-08-17 10:44:12',1,0,'-1',0,0,0,0,0,1,NULL,0,1,1,1,1,0,1,1,1,0,0,NULL,0,1,1,0,0,0,NULL,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,299,'Perf Recommendation','Perf Recommendation','Perf Recommendation',2,0,2,4,1,0,0,1,1,0,-1,0,1,'',50,1,1,1,1,1,10,0,1,'',50,1,1,1,1,10,0,'',0,0,0,0,0,0,0,0,0,0,'2019-04-09 16:57:44',0,0,'-1',0,0,1,1,36,1,0,2,1,1,1,1,0,1,1,1,1,0,2,0,2,1,0,0,0,1,1,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,308,'Approval ToDo','Approval ToDo','Approval ToDo',2,2,3,1,1,3,1,1,1,0,-1,0,0,'',0,0,0,0,0,0,0,0,1,'',100,1,1,1,1,10,0,'',0,0,0,0,0,0,0,0,0,0,'2019-04-29 13:58:41',0,0,'-1',0,0,0,0,0,1,0,2,0,0,0,0,0,1,1,1,0,0,1,0,1,1,0,0,0,0,NULL,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,312,'afa','sfsafa','dfsdf',1,0,2,4,1,0,0,1,1,0,-1,0,1,'',100,1,1,1,1,1,10,0,0,'',0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,0,'2019-04-12 11:48:22',0,0,'-1',0,0,1,1,36,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,1,2,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,315,'AAPI','Approval Email Configuration','Approval Email Configuration',2,2,2,2,1,0,0,1,1,0,-1,0,1,'',100,0,1,1,1,1,5,0,0,'',0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,0,'2019-06-21 10:57:27',0,0,'-1',0,0,1,1,39,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,1,5,0,0,0,0,0);
+INSERT INTO `performancetemplate`(`ClientID`,`TemplateID`,`TemplateCode`,`TemplateTitle`,`TemplateDescription`,`FormPreparation`,`FormPreparationAcknowledgment`,`Scorer`,`ScoringMethod`,`ScoringMethodType`,`OneOneMeeting`,`IsOneOneMeetingSchedule`,`OwnerID`,`OwnerType`,`IsAcceptanceRequired`,`Acknowledgement`,`IsCCLNeedToUpdate`,`IsRequiredCompetency`,`CompetencyDesc`,`CompentencyWeightage`,`IsRequiredCompentencyWeightage`,`IsAllowPositionCompentency`,`IsAllowPersonalCompentency`,`IsAllowAllCompentency`,`MinCompentency`,`MaxCompentency`,`CaclBasedOnRCL`,`IsRequiredGoal`,`GoalDesc`,`GoalWeightage`,`IsRequiredGoalWeightage`,`IsAllowGoalLibrary`,`IsAllowAddGoal`,`MinGoal`,`MaxGoal`,`IsRequiredPotential`,`PotentialDesc`,`PotentialWeightage`,`IsRequiredPotentialWeightage`,`IsAllowPotentialLibrary`,`IsAllowAddPotential`,`MinPotential`,`MaxPotential`,`IsRequiredCareerDiscussion`,`IsRequiredShort`,`IsRequiredMid`,`IsRequiredLong`,`LastUPD`,`IsPreLoadCompetency`,`IsPreLoadGoal`,`PreLoadGoalStatus`,`FirstLevelReject`,`SecondLevelReject`,`TargetRatingDistribution`,`DisplayNormalisationScore`,`DistributionPolicy`,`IsNewTemplate`,`IsCustomEnable`,`MidTermReview`,`IsRequiredIDP`,`IsGoalIDP`,`IsGeneralIDP`,`IsCompIDP`,`Invitees`,`GoalBindOrder`,`CompentencyBindOrder`,`PotentialBindOrder`,`IsOverallScoreText`,`IsPreLoadPotential`,`GoalScoringMethod`,`IsCustomIDP`,`CompetencyScoringMethod`,`PotentialScoringMethod`,`RemovePreloadedCompetency`,`RemovePreloadedGoal`,`RemovePreloadedPotential`,`IsRecommended`,`RecommendationStageID`,`CompRemarksMandatory`,`GoalRemarksMandatory`,`PotentialRemarksMandatory`,`UpdateGoalFields`,`EnableGoalAutoScore`) VALUES
+(2,316,'test','test','test',2,2,2,4,0,2,1,1,1,0,-1,0,1,'',100,1,1,1,1,1,5,1,0,'',0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,0,'2019-07-08 12:19:01',0,0,'-1',0,0,1,1,36,1,1,2,0,0,0,0,0,1,1,1,0,0,0,0,2,1,1,0,0,0,NULL,0,0,0,0,0);
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_custom_privilege
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_custom_privilege` (
+  `ClientID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `ScoreSelfCanView` varchar(500) NOT NULL DEFAULT '1',
+  `ScorePeerCanView` varchar(500) NOT NULL DEFAULT '1',
+  `ScoreSubCanView` varchar(500) NOT NULL DEFAULT '1',
+  `ScoreManagerCanView` varchar(500) NOT NULL DEFAULT '1',
+  `RemarksSelfCanView` varchar(500) NOT NULL DEFAULT '1',
+  `RemarksPeerCanView` varchar(500) NOT NULL DEFAULT '1',
+  `RemarksSubCanView` varchar(500) NOT NULL DEFAULT '1',
+  `RemarksManagerCanView` varchar(500) NOT NULL DEFAULT '1',
+  `LastUpd` datetime DEFAULT NULL,
+  `OverallScoreView` varchar(250) DEFAULT '1',
+  PRIMARY KEY (`ClientID`,`TemplateID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_custom_privilege
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_custom_privilege` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_custom_privilege` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_recommendation_items
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_recommendation_items` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceTemplateID` int(11) NOT NULL,
+  `IsPositionChange` bit(1) DEFAULT NULL,
+  `IsGradeChange` bit(1) DEFAULT NULL,
+  `IsQuestion` bit(1) DEFAULT NULL,
+  `IsEditRecommendation` bit(1) DEFAULT b'0',
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`PerformanceTemplateID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_recommendation_items
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_recommendation_items` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,52,1,1,1,0,90,'2019-03-25 09:58:58');
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,1,1,1,0,90,'2019-04-11 14:25:58');
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,309,1,0,0,0,90,'2019-04-12 11:23:55');
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,310,1,0,0,0,90,'2019-04-12 11:30:42');
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,311,1,0,0,0,90,'2019-04-12 11:32:36');
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,312,1,0,0,0,90,'2019-04-12 11:48:11');
+INSERT INTO `performancetemplate_recommendation_items`(`ClientID`,`PerformanceTemplateID`,`IsPositionChange`,`IsGradeChange`,`IsQuestion`,`IsEditRecommendation`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,1,0,0,1,90,'2019-07-04 11:25:55');
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_recommendation_items` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_recommendation_owner
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_recommendation_owner` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceTemplateID` int(11) NOT NULL,
+  `RecommendationStageID` int(11) DEFAULT NULL,
+  `ApprovalType` int(11) DEFAULT '0' COMMENT '1-Manager 2- Role 3 - Employee',
+  `OwnerID` int(11) DEFAULT NULL,
+  `OwnerType` int(11) DEFAULT NULL,
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`PerformanceTemplateID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_recommendation_owner
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_recommendation_owner` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `performancetemplate_recommendation_owner`(`ClientID`,`PerformanceTemplateID`,`RecommendationStageID`,`ApprovalType`,`OwnerID`,`OwnerType`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,1,1,1,1,90,'2019-04-12 10:49:58');
+INSERT INTO `performancetemplate_recommendation_owner`(`ClientID`,`PerformanceTemplateID`,`RecommendationStageID`,`ApprovalType`,`OwnerID`,`OwnerType`,`CreatedBy`,`LastUPD`) VALUES
+(2,309,2,1,1,1,90,'2019-04-12 11:23:50');
+INSERT INTO `performancetemplate_recommendation_owner`(`ClientID`,`PerformanceTemplateID`,`RecommendationStageID`,`ApprovalType`,`OwnerID`,`OwnerType`,`CreatedBy`,`LastUPD`) VALUES
+(2,310,2,1,1,1,90,'2019-04-12 11:30:41');
+INSERT INTO `performancetemplate_recommendation_owner`(`ClientID`,`PerformanceTemplateID`,`RecommendationStageID`,`ApprovalType`,`OwnerID`,`OwnerType`,`CreatedBy`,`LastUPD`) VALUES
+(2,311,2,1,1,1,90,'2019-04-12 11:32:35');
+INSERT INTO `performancetemplate_recommendation_owner`(`ClientID`,`PerformanceTemplateID`,`RecommendationStageID`,`ApprovalType`,`OwnerID`,`OwnerType`,`CreatedBy`,`LastUPD`) VALUES
+(2,312,2,1,1,1,90,'2019-04-12 11:48:10');
+INSERT INTO `performancetemplate_recommendation_owner`(`ClientID`,`PerformanceTemplateID`,`RecommendationStageID`,`ApprovalType`,`OwnerID`,`OwnerType`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,5,3,155,0,90,'2019-06-21 10:57:15');
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_recommendation_owner` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_recommendation_question
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_recommendation_question` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceTemplateID` int(11) NOT NULL,
+  `QuestionID` int(11) NOT NULL DEFAULT '0',
+  `QuestionText` text NOT NULL,
+  `QuestionType` int(11) DEFAULT NULL COMMENT '1- Optional 2- Text 3 - Checkbox',
+  `EnableRemarks` bit(1) DEFAULT b'0',
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`QuestionID`,`PerformanceTemplateID`,`ClientID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_recommendation_question
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_recommendation_question` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `performancetemplate_recommendation_question`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`QuestionText`,`QuestionType`,`EnableRemarks`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,24,'test 1',1,0,90,'2019-04-11 14:26:08');
+INSERT INTO `performancetemplate_recommendation_question`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`QuestionText`,`QuestionType`,`EnableRemarks`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,25,'test 2',2,0,90,'2019-04-11 14:26:16');
+INSERT INTO `performancetemplate_recommendation_question`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`QuestionText`,`QuestionType`,`EnableRemarks`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,26,'test 3',3,0,90,'2019-04-11 14:26:33');
+INSERT INTO `performancetemplate_recommendation_question`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`QuestionText`,`QuestionType`,`EnableRemarks`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,33,'test 1',1,0,90,'2019-06-11 12:58:26');
+INSERT INTO `performancetemplate_recommendation_question`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`QuestionText`,`QuestionType`,`EnableRemarks`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,34,'test 21',2,0,90,'2019-05-30 16:50:08');
+INSERT INTO `performancetemplate_recommendation_question`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`QuestionText`,`QuestionType`,`EnableRemarks`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,36,'test 3',3,0,90,'2019-06-11 11:29:44');
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_recommendation_question` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_recommendation_question_items
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_recommendation_question_items` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceTemplateID` int(11) NOT NULL,
+  `QuestionID` int(11) NOT NULL,
+  `ItemID` int(11) NOT NULL AUTO_INCREMENT,
+  `ItemText` text NOT NULL,
+  `IsDefault` bit(1) DEFAULT b'0',
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ItemID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_recommendation_question_items
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_recommendation_question_items` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,24,49,'a',0,90,'2019-04-11 14:26:08');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,24,50,'b',0,90,'2019-04-11 14:26:08');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,26,51,'aa',0,90,'2019-04-11 14:26:33');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,299,26,52,'bb',0,90,'2019-04-11 14:26:33');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,36,102,'aa',1,90,'2019-06-11 11:29:44');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,36,103,'bb',0,90,'2019-06-11 11:29:44');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,33,110,'a',1,90,'2019-06-11 12:58:27');
+INSERT INTO `performancetemplate_recommendation_question_items`(`ClientID`,`PerformanceTemplateID`,`QuestionID`,`ItemID`,`ItemText`,`IsDefault`,`CreatedBy`,`LastUPD`) VALUES
+(2,315,33,111,'b',0,90,'2019-06-11 12:58:27');
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_recommendation_question_items` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_remarks_privilege
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_remarks_privilege` (
+  `ClientID` int(11) NOT NULL,
+  `TemplateRemarksID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `SelfCanView` varchar(250) NOT NULL DEFAULT '1',
+  `PeerCanView` varchar(250) NOT NULL DEFAULT '1',
+  `SubCanView` varchar(250) NOT NULL DEFAULT '1',
+  `ManagerCanView` varchar(250) NOT NULL DEFAULT '1',
+  `LastUpd` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`TemplateID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_remarks_privilege
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_remarks_privilege` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_remarks_privilege` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplate_score_privilege
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplate_score_privilege` (
+  `ClientID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `SelfCanView` varchar(250) NOT NULL DEFAULT '1',
+  `PeerCanView` varchar(250) NOT NULL DEFAULT '1',
+  `SubCanView` varchar(250) NOT NULL DEFAULT '1',
+  `ManagerCanView` varchar(250) NOT NULL DEFAULT '1',
+  `LastUpd` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`TemplateID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplate_score_privilege
+-- 
+
+/*!40000 ALTER TABLE `performancetemplate_score_privilege` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplate_score_privilege` ENABLE KEYS */;
+
+-- 
+-- Definition of performancetemplateacknowledgement
+-- 
+
+CREATE TABLE IF NOT EXISTS `performancetemplateacknowledgement` (
+  `ClientID` int(11) NOT NULL,
+  `AcknowledgementID` int(11) NOT NULL AUTO_INCREMENT,
+  `AcknowledgementOrder` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `AcknowledgementType` int(11) NOT NULL COMMENT '"1-Manager 2-Role 3-Employee"',
+  `AcknowledgementRole` int(11) NOT NULL COMMENT 'ContextType for Managers',
+  `AcknowledgementKey` int(11) NOT NULL COMMENT 'ContextType for Role',
+  `LastUPD` datetime DEFAULT NULL,
+  `LevelName` text,
+  PRIMARY KEY (`AcknowledgementID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table performancetemplateacknowledgement
+-- 
+
+/*!40000 ALTER TABLE `performancetemplateacknowledgement` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,20,2,299,1,1,1,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,21,2,299,1,2,1,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,22,2,299,1,1,2,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,23,2,299,1,2,2,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,24,2,299,2,0,3,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,25,2,299,2,0,4,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,26,2,299,3,0,90,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,27,2,299,3,0,175,'2019-04-09 11:56:16',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,30,1,299,1,1,1,'2019-04-09 17:50:12',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,31,1,299,1,2,1,'2019-04-09 17:50:12',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,32,1,308,1,1,1,'2019-04-11 12:11:19',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,33,2,308,1,1,2,'2019-04-11 12:11:31',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,34,3,308,2,0,3,'2019-04-11 12:11:39',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,35,4,308,2,0,4,'2019-04-11 12:11:43',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,36,3,299,1,1,1,'2019-04-11 14:25:18',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,37,1,314,1,1,1,'2019-05-10 11:53:00',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,38,1,314,2,0,1,'2019-05-10 11:53:00',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,39,2,314,1,1,1,'2019-05-10 11:53:11',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,40,2,314,2,0,3,'2019-05-10 11:53:11',NULL);
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,51,2,315,3,0,161,'2019-06-19 10:17:44','Level 2');
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,52,1,315,3,0,175,'2019-06-21 10:57:09','Level 1');
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,53,1,315,3,0,155,'2019-06-21 10:57:09','Level 1');
+INSERT INTO `performancetemplateacknowledgement`(`ClientID`,`AcknowledgementID`,`AcknowledgementOrder`,`TemplateID`,`AcknowledgementType`,`AcknowledgementRole`,`AcknowledgementKey`,`LastUPD`,`LevelName`) VALUES
+(2,54,1,316,1,1,1,'2019-07-08 12:12:39','LEvel 1');
+COMMIT;
+/*!40000 ALTER TABLE `performancetemplateacknowledgement` ENABLE KEYS */;
+
+-- 
+-- Definition of perftemplatecareerplan
+-- 
+
+CREATE TABLE IF NOT EXISTS `perftemplatecareerplan` (
+  `ClientID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `TermID` int(11) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`TemplateID`,`TermID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table perftemplatecareerplan
+-- 
+
+/*!40000 ALTER TABLE `perftemplatecareerplan` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,2,1,'2016-08-05 11:13:44');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,2,2,'2016-08-05 11:13:44');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,2,3,'2016-08-05 11:13:44');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,3,1,'2014-11-25 16:35:21');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,3,2,'2014-11-25 16:35:21');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,3,3,'2014-11-25 16:35:21');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,4,1,'2014-11-25 16:38:32');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,4,2,'2014-11-25 16:38:32');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,4,3,'2014-11-25 16:38:32');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,5,1,'2014-11-25 17:19:00');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,5,2,'2014-11-25 16:40:12');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,5,3,'2014-11-25 16:40:12');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,6,1,'2014-11-25 16:43:46');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,6,2,'2014-11-25 16:43:46');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,6,3,'2014-11-25 16:43:46');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,7,1,'2014-11-25 16:45:20');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,7,2,'2014-11-27 18:08:52');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,7,3,'2014-11-27 18:09:05');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,9,1,'2015-01-05 12:23:33');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,9,2,'2015-01-05 12:23:33');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,9,3,'2015-01-05 12:23:33');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,19,1,'2015-02-11 12:19:40');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,19,2,'2015-02-11 12:19:40');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,19,3,'2015-02-11 12:19:40');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,26,2,'2015-02-24 10:20:35');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,26,3,'2015-02-24 10:20:35');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,28,1,'2015-03-06 18:21:54');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,28,2,'2015-03-06 18:21:54');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,28,3,'2015-03-06 18:21:54');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,30,1,'2015-08-13 14:40:03');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,30,2,'2015-08-13 14:40:03');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,36,1,'2015-11-27 15:02:39');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,36,2,'2015-11-27 15:02:39');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,36,3,'2015-11-27 15:02:39');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,37,1,'2016-04-26 17:41:00');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,37,2,'2016-04-26 17:41:00');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,49,1,'2016-08-15 11:19:39');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,49,2,'2016-08-15 11:19:39');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,49,3,'2016-08-15 11:19:39');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,51,1,'2016-11-04 12:10:26');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,51,2,'2016-11-04 12:10:26');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,51,3,'2016-11-04 12:10:26');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,65,1,'2017-05-04 12:05:42');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,74,1,'2017-06-27 15:51:43');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,74,2,'2017-06-27 15:51:43');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,74,3,'2017-06-27 15:51:43');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,85,1,'2019-03-25 11:50:27');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,85,2,'2019-03-25 11:50:27');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,85,3,'2019-03-25 11:50:28');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,86,1,'2017-12-14 16:05:40');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,86,2,'2017-12-14 16:05:40');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,86,3,'2017-12-14 16:05:40');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,87,1,'2018-02-12 12:53:45');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,87,2,'2018-02-12 12:53:45');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,87,3,'2018-02-12 12:53:45');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,100,1,'2019-05-03 13:52:43');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,100,2,'2019-05-03 13:52:43');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,100,3,'2019-05-03 13:52:43');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,101,1,'2018-08-28 18:04:36');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,101,2,'2018-08-28 18:04:36');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,101,3,'2018-08-28 18:04:36');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,157,1,'2018-07-30 13:29:36');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,157,2,'2018-07-30 13:29:36');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,190,1,'2018-07-30 13:09:16');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,213,1,'2018-07-30 11:32:14');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,213,2,'2018-07-30 11:32:14');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,213,3,'2018-07-30 11:32:14');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,216,1,'2018-07-30 11:40:35');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,216,2,'2018-07-30 11:40:35');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,216,3,'2018-07-30 11:40:35');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,217,1,'2018-07-30 11:46:13');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,223,1,'2018-07-30 13:07:22');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,223,3,'2018-07-30 13:07:22');
+INSERT INTO `perftemplatecareerplan`(`ClientID`,`TemplateID`,`TermID`,`LastUPD`) VALUES
+(2,224,2,'2018-07-30 13:08:58');
+COMMIT;
+/*!40000 ALTER TABLE `perftemplatecareerplan` ENABLE KEYS */;
+
+-- 
+-- Definition of players
+-- 
+
+CREATE TABLE IF NOT EXISTS `players` (
+  `PlayerID` int(11) DEFAULT NULL,
+  `a` int(11) DEFAULT NULL,
+  `b` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table players
+-- 
+
+/*!40000 ALTER TABLE `players` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `players`(`PlayerID`,`a`,`b`) VALUES
+(1,2,3);
+COMMIT;
+/*!40000 ALTER TABLE `players` ENABLE KEYS */;
+
+-- 
+-- Definition of portalannouncement
+-- 
+
+CREATE TABLE IF NOT EXISTS `portalannouncement` (
+  `ClientID` int(11) NOT NULL,
+  `AnnouncementID` int(11) NOT NULL,
+  `Title` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Description` text CHARACTER SET latin1,
+  `EffectiveFrom` datetime DEFAULT NULL,
+  `EffectiveTill` datetime DEFAULT NULL,
+  `Active` bit(1) DEFAULT b'1',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`AnnouncementID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table portalannouncement
+-- 
+
+/*!40000 ALTER TABLE `portalannouncement` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `portalannouncement`(`ClientID`,`AnnouncementID`,`Title`,`Description`,`EffectiveFrom`,`EffectiveTill`,`Active`,`LastUPD`) VALUES
+(2,18,'5 Ways To Increase Your Annual Income','Leverage the power of learning. Add a new skill, learn a new language, or try something that’s been on your bucket list.\nSet aside time on a daily or weekly basis to read informative blogs, articles or books.','2015-07-01 00:00:00','2016-12-31 00:00:00',1,'2016-05-13 18:45:23');
+INSERT INTO `portalannouncement`(`ClientID`,`AnnouncementID`,`Title`,`Description`,`EffectiveFrom`,`EffectiveTill`,`Active`,`LastUPD`) VALUES
+(2,19,'TCS'' record dividend gets Tata Sons Rs 11,000 crore fiscal relief','TCSBSE -0.03 % emerged as India''s top dividend payer when it rewarded shareholders with Rs 15,474-crore bounty, beating state-owned Coal IndiaBSE 2.08 % which historically has been the highest dividend payer.','2017-07-21 00:00:00','2017-08-31 00:00:00',1,'2016-07-21 14:40:38');
+INSERT INTO `portalannouncement`(`ClientID`,`AnnouncementID`,`Title`,`Description`,`EffectiveFrom`,`EffectiveTill`,`Active`,`LastUPD`) VALUES
+(2,28,'Holiday Next Month','Local Holiday','2017-05-06 00:00:00','2017-08-31 00:00:00',1,'2016-11-14 12:05:11');
+INSERT INTO `portalannouncement`(`ClientID`,`AnnouncementID`,`Title`,`Description`,`EffectiveFrom`,`EffectiveTill`,`Active`,`LastUPD`) VALUES
+(2,37,'Please advise if we need to re-open the ticket or create a new one.','Please advise if we need to re-open the ticket or create a new one.Please advise if we need to re-open the ticket or create a new one.','2016-11-15 00:00:00','2016-11-16 00:00:00',1,'2016-11-15 17:40:52');
+COMMIT;
+/*!40000 ALTER TABLE `portalannouncement` ENABLE KEYS */;
+
+-- 
+-- Definition of portaldisplaysettings
+-- 
+
+CREATE TABLE IF NOT EXISTS `portaldisplaysettings` (
+  `ClientID` int(11) NOT NULL,
+  `EnableVideo` bit(1) DEFAULT b'0',
+  `EnablePeople` bit(1) DEFAULT b'0',
+  `EnableTeamMember` bit(1) DEFAULT b'0',
+  `EnableWebLink` bit(1) DEFAULT b'0',
+  `EnableMap` bit(1) DEFAULT b'0',
+  `EnableAnnouncement` bit(1) DEFAULT b'0',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table portaldisplaysettings
+-- 
+
+/*!40000 ALTER TABLE `portaldisplaysettings` DISABLE KEYS */;
+START T

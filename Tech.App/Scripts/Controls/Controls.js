@@ -2547,7 +2547,8 @@
         defaults: {
             linkbuttons: [],
             formElement: [],
-            name:''
+			name: '',
+			isVertical:false,
         }
     };
     var methods = {
@@ -2564,13 +2565,21 @@
         _render: function () {
             var self = $(this);
             var _options = $(this).data("toolbar");
-            var key = uuidv4();
-            var k = '<nav class="navbar navbar-expand-lg navbar-light" >'; //navbar - light bg - light
+			var key = uuidv4();
+			var css = "navbar-expand-lg";
+			if (_options.isVertical === true) {
+				css = "";
+			}
+			var k = '<nav class="navbar '+css+' navbar-light" >'; //navbar - light bg - light
             k = k + '<a class="navbar-brand" href="#">' + _options.name +'</a>';
-            k = k + '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#' + key + '" aria-controls="' + key +'" aria-expanded="false" aria-label="Toggle navigation">';
-            k = k + '<span class="navbar-toggler-icon"></span>';
-            k = k + '</button>';
-            k = k + '<div class="collapse navbar-collapse" id="' + key + '">';
+           
+			if (_options.isVertical == false) {
+				k = k + '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#' + key + '" aria-controls="' + key + '" aria-expanded="false" aria-label="Toggle navigation">';
+				k = k + '<span class="navbar-toggler-icon"></span>';
+				k = k + '</button>';
+				k = k + '<div class="collapse navbar-collapse" id="' + key + '">';
+			}
+            
            // k = k + ' <a class="navbar-brand" href="#">' + _options.name + '</a>';
             k = k + '<ul class="navbar-nav mr-auto mt-2 mt-lg-0">';
             $.each(_options.linkbuttons, function (ict, ct) {
@@ -2579,8 +2588,10 @@
             k = k + '</ul>';
             $.each(_options.formElement, function (ict, ct) {
 				k = k + '<div class="form-inline my-2 my-lg-0" >' + ct + '</div>';
-            });           
-            k = k + "</div>";
+			});     
+			if (_options.isVertical == false) {
+				k = k + "</div>";
+			}
             self.html("");
             self.append(k);
         }

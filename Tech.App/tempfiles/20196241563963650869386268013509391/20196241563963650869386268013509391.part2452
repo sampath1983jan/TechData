@@ -1,0 +1,658 @@
+
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add a Client',0,0,121,1,7,'fnAddClient();',NULL,NULL,12,0,323,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add a Project',0,0,123,1,9,'fnAddProject();',NULL,NULL,12,0,325,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Adjustment ',0,0,61,1,10,'fnAddAdjustment();',NULL,NULL,51,0,161,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Business Unit',0,0,23,1,2,'fnAddOrganisationStructure(300000);',NULL,NULL,21,0,4,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Candidate to Resume Bank',20000,0,87,1,7,'fnAddCandidateResumeBank();',NULL,NULL,80,0,38,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Competency',10000,0,43,1,3,'fnAddCompetency(10000);','',NULL,41,0,13,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Department',0,0,25,1,4,'fnAddOrganisationStructure(320000)',NULL,NULL,21,0,6,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Employee',30000,0,3,1,3,'fnAddEmployee();',NULL,NULL,1,0,1,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Goal',0,0,66,1,3,'fnAddGoal();',NULL,NULL,64,0,179,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Grade',0,0,26,1,8,'fnAddOrganisationStructure(340000);',NULL,NULL,21,0,8,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Holiday',0,0,57,1,6,'fnAddHolidays();',NULL,NULL,51,0,165,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Job',0,0,27,1,10,'fnAddOrganisationStructure(350000);',NULL,NULL,21,0,7,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Position',0,0,28,1,12,'fnAddOrganisationStructure(360000);',NULL,NULL,21,0,3,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Potential',0,0,68,1,5,'fnAddPotential();',NULL,NULL,64,0,30,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Rating Distribution',0,0,136,1,15,'fnAddRatingDistribution();',NULL,NULL,64,0,344,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Add Work Location',0,0,29,1,6,'fnAddOrganisationStructure(310000);',NULL,NULL,21,0,5,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Apply Claims',0,0,39,1,2,'fnApplyNewClaim();',NULL,NULL,35,0,247,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Apply Leave',0,0,53,1,2,'fnApplyLeave();',NULL,NULL,51,0,169,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Apply Leave for Employees',0,0,58,1,5,'fnApplyLeaveForEmployees();',NULL,NULL,51,0,171,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Appraisal History',0,0,73,1,13,'fnAppraisalHistory();',NULL,NULL,64,0,0,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Attendance Home',0,0,13,1,1,'fnTimeandAttendance();',NULL,NULL,12,0,238,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Budget List',0,0,102,1,2,'fnBudgetList();',NULL,NULL,95,0,92,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Claim List',0,0,40,1,3,'fnClaimsList();',NULL,NULL,35,0,248,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Claims',0,1,35,1,0,NULL,NULL,'Claims Management',0,8,123,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Claims',0,0,154,1,9,'fnClaimsReports();',NULL,NULL,112,0,364,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Claims Home',0,0,36,1,1,'fnClaims();',NULL,NULL,35,0,193,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Competency',0,0,150,1,5,'fnCompetencyReports();',NULL,NULL,112,0,360,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Competency',10000,1,41,1,0,'','','Competency',0,4,114,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Competency Ananlysis Report',10000,0,164,1,50,'fnCoompetencyAnalysisReport();',NULL,NULL,41,0,NULL,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Competency Home',10000,0,42,1,1,'fnCompetency();','',NULL,41,0,189,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Competency Library',10000,0,44,1,2,'fnCompetencyLibrary(10000)','',NULL,41,0,13,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Configure Schedules',0,0,15,1,5,'',NULL,NULL,12,0,0,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create Assessment',10000,0,45,1,4,'fnCreateAssessment();','',NULL,41,0,258,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create Hiring Request',20000,0,82,1,2,'fnCreateHiringRequest();',NULL,NULL,80,0,281,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create New Opening',20000,0,84,1,4,'fnCreateOpening();',NULL,NULL,80,0,282,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create Performance Review',0,0,71,1,10,'fnCreatePerformance()',NULL,NULL,64,0,23,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create Program',0,0,97,1,4,'fnCreateProgram();',NULL,NULL,95,0,39,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create Sessions',0,0,98,1,6,'fnCreateSession();',NULL,NULL,95,0,40,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Create Travel Request',0,0,130,1,4,'fnApplyTravelAdvance()',NULL,NULL,35,0,338,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Daily Time Record',0,0,19,1,2,'fnDailyTimeRecord();',NULL,NULL,12,0,207,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Document Repository',0,0,144,1,15,'DocumentRepository()','','',1,0,354,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Employee',0,0,148,1,3,'fnEmployeeReports();',NULL,NULL,112,0,358,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Employee',30000,1,1,1,0,'',NULL,'Employee',0,3,124,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Employee Hierarchy',30000,0,8,1,4,'fnEmployeeHierarchy();',NULL,NULL,1,0,135,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Employee Learning Track',0,0,110,1,11,'fnLearningTrack();',NULL,NULL,95,0,151,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Employee List',30000,0,2,1,2,'fnCompList(30000);',NULL,NULL,1,0,1,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Enter Timesheet',0,0,125,1,11,'fnAddTimesheet();',NULL,NULL,12,0,327,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Holidays',0,0,56,1,7,'fnHolidays();',NULL,NULL,51,0,165,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Import employee monthly components',0,0,163,1,4,'fnImportPaySlipCompoennts;()','','',116,NULL,386,2);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Import Timing Record',0,0,14,1,6,'fnImportTimingRecord();',NULL,NULL,12,0,194,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Internal Opening',20000,0,86,1,6,'fnInternalOpening();',NULL,NULL,80,0,271,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning',0,1,95,1,0,NULL,NULL,'Learning and Development',0,6,118,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning and Developement',0,0,152,1,7,'fnLearningReports();',NULL,NULL,112,0,362,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning Calendar',0,0,101,1,7,'fnLearningCalendar();',NULL,NULL,95,0,158,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning Feedback Template',0,0,158,1,14,'fnLearningFeedbackTemplate();',NULL,NULL,95,0,370,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning Home',0,0,96,1,1,'fnLearningDashboard();',NULL,NULL,95,0,191,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning Recommendation',0,0,103,1,8,'fnOrgLearningRecommendation();',NULL,NULL,95,0,64,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Learning Request Track',0,0,104,1,12,'fnLearningRequest();',NULL,NULL,95,0,241,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave',0,1,51,1,0,NULL,NULL,'Leave Management',0,7,119,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Accrual',0,0,62,1,11,'fnLeaveAccrual();',NULL,NULL,51,0,106,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Adjustment',0,0,60,1,9,'fnLeaveAdjustment();',NULL,NULL,51,0,161,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Balance Summary',0,0,128,1,13,'fnLeaveBalanceSummary();',NULL,NULL,51,0,329,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Carry forward',0,0,63,1,12,'fnLeaveCarryForward();',NULL,NULL,51,0,164,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Home',0,0,52,1,1,'fnLeaveManagement();',NULL,NULL,51,0,192,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave List',0,0,54,1,3,'fnLeaveList();',NULL,NULL,51,0,172,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Management',0,0,153,1,8,'fnLeaveReports();',NULL,NULL,112,0,363,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave TimeLine',0,0,55,1,4,'fnMyTimeLine();',NULL,NULL,51,0,173,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Leave Type Settings',0,0,59,1,8,'fnLeaveType();',NULL,NULL,51,0,103,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Assessment',10000,0,46,1,5,'fnManageAssessment();','',NULL,41,0,258,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Booking(s)',0,0,132,1,14,'fnManageBooking();',NULL,NULL,21,0,341,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Business Unit',0,0,24,1,3,'fnManageOrganisationStructure(300000);',NULL,NULL,21,0,4,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Change Request',0,0,118,1,5,'fnManageChangeRequest();',NULL,NULL,1,0,54,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Clients',0,0,122,1,8,'fnManageClient();',NULL,NULL,12,0,324,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Component Library',0,0,145,1,19,'fnShowManageCompLibrary();',NULL,NULL,64,0,355,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Department',0,0,30,1,5,'fnManageOrganisationStructure(320000);',NULL,NULL,21,0,6,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Employee Component Library',0,0,146,1,20,'fnShowManageEmployeeCompLibrary();',NULL,NULL,64,0,356,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Employee Group',0,0,119,1,12,'fnManageEmployeeGroup();',NULL,NULL,1,0,318,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Employee Movement',30000,0,4,1,6,'fnManagePromotion();',NULL,NULL,1,0,147,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Evaluation',20000,0,156,1,15,'fnManageEvaluationList();','','',80,0,368,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Evaluation Templates',20000,0,127,1,13,'fnManageEvaluation();',NULL,NULL,80,0,330,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Goal library',0,0,67,1,2,'fnManageGoals();',NULL,NULL,64,0,179,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Grade',0,0,31,1,9,'fnManageOrganisationStructure(340000);',NULL,NULL,21,0,8,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Job',0,0,32,1,11,'fnManageOrganisationStructure(350000);',NULL,NULL,21,0,7,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Onboarding',20000,0,90,1,10,'fnManageOnboardingList();',NULL,NULL,80,0,274,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Openings',20000,0,85,1,5,'fnOpeningList();',NULL,NULL,80,0,32,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Performance Review',0,0,72,1,11,'fnManagePerformance()',NULL,NULL,64,0,23,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Position',0,0,10,1,13,'fnManageOrganisationStructure(360000);','','',2,0,3,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Position',0,0,33,1,13,'fnManageOrganisationStructure(360000);',NULL,NULL,21,0,3,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Potential Library',0,0,69,1,4,'fnManagePotential();',NULL,NULL,64,0,30,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Program',0,0,99,1,3,'fnManageProgram();',NULL,NULL,95,0,39,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Projects',0,0,124,1,10,'fnManageProject();',NULL,NULL,12,0,326,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Resources',0,0,133,1,15,'fnManageResource();',NULL,NULL,21,0,342,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Resume Bank',20000,0,88,1,8,'fnManageOpening();',NULL,NULL,80,0,38,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Schedules',0,0,16,1,4,'fnManageSchedules();',NULL,NULL,12,0,205,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Sessions',0,0,100,1,5,'fnManageSession();',NULL,NULL,95,0,40,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Shared Candidates',20000,0,134,1,14,'fnSharedCandidate();','','',80,0,343,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Task Library',20000,0,89,1,9,'fnManageTaskLibrary();',NULL,NULL,80,0,273,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Timesheet Requests',0,0,126,1,12,'fnManageTimesheet();',NULL,NULL,12,0,328,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Travel Request Details',0,0,131,1,5,'fnManageTravelAdvance()',NULL,NULL,35,0,339,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Work Location',0,0,34,1,7,'fnManageOrganisationStructure(310000);',NULL,NULL,21,0,5,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Manage Your Buddies',20000,0,92,1,12,'fnManageBuddyList();',NULL,NULL,80,0,276,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Monitor Documents Expiry',30000,0,9,1,7,'fnDocumentMonitoring()',NULL,NULL,1,0,139,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('My Active Appraisal',0,0,74,1,12,'fnActiveAppraisal();',NULL,NULL,64,0,181,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('My Assessment History',10000,0,48,1,8,'fnMyAssessmentHistory();','',NULL,41,0,254,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('My Goals',0,0,76,1,6,'fnMyGoals();',NULL,NULL,64,0,183,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('My Recommendation',0,0,105,1,9,'fnMyRecommendations();',NULL,NULL,95,0,156,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Normalisation Curve',0,0,139,1,18,'fnShowNormalisationCurve();',NULL,NULL,64,0,350,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Organisation Structure',0,0,147,1,2,'fnOrganisationReports();',NULL,NULL,112,0,357,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Organization',330000,1,21,1,0,NULL,NULL,'Organization Structure',0,1,83,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Organization Home',0,0,22,1,1,'fnOrgStructure();',NULL,NULL,21,0,187,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Overtime Request Track',0,0,140,1,13,'fnOTRequestTrack();',NULL,NULL,12,0,347,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Payroll',0,1,116,1,0,NULL,NULL,'Payroll ',0,11,321,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Payroll Home',0,0,117,1,1,'fnPayRollAuthenticate();',NULL,'',116,0,320,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Payroll LOP',0,0,120,1,2,'fnPayRollLOP();',NULL,'',116,0,322,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('paySlip',0,0,162,1,3,'fnPaySlip();',NULL,NULL,116,0,381,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Pending Assessments',10000,0,47,1,6,'fnPendingAssessment();','',NULL,41,0,253,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Performance',0,1,64,1,0,NULL,NULL,'Performance Management',0,5,117,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Performance History',0,0,75,1,14,'fnMyPerfHistory();',NULL,NULL,64,0,182,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Performance Home',0,0,65,1,1,'fnPerformaneMgnt(1);',NULL,NULL,64,0,190,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Performance Management',0,0,149,1,4,'fnPeformanceReports();',NULL,NULL,112,0,359,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Portal Display Settings',20000,0,91,1,11,'fnManageDisplaySetting();',NULL,NULL,80,0,275,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Purchase Order Bank',0,0,160,1,17,'fnPurchaseOrderBank();',NULL,NULL,21,0,377,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Purchase Request',0,0,159,1,16,'fnPurchaseRequest();',NULL,NULL,21,0,376,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Raise New Program Request',0,0,111,1,13,'fnRaiseProgramRequest();',NULL,NULL,95,0,315,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Raise Overtime',0,0,141,1,14,'fnRaiseOvertime();',NULL,NULL,12,0,346,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Raise Resignation Request',30000,0,10,1,8,'fnRaiseResignation();',NULL,NULL,1,0,313,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Raise Service Request',0,0,142,1,13,'RaiseHrServiceRequest()','','',1,0,351,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Raise Voluntary Retirement Request',30000,0,11,1,11,'fnRaiseVoluntaryResignation();',NULL,NULL,1,0,314,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Rating Distribution',0,0,138,1,17,'fnShowRatingDistribution();',NULL,NULL,64,0,349,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Rating Distribution List',0,0,137,1,16,'fnShowRatingDistributionList();',NULL,NULL,64,0,345,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Recruitment',0,0,151,1,6,'fnRecruitmentReports();',NULL,NULL,112,0,361,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Recruitment',20000,1,80,1,0,NULL,NULL,'Recruitment',0,2,115,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Recruitment Home',20000,0,81,1,1,'fnRecruitment(1);',NULL,NULL,80,0,188,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Reports',0,1,112,1,0,NULL,NULL,'Reports',0,10,316,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Reports Home',0,0,113,1,1,'fnReports()',NULL,NULL,112,0,317,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Separation Request List',30000,0,7,1,9,'fnSeparationRequest();',NULL,NULL,1,0,145,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Service Request List',0,0,143,1,14,'HrServiceRequestList()','','',1,0,352,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Team IDP',10000,0,129,1,9,'fnTeamIDP();',NULL,NULL,41,0,331,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Time',0,1,12,1,0,NULL,NULL,'Time and Attendance',0,9,120,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Time Adjustment Request',0,0,17,1,3,'fnTimeAdjRequest();',NULL,NULL,12,0,202,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Time and Attendance',0,0,155,1,10,'fnTAReports();',NULL,NULL,112,0,365,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Track Hiring Requests',20000,0,83,1,3,'fnRequestList();',NULL,NULL,80,0,31,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Track Ongoing Separation',0,0,115,1,10,'fnSeparationProcess();',NULL,NULL,1,0,240,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Upcoming Sessions',0,0,109,1,10,'fnUpcomingSessions();',NULL,NULL,95,0,155,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('Vendors',0,0,161,1,18,'fnPurchaseVendors();',NULL,NULL,21,0,378,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('View IDP',10000,0,49,1,7,'fnViewIDP();','',NULL,41,0,255,1);
+INSERT INTO `sys_menu`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`) VALUES
+('View My Profile',0,0,114,1,1,'fnDetail(30000);',NULL,NULL,1,0,239,1);
+COMMIT;
+/*!40000 ALTER TABLE `sys_menu` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_menu_displayname
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_menu_displayname` (
+  `ClientID` int(11) NOT NULL,
+  `MenuID` int(11) NOT NULL,
+  `DisplayName` varchar(255) NOT NULL,
+  `DisplayNote` varchar(1000) DEFAULT NULL,
+  `DisplayName_AR` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`MenuID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_menu_displayname
+-- 
+
+/*!40000 ALTER TABLE `sys_menu_displayname` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_menu_displayname`(`ClientID`,`MenuID`,`DisplayName`,`DisplayNote`,`DisplayName_AR`) VALUES
+(2,16,'Manage BU',NULL,'Manage BU');
+INSERT INTO `sys_menu_displayname`(`ClientID`,`MenuID`,`DisplayName`,`DisplayNote`,`DisplayName_AR`) VALUES
+(2,128,'Leave Balance Summary','Note : Only applicable to GCC & Africa employees -  \"Maximum AL accumulation can be up to 44 working days but leave encashment will happen on 22 working days\"','ترك الاستفسار عن الرصيد');
+COMMIT;
+/*!40000 ALTER TABLE `sys_menu_displayname` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_menus
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_menus` (
+  `NavigationName` varchar(255) NOT NULL,
+  `ComponentID` int(10) NOT NULL,
+  `IsMainMenu` int(11) NOT NULL COMMENT '1- MainMenu 2- Category 3- SubMenus',
+  `MenuID` int(10) NOT NULL,
+  `IdentityType` int(10) DEFAULT NULL,
+  `DisplayOrder` int(10) DEFAULT NULL,
+  `RedirectURL` varchar(255) DEFAULT NULL,
+  `HelpURL` varchar(50) DEFAULT NULL,
+  `HeaderText` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `RelatedMainMenu` int(10) DEFAULT NULL,
+  `MainMenuOrder` int(10) unsigned DEFAULT NULL,
+  `FeatureID` int(11) DEFAULT NULL,
+  `Access` int(11) DEFAULT NULL,
+  `IsVisible` tinyint(3) unsigned DEFAULT NULL,
+  `IsCommonMenu` tinyint(1) DEFAULT '0' COMMENT '0)Commmon Menus,1)Specific country Menu',
+  `CountryID` varchar(50) DEFAULT NULL COMMENT '1-India,2-Malaysia,3-Gulf',
+  `NavigationName_AR` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  PRIMARY KEY (`NavigationName`,`ComponentID`,`MenuID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_menus
+-- 
+
+/*!40000 ALTER TABLE `sys_menus` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Absent Process',0,3,238,1,7,'fnAbsentProcess();','','',173,0,512,1,1,0,NULL,'Absent Process');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Adjustment ',0,3,125,1,10,'fnAddAdjustment();','','',167,0,161,2,0,0,NULL,'إضافة تعديل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Business Unit',0,3,22,1,10,'fnAddOrganisationStructure(300000);','','',12,0,4,2,0,0,NULL,'إضافة وحدة عمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Candidate to Resume Bank',20000,3,44,1,11,'fnAddCandidateResumeBank();',NULL,NULL,33,0,38,1,0,0,NULL,'إضافة مرشح لبنك السير الذاتية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Client',0,3,148,1,7,'fnAddClient();',NULL,NULL,135,0,323,1,0,0,NULL,'إضافة عميل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Competency',10000,3,79,1,9,'fnAddCompetency(10000);',NULL,NULL,163,0,13,2,0,0,NULL,'إضافة كفاءة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Department',0,3,24,1,12,'fnAddOrganisationStructure(320000)','','',12,0,6,2,0,0,NULL,'إضافة قسم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Employee',30000,3,56,1,3,'fnAddEmployee();',NULL,NULL,50,0,1,2,1,0,NULL,'إضافة موظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Goal',0,3,89,1,7,'fnAddGoal();',NULL,NULL,80,0,179,2,0,0,NULL,'إضافة هدف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Grade',0,3,26,1,14,'fnAddOrganisationStructure(340000);','','',12,0,8,2,0,0,NULL,'إضافة درجة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Holiday',0,3,126,1,11,'fnAddHolidays();','','',167,0,165,2,0,0,NULL,'إضافة عطلة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Job',0,3,25,1,13,'fnAddOrganisationStructure(350000);','','',12,0,7,2,0,0,NULL,'إضافة وظيفة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Position',0,3,27,1,15,'fnAddOrganisationStructure(360000);','','',12,0,3,2,0,0,NULL,'إضافة منصب وظيفي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Potential',0,3,90,1,8,'fnAddPotential();',NULL,NULL,80,0,30,2,0,0,NULL,'إضافة إمكانية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Project',0,3,149,1,9,'fnAddProject();',NULL,NULL,135,0,325,1,0,0,NULL,'إضافة مشروع');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Add Work Location',0,3,23,1,11,'fnAddOrganisationStructure(310000);','','',12,0,5,2,0,0,NULL,'إضافة موقع عمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Applicant Evaluations',20000,3,43,1,10,'fnManageEvaluationList();',NULL,NULL,33,0,368,1,1,0,NULL,'تقييمات المتقدم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Apply Claims',0,3,132,1,4,'fnApplyNewClaim();','','',128,0,247,1,1,0,NULL,'تقديم مطالبة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Apply Comp Off for Employees',0,3,238,1,15,'fnApplyCompOffForEmployees();','','',167,0,511,1,1,0,NULL,'Apply Comp Off for Employees');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Apply Leave',0,3,115,1,2,'fnApplyLeave();','','',167,0,169,1,1,0,NULL,'تقديم طلب إجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Apply Leave for Employees',0,3,119,1,6,'fnApplyLeaveForEmployees();','','',167,0,171,1,1,0,NULL,'تقديم طلب إجازة للموظفين');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Assessment History',10000,3,76,1,6,'fnMyAssessmentHistory();',NULL,NULL,163,0,254,1,1,0,NULL,'تاريخ التقييمات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Asset List',0,3,193,1,1,'fnAssetList();',NULL,NULL,192,0,422,1,1,0,NULL,'قائمة الأصول');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Asset Management',0,2,192,1,6,'',NULL,NULL,3,0,0,1,1,0,NULL,'إدارة الأصول');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Asset Track',0,3,194,1,2,'fnAssetTrack();',NULL,NULL,192,0,423,1,1,0,NULL,'مسار الأصول');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Attendance',0,2,134,1,1,'',NULL,NULL,9,0,0,1,1,0,NULL,'الحضور');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Attendance Home',0,3,136,1,1,'fnTimeandAttendance();',NULL,NULL,134,0,238,1,1,0,NULL,'الوقت والحضور الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Attendance Pay',0,3,219,1,1,'fnPayrollAttendancePay();','','',173,0,472,1,1,0,NULL,'Attendance Pay');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Attendance Regularization',0,3,224,1,16,'fnAttendanceRegularization();',NULL,NULL,134,0,485,1,1,0,NULL,'Attendance Regularization');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Attendance Schedule Roaster',0,3,248,1,19,'fnAttendanceScheduleRoaster();','','',134,0,539,1,1,0,NULL,'Attendance Schedule Roaster');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Bonus Generation',0,3,255,1,4,'fnGenerationBonus();','','',207,0,563,1,1,1,'1','Bonus Generation');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Business Unit',0,3,16,1,2,'fnManageOrganisationStructure(300000);','','',12,0,4,1,1,0,NULL,'وحدة العمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claim - GL Code',0,3,243,1,10,'fnClaimGLCode();',NULL,NULL,128,0,522,1,1,0,NULL,'Claim - GL Code');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claim Groups',0,3,241,1,8,'fnClaimGroups();',NULL,NULL,128,0,518,1,1,0,NULL,'Claim Groups');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claim Limit Configuration',0,3,236,1,6,'fnClaimLimit();','','',128,0,508,1,1,0,NULL,'Claim Limit Configuration');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claim List',0,3,133,1,5,'fnClaimsList();','','',128,0,248,1,1,0,NULL,'قائمة المطالبات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claim Type Settings',0,3,237,1,7,'fnClaimType();','','',128,0,509,1,1,0,NULL,'Claim Type');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claimable Vehicle Cost/KM',0,3,242,1,8,'fnClaimableVehicle();',NULL,NULL,128,0,521,1,1,0,NULL,'Claimable Vehicle Cost/KM');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claims',0,1,8,1,0,NULL,NULL,NULL,0,8,123,1,1,0,NULL,'المطالبات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claims',0,2,128,1,2,'',NULL,NULL,8,0,0,1,1,0,NULL,'المطالبات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Claims',0,3,158,1,9,'fnClaimsReports();',NULL,NULL,10,0,364,1,1,0,NULL,'المطالبات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Clients',0,3,144,1,8,'fnManageClient();',NULL,NULL,135,0,324,1,1,0,NULL,'العملاء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Comp Off Request',0,3,218,1,5,'fnCompOffReques();',NULL,NULL,167,0,474,1,1,0,NULL,'Comp Off Request');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Comp Off Request List',0,3,216,1,4,'fnCompOffRequestList();',NULL,NULL,167,0,471,1,1,0,NULL,'Comp Off Request List');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Competency',0,3,154,1,5,'fnCompetencyReports();',NULL,NULL,10,0,360,1,1,0,NULL,'الكفاءة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Competency',0,2,163,1,1,NULL,NULL,NULL,4,0,0,1,1,0,NULL,'الكفاءة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Competency',10000,1,4,1,0,NULL,NULL,NULL,0,4,114,1,1,0,NULL,'الكفاءة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Competency Home',10000,3,71,1,1,'fnCompetency();',NULL,NULL,163,0,189,1,1,0,NULL,'الكفاءة الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Competency Library',10000,3,72,1,2,'fnCompetencyLibrary(10000)',NULL,NULL,163,0,13,1,1,0,NULL,'مكتبة الكفاءة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Component Activities',0,3,252,1,3,'fnComponentActivites();','','',190,0,557,1,1,0,NULL,'Component Activities');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Configure Onboarding Portal',20000,3,49,1,4,'fnManageDisplaySetting();','','',34,0,275,1,0,0,NULL,'تهيئة بوابة التأهيل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Cost Center',0,3,235,1,3,'fnManageOrganisationStructure(370000);',NULL,NULL,12,0,504,1,1,0,NULL,'Cost Center');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create Assessment',10000,3,73,1,3,'fnCreateAssessment();',NULL,NULL,163,0,258,2,1,0,NULL,'إنشاء تقييم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create Hiring Request',20000,3,36,1,2,'fnCreateHiringRequest();',NULL,NULL,33,0,281,1,0,0,NULL,'إنشاء طلب توظيف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create New Opening',20000,3,45,1,12,'fnCreateOpening();',NULL,NULL,33,0,282,1,0,0,NULL,'إنشاء افتتاح جديد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create Performance Review',0,3,91,1,3,'fnCreatePerformance()',NULL,NULL,81,0,23,2,0,0,NULL,'إنشاء مراجعة أداء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create Program',0,3,112,1,9,'fnCreateProgram();',NULL,NULL,164,0,39,2,0,0,NULL,'إنشاء برنامج');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create Sessions',0,3,113,1,10,'fnCreateSession();',NULL,NULL,164,0,40,2,0,0,NULL,'إنشاء جلسة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Create Travel Request',0,3,130,1,2,'fnApplyTravelAdvance()','','',127,0,338,1,1,0,NULL,'إنشاء طلب سفر');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Daily Time Record',0,3,137,1,2,'fnDailyTimeRecord();',NULL,NULL,134,0,207,1,1,0,NULL,'سجل الدوام اليومي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Departments',0,3,18,1,5,'fnManageOrganisationStructure(320000);','','',12,0,6,1,1,0,NULL,'الأقسام');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Document Management',0,2,53,1,4,'',NULL,NULL,3,0,0,1,1,0,NULL,'إدارة الوثائق');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Document Repository',0,3,65,1,2,'DocumentRepository()',NULL,NULL,53,0,354,1,1,0,NULL,'مستودع الوثائق والمستندات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Effort Sheet',0,3,206,1,6,'fnEffortSheet();',NULL,NULL,180,0,437,1,1,0,NULL,'صفحة الجهد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee',0,3,152,1,3,'fnEmployeeReports();',NULL,NULL,10,0,358,1,1,0,NULL,'الموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee',30000,1,3,1,0,NULL,NULL,NULL,0,3,124,1,1,0,NULL,'الموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Attendance Analysis',0,3,200,1,9,'fnEmpAttendanceAnalysis();','','',134,0,417,1,1,0,NULL,'تحليل دوام موظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Directory',0,3,247,1,8,'fnEmployeeDirectory();',NULL,NULL,50,0,530,1,1,0,NULL,'Employee Directory');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Dossier',0,2,50,1,1,'',NULL,NULL,3,0,0,1,1,0,NULL,'ملف الموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Groups',0,3,59,1,6,'fnManageEmployeeGroup();',NULL,NULL,50,0,318,1,1,0,NULL,'مجموعات الموظفين');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Hierarchy',30000,3,57,1,5,'fnEmployeeHierarchy();',NULL,NULL,50,0,135,1,1,0,NULL,'التسلسل الهرمي للموظفين');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee IDP',0,3,245,1,7,'fnViewIDP();',NULL,NULL,80,0,525,1,1,0,NULL,'خطة التطوير الفردية للموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee IDP',10000,3,77,1,7,'fnViewIDP();',NULL,NULL,163,0,255,1,1,0,NULL,'خطة التطوير الفردية للموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee List',30000,3,55,1,2,'fnCompList(30000);',NULL,NULL,50,0,1,1,1,0,NULL,'قائمة الموظفين');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Movement',0,2,52,1,3,'',NULL,NULL,3,0,0,1,1,0,NULL,'الترقيات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Payroll Change Requests',0,3,211,1,1,'fnEmployeePayrollChangeRequests();','','',173,0,459,1,1,0,NULL,'طلبات تغيير رواتب الموظفين');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Performance Elements',0,3,87,1,5,'fnShowManageEmployeeCompLibrary();',NULL,NULL,80,0,356,1,1,0,NULL,'عناصر أداء الموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Employee Processed Payroll',0,3,183,1,4,'fnEmployeeProcessedPayroll();','','',207,0,409,1,1,0,NULL,'كشف الراتب المعالج للموظف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Enter Timesheet',0,3,146,1,11,'fnAddTimesheet();',NULL,NULL,135,0,327,1,1,0,NULL,'أدخل الجدول الزمني');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Entitlement Process',0,3,251,1,2,'fnEntitlementProcess();','','',190,0,556,1,1,0,NULL,'Entitlement Process');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Evaluation Templates',20000,3,41,1,8,'fnManageEvaluation();',NULL,NULL,33,0,330,1,1,0,NULL,'نماذج التقييم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Excel Import',0,3,199,1,1,'fnExcelImport();',NULL,NULL,198,0,427,1,1,0,NULL,'Excel Import');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Fixed Earning and Deductions',0,3,204,1,5,'fnFixedEarningDeduction();','','',173,0,435,1,1,0,NULL,'المكاسب الثابتة والخصومات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Form 16',0,3,249,1,5,'fnForm16();','','',207,0,541,1,1,0,NULL,'');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Form 25',0,3,220,1,11,'fnForm25();',NULL,NULL,167,0,476,1,1,0,NULL,'Form 25');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Goal library',0,3,84,1,2,'fnManageGoals();',NULL,NULL,80,0,179,1,1,0,NULL,'مكتبة الهدف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Goals',0,3,88,1,6,'fnMyGoals();',NULL,NULL,80,0,183,1,1,0,NULL,'الأهداف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Grades',0,3,20,1,7,'fnManageOrganisationStructure(340000);','','',12,0,8,1,1,0,NULL,'الدرجات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Gratuity Generation',0,3,254,1,6,'fnGenerationGratuity();','','',207,0,562,1,1,1,'1','Gratuity Generation ');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Hiring Approval',0,3,244,1,11,'fnHiringApproval();','','',33,0,524,1,1,0,NULL,'Hiring Approval');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Hiring Requests',20000,3,37,1,3,'fnRequestList();',NULL,NULL,33,0,31,1,1,0,NULL,'طلبات التوظيف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Holiday Wages',0,3,222,1,14,'fnHolidayWages();','','',134,0,481,1,1,0,NULL,'Holiday Wages');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Holidays',0,3,118,1,9,'fnHolidays();','','',167,0,165,1,1,0,NULL,'العطل الرسمية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Import',0,2,198,1,4,NULL,NULL,NULL,1,0,0,1,1,0,NULL,'Import');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Import Attendance',0,3,141,1,6,'fnImportTimingRecord();',NULL,NULL,134,0,194,1,1,0,NULL,'جلب الحضور');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Import Monthly Components',0,3,170,1,4,'fnImportPaySlipCompoennts();',NULL,NULL,171,0,386,2,1,0,NULL,'جلب  المكونات الشهرية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Income Tax',0,2,202,1,6,NULL,NULL,NULL,11,0,0,1,1,0,NULL,'ضريبة الدخل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Income Tax Statement',0,3,209,1,3,'fnITStatement();','','',207,0,449,1,1,0,NULL,'تصريح ضريبة الدخل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Internal Openings',20000,3,39,1,6,'fnInternalOpening();',NULL,NULL,33,0,271,1,1,0,NULL,'إفتتاحات داخلية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('IT Declaration',0,3,203,1,1,'fnITDeclaration();',NULL,NULL,202,0,430,1,1,0,NULL,'إعلان لتكنولوجيا المعلومات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Jobs',0,3,19,1,6,'fnManageOrganisationStructure(350000);','','',12,0,7,1,1,0,NULL,'الوظائف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning',0,1,6,1,0,NULL,NULL,NULL,0,6,118,1,1,0,NULL,'التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Administration',0,2,164,1,1,NULL,NULL,NULL,6,0,0,1,1,0,NULL,'إدارة التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning and Developement',0,3,156,1,7,'fnLearningReports();',NULL,NULL,10,0,362,1,1,0,NULL,'التعلم والتطوير');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Budget',0,3,106,1,4,'fnBudgetList();',NULL,NULL,164,0,92,1,1,0,NULL,'ميزانية التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Calendar',0,3,103,1,5,'fnLearningCalendar();',NULL,NULL,164,0,158,1,1,0,NULL,'تقويم التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Feedback Templates',0,3,111,1,7,'fnLearningFeedbackTemplate();',NULL,NULL,164,0,370,1,1,0,NULL,'نماذج ردود التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Home',0,3,100,1,1,'fnLearningDashboard();',NULL,NULL,164,0,191,1,1,0,NULL,'التعلم الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Process',0,2,165,1,2,NULL,NULL,NULL,6,0,0,1,1,0,NULL,'عملية التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Recommendations',0,3,107,1,6,'fnOrgLearningRecommendation();',NULL,NULL,164,0,64,1,1,0,NULL,'توصيات التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Request List',0,3,105,1,2,'fnLearningRequest();',NULL,NULL,165,0,241,1,1,0,NULL,'قائمة طلبات التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Learning Track',0,3,110,1,3,'fnLearningTrack();',NULL,NULL,165,0,151,1,1,0,NULL,'مسار التعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave',0,1,7,1,0,NULL,NULL,NULL,0,7,119,1,1,0,NULL,'الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Accrual',0,3,122,1,2,'fnLeaveAccrual();','','',166,0,106,1,1,0,NULL,'استحقاق الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Adjustment',0,3,168,1,8,'fnLeaveAdjustment();',NULL,NULL,167,0,161,1,1,0,NULL,'تعديل الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Balance Summary',0,3,124,1,5,'fnLeaveBalanceSummary();','','',167,0,329,1,1,0,NULL,'ملخص رصيد الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Carry forward',0,3,123,1,3,'fnLeaveCarryForward();','','',166,0,164,1,1,0,NULL,'ترحيل الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Encashment',0,3,214,1,6,'fnLeaveEncashment();','','',173,0,468,1,1,0,NULL,'Leave Encashment');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Home',0,3,114,1,1,'fnLeaveManagement();','','',167,0,192,1,1,0,NULL,'الإجازة الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave List',0,3,116,1,3,'fnLeaveList();','','',167,0,172,1,1,0,NULL,'قائمة الإجازات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Management',0,3,157,1,8,'fnLeaveReports();',NULL,NULL,10,0,363,1,1,0,NULL,'إدارة الإجازات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Planner',0,3,227,1,12,'fnLeavePlanner();',NULL,NULL,167,0,490,1,1,0,NULL,'Leave Planner');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Planner List',0,3,228,1,12,'fnLeavePlannerList();',NULL,NULL,167,0,491,1,1,0,NULL,'Leave Planner List');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Process',0,2,167,1,2,NULL,NULL,NULL,7,0,0,1,1,0,NULL,'عملية الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Setup',0,2,166,1,1,NULL,NULL,NULL,7,0,0,1,1,0,NULL,'إعداد الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave TimeLine',0,3,117,1,4,'fnMyTimeLine();','','',167,0,173,1,1,0,NULL,'الجدول الزمني للإجازات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Leave Type Settings',0,3,120,1,1,'fnLeaveType();','','',166,0,103,1,1,0,NULL,'إعدادات نوع الإجازة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Letter Template',0,3,196,1,6,'fnDownloadLetterTemplate();',NULL,NULL,50,0,424,1,1,0,NULL,'نموذج خطاب');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Library',0,2,80,1,1,'',NULL,NULL,5,0,0,1,1,0,NULL,'المكتبة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Loan Home',0,2,178,1,4,'',NULL,NULL,11,0,0,1,1,0,NULL,'السلف الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Loan Home',0,3,179,1,1,'fnLoan();',NULL,NULL,178,0,405,1,1,0,NULL,'قائمة السلف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Lookup Master',0,3,215,1,9,'fnManageOrgStructLkpMaster();',NULL,NULL,12,0,470,1,1,0,NULL,'Lookup Master');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('LOP Adjustment',0,3,256,1,4,'fnLOPadjustment();','','',173,0,569,1,1,1,'1','LOP Adjustment');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('LOP Component',0,3,177,1,3,'fnLOPComponent();',NULL,NULL,173,0,390,1,1,0,NULL,'LOP Component');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Approval',0,3,253,1,5,'fnManageApproval();',NULL,NULL,81,0,558,1,1,0,NULL,'Manage Approval');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Assessment',10000,3,74,1,4,'fnManageAssessment();',NULL,NULL,163,0,258,1,1,0,NULL,'إدارة التقييم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Employee Movement',30000,3,63,1,1,'fnManagePromotion();',NULL,NULL,52,0,463,1,1,0,NULL,'إدارة الترقيات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Onboarding',20000,3,47,1,2,'fnManageOnboardingList();','','',34,0,274,1,1,0,NULL,'إدارة التأهيل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Openings',20000,3,38,1,5,'fnOpeningList();',NULL,NULL,33,0,32,1,1,0,NULL,'إدارة  الافتتاحات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Overtime',0,3,140,1,5,'fnOTRequestTrack();',NULL,NULL,134,0,347,1,1,0,NULL,'إدارة الوقت الإضافي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Overtime Proposal',0,3,210,1,11,'fnOverTimeProposalRequest();',NULL,NULL,134,0,452,1,1,0,NULL,'إدارة مقترحات العمل الإضافي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Overtime Proposal- HR',0,3,212,1,12,'fnOverTimeProposalRequestHR();',NULL,NULL,134,0,460,1,1,0,NULL,'إدارة مقترحات العمل الإضافي - الموارد البشرية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Resources',0,3,28,1,1,'fnManageResource();',NULL,NULL,13,0,342,1,1,0,NULL,'إدارة الموارد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Reviews',0,3,92,1,1,'fnManagePerformance()',NULL,NULL,81,0,23,1,1,0,NULL,'إدارة المراجعات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Schedules',0,3,143,1,8,'fnManageSchedules();',NULL,NULL,134,0,205,1,1,0,NULL,'إدارة  الجداول الأخرى');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Separation',0,3,69,1,4,'fnSeparationProcess();',NULL,NULL,54,0,240,1,1,0,NULL,'إدارة الفصل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Shift Change',0,3,225,1,17,'fnShiftChangeRequest();',NULL,NULL,134,0,487,1,1,0,NULL,'Manage Shift Change');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Shift Pattern',0,3,226,1,18,'fnManageShiftPattern();','','',134,0,488,1,1,0,NULL,'Manage Shift Pattern');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Timesheet Requests',0,3,147,1,12,'fnManageTimesheet();',NULL,NULL,135,0,328,1,1,0,NULL,'إدارة طلبات الجداول الزمنية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manage Your Buddies',20000,3,48,1,3,'fnManageBuddyList();','','',34,0,276,1,1,0,NULL,'إدارة زملائك');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Manual Year End Process',0,3,234,1,14,'fnManualYearEndProcess();','','',167,0,503,1,1,0,NULL,'Manual Year End Process');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,

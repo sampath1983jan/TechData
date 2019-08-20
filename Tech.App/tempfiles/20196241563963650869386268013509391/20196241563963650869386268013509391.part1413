@@ -1,0 +1,652 @@
+','2019-02-06 10:41:14',2);
+COMMIT;
+/*!40000 ALTER TABLE `rm_project_attachments` ENABLE KEYS */;
+
+-- 
+-- Definition of rm_project_request
+-- 
+
+CREATE TABLE IF NOT EXISTS `rm_project_request` (
+  `ClientID` int(11) NOT NULL,
+  `RequestID` int(11) NOT NULL,
+  `ProjectClientID` int(11) NOT NULL DEFAULT '0',
+  `RequestedBy` int(11) NOT NULL DEFAULT '0',
+  `ProjectName` varchar(255) DEFAULT NULL,
+  `ProjectStartDate` datetime DEFAULT NULL,
+  `ProjectEndDate` datetime DEFAULT NULL,
+  `TotalBudgetedHours` int(11) DEFAULT NULL,
+  `ProjectOverview` text,
+  `Category` tinyint(4) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table rm_project_request
+-- 
+
+/*!40000 ALTER TABLE `rm_project_request` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6067,17,90,'g','2017-03-01 00:00:00','2017-04-30 00:00:00',550,'nmgvnfg gf fg fgh gf hfg fg hgf fg hgf',NULL,'2017-02-09 23:10:37',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6586,78,90,'Test proje - 2018 May','2017-01-01 00:00:00','2017-12-31 00:00:00',123,'ok',NULL,'2017-05-19 10:39:06',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6589,50,90,'PRooo','2017-05-15 00:00:00','2017-05-26 00:00:00',100,'dfdsgrd  gerry5rtrytry',NULL,'2017-05-22 13:32:31',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6590,92,90,'Project Request Form-123','2017-05-15 00:00:00','2017-05-26 00:00:00',100,'safreyv6 7i87i879i8i i7yi7yi7',NULL,'2017-05-22 14:34:46',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6591,93,90,'Project Request FormProject Request Form111','2017-05-15 00:00:00','2017-05-26 00:00:00',100,'g  g ytftfghtf yuytuytu6hbyt yt uytuyuytuyu',NULL,'2017-05-22 14:38:38',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6592,17,90,'rttrtrt','2017-05-01 00:00:00','2017-05-31 00:00:00',100,NULL,NULL,'2017-05-23 09:30:04',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6593,17,90,'Murari 312','2017-05-01 00:00:00','2017-05-31 00:00:00',10,'test',NULL,'2017-05-23 13:26:20',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6598,17,90,'uyuyhyu','2017-05-01 00:00:00','2017-05-31 00:00:00',67868,'6787686',NULL,'2017-05-26 09:46:05',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6599,1,90,'yiyuiyui','2017-05-03 00:00:00','2017-05-24 00:00:00',78,'uiyuiyi',NULL,'2017-05-26 09:53:40',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6600,17,90,'yuiyi','2017-05-01 00:00:00','2017-05-31 00:00:00',789,'yiyiyi',NULL,'2017-05-26 09:59:37',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6631,17,90,'fhgh','2018-06-06 00:00:00','2017-06-01 00:00:00',6,'jhjhjhj',NULL,'2017-06-02 18:22:47',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6632,29,90,'hhkhjk','2022-06-02 00:00:00','2017-06-13 00:00:00',7,'lkl',NULL,'2017-06-02 18:27:22',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6633,33,90,'ghfgh','2019-06-06 00:00:00','2017-06-07 00:00:00',8,NULL,NULL,'2017-06-02 18:34:35',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6634,39,90,'kjk','2031-06-11 00:00:00','2017-06-07 00:00:00',3,NULL,NULL,'2017-06-02 18:36:51',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6635,31,90,'kjhkj','2023-06-08 00:00:00','2017-06-15 00:00:00',5,NULL,NULL,'2017-06-02 18:45:19',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6638,17,90,'mhjhj','2027-06-22 00:00:00','2017-06-15 00:00:00',20,NULL,NULL,'2017-06-05 10:03:01',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6642,29,90,'knmbmn','2017-06-10 00:00:00','2017-06-06 00:00:00',8,NULL,NULL,'2017-06-05 11:09:23',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6643,33,90,'jhh','2017-06-10 00:00:00','2017-06-01 00:00:00',6,NULL,NULL,'2017-06-05 11:19:48',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6647,35,90,'oppo','2017-06-30 00:00:00','2017-06-01 00:00:00',8,NULL,NULL,'2017-06-05 11:37:42',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6651,35,90,'khjkjk','2017-06-06 00:00:00','2017-06-06 00:00:00',5,NULL,NULL,'2017-06-05 14:23:53',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6660,17,90,'lklklkl','2018-06-05 00:00:00','2017-06-13 00:00:00',7,'klkl',NULL,'2017-06-06 09:49:12',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6662,32,90,'aaaa','2017-06-01 00:00:00','2017-06-05 00:00:00',8,'klkjl',NULL,'2017-06-06 09:55:12',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6673,35,90,'okoko','2017-06-01 00:00:00','2017-06-01 00:00:00',8,NULL,NULL,'2017-06-07 09:52:22',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6770,17,90,'gdgdf df','2017-06-01 00:00:00','2017-06-30 00:00:00',10,'yhjgjh',2,'2017-06-28 19:11:32',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6771,28,90,'sfdfdf','2017-06-22 00:00:00','2017-06-30 00:00:00',5,'uyu',2,'2017-06-28 19:13:55',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6772,29,90,'ytuyu','2017-06-29 00:00:00','2017-06-30 00:00:00',78,'kjkj',1,'2017-06-28 19:19:09',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6773,37,90,'testcategory','2017-06-29 00:00:00','2017-06-30 00:00:00',8,'testc',1,'2017-06-29 10:21:30',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6774,31,90,'yuyu','2017-06-29 00:00:00','2017-06-30 00:00:00',8,'iiii',-1,'2017-06-29 11:28:09',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6775,17,90,'jkhjk','2017-06-02 00:00:00','2017-06-30 00:00:00',87,'ikjk',1,'2017-06-29 11:44:58',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6776,27,90,'ghgfh','2017-06-29 00:00:00','2017-06-30 00:00:00',6,'hgjhj',2,'2017-06-29 11:56:10',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6777,34,90,'kjkj','2017-06-03 00:00:00','2017-06-13 00:00:00',6,'hjhj',2,'2017-06-29 11:58:20',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6778,27,90,'jhkhk','2017-06-28 00:00:00','2017-06-30 00:00:00',7,'jhkjk',1,'2017-06-29 13:08:43',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6779,28,90,'hjhj','2017-06-01 00:00:00','2017-06-13 00:00:00',6,'hgkj',1,'2017-06-29 13:11:02',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6780,37,90,'hgfh','2017-06-15 00:00:00','2017-06-30 00:00:00',7,'kjhk',2,'2017-06-29 13:16:55',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6781,36,90,'fhgfh','2017-06-08 00:00:00','2017-06-21 00:00:00',8,'hgfh',2,'2017-06-29 13:18:40',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6782,28,90,'hjkhjk','2017-06-08 00:00:00','2017-06-21 00:00:00',79,'jhlk',2,'2017-06-29 13:36:03',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6783,17,90,'hrthr','2017-06-01 00:00:00','2017-06-01 00:00:00',NULL,NULL,1,'2017-06-29 13:40:20',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6784,1,90,'dfgdfgf','2017-06-01 00:00:00','2017-06-01 00:00:00',NULL,NULL,1,'2017-06-29 13:43:05',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6785,1,90,'dfgdfg','2017-06-01 00:00:00','2017-06-02 00:00:00',NULL,NULL,1,'2017-06-29 13:47:07',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6786,17,90,'ghghf','2017-06-15 00:00:00','2017-06-21 00:00:00',7,'jkjhk',2,'2017-06-29 14:52:53',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6788,33,90,'jhkhjk','2017-06-22 00:00:00','2017-06-28 00:00:00',8,'jklkjl',2,'2017-06-29 15:13:03',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6789,38,90,'dgdg','2017-06-08 00:00:00','2017-06-28 00:00:00',8,'teetete',1,'2017-06-29 15:42:07',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6790,17,90,'hjhjhj','2017-07-04 00:00:00','2017-07-20 00:00:00',7,'hjhjhj',2,'2017-07-03 10:19:17',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6805,17,90,'Silambu-12345','2017-07-05 00:00:00','2017-07-26 00:00:00',10000,'Silambu',1,'2017-07-05 18:22:49',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,6808,17,90,'Dhandapani','2017-07-06 00:00:00','2017-07-06 00:00:00',78978,NULL,1,'2017-07-06 11:58:31',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,8572,1,90,'Test Project','2017-12-01 00:00:00','2017-12-31 00:00:00',NULL,NULL,1,'2017-12-22 15:05:49',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,8573,17,90,'Sample Test Project','2017-12-01 00:00:00','2017-12-31 00:00:00',100,NULL,1,'2017-12-26 11:54:45',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,8574,38,90,'Sample','2017-01-01 00:00:00','2017-12-31 00:00:00',1000,NULL,1,'2017-12-26 12:20:34',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,9288,31,5128,'gfg','2018-03-01 00:00:00','2018-03-31 00:00:00',NULL,NULL,2,'2018-03-22 17:53:09',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,9375,35,153,'sfx','2018-03-18 00:00:00','2018-03-20 00:00:00',48,'fgdg',1,'2018-03-28 15:42:30',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,9378,35,90,'xzg','2018-03-18 00:00:00','2018-03-20 00:00:00',56,'dgt',1,'2018-03-28 17:11:54',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,9379,17,90,'ytedg','2018-03-18 00:00:00','2018-03-21 00:00:00',65,'rg',1,'2018-03-28 17:19:49',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,11515,99,90,'King Kaali Project','2019-02-01 00:00:00','2019-02-28 00:00:00',123,NULL,1,'2019-02-06 17:59:09',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,11516,99,90,'Project Project','2019-02-01 00:00:00','2019-02-10 00:00:00',NULL,NULL,2,'2019-02-06 18:08:48',2);
+INSERT INTO `rm_project_request`(`ClientID`,`RequestID`,`ProjectClientID`,`RequestedBy`,`ProjectName`,`ProjectStartDate`,`ProjectEndDate`,`TotalBudgetedHours`,`ProjectOverview`,`Category`,`LastUPD`,`LastActionBy`) VALUES
+(2,11925,17,90,'gsfdgfd','2019-04-01 00:00:00','2019-04-10 00:00:00',NULL,NULL,1,'2019-04-01 18:23:11',2);
+COMMIT;
+/*!40000 ALTER TABLE `rm_project_request` ENABLE KEYS */;
+
+-- 
+-- Definition of rm_project_weblinks
+-- 
+
+CREATE TABLE IF NOT EXISTS `rm_project_weblinks` (
+  `ClientID` int(11) NOT NULL,
+  `LinkID` int(11) NOT NULL AUTO_INCREMENT,
+  `RequestID` int(11) NOT NULL DEFAULT '0',
+  `ProjectID` int(11) NOT NULL DEFAULT '0',
+  `URL` text NOT NULL,
+  `Title` text,
+  `Description` text,
+  `SnapShotName` varchar(255) DEFAULT NULL,
+  `SnapShotEncodeName` text,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT NULL,
+  PRIMARY KEY (`LinkID`,`ClientID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table rm_project_weblinks
+-- 
+
+/*!40000 ALTER TABLE `rm_project_weblinks` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,1,5913,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','e725463e-d10a-4443-a22a-40d29f459c51.jpg','2017-01-12 10:26:37',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,2,5913,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','83cab237-faa4-4d6f-80e5-4a7249e1a6ca.jpg','2017-01-12 10:26:46',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,3,5914,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','914a8574-2476-46d3-a7df-e0071bb3f5cd.jpg','2017-01-12 10:44:26',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,4,5914,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','05dd3b8b-7331-407a-99bb-77955542553e.jpg','2017-01-12 10:44:26',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,9,5918,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','4f27f5bc-cbef-40d2-ae4c-533eca6eb1b4.jpg','2017-01-12 12:42:58',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,5921,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','641ef067-3b2e-4cf9-b907-641ed3facf76.jpg','2017-01-12 13:16:29',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5921,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','91851af6-8f3d-4358-b9ba-6217ebe9d5a2.jpg','2017-01-12 13:16:29',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,13,5922,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','54cda298-5b39-427f-9995-d66a4ee9f9cf.jpg','2017-01-12 14:11:24',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,16,5945,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','98b6e42e-ffad-42c4-bb2d-d7232eb3f1a2.jpg','2017-01-19 09:52:24',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,20,5949,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','20715a4c-dbe6-4d38-8435-80a36eddfab2.jpg','2017-01-19 16:03:56',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,35,5967,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','76965ffb-2842-4f56-b8ec-a43556b4099f.jpg','2017-01-20 16:30:40',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,40,5974,119,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','de4b0574-378c-4233-b9f1-dea5435caf45.jpg','2017-01-23 10:26:30',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,41,5974,119,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','9887800e-ea56-40a8-963f-8cd5081731d2.jpg','2017-01-23 10:26:30',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,42,5966,121,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','412557af-e1c4-4761-b612-6bcb26be80f5.jpg','2017-01-23 10:37:50',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,43,5966,121,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','dee433a0-9af2-47f2-8117-8de37eb09e8d.jpg','2017-01-23 10:37:50',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,44,5924,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','a5402ece-9abb-4365-a339-e88ab3b58c56.jpg','2017-02-03 10:09:05',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,45,5924,0,'http://dev.mysql.com/doc/refman/5.0/en/mysql-tips.html','MySQL :: MySQL 5.7 Reference Manual :: 5.5.1.6 mysql Tips','','favicons','924a0354-b787-42ae-905b-9ba0c78a054b.jpg','2017-02-03 10:09:05',2);
+INSERT INTO `rm_project_weblinks`(`ClientID`,`LinkID`,`RequestID`,`ProjectID`,`URL`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`,`LastActionBy`) VALUES
+(2,46,6067,0,'https://www.dropbox.com/?landing=cntl','Dropbox','','favicons','0bb7084a-0e62-4679-9c39-54453395c3ce.jpg','2017-02-09 23:10:37',2);
+COMMIT;
+/*!40000 ALTER TABLE `rm_project_weblinks` ENABLE KEYS */;
+
+-- 
+-- Definition of rm_resource_effort
+-- 
+
+CREATE TABLE IF NOT EXISTS `rm_resource_effort` (
+  `ResourceEffortID` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientID` int(11) NOT NULL,
+  `ProjectID` int(11) NOT NULL,
+  `Phase` int(11) DEFAULT NULL,
+  `Rag` int(11) DEFAULT NULL,
+  `DeliverytoPT` datetime DEFAULT NULL,
+  `DeliverytoUAT` datetime DEFAULT NULL,
+  `DeliverytoRevisedUAT` datetime DEFAULT NULL,
+  `DeliverytoQA` datetime DEFAULT NULL,
+  `PO` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ResourceEffortID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table rm_resource_effort
+-- 
+
+/*!40000 ALTER TABLE `rm_resource_effort` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(4,2,52,2,2,'2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,1,'2017-10-23 16:40:10',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(5,2,223,2,2,'2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,2,'2017-07-04 08:45:16',4850);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(6,2,224,1,1,'2017-07-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,1,'2017-07-04 09:42:20',4850);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(7,2,30,1,2,'2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,1,'2017-07-13 18:47:58',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(8,2,33,1,3,'2017-06-01 00:00:00','2017-08-01 00:00:00','2017-08-01 00:00:00','2017-08-01 00:00:00',2,'2017-08-09 17:36:46',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(9,2,225,1,1,NULL,NULL,NULL,NULL,1,'2017-07-13 15:24:38',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(10,2,226,1,2,'2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,2,'2017-07-04 11:31:12',4850);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(11,2,59,2,3,'2017-05-01 00:00:00','2017-05-31 00:00:00',NULL,NULL,2,'2017-07-05 16:16:27',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(12,2,85,1,1,'2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,1,'2017-07-14 14:53:26',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(13,2,229,1,1,NULL,NULL,NULL,NULL,1,'2017-07-13 15:43:28',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(14,2,127,1,1,NULL,NULL,NULL,NULL,1,'2017-07-13 17:33:02',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(15,2,238,1,1,NULL,NULL,NULL,NULL,1,'2017-08-18 10:23:26',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(16,2,244,2,3,'2017-08-17 00:00:00','2017-08-27 00:00:00','2017-08-31 00:00:00','2017-08-07 00:00:00',1,'2017-08-18 14:57:20',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(17,2,246,1,1,NULL,NULL,NULL,NULL,1,'2017-08-21 13:16:25',90);
+INSERT INTO `rm_resource_effort`(`ResourceEffortID`,`ClientID`,`ProjectID`,`Phase`,`Rag`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`) VALUES
+(18,2,228,1,1,NULL,NULL,NULL,NULL,1,'2017-10-23 16:15:10',90);
+COMMIT;
+/*!40000 ALTER TABLE `rm_resource_effort` ENABLE KEYS */;
+
+-- 
+-- Definition of rm_resource_effort_audit
+-- 
+
+CREATE TABLE IF NOT EXISTS `rm_resource_effort_audit` (
+  `ResourceEffortAuditID` int(11) NOT NULL,
+  `ClientID` int(11) NOT NULL,
+  `ProjectID` int(11) NOT NULL,
+  `ProjectIDText` varchar(255) DEFAULT NULL,
+  `Phase` varchar(255) DEFAULT NULL,
+  `Rag` varchar(255) DEFAULT NULL,
+  `ProjectStatus` varchar(255) DEFAULT NULL,
+  `ProjectEndDate` datetime DEFAULT NULL,
+  `DeliverytoPT` datetime DEFAULT NULL,
+  `DeliverytoUAT` datetime DEFAULT NULL,
+  `DeliverytoRevisedUAT` datetime DEFAULT NULL,
+  `DeliverytoQA` datetime DEFAULT NULL,
+  `PO` varchar(255) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT NULL,
+  `LastActionByEmpNo` varchar(255) DEFAULT NULL,
+  `LastActionByName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ResourceEffortAuditID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table rm_resource_effort_audit
+-- 
+
+/*!40000 ALTER TABLE `rm_resource_effort_audit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(22,2,52,'7','Development','1','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-06-29 15:14:48',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(23,2,52,'7','Development','1','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-06-29 15:15:26',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(24,2,52,'7','Development','1','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-03 11:44:36',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(25,2,52,'7','Development','3','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-03 11:49:00',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(26,2,52,'7','Development','3','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-03 11:49:57',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(27,2,52,'7','Development','3','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-03 11:50:52',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(28,2,52,'7','Development','2','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-03 17:36:39',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(29,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-03 18:48:40',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(30,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-03 18:49:30',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(31,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-03 18:50:30',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(32,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-03 18:52:02',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(33,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-04 08:38:20',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(34,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-04 08:39:12',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(35,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-04 08:39:18',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(36,2,223,'Pro0000001','Development','1','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-04 08:40:14',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(37,2,223,'Pro0000001','Support','2','Active','2017-07-31 00:00:00','2017-08-31 00:00:00','2017-07-31 00:00:00',NULL,NULL,'No','2017-07-04 08:45:16',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(38,2,224,'HRMS','Development','1','Active','2017-07-31 00:00:00','2017-07-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-04 09:41:57',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(39,2,224,'HRMS','Development','1','Active','2017-07-31 00:00:00','2017-07-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'Yes','2017-07-04 09:42:20',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(40,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-04 10:03:07',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(41,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00','2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,'Yes','2017-07-04 10:04:02',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(42,2,52,'7','Development','2','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-04 10:08:51',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(43,2,33,'Test','Development','1','Active','2017-07-31 00:00:00','2017-07-05 00:00:00','2017-07-26 00:00:00',NULL,NULL,'Yes','2017-07-04 10:45:52',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(44,2,33,'Test','Development','1','Active','2017-07-31 00:00:00','2017-07-05 00:00:00','2017-07-26 00:00:00',NULL,NULL,'Yes','2017-07-04 10:52:38',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(45,2,33,'Test','Development','1','Active','2017-07-31 00:00:00','2017-07-05 00:00:00','2017-07-26 00:00:00',NULL,NULL,'Yes','2017-07-04 10:52:38',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(46,2,33,'Test','Development','1','Active','2017-07-31 00:00:00','2017-07-05 00:00:00','2017-07-26 00:00:00',NULL,NULL,'Yes','2017-07-04 11:00:34',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(47,2,33,'Test','Development','1','Active','2017-07-31 00:00:00','2017-07-05 00:00:00','2017-07-26 00:00:00',NULL,NULL,'Yes','2017-07-04 11:02:35',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(48,2,52,'7','Development','2','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-04 11:04:41',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(49,2,52,'7','Development','2','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-04 11:06:05',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(50,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00','2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,'Yes','2017-07-04 11:08:40',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(51,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00','2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,'Yes','2017-07-04 11:10:32',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(52,2,225,'tt','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-04 11:13:08',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(53,2,226,'TalentOZ001','Development','1','Active','2017-07-31 00:00:00','2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,'No','2017-07-04 11:28:16',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(54,2,226,'TalentOZ001','Development','1','Active','2017-07-31 00:00:00','2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,'No','2017-07-04 11:29:00',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(55,2,226,'TalentOZ001','Development','1','Active','2017-07-31 00:00:00','2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,'No','2017-07-04 11:30:00',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(56,2,226,'TalentOZ001','Development','2','Active','2017-07-31 00:00:00','2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,'No','2017-07-04 11:30:32',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(57,2,226,'TalentOZ001','Development','2','Active','2017-07-31 00:00:00','2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,'No','2017-07-04 11:31:03',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(58,2,226,'TalentOZ001','Development','2','Active','2017-07-31 00:00:00','2017-07-25 00:00:00','2017-07-28 00:00:00',NULL,NULL,'No','2017-07-04 11:31:12',4850,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(59,2,59,'','Support','2','Active',NULL,'2017-07-06 00:00:00','2017-07-30 00:00:00',NULL,NULL,'Yes','2017-07-05 16:14:47',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(60,2,59,'','Development','1','Active',NULL,'2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'No','2017-07-05 16:15:28',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(61,2,59,'','Support','3','Active',NULL,'2017-05-01 00:00:00','2017-05-31 00:00:00',NULL,NULL,'No','2017-07-05 16:16:27',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(62,2,33,'Test','Development','3','Active','2017-07-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'No','2017-07-05 18:05:48',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(63,2,52,'7','Development','2','Active','2017-02-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-05 19:05:36',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(64,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00','2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,'Yes','2017-07-06 09:35:05',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(65,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-06 13:55:02',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(66,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-06 13:55:06',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(67,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-06 14:02:09',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(68,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-06 14:04:41',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(69,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-06 14:06:03',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(70,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-07 14:17:26',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(71,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-07 14:18:14',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(72,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:40:47',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(73,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:40:54',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(74,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:41:00',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(75,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:47:33',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(76,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:51:21',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(77,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:51:28',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(78,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:52:32',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(80,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:55:04',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(81,2,85,'145','','0','Active','2017-02-28 00:00:00',NULL,NULL,NULL,NULL,'','2017-07-07 14:57:14',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(82,2,52,'7','Development','2','Active','2017-09-28 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-07 16:12:54',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(83,2,52,'7','Development','2','Active','2017-09-28 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-07 16:15:25',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(84,2,85,'145','','0','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'','2017-07-07 16:16:00',155,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(85,2,225,'tt','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-13 10:59:11',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(86,2,225,'tt','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-13 11:06:08',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(87,2,225,'tt','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-13 11:06:59',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(88,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-13 15:10:17',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(89,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-13 15:13:44',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(90,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-13 15:18:48',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(91,2,225,'tt','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-13 15:24:38',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(92,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-13 15:34:05',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(93,2,229,'6756756','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-13 15:43:28',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(94,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-13 16:41:03',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(95,2,127,'Project 154','Development','1','Active','2017-01-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-07-13 17:33:02',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(96,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-13 18:34:57',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(97,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00','2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,'Yes','2017-07-13 18:46:49',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(98,2,30,'rrm','Development','2','Active','2017-11-12 00:00:00','2017-07-04 00:00:00','2017-07-20 00:00:00',NULL,NULL,'Yes','2017-07-13 18:47:59',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(99,2,85,'145','Development','1','Active','2017-02-28 00:00:00','2017-07-07 00:00:00','2017-07-27 00:00:00',NULL,NULL,'Yes','2017-07-14 14:53:26',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(100,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'No','2017-07-21 15:15:54',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(101,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'No','2017-07-21 15:26:46',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(102,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'No','2017-07-21 15:30:10',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(103,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00',NULL,NULL,'No','2017-07-21 15:34:49',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(104,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00','2017-08-01 00:00:00',NULL,'No','2017-07-21 15:44:22',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(105,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00','2017-08-01 00:00:00',NULL,'No','2017-07-26 10:50:57',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(106,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00','2017-08-01 00:00:00','2017-07-26 00:00:00','No','2017-07-26 11:01:15',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(107,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-27 15:21:22',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(108,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-07-27 15:21:38',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(109,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-01 00:00:00','2017-07-31 00:00:00','2017-08-01 00:00:00','2017-07-26 00:00:00','No','2017-07-31 19:03:38',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(110,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-05-03 00:00:00','2017-07-31 00:00:00','2017-08-01 00:00:00','2017-07-26 00:00:00','No','2017-07-31 19:03:44',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(111,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-06-01 00:00:00','2017-08-01 00:00:00','2017-08-01 00:00:00','2017-08-01 00:00:00','No','2017-07-31 19:04:11',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(112,2,33,'Test','Development','3','Active','2017-12-31 00:00:00','2017-06-01 00:00:00','2017-08-01 00:00:00','2017-08-01 00:00:00','2017-08-01 00:00:00','No','2017-08-09 17:36:47',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(113,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-17 15:39:30',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(114,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-17 15:39:44',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(115,2,238,'PROJ001','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 10:20:43',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(116,2,238,'PROJ001','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 10:23:26',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(117,2,244,'PROJ001','Support','3','Active','2018-08-31 00:00:00','2017-08-17 00:00:00','2017-08-27 00:00:00','2017-08-31 00:00:00','2017-08-07 00:00:00','Yes','2017-08-18 14:48:25',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(118,2,244,'PROJ001','Support','3','Active','2018-08-31 00:00:00','2017-08-17 00:00:00','2017-08-27 00:00:00','2017-08-31 00:00:00','2017-08-07 00:00:00','Yes','2017-08-18 14:51:30',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(119,2,244,'PROJ001','Support','3','Active','2018-08-31 00:00:00','2017-08-17 00:00:00','2017-08-27 00:00:00','2017-08-31 00:00:00','2017-08-07 00:00:00','Yes','2017-08-18 14:55:11',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(120,2,244,'PROJ001','Support','3','Active','2018-08-31 00:00:00','2017-08-17 00:00:00','2017-08-27 00:00:00','2017-08-31 00:00:00','2017-08-07 00:00:00','Yes','2017-08-18 14:57:21',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(121,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:04:39',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(122,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:04:50',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(123,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:04:54',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(124,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:04:59',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(125,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:05:08',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(126,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:05:13',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(127,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:05:17',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(128,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:12:17',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(129,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-18 15:12:18',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(130,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-21 10:40:06',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(131,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-21 13:15:48',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(132,2,246,'PROJ003','Development','1','Active',NULL,NULL,NULL,NULL,NULL,'Yes','2017-08-21 13:16:25',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(133,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-22 09:29:15',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(134,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-22 09:30:37',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(135,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-23 09:35:31',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(136,2,52,'7','Development','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-23 09:53:46',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(137,2,52,'7','Support','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-08-29 13:26:16',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(138,2,52,'7','Support','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-10-23 12:17:40',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(139,2,52,'7','Support','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-10-23 12:19:36',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(140,2,228,'EF july 7','Development','1','Active','2017-07-31 00:00:00',NULL,NULL,NULL,NULL,'Yes','2017-10-23 16:15:11',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(141,2,52,'7','Support','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-10-23 16:18:18',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(142,2,52,'7','Support','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-10-23 16:39:01',90,NULL,NULL);
+INSERT INTO `rm_resource_effort_audit`(`ResourceEffortAuditID`,`ClientID`,`ProjectID`,`ProjectIDText`,`Phase`,`Rag`,`ProjectStatus`,`ProjectEndDate`,`DeliverytoPT`,`DeliverytoUAT`,`DeliverytoRevisedUAT`,`DeliverytoQA`,`PO`,`LastUPD`,`LastActionBy`,`LastActionByEmpNo`,`LastActionByName`) VALUES
+(143,2,52,'7','Support','2','Active','2017-09-28 00:00:00','2017-06-01 00:00:00','2017-06-30 00:00:00',NULL,NULL,'Yes','2017-10-23 16:40:12',90,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `rm_resource_effort_audit` ENABLE KEYS */;
+
+-- 
+-- Definition of rm_resource_effort_owners_audit
+-- 
+
+CREATE TABLE IF NOT EXISTS `rm_resource_effort_owners_audit` (
+  `ResourceEffortAuditID` int(11) NOT NULL AUTO_INCREMENT,
+  `AuditID` int(11) DEFAULT NULL,
+  `ClientID` int(11) DEFAULT NULL,
+  `ProjectID` int(11) DEFAULT NULL,
+  `OwnerID` int(11) DEFAULT NULL,
+  `OwnerEmpNo` varchar(255) DEFAULT NULL,
+  `OwnerName` varchar(255) DEFAULT NULL,
+  `OwnerPostion` varchar(255) DEFAULT NULL,
+  `OwnerDepartment` varchar(255) DEFAULT NULL,
+  `OwnerPhoto` varchar(255) DEFAULT NULL,
+  `OwnerBusinessUnit` varchar(255) DEFAULT NULL,
+  `OwnerWorkLocation` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ResourceEffortAuditID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table rm_resource_effort_owners_audit
+-- 
+
+/*!40000 ALTER TABLE `rm_resource_effort_owners_audit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(18,22,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(19,22,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(20,23,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(21,23,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(22,24,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(23,24,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(24,25,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(25,25,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(26,26,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(27,26,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(28,27,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(29,27,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(30,28,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(31,28,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(32,29,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(33,30,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(34,31,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(35,32,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(36,33,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(37,34,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(38,35,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(39,36,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(40,37,2,223,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(41,38,2,224,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(42,39,2,224,4850,'155','DhandapaniTAdmin','Software Engineer','Development','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(43,40,2,30,90,'SMR001','Dato palan','Director','Process Improvement','3b22ca25-83ba-403d-85d4-1b5f3994d950.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(44,41,2,30,90,'SMR001','Dato palan','Director','Process Improvement','3b22ca25-83ba-403d-85d4-1b5f3994d950.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(45,42,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(46,42,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(47,43,2,33,152,'16','Sampath kumar','Director','Process Improvement','20171141487061179391.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(48,43,2,33,539,'DASDF@@@@','34534554asD','','','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(49,44,2,33,152,'16','Sampath kumar','Director','Process Improvement','20171141487061179391.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(50,44,2,33,539,'DASDF@@@@','34534554asD','','','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(51,45,2,33,152,'16','Sampath kumar','Director','Process Improvement','20171141487061179391.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(52,45,2,33,539,'DASDF@@@@','34534554asD','','','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(53,46,2,33,152,'16','Sampath kumar','Director','Process Improvement','20171141487061179391.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(54,46,2,33,539,'DASDF@@@@','34534554asD','','','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(55,47,2,33,152,'16','Sampath kumar','Director','Process Improvement','20171141487061179391.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(56,47,2,33,539,'DASDF@@@@','34534554asD','','','',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(57,48,2,52,153,'17','C.Vinod Kumaar','Project Manager1','Documentation','20166291469770067653.JPG',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(58,48,2,52,165,'EMP74','Balaguru S','Developer','Development','2017211488357679651.jpg',NULL,'');
+INSERT INTO `rm_resource_effort_owners_audit`(`ResourceEffortAuditID`,`AuditID`,`ClientID`,`ProjectID`,`OwnerID`,`OwnerEmpNo`,`OwnerName`,`OwnerPostion`,`OwnerDepartment`,`OwnerPhoto`,`OwnerBusinessUnit`,`OwnerWorkLocation`) VALUES
+(59,49,2,52,153,'17','C.Vinod Kum

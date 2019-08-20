@@ -260,14 +260,14 @@ namespace Tech.Console
             //string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
 
-            //string program = @"p:pUserID=90; p:getfield=F_200115; d:data=getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030, F_200140, F_200115, F_200160, F_200200, F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID]:c with[c:PositionID equalto b:PositionID],[c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]), and[(a:UserID isequalto value:pUserID), (b:status isequalto value:1)]);d:result = getvalue(data, getfield)";
-            ////
+            string program = @"p:pUserID=90; p:getfield=F_200115; d:data=getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030, F_200140, F_200115, F_200160, F_200200, F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID]:c with[c:PositionID equalto b:PositionID],[c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]), and[(a:UserID isequalto value:pUserID), (b:status isequalto value:1)]);d:result = getvalue(data, getfield)";
+            //
 
-            //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
-            //QScriptStatement sq = new QScriptStatement(program, ev);
-            //var res = sq.Evaluation();
-            //System.Console.Write(res.result);
-            //System.Console.ReadLine();
+            EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+            QScriptStatement sq = new QScriptStatement(program, ev);
+            var res = sq.Evaluation();
+            System.Console.Write(res.result);
+            System.Console.ReadLine();
 
 
             //    // Setup employee collection

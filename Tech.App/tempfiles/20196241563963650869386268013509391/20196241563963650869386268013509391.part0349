@@ -1,0 +1,704 @@
+orCount`,`WebCheckinCount`,`AdjustmentCount`,`OverWritePastData`,`LastUPD`) VALUES
+(2,774,'2019-07-10 17:05:10',90,3,'Imported successfully','20196101562758449633115327903878691.xls','aa.xls','87289dfe-f30a-472b-9af0-5ee3e55eb1e5',4,4,0,0,0,0,'2019-07-10 17:10:20');
+INSERT INTO `lms_attendancereport`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`WebCheckinCount`,`AdjustmentCount`,`OverWritePastData`,`LastUPD`) VALUES
+(2,775,'2019-07-10 17:13:40',90,3,'Imported successfully','20196101562759017890579572755707971.xls','aa.xls','f7f67459-8d01-4a95-bab2-fbf8c906f689',4,4,0,0,0,0,'2019-07-10 17:13:56');
+INSERT INTO `lms_attendancereport`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`WebCheckinCount`,`AdjustmentCount`,`OverWritePastData`,`LastUPD`) VALUES
+(2,776,'2019-07-11 12:29:18',90,3,'Imported successfully','20196111562828356754383866459131591.xls','AttendanceSingleReader.xls','0570b80f-92a7-4e9f-aa0b-e7b650589180',3,3,0,0,0,0,'2019-07-11 12:31:01');
+INSERT INTO `lms_attendancereport`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`WebCheckinCount`,`AdjustmentCount`,`OverWritePastData`,`LastUPD`) VALUES
+(2,777,'2019-07-11 12:34:10',90,3,'Imported successfully','20196111562828649195605142639061581.xls','AttendanceSingleReader.xls','5255b1b4-1612-4c15-99cb-333cbe0cb123',3,3,0,0,0,0,'2019-07-11 12:34:16');
+INSERT INTO `lms_attendancereport`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`WebCheckinCount`,`AdjustmentCount`,`OverWritePastData`,`LastUPD`) VALUES
+(2,778,'2019-07-11 12:38:27',90,3,'Imported successfully','20196111562828906235293058855822931.xls','AttendanceSingleReader.xls','bb26d63d-eefe-4123-8493-7847e54b090f',3,3,0,0,0,0,'2019-07-11 12:39:12');
+INSERT INTO `lms_attendancereport`(`ClientID`,`ImportID`,`ImportOn`,`ImportBy`,`Status`,`StatusText`,`UploadFilePath`,`FileName`,`ErrorLogPath`,`TotalRecord`,`SuccessFullCount`,`ErrorCount`,`WebCheckinCount`,`AdjustmentCount`,`OverWritePastData`,`LastUPD`) VALUES
+(2,779,'2019-07-11 13:22:28',90,3,'Imported successfully','20196111562831546844134832854303401.xls','AttendanceSingleReader.xls','11230796-c6fd-4fce-863c-2fb0f99c8de4',3,3,0,0,0,0,'2019-07-11 13:22:51');
+COMMIT;
+/*!40000 ALTER TABLE `lms_attendancereport` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_audit_data
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_audit_data` (
+  `ClientID` int(10) NOT NULL DEFAULT '0',
+  `RequestID` int(10) NOT NULL DEFAULT '0',
+  `Remarks` text CHARACTER SET latin1,
+  `LeaveDays` decimal(12,2) NOT NULL,
+  `StartDate` datetime DEFAULT NULL,
+  `EndDate` datetime DEFAULT NULL,
+  `DayZone` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 
+-- Dumping data for table lms_audit_data
+-- 
+
+/*!40000 ALTER TABLE `lms_audit_data` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9223,'zxdf',-2.00,'2018-03-21 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9225,'gfdg',-2.00,'2018-03-19 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9409,'jh',-2.00,'2018-02-01 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9410,'fhf',-2.00,'2018-02-08 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9517,'t',-2.00,'2018-04-03 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9554,'dsad',-2.00,'2018-04-13 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9832,'ear',-2.50,'2018-05-22 00:00:00','2018-06-25 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9917,'ff',-2.00,'2018-04-03 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9924,'yi',1.00,'2018-06-06 00:00:00','2018-06-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9971,'iopssggggg',1.00,'2018-06-04 00:00:00','2018-06-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9974,'testcccccccddddd',7.00,'2018-07-17 00:00:00','2018-07-23 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,9988,'ghhjhk',4.00,'2018-07-09 00:00:00','2018-07-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10017,'test',1.00,'2018-06-29 00:00:00','2018-06-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10019,'Remarks111111',1.00,'2018-06-27 00:00:00','2018-06-27 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10020,'rrrr111s',1.00,'2018-06-27 00:00:00','2018-06-27 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10021,'rtest11',1.00,'2018-06-28 00:00:00','2018-06-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10022,'rtest111111',1.00,'2018-06-28 00:00:00','2018-06-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10023,'ssss',0.50,'2018-06-30 00:00:00','2018-06-30 00:00:00','Afternoon',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10025,'ghdhffghgfhgfhfghgfhfghgfhf',7.00,'2018-08-03 00:00:00','2018-08-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10061,'sdsds',2.00,'2018-07-07 00:00:00','2018-07-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10062,'dsd',1.00,'2018-06-29 00:00:00','2018-06-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10063,'bhgh',1.00,'2018-06-29 00:00:00','2018-06-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10064,'ghdhd',1.00,'2018-06-29 00:00:00','2018-06-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10065,'hgfh',2.00,'2018-07-07 00:00:00','2018-07-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10066,'gfg',2.00,'2018-07-14 00:00:00','2018-07-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10067,'gfdgd',2.00,'2018-07-14 00:00:00','2018-07-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10101,'Applied leave from Attendance Regularization',1.00,'2018-07-10 00:00:00','2018-07-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10102,'Applied leave from Attendance Regularization',1.00,'2018-07-11 00:00:00','2018-07-11 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10166,'fdaf',1.00,'2018-08-31 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10190,'test reason5',1.00,'2018-07-17 00:00:00','2018-07-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10196,'testr1',1.00,'2018-07-16 00:00:00','2018-07-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10197,'testremarks1',1.00,'2018-07-12 00:00:00','2018-07-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10198,'rem1',1.00,'2018-07-11 00:00:00','2018-07-11 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10204,'testrem1',1.00,'2018-07-10 00:00:00','2018-07-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10207,'test remarks',1.00,'2018-07-02 00:00:00','2018-07-02 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10208,'test remarks1',1.00,'2018-07-03 00:00:00','2018-07-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10209,'test remarks1',1.00,'2018-07-04 00:00:00','2018-07-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10216,'testrem1',1.00,'2018-06-15 00:00:00','2018-06-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10229,'test remarks',1.00,'2018-06-20 00:00:00','2018-06-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10237,'testr1',1.00,'2018-06-21 00:00:00','2018-06-21 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10238,'ttestrr1',1.00,'2018-06-22 00:00:00','2018-06-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10254,'Test RM1',1.00,'2018-06-25 00:00:00','2018-06-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10255,'test rm',1.00,'2018-06-26 00:00:00','2018-06-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10256,'test rm1',1.00,'2018-06-04 00:00:00','2018-06-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10257,'tst rm',1.00,'2018-06-05 00:00:00','2018-06-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10259,'test rem1',1.00,'2018-06-06 00:00:00','2018-06-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10311,'test',1.00,'2018-07-25 00:00:00','2018-07-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10312,'y',1.00,'2018-07-26 00:00:00','2018-07-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10313,'y',1.00,'2018-07-26 00:00:00','2018-07-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10314,'u',1.00,'2018-07-30 00:00:00','2018-07-30 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10315,'u',1.00,'2018-07-31 00:00:00','2018-07-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10319,'fhj',1.00,'2018-08-22 00:00:00','2018-08-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10320,'uo',1.00,'2018-08-23 00:00:00','2018-08-23 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10321,'test',1.00,'2018-08-23 00:00:00','2018-08-23 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10322,'yt',1.00,'2018-08-23 00:00:00','2018-08-23 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10323,'2de',1.00,'2018-08-02 00:00:00','2018-08-02 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10324,'re',1.00,'2018-07-05 00:00:00','2018-07-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10329,'test',1.00,'2018-08-20 00:00:00','2018-08-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10331,'yui',4.00,'2018-09-03 00:00:00','2018-09-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10332,'uio',2.00,'2018-08-13 00:00:00','2018-08-14 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10334,'test',3.00,'2018-09-17 00:00:00','2018-09-19 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10414,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10417,'sdfsfd',1.00,'2018-08-04 00:00:00','2018-08-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10418,'dfgdfg',1.00,'2018-08-05 00:00:00','2018-08-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10420,'yui',2.00,'2018-08-20 00:00:00','2018-08-21 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10421,'xf',0.50,'2018-08-03 00:00:00','2018-08-03 00:00:00','Afternoon',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10444,'test',31.00,'2018-08-01 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10445,'test lll',23.00,'2018-08-01 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10446,'ok',31.00,'2018-08-01 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10447,'ok',15.50,'2018-08-01 00:00:00','2018-08-31 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10448,'pl',11.50,'2018-08-01 00:00:00','2018-08-31 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10449,'ok',30.00,'2018-08-01 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10450,'ok',27.00,'2018-08-01 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10451,'ghjghj',25.00,'2018-08-01 00:00:00','2018-08-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10452,'tyrtygfddfgfd',22.00,'2018-08-01 00:00:00','2018-08-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10488,'sadsd',1.00,'2018-09-10 00:00:00','2018-09-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10489,'sfdd',0.50,'2018-09-11 00:00:00','2018-09-11 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10508,'test fffff',0.50,'2018-09-05 00:00:00','2018-09-05 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10514,'dsad',0.50,'2018-09-11 00:00:00','2018-09-11 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10680,'sfssdfsd sd sdf  sdf sf',18.00,'2018-10-01 00:00:00','2018-10-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10681,'f sdfdsfs',17.00,'2018-10-01 00:00:00','2018-10-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10682,'sf sfsdsdf',25.00,'2018-10-01 00:00:00','2018-10-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10683,'33',24.00,'2018-10-01 00:00:00','2018-10-24 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10684,'test',16.00,'2018-10-01 00:00:00','2018-10-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10728,'i',1.00,'2018-11-13 00:00:00','2018-11-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10737,'sfdd',0.50,'2018-09-11 00:00:00','2018-09-11 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10738,'.',1.00,'2018-11-15 00:00:00','2018-11-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10739,'.',1.00,'2018-11-15 00:00:00','2018-11-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10740,'.',1.00,'2018-11-16 00:00:00','2018-11-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10741,'TEST',1.00,'2018-11-01 00:00:00','2018-11-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10744,'TEST',1.00,'2018-11-05 00:00:00','2018-11-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10745,'TEST',1.00,'2018-11-05 00:00:00','2018-11-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10746,'TEST',1.00,'2018-11-06 00:00:00','2018-11-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10747,'TEST',1.00,'2018-11-01 00:00:00','2018-11-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10748,'TEST',1.00,'2018-11-05 00:00:00','2018-11-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10749,'TEST',1.00,'2018-11-06 00:00:00','2018-11-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10750,'TEST',1.00,'2018-11-19 00:00:00','2018-11-19 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10751,'TEST',1.00,'2018-11-19 00:00:00','2018-11-19 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10752,'t',1.00,'2018-11-20 00:00:00','2018-11-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10753,'t',1.00,'2018-11-20 00:00:00','2018-11-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10754,'t',1.00,'2018-11-20 00:00:00','2018-11-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10755,'TEST',1.00,'2018-11-06 00:00:00','2018-11-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10756,'b',1.00,'2018-11-26 00:00:00','2018-11-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10757,'b',1.00,'2018-11-26 00:00:00','2018-11-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10758,'b',1.00,'2018-11-26 00:00:00','2018-11-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10759,'kjhkn',1.00,'2018-11-29 00:00:00','2018-11-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10760,'kjhkn',1.00,'2018-11-29 00:00:00','2018-11-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10761,'.',1.00,'2018-12-06 00:00:00','2018-12-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10762,'TEST',1.00,'2018-11-13 00:00:00','2018-11-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10763,'TEST',1.00,'2018-11-13 00:00:00','2018-11-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10764,'TEST',1.00,'2018-11-13 00:00:00','2018-11-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10765,'sdasd',1.00,'2018-11-14 00:00:00','2018-11-14 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10766,'sdasd',1.00,'2018-11-14 00:00:00','2018-11-14 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10767,'TEST',1.00,'2018-11-16 00:00:00','2018-11-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10769,'TEST',1.00,'2018-11-05 00:00:00','2018-11-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10771,'TEST',1.00,'2018-11-06 00:00:00','2018-11-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10772,'TEST',1.00,'2018-11-07 00:00:00','2018-11-07 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10773,'TEST',1.00,'2018-11-26 00:00:00','2018-11-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10774,'TEST',1.00,'2018-11-27 00:00:00','2018-11-27 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10776,'TEST',1.00,'2018-11-29 00:00:00','2018-11-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10777,'test',2.00,'2018-11-19 00:00:00','2018-11-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10791,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10792,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10793,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10794,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10797,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10799,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10801,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10805,'',0.00,'0001-01-01 00:00:00','0001-01-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10817,'test',1.00,'2018-11-23 00:00:00','2018-11-23 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10819,'rereww',1.00,'2018-11-30 00:00:00','2018-11-30 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10870,'gf',12.00,'2018-12-01 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10871,'red',1.00,'2018-12-24 00:00:00','2018-12-24 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10873,'dss',6.00,'2018-12-24 00:00:00','2018-12-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10875,'fsdfsf',1.00,'2018-11-29 00:00:00','2018-11-30 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10926,'test',1.00,'2018-12-26 00:00:00','2018-12-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10927,'adsa sd asd',1.00,'2018-12-27 00:00:00','2018-12-27 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10928,'aS as',1.00,'2018-12-28 00:00:00','2018-12-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10929,'as dasd asd',1.00,'2018-12-31 00:00:00','2018-12-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10931,'gfhfh',1.00,'2018-12-04 00:00:00','2018-12-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10957,'sdfsd',1.00,'2018-08-08 00:00:00','2018-08-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10987,'test',1.00,'2018-12-10 00:00:00','2018-12-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,10988,'Test',1.00,'2018-12-10 00:00:00','2018-12-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11002,'test',1.00,'2018-12-12 00:00:00','2018-12-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11003,'test',1.00,'2018-12-12 00:00:00','2018-12-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11004,'test',1.00,'2018-12-12 00:00:00','2018-12-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11006,'test',1.00,'2018-12-12 00:00:00','2018-12-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11007,'test',1.00,'2018-12-12 00:00:00','2018-12-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11008,'gdgfdg',1.00,'2018-12-12 00:00:00','2018-12-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11011,'fdgfg',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11012,'Test',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11014,'Test',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11017,'dfsfsdf',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11019,'test',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11021,'Test',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11043,'asdasd',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11051,'test',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11055,'fhfhfgh',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11060,'gdgfdg',1.00,'2018-12-18 00:00:00','2018-12-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11162,'jgj',1.00,'2018-12-29 00:00:00','2018-12-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11230,'dsds',1.00,'2018-12-04 00:00:00','2018-12-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11239,'asdsfdsdf',1.00,'2018-12-06 00:00:00','2018-12-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11255,'fdgdfg',1.00,'2018-12-03 00:00:00','2018-12-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11328,'12',1.00,'2019-02-13 00:00:00','2019-02-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11350,'132',7.00,'2019-01-23 00:00:00','2019-01-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11356,'gty',5.00,'2018-12-24 00:00:00','2018-12-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11400,'test',1.50,'2019-01-24 00:00:00','2019-01-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11401,'sf',1.50,'2019-01-24 00:00:00','2019-01-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11402,'tyu',1.50,'2019-01-24 00:00:00','2019-01-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11403,'dgfg',10.00,'2019-01-07 00:00:00','2019-01-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11404,'tyu',11.00,'2019-01-07 00:00:00','2019-01-18 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11518,'leave',1.00,'2019-02-08 00:00:00','2019-02-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11519,'jjj',1.00,'2019-02-12 00:00:00','2019-02-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11522,'leave1',1.00,'2019-02-13 00:00:00','2019-02-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11523,'leave123',1.00,'2019-02-20 00:00:00','2019-02-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11555,'teeest',1.00,'2019-02-21 00:00:00','2019-02-21 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11556,'2',1.00,'2019-02-22 00:00:00','2019-02-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11567,'tre',1.00,'2019-02-27 00:00:00','2019-02-27 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11568,'123',1.00,'2019-02-28 00:00:00','2019-02-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11569,'test',1.00,'2019-03-04 00:00:00','2019-03-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11570,'3',1.00,'2019-03-05 00:00:00','2019-03-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11571,'ste',1.00,'2019-03-06 00:00:00','2019-03-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11581,'hjh',1.00,'2019-02-01 00:00:00','2019-02-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11582,'dgdfg',1.00,'2019-03-07 00:00:00','2019-03-07 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11589,'dhgf',1.00,'2019-03-14 00:00:00','2019-03-14 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11598,'test',1.00,'2019-03-11 00:00:00','2019-03-11 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11600,'uyuyuy',1.00,'2019-03-22 00:00:00','2019-03-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11608,'h',1.00,'2019-03-29 00:00:00','2019-03-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11646,'',3.00,'2019-02-18 00:00:00','2019-02-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11647,'tre',1.00,'2019-03-15 00:00:00','2019-03-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11648,'test',1.00,'2019-03-18 00:00:00','2019-03-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11650,'test',1.00,'2019-03-28 00:00:00','2019-03-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11653,'gfdfgd',1.00,'2019-03-28 00:00:00','2019-03-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11664,'ertert',1.00,'2019-03-08 00:00:00','2019-03-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11690,'approved',3.00,'2019-06-18 00:00:00','2019-06-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11691,'test',1.00,'2019-03-28 00:00:00','2019-03-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11692,'approved',1.00,'2019-07-19 00:00:00','2019-07-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11705,'fsfsd',2.00,'2019-04-01 00:00:00','2019-04-02 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11706,'fsdfds',2.00,'2019-04-08 00:00:00','2019-04-09 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11767,'test',1.00,'2019-03-20 00:00:00','2019-03-20 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11782,'test',1.00,'2019-03-13 00:00:00','2019-03-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11788,'dfsdfsdf',4.00,'2019-03-15 00:00:00','2019-03-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11789,'fdgfdg',4.00,'2019-03-14 00:00:00','2019-03-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11814,'test',1.00,'2019-03-22 00:00:00','2019-03-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11815,'test',1.00,'2019-03-25 00:00:00','2019-03-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11816,'test',1.00,'2019-03-29 00:00:00','2019-03-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11817,'test',1.00,'2019-03-29 00:00:00','2019-03-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11818,'test',1.00,'2019-04-01 00:00:00','2019-04-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11819,'test',1.00,'2019-04-02 00:00:00','2019-04-02 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11820,'test',1.00,'2019-04-03 00:00:00','2019-04-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11821,'test',1.00,'2019-04-04 00:00:00','2019-04-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11822,'teste',1.00,'2019-04-05 00:00:00','2019-04-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11823,'df',1.00,'2019-04-08 00:00:00','2019-04-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11824,'test',1.00,'2019-04-01 00:00:00','2019-04-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11825,'test',1.00,'2019-04-03 00:00:00','2019-04-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11829,'hg',1.00,'2019-04-03 00:00:00','2019-04-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11830,'hj',1.00,'2019-04-04 00:00:00','2019-04-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11831,'jlk',1.00,'2019-04-05 00:00:00','2019-04-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11832,'hg',1.00,'2019-04-08 00:00:00','2019-04-08 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11836,'test',1.00,'2019-04-09 00:00:00','2019-04-09 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11837,'yui',1.00,'2019-04-10 00:00:00','2019-04-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11838,'test',1.00,'2019-05-13 00:00:00','2019-05-13 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11839,'gfd',1.00,'2019-04-12 00:00:00','2019-04-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11840,'test',1.00,'2019-04-15 00:00:00','2019-04-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11841,'Leave',1.00,'2019-04-16 00:00:00','2019-04-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11844,'Mail Leave',1.00,'2019-04-17 00:00:00','2019-04-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11845,'sdfsdf dfgfdgfd',1.00,'2019-03-26 00:00:00','2019-03-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11846,'test',1.00,'2019-03-29 00:00:00','2019-03-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11847,'tets',1.00,'2019-04-01 00:00:00','2019-04-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11848,'gf',1.00,'2019-04-25 00:00:00','2019-04-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11849,'test',1.00,'2019-04-25 00:00:00','2019-04-25 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11850,'te',1.00,'2019-04-26 00:00:00','2019-04-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11851,'fg',1.00,'2019-04-26 00:00:00','2019-04-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11852,'uuiiu',1.00,'2019-04-26 00:00:00','2019-04-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11853,'ggf',1.00,'2019-04-24 00:00:00','2019-04-24 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11854,'uyu',1.00,'2019-04-24 00:00:00','2019-04-24 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11855,'yt',1.00,'2019-04-29 00:00:00','2019-04-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11856,'hg',1.00,'2019-04-29 00:00:00','2019-04-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11857,'gdf',1.00,'2019-05-30 00:00:00','2019-05-30 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11858,'df',1.00,'2019-05-06 00:00:00','2019-05-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11864,'hh',1.00,'2019-04-26 00:00:00','2019-04-26 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11866,'tes',1.00,'2019-05-30 00:00:00','2019-05-30 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11870,'test',1.00,'2019-06-05 00:00:00','2019-06-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11873,'test',1.00,'2019-05-16 00:00:00','2019-05-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11877,'fs',1.00,'2019-05-17 00:00:00','2019-05-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11878,'test',1.00,'2019-05-24 00:00:00','2019-05-24 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11879,'d',1.00,'2019-05-28 00:00:00','2019-05-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11880,'test',1.00,'2019-06-05 00:00:00','2019-06-05 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11882,'.',1.00,'2019-03-28 00:00:00','2019-03-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11954,'Test Form25',1.00,'2019-04-01 00:00:00','2019-04-01 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11955,'Test Form25',1.00,'2019-04-02 00:00:00','2019-04-02 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11956,'dsadas',1.00,'2019-04-04 00:00:00','2019-04-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11957,'gdfgfdg',0.50,'2019-04-05 00:00:00','2019-04-05 00:00:00','Morning',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,11959,'Sick',1.00,'2019-04-09 00:00:00','2019-04-09 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12052,'test',1.00,'2019-05-03 00:00:00','2019-05-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12054,'test',1.00,'2019-05-06 00:00:00','2019-05-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12055,'fds',1.00,'2019-05-07 00:00:00','2019-05-07 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12057,'test',1.00,'2019-05-10 00:00:00','2019-05-10 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12058,'test',1.00,'2019-05-15 00:00:00','2019-05-15 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12059,'test',1.00,'2019-05-29 00:00:00','2019-05-29 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12060,'fds',1.00,'2019-05-21 00:00:00','2019-05-21 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12061,'test',1.00,'2019-05-22 00:00:00','2019-05-22 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12062,'tes',1.00,'2019-05-16 00:00:00','2019-05-16 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12065,'test',1.00,'2019-05-31 00:00:00','2019-05-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12066,'test',1.00,'2019-06-03 00:00:00','2019-06-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12067,'test',1.00,'2019-06-04 00:00:00','2019-06-04 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12078,'tttttttste',1.00,'2019-05-23 00:00:00','2019-05-23 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12089,'test',1.00,'2019-06-21 00:00:00','2019-06-21 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12092,'test',1.00,'2019-06-28 00:00:00','2019-06-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12093,'test',1.00,'2019-10-03 00:00:00','2019-10-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12094,'test',1.00,'2019-07-11 00:00:00','2019-07-11 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12095,'test',1.00,'2019-07-17 00:00:00','2019-07-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12096,'tes',1.00,'2019-06-28 00:00:00','2019-06-28 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12097,'test',1.00,'2019-07-18 00:00:00','2019-07-18 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12098,'test',2.00,'2019-08-01 00:00:00','2019-08-02 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12118,'test',10.00,'2019-03-01 00:00:00','2019-03-14 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12120,'test',10.00,'2019-04-01 00:00:00','2019-04-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12142,'test',1.00,'2019-05-31 00:00:00','2019-05-31 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12163,'xw',1.00,'2019-06-06 00:00:00','2019-06-06 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12279,'test',2.00,'2019-06-18 00:00:00','2019-06-19 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12280,'test',3.00,'2019-06-10 00:00:00','2019-06-12 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12288,'fgtgh',3.00,'2019-02-05 00:00:00','2019-02-07 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12300,'fgg',3.00,'2019-01-01 00:00:00','2019-01-03 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12303,'uytuyt',1.00,'2019-06-17 00:00:00','2019-06-17 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12316,'dfsdsf',1.00,'2019-07-11 00:00:00','2019-07-11 00:00:00','0',NULL);
+INSERT INTO `lms_audit_data`(`ClientID`,`RequestID`,`Remarks`,`LeaveDays`,`StartDate`,`EndDate`,`DayZone`,`LastUPD`) VALUES
+(2,12317,'test',1.00,'2019-07-12 00:00:00','2019-07-12 00:00:00','0',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `lms_audit_data` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_audittrail
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_audittrail` (
+  `AuditID` int(11) NOT NULL DEFAULT '0',
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `Month` int(11) DEFAULT NULL,
+  `Year` int(11) DEFAULT NULL,
+  `DateofAudit` datetime DEFAULT NULL,
+  `AuditInformation` longtext CHARACTER SET latin1,
+  `AuditType` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  PRIMARY KEY (`AuditID`,`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_audittrail
+-- 
+
+/*!40000 ALTER TABLE `lms_audittrail` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3796,2,183,10,2015,'2015-10-13 14:24:18','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Leave Audit Trail\",\"FromDate\":\"2015-10-28T00:00:00\",\"ToDate\":\"2015-10-28T00:00:00\",\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-13 14:24:18',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3797,2,183,10,2015,'2015-10-13 14:25:29','{\"EmployeeName\":\"A.Sampath Kumar\",\"Position\":\"Project Manager - Architechture\",\"Department\":\"Development\",\"LeaveType\":\"Leave Audit Trail\",\"Days\":1.00,\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":152,\"EmployeeName\":\"A.Sampath Kumar\",\"EmployeeNo\":\"16\",\"PositionName\":\"Project Manager - Architechture\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sampathkumar@hrdpower.con\",\"PhotoEncodeFileName\":\"160a22b7-4ec0-4672-8906-bb6be50313e8.png\"},\"AuditActionType\":5}',1,'2015-10-13 14:25:29',152);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3798,2,183,10,2015,'2015-10-13 14:28:53','{\"EmployeeName\":\"A.Sampath Kumar\",\"Position\":\"Project Manager - Architechture\",\"Department\":\"Development\",\"LeaveType\":\"Leave Audit Trail\",\"Days\":1.00,\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":152,\"EmployeeName\":\"A.Sampath Kumar\",\"EmployeeNo\":\"16\",\"PositionName\":\"Project Manager - Architechture\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sampathkumar@hrdpower.con\",\"PhotoEncodeFileName\":\"160a22b7-4ec0-4672-8906-bb6be50313e8.png\"},\"AuditActionType\":4}',1,'2015-10-13 14:28:53',152);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3799,2,183,10,2015,'2015-10-13 14:30:01','{\"EmployeeName\":\"A.Sampath Kumar\",\"Position\":\"Project Manager - Architechture\",\"Department\":\"Development\",\"LeaveType\":\"Leave Audit Trail\",\"Days\":1.00,\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":152,\"EmployeeName\":\"A.Sampath Kumar\",\"EmployeeNo\":\"16\",\"PositionName\":\"Project Manager - Architechture\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sampathkumar@hrdpower.con\",\"PhotoEncodeFileName\":\"160a22b7-4ec0-4672-8906-bb6be50313e8.png\"},\"AuditActionType\":6}',1,'2015-10-13 14:30:01',152);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3800,2,183,10,2015,'2015-10-13 14:30:13','{\"EmployeeName\":\"A.Sampath Kumar\",\"Position\":\"Project Manager - Architechture\",\"Department\":\"Development\",\"LeaveType\":\"Leave Audit Trail\",\"Days\":1.00,\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":152,\"EmployeeName\":\"A.Sampath Kumar\",\"EmployeeNo\":\"16\",\"PositionName\":\"Project Manager - Architechture\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sampathkumar@hrdpower.con\",\"PhotoEncodeFileName\":\"160a22b7-4ec0-4672-8906-bb6be50313e8.png\"},\"AuditActionType\":4}',1,'2015-10-13 14:30:13',152);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3801,2,183,10,2015,'2015-10-13 14:30:37','{\"EmployeeName\":\"A.Sampath Kumar\",\"Position\":\"Project Manager - Architechture\",\"Department\":\"Development\",\"LeaveType\":\"Leave Audit Trail\",\"Days\":1.00,\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":152,\"EmployeeName\":\"A.Sampath Kumar\",\"EmployeeNo\":\"16\",\"PositionName\":\"Project Manager - Architechture\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sampathkumar@hrdpower.con\",\"PhotoEncodeFileName\":\"160a22b7-4ec0-4672-8906-bb6be50313e8.png\"},\"AuditActionType\":6}',1,'2015-10-13 14:30:37',152);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3802,2,183,10,2015,'2015-10-13 15:00:34','{\"EmployeeName\":\"Sudandira Devi.K\",\"Position\":\"Trainee Software Engineer\",\"Department\":\"Development\",\"LeaveType\":\"Leave Audit Trail\",\"Days\":1.00,\"RequestID\":2400,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"},\"AuditActionType\":8}',1,'2015-10-13 15:00:34',155);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3803,2,90,10,2015,'2015-10-13 15:31:17','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"HolidayName\":\"DD\",\"HolidayType\":\"Recurring Annually\",\"HolidayDate\":\"2015-09-21T00:00:00\",\"ActionType\":2,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"AuditActionType\":2}',4,'2015-10-13 15:31:17',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3804,2,90,10,2015,'2015-10-13 15:51:31','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"HolidayName\":\"Audit Holiday\",\"HolidayType\":\"Seasonal\",\"HolidayDate\":\"2015-10-14T00:00:00\",\"ActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"AuditActionType\":2}',4,'2015-10-13 15:51:31',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3805,2,90,10,2015,'2015-10-13 15:51:46','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"HolidayName\":\"Audit Holiday\",\"HolidayType\":\"Recurring Annually\",\"HolidayDate\":\"2015-10-15T00:00:00\",\"ActionType\":2,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"AuditActionType\":2}',4,'2015-10-13 15:51:46',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3806,2,90,10,2015,'2015-10-13 16:42:20','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"HolidayName\":\"A1\",\"HolidayType\":\"Seasonal\",\"HolidayDate\":\"2015-10-12T00:00:00\",\"ActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"AuditActionType\":2}',4,'2015-10-13 16:42:20',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3807,2,90,10,2015,'2015-10-13 16:43:38','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"HolidayName\":\"a1\",\"HolidayType\":\"Seasonal\",\"HolidayDate\":\"2015-10-01T00:00:00\",\"ActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"AuditActionType\":2}',4,'2015-10-13 16:43:38',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3808,2,90,10,2015,'2015-10-13 18:49:21','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"LeaveType\":\"Audit\",\"AuditActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"}}',5,'2015-10-13 18:49:21',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3809,2,90,10,2015,'2015-10-13 18:49:31','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"LeaveType\":\"Audit\",\"AuditActionType\":2,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"}}',5,'2015-10-13 18:49:31',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3810,2,90,10,2015,'2015-10-13 18:51:51','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"LeaveType\":null,\"AuditActionType\":3,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"}}',5,'2015-10-13 18:51:51',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3811,2,183,10,2015,'2015-10-15 11:55:16','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 11:55:16',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3812,2,183,10,2015,'2015-10-15 11:56:04','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 11:56:04',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3813,2,183,10,2015,'2015-10-15 11:57:24','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 11:57:24',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3814,2,183,10,2015,'2015-10-15 11:57:39','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 11:57:39',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3815,2,183,10,2015,'2015-10-15 12:34:56','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 12:34:56',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3816,2,183,10,2015,'2015-10-15 12:35:03','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 12:35:03',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3817,2,183,10,2015,'2015-10-15 12:36:10','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-30T00:00:00\",\"ToDate\":\"2015-10-30T00:00:00\",\"RequestID\":2401,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-15 12:36:10',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3818,2,183,10,2015,'2015-10-16 16:07:41','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-11-26T00:00:00\",\"ToDate\":\"2015-11-26T00:00:00\",\"RequestID\":2414,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-16 16:07:41',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3819,2,90,10,2015,'2015-10-17 11:38:11','{\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"Position\":\"Accounts Executive\",\"LeaveType\":\"Test\",\"AuditActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":90,\"EmployeeName\":\"Dato  Dr. Palaniappan A/L Ramanathan Chettia\",\"EmployeeNo\":\"SMR001\",\"PositionName\":\"Accounts Executive\",\"PositionCode\":\"\",\"Department\":\"Sales & Marketing\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"demo@talentoz.com\",\"PhotoEncodeFileName\":\"b89fa2c7-b1f7-4a95-ad9c-48004ddccdc3.png\"}}',5,'2015-10-17 11:38:11',90);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3820,2,153,10,2015,'2015-10-17 11:51:11','{\"EmployeeName\":\"C.Vinod Kumaar\",\"Position\":\"Project Manager - Development\",\"LeaveType\":\"Test Import\",\"AuditActionType\":2,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":153,\"EmployeeName\":\"C.Vinod Kumaar\",\"EmployeeNo\":\"17\",\"PositionName\":\"Project Manager - Development\",\"PositionCode\":\"\",\"Department\":\"Documentation\",\"Worklocation\":\"Chennai\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"vinod@forziatech.con\",\"PhotoEncodeFileName\":\"b3640352-776d-483b-a2a1-8c4165383579.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":153,\"EmployeeName\":\"C.Vinod Kumaar\",\"EmployeeNo\":\"17\",\"PositionName\":\"Project Manager - Development\",\"PositionCode\":\"\",\"Department\":\"Documentation\",\"Worklocation\":\"Chennai\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"vinod@forziatech.con\",\"PhotoEncodeFileName\":\"b3640352-776d-483b-a2a1-8c4165383579.png\"}}',5,'2015-10-17 11:51:11',153);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3821,2,153,10,2015,'2015-10-17 11:51:28','{\"EmployeeName\":\"C.Vinod Kumaar\",\"Position\":\"Project Manager - Development\",\"LeaveType\":\"Casual Leave\",\"AuditActionType\":2,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":153,\"EmployeeName\":\"C.Vinod Kumaar\",\"EmployeeNo\":\"17\",\"PositionName\":\"Project Manager - Development\",\"PositionCode\":\"\",\"Department\":\"Documentation\",\"Worklocation\":\"Chennai\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"vinod@forziatech.con\",\"PhotoEncodeFileName\":\"b3640352-776d-483b-a2a1-8c4165383579.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":153,\"EmployeeName\":\"C.Vinod Kumaar\",\"EmployeeNo\":\"17\",\"PositionName\":\"Project Manager - Development\",\"PositionCode\":\"\",\"Department\":\"Documentation\",\"Worklocation\":\"Chennai\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"vinod@forziatech.con\",\"PhotoEncodeFileName\":\"b3640352-776d-483b-a2a1-8c4165383579.png\"}}',5,'2015-10-17 11:51:28',153);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3822,2,155,10,2015,'2015-10-17 13:41:11','{\"EmployeeName\":\"Sudandira Devi.K\",\"Position\":\"Trainee Software Engineer\",\"HolidayName\":\"sdsd\",\"HolidayType\":\"Seasonal\",\"HolidayDate\":\"2015-10-14T00:00:00\",\"AuditActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"}}',4,'2015-10-17 13:41:11',155);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3823,2,155,10,2015,'2015-10-17 13:45:15','{\"EmployeeName\":\"Sudandira Devi.K\",\"Position\":\"Trainee Software Engineer\",\"HolidayName\":\"sfsfsfsdf\",\"HolidayType\":\"Seasonal\",\"HolidayDate\":\"2015-10-21T00:00:00\",\"AuditActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"}}',4,'2015-10-17 13:45:15',155);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3824,2,155,10,2015,'2015-10-17 13:49:08','{\"EmployeeName\":\"Sudandira Devi.K\",\"Position\":\"Trainee Software Engineer\",\"HolidayName\":\"Test Hol\",\"HolidayType\":\"Recurring Annually\",\"HolidayDate\":\"2015-10-14T00:00:00\",\"AuditActionType\":1,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":155,\"EmployeeName\":\"Sudandira Devi.K\",\"EmployeeNo\":\"21\",\"PositionName\":\"Trainee Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"sudandira@hrdpower.con\",\"PhotoEncodeFileName\":\"c2a395d8-0d62-4728-a711-a42b3ef42c91.png\"}}',4,'2015-10-17 13:49:08',155);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3825,2,183,10,2015,'2015-10-17 16:56:28','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-11-18T00:00:00\",\"ToDate\":\"2015-11-18T00:00:00\",\"RequestID\":2418,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-17 16:56:28',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3826,2,183,10,2015,'2015-10-17 16:56:47','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-11-18T00:00:00\",\"ToDate\":\"2015-11-18T00:00:00\",\"RequestID\":2418,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-17 16:56:47',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3827,2,183,10,2015,'2015-10-17 17:40:18','{\"EmployeeName\":\"Raventh.G\",\"Position\":\"Software Engineer\",\"LeaveType\":\"Casual Leave\",\"FromDate\":\"2015-10-29T00:00:00\",\"ToDate\":\"2015-10-29T00:00:00\",\"RequestID\":2419,\"EmployeeDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"ActionByDetails\":{\"ClientID\":2,\"UserID\":183,\"EmployeeName\":\"Raventh.G\",\"EmployeeNo\":\"raventh@hrdpower.con\",\"PositionName\":\"Software Engineer\",\"PositionCode\":\"\",\"Department\":\"Development\",\"Worklocation\":\"Sydney\",\"BusinessUnit\":\"SMR HR Technologies Pvt Ltd\",\"Email\":\"raventh@hrdpower.con\",\"PhotoEncodeFileName\":\"09e0dc65-c1a9-4128-9d31-bc3fe0642619.png\"},\"AuditActionType\":1}',1,'2015-10-17 17:40:18',183);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3828,2,96,9,2015,'2015-10-17 17:43:50','{\"EntitlementID\":\"351\",\"EmpName\":\"C.Vinod Kumaar\",\"EmpDepartment\":\"Documentation\",\"EmpPosition\":\"Project Manager - Development\",\"Entitlementtype\":\"Added\",\"NoofDays\":\"10.00\"}',3,'2015-10-17 17:43:50',153);
+INSERT INTO `lms_audittrail`(`AuditID`,`ClientID`,`UserID`,`Month`,`Year`,`DateofAudit`,`AuditInformation`,`AuditType`,`LastUPD`,`ActionBy`) VALUES
+(3829,2,125,9,2015,'2015-10-17 17:43:50','{\"EntitlementID\":\"351\",\"EmpName\":\"C.Vinod Kumaar\",\"EmpDepartment\":\"Documentation\",\"EmpPosition\":\"Project Manager - Development\",\"Entitlementtype\":\"Added\",\"NoofDays\":

@@ -1,0 +1,1364 @@
+﻿
+@{
+    ViewBag.Title = "Component Manager";
+}
+ 
+
+<div id="container"></div>
+<div id="pv"></div>
+
+<script type="text/javascript">
+
+    var fieldtype = [
+        { key: 0, value: "Number" },
+        { key: 1, value: "Decimal" },
+        { key: 2, value: "Text" },
+        { key: 3, value: "LongText" },
+        { key: 4, value: "Currency" },
+        { key: 5, value: "LookUp" },
+        { key: 6, value: "Component LookUp" },
+        { key: 7, value: "File" },
+        { key: 8, value: "Picture" },
+        { key: 9, value: "Date" },
+        { key: 10, value: "Time" },
+        { key: 11, value: "Date & time" },
+        { key: 12, value: "Boolean" },
+        { key: 13, value: "Year" },
+        { key: 14, value: "Month" },
+        { key: 15, value: "Quarter" },
+    ]
+    var comptype = [{
+        key: "0",
+        value: "Core",
+    }, {
+        key: "1",
+        value: "Attribute",
+    }, {
+        key: "2",
+        value: "Meta",
+    }, {
+        key: "3",
+        value: "Link",
+    }, {
+        key: "4",
+        value: "Transaction",
+    }, {
+        key: "5",
+        value: "Configuration",
+    }, {
+        key: "6",
+        value: "System",
+    }, {
+        key: "7",
+        value: "None",
+        }];
+
+    $(document).ready(function () {
+        
+            
+        (function ($CM) {
+            $CM.ComponentManager = function (options) {
+                var defaults = {
+                    plc: "",
+                }
+                var componentid = "";
+                var _opt = $.extend({}, defaults, options);
+                var comp = {};
+                var render = function () {
+                    $("#" + _opt.plc).html("");
+                    $("#" + _opt.plc).append("<div class='col-md-12'><div id='navBtnList' style='padding-top:0px;background-color:#eee'></div><div id='rstDiv' class='row'><div id='lftSchemacnt'  class='col-md-12'></div> <div id='saveaction'></div></div><div>")
+                    //$("#navBtnList").toolbar({
+                    //    name: "", linkbuttons:
+                    //        ['<a class="nav-link active" href="#" name="vclist">Component List <span class="sr-only">(current)</span></a>',
+                    //            '<a class="nav-link " href="#" name="addcmb">Add Component<span class="sr-only">(current)</span></a>',                                                                
+                    //            '<a class="nav-link" name="vbTb" href="#">View Data</a>',                                
+                    //            '<a class="nav-link" name="vbkrst" href="#">BackUp/Restore</a>',
+                    //            '<a class="nav-link" name="vcmlist" href="#">Component Modals</a>',                                
+                    //            '<a class="nav-link" name="vclookup" href="#">Lookups</a>']
+                    //})
+                    $("#navBtnList").toolbar({
+                        name: "", linkbuttons:
+                            ['<a class="nav-link active" href="#" name="vclist">Core Component <span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link " href="#" name="vcmlist">Business Component<span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link" name="vbTb" href="#">Security Component</a>',
+                                '<a class="nav-link" name="vbkrst" href="#">Component Link</a>',
+                                '<a class="nav-link" name="vcmlist" href="#">Hierarchy Component</a>',
+                                '<a class="nav-link" name="vclookup" href="#">Setting Component</a>',
+                                '<a class="nav-link" name="vclookup" href="#">Lookup</a>'], isVertical: false
+                    })
+                    $("#lftSchemacnt").css({
+                        height: "94%",          
+                        padding:"0px"
+                    });
+
+                    $("#navBtnList").find("a[name=vclist]").click(function () {
+                        $(".popper-div").remove();
+                        //window.clientid;
+                        render();
+                        renderComponent();
+                        comp = new $CM.Component({
+                            plc: "lftSchemacnt",
+                            ClientID: window.clientid,
+                        });
+                        $("#navBtnList").find("a").removeClass("active");
+                        $(this).addClass("active");
+                    })
+
+                    //$("#navBtnList").find("a[name=vbkrst]").click(function () {
+                    //    renderBackupUI();
+                    //});
+
+
+                    $("#navBtnList").find("a[name=vclookup]").click(function () {
+                        $(".popper-div").remove();
+                        $("#rstDiv").html("");
+                        $("#rstDiv").append("<div id='compLookup' class='col-md-12'></div>");
+                        var cm = new $.Lookup({ plc: "compLookup" });
+                        $("#navBtnList").find("a").removeClass("active");
+                        $(this).addClass("active");
+                    })
+                    //$("#navBtnList").find("a[name=vcmRm]").click(function () {
+                    //    $(".popper-div").remove();
+                    //    removeComponent();
+                    //    $("#navBtnList").find("a").removeClass("active");
+                    //    $(this).addClass("active");
+                    //})
+                    //$("#navBtnList").find("a[name=vclist]").click(function () {
+                    //    $(".popper-div").remove();
+                    //    //window.clientid;
+                    //    render();
+                    //    renderComponent();
+                    //    comp = new $CM.Component({
+                    //        plc: "rightcomp",
+                    //        ClientID: window.clientid,
+                    //    });
+                    //    $("#navBtnList").find("a").removeClass("active");
+                    //    $(this).addClass("active");
+                    //})
+                    //$("#navBtnList").find("a[name=addcmb]").click(function () {
+                    //    $(".popper-div").remove();
+                    //    comp = new $CM.Component({
+                    //        plc: "rightcomp",
+                    //        ClientID: window.clientid,
+                    //    });
+                    //    $("#navBtnList").find("a").removeClass("active");
+                    //    $(this).addClass("active");
+                    //})
+                    $("#navBtnList").find("a[name=vcmlist]").click(function () {
+                        $("#navBtnList").find("a").removeClass("active");
+                        $(this).addClass("active");
+                        $("#rstDiv").html("");
+                        $("#rstDiv").append("<div id='cmodal'  class='col-md-12'></div>");
+                        $(".popper-div").remove();
+                        var cm = new $.ComponentModal({
+                            plc:"cmodal",
+                        })
+                    })
+                    //$("#navBtnList").find("a[name=vcmadd]").click(function () {
+                    //    $(".popper-div").remove();
+                    //    $("#navBtnList").find("a").removeClass("active");
+                    //    $(this).addClass("active");
+                    //})
+                    renderComponent();
+                }
+                var renderBackupUI = function () {
+                    $.ajax({
+                        url: '/Schema/Backup?' + new Date().toString(),
+                        contentType: 'application/html; charset=utf-8',
+                        type: 'GET',
+                        cache: false,
+                        dataType: 'html',
+                        success: function (result) {
+                            $("#rstDiv").html("");
+                            var a = "<div class='col-md-12'>";
+                            a = a + "<div id='nvlist'></div>";
+                            a = a + "<div id='plcsettings' style='margin-left:40px;' class='col-md-12'></div>";
+                            a = a + "</div>"
+                            $("#rstDiv").append(a);
+                            $('#plcsettings').html(result);                                                       
+                            renderBackupButtons();
+                        }
+                    });
+                }
+                var renderRestoreUI = function () {
+                    $.ajax({
+                        url: '/Schema/Restore?' + new Date().toString(),
+                        contentType: 'application/html; charset=utf-8',
+                        type: 'GET',
+                        cache: false,
+                        dataType: 'html',
+                        success: function (result) {
+                            $("#rstDiv").html(""); 
+                            var a = "<div class='col-md-12'>";
+                            a = a + "<div id='nvlist'></div>";
+                            a = a + "<div id='plcsettings' style='margin-left:40px;' class='col-md-12'></div>";
+                            a = a + "</div>"
+                            $("#rstDiv").append(a);
+                            $('#plcsettings').html(result);
+                            renderBackupButtons();
+                             
+                        }
+                    });
+                }
+                var renderBackupButtons = function () {
+                    $("#nvlist").toolbar({
+                        name: "", linkbuttons:
+                            ['<a class="nav-link active" href="#" name="vclist">Back Setting <span class="sr-only">(current)</span></a>',
+                                '<a class="nav-link " href="#" name="addcmb">Restore setting</a>']
+                    });
+                    $("#nvlist").find("a[name=vclist]").click(function () {
+                        renderBackupUI();
+                    });
+                    $("#nvlist").find("a[name=addcmb]").click(function () {
+                        renderRestoreUI();
+                    });
+                };
+                var removeComponent = function () {
+                    $.ajax('/ComponentManager/RemoveComponent',
+                        {
+                            dataType: 'jsonp', // type of response data
+                            data: (({ clientid: window.clientid, componentid: componentid })),
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function
+                                // alert(data);
+                                render();
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                            }
+                        });
+                }
+                var renderComponent = function () {
+                    getTableList(function (data) {
+                        renderTableList($("#lftSchemacnt"), data);
+                    });
+                }
+                var getTableList = function (onComplete) {
+                    if (window.clientid == "") {
+                        return;
+                    }
+                    $.ajax('/ComponentManager/GetComponents',
+                        {
+                            type: "GET",
+                            dataType: 'jsonp', // type of response data
+                            data: ({ clientid: window.clientid }),
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function
+                                onComplete(data);
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                                //$('p').append('Error: ' + errorMessage);
+                            }
+                        });
+                }
+                var renderTableList = function ($plc, data) {
+                    $plc.html("");
+                    //list-group
+                    var sq = "<div class='list'><div class='header'>Component List</div>"
+                    $.each(data, function (id, d) {
+                        var a = comptype.filter(function (ak) {
+                            return ak.key == d.ComponentType;
+                        });
+                       
+                        sq = sq + "<div list=y name='" + d.ComponentID + "'>"
+                        sq = sq + "<div class='col-md-12'>"
+                        sq = sq + "<div class='row tdrow rowlight'>"
+                        sq = sq + "<div class='col-md-4'>" + d.ComponentName + "</div>"
+                        sq = sq + "<div class='col-md-2'>" + a[0].value + "</div>"
+                        sq = sq + "<div class='col-md-3'>" + d.Category + "</div>"
+                        sq = sq + "<div class='col-md-1'>" + a[0].value + "</div>"                        
+
+                        sq = sq + "<div class='col-md-2' ><a href='#' style='' name='" + d.ComponentID + "'><span title='Delete' act='del' class='remove fa fa-remove'   ></span></a ></div>"
+                        sq = sq + "</div>";
+                        sq = sq + "</div>";
+                        sq = sq + "</div>";
+                      
+                    });
+                    sq = sq + "</div>"
+                    $plc.append(sq);
+                  
+
+                    $plc.find("div[list=y]").click(function () {
+                        tbID = $(this).attr("name");
+                        componentid = tbID;
+                        $(this).parent().find("li").children().removeClass("liactive");                        
+                        $(this).children().removeClass("liactive");
+                        $(this).children().addClass("liactive");
+
+                        var a = new $CM.Component({
+                            plc: "lftSchemacnt",
+                            ClientID: window.clientid,
+                            ComponentID: tbID,
+                            type:0,
+                            onRemove: function () {
+                                render();
+                            }
+                        })
+                    })
+                }
+                render();
+            }
+            $CM.Component = function (options) {
+                var defaults = {
+                    ClientID: "",
+                    ComponentID: "",
+                    Fields: [],
+                    plc: "",
+                    View: "",
+                    type:"",
+                    category:"",
+                    onAdd: function (tbid) {
+
+                    },
+                    onRemove: function () {
+
+                    },
+                    attributes:[]
+                }                
+                var _opt = $.extend({}, defaults, options);
+                var tbName = "";
+                var category = _opt.category;
+                var title = "";
+                var componenttype = _opt.type;
+                var defaultsfield = {
+                    FieldID: "",
+                    AttributeName: "",
+                    FieldType: 0,
+                    Length: 0,
+                    IsNull: true,
+                    IsPrimary: false,
+                    TableID: "",
+                    IsRequired: false,
+                    IsUnique: false,
+                    IsCore: false,
+                    IsReadOnly: false,
+                    IsSecured: false,
+                    IsAuto: false,
+                    LookUpID: "",
+                    DefaultValue: "",
+                    FileExtension: "",
+                    RegExp: "",
+                    AttributeType: "",
+                }
+                var cthis = this;
+                var Save = function () {
+                    var tb = $("#fldTabName").Input("text");
+                    var cat = $("#fldTabCatg").Input("text");
+
+
+                    var fs = [];
+                    var tbl = {};
+                    tbl.ClientID = _opt.ClientID;
+                    tbl.ComponentName = tb;
+                    tbl.Category = cat;
+                    tbl.Title = $("#fldTabtitle").Input("text");;
+                    tbl.TitleFormat = "";
+                    tbl.TableID = "";
+                    tbl.ComponentType = _opt.componenttype;
+                    // tbl.TableID = _opt.TableID;
+
+                    $.each(_opt.Fields, function (ifd, fd) {
+                        var f = {};
+                        //f.TableID = _opt.TableID;
+                        f.AttributeName = fd.AttributeName;
+                        f.FieldType = fd.FieldType;
+                        f.Length = fd.Length;
+                        f.IsNullable = fd.IsNull;
+                        f.IsPrimaryKey = fd.IsPrimary;
+                        f.FieldID = fd.FieldID;
+                        f.IsRequired = fd.isRequired;
+                        f.IsUnique = fd.IsUnique;
+                        f.IsCore = fd.IsCore;
+                        f.IsReadOnly = fd.IsReadOnly;
+                        f.IsSecured = fd.IsSecured;
+                        f.IsAuto = fd.IsAuto;
+                        f.LookUpID = fd.LookUpID;
+                        f.DefaultValue = fd.DefaultValue;
+                        f.FileExtension = fd.FileExtension;
+                        f.RegExp = fd.RegExp;
+                        f.AttributeType = fd.AttributeType;
+                        // f.FieldName = fd.FieldName;
+                        //f.TableID = "";
+                        fs.push(f);
+                    })
+                    $.ajax('/ComponentManager/SaveComponent',
+                        {
+                            dataType: 'jsonp', // type of response data
+                            data: (({ clientid: _opt.ClientID, component: JSON.stringify(tbl), attribute: JSON.stringify(fs) })),
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function
+                                // alert(data);
+                                //renderFields();
+                                //if (_opt.TableID == "") {
+                                //    _opt.TableID = data;
+                                //    _opt.onAdd(data);
+                                //    render();
+                                //}
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                                //$('p').append('Error: ' + errorMessage);
+                            }
+                        });
+                }
+                var renderTable = function () {
+                    $("#tbplc").html("");
+                    $("#tbplc").append("<div class='row'><div class='col-md-6' id='fldTabName'></div><div class='col-md-6' id='fldTabCatg'></div><div class='col-md-6' id='fldTabtitle'></div></div>");
+                    $("#tbplc").labelfields({
+                        items: [
+                            {
+                            label: "Component Name",
+                            field: {
+                                id: "fdtbName", 'note': "Enter Component Name",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": tbName,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'fldTabName'
+                        }, {
+                            label: "Category",
+                            field: {
+                                id: "fdcatgory", 'note': "",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": category,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'fldTabCatg'
+                        }, {
+                            label: "Title",
+                            field: {
+                                id: "fdtitle", 'note': "Display name of the component",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": title,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'fldTabtitle'
+                        }]
+                    });
+
+                    renderFields();
+                }
+                var getTable = function (onComplete) {
+                    $.ajax('/ComponentManager/GetComponent',
+                        {
+                            type: "GET",
+                            dataType: 'jsonp', // type of response data
+                            data: ({ clientid: _opt.ClientID, componentID: _opt.ComponentID }),
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function
+                                data = data.Component;
+                                tbName = data.ComponentName;
+                                category = data.Category;
+                                title = data.Title;
+                                componenttype = data.ComponentType;
+                                _opt.Fields = [];
+                                $.each(data.Attributes, function (id, d) {
+                                    var f = {};
+                                    f.FieldID = d.FieldID;
+                                    f.FieldName = d.FieldName;
+                                    f.FieldType = d.FieldType;
+                                    f.Length = d.Length;
+                                    f.IsNull = d.IsNullable;
+                                    f.IsPrimaryKey = d.IsPrimaryKey;
+                                    f.AttributeName = d.AttributeName;
+                                    f.IsRequired = d.IsRequired;
+                                    f.IsUnique = d.IsUnique;
+                                    f.IsCore = d.IsCore;
+                                    f.IsReadOnly = d.IsReadOnly;
+                                    f.IsSecured = d.IsSecured;
+                                    f.IsAuto = d.IsAuto;
+                                    f.LookUpID = d.LookUpID;
+                                    f.DefaultValue = d.DefaultValue;
+                                    f.FileExtension = d.FileExtension;
+                                    f.RegExp = d.RegExp;
+                                    f.AttributeType = d.AttributeType;
+
+                                    _opt.Fields.push(f);
+                                })
+                                onComplete(data);
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                                //$('p').append('Error: ' + errorMessage);
+                            }
+                        });
+                }
+                var getFieldType = function (id) {
+                    //  var ft = $$.Utility.filter({ key: id });
+                    var sl = [];
+                    $.each(fieldtype, function (ift, ft) {
+                        if (ft.key == id) {
+                            sl = ft;
+                        }
+                    });
+                    if (sl.value != undefined) {
+                        return sl.value;
+                    }
+                    else {
+                        return "";
+                    }
+
+
+                }
+                var renderFields = function () {
+                    $("#fldinfo").html("");
+                    $("#fldinfo").append("<div class='row'><div class='col-md-8'>Attribute List</div><div class='col-md-4'><input type='button' id='btnAddField' value='Add Attribute'/></div></div><div class='row'><div  class='col-md-12'><div id='fldlist' class='col-md-12'></div></div></div>");
+                    var itm = "";
+                    itm = itm + "<div class='row rowheader'>"
+                    itm = itm + "<div class='col-md-4'>Name</div>";
+                    itm = itm + "<div class='col-md-3'>Type</div>";
+                    itm = itm + "<div class='col-md-2'>Length</div>";
+                    itm = itm + "<div class='col-md-1'>Is Null</div>";
+                    itm = itm + "<div class='col-md-1'>Is Primary</div>";
+                    itm = itm + "</div>"
+
+                    $("#fldlist").append(itm);
+                    $.each(_opt.Fields, function (ifd, fd) {
+
+                        //itm = itm + "<div class='row rowlight tdrow ui-state-default' action='row' indx='" + k + "'>"
+                        //itm = itm + "<div class='col-md-3' contenteditable='true' action='lbl' data-text='Enter label' indx='" + k + "'>" + v.Label + "</div>";
+                        //itm = itm + "<div class='col-md-3' contenteditable='true' data-text='Enter short label' action='lbls' indx='" + k + "'>" + v.ShortLabel + "</div>";
+
+                        //itm = itm + "<div class='col-md-3' contenteditable='true' data-text='Enter Description' action='ldesc' indx='" + k + "'>" + v.Description + "</div>";
+                        //itm = itm + "<div class='col-md-1' action='active' id='acive_" + k + "'></div>";
+                        //itm = itm + "<div class='col-md-1 ' action='remove' indx='" + k + "' id='remove_" + k + "'><a href='#'><span title='Delete' class='remove fa fa-remove'  ></span></a ></div>";
+                        //itm = itm + "</div>"
+
+
+                        var pr = fd.IsPrimary == undefined ? false : fd.IsPrimary;
+                        var finf = "<div class='row tdrow rowlight '  name='" + fd.FieldID + "'>";
+                        finf = finf + "<div class='col-md-4' indx='" + ifd +"' action='aname' contenteditable='true'>" + fd.AttributeName + "</div>";
+                        finf = finf + "<div class='col-md-3' indx='" + ifd +"' action='ceftype'>" + getFieldType(fd.AttributeType) + "</div>";
+                        finf = finf + "<div class='col-md-2'>" + fd.Length + "</div>";
+                        finf = finf + "<div class='col-md-1' indx='" + ifd + "' id='ctrl_isnull_" + ifd+"'></div>";
+                        finf = finf + "<div class='col-md-1'  indx='" + ifd + "' id='ctrl_pri_" + ifd +"'></div>";
+                        finf = finf + "<div class='col-md-1'><a href='#' na ='" + fd.AttributeName + "' key='" + fd.FieldID + "' act='remove'><span title='Delete' class='remove fa fa-remove'  ></span></a></div>";
+                        finf = finf + "</div>";
+                        $("#fldlist").append(finf);                        
+
+                        var sprimary = {
+                            id: "fldattprimary_" + ifd, 'note': "",
+                            limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": true,
+                            format: "hex", range: false, isRequired: true,
+                        };
+                        var sisnull = {
+                            id: "fldisnull_" + ifd, 'note': "",
+                            limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fd.IsNull,
+                            format: "hex", range: false, isRequired: true,
+                        };
+                        $("#ctrl_isnull_" + ifd).Input(sisnull);
+                        $("#ctrl_pri_" + ifd).Input(sprimary);
+                        $("#ctrl_pri_" + ifd).Input("text", pr);
+                        $("#ctrl_isnull_" + ifd).Input("text", fd.IsNull);
+
+                    });
+                    
+                       
+
+                    $("#fldlist").find("[action=aname]").blur(function () {
+                        var idx = $(this).attr("indx");
+                        var f = _opt.Fields[idx];
+                        f.AttributeName = $(this).text();
+                        saveField(f, function () {
+                            render(cthis);
+                        });
+                    })
+                    $("#fldlist").find("[action=ceftype]").click(function (e) {
+                        var ind= $(this).attr("indx");
+                       var a = {
+                           id: "fldattType_" + ind, 'note': "",
+                                limit: true, maxlength: 50, inputType: 19, textType: 1, timeformat: 0, 'regexp': "", "text": "",
+                                    format: "hex", range: false, isRequired: true,
+                                        selectPicker: {
+                                datasource: fieldtype,
+                                    displayField: "value",
+                                        valueField: "key",
+                                            selection: "single",
+                                                defaultSelection: "Choose Attribute Type"
+                            }
+                        }
+                        if ($(this).find(".dropdown-menu")[0] == null) {
+                            $(this).html("");
+                            var drpFld = new $(this).Input(a);
+                        }                        
+
+                    })
+                    $("#fldlist").find("a[act=remove]").click(function () {
+                        if (_opt.TableID != "") {
+                            var fn = $(this).attr("key");
+                            if (fn == "") {
+                                fn = $(this).attr("na");
+                                var fs = [];
+                                $.each(_opt.Fields, function (ifs, f) {
+                                    if (f.AttributeName != fn) {
+                                        fs.push(f);
+                                    }
+                                })
+                                _opt.Fields = fs;
+                                renderFields();
+                            } else {
+                                removeField(fn, function () {
+                                    render();
+                                });
+                            }
+                        } else {
+                            var fn = $(this).attr("na");
+                            var fs = [];
+                            $.each(_opt.Fields, function (ifs, f) {
+                                if (f.AttributeName != fn) {
+                                    fs.push(f);
+                                }
+                            })
+                            _opt.Fields = fs;
+                            renderFields();
+                        }
+                    })
+                    $("#fldlist").find("div[class=row]").click(function () {
+                        var fid = $(this).attr("name");
+                        renderField(fid);
+                    })
+                    $("#btnAddField").click(function () {
+                        renderField("");
+                    })
+                }
+                var removeField = function (f, onComplete) {
+                    $.ajax('/ComponentManager/RemoveAttribute',
+                        {
+                            dataType: 'jsonp', // type of response data
+                            data: (({ clientid: _opt.ClientID, componentid: _opt.ComponentID, attributeID: (f) })),
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function
+                                // alert(data);
+                                onComplete();
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                            }
+                        });
+                }
+                var renderFieldInfo = function (fid) {
+
+                    var fld = {}
+                    if (fid != undefined && fid != "") {
+                        $.each(_opt.Fields, function (ifd, fd) {
+                            if (fd.FieldID == fid) {
+                                fld = fd;
+                            }
+                        });
+                    } else {
+                        fld = $.extend({}, defaultsfield, {});
+                    }
+
+
+                    $("#sfldinfo").labelfields({
+
+                        items: [{
+                            label: "Attribute Name",
+                            field: {
+                                id: "fdfieldname", 'note': "",
+                                limit: true, maxlength: 50, inputType: 1, textType: 1, timeformat: 0, 'regexp': "", "text": fld.AttributeName,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldName'
+                        }, {
+                            label: "Choose Attribute Type",
+                            field: {
+                                id: "fdfldtype", 'note': "",
+                                limit: true, maxlength: 50, inputType: 19, textType: 1, timeformat: 0, 'regexp': "", "text": fld.AttributeType,
+                                format: "hex", range: false, isRequired: true,
+                                selectPicker: {
+                                    datasource: fieldtype,
+                                    displayField: "value",
+                                    valueField: "key",
+                                    selection: "single",
+                                    defaultSelection: "Choose Attribute Type"
+                                }
+                            },
+                            id: 'tbfldType'
+                        }, {
+                            label: "Length",
+                            field: {
+                                id: "fldlength", 'note': "",
+                                limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": fld.Length,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldlength'
+                        }, {
+                            label: "Is Key Field",
+                            field: {
+                                id: "fldfieldprimary", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsPrimaryKey,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldprimary'
+                        }, {
+                            label: "Is Null",
+                            field: {
+                                id: "fldnull", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsNull == "" ? true : fld.IsNull,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldnull'
+                        }, {
+                            label: "Is Core",
+                            field: {
+                                id: "fldcore", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsCore == "" ? false : fld.IsCore,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldiscore'
+                        }, {
+                            label: "Is Required",
+                            field: {
+                                id: "fldrequired", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsRequired == "" ? false : fld.IsRequired,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldisrequired'
+                        }, {
+                            label: "Is Unique",
+                            field: {
+                                id: "fldunique", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsUnique == "" ? false : fld.IsUnique,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldunique'
+                        }, {
+                            label: "Is Readonly",
+                            field: {
+                                id: "fldreadonly", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsReadOnly == "" ? false : fld.IsReadOnly,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldisreadonly'
+                        }, {
+                            label: "Is Auto",
+                            field: {
+                                id: "fldauto", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsAuto == "" ? false : fld.IsAuto,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldisauto'
+                        }, {
+                            label: "Is Secury",
+                            field: {
+                                id: "fldsecury", 'note': "",
+                                limit: true, maxlength: 50, inputType: 10, textType: 1, timeformat: 0, 'regexp': "", "text": fld.IsSecured == "" ? false : fld.IsSecured,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldissecuried'
+                        }, {
+                            label: "LookUp",
+                            field: {
+                                id: "fldlookup", 'note': "",
+                                limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": fld.LookUpID,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldlookupid'
+                        }, {
+                            label: "Default Value",
+                            field: {
+                                id: "flddfvalue", 'note': "",
+                                limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": fld.DefaultValue,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbflddfalue'
+                        }, {
+                            label: "Regular Expression",
+                            field: {
+                                id: "fldregexp", 'note': "",
+                                limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": fld.RegExp,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldregexp'
+                        }, {
+                            label: "File Extentions",
+                            field: {
+                                id: "fldfileext", 'note': "",
+                                limit: true, maxlength: 50, inputType: 2, textType: 1, timeformat: 0, 'regexp': "", "text": fld.FileExtension,
+                                format: "hex", range: false, isRequired: true,
+                            },
+                            id: 'tbfldfile'
+                        }]
+                    });
+                }
+                var collectSaveFieldInfo = function (fid) {
+                    var f = {};
+                    f.FieldID = fid;
+                    f.AttributeName = $("#tbfldName").Input("text");
+                    f.AttributeType = $("#tbfldType").Input("text");
+                    f.Length = $("#tbfldlength").Input("text");
+                    f.IsNullable = $("#tbfldnull").Input("text");
+                    f.IsPrimaryKey = $("#tbfldprimary").Input("text");
+
+
+                    f.IsCore = $("#tbfldiscore").Input("text");
+                    f.IsRequired = $("#tbfldisrequired").Input("text");
+                    f.IsUnique = $("#tbfldunique").Input("text");
+                    f.IsReadOnly = $("#tbfldisreadonly").Input("text");
+                    f.IsSecured = $("#tbfldissecuried").Input("text");
+                    f.IsAuto = $("#tbfldisauto").Input("text");
+                    f.LookUpID = $("#tbfldlookupid").Input("text");
+                    f.DefaultValue = $("#tbflddfalue").Input("text");
+                    f.RegExp = $("#tbfldregexp").Input("text");
+                    f.FileExtension = $("#tbfldfile").Input("text");
+
+                    return f;
+                }
+                var collectFieldInfo = function (fid) {
+                    var f = {};
+                    if (fid == undefined) {
+                        fid = "";
+                    }
+                    f.FieldID = fid;
+                    f.AttributeName = $("#tbfldName").Input("text");
+                    f.AttributeType = $("#tbfldType").Input("text");
+                    f.Length = $("#tbfldlength").Input("text");
+                    f.IsNull = $("#tbfldnull").Input("text");
+                    f.IsPrimary = $("#tbfldprimary").Input("text");
+
+                    f.IsCore = $("#tbfldiscore").Input("text");
+                    f.IsRequired = $("#tbfldisrequired").Input("text");
+                    f.IsUnique = $("#tbfldunique").Input("text");
+                    f.IsReadOnly = $("#tbfldisreadonly").Input("text");
+                    f.IsSecured = $("#tbfldissecuried").Input("text");
+                    f.IsAuto = $("#tbfldisauto").Input("text");
+                    f.LookUpID = $("#tbfldlookupid").Input("text");
+                    f.DefaultValue = $("#tbflddfalue").Input("text");
+                    f.RegExp = $("#tbfldregexp").Input("text");
+                    f.FileExtension = $("#tbfldfile").Input("text");
+
+                    return f;
+                }
+                var renderField = function (fid) {
+                    //fieldname,fieldtype,length,isprimary,isnull,
+                    $("#fddetail").html("");
+                    var fld = "<div class='float-label '><div id='sfldinfo' class='row'>";
+                    fld = fld + "<div id='tbfldName' class='col-md-12'></div>";
+                    fld = fld + "<div id='tbfldType' class='col-md-12'></div>";
+                    fld = fld + "</div>";
+                    fld = fld + "<div class='row'>";
+                    
+                 
+
+
+                    fld = fld + "<div id='tbfldlookupid' class='col-md-6'></div>";
+                    fld = fld + "<div id='tbflddfalue' class='col-md-6'></div>";
+                    fld = fld + "<div id='tbfldregexp' class='col-md-6'></div>";
+                    fld = fld + "<div id='tbfldfile' class='col-md-6'></div>";
+                    fld = fld + "<div id='tbfldlength' class='col-md-6'></div>";
+
+                    fld = fld + "<div id='tbfldprimary' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldisauto' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldnull' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldiscore' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldisrequired' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldunique' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldisreadonly' class='col-md-3'></div>";
+                    fld = fld + "<div id='tbfldissecuried' class='col-md-3'></div>";
+                    
+
+                    fld = fld + "</div>";
+                    fld = fld + "<div class='row'>";
+                    fld = fld + '<button type="button" class="btn btn-primary" action="save">Save</button>'
+                    fld = fld + "</div>";
+                    fld = fld + "</div>";
+                    $("#fddetail").append("<div class='col-md-12' style='padding:0px;'><div class='col-md-12'>Attribute</div>" + fld + "</div>");
+                    renderFieldInfo(fid);
+                    $("#fddetail").find("button[action=save]").click(function () {
+                        if (_opt.ComponentID != "") {
+                            if (fid == "") {
+                                var f = collectSaveFieldInfo(fid);
+                                saveField(f, function () {
+                                    render(cthis);
+                                });
+                            } else {
+                                var f = collectSaveFieldInfo(fid);
+                                saveField(f, function () {
+                                    render(cthis);
+                                });
+                            }
+                        }
+                        else {
+                            _opt.Fields.push(collectFieldInfo(fid));
+                            renderFields();
+                            renderField();
+                        }
+
+
+                    })
+
+                }
+                var saveField = function (f, onComplete) {
+                    $.ajax('/ComponentManager/AddAttribute',
+                        {
+                            dataType: 'jsonp', // type of response data
+                            data: (({ clientid: _opt.ClientID, componentId: _opt.ComponentID, attribute: JSON.stringify(f) })),
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {   // success callback function
+                                // alert(data);
+                                onComplete();
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                                //$('p').append('Error: ' + errorMessage);
+                            }
+                        });
+                }
+                var render = function (cthis) {
+                    $("#" + _opt.plc).html("");
+                    $("#saveaction").html("");
+                    $("#saveaction").append(' <input type="button" id="btnSaveTable" class="btn  btn-primary" value="Accept Changes" />');
+                    $("#saveaction").append('<input type = "button" id = "btnReverse" value = "Retract" class= "btn  btn-default" />');
+                    var stt = "<div>";
+                            stt = stt + "<div class='row'>";
+                    stt = stt + "<div id='nvCompbar'  class='col-md-10'>";                    
+                                stt = stt + "</div>";
+                            stt = stt + "</div>";
+                    stt = stt + "<div class='row mgtop-15' id='containercomp'>";
+                                stt = stt + "<div class='col-md-8'  style='border-right:4px solid #eee;'>";
+                                    stt = stt + "<div id='tbplc'  class='float-label '></div>";
+                                    stt = stt + "<div id='fldinfo' class=''></div>";
+                                stt = stt + "</div>";
+                                stt = stt + "<div class='col-md-4' style='padding:0px;' id='fddetail'></div>";
+                            stt = stt + "</div>";
+                    stt = stt + "</div>";
+
+                    $("#" + _opt.plc).append(stt);
+
+                    $("#nvCompbar").toolbar({
+                        name: "", linkbuttons:
+                            ['<a class="nav-link active" name="vclookup" href="#">Component Detail</a>',
+                                '<a class="nav-link" name="vclookup" href="#">Component Attribute</a>',
+                                '<a class="nav-link" name="vcEditor" href="#">Component Editor</a>'], isVertical: false
+                    });
+                    $("#nvCompbar").find("a[name=vcEditor]").click(function () {
+                        designer();
+                    })
+                    if (_opt.TableID != "") {
+                        getTable(function () {
+                            renderTable();
+                            renderField("");
+                        })
+                    } else {    
+                        renderTable();
+                        renderField("");
+                    }
+                    //renderTable();
+                    $("#btnSaveTable").click(function () {
+                        Save();
+                    })
+                }
+                var designer = function () {
+                    var d = '<div id="editor" class="editor" style="width:800px; height:650px;">function foo(items) {'
+    d =d + 'var x = "All this is syntax highlighted";'
+                    d = d +                     'return x;'
+                    d = d + '}</div>';
+                    $("#containercomp").html("");
+                    $("#containercomp").append(d);
+                    var editor = ace.edit("editor");
+                    editor.setTheme("ace/theme/twilight");
+                    editor.session.setMode("ace/mode/QScriptMode");
+                }
+                var renderAttribute = function () {
+
+                }
+                render(this);
+            }            
+            $CM.AttributeComponent = function (options) {
+                var defaults = {
+                    plc: "",
+                    key: "",
+                    onAdd:function () {
+
+                    }
+                }
+                var _opt = $.extend({}, defaults, options);
+
+            }
+        })($);                     
+
+        (function ($LK) {
+            $LK.Lookup = function (options) {
+                var defaults = {
+                    plc:"",                    
+                }
+                var _opt = $.extend({}, defaults, options);
+                var lookupid = "";
+                var lookups = [];
+                var lookupItems = [];
+               
+                var getLookup = function () {
+                    $.ajax({
+                        url: '/ComponentManager/GetLookups',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            lookups = result;
+                            renderLookupList(result);
+                        }
+                    });
+                }
+                var addLookup = function (lkname) {
+                    $.ajax({
+                        url: '/ComponentManager/SaveLookUp',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, name: lkname
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            getLookup();
+                        }
+                    });
+                }
+                var saveLookupItems = function (items) {
+                    $.ajax({
+                        url: '/ComponentManager/AddLookupItems',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lookupid, Lookupitems: JSON.stringify(items)
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            getLookUpItems();
+                        }
+                    });
+                }
+                var changeorder = function (lkitemid,order) {
+                    $.ajax({
+                        url: '/ComponentManager/ChangeOrder',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lookupid, lookupitemid: lkitemid,Order:order
+
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                           // lookupItems[indx] = itm;
+                            getLookUpItems();
+                        }
+                    });
+                }
+                var updateItem = function (indx,itm) {                    
+                    $.ajax({
+                        url: '/ComponentManager/UpdateLookupItem',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lookupid, Lookupitem: JSON.stringify(itm)
+
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            lookupItems[indx] = itm;
+                            //renderLookupItems();
+                        }
+                    });
+                }
+                var changeStatus = function (i, val) {
+                    var itm = lookupItems[i];
+
+                    $.ajax({
+                        url: '/ComponentManager/ChangeActive',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lookupid, lookupitemid: itm.LookUpItemID, isActive:val
+
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            lookupItems[i].IsActive=val;
+                            renderLookupItems();
+                        }
+                    });
+                }
+                var removelookup = function (lkid) {
+
+                    $.ajax({
+                        url: '/ComponentManager/RemoveLookup',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lkid
+
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            var nv = [];
+                            $.each(lookups, function (k, v) {
+                                if (v.LookupID != lkid) {
+                                    nv.push(v);
+                                }
+                            });
+                            lookups = nv;
+                            renderLookupList(lookups);
+                        }
+                    });
+                }
+
+                var removeLookupItem = function (LookUpItemID) {
+                    
+                    $.ajax({
+                        url: '/ComponentManager/RemoveLookupItem',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lookupid, lookupitemid: LookUpItemID
+
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) { 
+                            var nv = [];
+                            $.each(lookupItems, function (k, v) {
+                                if (v.LookUpItemID != LookUpItemID) {
+                                    nv.push(v);
+                                }
+                            });
+                            lookupItems = nv;
+                            renderLookupItems();
+                        }
+                    });
+                }
+                var renderLookupItems = function () {
+                    var $center = $("#" + _opt.plc).find("#centerpnllook");
+                    $center.html("");
+                    var lkname = '';
+                    if (lookups.length > 0) {
+                        var k =lookups.filter(function (obj) {
+                            return (obj.LookupID === lookupid);
+                        });
+                        if (k.length > 0) {
+                            lkname = " - " + k[0].Name;
+                        }
+                    }
+                    $center.append("<div class='pgtitle'> Lookup items" + lkname  +" </div>")
+                    $center.append("<div id='ctrllkitm' class='col-md-8' style='margin-bottom:25px;'>  </div>")
+                    var itm = "<div  id='lookupitms'>"
+                    itm = itm +    "<div class='row rowheader'>"
+                    itm = itm + "<div class='col-md-3'>Lable</div>";
+                    itm = itm + "<div class='col-md-3'>short Label</div>";
+                    itm = itm + "<div class='col-md-3'>Description</div>";
+                    itm = itm + "<div class='col-md-2'>Is Active</div>";
+                    itm = itm + "</div>"
+                    $.each(lookupItems, function (k, v) {
+                        itm = itm + "<div class='row rowlight tdrow ui-state-default' action='row' indx='" + k +"'>"
+                        itm = itm + "<div class='col-md-3' contenteditable='true' action='lbl' data-text='Enter label' indx='"+ k +"'>" + v.Label + "</div>";
+                        itm = itm + "<div class='col-md-3' contenteditable='true' data-text='Enter short label' action='lbls' indx='" + k + "'>" + v.ShortLabel + "</div>";
+                        
+                        itm = itm + "<div class='col-md-3' contenteditable='true' data-text='Enter Description' action='ldesc' indx='" + k +"'>" + v.Description + "</div>";
+                        itm = itm + "<div class='col-md-1' action='active' id='acive_" + k + "'></div>";
+                        itm = itm + "<div class='col-md-1 ' action='remove' indx='" + k +"' id='remove_" + k + "'><a href='#'><span title='Delete' class='remove fa fa-remove'  ></span></a ></div>";
+                        itm = itm + "</div>"
+                    })
+                    itm = itm + "</div>";
+                    $center.append(itm);
+                    renderAddLookupItems("ctrllkitm");
+                    var itms = $center.find("[action=active]");
+                    $.each(itms, function (k, v) {
+                        $(v).Input({
+                            id: "ctr_active_" + k,
+                            inputType: 16,
+                            text: lookupItems[k].IsActive
+                        });
+                    });
+                    //enable sort to change the order
+                    $("#lookupitms").sortable({
+                        revert: true,
+                        placeholder: "plchighlight",
+                        stop: function (event, ui) {
+                            var idx = ui.item.attr("indx");
+                            var rows = $("#lookupitms").find("[action=row]");
+                            var od = 0;
+                            $.each(rows, function (k,v) {
+                                if ($(v).attr("indx") == idx) {
+                                    od = k + 1;
+                                }
+                            })
+                            var v = lookupItems[idx];
+                            changeorder(v.LookUpItemID, od);
+                            lookupItems[idx].Order = od;
+                        }
+                    });
+                    //over come draggable to inline edit.
+                    $('#lookupitms').find('div').bind('click', function () {
+                        $(this).focus();
+                    });
+
+                    $center.find("[action=lbls]").blur(function () {
+                        var v = $(this).text();
+                        var indx = $(this).attr("indx");
+                        var o = jQuery.extend({}, lookupItems[indx]);
+                        o.ShortLabel = v;
+                        updateItem(indx, o);
+                    });
+
+
+                    $center.find("[action=ldesc]").blur(function () {
+                        var v = $(this).text();
+                        var indx = $(this).attr("indx");
+                        var o = jQuery.extend({}, lookupItems[indx]);
+                        o.Description = v;
+                        updateItem(indx, o);
+                    });
+                    
+                    $center.find("[action=lbl]").blur(function () {
+                        var v = $(this).text();
+                        var indx = $(this).attr("indx");
+                        var o = jQuery.extend({}, lookupItems[indx]);
+                        o.Label = v;
+                        updateItem(indx, o);
+                    });
+
+                    $center.find("[action=remove]").click(function () {                        
+                        var indx = $(this).attr("indx");
+                        $("#window").dialogBox({
+                            id: 'wd',
+                            title: "",
+                            message: "Are you sure, you want to remove this lookup?",
+                            onAction: function () {
+                                removeLookupItem(lookupItems[indx].LookUpItemID)
+                                $("#window").dialogBox('hide');
+                            },
+                            onCancel: function () {
+                                //    alert('no');
+                            },
+                            type: 2,
+                            alertType: 3,
+                        })
+                        $("#window").dialogBox('show');
+                        
+                    });
+
+                    itms.find("[type=checkbox]").click(function () {
+                        var indx = $(this).attr("id").split("_")[2];
+                        changeStatus(indx, $(this).prop("checked"));
+                    });
+                }
+                var getLookUpItems = function () {
+                    $.ajax({
+                        url: '/ComponentManager/GetLookup',
+                        type: "GET",
+                        data: {
+                            clientid: window.clientid, lookupid: lookupid
+                        },
+                        dataType: 'jsonp',
+                        success: function (result) {
+                            lookupItems = result.LookupItems;
+                            renderLookupItems();
+                        }
+                    });
+                }
+                var addLookupItemArray = function (arr) {
+                    var litem = [];
+                    $.each(arr, function (k,v) {
+                        var o = {};
+                        o.Label = v;
+                        o.ShortLabel = v;
+                        o.Description = "";
+                        o.ParentID = "";
+                        o.Order = k +1;
+                        o.IsActive = true;
+                        litem.push(o);
+                    })
+                    saveLookupItems(litem);
+                }
+                var renderAddLookupItems = function (plc) {
+                    var a = '<div class="input-group mb-3">';
+                    a = a + '<input type="text" id="txtitemlist" class="form-control" placeholder="Enter Lookup items comma separator" aria-label="" aria-describedby="basic-addon2">';
+                    a = a + '<div class="input-group-append">';
+                    a = a + '<button class="btn btn-outline-secondary" id="addlkitem" type="button">Add Lookup Items</button>';
+                    a = a + '</div>';
+                    a = a + '</div>';
+                    $("#" + plc).html("");
+                    $("#" + plc).append(a);
+                    $("#addlkitem").click(function () {
+                        var n = $("#txtitemlist").val();
+                        if (n != "") {
+                            addLookupItemArray(n.split(","));
+                        }
+                    })
+                }
+                var renderAddLookup = function (plc) {
+                    var a = '<div class="input-group mb-3">'; 
+                    a = a + '<input type="text" id="txtLname" class="form-control" placeholder="Enter Lookup Name" aria-label="" aria-describedby="basic-addon2">';
+                    a = a + '<div class="input-group-append">';
+                    a = a + '<button class="btn btn-outline-secondary" id="addlk" type="button">Add Lookup</button>';
+                    a = a + '</div>';
+                    a = a + '</div>';
+                    $("#" + plc).html("");
+                    $("#" + plc).append(a);
+                    $("#addlk").click(function () {
+                        var n = $("#txtLname").val();
+                        if (n != "") {
+                            addLookup(n);
+                        }                         
+                    })
+                }
+                var renderLookupList = function (data) {
+                    $("#" + _opt.plc).find("#leftpnllook").html("");
+                    var a = "";
+                    a = "<div class='list col-md-12'><div class='header'>Lookup List</div><div id='plcaddlook'></div><ul>";
+                    $.each(data, function (k,v) {
+                        a = a + "<li name='" + v.LookupID + "'><div class='row '><div class='col-md-10'>" + v.Name + "</div><div class='col-md-2' ><a href='#' style='text-indent:-100%;' name='" + v.LookupID + "'><span title='Delete' class='remove fa fa-remove'   ></span></a ></div></div></li>"
+                    })                    
+                    a = a + "</ul></div>";
+                    $("#" + _opt.plc).find("#leftpnllook").append(a);
+                    renderAddLookup("plcaddlook");
+                    $("#" + _opt.plc).find("#leftpnllook").find("li").click(function () {
+                        $(this).parent().find("li").removeClass("liactive");
+                        lookupid = $(this).attr("name");
+                        $(this).removeClass("liactive");
+                        $(this).addClass("liactive");
+                        getLookUpItems();
+                    })
+                    $("#" + _opt.plc).find("#leftpnllook").find("a").click(function (e) {
+                        e.stopPropagation(); 
+                        var n = $(this).attr("name");
+
+                        $("#window").dialogBox({
+                            id: 'wd',
+                            title: "",
+                            message: "Are you sure, you want to remove this lookup?",
+                            onAction: function () {
+                                removelookup(n);
+                                $("#window").dialogBox('hide');
+                            },
+                            onCancel: function () {
+                                //    alert('no');
+                            },
+                            type: 2,
+                            alertType: 3,
+                        })
+                        $("#window").dialogBox('show');
+
+                        
+                    })
+
+                }
+                var render = function () {
+                    getLookup();
+                }
+                var renderContent = function () {
+                    $.ajax({
+                        url: '/ComponentManager/Lookup',
+                        contentType: 'application/html; charset=utf-8',
+                        type: 'GET',
+                        dataType: 'html',
+                        success: function (result) {
+                            $('#' + _opt.plc).html(result);
+                            render();
+                        }
+                    });
+                }
+                renderContent();
+                return this;
+            }
+        })($);
+
+       // var c = new $.ComponentManager({ plc: "container" });
+        
+            
+    })
+</script>
+
+
+<div id="window"></div>

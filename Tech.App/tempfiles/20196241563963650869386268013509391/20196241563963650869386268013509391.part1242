@@ -1,0 +1,619 @@
+nthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2019,8,1120.00,1000.00,120.00,8000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2019,9,1120.00,1000.00,120.00,7000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2019,10,1120.00,1000.00,120.00,6000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2019,11,1120.00,1000.00,120.00,5000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2019,12,1120.00,1000.00,120.00,4000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2020,1,1120.00,1000.00,120.00,3000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2020,2,1120.00,1000.00,120.00,2000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2020,3,1120.00,1000.00,120.00,1000.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+INSERT INTO `pr_loan_scheduler`(`ClientID`,`LoanID`,`Year`,`Month`,`MonthlyInstallAmount`,`PrinicipalAmount`,`InterestAmount`,`BalanceAmount`,`PerquisiteAmount`,`PaidPercentage`,`IsPaid`,`PayMode`,`ReferenceNo`,`Remarks`,`UpdatedBy`,`PaidDate`,`LastUPD`) VALUES
+(2,481,2020,4,1120.00,1000.00,120.00,0.00,0.00,0.00,0,NULL,NULL,NULL,NULL,NULL,'2019-05-07 10:33:51');
+COMMIT;
+/*!40000 ALTER TABLE `pr_loan_scheduler` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_lop
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_lop` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `Absent` decimal(10,2) DEFAULT NULL,
+  `UnpaidLeaves` decimal(10,2) DEFAULT NULL,
+  `TotalLOP` decimal(10,2) DEFAULT NULL,
+  `Month` int(10) unsigned NOT NULL DEFAULT '0',
+  `Year` int(10) unsigned NOT NULL DEFAULT '0',
+  `PayCycleID` int(10) unsigned NOT NULL,
+  `Remarks` text,
+  `Createdby` int(10) unsigned DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`Month`,`Year`,`PayCycleID`),
+  KEY `ind1` (`ClientID`,`UserID`,`Month`,`Year`,`PayCycleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_lop
+-- 
+
+/*!40000 ALTER TABLE `pr_lop` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,1.00,1.00,1,2018,71,'Remarks',90,'2019-03-14 12:11:12');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,2.00,2.00,2,2018,71,'',90,'2019-02-22 15:10:36');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,1.00,1.00,2,2019,71,'',90,'2019-03-11 16:01:56');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,-2.50,-2.50,3,2017,71,'',90,'2018-04-11 12:21:27');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,0.00,0.00,3,2018,71,'',90,'2018-12-17 18:59:02');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,2.00,2.00,5,2018,71,'',90,'2018-06-06 16:01:02');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,1.00,1.00,9,2017,59,'',90,'2017-09-27 19:11:19');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,1.00,1.00,10,2017,59,'',90,'2017-10-06 15:13:46');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,1.00,1.00,2.00,10,2018,72,'Test Import',90,'2018-01-24 17:29:25');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,90,0.00,10.00,10.00,11,2017,71,'test',90,'2018-01-24 10:17:25');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,92,0.00,1.00,1.00,11,2017,59,'',90,'2017-11-06 19:07:55');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,96,0.00,2.00,2.00,11,2017,59,'',90,'2017-11-06 19:07:55');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,105,0.00,5.00,5.00,2,2018,71,'',90,'2019-02-22 15:10:36');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,105,0.00,12.00,12.00,7,2017,59,'',90,'2017-09-27 17:04:26');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,106,0.00,1.00,1.00,7,2017,59,'',90,'2017-09-27 17:04:26');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,136,0.00,2.00,2.00,9,2017,59,'',90,'2017-09-27 19:11:19');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,151,0.00,7.00,7.00,4,2018,71,'',90,'2018-12-17 18:58:09');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,151,0.00,6.00,6.00,9,2017,59,'',90,'2017-09-27 19:11:19');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,152,0.00,2.00,2.00,9,2017,59,'',90,'2017-09-27 19:11:19');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,154,3.00,3.00,3.00,7,2018,71,'Test',90,'2018-01-24 18:18:07');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,154,5.00,2.00,3.00,9,2018,73,'Payroll Excel Import',90,'2018-01-24 15:41:04');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,154,3.00,2.00,5.00,10,2018,1,'Payroll Excel Import',90,'2018-01-24 17:04:41');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,154,3.00,2.00,5.00,10,2018,72,'Payroll Excel Import',90,'2018-01-24 17:29:30');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,155,0.00,1.00,1.00,9,2017,60,'',90,'2017-09-27 19:11:53');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,165,0.00,-3.00,-3.00,3,2018,71,'Remarks',90,'2018-12-17 18:59:02');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,166,0.00,2.00,2.00,9,2017,60,'',90,'2017-09-27 19:11:53');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,176,0.00,5.00,5.00,11,2018,71,'',90,'2018-12-13 18:59:36');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,181,0.00,3.00,3.00,9,2017,60,'',90,'2017-09-27 19:11:53');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,217,0.00,2.00,2.00,6,2017,71,'',90,'2017-12-20 18:30:00');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,236,0.00,2.00,2.00,2,2018,71,'',90,'2019-02-22 15:10:36');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,236,0.00,0.00,0.00,6,2018,71,'',90,'2018-07-09 16:35:52');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,252,0.00,1.00,1.00,4,2018,71,'',90,'2018-12-17 18:58:09');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5129,1.00,1.00,1.00,7,2018,71,'Excel Import',90,'2018-01-24 18:18:07');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5129,2.00,2.00,2.00,12,2018,72,'Excel Import',90,'2018-01-24 18:15:24');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5130,0.00,2.00,2.00,12,2017,71,'Test Import',90,'2018-01-24 18:02:17');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5131,0.00,3.00,3.00,12,2017,71,'Test Payroll Import',90,'2018-01-24 18:02:19');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5179,0.00,17.00,17.00,3,2018,71,'',90,'2018-12-17 18:59:02');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5179,0.00,0.00,0.00,4,2018,71,'',90,'2018-12-17 18:58:09');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5179,0.00,2.00,2.00,11,2018,71,'',90,'2018-12-13 18:59:36');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5425,0.00,2.00,2.00,4,2018,71,'',90,'2018-12-17 18:58:09');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5426,0.00,3.00,3.00,11,2018,155,'',90,'2018-11-22 12:37:31');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5427,0.00,2.00,2.00,11,2018,155,'',90,'2018-11-22 12:37:31');
+INSERT INTO `pr_lop`(`ClientID`,`UserID`,`Absent`,`UnpaidLeaves`,`TotalLOP`,`Month`,`Year`,`PayCycleID`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,5428,0.00,1.00,1.00,11,2018,155,'',90,'2018-11-22 12:37:31');
+COMMIT;
+/*!40000 ALTER TABLE `pr_lop` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_lop_adjustment
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_lop_adjustment` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `RecordID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `PayCycleID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `AdjustedLOP` decimal(10,2) DEFAULT NULL,
+  `Month` int(10) unsigned NOT NULL DEFAULT '0',
+  `Year` int(10) unsigned NOT NULL DEFAULT '0',
+  `AdjustmentMonth` int(10) unsigned NOT NULL DEFAULT '0',
+  `AdjustmentYear` int(10) unsigned NOT NULL DEFAULT '0',
+  `Remarks` text,
+  `Createdby` int(10) unsigned DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`RecordID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_lop_adjustment
+-- 
+
+/*!40000 ALTER TABLE `pr_lop_adjustment` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,34,71,90,2.00,4,2018,2,2018,'',90,'2018-05-09 16:28:23');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,35,71,96,2.00,4,2018,2,2018,'',90,'2018-04-23 12:00:17');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,36,71,110,4.00,4,2018,3,2018,'',90,'2018-05-09 18:26:50');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,37,71,112,4.00,4,2018,4,2018,'rer',90,'2018-04-20 17:44:01');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,38,71,114,5.00,4,2018,4,2018,'trt',90,'2018-04-20 17:44:01');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,39,71,122,6.00,4,2018,4,2018,'yt',90,'2018-04-20 17:44:01');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,42,71,90,1.00,4,2018,1,2018,'',90,'2018-04-23 12:00:17');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,43,71,96,1.00,4,2018,1,2018,'',90,'2018-04-23 12:00:17');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,44,71,90,3.00,4,2018,3,2018,'',90,'2018-04-23 12:00:17');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,46,71,90,4.00,4,2018,4,2018,'',90,'2018-04-23 12:00:17');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,47,71,96,5.00,4,2018,4,2018,'',90,'2018-04-23 12:00:18');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,49,71,105,23.00,2,2019,3,2019,'',90,'2019-04-23 14:18:08');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,50,71,90,1.00,4,2019,2,2019,'',90,'2019-04-29 18:09:23');
+INSERT INTO `pr_lop_adjustment`(`ClientID`,`RecordID`,`PayCycleID`,`UserID`,`AdjustedLOP`,`Month`,`Year`,`AdjustmentMonth`,`AdjustmentYear`,`Remarks`,`Createdby`,`LastUPD`) VALUES
+(2,51,71,105,1.00,4,2019,2,2019,'',90,'2019-04-29 18:09:23');
+COMMIT;
+/*!40000 ALTER TABLE `pr_lop_adjustment` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_one_time_component
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_one_time_component` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `ComponentID` int(10) unsigned NOT NULL,
+  `ComponentCode` varchar(255) DEFAULT NULL,
+  `PayType` int(10) unsigned DEFAULT NULL,
+  `Amount` float DEFAULT NULL,
+  `Month` int(10) unsigned NOT NULL,
+  `Year` int(10) unsigned NOT NULL,
+  `Remarks` text,
+  `CreatedBy` int(10) unsigned DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `IsAutoGenerate` tinyint(1) DEFAULT NULL,
+  `ComponentDetails` longtext,
+  PRIMARY KEY (`ClientID`,`UserID`,`ComponentID`,`Month`,`Year`),
+  KEY `pr_otc_ind_1` (`ClientID`,`ComponentID`,`Month`,`Year`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_one_time_component
+-- 
+
+/*!40000 ALTER TABLE `pr_one_time_component` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(0,90,165,'ATTEND_BON',4,134,4,2018,'',90,'2019-04-04 19:57:23',1,'');
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(0,5179,165,'ATTEND_BON',4,133,4,2018,'',90,'2019-04-04 20:24:41',1,'');
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,90,158,'SHIFT_ALLOWANCE',4,250,5,2019,'',90,'2019-05-07 15:11:53',1,'[{\"ClientID\":2,\"PayDate\":\"2019-04-03T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11829.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-04T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11830.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-05T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"TARDINESS\\\",\\\"ComponentName\\\":\\\"Tardiness\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"0:10\\\",\\\"Value\\\":0.166666666666667},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11831.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-06T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":50.00,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"TOTAL_WORKED_HOURS\\\",\\\"ComponentName\\\":\\\"Total Worked Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-07T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-08T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11832.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-09T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11836.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-10T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11837.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-11T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":50.00,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"6:0\\\",\\\"Value\\\":6.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"TOTAL_WORKED_HOURS\\\",\\\"ComponentName\\\":\\\"Total Worked Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"9:0\\\",\\\"Value\\\":9.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-12T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":50.00,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"6:0\\\",\\\"Value\\\":6.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"TOTAL_WORKED_HOURS\\\",\\\"ComponentName\\\":\\\"Total Worked Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"7:30\\\",\\\"Value\\\":7.5},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-13T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":50.00,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"1:0\\\",\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"TOTAL_WORKED_HOURS\\\",\\\"ComponentName\\\":\\\"Total Worked Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"7:0\\\",\\\"Value\\\":7.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-14T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-15T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11840.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-16T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11841.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-17T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11844.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-18T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":50.00,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"TOTAL_WORKED_HOURS\\\",\\\"ComponentName\\\":\\\"Total Worked Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"1:30\\\",\\\"Value\\\":1.5},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-19T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-20T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-21T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-22T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-23T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-24T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-25T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-26T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":11864.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-27T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-28T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-29T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-04-30T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-05-01T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"UNDERTIME\\\",\\\"ComponentName\\\":\\\"UnderTime\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_HOURS\\\",\\\"ComponentName\\\":\\\"Schedule Hours\\\",\\\"CompType\\\":1,\\\"Hours\\\":\\\"8:0\\\",\\\"Value\\\":8.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"},{\"ClientID\":2,\"PayDate\":\"2019-05-02T00:00:00\",\"PayScheduleID\":0,\"PayScheduleCode\":\"Test Flexi\",\"CalcType\":0,\"FixedAmount\":50.00,\"Formulae\":\"\",\"Derivedvalue\":0.0,\"Remarks\":\"\",\"ComponentDetails\":\"[{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"MONTH_DAYS\\\",\\\"ComponentName\\\":\\\"Month Days\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":31.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"DAY_TYPE\\\",\\\"ComponentName\\\":\\\"Day Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"IN_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"IN TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"OUT_TIME_PRESENT\\\",\\\"ComponentName\\\":\\\"OUT TIME PRESENT\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_DURATION\\\",\\\"ComponentName\\\":\\\"LEAVE DURATION\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"LEAVE_REQUESTID\\\",\\\"ComponentName\\\":\\\"LEAVE\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":0.0},{\\\"ComponentID\\\":-1,\\\"ComponentCode\\\":\\\"SCHEDULE_TYPE\\\",\\\"ComponentName\\\":\\\"Schedule Type\\\",\\\"CompType\\\":0,\\\"Hours\\\":null,\\\"Value\\\":1.0}]\"}]');
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,90,165,'ATTEND_BON',4,12,4,2018,'',90,'2019-04-05 17:58:39',1,'');
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,90,165,'ATTEND_BON',4,5998,5,2018,'',90,'2019-04-05 17:28:05',1,'');
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,105,158,'',4,3343,3,2019,'',90,'2019-03-26 12:28:35',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,105,165,'',4,1000,3,2019,'',90,'2019-03-26 12:12:12',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,111,158,'',4,1000,3,2019,'',90,'2019-03-26 12:26:06',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,111,165,'',4,1000,3,2019,'',90,'2019-03-26 12:12:12',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,111,169,'',4,850,3,2019,'',90,'2019-03-26 11:45:58',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,122,158,'',4,1000,3,2019,'',90,'2019-03-26 12:24:43',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,122,165,'',4,1000,3,2019,'',90,'2019-03-26 12:12:12',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,122,169,'',4,850,3,2019,'',90,'2019-03-26 11:45:58',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,151,158,'',4,3343,3,2019,'',90,'2019-03-26 12:28:35',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,151,165,'',4,1000,3,2019,'',90,'2019-03-26 12:12:13',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,151,169,'',4,850,3,2019,'',90,'2019-03-26 11:45:59',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,164,158,'',4,3343,3,2019,'',90,'2019-03-26 12:28:35',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,164,165,'',4,2345,3,2019,'',90,'2019-03-26 12:13:05',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,165,158,'',4,324,3,2019,'',90,'2019-03-26 14:20:13',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,165,165,'',4,2345,3,2019,'',90,'2019-03-26 12:13:06',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,165,169,'',4,850,3,2019,'',90,'2019-03-26 11:45:59',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,166,158,'',4,1234,3,2019,'',90,'2019-03-26 12:38:11',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,166,165,'',4,2345,3,2019,'',90,'2019-03-26 12:13:07',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,166,169,'',4,850,3,2019,'',90,'2019-03-26 11:45:59',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,171,158,'',4,1234,3,2019,'',90,'2019-03-26 12:38:11',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,171,165,'',4,2345,3,2019,'',90,'2019-03-26 12:13:07',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,171,169,'',4,850,3,2019,'',90,'2019-03-26 11:45:59',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,172,158,'',4,1234,3,2019,'',90,'2019-03-26 12:38:12',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,172,165,'',4,100,3,2019,'',90,'2019-03-26 12:20:40',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,174,158,'',4,324,3,2019,'',90,'2019-03-26 14:20:13',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,174,165,'',4,100,3,2019,'',90,'2019-03-26 12:20:40',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,174,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:00',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,176,165,'',4,100,3,2019,'',90,'2019-03-26 12:20:40',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,176,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:00',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,177,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:00',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,178,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:00',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,183,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:00',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,184,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:01',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,186,169,'',4,850,3,2019,'',90,'2019-03-26 11:46:01',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,5179,165,'ATTEND_BON',4,123,4,2018,'',90,'2019-04-04 18:40:20',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,5179,165,'ATTEND_BON',4,28565.1,5,2018,'',90,'2019-04-05 17:28:05',1,'');
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,5549,158,'SHIFT_ALLOWANCE',4,7397.26,1,2016,'',90,'2019-03-28 10:41:46',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,5549,158,'SHIFT_ALLOWANCE',4,7397.26,3,2019,'',90,'2019-03-27 12:26:42',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,5549,165,'ATTEND_BON',4,0,4,2018,'',90,'2019-04-01 17:03:30',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,6677,158,'SHIFT_ALLOWANCE',4,6092.26,1,2016,'',90,'2019-03-28 10:41:46',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,6677,158,'SHIFT_ALLOWANCE',4,6092.26,3,2019,'',90,'2019-03-27 12:26:42',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,6677,165,'ATTEND_BON',4,0,4,2018,'',90,'2019-04-01 17:03:30',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,6983,158,'SHIFT_ALLOWANCE',4,7397.26,1,2016,'',90,'2019-03-28 10:41:46',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,6983,158,'SHIFT_ALLOWANCE',4,7397.26,3,2019,'',90,'2019-03-27 12:26:42',NULL,NULL);
+INSERT INTO `pr_one_time_component`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`PayType`,`Amount`,`Month`,`Year`,`Remarks`,`CreatedBy`,`LastUPD`,`IsAutoGenerate`,`ComponentDetails`) VALUES
+(2,6983,165,'ATTEND_BON',4,0,4,2018,'',90,'2019-04-01 17:03:30',NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `pr_one_time_component` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_ot_pay_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_ot_pay_settings` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `EmployeeGroupID` int(10) unsigned NOT NULL,
+  `OTPayName` varchar(100) NOT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`EmployeeGroupID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_ot_pay_settings
+-- 
+
+/*!40000 ALTER TABLE `pr_ot_pay_settings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_ot_pay_settings`(`ClientID`,`EmployeeGroupID`,`OTPayName`,`ActionBy`,`LastUPD`) VALUES
+(2,1107,'12145',90,'2019-06-08 18:00:57');
+INSERT INTO `pr_ot_pay_settings`(`ClientID`,`EmployeeGroupID`,`OTPayName`,`ActionBy`,`LastUPD`) VALUES
+(2,1108,'test1234',90,'2018-05-04 19:07:38');
+INSERT INTO `pr_ot_pay_settings`(`ClientID`,`EmployeeGroupID`,`OTPayName`,`ActionBy`,`LastUPD`) VALUES
+(2,1117,'fu',90,'2018-05-04 19:07:22');
+COMMIT;
+/*!40000 ALTER TABLE `pr_ot_pay_settings` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_ot_pay_settings_eg
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_ot_pay_settings_eg` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `EmployeeGroupID` int(10) unsigned NOT NULL,
+  `DayTypeCode` varchar(10) NOT NULL,
+  `PaymentType` int(10) unsigned NOT NULL COMMENT ' Refer Lookup Table with ID 226 ',
+  `Formulae` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_ot_pay_settings_eg
+-- 
+
+/*!40000 ALTER TABLE `pr_ot_pay_settings_eg` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',1,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',2,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',3,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',4,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',5,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',6,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',7,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'H',8,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',1,'[CTC] + [LEAVE_ENCASHMENT_DAYS]');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',2,'[SCHEDULE_TYPE] + [BREAK_HOURS]');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',3,'test3');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',4,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',5,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',6,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',7,'dfgsdfg');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WD',8,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',1,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',2,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',3,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',4,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',5,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',6,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',7,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1',8,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',1,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',2,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',3,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',4,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',5,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',6,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',7,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF1H',8,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',1,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',2,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',3,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',4,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',5,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',6,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',7,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2',8,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',1,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',2,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',3,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',4,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',5,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',6,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',7,'');
+INSERT INTO `pr_ot_pay_settings_eg`(`ClientID`,`EmployeeGroupID`,`DayTypeCode`,`PaymentType`,`Formulae`) VALUES
+(2,1108,'WF2H',8,'');
+COMMIT;
+/*!40000 ALTER TABLE `pr_ot_pay_settings_eg` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_overtime
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_overtime` (
+  `ClientID` int(11) NOT NULL DEFAULT '0',
+  `UserID` int(11) NOT NULL DEFAULT '0',
+  `ComponentID` int(11) NOT NULL DEFAULT '0',
+  `ComponentCode` varchar(255) DEFAULT NULL,
+  `OTHours` int(11) DEFAULT NULL,
+  `ForMonth` int(11) NOT NULL DEFAULT '0',
+  `ForYear` int(11) NOT NULL DEFAULT '0',
+  `ConsideringSalaryMonth` int(11) NOT NULL DEFAULT '0',
+  `ConsideringSalaryYear` int(11) NOT NULL DEFAULT '0',
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`UserID`,`ComponentID`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_overtime
+-- 
+
+/*!40000 ALTER TABLE `pr_overtime` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,165,102,'BASIC',605,5,2019,11,2019,90,'2019-06-19 10:52:13');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,5092,102,'BASIC',405,12,2019,2,2019,90,'2019-06-19 10:52:43');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,5217,102,'BASIC',605,1,2019,7,2019,90,'2019-06-19 10:51:15');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,5548,102,'BASIC',605,3,2019,9,2019,90,'2019-06-19 11:06:54');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,6674,102,'BASIC',605,10,2019,1,2019,90,'2019-06-19 10:52:35');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,6682,102,'BASIC',405,6,2019,12,2019,90,'2019-06-19 10:52:24');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,6831,101,'CTC',120,1,2019,3,2019,90,'2019-06-19 17:19:38');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,6937,102,'BASIC',405,2,2019,8,2019,90,'2019-06-19 10:51:33');
+INSERT INTO `pr_overtime`(`ClientID`,`UserID`,`ComponentID`,`ComponentCode`,`OTHours`,`ForMonth`,`ForYear`,`ConsideringSalaryMonth`,`ConsideringSalaryYear`,`CreatedBy`,`LastUPD`) VALUES
+(2,7260,102,'BASIC',405,4,2019,10,2019,90,'2019-06-19 10:52:01');
+COMMIT;
+/*!40000 ALTER TABLE `pr_overtime` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_paycomponent_formulae
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_paycomponent_formulae` (
+  `ClientID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `FormulaID` int(11) NOT NULL AUTO_INCREMENT,
+  `FormulaName` varchar(100) NOT NULL,
+  `Formula` varchar(100) NOT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`FormulaID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_paycomponent_formulae
+-- 
+
+/*!40000 ALTER TABLE `pr_paycomponent_formulae` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_paycomponent_formulae`(`ClientID`,`ComponentID`,`FormulaID`,`FormulaName`,`Formula`,`ActionBy`,`LastUPD`) VALUES
+(2,151,1,'10 % of Basic','[E_BASIC]*10/100',90,'2019-06-17 11:50:43');
+INSERT INTO `pr_paycomponent_formulae`(`ClientID`,`ComponentID`,`FormulaID`,`FormulaName`,`Formula`,`ActionBy`,`LastUPD`) VALUES
+(2,102,2,'50 % of Basic','[BASIC]*50/100',90,'2018-08-29 19:47:13');
+INSERT INTO `pr_paycomponent_formulae`(`ClientID`,`ComponentID`,`FormulaID`,`FormulaName`,`Formula`,`ActionBy`,`LastUPD`) VALUES
+(2,151,3,'20 % of  BASIC','[E_BASIC]+[BASIC]*20/100',90,'2018-08-29 19:51:04');
+INSERT INTO `pr_paycomponent_formulae`(`ClientID`,`ComponentID`,`FormulaID`,`FormulaName`,`Formula`,`ActionBy`,`LastUPD`) VALUES
+(2,151,4,'50 % of Basic','[E_BASIC]+[BASIC]*50/100',90,'2018-08-29 19:58:32');
+COMMIT;
+/*!40000 ALTER TABLE `pr_paycomponent_formulae` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_paycycle
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_paycycle` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `PayCycleID` int(10) unsigned NOT NULL,
+  `PayCycleName` varchar(255) DEFAULT NULL,
+  `PayCycleStartDay` int(10) unsigned NOT NULL,
+  `SalaryProcessType` int(11) DEFAULT '0' COMMENT '0 is month Start day to end day,1 is Between cufoff days',
+  `AttendanceCycleStartDay` int(11) DEFAULT '1' COMMENT 'Selected integer Represent the start day for the attendance pay cycle  ',
+  `TaxationType` int(11) DEFAULT NULL COMMENT '0.None 1.INDIAN TAX SYSTEM',
+  `StatutoryType` int(11) DEFAULT '1',
+  `PaySlipTemplateID` int(11) DEFAULT NULL,
+  `LastUPD` datetime NOT NULL,
+  `ProcessDurationType` int(11) DEFAULT '0',
+  `ProcessingComponent` int(11) DEFAULT '0',
+  `CurrencyID` int(11) DEFAULT NULL,
+  `CalculationMethodID` int(11) DEFAULT NULL,
+  `SubCalcType` int(11) DEFAULT '0',
+  `TotalNoOfDays` int(11) DEFAULT '0',
+  `ExcludedDays` varchar(255) DEFAULT '0',
+  PRIMARY KEY (`ClientID`,`PayCycleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_paycycle
+-- 
+
+/*!40000 ALTER TABLE `pr_paycycle` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,71,'Paycyle  1 - India',3,1,1,2,1,6,'2019-06-14 17:24:20',0,0,2,1,1,0,'0');
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,153,'Pay cycle 2',15,0,1,1,1,1,'2019-04-03 16:36:43',0,0,1,1,0,0,'0');
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,154,'CN Paycycle',1,0,1,1,1,1,'2018-11-15 13:13:11',0,0,2,2,0,0,'1,7');
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,155,'Malaysian',1,0,1,2,2,9,'2019-01-08 14:53:51',0,0,1,1,0,0,'0');
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,156,'Payroll Paycycle',1,0,1,1,1,1,'2019-04-03 16:42:36',0,0,2,1,0,0,'0');
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,159,'KettaKaali',1,0,1,1,1,1,'2019-04-25 16:32:46',0,0,2,1,0,0,'0');
+INSERT INTO `pr_paycycle`(`ClientID`,`PayCycleID`,`PayCycleName`,`PayCycleStartDay`,`SalaryProcessType`,`AttendanceCycleStartDay`,`TaxationType`,`StatutoryType`,`PaySlipTemplateID`,`LastUPD`,`ProcessDurationType`,`ProcessingComponent`,`CurrencyID`,`CalculationMethodID`,`SubCalcType`,`TotalNoOfDays`,`ExcludedDays`) VALUES
+(2,160,'plmjkhnbgv',1,0,1,0,0,1,'2019-05-10 13:04:06',1,0,1,0,0,23,'0');
+COMMIT;
+/*!40000 ALTER TABLE `pr_paycycle` ENABLE KEYS */;
+
+-- 
+-- Definition of pr_paycycle_advance_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `pr_paycycle_advance_settings` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `PayCycleID` int(10) unsigned NOT NULL,
+  `SettingID` int(10) unsigned NOT NULL,
+  `SettingName` varchar(100) NOT NULL,
+  `SettingValue` decimal(18,2) NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`PayCycleID`,`SettingID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table pr_paycycle_advance_settings
+-- 
+
+/*!40000 ALTER TABLE `pr_paycycle_advance_settings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `pr_paycycle_advance_settings`(`ClientID`,`PayCycleID`,`SettingID`,`SettingName`,`SettingValue`,`LastUPD`) VALUES
+(2,59,1,'Is 87ARebate Applicable',1.00,'2017-09-28 10:07:52');
+INSERT INTO `pr_paycycle_advance_settings

@@ -1,0 +1,962 @@
+astUPD`) VALUES
+(2,131,303,4,'No. of Occurrences','',3,-1,'2015-08-12 12:39:10');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,66,'Make Cost Center Mandatory','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,67,'Allow Other Cost Center','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,68,'Allow to Submit Claim for Others','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,69,'Make Description Mandatory','False',15,-1,'2018-11-30 11:41:02');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,70,'Is Mileage Type','False',15,-1,'2018-12-12 13:19:48');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,303,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,1,'Are Attachments Mandatory ?','False',15,-1,'2015-08-12 12:40:17');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,2,'Is this claim occurrence based ?','False',15,-1,'2015-08-12 12:40:17');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,3,'Select occurrence type','-1',14,-1,'2015-08-12 12:40:17');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,4,'No. of Occurrences','',3,-1,'2015-08-12 12:40:17');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,66,'Make Cost Center Mandatory','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,67,'Allow Other Cost Center','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,68,'Allow to Submit Claim for Others','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,69,'Make Description Mandatory','False',15,-1,'2018-11-30 11:41:02');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,70,'Is Mileage Type','False',15,-1,'2018-12-12 13:19:48');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,131,304,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,1,'Are Attachments Mandatory ?','True',15,-1,'2015-08-12 14:28:12');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,2,'Is this claim occurrence based ?','True',15,-1,'2015-08-12 14:28:12');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,3,'Select occurrence type','2',14,-1,'2015-08-12 14:28:12');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,4,'No. of Occurrences','2',3,-1,'2015-08-12 14:28:12');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,66,'Make Cost Center Mandatory','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,67,'Allow Other Cost Center','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,68,'Allow to Submit Claim for Others','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,69,'Make Description Mandatory','False',15,-1,'2018-11-30 11:41:02');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,70,'Is Mileage Type','False',15,-1,'2018-12-12 13:19:48');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,132,305,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,1,'Are Attachments Mandatory ?','True',15,-1,'2015-08-12 17:53:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,2,'Is this claim occurrence based ?','True',15,-1,'2015-08-12 17:53:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,3,'Select occurrence type','2',14,-1,'2015-08-12 17:53:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,4,'No. of Occurrences','2',3,-1,'2015-08-12 17:53:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,66,'Make Cost Center Mandatory','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,67,'Allow Other Cost Center','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,68,'Allow to Submit Claim for Others','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,69,'Make Description Mandatory','False',15,-1,'2018-11-30 11:41:02');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,70,'Is Mileage Type','False',15,-1,'2018-12-12 13:19:48');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,134,306,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,1,'Are Attachments Mandatory ?','True',15,-1,'2015-08-12 18:01:22');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,2,'Is this claim occurrence based ?','True',15,-1,'2015-08-12 18:01:22');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,3,'Select occurrence type','2',14,-1,'2015-08-12 18:01:22');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,4,'No. of Occurrences','2',3,-1,'2015-08-12 18:01:22');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,66,'Make Cost Center Mandatory','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,67,'Allow Other Cost Center','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,68,'Allow to Submit Claim for Others','False',15,-1,'2018-09-26 17:40:33');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,69,'Make Description Mandatory','False',15,-1,'2018-11-30 11:41:02');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,70,'Is Mileage Type','False',15,-1,'2018-12-12 13:19:48');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,135,307,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,1,'Are Attachments Mandatory ?','False',15,-1,'2019-05-14 17:01:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,2,'Is this claim occurrence based ?','True',15,-1,'2019-05-14 17:01:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,3,'Select occurrence type','-1',14,-1,'2019-05-14 17:01:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,4,'No. of Occurrences','',3,-1,'2019-05-14 17:01:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2019-05-14 17:01:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,66,'Make Cost Center Mandatory','True',15,-1,'2019-05-14 17:02:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,67,'Allow Other Cost Center','True',15,-1,'2019-05-14 17:02:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,68,'Allow to Submit Claim for Others','True',15,-1,'2019-05-14 17:02:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,69,'Make Description Mandatory','False',15,-1,'2019-05-14 17:02:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,70,'Is Mileage Type','False',15,-1,'2019-05-14 17:02:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,71,'Is Meal Type','True',15,-1,'2019-05-14 17:02:01');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,176,381,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,1,'Are Attachments Mandatory ?','True',15,-1,'2018-12-27 19:29:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,2,'Is this claim occurrence based ?','True',15,-1,'2018-12-27 19:29:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,3,'Select occurrence type','-1',14,-1,'2018-12-27 19:29:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,4,'No. of Occurrences','',3,-1,'2018-12-27 19:29:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2018-12-27 19:29:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,66,'Make Cost Center Mandatory','True',15,-1,'2018-12-27 19:29:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,67,'Allow Other Cost Center','True',15,-1,'2018-12-27 19:29:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,68,'Allow to Submit Claim for Others','True',15,-1,'2018-12-27 19:29:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,69,'Make Description Mandatory','True',15,-1,'2018-12-27 19:29:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,70,'Is Mileage Type','True',15,-1,'2018-12-27 19:29:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,177,380,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,1,'Are Attachments Mandatory ?','True',15,-1,'2019-01-16 15:04:38');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,2,'Is this claim occurrence based ?','True',15,-1,'2019-01-16 15:04:38');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,3,'Select occurrence type','-1',14,-1,'2019-01-16 15:04:38');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,4,'No. of Occurrences','',3,-1,'2019-01-16 15:04:38');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2019-01-16 15:04:38');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,66,'Make Cost Center Mandatory','False',15,-1,'2019-01-16 15:04:39');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,67,'Allow Other Cost Center','False',15,-1,'2019-01-16 15:04:39');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,68,'Allow to Submit Claim for Others','False',15,-1,'2019-01-16 15:04:39');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,69,'Make Description Mandatory','False',15,-1,'2019-01-16 15:04:39');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,70,'Is Mileage Type','True',15,-1,'2019-01-16 15:04:39');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,181,385,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,1,'Are Attachments Mandatory ?','True',15,-1,'2019-01-16 14:54:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,2,'Is this claim occurrence based ?','True',15,-1,'2019-01-16 14:54:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,3,'Select occurrence type','-1',14,-1,'2019-01-16 14:54:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,4,'No. of Occurrences','',3,-1,'2019-01-16 14:54:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2019-01-16 14:54:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,66,'Make Cost Center Mandatory','False',15,-1,'2019-01-16 14:55:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,67,'Allow Other Cost Center','False',15,-1,'2019-01-16 14:55:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,68,'Allow to Submit Claim for Others','False',15,-1,'2019-01-16 14:55:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,69,'Make Description Mandatory','False',15,-1,'2019-01-16 14:55:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,70,'Is Mileage Type','False',15,-1,'2019-01-16 14:55:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,188,384,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,1,'Are Attachments Mandatory ?','True',15,-1,'2018-12-27 19:14:59');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,2,'Is this claim occurrence based ?','False',15,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,3,'Select occurrence type','-1',14,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,4,'No. of Occurrences','',3,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,66,'Make Cost Center Mandatory','True',15,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,67,'Allow Other Cost Center','True',15,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,68,'Allow to Submit Claim for Others','True',15,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,69,'Make Description Mandatory','True',15,-1,'2018-12-27 19:15:00');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,70,'Is Mileage Type','True',15,-1,'2018-12-27 19:15:01');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,378,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,1,'Are Attachments Mandatory ?','True',15,-1,'2018-12-27 19:15:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,2,'Is this claim occurrence based ?','False',15,-1,'2018-12-27 19:15:15');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,3,'Select occurrence type','-1',14,-1,'2018-12-27 19:15:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,4,'No. of Occurrences','',3,-1,'2018-12-27 19:15:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2018-12-27 19:15:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,66,'Make Cost Center Mandatory','True',15,-1,'2018-12-27 19:15:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,67,'Allow Other Cost Center','True',15,-1,'2018-12-27 19:15:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,68,'Allow to Submit Claim for Others','True',15,-1,'2018-12-27 19:15:16');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,69,'Make Description Mandatory','True',15,-1,'2018-12-27 19:15:17');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,70,'Is Mileage Type','True',15,-1,'2018-12-27 19:15:17');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,195,379,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,1,'Are Attachments Mandatory ?','False',15,-1,'2019-03-13 16:34:49');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,2,'Is this claim occurrence based ?','True',15,-1,'2019-03-13 16:34:49');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,3,'Select occurrence type','1',14,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,4,'No. of Occurrences','',3,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,54,'Ignore this Item when Reconcilation Peridium Deducted','True',15,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,66,'Make Cost Center Mandatory','True',15,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,67,'Allow Other Cost Center','True',15,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,68,'Allow to Submit Claim for Others','True',15,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,69,'Make Description Mandatory','True',15,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,70,'Is Mileage Type','True',15,-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,196,377,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,1,'Are Attachments Mandatory ?','False',15,-1,'2018-12-17 11:51:07');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2018-12-17 11:51:07');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,66,'Make Cost Center Mandatory','True',15,-1,'2018-12-17 11:51:08');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,67,'Allow Other Cost Center','True',15,-1,'2018-12-17 11:51:08');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,68,'Allow to Submit Claim for Others','True',15,-1,'2018-12-17 11:51:08');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,69,'Make Description Mandatory','True',15,-1,'2018-12-17 11:51:08');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,70,'Is Mileage Type','True',15,-1,'2018-12-17 11:51:08');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,197,371,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,1,'Are Attachments Mandatory ?','True',15,-1,'2018-12-27 18:05:26');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2018-12-27 18:05:26');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,66,'Make Cost Center Mandatory','True',15,-1,'2018-12-27 18:05:27');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,67,'Allow Other Cost Center','True',15,-1,'2018-12-27 18:05:27');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,68,'Allow to Submit Claim for Others','True',15,-1,'2018-12-27 18:05:27');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,69,'Make Description Mandatory','True',15,-1,'2018-12-27 18:05:27');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,70,'Is Mileage Type','True',15,-1,'2018-12-27 18:05:27');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,198,376,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,1,'Are Attachments Mandatory ?','True',15,-1,'2019-01-04 17:28:35');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,2,'Is this claim occurrence based ?','True',15,-1,'2019-01-04 17:28:35');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,3,'Select occurrence type','-1',14,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,4,'No. of Occurrences','',3,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,54,'Ignore this Item when Reconcilation Peridium Deducted','False',15,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,66,'Make Cost Center Mandatory','False',15,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,67,'Allow Other Cost Center','False',15,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,68,'Allow to Submit Claim for Others','False',15,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,69,'Make Description Mandatory','False',15,-1,'2019-01-04 17:28:36');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,70,'Is Mileage Type','True',15,-1,'2019-01-04 17:28:37');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,71,'Is Meal Type','False',15,-1,'2019-05-10 15:22:58');
+INSERT INTO `claim_claimtype_configuration`(`ClientID`,`ClaimID`,`CriteriaID`,`ConfigurationID`,`Name`,`ConfigurationValue`,`ConfigurationType`,`LookupID`,`LastUPD`) VALUES
+(2,200,383,73,'Advanced Type','0',3,304,'2019-07-18 19:22:56');
+COMMIT;
+/*!40000 ALTER TABLE `claim_claimtype_configuration` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_claimtype_eligible_employee
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_claimtype_eligible_employee` (
+  `ClientID` int(11) NOT NULL,
+  `ClaimID` int(11) NOT NULL,
+  `CriteriaID` int(11) NOT NULL,
+  `GroupID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `LinkedComponentID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_claimtype_eligible_employee
+-- 
+
+/*!40000 ALTER TABLE `claim_claimtype_eligible_employee` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,176,381,'-1',-1,'2019-05-14 17:02:01');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,177,380,'1125',-1,'2018-12-27 19:29:16');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,181,385,'-1',-1,'2019-01-16 15:04:39');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,188,384,'-1',-1,'2019-01-16 14:55:00');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,195,378,'1125',-1,'2018-12-27 19:15:01');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,195,379,'1131',-1,'2018-12-27 19:15:17');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,196,377,'-1',-1,'2019-03-13 16:34:50');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,197,371,'-1',-1,'2018-12-17 11:51:08');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,198,376,'1125',-1,'2018-12-27 18:05:28');
+INSERT INTO `claim_claimtype_eligible_employee`(`ClientID`,`ClaimID`,`CriteriaID`,`GroupID`,`LinkedComponentID`,`LastUPD`) VALUES
+(2,200,383,'1106',-1,'2019-01-04 17:28:37');
+COMMIT;
+/*!40000 ALTER TABLE `claim_claimtype_eligible_employee` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_claimtype_not_eligible_employee
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_claimtype_not_eligible_employee` (
+  `ClientID` int(11) NOT NULL,
+  `ClaimID` int(11) NOT NULL,
+  `CriteriaID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`ClaimID`,`CriteriaID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_claimtype_not_eligible_employee
+-- 
+
+/*!40000 ALTER TABLE `claim_claimtype_not_eligible_employee` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `claim_claimtype_not_eligible_employee` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_curr_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_curr_settings` (
+  `ClientID` int(11) NOT NULL DEFAULT '0',
+  `IsEnable` int(11) NOT NULL DEFAULT '0',
+  `CoversionType` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_curr_settings
+-- 
+
+/*!40000 ALTER TABLE `claim_curr_settings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_curr_settings`(`ClientID`,`IsEnable`,`CoversionType`) VALUES
+(2,1,2);
+COMMIT;
+/*!40000 ALTER TABLE `claim_curr_settings` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_currconv_manual
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_currconv_manual` (
+  `ClientID` int(11) NOT NULL DEFAULT '0',
+  `FromCurrency` int(10) unsigned NOT NULL DEFAULT '0',
+  `ToCurrency` int(10) unsigned NOT NULL DEFAULT '0',
+  `FromDate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ToDate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `Rate` decimal(10,2) DEFAULT '0.00',
+  `CreatedBy` int(11) NOT NULL DEFAULT '0',
+  `LastUPD` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ConvID` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ConvID`,`ClientID`,`FromCurrency`,`ToCurrency`,`FromDate`,`ToDate`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_currconv_manual
+-- 
+
+/*!40000 ALTER TABLE `claim_currconv_manual` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_currconv_manual`(`ClientID`,`FromCurrency`,`ToCurrency`,`FromDate`,`ToDate`,`Rate`,`CreatedBy`,`LastUPD`,`ConvID`) VALUES
+(2,12,5,'2018-12-02 00:00:00','2019-05-31 00:00:00',85.00,90,'2019-04-01 13:16:59',3);
+INSERT INTO `claim_currconv_manual`(`ClientID`,`FromCurrency`,`ToCurrency`,`FromDate`,`ToDate`,`Rate`,`CreatedBy`,`LastUPD`,`ConvID`) VALUES
+(2,2,1,'2018-02-01 00:00:00','2019-03-08 00:00:00',45.00,90,'2019-04-01 13:16:59',4);
+COMMIT;
+/*!40000 ALTER TABLE `claim_currconv_manual` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_entitlement
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_entitlement` (
+  `ClientID` int(11) NOT NULL,
+  `EntitlementID` int(11) NOT NULL,
+  `EntitlementTitle` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `BusinessUnitID` int(11) DEFAULT NULL,
+  `ClaimType` int(11) DEFAULT NULL,
+  `EntitlementFor` int(11) DEFAULT NULL COMMENT '1. All eligible employees 2. Specific Tags  3. Let me select the employees indivdually',
+  `ClaimAmount` decimal(12,2) DEFAULT NULL,
+  `Remarks` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`EntitlementID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_entitlement
+-- 
+
+/*!40000 ALTER TABLE `claim_entitlement` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_entitlement`(`ClientID`,`EntitlementID`,`EntitlementTitle`,`BusinessUnitID`,`ClaimType`,`EntitlementFor`,`ClaimAmount`,`Remarks`,`LastUPD`) VALUES
+(2,77,'karthik',6,96,1,1000.00,'sdfdsf','2015-02-26 15:49:49');
+COMMIT;
+/*!40000 ALTER TABLE `claim_entitlement` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_entitlementemployee
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_entitlementemployee` (
+  `ClientID` int(11) NOT NULL,
+  `EntitlementID` int(11) NOT NULL DEFAULT '0',
+  `EmployeeID` int(11) NOT NULL DEFAULT '0',
+  `Amount` decimal(12,2) DEFAULT NULL,
+  `EntitlementType` int(11) DEFAULT NULL COMMENT '1.All Eligible Employees 2.Specific Tags 3.Individual Employees',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`EntitlementID`,`EmployeeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_entitlementemployee
+-- 
+
+/*!40000 ALTER TABLE `claim_entitlementemployee` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_entitlementemployee`(`ClientID`,`EntitlementID`,`EmployeeID`,`Amount`,`EntitlementType`,`LastUPD`) VALUES
+(2,77,90,1000.00,1,'2015-02-26 15:49:56');
+INSERT INTO `claim_entitlementemployee`(`ClientID`,`EntitlementID`,`EmployeeID`,`Amount`,`EntitlementType`,`LastUPD`) VALUES
+(2,77,106,1000.00,1,'2015-02-26 15:50:15');
+INSERT INTO `claim_entitlementemployee`(`ClientID`,`EntitlementID`,`EmployeeID`,`Amount`,`EntitlementType`,`LastUPD`) VALUES
+(2,77,107,1000.00,1,'2015-02-26 15:50:16');
+INSERT INTO `claim_entitlementemployee`(`ClientID`,`EntitlementID`,`EmployeeID`,`Amount`,`EntitlementType`,`LastUPD`) VALUES
+(2,77,108,1000.00,1,'2015-02-26 15:50:17');
+INSERT INTO `claim_entitlementemployee`(`ClientID`,`EntitlementID`,`EmployeeID`,`Amount`,`EntitlementType`,`LastUPD`) VALUES
+(2,77,122,1000.00,1,'2015-02-26 15:50:17');
+COMMIT;
+/*!40000 ALTER TABLE `claim_entitlementemployee` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_fixedmileage
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_fixedmileage` (
+  `ClientID` int(11) NOT NULL,
+  `RouteID` int(11) NOT NULL AUTO_INCREMENT,
+  `RouteName` text NOT NULL,
+  `DepartedFrom` int(11) NOT NULL,
+  `ArrivedTo` int(11) NOT NULL,
+  `Distance` decimal(10,2) NOT NULL,
+  `IsAllVehicle` int(11) NOT NULL,
+  `VehicleTypes` text NOT NULL,
+  `IsEmpEdit` bit(1) DEFAULT b'0',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`RouteID`,`ClientID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_fixedmileage
+-- 
+
+/*!40000 ALTER TABLE `claim_fixedmileage` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_fixedmileage`(`ClientID`,`RouteID`,`RouteName`,`DepartedFrom`,`ArrivedTo`,`Distance`,`IsAllVehicle`,`VehicleTypes`,`IsEmpEdit`,`LastUPD`) VALUES
+(2,1,'Beach',5,6,25.00,0,'1',0,'2019-07-18 16:35:11');
+INSERT INTO `claim_fixedmileage`(`ClientID`,`RouteID`,`RouteName`,`DepartedFrom`,`ArrivedTo`,`Distance`,`IsAllVehicle`,`VehicleTypes`,`IsEmpEdit`,`LastUPD`) VALUES
+(2,2,'OMR',1,4,45.00,1,'',1,'2019-07-18 16:49:48');
+COMMIT;
+/*!40000 ALTER TABLE `claim_fixedmileage` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_gradevehiclecost
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_gradevehiclecost` (
+  `ClientID` int(11) NOT NULL,
+  `GradeID` int(11) NOT NULL,
+  `EmployeeGroupID` int(11) NOT NULL,
+  `VehicleTypeID` int(11) NOT NULL,
+  `Cost` decimal(10,2) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`GradeID`,`VehicleTypeID`,`EmployeeGroupID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_gradevehiclecost
+-- 
+
+/*!40000 ALTER TABLE `claim_gradevehiclecost` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,51,1,21.22,'2019-01-09 11:36:26');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,69,1,5.00,'2019-01-09 14:21:01');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,73,1,33.33,'2019-01-09 18:49:46');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,51,2,25.22,'2019-01-09 11:36:58');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,83,2,0.00,'2019-01-09 17:31:13');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,1105,2,222.20,'2019-01-09 17:33:30');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,1107,2,100.00,'2019-01-21 12:56:17');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,1118,2,50.00,'2019-04-24 17:42:10');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,51,3,44.46,'2019-01-09 16:16:08');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,69,3,7.00,'2019-01-09 14:21:04');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,1105,3,26.00,'2019-04-09 11:14:03');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,51,4,21.21,'2019-01-10 12:19:14');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,69,4,5.00,'2019-01-09 14:21:07');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,-1,1128,4,45554.00,'2019-03-29 18:52:47');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,17,0,1,20.00,'2018-12-18 18:22:27');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,17,0,2,30.00,'2018-12-13 15:28:22');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,17,0,3,40.00,'2018-12-13 15:36:01');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,17,0,4,40.00,'2018-12-20 12:06:02');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,18,0,1,0.00,'2018-12-26 09:23:00');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,19,0,1,45.00,'2018-12-11 16:37:25');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,19,0,2,22.22,'2018-12-18 17:23:41');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,19,0,3,31.00,'2018-12-19 11:53:59');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,19,0,4,30.12,'2018-12-18 18:00:44');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,28,0,-1,0.00,'2019-01-02 14:36:44');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,28,0,1,10.00,'2019-01-02 14:36:44');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,28,0,2,12.00,'2019-01-02 14:36:48');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,28,0,3,16.00,'2019-01-02 14:36:52');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,28,0,4,90.00,'2019-01-02 14:36:56');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,32,0,1,65.35,'2018-12-20 12:10:46');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,32,0,2,63.69,'2018-12-20 12:16:40');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,32,0,3,100.23,'2018-12-20 12:21:43');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,33,0,1,0.00,'2018-12-18 11:15:55');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,33,0,2,0.00,'2018-12-18 15:40:03');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,33,0,3,0.00,'2018-12-18 10:30:07');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,33,0,4,0.00,'2018-12-18 10:31:51');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,34,0,1,36.35,'2018-12-18 18:43:47');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,34,0,2,0.00,'2018-12-18 18:43:54');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,34,0,3,0.00,'2018-12-18 18:44:27');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,45,0,1,0.00,'2018-12-18 17:18:05');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,45,0,2,0.00,'2018-12-24 12:55:39');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,45,0,3,44.44,'2018-12-24 12:55:45');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,47,0,1,0.00,'2018-12-24 12:45:46');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,47,0,3,0.00,'2018-12-24 12:45:52');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,51,0,2,0.00,'2018-12-18 18:13:37');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,51,0,3,36.36,'2018-12-18 18:03:03');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,51,0,4,0.00,'2018-12-18 18:31:47');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,56,0,1,96.32,'2018-12-13 15:30:04');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,56,0,2,0.00,'2018-12-26 11:46:27');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,56,0,3,0.00,'2018-12-14 14:37:22');
+INSERT INTO `claim_gradevehiclecost`(`ClientID`,`GradeID`,`EmployeeGroupID`,`VehicleTypeID`,`Cost`,`LastUPD`) VALUES
+(2,56,0,4,906.39,'2018-12-19 12:35:21');
+COMMIT;
+/*!40000 ALTER TABLE `claim_gradevehiclecost` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_meal
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_meal` (
+  `ClientID` int(11) NOT NULL,
+  `EmployeeGroupID` int(11) NOT NULL,
+  `MealTypeID` int(11) NOT NULL,
+  `Percentage` decimal(10,2) NOT NULL COMMENT 'Detection %',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`EmployeeGroupID`,`MealTypeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_meal
+-- 
+
+/*!40000 ALTER TABLE `claim_meal` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1105,1,0.00,'2019-05-15 12:10:09');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1106,1,10.00,'2019-05-06 18:04:28');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1106,2,14.00,'2019-05-15 12:22:07');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1106,3,30.00,'2019-05-06 18:05:46');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1111,3,11.00,'2019-05-15 12:05:47');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1119,1,100.00,'2019-05-14 11:45:16');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1119,2,20.00,'2019-05-14 11:45:21');
+INSERT INTO `claim_meal`(`ClientID`,`EmployeeGroupID`,`MealTypeID`,`Percentage`,`LastUPD`) VALUES
+(2,1119,3,30.00,'2019-05-14 11:45:25');
+COMMIT;
+/*!40000 ALTER TABLE `claim_meal` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_paidstatus
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_paidstatus` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `PaidStatusID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `UserID` int(10) unsigned NOT NULL,
+  `RequestID` int(10) unsigned NOT NULL,
+  `PaidStatus` int(10) unsigned DEFAULT NULL,
+  `PaidDate` datetime DEFAULT NULL,
+  `PaidRemarks` varchar(1000) DEFAULT NULL,
+  `PaidType` int(10) unsigned DEFAULT NULL,
+  `FileName` varchar(1000) DEFAULT NULL,
+  `EncodeFileName` varchar(1000) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`PaidStatusID`,`ClientID`,`RequestID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_paidstatus
+-- 
+
+/*!40000 ALTER TABLE `claim_paidstatus` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,1,90,8598,0,'2018-02-07 00:00:00','test',3,'Lighthouse.jpg','2018171517986227195.jpg','2018-02-07 12:20:52');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,2,90,8508,1,'2018-02-07 00:00:00','test',2,'Penguins.jpg','2018171517986451918.jpg','2018-02-07 12:24:16');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,3,90,8508,0,'2018-02-07 00:00:00','sample',1,'Lighthouse.jpg','2018171517986514663.jpg','2018-02-07 12:25:28');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,4,90,8598,1,'2018-02-07 00:00:00','gdf',3,'Lighthouse.jpg','2018171517986673128.jpg','2018-02-07 12:27:57');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,5,90,8598,0,'2018-02-07 00:00:00','fs',2,'Lighthouse.jpg','2018171517988228375.jpg','2018-02-07 12:53:49');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,6,90,8598,1,'2018-02-07 00:00:00','sfdf',2,'Lighthouse.jpg','2018171517988621005.jpg','2018-02-07 13:00:21');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,7,90,8598,0,'2018-02-07 00:00:00','fds',1,'Lighthouse.jpg','2018171517988650021.jpg','2018-02-07 13:00:50');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,8,90,8598,1,'2018-02-07 00:00:00','test',3,'Lighthouse.jpg','2018171517988904370.jpg','2018-02-07 13:05:14');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,9,90,8598,0,'2018-02-07 00:00:00','sample',3,'Chrysanthemum.jpg','2018171517988968301.jpg','2018-02-07 13:06:25');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,10,90,8598,1,'2018-02-07 00:00:00','h',3,'Koala.jpg','2018171517989505523.jpg','2018-02-07 13:15:08');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,11,90,8598,0,'2018-02-07 00:00:00','io',2,'Penguins.jpg','2018171517989523545.jpg','2018-02-07 13:15:26');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,12,90,8343,1,'2018-02-07 00:00:00','Enter Text',0,'','','2018-02-07 17:25:10');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,13,90,8594,1,'2018-02-07 00:00:00','Enter Text',0,'','','2018-02-07 17:25:29');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,14,90,8815,1,'2018-02-07 00:00:00','Enter Text',0,'','','2018-02-07 17:25:42');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,15,90,8932,1,'2018-02-07 00:00:00','Test Paid Status',2,'Penguins.jpg','2018171518005026215.jpg','2018-02-07 17:33:52');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,16,90,8931,1,'2018-02-07 00:00:00','Test Paid Status',2,'Penguins.jpg','2018171518005026215.jpg','2018-02-07 17:33:52');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,17,90,8929,1,'2018-02-07 00:00:00','Test Paid Status',2,'Penguins.jpg','2018171518005026215.jpg','2018-02-07 17:33:54');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,18,90,8925,1,'2018-02-07 00:00:00','Test Paid Status',2,'Penguins.jpg','2018171518005026215.jpg','2018-02-07 17:33:55');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,19,90,8936,1,'2018-02-08 00:00:00','Paid Status',3,'Penguins.jpg','2018181518067126076.jpg','2018-02-08 10:49:48');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,20,90,8935,1,'2018-02-08 00:00:00','Paid Status',3,'Penguins.jpg','2018181518067126076.jpg','2018-02-08 10:49:49');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,21,90,8834,1,'2018-02-08 00:00:00','Paid Status',3,'Penguins.jpg','2018181518067126076.jpg','2018-02-08 10:49:49');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,22,90,8918,1,'2018-02-08 00:00:00','Enter Text',0,'','','2018-02-08 10:51:48');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,23,90,8153,1,'2018-02-08 00:00:00','Enter Text',0,'','','2018-02-08 10:51:48');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,24,90,8930,1,'2018-02-08 00:00:00','Enter Text',0,'','','2018-02-08 10:52:19');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,25,90,8975,1,'2018-02-13 00:00:00','',0,'','','2018-02-13 12:23:29');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,26,90,8975,0,'2018-02-13 00:00:00','test pay status',1,'SPIC Emp Schedule.xlsx','20181131518504982359.xlsx','2018-02-13 12:26:22');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,27,90,9615,1,'2018-05-07 00:00:00','test',3,'','','2018-05-07 13:44:22');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,28,90,9615,0,'2018-05-07 00:00:00','',3,'','','2018-05-07 13:44:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,29,90,9615,1,'2018-05-07 00:00:00','paid',3,'Chrysanthemum.jpg','2018471525680901304.jpg','2018-05-07 13:45:02');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,30,90,11235,1,'2018-12-21 00:00:00','',0,'','','2018-12-21 16:08:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,31,90,11235,0,'2018-12-21 00:00:00','',0,'','','2018-12-21 16:09:09');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,32,90,11272,1,'2018-12-26 00:00:00','',2,'','','2018-12-26 14:26:28');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,33,90,11276,1,'2018-12-26 00:00:00','',2,'','','2018-12-26 15:01:28');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,34,90,11279,0,'2018-12-26 00:00:00','',0,'','','2018-12-26 15:35:30');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,35,90,11389,1,'2019-01-09 00:00:00','',2,'','','2019-01-08 14:19:04');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,36,90,11387,1,'2019-01-16 00:00:00','',2,'','','2019-01-08 14:20:21');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,37,90,11396,1,'2019-01-09 00:00:00','zf fsd sdf sdfsdf',3,'API Fields.xlsx','2019091547019600049429314954558111.xlsx','2019-01-09 13:10:19');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,38,90,11397,1,'2019-01-09 00:00:00','32085',2,'','','2019-01-09 17:49:42');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,39,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,40,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,41,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,42,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,43,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,44,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,45,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,46,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,47,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,48,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,49,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,50,90,11525,1,'2019-03-07 00:00:00','',0,'','','2019-03-07 10:35:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,51,90,11524,1,'2019-03-07 00:00:00','asdf',2,'','','2019-03-07 13:09:55');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,52,90,11524,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,53,90,11524,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,54,90,11524,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,55,90,11525,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,56,90,11525,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,57,90,11525,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,58,90,11397,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,59,90,11397,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,60,90,11396,0,'2019-03-11 00:00:00','',0,'','','2019-03-11 15:44:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,61,90,11715,1,'2019-03-12 00:00:00','PAID',2,'','','2019-03-12 10:39:29');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,62,90,11276,1,'2019-03-13 00:00:00','yiu',2,'','','2019-03-13 11:15:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,63,90,11276,0,'2019-03-13 00:00:00','iuu',2,'','','2019-03-13 11:16:17');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,64,90,11715,0,'2019-03-13 00:00:00','',0,'','','2019-03-13 11:17:46');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,65,90,11379,1,'2019-03-13 00:00:00','asdsads',2,'','','2019-03-13 18:50:53');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,66,90,11715,1,'2019-03-14 00:00:00','paid',2,'','','2019-03-14 11:52:41');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,67,90,11920,1,'2019-04-03 00:00:00','TEST',2,'','','2019-04-03 13:01:34');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,68,90,11920,0,'2019-04-03 00:00:00','set',2,'','','2019-04-03 13:05:13');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,69,90,11715,0,'2019-04-03 00:00:00','asd',2,'','','2019-04-03 16:32:09');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,70,90,11379,0,'2019-04-03 00:00:00','asdasadsd',3,'','','2019-04-03 16:42:43');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,71,90,11387,0,'2019-04-03 00:00:00','adasdsadadsda',3,'Employee Cost Center Distribution.xls','2019331554290144640248724415254611.xls','2019-04-03 16:45:51');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,72,90,11387,1,'1900-01-01 00:00:00','',0,'Employee Cost Center Distribution.xls','2019331554290681876534527163835921.xls','2019-04-03 16:54:53');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,73,90,11387,0,'2019-04-03 00:00:00','',0,'Permanent Address.xls','2019331554290711229953222815667941.xls','2019-04-03 16:55:14');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,74,90,11387,1,'2019-04-03 00:00:00','asdsd',0,'JUmbo PositionWOCostCenter.xls','2019331554290726756976846400069981.xls','2019-04-03 16:55:32');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,75,90,11715,1,'2019-04-03 00:00:00','rerererer',3,'Employee Cost Center Distribution.xls','2019331554290782010879782892550331.xls','2019-04-03 16:56:27');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,76,90,11715,0,'2019-04-03 00:00:00','ererererrerer',2,'Permanent Address.xls','2019331554290794159513374465313271.xls','2019-04-03 16:56:41');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,77,90,11920,1,'2019-04-03 00:00:00','paid',2,'','','2019-04-03 16:59:22');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,78,90,11525,1,'2019-04-03 00:00:00','rerererererere',2,'','','2019-04-03 17:02:00');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,79,90,11525,0,'2019-04-03 00:00:00','',0,'','','2019-04-03 17:03:44');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,80,90,11917,1,'2019-04-03 00:00:00','enjoy',2,'Employee Preferences Report (3).xls','2019331554291553024864260560128891.xls','2019-04-03 17:10:00');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,81,5129,11958,1,'2019-04-09 00:00:00','Paid',2,'','','2019-04-09 17:08:29');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,82,5129,11958,0,'2019-04-09 00:00:00','Unpaid',0,'','','2019-04-09 17:09:23');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,83,5129,11958,0,'2019-04-09 00:00:00','Unpaid',0,'','','2019-04-09 17:09:23');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,84,5129,11958,1,'2019-04-09 00:00:00','EASY',3,'','','2019-04-09 18:29:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,85,5129,11958,0,'2019-04-09 00:00:00','HARD',0,'','','2019-04-09 18:30:56');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,86,5129,11958,1,'2019-04-09 00:00:00','asdsdada',0,'','','2019-04-09 18:31:38');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,87,5129,11958,0,'2019-04-09 00:00:00','rerererere',0,'','','2019-04-09 18:33:53');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,88,90,11958,1,'2019-04-09 00:00:00','rest',2,'','','2019-04-09 19:00:56');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,89,90,11958,0,'2019-04-09 00:00:00','hest',0,'','','2019-04-09 19:02:12');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,90,90,11948,1,'2019-04-09 00:00:00','perumal',2,'','','2019-04-09 19:04:27');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,91,90,11948,0,'2019-04-09 00:00:00','Perumal 123',0,'','','2019-04-09 19:05:11');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,92,90,11995,1,'2019-04-16 00:00:00','asdsad',2,'','','2019-04-16 18:08:34');
+INSERT INTO `claim_paidstatus`(`ClientID`,`PaidStatusID`,`UserID`,`RequestID`,`PaidStatus`,`PaidDate`,`PaidRemarks`,`PaidType`,`FileName`,`EncodeFileName`,`LastUPD`) VALUES
+(2,93,90,11967,1,'2019-04-16 00:00:00','asdf',2,'','','2019-04-16 18:09:17');
+COMMIT;
+/*!40000 ALTER TABLE `claim_paidstatus` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_requestitemsaudit
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_requestitemsaudit` (
+  `ClientID` int(11) NOT NULL,
+  `RequestID` int(11) NOT NULL,
+  `ItemID` int(11) NOT NULL,
+  `AuditID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `OldJson` text NOT NULL,
+  `NewJson` text NOT NULL,
+  `ActionDescription` text,
+  `ActionBy` int(10) NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`AuditID`,`ClientID`,`RequestID`,`ItemID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_requestitemsaudit
+-- 
+
+/*!40000 ALTER TABLE `claim_requestitemsaudit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,7,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":9600.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":2349.36,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":96.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":2349.36,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 10:30:28');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,8,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":196,\"ClaimTypeName\":\"CC01\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":2349.36,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":2349.36,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 10:37:24');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,9,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":2349.36,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":4,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":2349.36,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 12:44:49');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,10,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":2,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":2,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":0.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 13:05:16');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,11,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 17:30:47');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,12,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 17:55:36');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,13,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":false,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 19:25:08');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,14,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5000.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":50.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 19:25:44');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,15,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-04T00:00:00\",\"Description\":\"kopo\",\"Amount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"04 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-03T00:00:00\",\"Description\":\"kopo\",\"Amount\":5100.0,\"ProjectID\":-1,\"ProjectName\":\"\",\"ClaimDateString\":\"03 Dec 2018\",\"IsBillable\":true,\"ClaimRequestItemsAttachments\":[],\"ClaimMobileItemID\":0,\"ClaimStatus\":1,\"Status\":1,\"OwnerID\":0,\"ClaimUserID\":0,\"CCItemAmount\":5000.0,\"VehicleTypeID\":2,\"VehicleTypeName\":\"Car\",\"MileageDistance\":51.0,\"CostPerMileage\":100.0,\"SubAmount\":5000.0,\"ClaimerCostCenters\":[],\"ClaimRequestItemAudits\":null}','',151,'2019-03-15 19:35:33');
+INSERT INTO `claim_requestitemsaudit`(`ClientID`,`RequestID`,`ItemID`,`AuditID`,`OldJson`,`NewJson`,`ActionDescription`,`ActionBy`,`LastUPD`) VALUES
+(2,11344,1338,16,'{\"ClientID\":2,\"CliamRequestID\":11344,\"CliamRequestItemID\":1338,\"ClaimGroupID\":0,\"GroupName\":\"\",\"ClaimTypeID\":197,\"ClaimTypeName\":\"CC02\",\"BusinessUnitID\":0,\"BusinessUnitName\":\"\",\"ClaimDate\":\"2018-12-03T00:00:00\",\"Description\":\"kopo\",\"Am

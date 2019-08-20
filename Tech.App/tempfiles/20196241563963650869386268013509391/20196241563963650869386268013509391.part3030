@@ -1,0 +1,869 @@
+uired\":true,\"DefaultValue\":null,\"isUnique\":true,\"FieldDisplayOrder\":1,\"Attributes\":null,\"FieldHelp\":\"\",\"RangeFrom\":null,\"RangeTo\":null,\"LookupComponent\":null,\"LookupComponentID\":0,\"LookupComponentField\":\"0\",\"ErrorMsg\":\"\",\"EnableRangeValidation\":false}],\"ViewConditionGroup\":[],\"CoreEntity\":{\"EntityID\":\"ETF126\",\"TableName\":\"vw_activeEmployeeList\",\"AliasName\":null,\"Attributes\":[],\"IDField1\":\"UserID\",\"IDField2\":null,\"IDField3\":null,\"IDField4\":null,\"Type\":0},\"IsUserContextBased\":true,\"EnableLimit\":false,\"Limit\":0,\"CurrentIndex\":0,\"Status\":0,\"OrderBy\":{\"ViewID\":null,\"IsAliasField\":0,\"Options\":0,\"Value\":null,\"IsValueisField\":0,\"IsFilterField\":false,\"AliasName\":null,\"IsDisplayField\":false,\"GroupIndex\":0,\"GroupType\":0,\"AliasLookUp\":{\"EntityID\":\"\",\"AttributeID\":\"\",\"AliasLookUpFieldInstanceID\":0,\"TableAliasName\":\"\"},\"EntityAttributeID\":null,\"EntityViewFieldID\":null,\"EntityID\":null,\"FieldType\":0,\"FieldName\":null,\"LookUpFieldID\":0,\"FormatString\":null,\"isRequired\":false,\"DefaultValue\":null,\"isUnique\":false,\"FieldDisplayOrder\":0,\"Attributes\":null,\"FieldHelp\":null,\"RangeFrom\":null,\"RangeTo\":null,\"LookupComponent\":null,\"LookupComponentID\":0,\"LookupComponentField\":null,\"ErrorMsg\":null,\"EnableRangeValidation\":false},\"IsGroupBasedView\":false},\"TagAttributeGroups\":[{\"TagID\":0,\"ViewID\":null,\"ClientID\":0,\"TagAttributes\":[],\"conditions\":null,\"GroupID\":0,\"Operation\":0}],\"TagLimit\":false,\"Limit\":0,\"IsOnlyActiveUser\":true,\"ContextField\":\"\",\"IsRequiredAllSub\":false,\"PageSize\":0,\"CurrentPageIndex\":0,\"SortField\":\"\",\"SortType\":1,\"Status\":0}','CONSOLIDATED DTR REPORT 54cde0f8-bc34-40b3-9d45-caf5a7e01d21.xls',0);
+COMMIT;
+/*!40000 ALTER TABLE `user_reports` ENABLE KEYS */;
+
+-- 
+-- Definition of vendor
+-- 
+
+CREATE TABLE IF NOT EXISTS `vendor` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `VendorID` int(10) unsigned NOT NULL,
+  `VendorCode` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `VendorName` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `Address` text CHARACTER SET latin1,
+  `City` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `PhoneNumber` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `Email` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `CreatedBy` int(10) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`VendorID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vendor
+-- 
+
+/*!40000 ALTER TABLE `vendor` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `vendor`(`ClientID`,`VendorID`,`VendorCode`,`VendorName`,`Address`,`City`,`PhoneNumber`,`Email`,`CreatedBy`,`LastUPD`) VALUES
+(2,16,'TCS- 10001','TCS','New No.1, Old No. 48, First Floor, Industrial Estate, Perungudi, Off Old Mahabalipuram Road, Chennai-600096\n+(91) 44-4321 6999  + (91) 9840163748 www.forziatech.com','','','dd@ff.bo',176,'2016-09-21 11:36:40');
+INSERT INTO `vendor`(`ClientID`,`VendorID`,`VendorCode`,`VendorName`,`Address`,`City`,`PhoneNumber`,`Email`,`CreatedBy`,`LastUPD`) VALUES
+(2,17,'CTS - 200015','CTS','New No.1, Old No. 48, First Floor, Industrial Estate, Perungudi, Off Old Mahabalipuram Road, Chennai-600096\n+(91) 44-4321 6999  + (91) 9840163748 www.forziatech.com','Chennai','','infodfsssssssssssssssssssssssssssssssssdfssssssssssssssssssss@cts.con',176,'2016-11-21 17:05:24');
+INSERT INTO `vendor`(`ClientID`,`VendorID`,`VendorCode`,`VendorName`,`Address`,`City`,`PhoneNumber`,`Email`,`CreatedBy`,`LastUPD`) VALUES
+(2,18,'Infosys-1025114','Infosys','shollinganallur','Chennai','12345678947','',90,'2016-09-22 17:08:36');
+INSERT INTO `vendor`(`ClientID`,`VendorID`,`VendorCode`,`VendorName`,`Address`,`City`,`PhoneNumber`,`Email`,`CreatedBy`,`LastUPD`) VALUES
+(2,19,'raventh','karthi',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `vendor`(`ClientID`,`VendorID`,`VendorCode`,`VendorName`,`Address`,`City`,`PhoneNumber`,`Email`,`CreatedBy`,`LastUPD`) VALUES
+(2,20,'11','11','11','11','11','1@11.com',154,'2018-01-24 10:42:36');
+COMMIT;
+/*!40000 ALTER TABLE `vendor` ENABLE KEYS */;
+
+-- 
+-- Definition of vendors
+-- 
+
+CREATE TABLE IF NOT EXISTS `vendors` (
+  `ClientID` int(11) NOT NULL,
+  `VendorID` int(11) NOT NULL,
+  `TypeOfBusiness` int(11) DEFAULT NULL,
+  `Name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ContactNo` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Email` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Address` text CHARACTER SET latin1,
+  `Remarks` text CHARACTER SET latin1,
+  `BusinessUnitID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`VendorID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vendors
+-- 
+
+/*!40000 ALTER TABLE `vendors` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,21,2,'Infosys','87289357684392568943 4376584325689425 547265843538925432543254325 4312542354325432 5','demo@talentoz.com','fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj','fdsaf fdhsalkj fhdlk fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj fdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsjfdsa fdsafhlkjdahflkdsj f hjdsfakjdlks aklfd sahflkjdhs alkjfhndsf akjkjflds akljfh adlkjsa kjf kljsdahflkjdshafhkjdslkjfahdslkjahfdslkjahfdlkjsahflkdsj',NULL,'2015-02-17 10:06:21');
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,27,1,'Tata Consultancy Services','dsg','1@gmail.com','gf','',6,'2015-08-17 16:06:51');
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,28,2,'HCL','99887766','1@gmail.com','186/D','test Data.',6,'2015-02-18 15:35:10');
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,29,1,'CTS','','cts@gmail.con','','',6,NULL);
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,31,1,'test','','rajkumartag@gmail.com','','',1,NULL);
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,32,1,'test1','','raj@gmail.com','','',1,NULL);
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,33,2,'fdg','','dfg@d.bv','','',1,NULL);
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,34,3,'test','9944778899','test@gmail.com','add','re',12,'2015-08-10 15:13:19');
+INSERT INTO `vendors`(`ClientID`,`VendorID`,`TypeOfBusiness`,`Name`,`ContactNo`,`Email`,`Address`,`Remarks`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,35,2,'MME','','mme@gmail.con','','',12,'2015-08-17 14:26:30');
+COMMIT;
+/*!40000 ALTER TABLE `vendors` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_ca_employeegoalreport
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_ca_employeegoalreport` (
+  `clientid` int(11) DEFAULT NULL,
+  `Goal Code` varchar(255) DEFAULT NULL,
+  `Goal Name` varchar(1000) DEFAULT NULL,
+  `Description` text,
+  `Perspective` varchar(255) DEFAULT NULL,
+  `Target` text,
+  `Measure` text,
+  `Target Rational` varchar(255) DEFAULT NULL,
+  `Unit Type` varchar(255) DEFAULT NULL,
+  `Achieved` int(10) unsigned DEFAULT NULL,
+  `Actual` varchar(255) DEFAULT NULL,
+  `Weightage` int(10) DEFAULT NULL,
+  `StatusText` varchar(255) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `EmployeeType` int(11) DEFAULT NULL,
+  `userid` int(10) unsigned DEFAULT NULL,
+  `Employee Number` varchar(255) DEFAULT NULL,
+  `Employee Name` varchar(255) DEFAULT NULL,
+  `Position Name` varchar(255) DEFAULT NULL,
+  `departmentid` int(10) unsigned DEFAULT NULL,
+  `Department` varchar(255) DEFAULT NULL,
+  `businessunitid` int(10) unsigned DEFAULT NULL,
+  `Business Unit` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_ca_employeegoalreport
+-- 
+
+/*!40000 ALTER TABLE `vw_ca_employeegoalreport` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_ca_employeegoalreport` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_ca_metric_competencytype
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_ca_metric_competencytype` (
+  `pClientID` int(10) unsigned DEFAULT NULL,
+  `CompetencyID` int(10) unsigned DEFAULT NULL,
+  `comptypename` varchar(255) DEFAULT NULL,
+  `comptype` int(10) unsigned DEFAULT NULL,
+  `Name` varchar(2000) DEFAULT NULL,
+  `CompTypeCount` bigint(21) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_ca_metric_competencytype
+-- 
+
+/*!40000 ALTER TABLE `vw_ca_metric_competencytype` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_ca_metric_competencytype` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_ca_posiitoncompetencylist
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_ca_posiitoncompetencylist` (
+  `clientid` int(10) unsigned DEFAULT NULL,
+  `positionid` int(10) unsigned DEFAULT NULL,
+  `Position Code` varchar(45) DEFAULT NULL,
+  `Position Name` varchar(255) DEFAULT NULL,
+  `jobid` int(11) DEFAULT NULL,
+  `jobname` varchar(255) DEFAULT NULL,
+  `positionclassification` varchar(100) DEFAULT NULL,
+  `Position Classification` varchar(255) DEFAULT NULL,
+  `departmentid` int(10) unsigned DEFAULT NULL,
+  `DepartmentName` varchar(255) DEFAULT NULL,
+  `businessunitid` int(10) unsigned DEFAULT NULL,
+  `BusinessUnitName` varchar(255) DEFAULT NULL,
+  `Code` varchar(45) DEFAULT NULL,
+  `CompetencyName` varchar(2000) DEFAULT NULL,
+  `CompetencyType` varchar(255) DEFAULT NULL,
+  `Competency Group` varchar(255) DEFAULT NULL,
+  `RCl` int(10) unsigned DEFAULT NULL,
+  `ITJ` int(10) unsigned DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_ca_posiitoncompetencylist
+-- 
+
+/*!40000 ALTER TABLE `vw_ca_posiitoncompetencylist` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_ca_posiitoncompetencylist` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_competencyrclandccl
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_competencyrclandccl` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `CompetencyAssessmentID` int(10) unsigned DEFAULT NULL,
+  `UserID` int(10) unsigned DEFAULT NULL,
+  `CompetencyID` int(10) unsigned DEFAULT NULL,
+  `Status` int(10) unsigned DEFAULT NULL,
+  `Score` int(10) unsigned DEFAULT NULL,
+  `ReviewerType` int(10) unsigned DEFAULT NULL,
+  `ReviewedBy` int(11) DEFAULT NULL,
+  `ReviewedOn` datetime DEFAULT NULL,
+  `Remarks` text,
+  `LastUPD` datetime DEFAULT NULL,
+  `RejectedRemarks` text,
+  `Positionid` int(10) unsigned DEFAULT NULL,
+  `RCL` int(10) unsigned DEFAULT NULL,
+  `ITJ` int(10) unsigned DEFAULT NULL,
+  `IsUnitCompleted` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_competencyrclandccl
+-- 
+
+/*!40000 ALTER TABLE `vw_competencyrclandccl` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_competencyrclandccl` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_connected_worklocation
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_connected_worklocation` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `PositionID` int(10) unsigned DEFAULT NULL,
+  `BusinessUnitID` int(10) unsigned DEFAULT NULL,
+  `WorkLocationID` int(10) unsigned DEFAULT NULL,
+  `WorkLocationName` varchar(255) DEFAULT NULL,
+  `City` varchar(255) DEFAULT NULL,
+  `State` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_connected_worklocation
+-- 
+
+/*!40000 ALTER TABLE `vw_connected_worklocation` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_connected_worklocation` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_connecteddepartment
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_connecteddepartment` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `PositionID` int(10) unsigned DEFAULT NULL,
+  `BusinessUnitID` int(10) unsigned DEFAULT NULL,
+  `WorkLocationID` int(10) unsigned DEFAULT NULL,
+  `DepartmentID` int(10) unsigned DEFAULT NULL,
+  `DepartmentName` varchar(255) DEFAULT NULL,
+  `Country` int(10) unsigned DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_connecteddepartment
+-- 
+
+/*!40000 ALTER TABLE `vw_connecteddepartment` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_connecteddepartment` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_getactivitydetail
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_getactivitydetail` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `OpeningID` int(10) unsigned DEFAULT NULL,
+  `UserID` int(10) unsigned DEFAULT NULL,
+  `Action` varchar(1000) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `EmployeeName` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_getactivitydetail
+-- 
+
+/*!40000 ALTER TABLE `vw_getactivitydetail` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_getactivitydetail` ENABLE KEYS */;
+
+-- 
+-- Definition of vw_toz_manpower_strength
+-- 
+
+CREATE TABLE IF NOT EXISTS `vw_toz_manpower_strength` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `BusinessUnitID` decimal(10,0) DEFAULT NULL,
+  `RecordedDate` date DEFAULT NULL,
+  `TotalManpower` bigint(21) DEFAULT NULL,
+  `TotalPresent` decimal(23,0) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table vw_toz_manpower_strength
+-- 
+
+/*!40000 ALTER TABLE `vw_toz_manpower_strength` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `vw_toz_manpower_strength` ENABLE KEYS */;
+
+-- 
+-- Definition of weblinks
+-- 
+
+CREATE TABLE IF NOT EXISTS `weblinks` (
+  `ClientID` int(11) NOT NULL,
+  `WebLinkID` int(11) NOT NULL AUTO_INCREMENT,
+  `URLName` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `HyperLink` text CHARACTER SET latin1,
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`WebLinkID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table weblinks
+-- 
+
+/*!40000 ALTER TABLE `weblinks` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,9,'facebook1','http://facebook.com',90,'2016-03-03 16:12:27');
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,13,'Gmail','http://Gmail.com',90,'2016-03-03 17:59:24');
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,15,'Google','http://Google.com',155,'2016-03-04 11:56:04');
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,16,'Timesheet','http://india.forziatech.com/',155,'2016-03-04 12:01:15');
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,17,'TFS','http://smrindiaserver:8080/tfs/',90,'2016-03-04 12:05:07');
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,18,'test','http://test.com',90,'2016-03-04 12:15:15');
+INSERT INTO `weblinks`(`ClientID`,`WebLinkID`,`URLName`,`HyperLink`,`CreatedBy`,`LastUPD`) VALUES
+(2,19,'test2','http://test2.com',90,'2018-11-29 14:47:12');
+COMMIT;
+/*!40000 ALTER TABLE `weblinks` ENABLE KEYS */;
+
+-- 
+-- Definition of wf_audittrail
+-- 
+
+CREATE TABLE IF NOT EXISTS `wf_audittrail` (
+  `AuditID` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientID` int(11) DEFAULT NULL,
+  `WorkflowID` int(11) DEFAULT NULL,
+  `StepID` int(11) DEFAULT NULL,
+  `StepName` text,
+  `Type` int(11) DEFAULT NULL,
+  `OwnerID` int(11) DEFAULT NULL,
+  `OwnerType` int(11) DEFAULT NULL,
+  `ActionBy` int(11) DEFAULT NULL,
+  `ActionDateTime` datetime DEFAULT NULL,
+  `ActionDescription` text,
+  PRIMARY KEY (`AuditID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table wf_audittrail
+-- 
+
+/*!40000 ALTER TABLE `wf_audittrail` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(21,2,1352,3769,'Approver',NULL,84,4,90,'2019-05-22 16:23:13','Added Timesheet Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(22,2,1352,3849,'Procesor',NULL,112,4,90,'2019-05-22 16:23:47','Added Payroll Processor in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(23,2,1352,3849,'Procesor',NULL,125,4,90,'2019-05-22 16:23:48','Added test hr mangager1 in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(24,2,1352,4629,'ytytrt',NULL,0,0,90,'2019-05-22 16:24:08','Added ytytrt step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(25,2,5000,4630,'Processor',NULL,0,0,90,'2019-05-24 13:31:49','Added Processor step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(26,2,5000,4630,'Processor',NULL,3,4,90,'2019-05-24 13:31:57','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(27,2,1343,3753,'AP',NULL,133,6,90,'2019-05-31 13:59:06','Removed Rajesh-Rajesh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(28,2,1343,3753,'AP',NULL,155,6,90,'2019-05-31 13:59:09','Removed EMP21-Sudandira Devi.K in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(29,2,6000,4483,'final approver',NULL,3,4,90,'2019-06-12 18:57:31','Removed HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(30,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-12 18:57:43','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(31,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-12 18:58:07','Removed dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(32,2,6000,4483,'final approver',NULL,134,4,90,'2019-06-12 18:58:13','Added dsfsdf in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(33,2,6000,4483,'final approver',NULL,134,4,90,'2019-06-12 18:58:50','Removed dsfsdf in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(34,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-12 18:59:24','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(35,2,6000,4483,'final approver',NULL,8,4,90,'2019-06-13 11:04:41','Added HR-Performance Admin in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(36,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-13 11:14:49','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(37,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-13 11:17:02','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(38,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-13 11:21:16','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(39,2,1688,4617,'ruu',NULL,4,4,90,'2019-06-13 11:25:55','Added Admin in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(40,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-13 11:40:20','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(41,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-13 11:41:55','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(42,2,6000,4483,'final approver',NULL,135,4,90,'2019-06-13 11:45:18','Added dsfssssssssss in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(43,2,6000,4483,'final approver',NULL,3,4,90,'2019-06-13 12:26:08','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(44,2,6000,4483,'final approver',NULL,0,0,90,'2019-06-13 12:41:14','Modified final approver step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(45,2,1688,4523,'Initiator Step',NULL,85,4,90,'2019-06-13 16:07:00','Added Finace Minister in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(46,2,1688,4523,'Initiator Step',NULL,85,4,90,'2019-06-13 16:07:14','Added Finace Minister in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(47,2,1688,4523,'Initiator Step',NULL,130,4,90,'2019-06-13 16:07:14','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(48,2,1688,4523,'Initiator Step',NULL,112,4,90,'2019-06-13 16:09:05','Added Payroll Processor in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(49,2,1688,4523,'Initiator Step',NULL,103,4,90,'2019-06-13 16:12:55','Added derived HR in CC');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(50,2,1688,4523,'Initiator Step',NULL,103,4,90,'2019-06-13 16:14:06','Added derived HR in CC');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(51,2,1688,4573,'A1',NULL,128,4,90,'2019-06-13 16:15:08','Added TEST Emp in CC');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(52,2,6001,4442,'Hr Mgr',NULL,0,0,90,'2019-06-13 16:18:12','Modified Hr Mgr step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(53,2,6001,60005,'Manager Step',NULL,0,0,90,'2019-06-13 16:54:47','Modified Manager Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(54,2,6001,4442,'Hr Mgr',NULL,0,0,90,'2019-06-13 16:54:52','Modified Hr Mgr step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(55,2,6001,4442,'Hr Mgr',NULL,0,0,90,'2019-06-13 16:59:47','Modified Hr Mgr step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(56,2,6001,60005,'Manager Step',NULL,0,0,90,'2019-06-13 17:05:29','Modified Manager Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(57,2,1688,4617,'ruu',NULL,5,4,90,'2019-06-13 17:30:13','Added HR Executive in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(58,2,6000,4483,'final approver',NULL,130,4,90,'2019-06-19 11:49:37','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(59,2,6000,2494,'Direct Manager Replacement',NULL,0,0,90,'2019-06-19 17:12:04','Modified Direct Manager Replacement step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(60,2,6000,4483,'final approver',NULL,130,4,90,'2019-06-19 17:14:16','Removed fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(61,2,6000,4483,'final approver',NULL,3,4,90,'2019-06-19 17:14:21','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(62,2,6000,4483,'final approver',NULL,130,4,90,'2019-06-19 17:39:29','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(63,2,6001,4442,'Hr Mgr',NULL,130,4,90,'2019-06-19 23:03:45','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(64,2,1325,4594,'P2',NULL,130,4,90,'2019-06-19 23:12:40','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(65,2,1313,3669,'A',NULL,130,4,90,'2019-06-19 23:15:15','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(66,2,6000,4483,'final approver',NULL,3,4,90,'2019-06-20 12:08:20','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(67,2,6000,4483,'final approver',NULL,130,4,90,'2019-06-20 12:12:44','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(68,2,6000,4483,'final approver',NULL,3,4,90,'2019-06-20 12:54:32','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(69,2,6000,4483,'final approver',NULL,130,4,90,'2019-06-20 14:01:40','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(70,2,6000,4483,'final approver',NULL,3,4,90,'2019-06-20 14:59:36','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(71,2,6001,4442,'Hr Mgr',NULL,3,4,90,'2019-06-20 15:29:22','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(72,2,1626,4492,'Processor',NULL,130,4,90,'2019-06-20 17:28:40','Added fgh in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(73,2,1689,4631,'Initiator Step',NULL,0,0,0,'2019-07-03 17:38:50','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(74,2,1690,4632,'Initiator Step',NULL,0,0,0,'2019-07-03 17:38:52','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(75,2,1691,4633,'Initiator Step',NULL,0,0,0,'2019-07-03 17:38:52','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(76,2,1692,4634,'Initiator Step',NULL,0,0,0,'2019-07-03 17:42:29','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(77,2,1693,4635,'Initiator Step',NULL,0,0,0,'2019-07-03 17:42:29','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(78,2,1694,4636,'Initiator Step',NULL,0,0,0,'2019-07-03 17:42:30','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(79,2,1695,4637,'Initiator Step',NULL,0,0,0,'2019-07-03 17:45:10','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(80,2,1696,4638,'Initiator Step',NULL,0,0,0,'2019-07-03 17:45:11','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(81,2,1697,4639,'Initiator Step',NULL,0,0,0,'2019-07-03 17:45:11','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(82,2,1698,4640,'Initiator Step',NULL,0,0,0,'2019-07-03 17:54:33','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(83,2,1699,4641,'Initiator Step',NULL,0,0,0,'2019-07-03 17:54:33','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(84,2,1700,4642,'Initiator Step',NULL,0,0,0,'2019-07-03 17:54:34','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(85,2,1701,4643,'Initiator Step',NULL,0,0,0,'2019-07-04 13:29:20','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(86,2,1702,4644,'Initiator Step',NULL,0,0,0,'2019-07-04 13:29:23','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(87,2,1703,4645,'Initiator Step',NULL,0,0,0,'2019-07-04 13:29:25','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(88,2,1705,4646,'Initiator Step',NULL,0,0,0,'2019-07-04 16:01:57','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(89,2,1705,4647,'First Aprrover',NULL,0,0,90,'2019-07-04 16:24:23','Added First Aprrover step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(90,2,1705,4648,'Second Approver',NULL,0,0,90,'2019-07-04 16:24:40','Added Second Approver step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(91,2,1706,4649,'Initiator Step',NULL,0,0,0,'2019-07-04 16:25:40','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(92,2,1128,4396,'Processor1',NULL,3,4,90,'2019-07-11 15:45:02','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(93,2,1707,4650,'Initiator Step',NULL,0,0,0,'2019-07-12 11:19:11','Added Initiator Step step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(94,2,1707,4651,'ap[p1',NULL,0,0,90,'2019-07-12 11:19:20','Added ap[p1 step');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(95,2,1707,4651,'ap[p1',NULL,101,4,90,'2019-07-12 11:19:25','Added HR Assist in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(96,2,6000,4483,'final approver',NULL,3,4,90,'2019-07-15 16:00:09','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(97,2,6001,4442,'Hr Mgr',NULL,3,4,90,'2019-07-16 17:41:25','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(98,2,1705,4647,'First Aprrover',NULL,3,4,90,'2019-07-18 18:09:48','Added HR Manager in approval');
+INSERT INTO `wf_audittrail`(`AuditID`,`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`OwnerID`,`OwnerType`,`ActionBy`,`ActionDateTime`,`ActionDescription`) VALUES
+(99,2,1705,4648,'Second Approver',NULL,4,4,90,'2019-07-18 18:09:57','Added Admin in approval');
+COMMIT;
+/*!40000 ALTER TABLE `wf_audittrail` ENABLE KEYS */;
+
+-- 
+-- Definition of wf_categorylist
+-- 
+
+CREATE TABLE IF NOT EXISTS `wf_categorylist` (
+  `ClientID` int(11) NOT NULL,
+  `CategoryID` int(11) NOT NULL,
+  `CategoryName` varchar(100) NOT NULL,
+  `ReferenceTable` varchar(100) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`CategoryID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table wf_categorylist
+-- 
+
+/*!40000 ALTER TABLE `wf_categorylist` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,2,'Leave Request','lms_leave_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,3,'Claims Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,4,'Attandance Note Request','lms_attendancenote_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,5,'Learning & Development - Planned Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,6,'Separation Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,9,'Promotion Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,10,'Learning & Development - unplanned Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,11,'Replacement Hiring Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,12,'New Vacancy Hiring Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,15,'TimeSheet Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,16,'Travel Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,17,'OverTime Policy Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,18,'Service Desk Request','wf_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,19,'Purchase Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,20,'Project Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,22,'Resource Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,23,'Resource Extension Request',NULL,'2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,24,'TimeOff Policy Request',NULL,'2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,26,'OT Proposal Request','ta_ot_proposal_request','2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,28,'Compensatory Request','lms_compoff_request','2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(2,29,'Shift Change Request',NULL,'2018-05-25 14:09:10');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,2,'Leave Request','lms_leave_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,3,'Claims Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,4,'Attandance Note Request','lms_attendancenote_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,5,'Learning & Development - Planned Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,6,'Separation Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,9,'Promotion Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,10,'Learning & Development - unplanned Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,11,'Replacement Hiring Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,12,'New Vacancy Hiring Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,15,'TimeSheet Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,16,'Travel Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,17,'OverTime Policy Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,18,'Service Desk Request','wf_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,19,'Purchase Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,20,'Project Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,22,'Resource Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,23,'Resource Extension Request',NULL,'2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,24,'TimeOff Policy Request',NULL,'2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,26,'OT Proposal Request','ta_ot_proposal_request','2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,28,'Compensatory Request','lms_compoff_request','2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(3,29,'Shift Change Request',NULL,'2018-05-25 14:09:10');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(4,29,'Shift Change Request',NULL,'2018-05-25 14:09:10');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,2,'Leave Request','lms_leave_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,3,'Claims Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,4,'Attandance Note Request','lms_attendancenote_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,5,'Learning & Development - Planned Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,6,'Separation Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,9,'Promotion Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,10,'Learning & Development - unplanned Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,11,'Replacement Hiring Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,12,'New Vacancy Hiring Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,15,'TimeSheet Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,16,'Travel Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,17,'OverTime Policy Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,18,'Service Desk Request','wf_request','2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,19,'Purchase Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,20,'Project Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,22,'Resource Request',NULL,'2018-02-28 15:32:37');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,23,'Resource Extension Request',NULL,'2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,24,'TimeOff Policy Request',NULL,'2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,26,'OT Proposal Request','ta_ot_proposal_request','2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,28,'Compensatory Request','lms_compoff_request','2018-02-28 15:32:38');
+INSERT INTO `wf_categorylist`(`ClientID`,`CategoryID`,`CategoryName`,`ReferenceTable`,`LastUPD`) VALUES
+(100000,29,'Shift Change Request',NULL,'2018-05-25 14:09:10');
+COMMIT;
+/*!40000 ALTER TABLE `wf_categorylist` ENABLE KEYS */;
+
+-- 
+-- Definition of wf_customfields
+-- 
+
+CREATE TABLE IF NOT EXISTS `wf_customfields` (
+  `FieldID` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientID` int(11) NOT NULL,
+  `WorkflowID` int(11) NOT NULL,
+  `StepID` int(11) DEFAULT NULL,
+  `FieldDescription` text,
+  `FieldTypeID` int(11) DEFAULT NULL,
+  `FieldAttribute` text,
+  `Order` int(11) DEFAULT NULL,
+  `LastUPDBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`FieldID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table wf_customfields
+-- 
+
+/*!40000 ALTER TABLE `wf_customfields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(27,2,591,1881,'Text',1,'{\"FieldInstanceID\":-1,\"FieldTypeID\":1,\"FieldDescription\":\"Text\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":false,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2017-10-11 11:54:01');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(28,2,591,1881,'Combo',3,'{\"FieldInstanceID\":217,\"FieldTypeID\":3,\"FieldDescription\":\"Combo\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"2\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":217,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',2,90,'2017-10-11 11:53:53');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(29,2,742,2316,'Text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-09-13 17:19:40');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(30,2,742,2316,'Combo',3,'{\"FieldInstanceID\":115,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":115,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2017-09-13 17:19:56');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(31,2,742,2316,'MultiText',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',3,90,'2017-09-13 17:20:08');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(32,2,742,2316,'Date',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',4,90,'2017-09-13 17:20:15');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(33,2,742,2310,'text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-09-13 17:23:42');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(34,2,742,2310,'combo',3,'{\"FieldInstanceID\":115,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":115,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2017-09-13 17:23:51');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(41,2,742,2313,'ttttt',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-09-18 17:29:24');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(42,2,1180,3404,'test',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-09-25 12:16:51');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(43,2,1180,3404,'combo',3,'{\"FieldInstanceID\":155,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":155,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2017-09-25 12:17:04');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(44,2,772,2421,'test',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',1,90,'2017-09-25 17:09:39');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(45,2,591,3347,'test',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-09-26 16:44:03');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(46,2,1221,3460,'text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":\"1\",\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-10-09 11:32:16');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(47,2,1221,3460,'Combo',3,'{\"FieldInstanceID\":122,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":122,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2017-10-09 10:17:23');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(49,2,1221,3463,'text 123',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-10-09 12:42:44');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(50,2,1221,3460,'DP',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',3,90,'2017-10-09 13:00:53');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(51,2,1221,3460,'MT',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2017-10-09 13:01:02');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(52,2,1221,3460,'test',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":5,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',5,90,'2017-10-11 11:35:37');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(53,2,8000,8001,'text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-11-15 10:34:35');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(73,2,7001,1,'PRcombo',3,'{\"FieldInstanceID\":166,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":166,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-11-24 15:38:48');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(74,2,7002,1,'ResReqtest',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',1,90,'2017-11-24 15:40:32');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(76,2,7003,1,'rextntext',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-11-24 16:20:26');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(90,2,1231,3492,'test1',3,'{\"FieldInstanceID\":205,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":\"1\",\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":205,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-11-27 14:57:57');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(91,2,1231,3496,'test2',0,'{\"FieldInstanceID\":14,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":\"1\",\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',1,90,'2017-11-27 14:57:36');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(92,2,1231,3504,'test3',6,'{\"FieldInstanceID\":5,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":\"1\",\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-11-27 14:57:20');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(94,2,7000,2999,'ret',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',1,90,'2017-11-27 17:39:46');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(95,2,7000,3000,'ert',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-11-27 17:39:56');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(96,2,7000,2998,'test',3,'{\"FieldInstanceID\":211,\"FieldTypeID\":3,\"FieldDescription\":\"test\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"FieldInstanceLookUpID\":211,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',1,90,'2017-11-28 16:59:49');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(99,2,1169,3296,'OT Reasons',3,'{\"FieldInstanceID\":235,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":235,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-12-11 14:47:23');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(100,2,448,2866,'gfhfg',3,'{\"FieldInstanceID\":115,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":115,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-12-18 11:05:30');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(101,2,1228,3482,'اختبار',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2017-12-28 11:28:22');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(102,2,6000,60001,'Do you have any criminal record/pending court case? If yes, please explain.',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"text\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2019-06-18 12:52:53');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(105,2,6000,2995,'text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-04-04 11:31:04');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(111,2,1227,3715,'test',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-04-19 10:22:07');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(112,2,1227,3728,'TEST',1,'{\"FieldInstanceID\":-1,\"FieldTypeID\":1,\"FieldDescription\":\"TEST\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-05-08 19:47:00');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(113,2,1337,3732,'test',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-05-09 10:55:58');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(116,2,1337,3732,'combo',3,'{\"FieldInstanceID\":155,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":155,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2018-05-18 15:34:04');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(117,2,1340,3747,'Test1',1,'{\"FieldInstanceID\":-1,\"FieldTypeID\":1,\"FieldDescription\":\"Test1\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":false,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-06-12 12:47:24');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(118,2,1340,3747,'TEST2',3,'{\"FieldInstanceID\":254,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":254,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2018-06-12 12:47:35');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(119,2,1340,3747,'TEST3',6,'{\"FieldInstanceID\":1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',3,90,'2018-06-12 12:47:41');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(120,2,1340,3747,'TEST4',20,'{\"FieldInstanceID\":1,\"FieldTypeID\":20,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2018-06-12 12:47:47');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(121,2,1310,3656,'test',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"test\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-11-26 14:50:28');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(122,2,1310,3656,'co',3,'{\"FieldInstanceID\":254,\"FieldTypeID\":3,\"FieldDescription\":\"co\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"2\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":254,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',2,90,'2018-11-26 14:50:33');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(123,2,1310,3656,'dat',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"dat\",\"DefaultValue\":\"dd/MM/yyyy\",\"FieldDisplayOrder\":\"3\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',3,90,'2018-11-26 14:50:38');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(124,2,1310,3656,'mu',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"mu\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"4\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',4,90,'2018-11-26 14:50:42');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(125,2,982,2855,'Text Box',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"Text Box\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-11-26 14:52:19');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(126,2,982,2855,'Combo',3,'{\"FieldInstanceID\":203,\"FieldTypeID\":3,\"FieldDescription\":\"Combo\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"2\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":203,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',2,90,'2018-11-26 14:53:49');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(127,2,982,2855,'Date Picker',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"Date Picker\",\"DefaultValue\":\"dd/MM/yyyy\",\"FieldDisplayOrder\":\"3\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',3,90,'2018-11-26 14:52:37');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(128,2,982,2855,'MultiTextBox',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"MultiTextBox\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"4\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',4,90,'2018-11-26 14:52:31');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(129,2,982,3418,'Text Box',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"Text Box\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-11-23 19:20:07');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(130,2,982,3418,'Combo Box',3,'{\"FieldInstanceID\":203,\"FieldTypeID\":3,\"FieldDescription\":\"Combo Box\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"2\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":203,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',2,90,'2018-11-23 19:57:51');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(131,2,1645,4379,'ITEXTBOX',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-22 18:49:55');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(132,2,1645,4379,'ICOMBOX',3,'{\"FieldInstanceID\":215,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":215,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2018-11-22 18:50:17');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(133,2,1645,4379,'IDatePicker',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',3,90,'2018-11-22 18:50:33');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(134,2,1645,4379,'IMulti Textbox',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2018-11-22 18:50:53');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(137,2,1645,4380,'ADatePicker',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',3,90,'2018-11-22 18:57:39');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(138,2,1645,4380,'AMulti Textbox',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2018-11-22 18:57:57');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(139,2,1639,4309,'TEEE',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-22 19:03:07');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(140,2,1645,4381,'A2TEXT',3,'{\"FieldInstanceID\":216,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":\"1\",\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":216,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-22 19:15:13');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(142,2,1645,4382,'PText erewtertretertretret',3,'{\"FieldInstanceID\":259,\"FieldTypeID\":3,\"FieldDescription\":\"PText\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":259,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',1,90,'2018-11-22 19:16:54');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(143,2,1645,4382,'PComboxaaaaaaaaaaaaaaaaaaaa',2,'{\"FieldInstanceID\":5,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":\"2\",\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2018-11-23 18:30:32');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(144,2,1645,4383,'aaaaaaaaaaaa',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-22 19:18:01');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(145,2,1645,4383,'bbbbbbbbbbbbbb',3,'{\"FieldInstanceID\":252,\"FieldTypeID\":3,\"FieldDescription\":\"bbbbbbbbbbbbbb\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"2\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":252,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',2,90,'2018-11-23 19:53:54');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(146,2,1645,4383,'cccccccccccccc',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',3,90,'2018-11-22 19:18:16');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(147,2,1645,4383,'uuuuuuuuuuuuuuu',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2018-11-22 19:18:24');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(148,2,1639,4309,'Combo',3,'{\"FieldInstanceID\":254,\"FieldTypeID\":3,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"-1\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":254,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2018-11-23 10:33:52');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(149,2,982,2856,'Test Box',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"Test Box\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-11-23 17:27:38');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(150,2,982,2856,'Combo',3,'{\"FieldInstanceID\":254,\"FieldTypeID\":3,\"FieldDescription\":\"Combo\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"2\",\"FieldValue\":\"-1\",\"IsRequired\":true,\"FieldInstanceLookUpID\":254,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\"}',2,90,'2018-11-23 19:57:01');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(151,2,1639,4312,'TEST',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-23 18:16:07');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(152,2,1642,4330,'TEST',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"TEST\",\"DefaultValue\":\"\",\"FieldDisplayOrder\":\"1\",\"FieldValue\":\"\",\"IsRequired\":true,\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0}',1,90,'2018-11-23 18:17:33');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(153,2,1645,4382,'Date Picker',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',3,90,'2018-11-23 18:30:10');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(154,2,1645,4382,'Multi Text Box',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2018-11-23 18:30:24');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(155,2,1645,4381,'hgjhg',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":2,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',2,90,'2018-11-26 14:14:12');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(156,2,1645,4381,'vbnvbnvbnvb',0,'{\"FieldInstanceID\":-1,\"FieldTypeID\":0,\"FieldDescription\":\"\",\"FieldDisplayOrder\":3,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"dd/MM/yyyy\"}',3,90,'2018-11-26 14:14:17');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(157,2,1645,4381,'vbnbvnvb',6,'{\"FieldInstanceID\":-1,\"FieldTypeID\":6,\"FieldDescription\":\"\",\"FieldDisplayOrder\":4,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',4,90,'2018-11-26 14:14:28');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(159,2,1352,3768,'custom Text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":true,\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-27 10:27:11');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(160,2,1590,4128,'Custom Text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-27 11:11:43');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(161,2,1419,3867,'Custom Text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-27 11:11:58');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(162,2,1227,3480,'Custom Text',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateFormat\":-1,\"FileExtension\":\"doc,docx,pdf,txt,xls,xlsx,png,jpg,jpeg\",\"Left\":0,\"Top\":0,\"IsNumeric\":\"false\",\"NoOfDecimalPlaces\":0,\"DefaultValue\":\"\"}',1,90,'2018-11-27 11:12:39');
+INSERT INTO `wf_customfields`(`FieldID`,`ClientID`,`WorkflowID`,`StepID`,`FieldDescription`,`FieldTypeID`,`FieldAttribute`,`Order`,`LastUPDBy`,`LastUPD`) VALUES
+(163,2,1590,4129,'Give your feedback',2,'{\"FieldInstanceID\":-1,\"FieldTypeID\":2,\"FieldDescription\":\"\",\"FieldDisplayOrder\":1,\"EnableContentLimit\":false,\"FieldValue\":\"\",\"IsRequired\":\"false\",\"MaxLength\":500,\"ValidationMessage\":\"\",\"IsUnique\":\"false\",\"FieldInstanceLookUpID\":-1,\"DateForma

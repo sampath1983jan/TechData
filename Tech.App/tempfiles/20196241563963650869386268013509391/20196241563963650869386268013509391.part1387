@@ -1,0 +1,1196 @@
+ULL,'xzcxz',NULL);
+INSERT INTO `recruitment_opening_surveyform`(`ClientID`,`OpeningID`,`CandidateID`,`Item`,`QuestionType`,`Score`,`LastUPD`,`ItemID`,`Remarks`,`AnswerText`,`AnswerOptionID`) VALUES
+(2,547,7412,'hfghghghgh','2',3,'2019-06-20 17:18:11',4033,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_opening_surveyform` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_openinginfo
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_openinginfo` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer ID',
+  `OpeningID` int(10) unsigned NOT NULL COMMENT 'OpeningID',
+  `OpeningType` int(10) unsigned NOT NULL COMMENT 'OpeningID type Replacement or new',
+  `PositionID` int(10) unsigned NOT NULL,
+  `PositionOpenTo` int(10) unsigned NOT NULL COMMENT 'Position Open for Internal or external',
+  `AppointmentTypeID` int(10) unsigned NOT NULL COMMENT 'Appointment to permanent or contract',
+  `ExpectedFillDate` datetime NOT NULL,
+  `LimitedStartDate` datetime NOT NULL,
+  `LimitedEndDate` datetime NOT NULL,
+  `Qualification` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `OverTimeEligibilityID` int(10) unsigned NOT NULL,
+  `MatchCriteria` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `AgeID` int(10) unsigned NOT NULL,
+  `AgeValue` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  `RequestorID` int(10) unsigned NOT NULL,
+  `Vacantdate` datetime DEFAULT NULL,
+  KEY `Quick_Recruitment_OpeningInfo` (`ClientID`,`OpeningID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_openinginfo
+-- 
+
+/*!40000 ALTER TABLE `recruitment_openinginfo` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_openinginfo` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_portal_candidate_register
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_portal_candidate_register` (
+  `FirstName` varchar(255) NOT NULL,
+  `LastName` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  `MobileNumber` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_portal_candidate_register
+-- 
+
+/*!40000 ALTER TABLE `recruitment_portal_candidate_register` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('Suresh','Antto','sureshanttony88@gmail.com','123','1');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('TestReg1','','TestReg1','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testsdfsdf','','sdfsdf','123','sadfad');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testreg2','','testreg2','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('rakkamma','rakka','rakkamma@gm.cn','123','45353534535');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testc1','','testc1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testc2','','testc2@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testc3','','testc3@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests1','','tests1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests2','','tests2@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests4','','tests4@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests5','','tests5@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests6','','tests6@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests7','','tests7@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests8','','tests8@gm.cn','123','1231');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tests9','','tests9@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testr1','','testr1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testr3','testr3','testr3@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testr4','','testr4@gm.cn','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testr9','','testr9@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testp1','12','testp1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testb1','123','testb1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testn1','','testn1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testn2','123','testn2@gm.cn','1234','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testn3','','testn3@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testa1','123','testa1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testn4','','testn4@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('ax1 test','','ax1@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testro1 2','','testro1@gm.cn','123','9856232356');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testj1','','testj1','12345','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testmu1','','testmu1','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testmu2','','testmu2@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('ATest1','','ATest1','123','12345121');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testst1','','testst1','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('test r8','','testr8','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('xczxczxc','','zxczc','123','12');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testss1','','testss1','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('Gaja','123','gaja@gm.cn','123','12312');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('Ruba','','ruba@gm.cn','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('bro','','bro@gm.cn','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('Jagan','','jaga@gm.cn','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('testttt','','testtt','123','dfd');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('tst tt','123','tsttt@gm.cn','123','123');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('rubesh1','','rubesh1@gm.cn','123','1234512');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('test local','','local@gm.cn','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('Sakthi','','sakthi@gm.cn','123','123456');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('AAA','AAA','test111@gm.cn','123','898989');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('SU','KA','suka@gm.cn','123','4958493593458');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('fgdfg','fdg','wewewe','qwerty','454354');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('dfgfd','','fdgfdgfd','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('fghgfh','','fghfhfg','123','6465');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('ramesh','','ramesh@gm.cn','123','12345');
+INSERT INTO `recruitment_portal_candidate_register`(`FirstName`,`LastName`,`Email`,`Password`,`MobileNumber`) VALUES
+('vijay','','vijay','123','12345');
+COMMIT;
+/*!40000 ALTER TABLE `recruitment_portal_candidate_register` ENABLE KEYS */;
+
+-- 
+-- Definition of recruitment_portal_session
+-- 
+
+CREATE TABLE IF NOT EXISTS `recruitment_portal_session` (
+  `ClientID` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `CandidateID` varchar(255) NOT NULL,
+  `URL` varchar(250) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table recruitment_portal_session
+-- 
+
+/*!40000 ALTER TABLE `recruitment_portal_session` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','profile1@test.com','6755','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=nI3LTU9bLxO0Z/ICzEV8aw==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f1@gmail.com','6775','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=DP7IHWiTfcA2eU5HhdktEA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','test@ttt.com','6744','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=BAfh3kEVkmZ3pgmdpDCeFQ==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','rr@gm.cn','6780','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=u8TGwo6pJmNuwmNd3tXM2Q==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('2','f2@gmail.com','6776','?CID=GGcF/V4bIkHP8Gqoth/CVw==&obt=tEoLIFfJeZlIwGYMiLH19w==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`CandidateID`,`URL`) VALUES
+('','kalicharan@gmail.cn','','?CID=9r0xk493AeXZLcUrTKU+MA==&obt=9r0xk493AeXZLcUrTKU+MA==');
+INSERT INTO `recruitment_portal_session`(`ClientID`,`Email`,`Cand

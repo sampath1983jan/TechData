@@ -1,0 +1,530 @@
+.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/TAHandler.ashx?target=GetEmployeeDetailsforOTGeneration','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeDetailsforOTGeneration',20068);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-08 20:23:56','Timeout in IO operation','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/PerfHandler.ashx?target=GetEmpMovSettingInstance','','GetEmpMovSettingInstance',20069);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-08 20:24:04','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetFieldElements','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetFieldElements',20070);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-08 20:24:04','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetFieldElements','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetFieldElements',20070);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 14:35:01','Unable to connect to any of the specified MySQL hosts.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetLookUpText','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetLookUpText',20071);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 14:35:05','Unable to connect to any of the specified MySQL hosts.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetComponentFieldLookUpText','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetComponentFieldLookUpText',20072);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 14:35:06','Unable to connect to any of the specified MySQL hosts.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetComponentFieldLookUpText','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetComponentFieldLookUpText',20072);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 14:46:47','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.113',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20073);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 14:57:01','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.113',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20074);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 15:02:54','SMRD.1201: SQL Query Errors Occured - Unknown column ''sys_promotion_settings.LookUpID'' in ''where clause''','192.168.0.105',90,'http://localhost:57901/Handler/PerfHandler.ashx?target=GetEmployeeMovementSettingsType','Unknown column ''sys_promotion_settings.LookUpID'' in ''where clause''','GetEmployeeMovementSettingsType',20075);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 15:24:27','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.113',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20076);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:25:14','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx','','GetEmployeeWidgetSource',20077);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:25:20','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx','','GetEmployeeToDoSource',20078);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:30:51','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_getrolelist'' doesn''t exist','192.168.0.149',90,'http://localhost:60492/Handler/UIHandler.ashx?target=GetRoleList','Table ''talentozdev.vw_getrolelist'' doesn''t exist','GetRoleList',20079);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:31:52','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_getrolelist'' doesn''t exist','192.168.0.149',90,'http://localhost:60492/Handler/UIHandler.ashx?target=GetRoleList','Table ''talentozdev.vw_getrolelist'' doesn''t exist','GetRoleList',20080);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:32:21','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_getrolelist'' doesn''t exist','192.168.0.149',90,'http://localhost:60492/Handler/UIHandler.ashx?target=GetRoleList','Table ''talentozdev.vw_getrolelist'' doesn''t exist','GetRoleList',20081);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:33:43','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_getrolelist'' doesn''t exist','192.168.0.149',90,'http://localhost:60492/Handler/UIHandler.ashx?target=GetRoleList','Table ''talentozdev.vw_getrolelist'' doesn''t exist','GetRoleList',20082);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:42:17','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_getrolelist'' doesn''t exist','192.168.0.149',90,'http://localhost:60492/Handler/UIHandler.ashx?target=GetRoleList','Table ''talentozdev.vw_getrolelist'' doesn''t exist','GetRoleList',20083);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 16:49:16','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_getrolelist'' doesn''t exist','192.168.0.149',5127,'http://localhost:60492/Handler/UIHandler.ashx?target=GetRoleList','Table ''talentozdev.vw_getrolelist'' doesn''t exist','GetRoleList',20084);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:15:07','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetLookUp','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetLookUp',20085);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:19:29','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/PerfHandler.ashx?target=GetEmpMovSettingInstance','Timeout in IO operation','GetEmpMovSettingInstance',20086);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:19:29','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/PerfHandler.ashx?target=GetEmpMovSettingInstance','Timeout in IO operation','GetEmpMovSettingInstance',20086);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:21:39','SMRD.1201: SQL Query Errors Occured - Timeout in IO operation','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetFieldElements','Timeout in IO operation','GetFieldElements',20087);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:21:42','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/PerfHandler.ashx?target=GetEmpMovSettingInstance','Timeout in IO operation','GetEmpMovSettingInstance',20088);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:24:52','Timeout in IO operation','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/PerfHandler.ashx?target=GetEmpMovSettingInstance','','GetEmpMovSettingInstance',20089);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:24:04','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx','','GetEmployeeWidgetSource',20090);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:24:05','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx','','GetEmployeeToDoSource',20091);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:26:10','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20092);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:26:11','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20093);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:26:55','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20094);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:27:32','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20095);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:27:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20096);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:31:50','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/TAHandler.ashx?target=GetEmployeeDetailsforOTGeneration','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeDetailsforOTGeneration',20097);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:35:39','Timeout in IO operation','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=getphoto','','getphoto',20098);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:47:21','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20099);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:47:22','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20100);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:52:13','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20101);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:52:15','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20102);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:52:40','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20103);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:53:00','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20104);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:53:41','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20105);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:53:42','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20106);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:57:02','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20107);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:57:03','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20108);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 17:58:47','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20109);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 18:27:12','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20110);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 18:27:12','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20111);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 19:08:02','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_pr_salary_component'' doesn''t exist','192.168.0.154',90,'http://localhost:58530/Handler/PayRollHandler.ashx?target=FetchComponentList','Table ''talentozdev.vw_pr_salary_component'' doesn''t exist','FetchComponentList',20112);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 20:07:01','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20113);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 20:21:37','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20114);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 20:21:43','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeActiveSurveys',20115);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-09 20:22:26','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20116);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:21:42','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20117);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:24:44','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20118);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:42:46','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20119);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:46:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20120);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:46:34','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20121);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:46:47','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/TAHandler.ashx?target=OTProposalRequestList','','OTProposalRequestList',20122);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:47:08','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20123);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:47:14','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20124);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:49:15','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/TAHandler.ashx?target=OTProposalRequestList','','OTProposalRequestList',20125);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:49:27','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20126);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:49:28','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20127);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:54:35','SMRD.1201: SQL Query Errors Occured - Incorrect table name ''''','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Incorrect table name ''''','GetRecComponentView',20128);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:54:57','SMRD.1413 : No Fields have been added to the SQLBuilder: If you want to retrieve all fields set the SelectAllFields property to True.','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetFieldElements','','GetFieldElements',20129);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:58:28','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20130);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:58:29','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20131);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:59:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20132);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 10:59:34','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20133);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:06:31','SMRD.1413 : No Fields have been added to the SQLBuilder: If you want to retrieve all fields set the SelectAllFields property to True.','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetFieldElements','','GetFieldElements',20134);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:06:56','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20135);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:06:58','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20136);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:06:58','SMRD.1413 : No Fields have been added to the SQLBuilder: If you want to retrieve all fields set the SelectAllFields property to True.','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetFieldElements','','GetFieldElements',20137);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:07:53','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20138);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:11:24','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20139);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:11:25','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20140);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:12:41','Unable to connect to any of the specified MySQL hosts.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeActiveSurveys',20141);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:12:41','Unable to connect to any of the specified MySQL hosts.','192.168.0.154',90,'http://localhost:57901/Handler/TAHandler.ashx?target=ListOfPermissionRequestItems','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','ListOfPermissionRequestItems',20141);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:12:41','Unable to connect to any of the specified MySQL hosts.','192.168.0.154',90,'http://localhost:57901/Handler/TAHandler.ashx?target=ListOfPermissionRequestItems','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','ListOfPermissionRequestItems',20141);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:13:35','Unable to connect to any of the specified MySQL hosts.','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeActiveSurveys',20142);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:16:20','Input string was not in a correct format.','192.168.0.154',5129,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20143);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:16:58','Input string was not in a correct format.','192.168.0.154',5130,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20144);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:17:38','Input string was not in a correct format.','192.168.0.154',5128,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20145);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:21:10','Input string was not in a correct format.','192.168.0.154',6500,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20146);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:21:11','Input string was not in a correct format.','192.168.0.154',6500,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20147);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:22:14','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20148);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:22:15','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20149);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:31:47','Input string was not in a correct format.','192.168.0.154',5128,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20150);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:32:53','Input string was not in a correct format.','192.168.0.154',5129,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20151);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:33:05','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20152);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:33:07','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20153);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:33:49','Input string was not in a correct format.','192.168.0.154',5128,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20154);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:34:43','Input string was not in a correct format.','192.168.0.154',6500,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20155);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:34:44','Input string was not in a correct format.','192.168.0.154',6500,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20156);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:40:53','Input string was not in a correct format.','192.168.0.154',5128,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20157);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:45:59','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.0.113',90,'http://localhost:57901/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20158);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:46:09','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.0.113',90,'http://localhost:57901/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20159);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:46:09','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.0.113',90,'http://localhost:57901/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20160);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:47:49','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20161);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:47:50','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20162);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:48:02','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20163);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:48:03','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20164);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:47:51','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20165);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:47:52','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20166);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:48:09','The file ''/~Handler/ClaimsHandler.ashx'' does not exist.','192.168.0.105',90,'http://localhost:57901/~Handler/ClaimsHandler.ashx?target=GetFixedMileageList','','GetFixedMileageList',20167);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:50:58','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20168);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:50:59','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20169);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:51:06','The file ''/~Handler/ClaimsHandler.ashx'' does not exist.','192.168.0.105',90,'http://localhost:57901/~Handler/ClaimsHandler.ashx?target=GetFixedMileageList','','GetFixedMileageList',20170);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:52:51','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20171);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:52:53','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20172);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:56:37','Reading from the stream has failed.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Attempted to read past the end of the stream.','GetEmployeeActiveSurveys',20173);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:56:37','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.113',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Reading from the stream has failed.','GetEmployeeActiveSurveys',20173);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:55:50','The file ''/~Handler/ClaimsHandler.ashx'' does not exist.','192.168.0.105',90,'http://localhost:57901/~Handler/ClaimsHandler.ashx?target=GetFixedMileageList','','GetFixedMileageList',20174);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:59:20','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20175);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 11:59:22','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20176);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:00:42','Reading from the stream has failed.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Attempted to read past the end of the stream.','GetEmployeeActiveSurveys',20177);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:00:22','A circular reference was detected while serializing an object of type ''System.Reflection.RuntimeModule''.','192.168.0.105',90,'http://localhost:57901/Handler/ClaimsHandler.ashx?target=GetFixedMileageList','','GetFixedMileageList',20178);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:20:51','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20179);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:21:03','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20180);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:21:03','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20180);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:20:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20181);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:20:35','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20182);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:23:49','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20183);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:23:50','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20184);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:23:23','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeActiveSurveys',20185);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:27:59','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20186);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:28:00','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20187);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:29:18','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20188);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:29:18','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20189);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:33:16','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20190);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:33:17','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20191);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:34:27','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20192);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:34:28','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20193);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:34:25','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20194);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:34:26','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20195);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:36:18','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20196);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:36:19','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20197);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:38:51','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20198);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:38:52','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20199);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:46:24','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20200);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:46:25','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20201);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:50:45','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20202);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:50:47','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20203);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 12:51:23','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20204);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:02:46','SMRD.1411: Error Opening / Closing Database Connection.','192.168.0.154',90,'http://localhost:57901/Handler/TAHandler.ashx?target=LoadPermissionRequestItemsOthers','','LoadPermissionRequestItemsOthers',20205);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:13:18','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20206);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:13:18','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20207);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:15:48','Timeout in IO operation','192.168.0.154',90,'http://localhost:57901/Handler/LDHandler.ashx?target=GetUpcomingSessions','','GetUpcomingSessions',20208);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:24:43','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20209);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:24:43','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20210);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:39:04','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20211);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:39:05','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20212);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:42:44','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20213);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:42:54','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeToDoSource',20214);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:45:00','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20215);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:45:01','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20216);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:46:22','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20217);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:46:23','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20218);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:46:56','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20219);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:46:57','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20220);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:48:50','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20221);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 13:48:50','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20222);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:12:55','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20223);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:12:56','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20224);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:16:16','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20225);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:16:17','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20226);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:24:37','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20227);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:24:37','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20228);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:25:36','Timeout in IO operation','192.168.0.110',90,'http://localhost/TalentOZ/Handler/UIHandler2.ashx?target=GetEmployeeActiveSurveys','','GetEmployeeActiveSurveys',20229);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:26:16','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20230);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:26:16','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20231);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:26:45','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20232);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:26:45','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20233);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:28:24','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20234);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:28:24','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20235);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:31:32','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20236);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:31:33','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20237);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:35:48','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20238);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:35:49','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20239);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:47:44','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20240);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 14:47:47','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20241);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:00:17','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20242);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:00:18','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20243);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:02:27','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20244);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:02:27','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20245);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:03:56','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20246);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:03:56','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20247);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:04:20','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20248);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:04:20','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20249);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:27:22','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20250);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:27:23','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20251);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:28:21','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20252);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:28:22','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20253);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:30:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20254);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:30:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20255);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:32:08','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20256);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:32:10','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20257);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:32:51','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20258);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:32:52','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20259);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:12','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20260);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:14','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20261);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:14','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20261);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:28','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20262);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:29','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20263);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:29','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20263);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:34:47','Expression can''t be empty\r\nParameter name: expression','192.168.248.161',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',20264);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:37:04','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20265);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:37:05','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20266);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:38:24','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20267);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:38:27','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20268);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:38:35','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20269);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:38:36','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20270);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:40:59','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20271);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:41:13','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20272);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:41:15','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20273);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:44:17','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20274);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:44:19','Input string was not in a correct format.','192.168.0.154',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20275);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:50:25','SMRD.1201: SQL Query Errors Occured - Timeout in IO operation','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Timeout in IO operation','GetRecComponentView',20276);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:49:40','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20277);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:49:41','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20278);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:51:32','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20279);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:51:33','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20280);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:53:12','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.117',90,'http://localhost/TalentOZ/Handler/RecHandler.ashx?target=GetRecComponentView','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetRecComponentView',20281);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:52:57','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20282);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:53:00','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20283);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:56:00','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20284);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:56:01','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20285);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:56:01','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20285);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:55:24','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20286);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:55:25','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20287);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:56:19','Expression can''t be empty\r\nParameter name: expression','192.168.248.161',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',20288);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:56:47','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20289);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 15:56:48','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20290);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:04:02','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.113',90,'http://localhost:57901/Handler/RecHandler.ashx?target=GetRecComponentView','Timeout in IO operation','GetRecComponentView',20291);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:04:13','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20292);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:04:14','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20293);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:04:14','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20293);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:04:05','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20294);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:04:06','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20295);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:06:42','Expression can''t be empty\r\nParameter name: expression','192.168.248.161',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',20296);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:07:33','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20297);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:07:35','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20298);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:07:35','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20298);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:07:50','Expression can''t be empty\r\nParameter name: expression','192.168.248.161',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',20299);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:07:03','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20300);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:07:04','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20301);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:09:08','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20302);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:09:10','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20303);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:09:10','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20303);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:09:01','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20304);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:09:07','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20305);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:10:38','Expression can''t be empty\r\nParameter name: expression','192.168.248.161',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',20306);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:11:36','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20307);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:11:40','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20308);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:13:40','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','','GetEmployeeWidgetSource',20309);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:13:42','Input string was not in a correct format.','192.168.0.105',90,'http://localhost:57901/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',20310);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:22:57','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20311);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:22:58','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20312);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:22:58','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20312);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:25:32','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20313);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:25:33','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20314);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:25:33','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.0.117',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20314);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:25:57','Table ''talentozdev.vw_competency'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=getCurrentPositionMatch','','getCurrentPositionMatch',20315);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:26:03','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30400_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30400_2'' doesn''t exist','GetComponentView',20316);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2019-07-10 16:26:03','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.30300_2'' doesn''t exist','192.168.248.161',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetComponentView','Table ''talentozdev.30300_2'' doesn''t exist','GetComponentView',20316);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetai

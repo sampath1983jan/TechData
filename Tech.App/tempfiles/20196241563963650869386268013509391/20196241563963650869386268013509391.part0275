@@ -1,0 +1,812 @@
+nent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,67,15,10,1,1,1,1,10,0,1,1,0,0,'2017-05-11 14:49:10',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,67,16,20,1,1,1,1,10,0,1,1,0,0,'2017-05-11 14:49:10',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,67,17,0,0,1,1,1,10,0,1,1,0,0,'2017-05-11 14:49:10',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,67,18,30,1,1,1,1,10,0,1,1,0,0,'2017-05-11 14:49:10',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,68,15,10,1,1,1,1,10,0,1,1,0,0,'2017-05-11 14:51:52',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,68,17,0,0,1,1,1,10,0,1,1,0,0,'2017-05-11 14:51:52',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,69,17,0,0,1,1,1,10,0,1,1,0,0,'2017-05-16 17:34:06',0,0,4,NULL,0,0);
+COMMIT;
+/*!40000 ALTER TABLE `dc_templatecomponents` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_templatecomponentsitems
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_templatecomponentsitems` (
+  `ClientID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `ComponentItemID` int(11) NOT NULL,
+  `Createdby` int(11) NOT NULL,
+  `LASTUPD` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_templatecomponentsitems
+-- 
+
+/*!40000 ALTER TABLE `dc_templatecomponentsitems` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `dc_templatecomponentsitems` ENABLE KEYS */;
+
+-- 
+-- Definition of demo
+-- 
+
+CREATE TABLE IF NOT EXISTS `demo` (
+  `UserID` int(11) NOT NULL,
+  `UserName` varchar(255) DEFAULT NULL,
+  `UserType` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table demo
+-- 
+
+/*!40000 ALTER TABLE `demo` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `demo`(`UserID`,`UserName`,`UserType`) VALUES
+(1,'Demo',1);
+INSERT INTO `demo`(`UserID`,`UserName`,`UserType`) VALUES
+(2,'Testing',2);
+COMMIT;
+/*!40000 ALTER TABLE `demo` ENABLE KEYS */;
+
+-- 
+-- Definition of demot
+-- 
+
+CREATE TABLE IF NOT EXISTS `demot` (
+  `myprim` int(11) NOT NULL,
+  PRIMARY KEY (`myprim`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table demot
+-- 
+
+/*!40000 ALTER TABLE `demot` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `demot` ENABLE KEYS */;
+
+-- 
+-- Definition of department
+-- 
+
+CREATE TABLE IF NOT EXISTS `department` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer ID',
+  `F_320025` int(11) DEFAULT '-1' COMMENT 'Business Unit',
+  `DepartmentID` int(10) unsigned NOT NULL COMMENT 'Unique Key of this table',
+  `F_320005` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Department Name',
+  `F_320010` varchar(500) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Department Description',
+  `F_320015` mediumtext CHARACTER SET latin1 COMMENT 'Upload File',
+  `LastUPD` datetime DEFAULT NULL COMMENT 'Last updated Datetime',
+  `F_320020` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `F_320030` text COMMENT 'Name in Arabic',
+  PRIMARY KEY (`DepartmentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table department
+-- 
+
+/*!40000 ALTER TABLE `department` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,135,2,'COO''S OFFICE','tets','tempfiles/89d314af-ca7b-4de6-90d0-9da1f0f89ac7.xlsx','2019-02-21 10:24:00','DEPT-0012','sdfsdf');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,3,'Human Resource','','','2019-02-20 17:06:58','DEPT-002','dgfdgf');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,4,'Process Improvement ','testst','NULL','2014-11-13 16:57:57','DEPT-003',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,1,5,'Business Analysis','','NULL','2015-12-14 12:43:03','DEPT-004',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,6,'Sales & Marketing','','NULL','2014-11-13 16:58:32','DEPT-005',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,7,'PMO','','NULL','2014-11-13 16:58:45','DEPT-006',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,8,'Human Resource','','NULL','2014-11-13 16:59:02','DEPT-007',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,9,'Business Analysis','','NULL','2014-11-13 16:59:15','DEPT-008',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,1,10,'Development','','NULL','2014-11-13 16:59:24','DEPT-009',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,11,'Quality Assurance','','NULL','2014-11-13 16:59:39','DEPT-010',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,2,12,'Development','','NULL','2014-11-13 16:59:53','DEPT-011',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,13,'MIS','','NULL','2014-11-13 17:00:04','DEPT-012',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,14,'Documentation','','NULL','2016-08-31 13:15:11','DEPT-013',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,15,'Graphic Design ','','NULL','2014-11-13 17:00:31','DEPT-014',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,16,'Support','','NULL','2014-11-13 17:00:41','DEPT-015',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,36,'Management','','NULL','2014-11-24 19:03:23','M001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,37,'Research And Development','Research','NULL','2014-11-27 20:09:48','10001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,39,'testprabhu','test prabhu','NULL','2015-08-17 15:28:35','test456',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,1,42,'Test Dept','sdsdf','NULL','2015-08-26 17:15:38','DPT001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,43,'TD-Test','','NULL','2015-08-26 17:24:32','T001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,44,'SMR-DEPT','sdfgfdg','NULL','2015-12-24 13:09:49','SMR-001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,2,45,'Accounts & Finance','tets','tempfiles/89d314af-ca7b-4de6-90d0-9da1f0f89ac7.xlsx','2015-08-17 12:36:59','DEPT-001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,46,'Accounts & Finance','tets','tempfiles/89d314af-ca7b-4de6-90d0-9da1f0f89ac7.xlsx','2015-08-17 12:36:59','DEPT-001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,48,'Human Resource','','NULL','2014-11-13 16:57:45','DEPT-002',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,40,49,'Business Analysis','','NULL','2015-12-09 16:28:36','DEPT-004',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,50,'Development','','NULL','2014-11-13 16:59:24','DEPT-009',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,54,'ACADEMIC AFFAIRS',NULL,NULL,NULL,'AMU-DEPT-001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,55,'ACADEMIC AFFAIRS MANAGEMENT',NULL,NULL,NULL,'AMU-DEPT-002',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,56,'BUSINESS DEVELOPMENT',NULL,NULL,NULL,'AMU-DEPT-003',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,61,'Documentation','','NULL','2016-01-08 09:15:10','ss',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,66,'gggg','','NULL','2015-12-14 10:45:25','sdfa3443',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,68,'HUMAN RERSOURCES & ADMIN DEPARTMENT','xzvc','NULL','2016-04-07 15:45:39','111',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,76,'test','',NULL,'2016-09-13 12:37:02','test',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,81,'Dept Test 123f','',NULL,'2016-11-10 16:36:50','DEPT-00012323f',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,82,'Dept Test 123555f','',NULL,'2016-11-10 16:36:50','DEPT-000123f',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,84,'dddd','',NULL,'2016-11-24 10:08:24','DEPT-001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,85,'Silambu Depart','Silambu Depart  Dewscription',NULL,'2016-12-16 15:42:53','SilambuD001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,71,86,'tEST dEPARTMENT sIALMBU','AASDASDASD',NULL,'2016-12-16 15:46:12','ASDA11111',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,134,87,'ADMINISTRATION','Human Resource',NULL,'2018-11-02 19:37:42','DEPT-0001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,88,'Employee Relation',NULL,NULL,'2017-01-06 12:23:19','DEPT-TELBRU-0001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,89,'Human Resources',NULL,NULL,'2017-01-06 12:23:19','DEPT-TELBRU-0002',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,90,'HRMS',NULL,NULL,'2017-01-06 12:23:20','DEPT-TELBRU-0003',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,91,'Payroll & Benefits',NULL,NULL,'2017-01-06 12:23:20','DEPT-TELBRU-0004',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,92,'Performance & Reward',NULL,NULL,'2017-01-06 12:23:20','DEPT-TELBRU-0005',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,93,'Resourcing',NULL,NULL,'2017-01-06 12:23:21','DEPT-TELBRU-0006',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,94,'Training & Development',NULL,NULL,'2017-01-06 12:23:21','DEPT-TELBRU-0007',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,95,'Finance',NULL,NULL,'2017-01-06 12:23:21','DEPT-TELBRU-0008',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,96,'Revenue Assurance',NULL,NULL,'2017-01-06 12:23:22','DEPT-TELBRU-0009',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,97,'Corporate Finance',NULL,NULL,'2017-01-06 12:23:22','DEPT-TELBRU-0010',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,98,'Credit Management',NULL,NULL,'2017-01-06 12:23:22','DEPT-TELBRU-0011',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,99,'Human Resource 123',NULL,NULL,'2017-03-10 17:01:24','DEPT-0001333333',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,100,'tyhryhje','','','2017-06-07 15:51:38','fghetyh',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,101,'Process Improvement','ok','','2017-11-21 11:06:38','nkm',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,3,102,'Process Improvement','','','2017-11-21 11:08:48','dep 004',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,103,'AA','','','2017-12-01 16:42:20','SSS',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,71,104,'eee','','','2017-12-01 18:53:40','SSS',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,105,'DEVELOPMENT','','','2017-12-11 19:19:55','DEV001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,106,'MANAGEMENT DEPT','','','2017-12-11 19:22:00','MGT001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,25,107,'testDDD8','','','2018-01-16 11:21:25','TESTDDD-08',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,108,'sfds','','','2018-04-19 14:42:37','fsedf',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,109,'testst','','','2018-04-19 14:44:19','12345',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,6,110,'TESTING','TEST','','2018-04-19 16:43:06','DEPT001-123',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,97,111,'New Dept 1','','','2018-04-27 12:05:11','sadsadasd',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,98,112,'CognizantDep','','','2018-04-30 14:35:51','Cog001',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,99,113,'Malay Dep1','qwewq','','2018-05-02 18:17:06','MD1',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,71,114,'abc','','','2018-05-07 16:07:56','12334',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,104,115,'Gulf Department','','','2018-05-08 10:18:32','GULF/DEPT',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,126,116,'New DEP Roopa','sadsa','','2018-08-14 11:48:08','DEPRO',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,117,'ssss','sdfds','','2018-08-20 16:28:26','234234',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,71,119,'sdfsdf','sdfsdfd','','2018-08-20 16:37:57','2342',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,12,120,'sssfff','sdfdsfds','','2018-08-20 16:42:40','sdfsdffs',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,71,121,'sdfssdff','sdfsdfds','','2018-08-20 16:49:53','sf324',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,71,122,'ffdfsfsd','sdfs','','2018-08-20 16:53:20','23432',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,126,'test foras asd ads','<span style=\"box-sizing: inherit; font-weight: bolder; color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; background-color: rgb(255, 255, 204);\">Active</span>','','2018-10-03 15:37:39','123',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,134,128,'SALES & MARKETING',NULL,NULL,'2018-11-02 19:38:08','DEPT-0003',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,134,130,'CEO''S OFFICE',NULL,NULL,'2018-11-02 19:38:41','DEPT-0005',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,135,131,'SALES & MARKETING',NULL,NULL,'2018-11-02 19:41:11','DEPT-0009',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,135,133,'BODY & PAINT',NULL,NULL,'2018-11-02 19:41:54','DEPT-0011',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,139,134,'Fire and Safety','','','2018-11-13 16:15:52','CND01',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,139,135,'Security','','','2018-11-13 16:16:22','CND02',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,139,136,'Development','','','2018-11-13 16:17:03','CND03',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,139,137,'Quality Assurance','','','2018-11-13 16:18:53','CND04',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,139,138,'Management','','','2018-11-13 16:19:20','CND05',NULL);
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,2,139,'Dep1','','','2018-11-26 17:21:00','Dep1','Dep1');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,140,'Dep Without BU','','','2019-01-11 13:05:24','Dep Without BU','sdfsdf');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,122,141,'Abu Dhabi Dept','','','2019-01-24 10:25:56','Abu Dhabi Dept001','Abu Dhabi Dept');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,142,'All','','','2019-01-24 15:21:16','All 001','All');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,143,'Test Department 1','','','2019-02-21 11:05:53','Test Dept 1','Test Department 1');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,144,'Test Department 2','Test Department2 desc','tempfiles/2019028154866103104778679030572651.xls','2019-01-28 13:52:00','Test Depat 2','Test Department 2');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,145,'Dep All Test','','','2019-02-04 14:47:54','Dep All Test','Dep All Test');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,19,146,'Test D Att','','tempfiles/20191111549872777181710747308277581.pdf','2019-02-11 13:43:29','Test DA 1','Test D Att');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,149,'DEPT-TEST-001','',NULL,'2019-02-26 12:13:36','DEPT-TEST-001','DEPT-TEST-001');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,145,150,'GRT BU 001 - Dept 1','','','2019-03-21 17:17:00','GRT BU 001 - Dept 1','GRT BU 001 - Dept 1');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,151,'Test Department','Test Department',NULL,'2019-04-30 18:17:07','Test-001','Test Department');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,0,152,'UserTest','TestAPI Desc',NULL,'2019-05-02 13:01:30','TestAPI-001','TestAPI Desc1');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,0,153,'Centre for Research and Urban Innovation','Centre for Research and Urban Innovation',NULL,'2019-05-13 15:16:19','CTR_RES_UBN_INNOV','مركز البحوث والإبداعات العمرانية');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,154,'test','','','2019-05-22 18:06:48','teste','tse');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,155,'fozia','','','2019-05-23 11:21:52','tes','test');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,156,'aaaaaaaaa','','','2019-06-04 15:37:04','sfd','aaaaaaaaa');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,20,157,'dept1','','','2019-06-04 15:39:31','dept1','dept1');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,158,'dept2','','','2019-06-04 15:40:02','dept2','dept2');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,159,'Global Department','','','2019-06-13 18:52:23','GLB123','Global Department');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(2,-1,160,'Global Dept','','','2019-06-14 10:36:11','Global Dept','Global Dept');
+INSERT INTO `department`(`ClientID`,`F_320025`,`DepartmentID`,`F_320005`,`F_320010`,`F_320015`,`LastUPD`,`F_320020`,`F_320030`) VALUES
+(82,195,1038,'Reach - Blossom','','','2018-10-29 18:21:03','RFH2O-002',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `department` ENABLE KEYS */;
+
+-- 
+-- Definition of document_businessunit
+-- 
+
+CREATE TABLE IF NOT EXISTS `document_businessunit` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `DocumentID` int(10) unsigned NOT NULL,
+  `BusinessUnitID` int(11) unsigned NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`DocumentID`,`BusinessUnitID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table document_businessunit
+-- 
+
+/*!40000 ALTER TABLE `document_businessunit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,18,44,'2017-04-13 09:35:35');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,18,58,'2017-04-13 09:35:35');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,18,61,'2017-04-13 09:35:35');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,20,58,'2017-04-17 13:30:56');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,20,61,'2017-04-17 13:30:56');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,21,44,'2017-04-17 13:31:12');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,21,56,'2017-04-17 13:31:12');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,22,56,'2017-05-22 13:22:42');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,22,61,'2017-05-22 13:22:42');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,23,56,'2017-05-22 15:35:04');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,24,56,'2017-06-06 17:33:13');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,24,61,'2017-06-06 17:33:13');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,25,56,'2017-06-06 17:34:55');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,25,60,'2017-06-06 17:34:55');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,25,61,'2017-06-06 17:34:55');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,26,61,'2019-01-23 12:07:47');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,27,61,'2019-01-23 13:11:50');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,28,61,'2019-01-23 13:18:55');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,29,61,'2019-01-23 13:40:27');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,30,61,'2019-01-24 10:14:56');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,31,61,'2019-01-24 10:15:01');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,32,56,'2019-01-24 11:28:07');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,36,61,'2019-01-24 10:18:09');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,38,61,'2019-01-24 10:10:46');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,39,12,'2019-01-24 10:29:49');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,40,12,'2019-01-24 10:30:04');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,40,122,'2019-01-24 10:30:04');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,41,12,'2019-01-24 10:34:22');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,196,61,'2019-02-11 10:10:38');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,198,61,'2019-02-11 13:09:50');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,200,61,'2019-02-11 13:10:22');
+INSERT INTO `document_businessunit`(`ClientID`,`DocumentID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,202,61,'2019-02-28 10:58:18');
+COMMIT;
+/*!40000 ALTER TABLE `document_businessunit` ENABLE KEYS */;
+
+-- 
+-- Definition of document_repository
+-- 
+
+CREATE TABLE IF NOT EXISTS `document_repository` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `DocumentID` int(10) unsigned NOT NULL,
+  `DocumentName` varchar(500) CHARACTER SET latin1 NOT NULL,
+  `Category` int(11) DEFAULT NULL,
+  `CreatedBy` int(10) unsigned NOT NULL,
+  `ModifiedBy` int(10) DEFAULT NULL,
+  `CreatedOn` datetime NOT NULL,
+  `FileName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `NewFileName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `LastUPD` datetime NOT NULL,
+  `IsWeblinkAdded` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`DocumentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table document_repository
+-- 
+
+/*!40000 ALTER TABLE `document_repository` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(2,196,'fdgfd',2,90,NULL,'2019-02-11 10:10:38','','','2019-02-11 10:10:38',NULL);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(2,198,'gfdg',2,90,90,'2019-02-11 13:09:50','south-koreas-traditional-medicine-practitioners.pdf','20191111549861954720402187526048741.pdf','2019-02-11 13:09:50',NULL);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(2,200,'sdfsd',1,90,90,'2019-02-11 13:10:22','chapter1.pdf','2019111154987081329790450679786531.pdf','2019-02-11 13:10:22',NULL);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(2,202,'terst',1,90,90,'2019-02-28 10:58:01','chapter1.pdf','20191111549892468765356340996119931.pdf','2019-02-28 10:58:01',NULL);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(2,203,'1',1,1,1,'2019-07-11 18:10:46','','','2019-07-11 18:10:46',1);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(3,203,'1',1,1,1,'2019-07-11 18:10:46','','','2019-07-11 18:10:46',1);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(4,203,'1',1,1,1,'2019-07-11 18:10:46','','','2019-07-11 18:10:46',1);
+INSERT INTO `document_repository`(`ClientID`,`DocumentID`,`DocumentName`,`Category`,`CreatedBy`,`ModifiedBy`,`CreatedOn`,`FileName`,`NewFileName`,`LastUPD`,`IsWeblinkAdded`) VALUES
+(100000,203,'1',1,1,1,'2019-07-11 18:10:46','','','2019-07-11 18:10:46',1);
+COMMIT;
+/*!40000 ALTER TABLE `document_repository` ENABLE KEYS */;
+
+-- 
+-- Definition of document_repository_weblinks
+-- 
+
+CREATE TABLE IF NOT EXISTS `document_repository_weblinks` (
+  `ClientID` int(11) NOT NULL,
+  `DocumentID` int(11) DEFAULT NULL,
+  `WebLinkID` int(11) NOT NULL AUTO_INCREMENT,
+  `Url` text CHARACTER SET latin1,
+  `Title` text CHARACTER SET latin1,
+  `Description` text CHARACTER SET latin1,
+  `SnapShotName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `SnapShotEncodeName` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`WebLinkID`,`ClientID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table document_repository_weblinks
+-- 
+
+/*!40000 ALTER TABLE `document_repository_weblinks` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `document_repository_weblinks`(`ClientID`,`DocumentID`,`WebLinkID`,`Url`,`Title`,`Description`,`SnapShotName`,`SnapShotEncodeName`,`LastUPD`) VALUES
+(2,196,250,'http://gmail.com','','1','favicons','b4f9563a-2cbb-4893-ae2e-f9dd0e11fc3b.jpg','2019-02-11 10:10:34');
+COMMIT;
+/*!40000 ALTER TABLE `document_repository_weblinks` ENABLE KEYS */;
+
+-- 
+-- Definition of emp_add_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `emp_add_settings` (
+  `ClientID` int(11) NOT NULL,
+  `SettingName` text NOT NULL,
+  `IsEnable` int(11) NOT NULL,
+  PRIMARY KEY (`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table emp_add_settings
+-- 
+
+/*!40000 ALTER TABLE `emp_add_settings` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `emp_add_settings` ENABLE KEYS */;
+
+-- 
+-- Definition of emp_letter_template
+-- 
+
+CREATE TABLE IF NOT EXISTS `emp_letter_template` (
+  `ClientID` int(10) NOT NULL,
+  `Ltr_Temp_ID` int(10) NOT NULL AUTO_INCREMENT,
+  `Temp_Name` varchar(100) NOT NULL,
+  `Ltr_no_srs` int(11) NOT NULL,
+  `Prefix` varchar(15) DEFAULT NULL,
+  `Separator` varchar(15) DEFAULT NULL,
+  `Run_No` int(10) DEFAULT NULL,
+  `Last_UPD` datetime DEFAULT NULL,
+  `Description` text,
+  `Source_Type` int(11) DEFAULT NULL,
+  `Template` text,
+  `UserID` int(10) DEFAULT NULL,
+  `EMonth` bit(1) DEFAULT NULL,
+  `EYear` bit(1) DEFAULT NULL,
+  PRIMARY KEY (`Ltr_Temp_ID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table emp_letter_template
+-- 
+
+/*!40000 ALTER TABLE `emp_letter_template` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,79,'Appointment Letter',-1,NULL,NULL,NULL,'2018-11-09 16:26:21',NULL,-1,'<div id=\"itemWL_#Address-Permanent Address#_Tagid\">#Address-Permanent Address#</div><div id=\"itemWL_#Postal Code-Permanent Address#_Tagid\">#Postal Code-Permanent Address#</div><div id=\"itemWL_#City-Permanent Address#_Tagid\">#City-Permanent Address#</div><div id=\"itemWL_#State-Permanent Address#_Tagid\">#State-Permanent Address#</div><div>#Country-Permanent Address#</div><div><br></div><div><br></div><div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #Logo-Business Unit#</div><div><br></div></div><div>Dear #Employee Name-Personal Information#,</div><div>#Name-Business Unit# is excited to bring you on board as #Business Unit-Position# </div><div>We’re just a few formalities away from getting down to work. Please take the time to review our offer. It includes important details about your compensation, benefits and the terms and conditions of your anticipated employment with #Name-Business Unit#.</div><div>In this position, #Name-Business Unit# is offering to start you at a pay rate of 10000 per Month. You will be paid on a monthly basis.<br>&nbsp;<br>As part of your compensation, we''re also offering [If applicable, you’ll describe your bonus, profit sharing, commission structure, stock options, and compensation committee rules here].</div><div>Sincerely,</div><div>#Name-Business Unit#<br></div>',90,0,0);
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,86,'Resignation Acceptance Letter',-1,'HR/Exit','/',NULL,'2018-11-14 16:15:37',NULL,-1,'<p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">HR/Exit/76/2018</span><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\">17<sup style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; top: -0.5em; line-height: 0; font-size: 14px; vertical-align: baseline; position: relative; box-sizing: border-box;\">th</sup><span>&nbsp;</span>October 2018</span><o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">Employee Name: #Employee Name-Personal Information#</span><br style=\"box-sizing: border-box;\"></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">Employee Number:</span><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">#Employee Number-Personal Information#</span><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\"><br style=\"box-sizing: border-box;\"></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">Designation: #Position Name-Position#</span><br style=\"box-sizing: border-box;\"></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">Department: #Name-Department#</span><br style=\"box-sizing: border-box;\"></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">Business Unit: #Name-Business Unit<span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">#</span></span></p><pre class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: LatoRegular; font-size: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">Work Location</span><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: LatoRegular; font-size: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">: #Work Location-Work Location#</span></span></span></pre><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: LatoRegular; font-size: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><br></span></span></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\"><br style=\"box-sizing: border-box;\"></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: 0px; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">Dear #Prefix-Personal Information#&nbsp;</span><span style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(51, 51, 51); text-indent: -0.5pt; font-size: 12px; vertical-align: baseline; box-sizing: border-box;\">#Employee Name-Personal Information#</span><br style=\"box-sizing: border-box;\"></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\"></o:p></u></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"></p><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">We are in receipt of your resignation letter &lt;Date&gt;. Your resignation is hereby accepted and you will be relieved from the service of the Company on #Separation Date-Employment Details# after serving three months’ notice period, as required under<span>&nbsp;</span><span style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\">Clause 8</span><span>&nbsp;</span>of your appointment order Ref:<span>&nbsp;</span><span style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\">HR/A-17/2017 dt.09.10.2017</span>, subject to your satisfactory settlement of dues if any.<o:p style=\"box-sizing: border-box;\"></o:p></p></span><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">As you are requested for earlier relieving, you will be relieved from the service of the Company on<span>&nbsp;</span><b style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; font-weight: bold; vertical-align: baseline; box-sizing: border-box;\"><span style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\">02<sup style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; top: -0.5em; line-height: 0; font-size: 14px; vertical-align: baseline; position: relative; box-sizing: border-box;\">nd</sup><span>&nbsp;</span>November 2018.</span><span>&nbsp;</span></b>Accordingly<b style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; font-weight: bold; vertical-align: baseline; box-sizing: border-box;\">,<span>&nbsp;</span></b>you are required to settle<span>&nbsp;</span><span style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\">Rs.38,640/- towards Notice Pay (Basic)</span><span>&nbsp;</span>&amp; Department dues if any.<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">As you are aware, the conditions stipulated in your letter of appointment are governed by the service rules of our organization and you are required to abide by the appropriate clause as under:<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNoSpacing\" style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: LatoRegular; font-size: 16.8px; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-IN\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><u style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14.66px; vertical-align: baseline; box-sizing: border-box;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">Clause 39 (b):<o:p style=\"box-sizing: border-box;\"></o:p></span></u></p><p class=\"MsoNoSpacing\" style=\"background: rgb(255, 255, 255); margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: LatoRegular; font-size: 16.8px; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><u style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 16.8px; vertical-align: baseline; box-sizing: border-box;\"><span lang=\"EN-IN\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\"><span style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box; text-decoration-line: none;\">&nbsp;</span></o:p></span></u></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">“In the case of employees who are leaving the services on resignation the adjustment of ordinary leave against notice period shall be at the sole discretion of the Management.&nbsp; When the exigencies of work so warrant, the Management shall require the employee to serve the notice period in the interest of the Corporation.&nbsp; Employees leaving the service without serving the notice period when so required shall not be eligible for encashment of ordinary leave standing to their credit.&nbsp;<span>&nbsp;</span><u style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 14px; vertical-align: baseline; box-sizing: border-box;\">The decision of the Management in this regard shall be final and binding on the employees and cannot be questioned</u>”.<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">If you leave the organization without serving notice period, suitable disciplinary / Legal action as deemed fit will be initiated against you which may be noted.<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 22px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 21px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">Thanking You,<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 22px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 21px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 22px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 21px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">Yours faithfully,<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: yellow; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">For Greenstar Fertilizers Limited</span><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 14.96px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\"><o:p style=\"box-sizing: border-box;\">&nbsp;</o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">V.Senthilkumar<o:p style=\"box-sizing: border-box;\"></o:p></span></p><p class=\"MsoNormal\" style=\"background: rgb(255, 255, 255); margin: 0in 0in 0.2pt 0.5pt; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; text-align: justify; color: black; text-transform: none; line-height: 16.86px; text-indent: -0.5pt; letter-spacing: normal; font-family: LatoRegular; font-size: 11pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span lang=\"EN-US\" style=\"background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; line-height: 16.1px; font-family: Arial, sans-serif; font-size: 10.5pt; vertical-align: baseline; box-sizing: border-box;\">Deputy Manager - HR</span></p><br>',90,0,1);
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,87,'Basic Details',-1,NULL,NULL,NULL,'2018-11-26 11:08:54',NULL,-1,'<div>#Employee Number-Personal Information#</div><div><div id=\"itemWL_#Nationality-Personal Information#_Tagid\">#Nationality-Personal Information#</div><div><div id=\"itemWL_#Marital Status-Personal Information#_Tagid\">#Marital Status-Personal Information#</div><div><div id=\"itemWL_#Gender-Personal Information#_Tagid\">#Gender-Personal Information#</div><div><div id=\"itemWL_#Date Of Birth-Personal Information#_Tagid\">#Date Of Birth-Personal Information#</div><div><div id=\"itemWL_#Age-Personal Information#_Tagid\">#Age-Personal Information#</div><div><div id=\"itemWL_#Payout Type-Bank Information#_Tagid\">#Payout Type-Bank Information#</div></div></div></div></div></div></div><div><div>#Service Date-Employment Details#</div><div><div>#Account No-Bank Information#</div><div><br></div><div><div id=\"itemWL_#Passport No-Passport Details#_Tagid\">#Passport No-Passport Details#</div></div><div><br></div></div></div>',90,0,0);
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,89,'New Salary Details',-1,NULL,NULL,NULL,'2018-12-04 19:36:38',NULL,-1,'<div><div id=\"itemWL_#Academic Discipline-Education Qualification#_Tagid\">#Academic Discipline-Education Qualification#</div></div><div>#CTC-Salary Details#</div><div><div id=\"itemWL_#Gross Salary-Salary Details#_Tagid\">#Gross Salary-Salary Details#</div><div><div id=\"itemWL_#Today Date-Date#_Tagid\">#Today Date-Date#</div></div></div><div><br></div>',90,0,0);
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,90,'Without Salary Details',-1,NULL,NULL,NULL,'2018-12-04 19:38:14',NULL,-1,'<div>#Academic Discipline-Education Qualification#</div><div><div id=\"itemWL_#Course-Education Qualification#_Tagid\">#Course-Education Qualification#</div></div><div><br></div>',90,0,0);
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,96,'seal sign',-1,NULL,NULL,NULL,'2019-05-14 11:41:45',NULL,-1,'<div>#Company-Signature#</div><div><div id=\"itemWL_#Company-Seal#_Tagid\">#Company-Seal#</div></div><div><br></div>',90,0,0);
+INSERT INTO `emp_letter_template`(`ClientID`,`Ltr_Temp_ID`,`Temp_Name`,`Ltr_no_srs`,`Prefix`,`Separator`,`Run_No`,`Last_UPD`,`Description`,`Source_Type`,`Template`,`UserID`,`EMonth`,`EYear`) VALUES
+(2,97,'Offer Letter',-1,'OFF','-',1,'2019-05-14 17:49:05','Offer Letter',-1,'<div><font color=\"#000000\" face=\"Times New Roman\" size=\"3\">\n\n</font><p style=\"margin: 0in 0in 0pt;\"><p style=\"margin: 0in 0in 0pt;\"><span style=\"font-size: 10pt; mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\">Dear Candidate,</font></span></p><span style=\"font-size: 10pt; mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\"><span style=\"mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\" size=\"3\">Full family medical\ncoverage will be provided through our company''s employee benefit plan and will\nbe effective on March 1. Dental and optical insurance are also available. ABCD\noffers a flexible paid time-off plan which includes vacation, personal, and\nsick leave. Time off accrues at the rate of one day per month for your first\nyear, then increases based on your tenure with the company. Eligibility for the\ncompany retirement plan begins 90 days after your start date.</font></span></font></span><p></p><font color=\"#000000\" face=\"Times New Roman\" size=\"3\">\n\n</font><p style=\"margin: 0in 0in 0pt;\"><span style=\"font-size: 10pt; mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\">&nbsp;</font></span></p><font color=\"#000000\" face=\"Times New Roman\" size=\"3\">\n\n</font><p style=\"margin: 0in 0in 0pt;\"><span style=\"mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\" size=\"3\">Sincerely,</font></span></p><font color=\"#000000\" face=\"Times New Roman\" size=\"3\">\n\n</font><p style=\"margin: 0in 0in 0pt;\"><span style=\"mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\" size=\"3\">&nbsp;#Company-Signature#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #Company-Seal#</font></span></p><font color=\"#000000\" face=\"Times New Roman\" size=\"3\">\n\n</font><p style=\"margin: 0in 0in 0pt;\"><p style=\"margin: 0in 0in 0pt;\"><span style=\"mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\" size=\"3\">ABCD Company,</font></span></p><p style=\"margin: 0in 0in 0pt;\"><span style=\"mso-bidi-font-style: italic;\"><font color=\"#000000\" face=\"Calibri\">chennai</font></span></p><font color=\"#000000\" face=\"Times New Roman\" size=\"3\">\n\n</font><br><p></p></div><div><div id=\"itemWL_#Company-Seal#_Tagid\"><br></div></div>',90,1,1);
+COMMIT;
+/*!40000 ALTER TABLE `emp_letter_template` ENABLE KEYS */;
+
+-- 
+-- Definition of emp_movement_request
+-- 
+
+CREATE TABLE IF NOT EXISTS `emp_movement_request` (
+  `ClientID` int(11) NOT NULL,
+  `RequestID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `PerformanceScore` double DEFAULT NULL,
+  `ServiceYear` int(11) DEFAULT NULL,
+  `ServiceMonth` int(11) DEFAULT NULL,
+  `ServiceDay` int(11) DEFAULT NULL,
+  `CurPosYear` int(11) DEFAULT NULL,
+  `CurPosMonth` int(11) DEFAULT NULL,
+  `CurPosDay` int(11) DEFAULT NULL,
+  `IsAgreePromotion` bit(1) DEFAULT NULL,
+  `BUChange` bit(1) DEFAULT NULL,
+  `WLChange` bit(1) DEFAULT NULL,
+  `DeptChange` bit(1) DEFAULT NULL,
+  `NewPositionID` int(11) DEFAULT NULL,
+  `EffectiveDate` datetime DEFAULT NULL,
+  `PromoComments` text CHARACTER SET latin1,
+  `IsHRApply` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `RaisedByRoleType` int(11) DEFAULT '0',
+  `CurPositionID` int(11) DEFAULT '0',
+  PRIMARY KEY (`ClientID`,`RequestID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table emp_movement_request
+-- 
+
+/*!40000 ALTER TABLE `emp_movement_request` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `emp_movement_request` ENABLE KEYS */;
+
+-- 
+-- Definition of emp_movement_step_request
+-- 
+
+CREATE TABLE IF NOT EXISTS `emp_movement_step_request` (
+  `ClientID` int(11) NOT NULL,
+  `RequestID` int(11) NOT NULL,
+  `StepID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `BUChange` bit(1) DEFAULT NULL,
+  `WLChange` bit(1) DEFAULT NULL,
+  `DeptChange` bit(1) DEFAULT NULL,
+  `IsAgreePromotion` bit(1) DEFAULT NULL,
+  `NewPositionID` int(11) DEFAULT NULL,
+  `EffectiveDate` datetime DEFAULT NULL,
+  `PromoComments` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`RequestID`,`StepID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table emp_movement_step_request
+-- 
+
+/*!40000 ALTER TABLE `emp_movement_step_request` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `emp_movement_step_request` ENABLE KEYS */;
+
+-- 
+-- Definition of employee
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee` (
+  `UserID` int(11) NOT NULL,
+  `UserName` varchar(100) NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee
+-- 
+
+/*!40000 ALTER TABLE `employee` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `employee` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_airticket
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_airticket` (
+  `ClientID` int(10) DEFAULT NULL,
+  `UserID` int(10) NOT NULL,
+  `AirTicketID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `F_31205` varchar(100) DEFAULT NULL COMMENT 'Destination',
+  `F_31210` int(11) DEFAULT NULL COMMENT 'Nationality',
+  `F_31215` int(11) DEFAULT NULL COMMENT 'Count per year',
+  `F_31220` int(11) DEFAULT NULL COMMENT 'Applicable for number of dependents',
+  `F_31225` varchar(150) DEFAULT NULL COMMENT 'Applicable Amount per year',
+  `F_31230` int(11) DEFAULT NULL COMMENT 'AirTicket Availed Per Year',
+  `F_31235` int(11) DEFAULT NULL COMMENT 'Year',
+  `F_31240` int(11) DEFAULT NULL COMMENT 'Booked By',
+  `LastUPD` datetime NOT NULL,
+  `F_31245` mediumtext COMMENT 'Attachment',
+  `F_31250` int(11) DEFAULT NULL COMMENT 'Ticket Class',
+  `F_31255` int(11) DEFAULT NULL COMMENT 'No of Dependent tickets allowed',
+  `F_2000030` int(11) DEFAULT NULL,
+  PRIMARY KEY (`AirTicketID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_airticket
+-- 
+
+/*!40000 ALTER TABLE `employee_airticket` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `employee_airticket` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_appointment_status
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_appointment_status` (
+  `AppointmentDetailID` int(11) NOT NULL,
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `AppointmentStatusID` int(11) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `FromDate` datetime DEFAULT NULL,
+  `ToDate` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AppointmentDetailID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_appointment_status
+-- 
+
+/*!40000 ALTER TABLE `employee_appointment_status` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(104,2,228,4,1,'2017-07-13 00:00:00',NULL,'2017-07-31 10:14:51');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(106,2,496,1,1,'2017-07-01 00:00:00',NULL,'2017-07-31 12:15:58');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(107,2,227,1,1,'2017-07-20 00:00:00',NULL,'2017-07-31 12:33:09');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(127,2,175,2,2,'2017-08-01 00:00:00','2017-08-05 00:00:00','2017-08-18 16:14:35');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(128,2,175,2,1,'2017-08-07 00:00:00',NULL,'2017-08-18 16:15:14');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(129,2,292,1,1,'2017-09-01 00:00:00',NULL,'2017-09-19 15:48:35');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(130,2,4855,1,1,'2017-09-01 00:00:00',NULL,'2017-09-23 10:48:28');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(132,2,161,1,1,'2017-11-02 00:00:00',NULL,'2017-11-08 12:36:40');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(134,2,5245,3,1,'2018-07-04 00:00:00',NULL,'2018-07-20 16:26:07');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(135,2,122,3,1,'2018-12-10 00:00:00',NULL,'2018-12-12 19:28:05');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(136,2,96,3,1,'2018-07-20 00:00:00',NULL,'2018-07-20 15:20:04');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(138,2,111,1,1,'2018-08-01 00:00:00',NULL,'2018-08-03 10:50:32');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(139,2,5548,1,1,'2018-09-01 00:00:00',NULL,'2018-11-09 13:15:53');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(140,2,133,2,1,'2019-07-02 00:00:00',NULL,'2019-07-04 19:32:38');
+INSERT INTO `employee_appointment_status`(`AppointmentDetailID`,`ClientID`,`UserID`,`AppointmentStatusID`,`Status`,`FromDate`,`ToDate`,`LastUPD`) VALUES
+(141,2,105,1,1,'2019-07-01 00:00:00',NULL,'2019-07-11 19:04:01');
+COMMIT;
+/*!40000 ALTER TABLE `employee_appointment_status` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_awards
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_awards` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `UserID` int(10) unsigned NOT NULL,
+  `AwardID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `F_30905` text,
+  `F_30910` int(11) DEFAULT NULL,
+  `F_30915` datetime DEFAULT NULL,
+  `F_30920` int(11) DEFAULT NULL,
+  `F_30925` int(11) DEFAULT NULL,
+  `F_30930` text,
+  `F_30935` float DEFAULT NULL,
+  `F_30940` text,
+  `F_30945` varchar(200) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AwardID`,`ClientID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_awards
+-- 
+
+/*!40000 ALTER TABLE `employee_awards` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,90,24,'Best employee award',1,'2018-04-08 00:00:00',1,2018,'conference hall',20000,'good','','2018-04-23 10:10:11');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,5245,28,'test',3,'2018-06-07 00:00:00',2,4,'45',45354,'','','2018-07-26 17:12:31');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,5487,31,'WOW',2,'2018-06-05 00:00:00',3,2011,'',5000,'','','2018-06-29 12:46:49');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,6696,34,'sdfdsf',2,'2018-08-13 00:00:00',1,3333,'sf',23424,'234','','2018-08-16 17:30:23');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,6696,35,'sfsdfs',4,'2018-08-21 00:00:00',2,234234,'s2',2342,'2342','','2018-08-16 17:32:15');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,6695,37,'sdfsdf',4,'2018-08-07 00:00:00',2,23423,'sf',64654,'sfsfsd','','2018-08-17 12:21:35');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,6693,38,'sssfsdf',3,'2018-08-14 00:00:00',1,342,'sdf',234,'2342','','2018-08-17 12:50:35');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,6993,41,'teste',4,'2019-02-15 00:00:00',-1,NULL,'',1000,'','','2019-02-18 17:39:46');
+INSERT INTO `employee_awards`(`ClientID`,`UserID`,`AwardID`,`F_30905`,`F_30910`,`F_30915`,`F_30920`,`F_30925`,`F_30930`,`F_30935`,`F_30940`,`F_30945`,`LastUPD`) VALUES
+(2,6936,43,'Jaan',1,'2019-02-28 00:00:00',2,2019,'Dubai',5E+08,'Good','tempfiles/20191281551343871944942696849720291.xls','2019-02-28 14:21:14');
+COMMIT;
+/*!40000 ALTER TABLE `employee_awards` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_awardsandincentives
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_awardsandincentives` (
+  `ClientID` int(10) unsigned NOT NULL COMMENT 'Customer ID of this record',
+  `UserID` int(10) unsigned NOT NULL COMMENT 'Whos Awards And Incentives',
+  `AwardID` int(10) unsigned NOT NULL COMMENT 'Unique Key Of the Table',
+  `NameOfAward` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Name Of the Award',
+  `Category` int(10) unsigned DEFAULT NULL COMMENT 'Award Category',
+  `DateOfAward` datetime DEFAULT NULL COMMENT 'Date of award',
+  `RewardType` int(10) unsigned DEFAULT NULL COMMENT 'Type Of Reward',
+  `Year` varchar(45) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Year of Award',
+  `Venue` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Award venue',
+  `Amount` decimal(10,0) DEFAULT NULL COMMENT 'Amount',
+  `Remarks` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Remarks',
+  `LastUPD` datetime DEFAULT NULL COMMENT 'Last Updated Date',
+  PRIMARY KEY (`AwardID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table employee_awardsandincentives
+-- 
+
+/*!40000 ALTER TABLE `employee_awardsandincentives` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `employee_awardsandincentives` ENABLE KEYS */;
+
+-- 
+-- Definition of employee_bandgrade
+-- 
+
+CREATE TABLE IF NOT EXISTS `employee_bandgrade` (
+  `ClientID` int(11) NOT NULL,
+  `BGID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `BandID` int(11) DEFAULT NULL,
+  `GradeID` int(11) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL COMMENT '1 - Current Band And Grade 2 - History',
+  `FromDate` datetime DEFAULT NULL,
+  `ToDate` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`BGID`)
+) ENGI

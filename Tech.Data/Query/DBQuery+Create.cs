@@ -99,5 +99,11 @@ namespace Tech.Data.Query
             }
 
         }
+
+        public static class Alter {
+            public static DBUpdateTableQuery Table(string name) {
+                return DBUpdateTableQuery.Table(name);
+            }
+        }
     }
 }

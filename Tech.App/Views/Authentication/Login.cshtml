@@ -5,7 +5,7 @@
 @model Tz.BackApp.Models.LoginView
 
 
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 
 
 <style>
@@ -103,58 +103,25 @@
             <div class="col-sm-6 col-md-4 col-md-offset-4">
 
             </div>
-            <div class="col-sm-6 col-md-4 col-md-offset-4">
-                <h1 class="text-center login-title">Sign in to continue</h1>
-                <div class="account-wall">
-                    <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
-                         alt="">
-                    <form class="form-signin">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter User Name" } })
-                                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
-                                    @*<input type="text" class="form-control" placeholder="Email" required autofocus>*@
-                                </div>
-                                <div class="col-md-12" style="margin-top:10px;">
-                                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Password", Type = "password" } })
-                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                    @*<input type="password" class="form-control" placeholder="Password" required>*@
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="margin-top:10px;">
-                                    <button class="btn btn-lg btn-primary-color btn-block" type="submit">
-                                        Sign in
-                                    </button>
-                                </div>
-
-                            </div>
-
-                            <div class="row" style="margin:15px 0px 15px 0px">
-                                <div class="col-md-12">
-                                    <label class="checkbox pull-left">
-                                        <input type="checkbox" value="remember-me">
-                                        Remember me
-                                    </label>
-                                    <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-
-
-                    </form>
-                </div>
-                <a   class="pull-right text-center new-account" href="#" onclick='window.location = "@Url.Action("Registration", "Authentication")";' >Create Account</a>
-                
-                
-                    @*<a href="#" class="text-center new-account">Create an account </a>*@
+            <div class="col-sm-6 col-md-4 col-md-offset-4" id="lgpage">
+                <login></login> 
             </div>
         </div>
     </div>
 
 }
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var a = httpVueLoader('/vue/login.vue');
+        // var axios = httpVueLoader('https://unpkg.com/axios/dist/axios.min.js'); 
+        new Vue({
+            el: '#lgpage',
+            components: {
+                'login': a
+            }
+        });
+    })
+    
+
+</script>

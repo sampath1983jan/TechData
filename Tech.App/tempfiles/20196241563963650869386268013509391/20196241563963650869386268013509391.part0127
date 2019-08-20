@@ -1,0 +1,807 @@
+,'test','tets','2018-05-02 00:00:00','2018-05-30 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,9715,411,'test','test','2018-05-02 00:00:00','2018-05-10 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,10720,412,'test','test','2018-11-02 00:00:00','2018-11-03 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,10829,413,'dfds','fdsf','2018-11-05 00:00:00','2018-11-05 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,10918,414,'rty','ryr','2018-11-06 00:00:00','2018-11-07 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11322,419,'test','test','2018-12-03 00:00:00','2018-12-05 00:00:00',2);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11323,420,'dffd','trt','2018-12-01 00:00:00','2018-12-13 00:00:00',2);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11351,421,'mumbai','chennai','2018-12-24 00:00:00','2018-12-28 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11352,422,'mumbai','chennai','2018-12-17 00:00:00','2018-12-22 00:00:00',2);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11388,423,'sdf sdfds','f dsfsd fsdf','2019-01-02 00:00:00','2019-01-25 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11419,424,'s','d','2019-01-04 00:00:00','2019-01-18 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11422,425,'sf sf','sdfsdf','2019-01-04 00:00:00','2019-01-11 00:00:00',1);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,11914,427,'test','test','2019-04-02 00:00:00','2019-04-10 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,12068,428,'chennai','madurai','2019-05-02 00:00:00','2019-05-04 00:00:00',3);
+INSERT INTO `claim_ta_details`(`ClientID`,`TravelAdvanceRequestID`,`TravelDetailID`,`DepartingFrom`,`Destination`,`FromDate`,`ToDate`,`ModeofTravel`) VALUES
+(2,12070,429,'fd','sfds','2019-05-03 00:00:00','2019-05-07 00:00:00',3);
+COMMIT;
+/*!40000 ALTER TABLE `claim_ta_details` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_vw_selectindividual_employee
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_vw_selectindividual_employee` (
+  `ClientID` int(10) unsigned DEFAULT NULL,
+  `UserID` int(10) unsigned DEFAULT NULL,
+  `EmployeeNo` varchar(255) DEFAULT NULL,
+  `EmployeeName` varchar(255) DEFAULT NULL,
+  `Phone` varchar(255) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `PositionID` int(10) unsigned DEFAULT NULL,
+  `Status` varchar(8) DEFAULT NULL,
+  `EffectiveDate` datetime DEFAULT NULL,
+  `PositionName` varchar(255) DEFAULT NULL,
+  `BusinessUnitID` int(10) unsigned DEFAULT NULL,
+  `BusinessUnitName` varchar(255) DEFAULT NULL,
+  `WorkLocationID` int(10) unsigned DEFAULT NULL,
+  `WorkLocationName` varchar(255) DEFAULT NULL,
+  `DepartmentID` int(10) unsigned DEFAULT NULL,
+  `DepartmentName` varchar(255) DEFAULT NULL,
+  `JobID` int(11) DEFAULT NULL,
+  `BandID` int(11) DEFAULT NULL,
+  `JobName` varchar(255) DEFAULT NULL,
+  `JobFamilyID` int(10) unsigned DEFAULT NULL,
+  `GradeID` int(11) DEFAULT NULL,
+  `GradeName` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_vw_selectindividual_employee
+-- 
+
+/*!40000 ALTER TABLE `claim_vw_selectindividual_employee` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `claim_vw_selectindividual_employee` ENABLE KEYS */;
+
+-- 
+-- Definition of claim_workflowsettings
+-- 
+
+CREATE TABLE IF NOT EXISTS `claim_workflowsettings` (
+  `ClientID` int(10) NOT NULL,
+  `WorkFlowID` int(10) NOT NULL,
+  `WorkFlowName` varchar(500) CHARACTER SET latin1 NOT NULL,
+  `TagID` int(10) NOT NULL,
+  `CategoryID` int(10) DEFAULT NULL,
+  `Policy` longtext,
+  `IsDeclarationNeed` tinyint(1) DEFAULT '0' COMMENT 'Is Declaration Need for Claim Submit',
+  `Declaration` longtext,
+  `EnableOnDuty` int(11) DEFAULT '0',
+  `PermissionTypeID` int(11) DEFAULT NULL,
+  `ReasonID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`WorkFlowID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claim_workflowsettings
+-- 
+
+/*!40000 ALTER TABLE `claim_workflowsettings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,951,'All Employee Group',1012,3,NULL,0,NULL,0,NULL,NULL,'2017-07-18 10:14:32');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1043,'SMR',1009,16,NULL,0,NULL,0,NULL,NULL,'2017-03-10 18:24:01');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1227,'ABC',1117,3,'<em><font color=\"#ff00ff\">Claim 1</font></em><li><em><font color=\"#8a2be2\">Claim 2</font></em></li><li><em><font color=\"#cc0000\">Claim 3</font></em></li><li><em><font color=\"#38761d\" style=\"background-color: rgb(243, 243, 243);\">Claim 4</font></em></li><li><em><font color=\"#00ffff\">Claim 5dgdgg</font></em></li>',1,'juioiuo',0,NULL,NULL,'2019-02-05 11:41:11');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1231,'Travel Work',1105,16,NULL,0,NULL,0,NULL,NULL,'2017-11-09 16:26:37');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1352,'Test WF',1105,3,'<ul><li><em><font color=\"#ff00ff\">Claim 1</font></em></li><li><em><font color=\"#8a2be2\">Claim 2</font></em></li><li><em><font color=\"#cc0000\">Claim 3</font></em></li><li><em><font color=\"#38761d\" style=\"background-color: rgb(243, 243, 243);\">Claim 4</font></em></li><li><em><font color=\"#00ffff\">Claim 5</font></em></li></ul>',1,'<p>ftytry</p>',0,NULL,NULL,'2019-04-16 16:47:19');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1590,'NEW CLaim',1131,3,'<em><font color=\"#ff00ff\">Claim 1</font></em><li><em><font color=\"#8a2be2\">Claim 2</font></em></li><li><em><font color=\"#cc0000\">Claim 3</font></em></li><li><em><font color=\"#38761d\" style=\"background-color: rgb(243, 243, 243);\">Claim 4</font></em></li><li><em><font color=\"#00ffff\">Claim 5hjjjhj</font></em></li>',1,'This claim&nbsp;doesn’t cover any personal expense',0,NULL,NULL,'2019-04-16 15:48:37');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1647,'dato',1124,16,NULL,0,NULL,0,NULL,NULL,'2018-11-29 16:29:01');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1651,'Claim WF',1118,3,'<em><font color=\"#ff00ff\">Claim 1</font></em><li><em><font color=\"#8a2be2\">Claim 2</font></em></li><li><em><font color=\"#cc0000\">Claim 3</font></em></li><li><em><font color=\"#38761d\" style=\"background-color: rgb(243, 243, 243);\">Claim 4</font></em></li><li><em><font color=\"#00ffff\">Claim 5</font></em></li>',1,'kjljl',0,NULL,NULL,'2019-02-05 11:41:22');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1663,'trytry',1122,3,'trytr',1,'ghfgh',0,NULL,NULL,'2019-01-25 13:05:05');
+INSERT INTO `claim_workflowsettings`(`ClientID`,`WorkFlowID`,`WorkFlowName`,`TagID`,`CategoryID`,`Policy`,`IsDeclarationNeed`,`Declaration`,`EnableOnDuty`,`PermissionTypeID`,`ReasonID`,`LastUPD`) VALUES
+(2,1688,'Condition WF',1124,3,'',1,'fg',0,NULL,NULL,'2019-04-16 16:55:00');
+COMMIT;
+/*!40000 ALTER TABLE `claim_workflowsettings` ENABLE KEYS */;
+
+-- 
+-- Definition of claimcurrency
+-- 
+
+CREATE TABLE IF NOT EXISTS `claimcurrency` (
+  `ClientID` int(11) DEFAULT NULL,
+  `CurrencyID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claimcurrency
+-- 
+
+/*!40000 ALTER TABLE `claimcurrency` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `claimcurrency` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_claimtype
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_claimtype` (
+  `ClientID` int(11) NOT NULL,
+  `ClaimTypeID` int(11) NOT NULL,
+  `ClaimType` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ClaimTypeDescription` text CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  `IsAllBusinessUnit` bit(1) DEFAULT NULL,
+  `ClaimColor` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `WorkFlowID` int(11) NOT NULL,
+  PRIMARY KEY (`ClientID`,`ClaimTypeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_claimtype
+-- 
+
+/*!40000 ALTER TABLE `claims_claimtype` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,176,'Claim Type 1','dlfdsf','2018-11-28 16:49:39',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,177,'Claim Type 2','dsfds','2018-11-28 16:49:47',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,178,'Claim Type 3','dfdsf','2018-11-27 15:35:58',0,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,179,'Claim Type4','test111','2018-11-27 17:56:13',0,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,180,'claimtype5','dfdsf','2018-11-28 12:34:20',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,181,'Claim Type 6','','2018-11-28 12:34:42',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,182,'Claim Type 7','','2018-11-28 12:34:52',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,183,'Claim Type 8','','2018-11-28 12:35:03',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,184,'Claim Type 9','','2018-11-28 12:35:12',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,185,'Claim Type 10','','2018-11-28 12:35:20',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,186,'Claim Type 11','','2018-11-28 12:35:27',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,187,'Claim Type 12','','2018-11-28 12:35:34',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,188,'Claim Type 13','','2018-12-19 18:33:43',0,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,189,'Claim Type 14','','2018-11-28 12:35:56',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,190,'Claim Type 15','','2018-11-28 12:36:12',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,191,'Claim Type 16','','2018-11-28 12:36:19',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,192,'Claim Type 17','','2018-11-28 12:36:26',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,193,'Claim Type 18','','2018-11-28 12:36:32',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,194,'Claim Type 19','','2018-11-28 12:36:38',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,195,'Claim Type 20','','2018-11-28 12:36:47',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,196,'CC01','ss','2018-12-17 11:50:12',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,197,'CC02','','2018-12-17 11:50:55',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,198,'sample claim 1','sdf','2018-12-27 18:05:04',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,199,'Sample CLaim 2','','2018-12-27 18:33:49',1,'FFFFFF',-1);
+INSERT INTO `claims_claimtype`(`ClientID`,`ClaimTypeID`,`ClaimType`,`ClaimTypeDescription`,`LastUPD`,`IsAllBusinessUnit`,`ClaimColor`,`WorkFlowID`) VALUES
+(2,200,'Claim demo 1','','2019-01-04 17:25:08',1,'FFFFFF',-1);
+COMMIT;
+/*!40000 ALTER TABLE `claims_claimtype` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_claimtype_bu
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_claimtype_bu` (
+  `ClientID` int(11) NOT NULL,
+  `ClaimTypeID` int(11) NOT NULL,
+  `BusinessUnitID` int(11) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`ClaimTypeID`,`BusinessUnitID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_claimtype_bu
+-- 
+
+/*!40000 ALTER TABLE `claims_claimtype_bu` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,136,-1,'2015-12-10 15:08:41');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,140,-1,'2016-02-09 11:01:53');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,143,-1,'2016-04-11 14:47:56');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,144,-1,'2016-04-12 16:54:36');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,147,-1,'2016-04-12 17:34:09');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,148,-1,'2017-09-13 11:32:32');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,149,-1,'2016-04-18 15:30:34');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,150,-1,'2016-04-18 15:38:23');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,151,12,'2016-04-18 15:38:11');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,152,44,'2016-05-25 11:48:24');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,153,-1,'2017-09-13 11:32:57');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,156,-1,'2017-09-13 11:36:48');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,157,-1,'2017-09-13 11:37:55');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,159,-1,'2017-09-13 11:38:51');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,160,-1,'2017-09-13 11:39:00');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,161,-1,'2017-09-13 11:39:08');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,162,20,'2018-02-27 09:52:45');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,163,12,'2018-04-13 11:39:37');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,164,12,'2018-04-13 11:46:17');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,165,12,'2018-04-13 17:45:57');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,166,20,'2018-04-16 18:38:46');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,167,-1,'2018-04-20 18:02:52');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,168,61,'2018-04-25 13:10:36');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,169,-1,'2018-04-25 16:58:15');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,170,-1,'2018-04-25 16:59:30');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,171,-1,'2018-04-25 17:03:43');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,172,104,'2018-05-09 09:41:59');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,173,-1,'2018-08-23 10:17:54');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,174,20,'2018-11-16 14:07:30');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,175,-1,'2018-11-19 19:06:15');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,176,-1,'2018-11-28 16:49:39');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,177,-1,'2018-11-28 16:49:47');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,178,76,'2018-11-27 15:35:58');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,179,51,'2018-11-27 17:56:13');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,180,-1,'2018-11-28 12:34:20');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,181,-1,'2018-11-28 12:34:42');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,182,-1,'2018-11-28 12:34:52');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,183,-1,'2018-11-28 12:35:03');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,184,-1,'2018-11-28 12:35:13');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,185,-1,'2018-11-28 12:35:20');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,186,-1,'2018-11-28 12:35:27');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,187,-1,'2018-11-28 12:35:34');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,188,122,'2018-12-19 18:33:44');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,189,-1,'2018-11-28 12:35:56');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,190,-1,'2018-11-28 12:36:12');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,191,-1,'2018-11-28 12:36:19');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,192,-1,'2018-11-28 12:36:26');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,193,-1,'2018-11-28 12:36:32');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,194,-1,'2018-11-28 12:36:38');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,195,-1,'2018-11-28 12:36:47');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,196,-1,'2018-12-17 11:50:12');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,197,-1,'2018-12-17 11:50:55');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,198,-1,'2018-12-27 18:05:04');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,199,-1,'2018-12-27 18:33:49');
+INSERT INTO `claims_claimtype_bu`(`ClientID`,`ClaimTypeID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,200,-1,'2019-01-04 17:25:08');
+COMMIT;
+/*!40000 ALTER TABLE `claims_claimtype_bu` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_claimtypecode
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_claimtypecode` (
+  `ClientID` int(10) unsigned NOT NULL DEFAULT '0',
+  `ClaimTypeID` int(10) unsigned NOT NULL,
+  `ClaimTypeCode` varchar(45) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL DEFAULT '',
+  `LastUPD` datetime NOT NULL,
+  `ClaimType` varchar(45) CHARACTER SET latin1 COLLATE latin1_bin DEFAULT NULL,
+  PRIMARY KEY (`ClaimTypeID`,`ClaimTypeCode`,`ClientID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_claimtypecode
+-- 
+
+/*!40000 ALTER TABLE `claims_claimtypecode` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,140,'#REP_MAINT','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,143,'#MILEAGE','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,144,'#MISC','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,147,'#MEAL_ALLOW','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,148,'#MEAL_OUTST','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,149,'#FLIGHTFARE','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,150,'#PETROL_TOL','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,151,'#INVIGILATE','2016-08-25 17:01:25','');
+INSERT INTO `claims_claimtypecode`(`ClientID`,`ClaimTypeID`,`ClaimTypeCode`,`LastUPD`,`ClaimType`) VALUES
+(2,152,'#HANDPHONE','2016-08-25 17:01:25','');
+COMMIT;
+/*!40000 ALTER TABLE `claims_claimtypecode` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_cycle
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_cycle` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `ClaimCycleID` int(10) unsigned NOT NULL,
+  `IsEnable` bit(1) NOT NULL,
+  `BusinessUnitID` int(10) unsigned NOT NULL,
+  `CreatedBy` int(10) unsigned NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClaimCycleID`,`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_cycle
+-- 
+
+/*!40000 ALTER TABLE `claims_cycle` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_cycle`(`ClientID`,`ClaimCycleID`,`IsEnable`,`BusinessUnitID`,`CreatedBy`,`LastUPD`) VALUES
+(2,31,0,12,90,'2019-04-16 12:44:04');
+INSERT INTO `claims_cycle`(`ClientID`,`ClaimCycleID`,`IsEnable`,`BusinessUnitID`,`CreatedBy`,`LastUPD`) VALUES
+(2,32,0,56,90,'2019-04-16 12:42:59');
+INSERT INTO `claims_cycle`(`ClientID`,`ClaimCycleID`,`IsEnable`,`BusinessUnitID`,`CreatedBy`,`LastUPD`) VALUES
+(2,33,1,29,90,'2017-02-03 11:53:12');
+INSERT INTO `claims_cycle`(`ClientID`,`ClaimCycleID`,`IsEnable`,`BusinessUnitID`,`CreatedBy`,`LastUPD`) VALUES
+(2,34,1,44,90,'2016-09-13 14:10:33');
+INSERT INTO `claims_cycle`(`ClientID`,`ClaimCycleID`,`IsEnable`,`BusinessUnitID`,`CreatedBy`,`LastUPD`) VALUES
+(2,35,1,61,90,'2016-09-14 14:27:21');
+INSERT INTO `claims_cycle`(`ClientID`,`ClaimCycleID`,`IsEnable`,`BusinessUnitID`,`CreatedBy`,`LastUPD`) VALUES
+(2,36,0,20,90,'2019-04-16 12:43:50');
+COMMIT;
+/*!40000 ALTER TABLE `claims_cycle` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_cycle_audit
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_cycle_audit` (
+  `ClientID` int(11) NOT NULL,
+  `ClaimCycleID` int(10) unsigned NOT NULL,
+  `ClaimCycleAuditID` int(10) unsigned NOT NULL,
+  `CycleFrequency` int(10) unsigned DEFAULT NULL,
+  `CycleStartOn` int(10) unsigned DEFAULT NULL,
+  `EffectiveDate` datetime DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_cycle_audit
+-- 
+
+/*!40000 ALTER TABLE `claims_cycle_audit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,31,152,2,14,'2016-01-14 00:00:00','2019-04-16 12:44:04');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,32,138,2,15,'2016-01-15 00:00:00','2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,32,150,2,15,'2016-08-15 00:00:00','2019-04-16 12:42:59');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,33,146,2,15,'2017-01-15 00:00:00','2017-02-03 11:53:03');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,33,147,2,17,'2017-01-17 00:00:00','2017-02-03 11:53:12');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,34,139,2,11,'2016-07-06 00:00:00','2016-09-13 14:10:11');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,34,141,2,11,'2016-07-11 00:00:00','2016-09-13 14:10:33');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,35,144,2,1,'2016-09-01 00:00:00','2016-09-14 14:27:21');
+INSERT INTO `claims_cycle_audit`(`ClientID`,`ClaimCycleID`,`ClaimCycleAuditID`,`CycleFrequency`,`CycleStartOn`,`EffectiveDate`,`LastUPD`) VALUES
+(2,36,151,2,1,'2019-01-01 00:00:00','2019-04-16 12:43:50');
+COMMIT;
+/*!40000 ALTER TABLE `claims_cycle_audit` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_cycle_dtls
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_cycle_dtls` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `ClaimCycleDtlID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ClaimCycleID` int(10) unsigned DEFAULT NULL,
+  `StartDate` datetime DEFAULT NULL,
+  `EndDate` datetime DEFAULT NULL,
+  `Description` varchar(100) DEFAULT NULL,
+  `Status` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClaimCycleDtlID`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_cycle_dtls
+-- 
+
+/*!40000 ALTER TABLE `claims_cycle_dtls` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,343,32,'2016-01-15 00:00:00','2016-02-14 00:00:00','15-Jan-2016-14-Feb-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,344,32,'2016-02-15 00:00:00','2016-03-14 00:00:00','15-Feb-2016-14-Mar-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,345,32,'2016-03-15 00:00:00','2016-04-14 00:00:00','15-Mar-2016-14-Apr-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,346,32,'2016-04-15 00:00:00','2016-05-14 00:00:00','15-Apr-2016-14-May-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,347,32,'2016-05-15 00:00:00','2016-06-14 00:00:00','15-May-2016-14-Jun-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,348,32,'2016-06-15 00:00:00','2016-07-14 00:00:00','15-Jun-2016-14-Jul-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,349,32,'2016-07-15 00:00:00','2016-08-14 00:00:00','15-Jul-2016-14-Aug-2016',1,'2016-09-13 14:09:45');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,351,34,'2016-07-11 00:00:00','2016-08-10 00:00:00','11-Jul-2016-10-Aug-2016',1,'2016-09-13 14:10:33');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,352,34,'2016-08-11 00:00:00','2016-09-10 00:00:00','11-Aug-2016-10-Sep-2016',1,'2016-09-13 14:10:33');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,353,34,'2016-09-11 00:00:00','2016-10-10 00:00:00','11-Sep-2016-10-Oct-2016',1,'2016-09-13 14:10:33');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,355,32,'2016-08-15 00:00:00','2016-09-14 00:00:00','15-Aug-2016-14-Sep-2016',1,'2016-09-14 14:27:07');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,356,32,'2016-09-15 00:00:00','2016-10-14 00:00:00','15-Sep-2016-14-Oct-2016',1,'2016-09-14 14:27:07');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,357,35,'2016-09-01 00:00:00','2016-09-30 00:00:00','01-Sep-2016-30-Sep-2016',1,'2016-09-14 14:27:21');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,358,31,'2016-01-14 00:00:00','2016-02-13 00:00:00','14-Jan-2016-13-Feb-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,359,31,'2016-02-14 00:00:00','2016-03-13 00:00:00','14-Feb-2016-13-Mar-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,360,31,'2016-03-14 00:00:00','2016-04-13 00:00:00','14-Mar-2016-13-Apr-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,361,31,'2016-04-14 00:00:00','2016-05-13 00:00:00','14-Apr-2016-13-May-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,362,31,'2016-05-14 00:00:00','2016-06-13 00:00:00','14-May-2016-13-Jun-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,363,31,'2016-06-14 00:00:00','2016-07-13 00:00:00','14-Jun-2016-13-Jul-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,364,31,'2016-07-14 00:00:00','2016-08-13 00:00:00','14-Jul-2016-13-Aug-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,365,31,'2016-08-14 00:00:00','2016-09-13 00:00:00','14-Aug-2016-13-Sep-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,366,31,'2016-09-14 00:00:00','2016-10-13 00:00:00','14-Sep-2016-13-Oct-2016',1,'2016-09-15 14:49:15');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,367,35,'2016-10-01 00:00:00','2016-10-31 00:00:00','01-Oct-2016-31-Oct-2016',1,'2017-01-11 17:32:25');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,368,35,'2016-11-01 00:00:00','2016-11-30 00:00:00','01-Nov-2016-30-Nov-2016',1,'2017-01-11 17:32:25');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,369,35,'2016-12-01 00:00:00','2016-12-31 00:00:00','01-Dec-2016-31-Dec-2016',1,'2017-01-11 17:32:25');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,370,35,'2017-01-01 00:00:00','2017-01-31 00:00:00','01-Jan-2017-31-Jan-2017',1,'2017-01-11 17:32:25');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,371,35,'2017-02-01 00:00:00','2017-02-28 00:00:00','01-Feb-2017-28-Feb-2017',1,'2017-02-01 09:41:25');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,372,33,'2017-01-15 00:00:00','2017-01-16 00:00:00','15-Jan-2017-16-Jan-2017',1,'2017-02-03 11:53:03');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,373,33,'2017-01-17 00:00:00','2017-02-16 00:00:00','17-Jan-2017-16-Feb-2017',1,'2017-02-03 11:53:12');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,374,31,'2016-10-14 00:00:00','2016-11-13 00:00:00','14-Oct-2016-13-Nov-2016',1,'2017-02-03 11:54:54');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,375,31,'2016-11-14 00:00:00','2016-12-13 00:00:00','14-Nov-2016-13-Dec-2016',1,'2017-02-03 11:54:54');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,376,31,'2016-12-14 00:00:00','2017-01-13 00:00:00','14-Dec-2016-13-Jan-2017',1,'2017-02-03 11:54:54');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,377,31,'2017-01-14 00:00:00','2017-02-13 00:00:00','14-Jan-2017-13-Feb-2017',1,'2017-02-03 11:54:54');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,378,31,'2017-02-14 00:00:00','2017-03-13 00:00:00','14-Feb-2017-13-Mar-2017',1,'2017-02-14 10:14:47');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,379,35,'2017-03-01 00:00:00','2017-03-31 00:00:00','01-Mar-2017-31-Mar-2017',1,'2017-03-10 19:42:39');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,380,31,'2017-03-14 00:00:00','2017-04-13 00:00:00','14-Mar-2017-13-Apr-2017',1,'2017-03-14 15:38:47');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,381,35,'2017-04-01 00:00:00','2017-04-30 00:00:00','01-Apr-2017-30-Apr-2017',1,'2017-04-05 14:35:13');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,382,31,'2017-04-14 00:00:00','2017-05-13 00:00:00','14-Apr-2017-13-May-2017',1,'2017-04-17 13:55:25');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,383,31,'2017-05-14 00:00:00','2017-06-13 00:00:00','14-May-2017-13-Jun-2017',1,'2017-05-15 13:44:07');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,384,35,'2017-05-01 00:00:00','2017-05-31 00:00:00','01-May-2017-31-May-2017',1,'2017-05-16 14:49:34');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,385,31,'2017-06-14 00:00:00','2017-07-13 00:00:00','14-Jun-2017-13-Jul-2017',1,'2017-06-14 10:06:26');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,386,35,'2017-06-01 00:00:00','2017-06-30 00:00:00','01-Jun-2017-30-Jun-2017',1,'2017-07-14 16:24:07');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,387,31,'2017-07-14 00:00:00','2017-08-13 00:00:00','14-Jul-2017-13-Aug-2017',1,'2017-07-18 11:39:13');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,388,32,'2016-10-15 00:00:00','2016-11-14 00:00:00','15-Oct-2016-14-Nov-2016',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,389,32,'2016-11-15 00:00:00','2016-12-14 00:00:00','15-Nov-2016-14-Dec-2016',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,390,32,'2016-12-15 00:00:00','2017-01-14 00:00:00','15-Dec-2016-14-Jan-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,391,32,'2017-01-15 00:00:00','2017-02-14 00:00:00','15-Jan-2017-14-Feb-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,392,32,'2017-02-15 00:00:00','2017-03-14 00:00:00','15-Feb-2017-14-Mar-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,393,32,'2017-03-15 00:00:00','2017-04-14 00:00:00','15-Mar-2017-14-Apr-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,394,32,'2017-04-15 00:00:00','2017-05-14 00:00:00','15-Apr-2017-14-May-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,395,32,'2017-05-15 00:00:00','2017-06-14 00:00:00','15-May-2017-14-Jun-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,396,32,'2017-06-15 00:00:00','2017-07-14 00:00:00','15-Jun-2017-14-Jul-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,397,32,'2017-07-15 00:00:00','2017-08-14 00:00:00','15-Jul-2017-14-Aug-2017',1,'2017-08-01 11:34:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,398,31,'2017-08-14 00:00:00','2017-09-13 00:00:00','14-Aug-2017-13-Sep-2017',1,'2017-08-14 13:08:57');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,399,32,'2017-08-15 00:00:00','2017-09-14 00:00:00','15-Aug-2017-14-Sep-2017',1,'2017-08-17 10:15:05');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,400,31,'2017-09-14 00:00:00','2017-10-13 00:00:00','14-Sep-2017-13-Oct-2017',1,'2017-09-21 10:45:12');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,401,31,'2017-10-14 00:00:00','2017-11-13 00:00:00','14-Oct-2017-13-Nov-2017',1,'2017-11-02 12:37:49');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,402,31,'2017-11-14 00:00:00','2017-12-13 00:00:00','14-Nov-2017-13-Dec-2017',1,'2017-11-27 10:48:08');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,403,32,'2017-09-15 00:00:00','2017-10-14 00:00:00','15-Sep-2017-14-Oct-2017',1,'2017-11-30 17:12:37');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,404,32,'2017-10-15 00:00:00','2017-11-14 00:00:00','15-Oct-2017-14-Nov-2017',1,'2017-11-30 17:12:37');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,405,31,'2017-12-14 00:00:00','2018-01-13 00:00:00','14-Dec-2017-13-Jan-2018',1,'2017-12-14 10:12:30');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,406,32,'2017-11-15 00:00:00','2017-12-14 00:00:00','15-Nov-2017-14-Dec-2017',1,'2017-12-20 12:00:55');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,407,32,'2017-12-15 00:00:00','2018-01-14 00:00:00','15-Dec-2017-14-Jan-2018',1,'2017-12-27 14:42:28');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,408,31,'2018-01-14 00:00:00','2018-02-13 00:00:00','14-Jan-2018-13-Feb-2018',1,'2018-01-16 14:21:10');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,409,32,'2018-01-15 00:00:00','2018-02-14 00:00:00','15-Jan-2018-14-Feb-2018',1,'2018-02-08 11:54:16');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,410,31,'2018-02-14 00:00:00','2018-03-13 00:00:00','14-Feb-2018-13-Mar-2018',1,'2018-02-14 12:06:59');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,411,32,'2018-02-15 00:00:00','2018-03-14 00:00:00','15-Feb-2018-14-Mar-2018',1,'2018-02-26 13:30:54');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,412,31,'2018-03-14 00:00:00','2018-04-13 00:00:00','14-Mar-2018-13-Apr-2018',1,'2018-03-15 16:24:41');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,413,31,'2018-04-14 00:00:00','2018-05-13 00:00:00','14-Apr-2018-13-May-2018',1,'2018-04-16 10:55:24');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,414,31,'2018-05-14 00:00:00','2018-06-13 00:00:00','14-May-2018-13-Jun-2018',1,'2018-05-14 09:31:27');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,415,31,'2018-06-14 00:00:00','2018-07-13 00:00:00','14-Jun-2018-13-Jul-2018',1,'2018-08-01 15:44:38');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,416,31,'2018-07-14 00:00:00','2018-08-13 00:00:00','14-Jul-2018-13-Aug-2018',1,'2018-08-01 15:44:38');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,417,31,'2018-08-14 00:00:00','2018-09-13 00:00:00','14-Aug-2018-13-Sep-2018',1,'2018-08-23 10:15:35');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,418,31,'2018-09-14 00:00:00','2018-10-13 00:00:00','14-Sep-2018-13-Oct-2018',1,'2018-09-14 15:49:31');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,419,31,'2018-10-14 00:00:00','2018-11-13 00:00:00','14-Oct-2018-13-Nov-2018',1,'2018-10-29 12:25:14');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,420,31,'2018-11-14 00:00:00','2018-12-13 00:00:00','14-Nov-2018-13-Dec-2018',1,'2018-11-14 17:11:08');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,421,35,'2017-07-01 00:00:00','2017-07-31 00:00:00','01-Jul-2017-31-Jul-2017',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,422,35,'2017-08-01 00:00:00','2017-08-31 00:00:00','01-Aug-2017-31-Aug-2017',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,423,35,'2017-09-01 00:00:00','2017-09-30 00:00:00','01-Sep-2017-30-Sep-2017',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,424,35,'2017-10-01 00:00:00','2017-10-31 00:00:00','01-Oct-2017-31-Oct-2017',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,425,35,'2017-11-01 00:00:00','2017-11-30 00:00:00','01-Nov-2017-30-Nov-2017',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,426,35,'2017-12-01 00:00:00','2017-12-31 00:00:00','01-Dec-2017-31-Dec-2017',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,427,35,'2018-01-01 00:00:00','2018-01-31 00:00:00','01-Jan-2018-31-Jan-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,428,35,'2018-02-01 00:00:00','2018-02-28 00:00:00','01-Feb-2018-28-Feb-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,429,35,'2018-03-01 00:00:00','2018-03-31 00:00:00','01-Mar-2018-31-Mar-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,430,35,'2018-04-01 00:00:00','2018-04-30 00:00:00','01-Apr-2018-30-Apr-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,431,35,'2018-05-01 00:00:00','2018-05-31 00:00:00','01-May-2018-31-May-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,432,35,'2018-06-01 00:00:00','2018-06-30 00:00:00','01-Jun-2018-30-Jun-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,433,35,'2018-07-01 00:00:00','2018-07-31 00:00:00','01-Jul-2018-31-Jul-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,434,35,'2018-08-01 00:00:00','2018-08-31 00:00:00','01-Aug-2018-31-Aug-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,435,35,'2018-09-01 00:00:00','2018-09-30 00:00:00','01-Sep-2018-30-Sep-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,436,35,'2018-10-01 00:00:00','2018-10-31 00:00:00','01-Oct-2018-31-Oct-2018',1,'2018-11-27 11:21:56');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,437,35,'2018-11-01 00:00:00','2018-11-30 00:00:00','01-Nov-2018-30-Nov-2018',1,'2018-11-27 11:23:39');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,438,35,'2018-12-01 00:00:00','2018-12-31 00:00:00','01-Dec-2018-31-Dec-2018',1,'2018-12-13 17:38:34');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,439,31,'2018-12-14 00:00:00','2019-01-13 00:00:00','14-Dec-2018-13-Jan-2019',1,'2018-12-21 10:37:08');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,440,35,'2019-01-01 00:00:00','2019-01-31 00:00:00','01-Jan-2019-31-Jan-2019',1,'2019-01-10 15:55:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,441,36,'2019-01-01 00:00:00','2019-01-31 00:00:00','01-Jan-2019-31-Jan-2019',1,'2019-01-10 17:34:33');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,442,31,'2019-01-14 00:00:00','2019-02-13 00:00:00','14-Jan-2019-13-Feb-2019',1,'2019-01-17 10:18:48');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,443,31,'2019-02-14 00:00:00','2019-03-13 00:00:00','14-Feb-2019-13-Mar-2019',1,'2019-02-20 12:54:46');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,444,36,'2019-02-01 00:00:00','2019-02-28 00:00:00','01-Feb-2019-28-Feb-2019',1,'2019-03-12 18:29:51');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,445,31,'2019-03-14 00:00:00','2019-04-13 00:00:00','14-Mar-2019-13-Apr-2019',1,'2019-03-15 13:18:13');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,446,32,'2018-03-15 00:00:00','2018-04-14 00:00:00','15-Mar-2018-14-Apr-2018',1,'2019-03-15 18:17:43');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,447,32,'2018-04-15 00:00:00','2018-05-14 00:00:00','15-Apr-2018-14-May-2018',1,'2019-03-15 18:17:43');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,448,32,'2018-05-15 00:00:00','2018-06-14 00:00:00','15-May-2018-14-Jun-2018',1,'2019-03-15 18:17:43');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,449,32,'2018-06-15 00:00:00','2018-07-14 00:00:00','15-Jun-2018-14-Jul-2018',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,450,32,'2018-07-15 00:00:00','2018-08-14 00:00:00','15-Jul-2018-14-Aug-2018',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,451,32,'2018-08-15 00:00:00','2018-09-14 00:00:00','15-Aug-2018-14-Sep-2018',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,452,32,'2018-09-15 00:00:00','2018-10-14 00:00:00','15-Sep-2018-14-Oct-2018',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,453,32,'2018-10-15 00:00:00','2018-11-14 00:00:00','15-Oct-2018-14-Nov-2018',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,454,32,'2018-11-15 00:00:00','2018-12-14 00:00:00','15-Nov-2018-14-Dec-2018',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,455,32,'2018-12-15 00:00:00','2019-01-14 00:00:00','15-Dec-2018-14-Jan-2019',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,456,32,'2019-01-15 00:00:00','2019-02-14 00:00:00','15-Jan-2019-14-Feb-2019',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,457,32,'2019-02-15 00:00:00','2019-03-14 00:00:00','15-Feb-2019-14-Mar-2019',1,'2019-03-15 18:17:44');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,458,36,'2019-03-01 00:00:00','2019-03-31 00:00:00','01-Mar-2019-31-Mar-2019',1,'2019-03-22 12:50:51');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,459,36,'2019-04-01 00:00:00','2019-04-30 00:00:00','01-Apr-2019-30-Apr-2019',1,'2019-04-01 17:15:16');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,460,32,'2019-03-15 00:00:00','2019-04-14 00:00:00','15-Mar-2019-14-Apr-2019',1,'2019-04-16 12:40:13');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,461,31,'2019-04-14 00:00:00','2019-05-13 00:00:00','14-Apr-2019-13-May-2019',1,'2019-04-16 12:41:12');
+INSERT INTO `claims_cycle_dtls`(`ClientID`,`ClaimCycleDtlID`,`ClaimCycleID`,`StartDate`,`EndDate`,`Description`,`Status`,`LastUPD`) VALUES
+(2,462,32,'2019-04-15 00:00:00','2019-05-14 00:00:00','15-Apr-2019-14-May-2019',1,'2019-04-16 12:42:08');
+COMMIT;
+/*!40000 ALTER TABLE `claims_cycle_dtls` ENABLE KEYS */;
+
+-- 
+-- Definition of claims_fixedmileageaudit
+-- 
+
+CREATE TABLE IF NOT EXISTS `claims_fixedmileageaudit` (
+  `ClientID` int(11) NOT NULL,
+  `AuditID` int(11) NOT NULL AUTO_INCREMENT,
+  `RouteName` text NOT NULL,
+  `RouteID` int(11) NOT NULL,
+  `OldJson` text NOT NULL,
+  `NewJson` text NOT NULL,
+  `ActionBy` int(11) NOT NULL,
+  `ActionDescription` text NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`AuditID`,`ClientID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table claims_fixedmileageaudit
+-- 
+
+/*!40000 ALTER TABLE `claims_fixedmileageaudit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,1,'Beach',0,'{\"ClientID\":2,\"RouteName\":\"Beach\",\"DepartedFrom\":5,\"ArrivedTo\":6,\"Distance\":30.00,\"VehicalTypeID\":0,\"VehicalType\":\"1\",\"IsEmpEdit\":1,\"RouteID\":0,\"UserID\":90}','',90,'Beach has been Created','2019-07-18 12:58:38');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,2,'SRP',1,'[{\"clientid\":2,\"RouteID\":1,\"Departedfrom\":5,\"VehicalTypeID\":0,\"IsEmpEdit\":1,\"VehicalType\":\"1\",\"DepartedDesc\":\"Sowcarpet\",\"ArrivedTo\":6,\"ArrivedDesc\":\"Perungudi\",\"RouteName\":\"Beach\",\"Distance\":30.00,\"VehicalTypeDesc\":\"Bike\"}]','[{\"clientid\":2,\"RouteID\":1,\"Departedfrom\":5,\"VehicalTypeID\":0,\"IsEmpEdit\":1,\"VehicalType\":\"1\",\"DepartedDesc\":\"Sowcarpet\",\"ArrivedTo\":6,\"ArrivedDesc\":\"Perungudi\",\"RouteName\":\"SRP\",\"Distance\":30.00,\"VehicalTypeDesc\":\"Bike\"}]',90,'SRP has been Modified','2019-07-18 12:59:13');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,3,'SRP',1,'[{\"clientid\":2,\"RouteID\":1,\"Departedfrom\":5,\"VehicalTypeID\":0,\"IsEmpEdit\":1,\"VehicalType\":\"1\",\"DepartedDesc\":\"Sowcarpet\",\"ArrivedTo\":6,\"ArrivedDesc\":\"Perungudi\",\"RouteName\":\"SRP\",\"Distance\":30.00,\"VehicalTypeDesc\":\"Bike\"}]','[{\"clientid\":2,\"RouteID\":1,\"Departedfrom\":5,\"VehicalTypeID\":0,\"IsEmpEdit\":0,\"VehicalType\":\"1,2\",\"DepartedDesc\":\"Sowcarpet\",\"ArrivedTo\":6,\"ArrivedDesc\":\"Perungudi\",\"RouteName\":\"SRP\",\"Distance\":30.00,\"VehicalTypeDesc\":\"Bike,Car\"}]',90,'SRP has been Modified','2019-07-18 13:03:59');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,4,'OMR',0,'{\"ClientID\":2,\"RouteName\":\"OMR\",\"DepartedFrom\":1,\"ArrivedTo\":4,\"Distance\":45.00,\"VehicalTypeID\":0,\"VehicalType\":\"5\",\"IsEmpEdit\":1,\"RouteID\":0,\"UserID\":90}','',90,'OMR has been Created','2019-07-18 16:18:54');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,5,'Beach',0,'{\"ClientID\":2,\"RouteName\":\"Beach\",\"DepartedFrom\":5,\"ArrivedTo\":6,\"Distance\":25.00,\"VehicalTypeID\":0,\"VehicalType\":\"1\",\"IsEmpEdit\":1,\"RouteID\":0,\"UserID\":90}','',90,'Beach has been Created','2019-07-18 16:27:10');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,6,'Beach',1,'[{\"clientid\":2,\"RouteID\":1,\"Departedfrom\":5,\"IsAllVehicle\":0,\"IsEmpEdit\":1,\"VehicleTypes\":\"1\",\"DepartedDesc\":\"Sowcarpet\",\"ArrivedTo\":6,\"ArrivedDesc\":\"Perungudi\",\"RouteName\":\"Beach\",\"Distance\":25.00,\"VehicalTypeDesc\":\"Bike\"}]','[{\"clientid\":2,\"RouteID\":1,\"Departedfrom\":5,\"IsAllVehicle\":0,\"IsEmpEdit\":0,\"VehicleTypes\":\"1\",\"DepartedDesc\":\"Sowcarpet\",\"ArrivedTo\":6,\"ArrivedDesc\":\"Perungudi\",\"RouteName\":\"Beach\",\"Distance\":25.00,\"VehicalTypeDesc\":\"Bike\"}]',90,'Beach has been Modified','2019-07-18 16:35:11');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,7,'OMR',0,'{\"ClientID\":2,\"RouteName\":\"OMR\",\"DepartedFrom\":1,\"ArrivedTo\":4,\"Distance\":45.00,\"VehicalTypeID\":0,\"VehicalType\":\"5\",\"IsEmpEdit\":0,\"RouteID\":0,\"UserID\":90}','',90,'OMR has been Created','2019-07-18 16:37:08');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,8,'OMR',2,'[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":0,\"VehicleTypes\":\"5\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bus\"}]','[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":1,\"IsEmpEdit\":0,\"VehicleTypes\":\"\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":null}]',90,'OMR has been Modified','2019-07-18 16:37:25');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,9,'OMR',2,'[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":1,\"IsEmpEdit\":0,\"VehicleTypes\":\"\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":null}]','[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":0,\"VehicleTypes\":\"1\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bike\"}]',90,'OMR has been Modified','2019-07-18 16:41:33');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,10,'OMR',2,'[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":0,\"VehicleTypes\":\"1\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bike\"}]','[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":0,\"VehicleTypes\":\"1,5\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bike,Bus\"}]',90,'OMR has been Modified','2019-07-18 16:47:51');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,11,'OMR',2,'[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":0,\"VehicleTypes\":\"1,5\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bike,Bus\"}]','[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":1,\"VehicleTypes\":\"1,5\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bike,Bus\"}]',90,'OMR has been Modified','2019-07-18 16:49:16');
+INSERT INTO `claims_fixedmileageaudit`(`ClientID`,`AuditID`,`RouteName`,`RouteID`,`OldJson`,`NewJson`,`ActionBy`,`ActionDescription`,`LastUPD`) VALUES
+(2,12,'OMR',2,'[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":0,\"IsEmpEdit\":1,\"VehicleTypes\":\"1,5\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":\"Bike,Bus\"}]','[{\"clientid\":2,\"RouteID\":2,\"Departedfrom\":1,\"IsAllVehicle\":1,\"IsEmpEdit\":1,\"VehicleTypes\":\"\",\"DepartedDesc\":\"Adyar\",\"ArrivedTo\":4,\"ArrivedDesc\":\"Siruseri\",\"RouteName\":\"OMR\",\"Distance\":45.00,\"VehicalTypeDesc\":null}]',90,'OMR has been Modified','2019-07-18 16:50:16');
+COMMIT;
+/*!40000 ALTER TABLE `claims_fixedmileageaudit` ENABLE KEYS */;
+
+-- 
+-- Definition of companyinformation
+-- 
+
+CREATE TABLE IF NOT EXISTS `companyinformation` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `CompanyID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `CompanyName` varchar(500) CHARACTER SET latin1 NOT NULL,
+  `Address1` varchar(500) CHARACTER SET latin1 NOT NULL,
+  `Address2` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `Address3` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `City` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `Country` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `Pincode` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `PhoneNumber` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `Email` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `Website` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `Logo` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `ColorCode` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `claimpolicycontent` longtext CHARACTER SET latin1,
+  `LastUPD` datetime DEFAULT NULL,
+  `ReportLogo` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`CompanyID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table companyinformation
+-- 
+
+/*!40000 ALTER TABLE `companyinformation` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `companyinformation`(`ClientID`,`CompanyID`,`CompanyName`,`Address1`,`Address2`,`Address3`,`City`,`Country`,`Pincode`,`PhoneNumber`,`Email`,`Website`,`Logo`,`ColorCode`,`claimpolicycontent`,`LastUPD`,`ReportLogo`) VALUES
+(2,1,'Jumbo Electronics','No. 3517, Jalan Teknokrat 5, Cyber 5','Cyberjaya Selangor, Malaysia','sowcarpet','Chennai','350','63000','123456r','service@forziatech.com','www.mfl.com','2019351554463224825928282696568361.jpg','#215CFF','<tr>\r\n<td valign=\"top\" align=\"left\"> \r\n<p class=MsoNormal style=''margin-top:0in;margin-right:0in;\r\nmargin-bottom:2.8pt;margin-left:0in;text-align:center;border:none;''><b style=''mso-bidi-font-weight:normal''>TRAVEL\r\nREIMBURSEMENT CHART</b></p>\r\n</td>\r\n</tr>\r\n\r\n<tr>\r\n<td valign=\"top\" align=\"left\"> \r\n<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=655\r\n style=''width:100%;margin-left:-5.4pt;border-collapse:collapse;mso-yfti-tbllook:\r\n 1184;mso-padding-alt:.2pt 3.95pt .2pt 5.65pt''>\r\n <tr style=''mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.5pt''>\r\n  <td width=68 rowspan=2 valign=bottom style=''width:51.35pt;border:solid black 1.0pt;\r\n  border-bottom:none;mso-border-top-alt:solid black .5pt;mso-border-left-alt:\r\n  solid black .5pt;mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:15.5pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>GRADES </span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=84 rowspan=2 valign=bottom style=''width:62.75pt;border-top:solid black 1.0pt;\r\n  border-left:none;border-bottom:none;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:15.5pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>LEVEL<span\r\n  style=''mso-spacerun:yes''>  </span></span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 rowspan=2 valign=bottom style=''width:80.05pt;border-top:solid black 1.0pt;\r\n  border-left:none;border-bottom:none;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:15.5pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.65pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>DESIGNATION\r\n  </span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=133 colspan=2 valign=top style=''width:100.1pt;border:solid black 1.0pt;\r\n  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:15.5pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.85pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>ALL AREAS </span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=112 rowspan=2 valign=bottom style=''width:84.35pt;border-top:solid black 1.0pt;\r\n  border-left:none;border-bottom:none;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:15.5pt''>\r\n  <p class=MsoNormal align=left style=''margin:0in;margin-bottom:.0001pt;\r\n  text-align:left;text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:\r\n  normal''><span style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:\r\n  106%''>OUT STATION TRAVEL </span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=150 rowspan=2 valign=bottom style=''width:112.55pt;border-top:solid black 1.0pt;\r\n  border-left:none;border-bottom:none;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:15.5pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.85pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>LOCAL CONV\r\n  </span></b><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:1;height:4.4pt''>\r\n  <td width=75 valign=top style=''width:56.4pt;border:none;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:4.4pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n  <td width=58 valign=top style=''width:43.7pt;border-top:solid black 1.0pt;\r\n  border-left:none;border-bottom:none;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:4.4pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:2;height:11.1pt''>\r\n  <td width=68 valign=top style=''width:51.35pt;border:solid black 1.0pt;\r\n  border-top:none;mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:\r\n  solid black .5pt;mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:11.1pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n  <td width=84 valign=top style=''width:62.75pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-bottom-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:11.1pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n  <td width=107 valign=bottom style=''width:80.05pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-bottom-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:11.1pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n  <td width=75 valign=top style=''width:56.4pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-left-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:\r\n  solid black .5pt;mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:11.1pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>FOOD </span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=58 valign=top style=''width:43.7pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-left-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:\r\n  solid black .5pt;mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:11.1pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.85pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><b style=''mso-bidi-font-weight:normal''><span\r\n  style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>STAY </span></b><o:p></o:p></p>\r\n  </td>\r\n  <td width=112 valign=top style=''width:84.35pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-bottom-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:11.1pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n  <td width=150 valign=top style=''width:112.55pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-bottom-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:11.1pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:3;height:19.7pt''>\r\n  <td width=68 style=''width:51.35pt;border:solid black 1.0pt;border-top:none;\r\n  mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>T3 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=84 rowspan=3 style=''width:62.75pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.85pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>TOP </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:0in;margin-left:.6pt;margin-bottom:.0001pt;text-align:left;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>MANAGEMENT </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>GRADES </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 style=''width:80.05pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.75pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>VICE PRESIDENT </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=75 rowspan=3 style=''width:56.4pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>Actual </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=58 rowspan=3 style=''width:43.7pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>Actual </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=112 rowspan=3 style=''width:84.35pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.65pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>II / III AC </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=150 rowspan=3 style=''width:112.55pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;height:19.7pt''>\r\n  <p class=MsoNormal align=center style=''margin:0in;margin-bottom:.0001pt;\r\n  text-align:center;text-indent:0in;line-height:98%''><span style=''font-size:\r\n  8.0pt;mso-bidi-font-size:11.0pt;line-height:98%''>Auto/Call taxi <span\r\n  class=SpellE>indica</span>/Omni/0wn </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>4 wheeler - Rs.8 </span><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:4;height:21.95pt''>\r\n  <td width=68 style=''width:51.35pt;border:solid black 1.0pt;border-top:none;\r\n  mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:21.95pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>T2 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 valign=top style=''width:80.05pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;height:21.95pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.85pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>ASSOCIATED VICE </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.75pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>PRESIDENT </span><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:5;height:18.7pt''>\r\n  <td width=68 style=''width:51.35pt;border:solid black 1.0pt;border-top:none;\r\n  mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:18.7pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>T1 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 style=''width:80.05pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:18.7pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:0in;margin-left:.95pt;margin-bottom:.0001pt;text-align:left;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>GENERAL MANAGER </span><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:6;height:25.45pt''>\r\n  <td width=68 style=''width:51.35pt;border:solid black 1.0pt;border-top:none;\r\n  mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>M4 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=84 rowspan=4 valign=bottom style=''width:62.75pt;border:none;\r\n  border-right:solid black 1.0pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>MIDDLE LEVEL </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>MANAGERIAL </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>GRADES </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 valign=top style=''width:80.05pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>DEPUTY GENERAL </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.65pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>MANAGER </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=75 rowspan=2 style=''width:56.4pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>500 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=58 rowspan=2 style=''width:43.7pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.85pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>1000-</span><o:p></o:p></p>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:0in;margin-left:.35pt;margin-bottom:.0001pt;text-align:left;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>Chennai / </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin:0in;margin-bottom:.0001pt;\r\n  text-align:center;text-indent:0in;line-height:106%''><span style=''font-size:\r\n  8.0pt;mso-bidi-font-size:11.0pt;line-height:106%''>850 others </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=112 rowspan=2 style=''width:84.35pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>UPTO III AC / AC BUS </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=150 rowspan=4 valign=bottom style=''width:112.55pt;border:none;\r\n  border-right:solid black 1.0pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:.1pt;margin-left:0in;text-align:center;text-indent:0in;\r\n  line-height:98%''><span style=''font-size:8.0pt;mso-bidi-font-size:11.0pt;\r\n  line-height:98%''>Auto/Call taxi <span class=SpellE>indica</span>/Omni/0wn </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>4 wheeler - Rs.8 </span><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:7;height:25.45pt''>\r\n  <td width=68 style=''width:51.35pt;border:solid black 1.0pt;border-top:none;\r\n  mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>M3 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 valign=top style=''width:80.05pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:0in;margin-left:.6pt;margin-bottom:.0001pt;text-align:left;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>ASSISTANT GENERAL </span><o:p></o:p></p>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.65pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>MANAGER </span><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:8;height:25.45pt''>\r\n  <td width=68 style=''width:51.35pt;border:solid black 1.0pt;border-top:none;\r\n  mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>M2 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=107 style=''width:80.05pt;border-top:none;border-left:none;\r\n  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:\r\n  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.65pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>SENIOR MANAGER </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=75 rowspan=2 valign=bottom style=''width:56.4pt;border:none;\r\n  border-right:solid black 1.0pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>350 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=58 rowspan=2 valign=bottom style=''width:43.7pt;border:none;\r\n  border-right:solid black 1.0pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.7pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>850 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=112 rowspan=2 valign=bottom style=''width:84.35pt;border:none;\r\n  border-right:solid black 1.0pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:25.45pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.6pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>UPTO III AC / AC BUS </span><o:p></o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:9;height:6.85pt''>\r\n  <td width=68 valign=top style=''width:51.35pt;border-top:none;border-left:\r\n  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:6.85pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n  <td width=107 valign=top style=''width:80.05pt;border:none;border-right:solid black 1.0pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:6.85pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in;\r\n  line-height:106%''><o:p>&nbsp;</o:p></p>\r\n  </td>\r\n </tr>\r\n <tr style=''mso-yfti-irow:10;height:18.6pt''>\r\n  <td width=68 valign=top style=''width:51.35pt;border:solid black 1.0pt;\r\n  border-top:none;mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:\r\n  solid black .5pt;mso-border-right-alt:solid black .5pt;padding:.2pt 3.95pt .2pt 5.65pt;\r\n  height:18.6pt''>\r\n  <p class=MsoNormal align=center style=''margin-top:0in;margin-right:1.8pt;\r\n  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center;\r\n  text-indent:0in;line-height:106%''><span style=''font-size:8.0pt;mso-bidi-font-size:\r\n  11.0pt;line-height:106%''>M1 </span><o:p></o:p></p>\r\n  </td>\r\n  <td width=84 valign=top style=''width:62.75pt;border-top:none;border-left:\r\n  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;\r\n  mso-border-left-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;\r\n  mso-border-bottom-alt:solid black .5pt;mso-border-right-alt:solid black .5pt;\r\n  padding:.2pt 3.95pt .2pt 5.65pt;height:18.6pt''>\r\n  <p class=MsoNormal align=left style=''margin-top:0in;margin-right:0in;\r\n  margi

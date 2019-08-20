@@ -1,0 +1,673 @@
+`CountryID`,`NavigationName_AR`) VALUES
+('Monitor Documents Expiry',30000,3,64,1,1,'fnDocumentMonitoring()',NULL,NULL,53,0,139,1,1,0,NULL,'مراقبة تاريخ انتهاء الوثائق');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('My Learning Recommendations',0,3,108,1,4,'fnMyRecommendations();',NULL,NULL,165,0,156,1,1,0,NULL,'توصياتي للتعلم');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('My Profile',0,3,250,1,1,'fnMyProfile();','','',50,0,239,1,1,0,NULL,'My Profile');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Normalisation Curve',0,3,99,1,2,'fnShowNormalisationCurve();',NULL,NULL,82,0,350,1,1,0,NULL,'منحنى التسوية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Normalization Distribution',0,3,98,1,1,'fnShowRatingDistribution();',NULL,NULL,82,0,345,1,1,0,NULL,'توزيع التسوية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Onboarding',0,2,34,1,2,NULL,NULL,NULL,2,0,0,1,1,0,NULL,'التأهيل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Onboarding Task Library',20000,3,46,1,1,'fnManageTaskLibrary();','','',34,0,273,1,1,0,NULL,'مكتبة مهمة التأهيل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('One Time Component',0,3,176,1,2,'fnOneTimeComponent();',NULL,NULL,173,0,389,1,1,0,NULL,'مكون مرة واحدة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Organisation',330000,1,1,1,0,NULL,NULL,NULL,0,1,83,1,1,0,NULL,'المنظمة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Organisation Home',0,3,15,1,1,'fnOrgStructure();','','',12,0,187,1,1,0,NULL,'المنظمة الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Organisation Structure',0,3,151,1,2,'fnOrganisationReports();',NULL,NULL,10,0,357,1,1,0,NULL,'الهيكل التنظيمي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Organisation Structure',330000,2,12,1,1,NULL,NULL,'',1,0,0,1,1,0,NULL,'الهيكل التنظيمي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('OT Adjustment',0,3,221,1,13,'fnOverTimeAdjustment();',NULL,NULL,134,0,477,1,1,0,NULL,'OT Adjustment');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Other Performance elements',0,3,86,1,4,'fnShowManageCompLibrary();',NULL,NULL,80,0,355,1,1,0,NULL,'عناصر الأداء الأخرى');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Overtime Process',0,2,257,1,4,'fnOvertimeProcess();','','',173,0,573,1,1,1,'1','Overtime Process');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Pay Registry',0,3,208,1,2,'fnPayRegistry();','','',207,0,450,1,1,0,NULL,'سجل الدفع');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payouts',0,2,207,1,3,'','','',11,0,0,1,1,0,NULL,'الدفعات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll',0,1,11,1,0,NULL,NULL,NULL,0,11,321,1,1,0,NULL,'كشف الرواتب');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll Analysis',0,3,197,1,10,'fnPayRollReports();',NULL,NULL,207,0,425,1,1,0,NULL,'تحليل كشف الرواتب');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll Home',0,3,160,1,1,'fnPayRollAuthenticate();',NULL,NULL,171,0,320,1,1,0,NULL,' الرواتب الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll Home',0,2,171,1,1,'',NULL,NULL,11,0,0,1,1,0,NULL,'كشف الرواتب الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll LOP',0,3,161,1,2,'fnPayRollLOP();',NULL,NULL,171,0,322,1,1,0,NULL,'Payroll LOP');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll Overview',0,3,217,1,1,'fnPayrollOverview();','','',207,0,472,1,1,0,NULL,'Payroll Overview');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll Process',0,2,173,1,2,'',NULL,NULL,11,0,0,1,1,0,NULL,'عملية كشف الرواتب');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Payroll Process',0,3,175,1,1,'fnPayRollProcess();',NULL,NULL,173,0,388,1,1,0,NULL,'معالجة كشف الرواتب');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('PaySlip',0,3,162,1,1,'fnPaySlip();',NULL,NULL,207,0,381,1,1,0,NULL,'قسيمة الدفع');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Pending Assessments',10000,3,75,1,5,'fnPendingAssessment();',NULL,NULL,163,0,253,1,1,0,NULL,'تقييمات معلقة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Performance',0,1,5,1,0,NULL,NULL,NULL,0,5,117,1,1,0,NULL,'الأداء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Performance Analyser',0,3,232,1,3,'fnPerformanceAnalyser();',NULL,NULL,81,0,501,1,1,0,NULL,'Performance Analyser');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Performance Management',0,3,153,1,4,'fnPeformanceReports();',NULL,NULL,10,0,359,1,1,0,NULL,'إدارة الأداء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Performance Normalization',0,2,82,1,3,'',NULL,NULL,5,0,0,1,1,0,NULL,'تسوية الأداء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Positions',0,3,21,1,8,'fnManageOrganisationStructure(360000);','','',12,0,3,1,1,0,NULL,'المناصب الوظيفية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Potential',0,3,85,1,3,'fnManagePotential();',NULL,NULL,80,0,30,1,1,0,NULL,'مكتبة الإمكانيات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Profile Change Requests',0,3,58,1,4,'fnManageChangeRequest();',NULL,NULL,50,0,54,1,1,0,NULL,'طلبات تغيير الملف الشخصي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Programs',0,3,101,1,2,'fnManageProgram();',NULL,NULL,164,0,39,1,1,0,NULL,'البرامج');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Project Request',0,3,181,1,2,'fnProjectRequest();',NULL,NULL,180,0,412,1,1,0,NULL,'طلب مشروع');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Projects',0,3,145,1,10,'fnManageProject();',NULL,NULL,135,0,326,1,1,0,NULL,'المشاريع');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Purchase',0,2,14,1,3,NULL,NULL,NULL,1,0,0,1,1,0,NULL,'الشراء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Purchase Order Bank',0,3,31,1,2,'fnPurchaseOrderBank();',NULL,NULL,14,0,377,1,1,0,NULL,'بنك أوامر الشراء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Purchase Request List',0,3,30,1,1,'fnPurchaseRequest();',NULL,NULL,14,0,376,1,1,0,NULL,'قائمة طلبات الشراء');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Raise New Program Request',0,3,104,1,1,'fnRaiseProgramRequest();',NULL,NULL,165,0,315,1,1,0,NULL,'رفع طلب برنامج جديد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Raise Overtime',0,3,139,1,4,'fnRaiseOvertime();',NULL,NULL,134,0,346,1,0,0,NULL,'رفع وقت إضافي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Raise Resignation Request',30000,3,66,1,1,'fnRaiseResignation();',NULL,NULL,54,0,313,1,1,0,NULL,'رفع طلب استقالة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Raise Service Request',0,3,61,1,1,'RaiseHrServiceRequest()',NULL,NULL,51,0,351,1,1,0,NULL,'رفع طلب خدمة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Raise Voluntary Retirement Request',30000,3,67,1,2,'fnRaiseVoluntaryResignation();',NULL,NULL,54,0,314,1,1,0,NULL,'رفع طلب التقاعد الاختياري');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Recruitment',0,2,33,1,1,NULL,NULL,NULL,2,0,0,1,1,0,NULL,'التوظيف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Recruitment',0,3,155,1,6,'fnRecruitmentReports();',NULL,NULL,10,0,361,1,1,0,NULL,'التوظيف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Recruitment',20000,1,2,1,0,NULL,NULL,NULL,0,2,115,1,1,0,NULL,'التوظيف');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Recruitment Home',20000,3,35,1,1,'fnRecruitment(1);',NULL,NULL,33,0,188,1,1,0,NULL,'التوظيف الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Reimbursement',0,2,190,1,5,'',NULL,NULL,11,0,0,1,1,0,NULL,'الاسترداد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Reimbursement Request',0,3,191,1,1,'fnReimbursementRequest();',NULL,NULL,190,0,420,1,1,0,NULL,'طلب  استرداد مبلغ');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Reports',0,1,10,1,0,NULL,NULL,NULL,0,10,316,1,1,0,NULL,'التقارير');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Reports Home',0,3,150,1,1,'fnReports()',NULL,NULL,10,0,317,1,1,0,NULL,'التقارير الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resource Bookings',0,3,29,1,2,'fnManageBooking();',NULL,NULL,13,0,341,1,1,0,NULL,'حجز مورد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resource Extension',0,3,185,1,4,'fnResourceExtension();',NULL,NULL,180,0,414,1,1,0,NULL,'امتداد المورد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resource Management',0,2,180,1,3,'',NULL,NULL,9,0,0,1,1,0,NULL,'إدارة الموارد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resource Management',0,3,205,1,11,'fnRMGReports();',NULL,NULL,10,0,433,1,1,0,NULL,'إدارة الموارد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resource Management Home',0,3,184,1,1,'fnRMGHOME();',NULL,NULL,180,0,411,1,1,0,NULL,'إدارة الموارد الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resource Request',0,3,182,1,3,'fnResourceRequest();',NULL,NULL,180,0,413,1,1,0,NULL,'طلب مورد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resources',0,2,13,1,2,NULL,NULL,NULL,1,0,0,1,1,0,NULL,'الموارد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Resume Bank',20000,3,40,1,7,'fnManageOpening();',NULL,NULL,33,0,38,1,1,0,NULL,'بنك السير الذاتية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Review Forms',0,3,94,1,2,'fnActiveAppraisal();',NULL,NULL,81,0,181,1,1,0,NULL,'نماذج  المراجعة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Reviews',0,2,81,1,2,'',NULL,NULL,5,0,0,1,1,0,NULL,'المراجعات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Separation Management',0,2,54,1,5,'',NULL,NULL,3,0,0,1,1,0,NULL,'إدارة الفصل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Separation Request List',30000,3,68,1,3,'fnSeparationRequest();',NULL,NULL,54,0,145,1,1,0,NULL,'قائمة طلبات الفصل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Separation Task Library',0,3,169,1,5,'fnSeparationTaskLibarary();',NULL,NULL,54,0,382,1,1,0,NULL,'مكتبة مهمة الفصل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Service Desk',0,2,51,1,2,'',NULL,NULL,3,0,0,1,1,0,NULL,'مكتب الخدمات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Service Request List',0,3,62,1,2,'HrServiceRequestList()',NULL,NULL,51,0,352,1,1,0,NULL,'قائمة طلبات الخدمة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Sessions',0,3,102,1,3,'fnManageSession();',NULL,NULL,164,0,40,1,1,0,NULL,'الجلسات');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Shared Applicants',20000,3,42,1,9,'fnSharedCandidate();',NULL,NULL,33,0,343,1,1,0,NULL,'المتقدمون المشتركون');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Simulate Resource Availability',0,3,186,1,5,'fnSimulateEmployee();',NULL,NULL,180,0,415,1,1,0,NULL,'محاكاة إتاحة الموارد');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Team Attendance Analysis',0,3,201,1,10,'fnTeamAttendanceAnalysis();','','',134,0,429,1,1,0,NULL,'تحليل دوام فريق العمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Team IDP',0,3,246,1,8,'fnTeamIDP();','','',80,0,526,1,1,0,NULL,'خطة التطوير الفردية لفريق العمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Team IDP',10000,3,78,1,8,'fnTeamIDP();',NULL,NULL,163,0,331,1,1,0,NULL,'خطة التطوير الفردية لفريق العمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Test',0,3,230,1,14,'fnCustomTimesheet();',NULL,NULL,135,0,496,1,1,0,NULL,'Test');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time',0,1,9,1,0,NULL,NULL,NULL,0,9,120,1,1,0,NULL,'الوقت');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time Adjustment Request',0,3,138,1,3,'fnTimeAdjRequest();',NULL,NULL,134,0,202,1,1,0,NULL,'طلب تعديل الوقت');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time and Attendance',0,3,159,1,10,'fnTAReports();',NULL,NULL,10,0,365,1,1,0,NULL,'الوقت والحضور');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time off Management',0,2,187,1,4,NULL,NULL,NULL,9,0,0,1,1,0,NULL,'Time off Management');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time off Request',0,3,188,1,1,'fnPermissionRequest();',NULL,NULL,187,0,418,1,0,0,NULL,'طلب إجازة ساعية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time off Request For Employee',0,3,240,1,3,'fnApplyTimeOffForEmployees();','','',187,0,517,1,1,0,NULL,'Time off Request For Employee');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Time off Request List',0,3,189,1,2,'fnPermissionRequestList();',NULL,NULL,187,0,419,1,1,0,NULL,'Time off Request List');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Timesheet Monthly View',0,3,229,1,13,'fnManageTimesheetMonthlyVw();','','',135,0,495,1,1,0,NULL,'Timesheet Monthly View');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Timesheets',0,2,135,1,2,'',NULL,NULL,9,0,0,1,1,0,NULL,'سجل الدوام');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Travel',0,2,127,1,1,'',NULL,NULL,8,0,0,1,1,0,NULL,'السفر');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Travel &  Claims Home',0,3,129,1,1,'fnClaims();','','',127,0,193,1,1,0,NULL,'السفر والمطلبات الصفحة الرئيسية');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Travel Request List',0,3,131,1,3,'fnManageTravelAdvance()','','',127,0,339,1,1,0,NULL,'قائمة طلبات السفر');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Upcoming Sessions',0,3,109,1,8,'fnUpcomingSessions();',NULL,NULL,164,0,155,1,1,0,NULL,'الجلسات القادمة');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Vendors',0,3,32,1,3,'fnPurchaseVendors();',NULL,NULL,14,0,378,1,1,0,NULL,'المزودون');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('View My Profile',0,3,60,1,7,'fnDetail(30000);',NULL,NULL,50,0,239,1,0,0,NULL,'عرض ملفي الشخصي');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Week off/Comp off Generation',0,3,223,1,15,'fnWoffCoffGeneration();',NULL,NULL,134,0,484,1,1,0,NULL,'Week off/comp off process');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Work Locations',0,3,17,1,4,'fnManageOrganisationStructure(310000);','','',12,0,5,1,1,0,NULL,'مواقع العمل');
+INSERT INTO `sys_menus`(`NavigationName`,`ComponentID`,`IsMainMenu`,`MenuID`,`IdentityType`,`DisplayOrder`,`RedirectURL`,`HelpURL`,`HeaderText`,`RelatedMainMenu`,`MainMenuOrder`,`FeatureID`,`Access`,`IsVisible`,`IsCommonMenu`,`CountryID`,`NavigationName_AR`) VALUES
+('Year End Process',0,3,233,1,13,'fnYearEndProcess();',NULL,NULL,167,0,502,1,1,0,NULL,'Year End Process');
+COMMIT;
+/*!40000 ALTER TABLE `sys_menus` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_module
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_module` (
+  `ModuleID` int(10) unsigned NOT NULL,
+  `ModuleName` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `EnableReport` bit(1) DEFAULT NULL,
+  `FeatureID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ModuleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_module
+-- 
+
+/*!40000 ALTER TABLE `sys_module` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(1,'Organisation Structure',1,357);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(2,'Employee',1,358);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(3,'Performance Management',1,359);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(4,'Competency',1,360);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(5,'Recruitment',1,361);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(6,'Goal',0,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(7,'Learning and Development',1,362);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(8,'Leave Management',1,363);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(9,'Claims',1,364);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(10,'Time and Attendance',1,365);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(11,'On Boarding',0,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(12,'Separation',0,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(13,'Report',NULL,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(14,'Module Setting',0,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(15,'Promotion',0,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(16,'Payroll',1,NULL);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(17,'Resource Management',1,433);
+INSERT INTO `sys_module`(`ModuleID`,`ModuleName`,`EnableReport`,`FeatureID`) VALUES
+(18,'Payroll - Malaysia Statutory',1,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `sys_module` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_module_reminder
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_module_reminder` (
+  `ClientID` int(11) NOT NULL,
+  `ModuleID` int(11) NOT NULL COMMENT 'ModuleID',
+  `ComponentID` int(11) NOT NULL COMMENT '1-OnBoard 2-Separation',
+  `RemainderID` bigint(20) NOT NULL,
+  `Status` int(11) DEFAULT '0' COMMENT '0-Not Started 1- Progress 2- Completed 3 - Error',
+  `StatusMessage` text CHARACTER SET latin1,
+  `NotifyID` int(11) DEFAULT '0',
+  `AssignedEmployee` bit(1) DEFAULT b'0',
+  `Owner` bit(1) DEFAULT b'0',
+  `Follower` bit(1) DEFAULT b'0',
+  `Manager` bit(1) DEFAULT b'0',
+  `Buddy` bit(1) DEFAULT b'0',
+  `HRContact` bit(1) DEFAULT b'0',
+  `HRManager` bit(1) DEFAULT b'0',
+  `BUHead` bit(1) DEFAULT b'0',
+  `DeptHead` bit(1) DEFAULT b'0',
+  `LastUPD` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT '0',
+  PRIMARY KEY (`RemainderID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_module_reminder
+-- 
+
+/*!40000 ALTER TABLE `sys_module_reminder` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,671,380,2,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-01 14:31:30',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,671,381,2,NULL,34,0,1,1,0,0,1,0,0,0,'2017-03-01 14:33:15',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,671,382,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-03-01 16:44:53',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,671,383,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-03-01 16:45:16',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,671,384,0,NULL,40,1,1,1,1,1,1,0,0,0,'2017-03-01 16:46:12',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,672,385,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-02 12:55:58',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,674,386,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-02 15:29:42',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,674,387,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-03-02 15:39:16',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,674,388,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-03-02 15:39:22',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,675,389,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-02 16:54:12',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,675,390,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-03-02 16:54:44',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,675,391,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-03-02 16:54:48',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,675,392,0,NULL,39,1,1,1,1,1,1,0,0,0,'2017-03-02 16:55:05',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,393,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-14 10:43:31',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,394,0,NULL,50,0,1,0,0,0,0,0,0,0,'2017-03-14 10:45:47',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,1362,396,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-14 10:49:20',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,1359,397,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-14 10:51:12',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,398,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-14 10:56:29',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,399,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-03-14 10:57:12',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,6,400,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-14 17:00:35',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,8,401,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-15 15:18:06',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,402,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-16 12:17:48',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,403,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-16 12:20:17',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,7,404,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-16 12:25:09',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,405,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-03-16 12:27:59',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,406,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-03-16 12:28:11',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,7,407,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-03-16 12:28:19',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,6,408,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-03-16 12:44:12',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,11,409,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-16 12:47:20',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,13,410,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-16 17:08:51',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,677,411,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-24 14:12:33',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,678,412,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-24 14:20:32',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,679,413,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-24 14:39:05',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,680,414,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-03-27 12:16:09',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,13,415,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-03-28 19:01:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,681,416,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-04-15 14:34:08',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,681,417,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-04-15 14:38:33',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,681,418,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-04-17 19:18:06',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,681,419,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-04-17 19:18:43',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,682,420,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-04-21 18:16:44',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,682,421,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-04-21 18:18:17',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,682,422,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-04-21 18:19:51',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,682,423,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-04-21 18:20:01',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,682,424,0,NULL,40,1,1,1,1,1,1,0,0,0,'2017-04-21 18:22:59',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,682,425,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-04-21 18:38:32',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,684,426,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-04-24 12:08:23',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,684,427,0,NULL,40,1,1,1,1,1,1,0,0,0,'2017-05-05 13:49:14',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,685,428,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-05-05 13:59:37',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,16,429,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-05-25 14:42:34',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,16,430,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-05-25 14:42:57',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,18,431,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-06-05 12:50:15',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,432,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-06-07 14:43:54',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,433,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-06-12 09:51:33',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,434,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-06-20 16:04:24',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,25,435,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-12 11:41:45',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,436,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-12 12:42:35',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,30,437,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-12 15:44:27',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,31,438,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-13 20:22:18',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,31,439,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-14 10:13:42',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,24,440,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-14 13:52:42',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,22,441,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-14 15:04:28',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,32,442,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-14 15:15:11',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,443,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-18 13:27:53',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,444,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-18 13:28:55',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,445,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-18 13:30:38',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,33,446,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-18 13:51:43',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,34,447,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-18 15:04:36',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,37,448,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-19 20:06:46',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,37,449,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-19 20:10:59',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,38,450,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-19 20:15:14',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,38,451,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-19 20:24:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,39,452,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-19 20:26:05',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,453,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-20 17:55:09',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,41,454,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-27 17:24:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,42,455,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-27 17:27:34',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,42,456,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-27 17:28:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,43,457,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-27 17:46:50',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,44,458,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-27 18:22:57',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,459,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 11:35:23',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,460,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 12:05:38',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,461,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 12:06:55',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,462,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 14:49:00',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,463,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 14:53:42',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,464,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 14:58:56',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,465,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 15:22:03',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,466,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 15:26:53',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,467,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 17:09:32',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,29,468,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 17:15:58',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,45,469,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 17:18:37',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,45,470,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-07-31 17:19:04',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,687,471,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-10-16 11:51:23',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,692,472,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-10-16 15:50:47',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,693,473,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-10-16 17:16:11',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,693,474,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-10-16 17:16:56',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,694,475,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-10-16 17:52:50',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,694,476,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-10-16 17:53:31',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,695,477,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-10-16 18:07:05',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,695,478,0,NULL,34,0,1,1,0,0,1,0,0,0,'2017-10-16 18:07:52',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,692,479,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-10-25 18:21:46',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,692,480,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-10-25 18:21:51',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,696,481,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-11-08 12:41:57',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,697,482,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-11-08 12:49:37',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,698,483,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-11-29 13:05:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,698,484,0,NULL,37,1,1,1,1,1,1,0,0,0,'2017-11-29 13:07:38',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,698,485,0,NULL,38,1,1,1,1,1,1,0,0,0,'2017-11-29 13:09:02',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,698,486,0,NULL,39,1,1,1,1,1,1,0,0,0,'2017-11-29 13:11:01',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,699,487,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-11-29 13:13:15',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,700,488,0,NULL,29,0,1,1,1,1,1,0,0,0,'2017-11-29 18:41:24',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,700,489,0,NULL,41,0,1,0,0,0,0,0,0,0,'2017-11-29 18:57:47',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,491,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-12-04 18:33:12',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,46,492,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-12-08 10:08:49',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,47,493,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-12-19 15:46:41',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,47,494,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-12-19 15:53:14',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,48,495,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-12-19 16:10:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,48,496,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-12-19 16:12:29',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,46,497,0,NULL,46,0,1,1,0,0,1,0,0,0,'2017-12-19 17:56:45',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,46,498,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-12-19 17:57:00',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,34,499,0,NULL,49,0,1,1,1,0,1,0,0,0,'2017-12-29 10:19:43',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,1,500,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-02-02 12:09:27',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,700,501,0,NULL,40,1,1,1,1,1,1,0,0,0,'2018-02-20 15:50:52',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,2,502,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-02-22 11:14:31',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,3,503,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-02-22 13:13:31',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,701,504,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-02-23 15:44:27',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,693,505,0,NULL,39,1,1,1,1,1,1,0,0,0,'2018-02-23 16:11:31',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,687,506,0,NULL,39,1,1,1,1,1,1,0,0,0,'2018-02-23 16:11:55',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,692,507,0,NULL,39,1,1,1,1,1,1,0,0,0,'2018-02-23 16:12:56',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,685,508,0,NULL,39,1,1,1,1,1,1,0,0,0,'2018-02-23 16:14:45',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,684,509,0,NULL,39,1,1,1,1,1,1,0,0,0,'2018-02-23 16:17:45',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,686,510,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-02-23 16:32:16',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,686,511,0,NULL,40,1,1,1,1,1,1,0,0,0,'2018-02-23 16:32:41',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,3,512,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-02-26 18:31:03',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,513,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-02 16:49:41',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,1,514,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-05 10:38:15',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,515,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-05 11:16:45',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,516,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 12:34:40',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,3,517,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 12:47:53',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,518,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 13:12:59',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,2,519,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 13:26:12',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,520,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 13:40:29',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,521,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 13:45:47',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,522,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 13:47:52',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,1,523,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 15:39:48',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,4,524,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 15:52:36',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,5,525,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 16:11:20',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,7,526,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 16:46:58',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,7,527,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 16:48:21',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,8,528,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 17:35:59',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,8,529,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 18:22:08',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,9,530,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 18:28:05',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,9,531,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 18:28:35',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,532,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-13 18:34:30',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,533,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-13 18:35:01',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,11,534,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-15 10:23:31',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,11,535,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-15 10:24:30',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,8,536,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-15 11:36:31',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,8,537,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-15 11:38:42',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,538,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-15 11:47:20',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,12,539,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-15 11:47:58',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,540,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-15 11:49:09',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,12,541,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-19 13:31:29',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,13,542,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-03-19 13:36:56',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,13,543,0,NULL,49,0,1,1,1,0,1,0,0,0,'2018-03-19 13:37:16',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,14,544,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-04-03 11:53:25',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,15,545,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-04-03 12:55:35',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,16,546,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-04-03 14:46:34',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,17,547,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-04-03 15:34:03',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,703,548,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-04-23 13:34:56',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,13,549,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-04-27 12:03:19',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,18,550,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-04-27 12:11:43',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,705,551,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-06-21 16:24:35',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,19,552,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 15:25:55',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,553,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 16:12:05',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,20,554,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 16:14:01',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,555,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 16:54:56',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,556,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 16:55:44',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,10,557,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 16:56:11',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,21,558,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 17:10:11',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,21,559,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-06-28 17:14:40',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,709,560,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-06-28 17:19:28',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,710,561,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-06-28 17:20:17',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,712,562,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-07-10 10:44:53',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,22,563,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-08-14 11:38:15',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,713,564,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-08-20 13:32:40',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,714,565,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-08-20 14:40:17',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,715,566,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-08-20 14:42:46',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,13,567,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-08-23 16:00:21',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,709,568,0,NULL,40,1,1,1,1,1,1,0,0,0,'2018-08-24 10:14:22',90);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,720,569,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-08-29 10:31:28',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,720,570,0,NULL,34,0,1,1,0,0,1,0,0,0,'2018-08-29 10:34:21',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,721,571,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-08-29 10:52:52',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,722,572,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-08-29 13:37:55',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,23,573,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-09-05 11:05:36',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,24,574,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-09-06 12:03:21',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,12,25,575,0,NULL,46,0,1,1,0,0,1,0,0,0,'2018-09-06 12:05:59',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,723,576,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-09-10 12:08:16',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,724,577,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-09-11 19:55:58',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status`,`StatusMessage`,`NotifyID`,`AssignedEmployee`,`Owner`,`Follower`,`Manager`,`Buddy`,`HRContact`,`HRManager`,`BUHead`,`DeptHead`,`LastUPD`,`LastActionBy`) VALUES
+(2,11,725,578,0,NULL,29,0,1,1,1,1,1,0,0,0,'2018-09-11 20:08:07',0);
+INSERT INTO `sys_module_reminder`(`ClientID`,`ModuleID`,`ComponentID`,`RemainderID`,`Status

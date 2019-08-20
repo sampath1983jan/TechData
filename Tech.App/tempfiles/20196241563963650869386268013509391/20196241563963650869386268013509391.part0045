@@ -1,0 +1,525 @@
+st','','GetComponentFieldList',10040);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-23 18:43:23','Column ''ProcessingComponent'' does not belong to table .','192.168.0.153',90,'http://localhost:62023/Handler/PayRollHandler.ashx?target=GetPayCycleDetails','','GetPayCycleDetails',10041);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-23 18:43:52','Unknown column ''a'' in ''field list''','192.168.0.153',90,'http://localhost:62023/Handler/PayRollHandler.ashx?target=GetPayCycleDetails','','GetPayCycleDetails',10042);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-23 19:15:06','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.127',5132,'http://localhost:50446/Handler/UIHandler.ashx?target=GetComponentFieldList','Timeout in IO operation','GetComponentFieldList',10043);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-23 19:19:39','Column ''ProcessingComponents'' does not belong to table .','192.168.0.104',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=IndividualPayrollProcess','','IndividualPayrollProcess',10044);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-23 19:23:06','Expression can''t be empty\r\nParameter name: expression','192.168.0.104',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=IndividualPayrollProcess','','IndividualPayrollProcess',10045);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-23 19:27:18','Expression can''t be empty\r\nParameter name: expression','192.168.0.104',90,'http://localhost/TalentOZ/Handler/PayRollHandler.ashx?target=IndividualPayrollProcess','','IndividualPayrollProcess',10046);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 10:16:36','Cannot find column [ReviewerID].','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=GetAppraisalForm','','GetAppraisalForm',10047);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:24:58','There was an error generating the XML document.','192.168.0.147',90,'http://localhost:50091/Handler/LMSHandler.ashx?target=SaveDutyResumptionForm','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveDutyResumptionForm',10048);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:28:11','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10049);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:33:20','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentOZDevelopment/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10050);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:36:25','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10051);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:37:23','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10052);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:44:44','Conversion from string \"90\" to type ''Date'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10053);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:46:48','Conversion from string \"90\" to type ''Date'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10054);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:48:34','Conversion from string \"\" to type ''Integer'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=DeleteAttendanceNoteRequestDetail','Input string was not in a correct format.','DeleteAttendanceNoteRequestDetail',10055);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:49:14','Conversion from string \"\" to type ''Integer'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=DeleteAttendanceNoteRequestDetail','Input string was not in a correct format.','DeleteAttendanceNoteRequestDetail',10056);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:49:40','The used SELECT statements have a different number of columns','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/PerfHandler.ashx?target=GetPromotionRequestList','','GetPromotionRequestList',10057);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:50:55','The used SELECT statements have a different number of columns','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/PerfHandler.ashx?target=GetPromotionRequestList','','GetPromotionRequestList',10058);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:54:47','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10059);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:55:32','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10060);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:57:25','The used SELECT statements have a different number of columns','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/PerfHandler.ashx?target=GetPromotionRequestList','','GetPromotionRequestList',10061);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:58:46','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10062);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:59:05','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10063);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 11:59:48','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10064);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 12:03:00','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/UIHandler.ashx?target=GetComponentFieldList','','GetComponentFieldList',10065);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 12:15:02','Only MySqlParameter objects may be stored','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetEmployeePerformanceOverallScoreDetails','','GetEmployeePerformanceOverallScoreDetails',10066);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:31:09','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10067);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:33:52','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10068);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:40:10','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10069);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:40:55','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10070);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:42:39','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10071);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:42:39','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10072);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:45:34','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10073);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:46:53','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10074);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:48:08','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10075);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:49:07','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10076);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:53:37','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10077);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 14:55:13','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10078);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 15:16:57','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',10079);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 16:18:05','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10080);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 16:23:11','Column ''IsHourlyLeave'' does not belong to table .','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10081);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 16:55:04','Index was outside the bounds of the array.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetScoreDetails','','GetScoreDetails',10082);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 16:58:24','Conversion from string \"undefined\" to type ''Date'' is not valid.','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10083);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 16:59:56','Index was outside the bounds of the array.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetScoreDetails','','GetScoreDetails',10084);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 17:16:19','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/WorkflowHandler.ashx?target=GetNewWFRequest','Input string was not in a correct format.','GetNewWFRequest',10085);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 17:44:15','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',5129,'http://localhost/TalentOZ/Handler/WorkflowHandler.ashx?target=GetNewWFRequest','Input string was not in a correct format.','GetNewWFRequest',10086);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 18:32:09','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',151,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetAppliedLeaveDetails','Input string was not in a correct format.','GetAppliedLeaveDetails',10087);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 18:32:53','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',151,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetAppliedLeaveDetails','Input string was not in a correct format.','GetAppliedLeaveDetails',10088);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-24 18:49:03','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetAdjustLeaveDays','Input string was not in a correct format.','GetAdjustLeaveDays',10089);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 10:27:09','The used SELECT statements have a different number of columns','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetEmployeePerformanceOverallScoreDetails','','GetEmployeePerformanceOverallScoreDetails',10090);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 10:27:17','The used SELECT statements have a different number of columns','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetEmployeePerformanceOverallScoreDetails','','GetEmployeePerformanceOverallScoreDetails',10091);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:21:12','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',10092);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:21:27','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',10093);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:21:27','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',10093);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:32:12','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/UIHandler.ashx?target=GetTagData','','GetTagData',10094);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:37:13','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',10095);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:37:28','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',10096);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:37:28','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',10096);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 12:52:13','Column ''ProcessingComponents'' does not belong to table .','192.168.0.153',90,'http://localhost:62023/Handler/PayRollHandler.ashx?target=GetEmployeestoProcess','','GetEmployeestoProcess',10097);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 14:54:18','Operator ''='' is not defined for type ''EmployeeDetail'' and type ''UInteger''.','192.168.0.150',90,'http://localhost/TalentOZ/Handler/WorkflowHandler.ashx?target=GetNextApproverList','','GetNextApproverList',10098);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 16:19:43','Conversion from string \"undefined\" to type ''Date'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10099);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 16:20:16','Conversion from string \"undefined\" to type ''Date'' is not valid.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10100);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 16:36:24','Parameter ''pPayCycleID'' not found in the collection.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/PayRollHandler.ashx?target=ProcessPayroll','','ProcessPayroll',10101);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:25','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10102);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:26','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10103);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:27','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10104);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:27','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10104);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:27','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10104);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:27','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10105);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:27','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10105);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:27','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10105);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:30','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10106);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:30','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10106);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:30','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10106);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10107);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10107);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10107);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10107);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10107);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10108);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:34','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10108);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:35','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10109);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:35','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10109);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:36','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10110);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10111);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10111);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10112);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10112);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10112);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10113);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:42','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10114);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10114);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10115);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10115);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10114);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10115);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:50','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10116);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:50','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10116);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:50','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10117);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:50','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10117);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:50','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10118);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:51','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10119);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:51','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10119);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:51','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10120);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10121);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10121);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10121);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10121);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10122);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10122);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10123);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:22:52','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10124);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:28:58','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10125);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:30','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10126);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:35','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10127);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:35','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10127);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:35','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10127);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:35','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10128);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:36','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10128);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:36','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10129);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:36','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10130);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10131);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10131);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:40','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10131);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:41','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10132);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:42','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10133);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10134);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10134);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10134);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10134);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10135);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10135);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10136);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:44','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10137);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10138);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10138);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10139);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10139);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10139);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10140);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:29:46','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10141);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:36:59','Index was outside the bounds of the array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10142);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:37:20','Index was outside the bounds of the array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10143);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:39:12','Index was outside the bounds of the array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=GetLockSettingUser','','GetLockSettingUser',10144);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-25 17:40:29','Input string was not in a correct format.','192.168.0.108',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetWOfffCOffEmployeeList','','GetWOfffCOffEmployeeList',10145);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:21:40','Column ''EmployeeGroup'' does not belong to table .','192.168.0.150',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=GetEmployeeLeaveAc','','GetEmployeeLeaveAc',10146);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:43:24','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10147);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:43:31','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10148);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:43:39','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10149);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:43:40','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10150);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:43:40','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10151);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:43:40','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10152);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:20','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10153);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:21','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10154);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:22','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10155);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:23','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10156);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:23','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10157);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:23','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10157);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:23','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10157);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:24','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10158);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:26','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10159);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:26','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10159);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:27','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10160);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:27','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10160);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:44:32','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10161);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:12','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10162);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:13','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10163);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:14','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10164);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:14','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10165);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:14','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10165);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:15','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10166);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:15','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10167);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:45:15','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10168);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:47:34','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10169);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:47:37','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10170);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:47:37','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10171);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:47:38','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10172);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:47:38','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10172);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 10:47:38','Result consisted of more than one row','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',10173);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 11:01:24','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=LoadReviewerDetails','Input string was not in a correct format.','LoadReviewerDetails',10174);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 11:01:44','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=LoadReviewerDetails','Input string was not in a correct format.','LoadReviewerDetails',10175);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 11:02:07','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=LoadReviewerDetails','Input string was not in a correct format.','LoadReviewerDetails',10176);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 11:02:33','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=LoadReviewerDetails','Input string was not in a correct format.','LoadReviewerDetails',10177);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 11:22:56','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetAppraisalForm','Input string was not in a correct format.','GetAppraisalForm',10178);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 11:24:16','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=GetAppraisalForm','Input string was not in a correct format.','GetAppraisalForm',10179);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 14:06:13','Type ''TalentOZ.TA.Business.OTProposal.HolidayWageItems'' is not supported for deserialization of an array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10180);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 14:49:15','Type ''TalentOZ.TA.Business.OTProposal.OTProposal'' is not supported for deserialization of an array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10181);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 14:49:16','Type ''TalentOZ.TA.Business.OTProposal.OTProposal'' is not supported for deserialization of an array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10182);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 14:49:16','Type ''TalentOZ.TA.Business.OTProposal.OTProposal'' is not supported for deserialization of an array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10183);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 14:49:17','Type ''TalentOZ.TA.Business.OTProposal.OTProposal'' is not supported for deserialization of an array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10184);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 14:49:21','C:\\TalentOZ_Dell47_Suriya\\MasterCodeRoot-Development\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\20186261532596752151153104333838811.jpg','192.168.0.148',90,'http://localhost:59354/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',10185);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:03:40','Type ''TalentOZ.TA.Business.OTProposal.OTProposal'' is not supported for deserialization of an array.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10186);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:08:28','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10187);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:08:36','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10188);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:08:36','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10189);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:08:47','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10190);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:08:47','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10191);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:13:57','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10192);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:16:38','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10193);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:18:10','Object reference not set to an instance of an object.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','','SaveBulkHoliWages',10194);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:50:41','Parameter ''pIsHourly'' not found in the collection.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveHoliWage','','SaveHoliWage',10195);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 15:52:26','Parameter ''pIsHourly'' not found in the collection.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveHoliWage','','SaveHoliWage',10196);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 16:09:23','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','SaveBulkHoliWages',10197);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 17:13:04','SMRD.1201: SQL Query Errors Occured - Unknown column ''employee_visa.F_30510,F_30520'' in ''field list''','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=GetHeader','Unknown column ''employee_visa.F_30510,F_30520'' in ''field list''','GetHeader',10198);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-26 17:13:16','SMRD.1201: SQL Query Errors Occured - Unknown column ''employee_visa.F_30510,F_30520'' in ''field list''','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler.ashx?target=GetHeader','Unknown column ''employee_visa.F_30510,F_30520'' in ''field list''','GetHeader',10199);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 09:24:31','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',10200);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 10:13:52','Conversion from string \"Exception has occurred while sav\" to type ''Double'' is not valid.','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=SaveAccrualRangeDetails','Input string was not in a correct format.','SaveAccrualRangeDetails',10201);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 10:37:04','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-5097-2018-07-18 00:00:00--1'' for key ''PRIMARY''','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','Duplicate entry ''2-5097-2018-07-18 00:00:00--1'' for key ''PRIMARY''','SaveBulkHoliWages',10202);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 10:37:15','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','SaveBulkHoliWages',10203);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 10:37:24','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','SaveBulkHoliWages',10204);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 10:37:35','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','SaveBulkHoliWages',10205);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 10:37:45','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','192.168.0.154',90,'http://localhost/TalentOZ/Handler/TAHandler.ashx?target=SaveBulkHoliWages','Duplicate entry ''2-110-2018-07-18 00:00:00--1'' for key ''PRIMARY''','SaveBulkHoliWages',10206);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-27 17:53:01','Expression can''t be empty\r\nParameter name: expression','192.168.0.153',5179,'http://localhost:62023/Handler/PayRollHandler.ashx?target=ProcessPayroll','','ProcessPayroll',10207);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 10:54:34','Object reference not set to an instance of an object.','192.168.0.147',90,'http://localhost:59521/Handler/RecHandler.ashx?target=GetUserList','','GetUserList',10208);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 10:54:57','Object reference not set to an instance of an object.','192.168.0.147',90,'http://localhost:59521/Handler/RecHandler.ashx?target=GetUserList','','GetUserList',10209);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 10:55:51','Object reference not set to an instance of an object.','192.168.0.147',90,'http://localhost:59521/Handler/RecHandler.ashx?target=GetUserList','','GetUserList',10210);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 11:11:59','Object reference not set to an instance of an object.','192.168.0.147',90,'http://localhost:59521/Handler/RecHandler.ashx?target=GetUserList','','GetUserList',10211);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 11:15:47','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/PerfHandler.ashx?target=LoadDynamicTemplateComponents','Timeout in IO operation','LoadDynamicTemplateComponents',10212);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 13:49:00','No parameterless constructor defined for type of ''System.String''.','192.168.0.148',90,'http://localhost:59354/Handler/PerfHandler.ashx?target=SavePerfAppraisal','','SavePerfAppraisal',10213);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(4,'2018-07-30 16:50:31','There was an error generating the XML document.','192.168.0.154',441,'http://localhost/TalentOZ/Handler/UIHandler.ashx?target=usDetail','Instance validation error: ''0'' is not a valid value for TalentOzNet.Security.UserLoginStatus.','usDetail',10214);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-30 20:02:41','The file ''/Handler/Workflow Handler.ashx'' does not exist.','192.168.0.147',90,'http://localhost:57838/Handler/Workflow%20Handler.ashx?target=GetEmployeeListForToDo','','GetEmployeeListForToDo',10215);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 06:17:29','SMRD.1201: SQL Query Errors Occured - SMRD.1418: Supplied Value is not valid for the Question Field.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','SMRD.1418: Supplied Value is not valid for the Question Field.','SaveToDoReminderSettings',10216);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 06:33:23','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','','SaveToDoReminderSettings',10217);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 06:33:44','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','','SaveToDoReminderSettings',10218);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 06:37:32','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','','SaveToDoReminderSettings',10219);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 08:40:43','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','','SaveToDoReminderSettings',10220);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 08:47:32','Conversion from string \"00/00/0001\" to type ''Date'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','','SaveToDoReminderSettings',10221);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 10:32:39','Conversion from string \",90\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/TAHandler.ashx?target=GetEmployeeDetailsforOTGeneration','Input string was not in a correct format.','GetEmployeeDetailsforOTGeneration',10222);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 10:39:21','Conversion from string \",90\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/TAHandler.ashx?target=GetEmployeeDetailsforOTGeneration','Input string was not in a correct format.','GetEmployeeDetailsforOTGeneration',10223);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 10:58:33','SMRD.1201: SQL Query Errors Occured - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,112))))'' at line 1','192.168.0.147',90,'http://localhost:57838/Handler/UIHandler2.ashx?target=GetSelectedUserList','You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,112))))'' at line 1','GetSelectedUserList',10224);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 10:59:10','SMRD.1201: SQL Query Errors Occured - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,112))))'' at line 1','192.168.0.147',90,'http://localhost:57838/Handler/UIHandler2.ashx?target=GetSelectedUserList','You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,112))))'' at line 1','GetSelectedUserList',10225);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 11:00:03','SMRD.1201: SQL Query Errors Occured - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,178))))'' at line 1','192.168.0.147',90,'http://localhost:57838/Handler/UIHandler2.ashx?target=GetSelectedUserList','You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,178))))'' at line 1','GetSelectedUserList',10226);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 11:03:17','Object reference not set to an instance of an object.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/TAHandler.ashx?target=GetWOfffCOffEligibleEmployees','','GetWOfffCOffEligibleEmployees',10227);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 11:04:39','Object reference not set to an instance of an object.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/TAHandler.ashx?target=GetWOfffCOffEligibleEmployees','','GetWOfffCOffEligibleEmployees',10228);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 11:08:23','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','Input string was not in a correct format.','SaveToDoReminderSettings',10229);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 14:05:29','There was an error generating the XML document.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveToDoReminderSettings',10230);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 14:06:28','There was an error generating the XML document.','192.168.0.147',90,'http://localhost:57838/Handler/WorkflowHandler.ashx?target=SaveToDoReminderSettings','Instance validation error: ''0'' is not a valid value for SMRHRT.Services.Collections.ErrorCollection.ErrorInfo.ErrorType.','SaveToDoReminderSettings',10231);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 18:40:14','SMRD.1201: SQL Query Errors Occured - Unknown column ''undefined'' in ''where clause''','192.168.0.147',90,'http://localhost:57838/Handler/UIHandler2.ashx?target=GetSelectedUserList','Unknown column ''undefined'' in ''where clause''','GetSelectedUserList',10232);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 18:40:38','SMRD.1201: SQL Query Errors Occured - Unknown column ''undefined'' in ''where clause''','192.168.0.147',90,'http://localhost:57838/Handler/UIHandler2.ashx?target=GetSelectedUserList','Unknown column ''undefined'' in ''where clause''','GetSelectedUserList',10233);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 19:35:28','Arithmetic operation resulted in an overflow.','192.168.0.153',90,'http://localhost:57701/Handler/PayRollHandler.ashx?target=GenerateAttendancePay','','GenerateAttendancePay',10234);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-07-31 19:38:57','Arithmetic operation resulted in an overflow.','192.168.0.153',90,'http://localhost:57701/Handler/PayRollHandler.ashx?target=GenerateAttendancePay','','GenerateAttendancePay',10235);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 12:51:02','Object reference not set to an instance of an object.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetComponentView','','GetComponentView',10236);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 12:52:00','Conversion from string \"40000|2|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10237);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 12:52:00','Conversion from string \"40000|5|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10237);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 12:52:00','Conversion from string \"40000|3|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10237);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 12:52:00','Conversion from string \"40000|4|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10238);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 12:52:01','Object reference not set to an instance of an object.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/UIHandler.ashx?target=GetComponentView','','GetComponentView',10239);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 13:06:50','The process cannot access the file ''C:\\TalentOZ_Dell47_Suriya\\MasterCodeRoot-Stage\\TalentOZ\\TalentOZ\\UploadedFiles\\Client2\\Image\\2018711533108993631.jpg'' because it is being used by another process.','192.168.0.148',90,'http://localhost:55880/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',10240);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 13:09:30','Out of memory.','192.168.0.148',90,'http://localhost:55880/Handler/UIHandler.ashx?target=ResizeImage','','ResizeImage',10241);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 13:59:25','Conversion from string \"40000|3|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10242);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 13:59:25','Conversion from string \"40000|4|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10242);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 13:59:25','Conversion from string \"40000|2|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10242);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 13:59:25','Conversion from string \"40000|5|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10242);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:02:22','Conversion from string \"40000|3|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10243);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:02:22','Conversion from string \"40000|2|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10243);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:02:22','Conversion from string \"40000|4|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10243);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:02:22','Conversion from string \"40000|5|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10243);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:07:27','Conversion from string \"40000|2|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10244);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:07:27','Conversion from string \"40000|4|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10244);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:07:27','Conversion from string \"40000|5|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10244);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:07:27','Conversion from string \"40000|3|undefined\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string was not in a correct format.','GetFieldElements',10244);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-08-01 14:13:10','Conversion from string \"40300|4\" to type ''Integer'' is not valid.','192.168.0.108',90,'http://localhost/TalentOZstage/Handler/RecHandler.ashx?target=GetFieldElements','Input string 

@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tech.Data</RootNamespace>
     <AssemblyName>Tech.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -131,6 +132,8 @@
     <Compile Include="Query\DBTokenList.cs" />
     <Compile Include="Query\DBTop.cs" />
     <Compile Include="Query\DBUpdateQuery.cs" />
+    <Compile Include="Query\DBUpdateTable.cs" />
+    <Compile Include="Query\DBUpdateTableQuery.cs" />
     <Compile Include="Query\DBUseQuery.cs" />
     <Compile Include="Query\DBValueGroup.cs" />
     <Compile Include="Query\Internal\DBAssignSet.cs" />

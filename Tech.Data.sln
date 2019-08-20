@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tz.Core", "Tz.Core\Tz.Core.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.DataScriptManager", "Tz.DataScriptManager\Tz.DataScriptManager.csproj", "{CD38938A-54FF-4CC8-90C5-9C18AB013B09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.DataService", "Tz.DataService\Tz.DataService.csproj", "{1406B0B3-3C1A-45C3-A5A0-5D79A5129D0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlBackup(NetStandard)", "MySqlBackup\MySqlBackup(NetStandard).csproj", "{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{CD38938A-54FF-4CC8-90C5-9C18AB013B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD38938A-54FF-4CC8-90C5-9C18AB013B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD38938A-54FF-4CC8-90C5-9C18AB013B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1406B0B3-3C1A-45C3-A5A0-5D79A5129D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1406B0B3-3C1A-45C3-A5A0-5D79A5129D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1406B0B3-3C1A-45C3-A5A0-5D79A5129D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1406B0B3-3C1A-45C3-A5A0-5D79A5129D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

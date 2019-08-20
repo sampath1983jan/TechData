@@ -54,9 +54,33 @@
     <Reference Include="Microsoft.AspNet.Http.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Http.Features.1.0.0-rc1-final\lib\net451\Microsoft.AspNet.Http.Features.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.1.1.1\lib\net451\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.1.1.1\lib\net451\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.1.1.1\lib\net451\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.1.1.1\lib\net451\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Extensions.Primitives, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Primitives.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.1.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.1.1.0\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.1.1\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.1.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.WebEncoders.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.WebEncoders.Core.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.WebEncoders.Core.dll</HintPath>
@@ -65,6 +89,11 @@
       <HintPath>..\packages\Microsoft.Net.Http.Headers.1.0.0-rc1-final\lib\net451\Microsoft.Net.Http.Headers.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Data.dll</HintPath>
@@ -84,12 +113,108 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.6.0-preview8.19405.3\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.Process, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Process.4.3.0\lib\net461\System.Diagnostics.Process.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.3.0\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -133,12 +258,15 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http">
-    </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -147,6 +275,9 @@
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Webpack, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Webpack.4.0.0\lib\netstandard1.3\Webpack.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +329,7 @@
     <Compile Include="Controllers\Client\ClientController.cs" />
     <Compile Include="Controllers\Component\ComponentManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Modules\ModulesController.cs" />
     <Compile Include="Controllers\Schema\SchemaController.cs" />
     <Compile Include="Controllers\Server\ServerController.cs" />
     <Compile Include="Filters\BasicAuthentication.cs" />
@@ -220,13 +352,6 @@
     <Compile Include="Models\Table.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -251,11 +376,421 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Main.css">
+      <DependentUpon>Main.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Main.min.css">
+      <DependentUpon>Main.css</DependentUpon>
+    </Content>
     <Content Include="Content\NT-Node.css" />
+    <Content Include="dist\build.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\ace\ace.js" />
+    <Content Include="Scripts\ace\ext-beautify.js" />
+    <Content Include="Scripts\ace\ext-elastic_tabstops_lite.js" />
+    <Content Include="Scripts\ace\ext-emmet.js" />
+    <Content Include="Scripts\ace\ext-error_marker.js" />
+    <Content Include="Scripts\ace\ext-keybinding_menu.js" />
+    <Content Include="Scripts\ace\ext-language_tools.js" />
+    <Content Include="Scripts\ace\ext-linking.js" />
+    <Content Include="Scripts\ace\ext-modelist.js" />
+    <Content Include="Scripts\ace\ext-options.js" />
+    <Content Include="Scripts\ace\ext-prompt.js" />
+    <Content Include="Scripts\ace\ext-rtl.js" />
+    <Content Include="Scripts\ace\ext-searchbox.js" />
+    <Content Include="Scripts\ace\ext-settings_menu.js" />
+    <Content Include="Scripts\ace\ext-spellcheck.js" />
+    <Content Include="Scripts\ace\ext-split.js" />
+    <Content Include="Scripts\ace\ext-static_highlight.js" />
+    <Content Include="Scripts\ace\ext-statusbar.js" />
+    <Content Include="Scripts\ace\ext-textarea.js" />
+    <Content Include="Scripts\ace\ext-themelist.js" />
+    <Content Include="Scripts\ace\ext-whitespace.js" />
+    <Content Include="Scripts\ace\keybinding-emacs.js" />
+    <Content Include="Scripts\ace\keybinding-sublime.js" />
+    <Content Include="Scripts\ace\keybinding-vim.js" />
+    <Content Include="Scripts\ace\mode-abap.js" />
+    <Content Include="Scripts\ace\mode-abc.js" />
+    <Content Include="Scripts\ace\mode-actionscript.js" />
+    <Content Include="Scripts\ace\mode-ada.js" />
+    <Content Include="Scripts\ace\mode-apache_conf.js" />
+    <Content Include="Scripts\ace\mode-apex.js" />
+    <Content Include="Scripts\ace\mode-applescript.js" />
+    <Content Include="Scripts\ace\mode-aql.js" />
+    <Content Include="Scripts\ace\mode-asciidoc.js" />
+    <Content Include="Scripts\ace\mode-asl.js" />
+    <Content Include="Scripts\ace\mode-assembly_x86.js" />
+    <Content Include="Scripts\ace\mode-autohotkey.js" />
+    <Content Include="Scripts\ace\mode-batchfile.js" />
+    <Content Include="Scripts\ace\mode-bro.js" />
+    <Content Include="Scripts\ace\mode-c9search.js" />
+    <Content Include="Scripts\ace\mode-cirru.js" />
+    <Content Include="Scripts\ace\mode-clojure.js" />
+    <Content Include="Scripts\ace\mode-cobol.js" />
+    <Content Include="Scripts\ace\mode-coffee.js" />
+    <Content Include="Scripts\ace\mode-coldfusion.js" />
+    <Content Include="Scripts\ace\mode-crystal.js" />
+    <Content Include="Scripts\ace\mode-csharp.js" />
+    <Content Include="Scripts\ace\mode-csound_document.js" />
+    <Content Include="Scripts\ace\mode-csound_orchestra.js" />
+    <Content Include="Scripts\ace\mode-csound_score.js" />
+    <Content Include="Scripts\ace\mode-csp.js" />
+    <Content Include="Scripts\ace\mode-css.js" />
+    <Content Include="Scripts\ace\mode-curly.js" />
+    <Content Include="Scripts\ace\mode-c_cpp.js" />
+    <Content Include="Scripts\ace\mode-d.js" />
+    <Content Include="Scripts\ace\mode-dart.js" />
+    <Content Include="Scripts\ace\mode-diff.js" />
+    <Content Include="Scripts\ace\mode-django.js" />
+    <Content Include="Scripts\ace\mode-dockerfile.js" />
+    <Content Include="Scripts\ace\mode-dot.js" />
+    <Content Include="Scripts\ace\mode-drools.js" />
+    <Content Include="Scripts\ace\mode-edifact.js" />
+    <Content Include="Scripts\ace\mode-eiffel.js" />
+    <Content Include="Scripts\ace\mode-ejs.js" />
+    <Content Include="Scripts\ace\mode-elixir.js" />
+    <Content Include="Scripts\ace\mode-elm.js" />
+    <Content Include="Scripts\ace\mode-erlang.js" />
+    <Content Include="Scripts\ace\mode-forth.js" />
+    <Content Include="Scripts\ace\mode-fortran.js" />
+    <Content Include="Scripts\ace\mode-fsharp.js" />
+    <Content Include="Scripts\ace\mode-fsl.js" />
+    <Content Include="Scripts\ace\mode-ftl.js" />
+    <Content Include="Scripts\ace\mode-gcode.js" />
+    <Content Include="Scripts\ace\mode-gherkin.js" />
+    <Content Include="Scripts\ace\mode-gitignore.js" />
+    <Content Include="Scripts\ace\mode-glsl.js" />
+    <Content Include="Scripts\ace\mode-gobstones.js" />
+    <Content Include="Scripts\ace\mode-golang.js" />
+    <Content Include="Scripts\ace\mode-graphqlschema.js" />
+    <Content Include="Scripts\ace\mode-groovy.js" />
+    <Content Include="Scripts\ace\mode-haml.js" />
+    <Content Include="Scripts\ace\mode-handlebars.js" />
+    <Content Include="Scripts\ace\mode-haskell.js" />
+    <Content Include="Scripts\ace\mode-haskell_cabal.js" />
+    <Content Include="Scripts\ace\mode-haxe.js" />
+    <Content Include="Scripts\ace\mode-hjson.js" />
+    <Content Include="Scripts\ace\mode-html.js" />
+    <Content Include="Scripts\ace\mode-html_elixir.js" />
+    <Content Include="Scripts\ace\mode-html_ruby.js" />
+    <Content Include="Scripts\ace\mode-ini.js" />
+    <Content Include="Scripts\ace\mode-io.js" />
+    <Content Include="Scripts\ace\mode-jack.js" />
+    <Content Include="Scripts\ace\mode-jade.js" />
+    <Content Include="Scripts\ace\mode-java.js" />
+    <Content Include="Scripts\ace\mode-javascript.js" />
+    <Content Include="Scripts\ace\mode-json.js" />
+    <Content Include="Scripts\ace\mode-jsoniq.js" />
+    <Content Include="Scripts\ace\mode-jsp.js" />
+    <Content Include="Scripts\ace\mode-jssm.js" />
+    <Content Include="Scripts\ace\mode-jsx.js" />
+    <Content Include="Scripts\ace\mode-julia.js" />
+    <Content Include="Scripts\ace\mode-kotlin.js" />
+    <Content Include="Scripts\ace\mode-latex.js" />
+    <Content Include="Scripts\ace\mode-less.js" />
+    <Content Include="Scripts\ace\mode-liquid.js" />
+    <Content Include="Scripts\ace\mode-lisp.js" />
+    <Content Include="Scripts\ace\mode-livescript.js" />
+    <Content Include="Scripts\ace\mode-logiql.js" />
+    <Content Include="Scripts\ace\mode-logtalk.js" />
+    <Content Include="Scripts\ace\mode-lsl.js" />
+    <Content Include="Scripts\ace\mode-lua.js" />
+    <Content Include="Scripts\ace\mode-luapage.js" />
+    <Content Include="Scripts\ace\mode-lucene.js" />
+    <Content Include="Scripts\ace\mode-makefile.js" />
+    <Content Include="Scripts\ace\mode-markdown.js" />
+    <Content Include="Scripts\ace\mode-mask.js" />
+    <Content Include="Scripts\ace\mode-matlab.js" />
+    <Content Include="Scripts\ace\mode-maze.js" />
+    <Content Include="Scripts\ace\mode-mel.js" />
+    <Content Include="Scripts\ace\mode-mixal.js" />
+    <Content Include="Scripts\ace\mode-mushcode.js" />
+    <Content Include="Scripts\ace\mode-mysql.js" />
+    <Content Include="Scripts\ace\mode-nginx.js" />
+    <Content Include="Scripts\ace\mode-nim.js" />
+    <Content Include="Scripts\ace\mode-nix.js" />
+    <Content Include="Scripts\ace\mode-nsis.js" />
+    <Content Include="Scripts\ace\mode-objectivec.js" />
+    <Content Include="Scripts\ace\mode-ocaml.js" />
+    <Content Include="Scripts\ace\mode-pascal.js" />
+    <Content Include="Scripts\ace\mode-perl.js" />
+    <Content Include="Scripts\ace\mode-perl6.js" />
+    <Content Include="Scripts\ace\mode-pgsql.js" />
+    <Content Include="Scripts\ace\mode-php.js" />
+    <Content Include="Scripts\ace\mode-php_laravel_blade.js" />
+    <Content Include="Scripts\ace\mode-pig.js" />
+    <Content Include="Scripts\ace\mode-plain_text.js" />
+    <Content Include="Scripts\ace\mode-powershell.js" />
+    <Content Include="Scripts\ace\mode-praat.js" />
+    <Content Include="Scripts\ace\mode-prolog.js" />
+    <Content Include="Scripts\ace\mode-properties.js" />
+    <Content Include="Scripts\ace\mode-protobuf.js" />
+    <Content Include="Scripts\ace\mode-puppet.js" />
+    <Content Include="Scripts\ace\mode-python.js" />
+    <Content Include="Scripts\ace\mode-r.js" />
+    <Content Include="Scripts\ace\mode-razor.js" />
+    <Content Include="Scripts\ace\mode-rdoc.js" />
+    <Content Include="Scripts\ace\mode-red.js" />
+    <Content Include="Scripts\ace\mode-redshift.js" />
+    <Content Include="Scripts\ace\mode-rhtml.js" />
+    <Content Include="Scripts\ace\mode-rst.js" />
+    <Content Include="Scripts\ace\mode-ruby.js" />
+    <Content Include="Scripts\ace\mode-rust.js" />
+    <Content Include="Scripts\ace\mode-sass.js" />
+    <Content Include="Scripts\ace\mode-scad.js" />
+    <Content Include="Scripts\ace\mode-scala.js" />
+    <Content Include="Scripts\ace\mode-scheme.js" />
+    <Content Include="Scripts\ace\mode-scss.js" />
+    <Content Include="Scripts\ace\mode-sh.js" />
+    <Content Include="Scripts\ace\mode-sjs.js" />
+    <Content Include="Scripts\ace\mode-slim.js" />
+    <Content Include="Scripts\ace\mode-smarty.js" />
+    <Content Include="Scripts\ace\mode-snippets.js" />
+    <Content Include="Scripts\ace\mode-soy_template.js" />
+    <Content Include="Scripts\ace\mode-space.js" />
+    <Content Include="Scripts\ace\mode-sparql.js" />
+    <Content Include="Scripts\ace\mode-sql.js" />
+    <Content Include="Scripts\ace\mode-sqlserver.js" />
+    <Content Include="Scripts\ace\mode-stylus.js" />
+    <Content Include="Scripts\ace\mode-svg.js" />
+    <Content Include="Scripts\ace\mode-swift.js" />
+    <Content Include="Scripts\ace\mode-tcl.js" />
+    <Content Include="Scripts\ace\mode-terraform.js" />
+    <Content Include="Scripts\ace\mode-tex.js" />
+    <Content Include="Scripts\ace\mode-text.js" />
+    <Content Include="Scripts\ace\mode-textile.js" />
+    <Content Include="Scripts\ace\mode-toml.js" />
+    <Content Include="Scripts\ace\mode-tsx.js" />
+    <Content Include="Scripts\ace\mode-turtle.js" />
+    <Content Include="Scripts\ace\mode-twig.js" />
+    <Content Include="Scripts\ace\mode-typescript.js" />
+    <Content Include="Scripts\ace\mode-vala.js" />
+    <Content Include="Scripts\ace\mode-vbscript.js" />
+    <Content Include="Scripts\ace\mode-velocity.js" />
+    <Content Include="Scripts\ace\mode-verilog.js" />
+    <Content Include="Scripts\ace\mode-vhdl.js" />
+    <Content Include="Scripts\ace\mode-visualforce.js" />
+    <Content Include="Scripts\ace\mode-wollok.js" />
+    <Content Include="Scripts\ace\mode-xml.js" />
+    <Content Include="Scripts\ace\mode-xquery.js" />
+    <Content Include="Scripts\ace\mode-yaml.js" />
+    <Content Include="Scripts\ace\mode-zeek.js" />
+    <Content Include="Scripts\ace\snippets\abap.js" />
+    <Content Include="Scripts\ace\snippets\abc.js" />
+    <Content Include="Scripts\ace\snippets\actionscript.js" />
+    <Content Include="Scripts\ace\snippets\ada.js" />
+    <Content Include="Scripts\ace\snippets\apache_conf.js" />
+    <Content Include="Scripts\ace\snippets\apex.js" />
+    <Content Include="Scripts\ace\snippets\applescript.js" />
+    <Content Include="Scripts\ace\snippets\aql.js" />
+    <Content Include="Scripts\ace\snippets\asciidoc.js" />
+    <Content Include="Scripts\ace\snippets\asl.js" />
+    <Content Include="Scripts\ace\snippets\assembly_x86.js" />
+    <Content Include="Scripts\ace\snippets\autohotkey.js" />
+    <Content Include="Scripts\ace\snippets\batchfile.js" />
+    <Content Include="Scripts\ace\snippets\bro.js" />
+    <Content Include="Scripts\ace\snippets\c9search.js" />
+    <Content Include="Scripts\ace\snippets\cirru.js" />
+    <Content Include="Scripts\ace\snippets\clojure.js" />
+    <Content Include="Scripts\ace\snippets\cobol.js" />
+    <Content Include="Scripts\ace\snippets\coffee.js" />
+    <Content Include="Scripts\ace\snippets\coldfusion.js" />
+    <Content Include="Scripts\ace\snippets\crystal.js" />
+    <Content Include="Scripts\ace\snippets\csharp.js" />
+    <Content Include="Scripts\ace\snippets\csound_document.js" />
+    <Content Include="Scripts\ace\snippets\csound_orchestra.js" />
+    <Content Include="Scripts\ace\snippets\csound_score.js" />
+    <Content Include="Scripts\ace\snippets\csp.js" />
+    <Content Include="Scripts\ace\snippets\css.js" />
+    <Content Include="Scripts\ace\snippets\curly.js" />
+    <Content Include="Scripts\ace\snippets\c_cpp.js" />
+    <Content Include="Scripts\ace\snippets\d.js" />
+    <Content Include="Scripts\ace\snippets\dart.js" />
+    <Content Include="Scripts\ace\snippets\diff.js" />
+    <Content Include="Scripts\ace\snippets\django.js" />
+    <Content Include="Scripts\ace\snippets\dockerfile.js" />
+    <Content Include="Scripts\ace\snippets\dot.js" />
+    <Content Include="Scripts\ace\snippets\drools.js" />
+    <Content Include="Scripts\ace\snippets\edifact.js" />
+    <Content Include="Scripts\ace\snippets\eiffel.js" />
+    <Content Include="Scripts\ace\snippets\ejs.js" />
+    <Content Include="Scripts\ace\snippets\elixir.js" />
+    <Content Include="Scripts\ace\snippets\elm.js" />
+    <Content Include="Scripts\ace\snippets\erlang.js" />
+    <Content Include="Scripts\ace\snippets\forth.js" />
+    <Content Include="Scripts\ace\snippets\fortran.js" />
+    <Content Include="Scripts\ace\snippets\fsharp.js" />
+    <Content Include="Scripts\ace\snippets\fsl.js" />
+    <Content Include="Scripts\ace\snippets\ftl.js" />
+    <Content Include="Scripts\ace\snippets\gcode.js" />
+    <Content Include="Scripts\ace\snippets\gherkin.js" />
+    <Content Include="Scripts\ace\snippets\gitignore.js" />
+    <Content Include="Scripts\ace\snippets\glsl.js" />
+    <Content Include="Scripts\ace\snippets\gobstones.js" />
+    <Content Include="Scripts\ace\snippets\golang.js" />
+    <Content Include="Scripts\ace\snippets\graphqlschema.js" />
+    <Content Include="Scripts\ace\snippets\groovy.js" />
+    <Content Include="Scripts\ace\snippets\haml.js" />
+    <Content Include="Scripts\ace\snippets\handlebars.js" />
+    <Content Include="Scripts\ace\snippets\haskell.js" />
+    <Content Include="Scripts\ace\snippets\haskell_cabal.js" />
+    <Content Include="Scripts\ace\snippets\haxe.js" />
+    <Content Include="Scripts\ace\snippets\hjson.js" />
+    <Content Include="Scripts\ace\snippets\html.js" />
+    <Content Include="Scripts\ace\snippets\html_elixir.js" />
+    <Content Include="Scripts\ace\snippets\html_ruby.js" />
+    <Content Include="Scripts\ace\snippets\ini.js" />
+    <Content Include="Scripts\ace\snippets\io.js" />
+    <Content Include="Scripts\ace\snippets\jack.js" />
+    <Content Include="Scripts\ace\snippets\jade.js" />
+    <Content Include="Scripts\ace\snippets\java.js" />
+    <Content Include="Scripts\ace\snippets\javascript.js" />
+    <Content Include="Scripts\ace\snippets\json.js" />
+    <Content Include="Scripts\ace\snippets\jsoniq.js" />
+    <Content Include="Scripts\ace\snippets\jsp.js" />
+    <Content Include="Scripts\ace\snippets\jssm.js" />
+    <Content Include="Scripts\ace\snippets\jsx.js" />
+    <Content Include="Scripts\ace\snippets\julia.js" />
+    <Content Include="Scripts\ace\snippets\kotlin.js" />
+    <Content Include="Scripts\ace\snippets\latex.js" />
+    <Content Include="Scripts\ace\snippets\less.js" />
+    <Content Include="Scripts\ace\snippets\liquid.js" />
+    <Content Include="Scripts\ace\snippets\lisp.js" />
+    <Content Include="Scripts\ace\snippets\livescript.js" />
+    <Content Include="Scripts\ace\snippets\logiql.js" />
+    <Content Include="Scripts\ace\snippets\logtalk.js" />
+    <Content Include="Scripts\ace\snippets\lsl.js" />
+    <Content Include="Scripts\ace\snippets\lua.js" />
+    <Content Include="Scripts\ace\snippets\luapage.js" />
+    <Content Include="Scripts\ace\snippets\lucene.js" />
+    <Content Include="Scripts\ace\snippets\makefile.js" />
+    <Content Include="Scripts\ace\snippets\markdown.js" />
+    <Content Include="Scripts\ace\snippets\mask.js" />
+    <Content Include="Scripts\ace\snippets\matlab.js" />
+    <Content Include="Scripts\ace\snippets\maze.js" />
+    <Content Include="Scripts\ace\snippets\mel.js" />
+    <Content Include="Scripts\ace\snippets\mixal.js" />
+    <Content Include="Scripts\ace\snippets\mushcode.js" />
+    <Content Include="Scripts\ace\snippets\mysql.js" />
+    <Content Include="Scripts\ace\snippets\nginx.js" />
+    <Content Include="Scripts\ace\snippets\nim.js" />
+    <Content Include="Scripts\ace\snippets\nix.js" />
+    <Content Include="Scripts\ace\snippets\nsis.js" />
+    <Content Include="Scripts\ace\snippets\objectivec.js" />
+    <Content Include="Scripts\ace\snippets\ocaml.js" />
+    <Content Include="Scripts\ace\snippets\pascal.js" />
+    <Content Include="Scripts\ace\snippets\perl.js" />
+    <Content Include="Scripts\ace\snippets\perl6.js" />
+    <Content Include="Scripts\ace\snippets\pgsql.js" />
+    <Content Include="Scripts\ace\snippets\php.js" />
+    <Content Include="Scripts\ace\snippets\php_laravel_blade.js" />
+    <Content Include="Scripts\ace\snippets\pig.js" />
+    <Content Include="Scripts\ace\snippets\plain_text.js" />
+    <Content Include="Scripts\ace\snippets\powershell.js" />
+    <Content Include="Scripts\ace\snippets\praat.js" />
+    <Content Include="Scripts\ace\snippets\prolog.js" />
+    <Content Include="Scripts\ace\snippets\properties.js" />
+    <Content Include="Scripts\ace\snippets\protobuf.js" />
+    <Content Include="Scripts\ace\snippets\puppet.js" />
+    <Content Include="Scripts\ace\snippets\python.js" />
+    <Content Include="Scripts\ace\snippets\r.js" />
+    <Content Include="Scripts\ace\snippets\razor.js" />
+    <Content Include="Scripts\ace\snippets\rdoc.js" />
+    <Content Include="Scripts\ace\snippets\red.js" />
+    <Content Include="Scripts\ace\snippets\redshift.js" />
+    <Content Include="Scripts\ace\snippets\rhtml.js" />
+    <Content Include="Scripts\ace\snippets\rst.js" />
+    <Content Include="Scripts\ace\snippets\ruby.js" />
+    <Content Include="Scripts\ace\snippets\rust.js" />
+    <Content Include="Scripts\ace\snippets\sass.js" />
+    <Content Include="Scripts\ace\snippets\scad.js" />
+    <Content Include="Scripts\ace\snippets\scala.js" />
+    <Content Include="Scripts\ace\snippets\scheme.js" />
+    <Content Include="Scripts\ace\snippets\scss.js" />
+    <Content Include="Scripts\ace\snippets\sh.js" />
+    <Content Include="Scripts\ace\snippets\sjs.js" />
+    <Content Include="Scripts\ace\snippets\slim.js" />
+    <Content Include="Scripts\ace\snippets\smarty.js" />
+    <Content Include="Scripts\ace\snippets\snippets.js" />
+    <Content Include="Scripts\ace\snippets\soy_template.js" />
+    <Content Include="Scripts\ace\snippets\space.js" />
+    <Content Include="Scripts\ace\snippets\sparql.js" />
+    <Content Include="Scripts\ace\snippets\sql.js" />
+    <Content Include="Scripts\ace\snippets\sqlserver.js" />
+    <Content Include="Scripts\ace\snippets\stylus.js" />
+    <Content Include="Scripts\ace\snippets\svg.js" />
+    <Content Include="Scripts\ace\snippets\swift.js" />
+    <Content Include="Scripts\ace\snippets\tcl.js" />
+    <Content Include="Scripts\ace\snippets\terraform.js" />
+    <Content Include="Scripts\ace\snippets\tex.js" />
+    <Content Include="Scripts\ace\snippets\text.js" />
+    <Content Include="Scripts\ace\snippets\textile.js" />
+    <Content Include="Scripts\ace\snippets\toml.js" />
+    <Content Include="Scripts\ace\snippets\tsx.js" />
+    <Content Include="Scripts\ace\snippets\turtle.js" />
+    <Content Include="Scripts\ace\snippets\twig.js" />
+    <Content Include="Scripts\ace\snippets\typescript.js" />
+    <Content Include="Scripts\ace\snippets\vala.js" />
+    <Content Include="Scripts\ace\snippets\vbscript.js" />
+    <Content Include="Scripts\ace\snippets\velocity.js" />
+    <Content Include="Scripts\ace\snippets\verilog.js" />
+    <Content Include="Scripts\ace\snippets\vhdl.js" />
+    <Content Include="Scripts\ace\snippets\visualforce.js" />
+    <Content Include="Scripts\ace\snippets\wollok.js" />
+    <Content Include="Scripts\ace\snippets\xml.js" />
+    <Content Include="Scripts\ace\snippets\xquery.js" />
+    <Content Include="Scripts\ace\snippets\yaml.js" />
+    <Content Include="Scripts\ace\snippets\zeek.js" />
+    <Content Include="Scripts\ace\theme-ambiance.js" />
+    <Content Include="Scripts\ace\theme-chaos.js" />
+    <Content Include="Scripts\ace\theme-chrome.js" />
+    <Content Include="Scripts\ace\theme-clouds.js" />
+    <Content Include="Scripts\ace\theme-clouds_midnight.js" />
+    <Content Include="Scripts\ace\theme-cobalt.js" />
+    <Content Include="Scripts\ace\theme-crimson_editor.js" />
+    <Content Include="Scripts\ace\theme-dawn.js" />
+    <Content Include="Scripts\ace\theme-dracula.js" />
+    <Content Include="Scripts\ace\theme-dreamweaver.js" />
+    <Content Include="Scripts\ace\theme-eclipse.js" />
+    <Content Include="Scripts\ace\theme-github.js" />
+    <Content Include="Scripts\ace\theme-gob.js" />
+    <Content Include="Scripts\ace\theme-gruvbox.js" />
+    <Content Include="Scripts\ace\theme-idle_fingers.js" />
+    <Content Include="Scripts\ace\theme-iplastic.js" />
+    <Content Include="Scripts\ace\theme-katzenmilch.js" />
+    <Content Include="Scripts\ace\theme-kr_theme.js" />
+    <Content Include="Scripts\ace\theme-kuroir.js" />
+    <Content Include="Scripts\ace\theme-merbivore.js" />
+    <Content Include="Scripts\ace\theme-merbivore_soft.js" />
+    <Content Include="Scripts\ace\theme-monokai.js" />
+    <Content Include="Scripts\ace\theme-mono_industrial.js" />
+    <Content Include="Scripts\ace\theme-pastel_on_dark.js" />
+    <Content Include="Scripts\ace\theme-solarized_dark.js" />
+    <Content Include="Scripts\ace\theme-solarized_light.js" />
+    <Content Include="Scripts\ace\theme-sqlserver.js" />
+    <Content Include="Scripts\ace\theme-terminal.js" />
+    <Content Include="Scripts\ace\theme-textmate.js" />
+    <Content Include="Scripts\ace\theme-tomorrow.js" />
+    <Content Include="Scripts\ace\theme-tomorrow_night.js" />
+    <Content Include="Scripts\ace\theme-tomorrow_night_blue.js" />
+    <Content Include="Scripts\ace\theme-tomorrow_night_bright.js" />
+    <Content Include="Scripts\ace\theme-tomorrow_night_eighties.js" />
+    <Content Include="Scripts\ace\theme-twilight.js" />
+    <Content Include="Scripts\ace\theme-vibrant_ink.js" />
+    <Content Include="Scripts\ace\theme-xcode.js" />
+    <Content Include="Scripts\ace\worker-coffee.js" />
+    <Content Include="Scripts\ace\worker-css.js" />
+    <Content Include="Scripts\ace\worker-html.js" />
+    <Content Include="Scripts\ace\worker-javascript.js" />
+    <Content Include="Scripts\ace\worker-json.js" />
+    <Content Include="Scripts\ace\worker-lua.js" />
+    <Content Include="Scripts\ace\worker-php.js" />
+    <Content Include="Scripts\ace\worker-xml.js" />
+    <Content Include="Scripts\ace\worker-xquery.js" />
+    <Content Include="Scripts\app\Component.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
@@ -279,7 +814,23 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="appsettings.json" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Scripts\ace\mode-QScriptMode.js" />
+    <Content Include="Scripts\requires.js" />
+    <Content Include="Scripts\vue.js" />
+    <Content Include="Scripts\vue.min.js" />
+    <Content Include="Scripts\vue\vue.common.dev.js" />
+    <Content Include="Scripts\vue\vue.esm.js" />
+    <Content Include="Scripts\vue\vue.js" />
+    <Content Include="Scripts\vue\vue.min.js" />
+    <Content Include="vue\main.js" />
+    <Content Include="libman.json" />
+    <Content Include="webpack.config.js" />
+    <Content Include="Content\Main.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Content\theme.scss" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Controls\ColorPicker\bootstrap-colorpicker.js" />
     <Content Include="Scripts\Controls\ComboBox\ComboBox.js" />
@@ -328,20 +879,26 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\vw_Home\About.cshtml" />
+    <Content Include="Views\vw_Home\Contact.cshtml" />
+    <Content Include="Views\vw_Home\Index.cshtml" />
     <Content Include="Views\Authentication\Login.cshtml" />
     <Content Include="Views\Authentication\index.cshtml" />
     <Content Include="Views\Authentication\Registration.cshtml" />
+    <Content Include="Views\vw_Client\Client.cshtml" />
+    <Content Include="Views\vw_Server\Server.cshtml" />
+    <Content Include="Views\vw_Schema\Schema.cshtml" />
+    <Content Include="Views\vw_Schema\DataScript.cshtml" />
+    <Content Include="Views\vw_ComponentManager\Index.cshtml" />
+    <Content Include="Views\vw_ComponentManager\Lookup.cshtml" />
+    <Content Include="Views\vw_Schema\Backup.cshtml" />
+    <Content Include="Views\vw_Schema\Restore.cshtml" />
+    <Content Include="Views\vw_Modules\Home.cshtml" />
+    <Content Include="vue\app.vue" />
+    <Content Include="vue\FileReader.vue" />
+    <Content Include="vue\login.vue" />
+    <Content Include="vue\Client\ClientList.vue" />
     <Content Include="Views\Client\Client.cshtml" />
-    <Content Include="Views\Server\Server.cshtml" />
-    <Content Include="Views\Schema\Schema.cshtml" />
-    <Content Include="Views\Schema\DataScript.cshtml" />
-    <Content Include="Views\ComponentManager\Index.cshtml" />
-    <Content Include="Views\ComponentManager\Lookup.cshtml" />
-    <Content Include="Views\Schema\Backup.cshtml" />
-    <Content Include="Views\Schema\Restore.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

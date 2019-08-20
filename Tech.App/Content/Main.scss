@@ -1,0 +1,10 @@
+﻿$BodyMargin:20px;
+$BGColor:#ffd800;
+@import 'theme';
+
+body {
+    margin:$BodyMargin;
+    background-color:$BGColor;
+    padding:$padding;
+}
+

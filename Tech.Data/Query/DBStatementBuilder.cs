@@ -1509,7 +1509,9 @@ namespace Tech.Data.Query
         /// <param name="name">The name for the database object that will ber created</param>
         /// <param name="options"></param>
         /// <param name="checknotexists"></param>
-        public virtual void BeginCreate(DBSchemaTypes type, string owner, string name, string options, bool checknotexists)
+        public virtual void BeginCreate(DBSchemaTypes type, string owner, string name,
+            string options,
+            bool checknotexists)
         {
             this.CurrentlyCreating = type;
 
@@ -1635,6 +1637,16 @@ namespace Tech.Data.Query
             return (type == DBSchemaTypes.ForeignKey) || (type == DBSchemaTypes.PrimaryKey);
         }
 
+        #endregion
+        #region Alter table
+        public virtual void BeginAlter(DBSchemaTypes type,AlterType alterType) {
+            this.BeginNewLine();
+
+        }
+
+        public virtual void EndAlter(DBSchemaTypes type, AlterType alterType) {
+
+        }
         #endregion
 
         #region public virtual void BeginTableConstraints() + EndTableConstraints()

@@ -1,0 +1,718 @@
+F094','claim_claimrequest','Claim Request','RequestID','RequestedFor',NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF095','claim_claimrequestitems','Claim Request Items','RequestID','ItemID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF096','lms_audittrail','Leave Audit Trail','AuditID','UserID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF097','lms_eligible_employee','Leave Eligible Employee','','LeaveTypeID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF098','lms_employee_leave','Employee Leave','','LeaveTypeID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF099','lms_employee_leave_entitlement\n','Employee Leave Entitlement','','LeaveTypeID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF100','lms_employee_leaveaccount','Employee Leave Account','Year','',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF101','lms_entitlement','Leave Entitlement','EntitlementID','LeaveTypeID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF102','lms_holidays','Holidays','HolidayID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF103','toz_workflow','workflow','WorkflowID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF104','toz_workflow_step','workflowstep','StepID','WorkflowID','',2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF105','toz_workflow_step_owner','workflowstepowner','StepID','WorkflowID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF106','lms_leave_Request','Leave Request','RequestID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF107','vw_activeEmployeeList','Active Employee Lsit','UserID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF108','sys_role','Role','RoleID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF109','sys_user_role','UserRole','RoleID',NULL,NULL,3);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF110','vw_lms_leaveType','LeaveType','LeaveTypeID','BusinessUnitID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF111','lms_leave_roaster','LeaveRoaster','RequestID','UserID',NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF112','currency','currency','CurrencyID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF113','sys_timezone','Time Zone','TimeZoneID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF114','lms_schedule','schedule','ScheduleID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF115','lms_weekday','Work Weekefinition','ScheduleID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF116','lms_weekend','Week End Defn','ScheduleID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF117','lms_AttendanceReport','Attendance Report','ImportID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF118','lms_dtr','Daily Time Report',NULL,NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF119','lms_dtr_checkIn','Daily Time Report CheckIn','UserId',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF120','lms_AttendanceNote_Request','Attendance Note Request','RequestID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF121','lms_EmployeeSchedule','Employee Schedule','ScheduleID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF122','lms_leave_accrual','Leave Accrual','AccrualID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF123','lms_leave_accrual_businessunit','Leave Accrual Business Unit','AccrualID','BusinessUnitID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF124','vw_lms_irregularity','Irregularities Reports','UserID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF125','vw_lms_employeeworkinghourssummary','Employee Monthly Working Hours','UserID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF126','vw_activeEmployeeList','Active Employee List Used For Excel Reports','UserID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF127','vw_lms_dtr','Consolidated DTR Report','UserID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF128','vw_employee_absence','EmployeeAbsence','UserID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF129','lms_leave_period','LeavePeriod','LeavePeriodID',NULL,NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF130','vw_lms_leavelist','Leave List Report','UserID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF131','vw_traningprogram','vw_traningprogram','UserID','','',5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF132','vw_lms_rpt_leavelistreport','Leave List View','ClientID','UserID',NULL,3);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF133','vw_traningprogram','vw_traningprogram','UserID','',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF134','vw_activeemployeelist','Active Employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF135','vw_activeemployeelist','ActiveEmployeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF136','vw_activeemployeelist','Active Employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF137','vw_currentpositionmatch','vw_currentpositionmatch','userid',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF138','vw_tna','vw_tna','UserID','',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF139','vw_positionmatchpercentagebydept','vw_positionmatchpercentagebydept','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF140','vw_employeedevprgsuggesstion','vw_employeedevprgsuggesstion','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF141','performanceappraisal','performanceappraisal','PerformanceAppraisalID','',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF142','performanceappraisal','performanceappraisal','Title',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF143','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF144','vw_employee_pref_report','vw_employee_pref_report','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF145','vw_activeemployeelist','vw_activeemployeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF147','vw_ca_EmployeeGoalReport','vw_ca_EmployeeGoalReport','UserID','','',5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF148','vw_ca_posiitonCompetencylist','vw_ca_posiitonCompetencylist','PositionID','','',5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF153','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF154','vw_activeemployeelist','vw_activeemployeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF155','vw_lms_Claimtype','ClaimType','ClaimTypeID','BusinessUnitID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF156','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF157','claim_travel_advance','claim_travel_advance','TravelAdvanceRequestID','UserID',NULL,1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF158','claim_ta_detail','claim_ta_detail','TravelAdvanceRequestID','TravelDetailID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF159','claim_ta_anticipation','claim_ta_anticipation','TravelAdvanceRequestID','AnticipationID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF160','vw_report_employeelist','vw_report_employeelist','USerID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF161','sys_user_custom_client_2','sys_user_custom_client_2','UserID',NULL,NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF162','vw_GetClaimsCyclewithBU','Claim Cycle','ClaimCycleDtlID','BusinessUnitID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF163','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF164','vw_report_employeelist','vw_report_employeelist','UserID','','',5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF165','vw_Emp_ServiceRequest','HRServiceName','HRServiceID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF166','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF167','vw_activeemployeelist','vw_activeemployeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF168','vw_activeemployeelist','vw_activeemployeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF169','vw_report_employeelist','vw_report_employeelist','UserID','','',5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF170','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF171','vw_lms_leaveType','LeaveType','LeaveTypeID','BusinessUnitID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF172','vw_report_employeelist','vw_report_employeelist','UserID','BusinessUnitID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF173','vw_report_employeelist','vw_report_employeelist','ClientID','UserID','',3);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF174','vw_report_employeelist','vw_report_employeelist','ClientID','UserID',NULL,3);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF175','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,3);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF176','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF177','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF178','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF179','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF180','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF181','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF182','vw_lms_leaveType','LeaveType','LeaveTypeID','BusinessUnitID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF183','quarters','quarters','ClientID','QuarterID','',1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF184','vw_reportemployeelist','vw_reportemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF185','vw_reportemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF186','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF187','vw_activeemployeelist','vw_activeemployeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF189','businessunit','businessunit','BusinessUnitID',NULL,NULL,4);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF190','recruitment_resumebank_qualification','qualification','ClientID','CandidateID','QualificationID',6);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF191','recruitment_resumebank_Skills','Skills','ClientID','CandidateID','SkillID',6);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF192','recruitment_resumebank_Address','Address','ClientID','CandidateID','AddressID',6);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF193','recruitment_resumebank_experience','experience','ClientID','CandidateID','ExperienceID',6);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF194','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF195','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF196','vw_reportemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF197','vw_reportemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF198','costcenter','costcenter','CostCenterID',NULL,NULL,7);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF199','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF200','Vw_Currency','currency','currencyID','','',1);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF201','vw_reportemployeelist','vw_reportemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF202','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF204','vw_report_employeelist','vw_report_employeelist','UserID',NULL,NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF205','employee_bandgrade','employee bandgrade','UserID','GradeID',NULL,2);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF206','vw_activeemployeelist','vw_activeemployeelist','ClientID','UserID',NULL,5);
+INSERT INTO `sys_entityframe`(`EntityFrameID`,`TableName`,`AliasName`,`IDField1`,`IDField2`,`IDField3`,`Type`) VALUES
+('ETF207','vw_activeemployeelist','vw_activeemployeelist','UserID',NULL,NULL,5);
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityframe` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityframegroup
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityframegroup` (
+  `EFGid` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `EFRid` varchar(100) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`EFGid`,`EFRid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_entityframegroup
+-- 
+
+/*!40000 ALTER TABLE `sys_entityframegroup` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0001','EFR0001');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0002','EFR0001');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0002','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0003','EFR0001');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0003','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0003','EFR0029');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0004','EFR0001');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0004','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0004','EFR0028');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0001');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0028');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0029');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0037');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0038');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0119');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0005','EFR0120');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0006','EFR0026');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0006','EFR0030');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0007','EFR0026');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0007','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0007','EFR0030');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0008','EFR0026');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0008','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0008','EFR0029');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0008','EFR0030');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0009','EFR0026');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0009','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0009','EFR0028');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0009','EFR0030');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0010','EFR0026');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0010','EFR0027');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0010','EFR0028');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0010','EFR0029');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0010','EFR0030');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0011','EFR0031');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0011','EFR0033');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0012','EFR0031');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0012','EFR0033');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0012','EFR0034');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0013','EFR0031');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0013','EFR0033');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0013','EFR0034');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0013','EFR0036');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0014','EFR0031');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0014','EFR0033');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0014','EFR0034');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0014','EFR0035');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0015','EFR0031');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0015','EFR0033');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0015','EFR0034');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0015','EFR0035');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0015','EFR0036');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0016','EFR0057');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0017','EFR0090');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0017','EFR0091');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0017','EFR0092');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0017','EFR0093');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0018','EFR0094');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0019','EFR0095');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0020','EFR0096');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0021','EFR0099');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0022','EFR0100');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0023','EFR0101');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0024','EFR0102');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0025','EFR0103');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0026','EFR0104');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0027','EFR0105');
+INSERT INTO `sys_entityframegroup`(`EFGid`,`EFRid`) VALUES
+('EFG0028','EFR0110');
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityframegroup` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityframeinstance
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityframeinstance` (
+  `EntityFrameInstanceID` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `EntityFrameID` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `FieldTypeID` int(11) DEFAULT NULL,
+  `FieldDescription` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `LookupFieldID` int(11) DEFAULT NULL,
+  `FieldAttribute` varchar(1000) CHARACTER SET latin1 DEFAULT NULL,
+  `LookUpComponent` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `LookUpComponentField` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `ParentField` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `ParentEntity` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`EntityFrameInstanceID`,`EntityFrameID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='To Save the Field Instance of the enetity';
+
+-- 
+-- Dumping data for table sys_entityframeinstance
+-- 
+
+/*!40000 ALTER TABLE `sys_entityframeinstance` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Absent','ETF124',2,'Absent',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AccrualFrequency','ETF122',3,'AccrualFrequency',170,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AccrualID','ETF122',1,'AccrualID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AccrualID','ETF123',1,'AccrualID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Achieved','ETF022',1,'Achieved',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Achieved','ETF053',1,'Achieved',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Achieved','ETF147',1,'Achieved',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Acknowledgement','ETF050',1,'Acknowledgement',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"9\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Acknowledgement','ETF084',1,'Acknowledgement',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"9\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ActionTaken','ETF015',2,'Action Taken',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ActionType','ETF015',3,'Action Type',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Activity','ETF042',2,'Activity',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Actual','ETF147',1,'Actual',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','0','0','0','0');
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AddedBy','ETF053',1,'AddedBy',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Address','ETF037',2,'Address',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Address','ETF085',6,'Address',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AdjustmentCount','ETF117',1,'Adjustment Count',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"13\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Age','ETF061',1,'Age',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AgeLimit','ETF061',1,'AgeLimit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AgeValue','ETF059',2,'AgeValue',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AgeValue','ETF073',2,'Age Value',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"8\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AllowToChooseApprover','ETF103',1,'AllowToChooseApprover',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Amount','ETF012',12,'Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Amount','ETF030',1,'Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Amount','ETF092',12,'Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Amount','ETF093',12,'Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Amount','ETF095',12,'Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Amount','ETF159',12,'Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AnticipationID','ETF159',1,'AnticipationID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appointmentstatus','ETF137',3,'Appointment status',111,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appointmentstatus','ETF138',3,'Appointment status',111,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appointmentstatus','ETF139',3,'Appointment Status',111,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appointmentstatus','ETF140',3,'Appointment Status',111,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appointmentstatus','ETF143',3,'Appointment Status',111,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appointmentstatus','ETF174',3,'Appointment Status',111,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AppointmentType','ETF061',1,'AppointmentType',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AppraisalEndDate','ETF044',0,'Appraisal End Date',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AppraisalStartDate','ETF044',0,'Appraisal Start Date',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('appraisalstartdate','ETF144',1,'appraisalstartdate',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Appraisaltitle','ETF144',1,'Appraisal title',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ApprovalRemarks','ETF053',2,'Approval Remarks',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"11\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ApprovalStatus','ETF053',1,'Approval Status',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"10\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssessmentCode','ETF006',2,'Assessment Code',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"10\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssessmentStatus','ETF006',1,'Assessment Status',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssessmentType','ETF006',1,'Assessment Type',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssignDate','AssignDate',0,'AssignDate',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssignDate','ETF056',0,'Assign Date',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssignedDate','ETF022',0,'AssignedDate',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AssignedDate','ETF023',0,'Assigned Date',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Availed','ETF100',12,'Availed',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AvailedAmount','ETF093',12,'AvailedAmount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AverageScore','ETF053',12,'Average Score',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"12\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('AverageWeightedScore','ETF053',12,'Average Weighted Score',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"13\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Balance','ETF031',12,'Balance',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"8\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Balance','ETF032',12,'Balance',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BaseType','ETF108',1,'BaseType',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Body','ETF062',6,'Body',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BudgetAmount','ETF031',12,'Budget Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BudgetAmount','ETF032',12,'Budget Amount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Business Unit','ETF147',2,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitCurrency','ETF031',1,'Business Unit Currency',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF001',1,'Business Unit ID',NULL,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF087',1,'BusinessUnitID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF091',1,'BusinessUnitID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF107',22,'BusinessUnitID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF123',1,'BusinessUnitID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF126',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF131',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF132',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF133',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF134',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF135',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF136',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF137',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF138',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF139',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF140',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015','','');
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF143',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF144',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF145',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF147',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF148',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF153',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF154',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000',NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF156',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF157',12,'BusinessUnitID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF160',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF163',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF164',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF166',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF167',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF168',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF169',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF170',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','F_300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF171',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF172',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF173',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF174',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF175',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF176',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF177',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF178',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF179',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF180',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF181',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF182',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF184',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF185',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF186',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF187',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF194',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF195',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF196',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF197',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF199',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF201',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF202',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF204',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitID','ETF206',22,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','300000','300015',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitName','ETF107',2,'BusinessUnitName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitName','ETF126',2,'BusinessUnitName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitName','ETF144',1,'BusinessUnitName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitName','ETF148',2,'Business Unit',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitName','ETF167',2,'BusinessUnitName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('BusinessUnitName','ETF168',2,'BusinessUnitName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CandidateCount','ETF070',1,'CandidateCount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CandidateID','ETF065',1,'CandidateID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CandidateStatus','ETF063',1,'CandidateStatus',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CandidateType','ETF063',1,'CandidateType',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Category','ETF012',3,'Category',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Category','ETF064',2,'Category',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Category','ETF103',1,'Category',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('category','ETF131',0,'category',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,'0',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Category','ETF133',3,'Category',172,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,'',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Category','ETF170',3,'Category',214,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CategoryID','ETF063',1,'CategoryID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CategoryID','ETF133',1,'CategoryID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CategoryName','ETF131',0,'CategoryName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,'0',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CategoryName','ETF133',0,'CategoryName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,'',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CCL','ETF013',3,'CCL',-1,'{\"FormatString\":\"\" , \"isRequired\":\"false\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CCL','ETF137',0,'CCL',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CCL','ETF138',0,'CCL',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('CCL','ETF140',1,'CCL',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ChooseAfterStartDate','ETF153',11,'ChooseAfterStartDate',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimAmount','ETF091',12,'ClaimAmount',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimCycle','ETF154',22,'Claim Cycle',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"9\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','800000','ClaimCycle',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimCycle','ETF162',22,'ClaimCycle',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','800000','ClaimCycle',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimID','ETF090',1,'ClaimID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimStatus','ETF166',3,'Filter By',297,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"7\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','0','0','','');
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimStatus','ETF169',3,'Claim Status',202,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimstatusID','ETF154',3,'Claim Status',188,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimSubmittedStatus','ETF169',3,'Claim Submitted',210,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,'',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimType','ETF086',2,'ClaimTypeName',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimType','ETF091',1,'ClaimType',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimType','ETF095',1,'ClaimType',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"3\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('Claimtype','ETF154',22,'Claim Type',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"6\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','700000','ClaimType',NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimType','ETF155',22,'ClaimType',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"5\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}','700000','ClaimType','','');
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimTypeDescription','ETF086',6,'ClaimTypeDescription',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"2\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimTypeID','ETF086',1,'ClaimTypeID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"4\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALUES
+('ClaimTypeID','ETF087',1,'ClaimTypeID',-1,'{\"FormatString\":\"\" , \"isRequired\":\"true\",\"isUnique\":\"true\", \"Default Value\":\"\",\"FieldDisplayOrder\":\"1\",\"ErrorMsg\":\"\",\"FieldHelp\":\"\"}',NULL,NULL,NULL,NULL);
+INSERT INTO `sys_entityframeinstance`(`EntityFrameInstanceID`,`EntityFrameID`,`FieldTypeID`,`FieldDescription`,`LookupFieldID`,`FieldAttribute`,`LookUpComponent`,`LookUpComponentField`,`ParentField`,`ParentEntity`) VALU

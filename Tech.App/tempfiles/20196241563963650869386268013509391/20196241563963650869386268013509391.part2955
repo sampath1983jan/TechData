@@ -1,0 +1,622 @@
+`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1629,4279,'Approver',2,5,0,NULL,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:56:28');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1630,4261,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:10:09');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1630,4267,'Processor',3,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:10:58');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1630,4270,'Approver1',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:11:47');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1630,4280,'Approver',2,4,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:56:28');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1630,4281,'Approver',2,5,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:56:28');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1631,4262,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:10:10');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1631,4268,'Processor',3,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:10:58');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1631,4271,'Approver1',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:11:47');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1631,4281,'Approver',2,4,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:56:28');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1631,4282,'Approver',2,5,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:56:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1632,4272,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:19:23');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1632,4300,'Approver1',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 15:11:42');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1632,4303,'Approver2',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 15:11:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1632,4306,'Approver3',2,4,0,1,0,NULL,NULL,0,0,0,0,0,'2018-11-12 15:11:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1633,4273,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:21:21');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1633,4301,'Approver1',2,2,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:11:42');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1633,4304,'Approver2',2,3,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:11:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1633,4307,'Approver3',2,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:11:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1634,4274,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:21:23');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1634,4302,'Approver1',2,2,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:11:42');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1634,4305,'Approver2',2,3,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:11:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1634,4308,'Approver3',2,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:11:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1635,4283,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:58:00');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1635,4286,'Approver',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:58:15');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1635,4292,'Approver2',2,4,0,1,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:58:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1635,4295,'Approver3',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 11:00:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1636,4284,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:58:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1636,4287,'Approver',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:58:16');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1636,4293,'Approver2',2,3,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:58:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1636,4296,'Approver3',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 11:00:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1637,4285,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 10:58:03');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1637,4288,'Approver',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:58:16');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1637,4294,'Approver2',2,3,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 10:58:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1637,4297,'Approver3',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 11:00:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1638,4298,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 14:57:30');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1638,4299,'Approver step',2,2,0,1,0,NULL,NULL,0,0,1,0,0,'2018-11-12 14:59:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1639,4309,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 15:16:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1639,4312,'Approver1',2,2,0,0,0,NULL,0,0,0,0,0,0,'2018-11-12 15:16:24');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1639,4321,'Approver1',2,3,0,0,0,NULL,NULL,0,0,0,0,1,'2018-11-26 10:44:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1639,4324,'Approver3',2,4,0,1,0,NULL,NULL,0,0,0,0,0,'2018-11-12 16:31:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1640,4310,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 15:16:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1640,4313,'Approver1',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:16:24');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1640,4322,'Approver1',2,3,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-26 10:44:45');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1640,4325,'Approver3',2,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 16:31:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1641,4311,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 15:16:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1641,4314,'Approver1',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 15:16:24');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1641,4323,'Approver1',2,3,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-26 10:44:45');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1641,4326,'Approver3',2,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 16:31:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1642,4327,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 17:35:03');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1642,4330,'Approver1',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 17:35:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1642,4333,'Approver2',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 17:35:21');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1642,4336,'Approver3',2,5,0,1,0,NULL,NULL,0,0,0,0,0,'2018-11-12 17:35:34');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1642,4339,'Approver4',2,4,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-13 10:39:05');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1642,4373,'test',2,6,0,NULL,0,NULL,NULL,0,0,0,0,0,'2018-11-13 17:31:43');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1643,4328,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 17:35:04');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1643,4331,'Approver1',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 17:35:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1643,4334,'Approver2',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 17:35:21');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1643,4337,'Approver3',2,5,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 17:35:34');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1643,4340,'Approver4',2,4,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-13 10:39:05');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1643,4374,'test',2,6,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-13 17:31:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1644,4329,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-12 17:35:04');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1644,4332,'Approver1',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 17:35:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1644,4335,'Approver2',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 17:35:21');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1644,4338,'Approver3',2,5,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-12 17:35:34');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1644,4341,'Approver4',2,4,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-13 10:39:05');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1644,4375,'test',2,6,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-11-13 17:31:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1645,4379,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-15 10:57:32');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1645,4380,'Approver',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-15 10:57:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1645,4381,'Approver',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-15 10:57:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1645,4382,'Processor',3,4,0,0,0,NULL,NULL,0,0,0,0,0,'2018-11-15 10:58:10');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1645,4383,'Processor2',3,5,0,1,0,NULL,NULL,0,0,0,0,0,'2018-11-15 16:12:55');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1646,4385,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-11-16 14:34:54');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1647,4387,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-29 16:29:01');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1647,4388,'Approver',2,2,1,0,0,NULL,NULL,0,0,0,0,0,'2018-11-30 11:49:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1647,4408,'Processor1',3,3,0,1,0,NULL,NULL,0,0,0,0,0,'2019-05-08 12:04:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1647,4597,'Processor2',3,4,0,NULL,0,NULL,NULL,0,0,0,0,0,'2019-05-08 11:57:25');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1648,4389,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-17 11:35:07');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1649,4390,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-17 11:40:39');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1650,4391,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-17 11:42:57');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1651,4392,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-12-17 12:08:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1651,4611,'Approver',2,2,0,1,0,NULL,NULL,0,0,0,0,0,'2019-05-20 16:11:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1652,4397,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-12-26 12:21:03');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1652,4400,'sa',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2018-12-26 12:21:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1652,4403,'a',2,3,0,1,0,NULL,NULL,0,0,0,0,0,'2018-12-26 12:21:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1653,4398,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-12-26 12:21:04');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1653,4401,'sa',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-12-26 12:21:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1653,4404,'a',2,3,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-12-26 12:21:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1654,4399,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2018-12-26 12:21:04');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1654,4402,'sa',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-12-26 12:21:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1654,4405,'a',2,3,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-12-26 12:21:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1655,4410,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-28 11:08:48');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1655,4413,'l1',2,2,0,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-28 11:09:00');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1656,4411,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-28 11:08:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1656,4414,'l1',2,2,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-12-28 11:09:00');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1657,4412,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2018-12-28 11:08:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1657,4415,'l1',2,2,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2018-12-28 11:09:00');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1658,4416,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-01-04 17:39:33');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1658,4417,'Apporver',2,2,0,1,0,NULL,NULL,0,0,0,0,0,'2019-01-04 17:39:50');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1659,4419,'Initiator Step',1,1,1,1,0,NULL,NULL,0,0,0,0,0,'2019-01-07 16:01:40');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1661,4421,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-01-10 17:48:48');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1661,4424,'s',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-01-10 17:49:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1661,4485,'Processor',3,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-22 10:56:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1661,4488,'Processor1',3,4,0,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-25 10:14:34');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1662,4422,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-01-10 17:48:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1662,4425,'s',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-01-10 17:49:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1662,4486,'Processor',3,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-22 10:56:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1662,4489,'Processor1',3,4,0,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-25 10:14:34');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1663,4432,'Initiator Step',1,1,1,1,0,NULL,NULL,0,0,0,0,0,'2019-01-24 17:05:25');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1664,4434,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-02-21 18:20:39');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1664,4435,'ManagerStep',2,2,1,0,0,NULL,NULL,0,0,0,0,0,'2019-02-21 18:21:36');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1664,4436,'hr APPROVAL',3,3,0,1,0,NULL,NULL,0,0,1,0,0,'2019-02-21 18:29:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1665,4437,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-02-21 18:30:30');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1665,4438,'HR Manager',2,2,0,1,0,NULL,NULL,0,0,1,0,0,'2019-02-21 18:31:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1666,4439,'Initiator Step',1,1,1,1,0,NULL,NULL,0,0,0,0,0,'2019-02-25 12:59:59');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1667,4440,'Initiator Step',1,1,1,1,0,NULL,NULL,0,0,0,0,0,'2019-02-25 01:57:53');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1668,4441,'Initiator Step',1,1,1,1,0,NULL,NULL,0,0,0,0,0,'2019-02-25 16:48:45');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1670,4443,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-02-28 17:24:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1670,4446,'HR',2,2,0,1,0,NULL,NULL,0,0,0,0,0,'2019-02-28 17:24:30');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1671,4444,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-02-28 17:24:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1671,4447,'HR',2,2,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-02-28 17:24:31');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1672,4445,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-02-28 17:24:20');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1672,4448,'HR',2,2,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-02-28 17:24:31');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1673,4449,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-04 14:43:28');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1673,4450,'Step 2',2,2,1,1,0,NULL,NULL,0,0,0,1,0,'2019-03-05 18:00:58');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1674,4451,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-05 13:02:17');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1674,4452,'Step 2',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2019-03-05 13:02:31');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1674,4453,'Step 3',3,3,0,1,0,NULL,NULL,0,0,0,0,0,'2019-03-05 13:02:48');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1675,4454,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-06 12:52:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1675,4455,'Approver',2,2,1,1,0,NULL,NULL,0,0,1,0,0,'2019-03-06 12:53:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1676,4456,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 13:27:20');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1676,4457,'Approver1',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 13:27:33');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1676,4458,'Approver 2',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 13:27:44');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1676,4459,'Approver 3',2,4,0,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 13:27:59');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1676,4460,'Approver 4',2,5,0,1,0,NULL,NULL,0,0,0,0,0,'2019-03-11 13:28:17');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1677,4464,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 14:10:26');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1677,4467,'Approver 1',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 14:10:40');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1677,4470,'Approver 2',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 14:10:52');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1677,4473,'Approver 3',2,4,0,1,0,NULL,NULL,0,0,0,0,0,'2019-03-11 14:11:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1678,4465,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 14:10:27');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1678,4468,'Approver 1',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-11 14:10:40');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1678,4471,'Approver 2',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-11 14:10:52');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1678,4474,'Approver 3',2,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-11 14:11:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1679,4466,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-11 14:10:27');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1679,4469,'Approver 1',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-11 14:10:40');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1679,4472,'Approver 2',2,3,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-11 14:10:52');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1679,4475,'Approver 3',2,4,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2019-03-11 14:11:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1680,4476,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-12 17:20:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1680,4477,'Approver',2,2,0,1,0,NULL,NULL,0,0,1,0,0,'2019-03-12 17:20:53');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1681,4478,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-12 18:02:04');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1681,4479,'Approver',2,2,1,1,0,NULL,NULL,0,0,1,0,0,'2019-03-12 18:02:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1682,4480,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-18 19:00:25');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1682,4481,'Approver',2,2,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-29 14:13:17');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1682,4497,'Processor',3,3,1,1,0,NULL,NULL,0,0,1,0,0,'2019-03-29 14:13:26');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1683,4490,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-03-25 19:49:57');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1683,4509,'ewsqa',3,2,1,NULL,0,NULL,NULL,0,0,1,0,0,'2019-04-05 17:32:53');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1684,4495,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-03-28 18:48:43');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1684,4496,'closed',2,2,1,1,0,NULL,NULL,0,0,1,0,0,'2019-03-28 18:49:32');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1685,4510,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-04-05 18:39:05');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1685,4511,'Approver',2,2,1,1,0,NULL,NULL,0,0,1,0,0,'2019-04-05 18:39:21');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1686,4517,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-04-16 15:49:30');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1686,4519,'Approver',2,2,0,0,0,NULL,NULL,0,0,0,0,0,'2019-04-16 15:49:47');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1686,4520,'Approver1',2,3,0,0,0,NULL,NULL,0,0,0,0,0,'2019-04-16 15:50:09');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1686,4521,'Approver2',2,4,0,0,0,NULL,NULL,0,0,0,0,0,'2019-04-16 15:50:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1686,4522,'Processor',3,5,0,1,0,NULL,NULL,0,0,0,0,0,'2019-04-16 15:50:37');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1687,4518,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-04-16 15:49:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1688,4523,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-04-16 16:54:58');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1688,4573,'A1',2,2,0,0,0,NULL,NULL,0,0,0,1,0,'2019-05-08 13:02:55');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1688,4574,'P1',3,3,0,0,0,NULL,NULL,0,0,0,0,0,'2019-04-29 12:03:57');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1688,4617,'ruu',2,4,0,NULL,0,NULL,NULL,0,0,0,0,0,'2019-05-21 11:06:26');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1689,4631,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:38:50');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1690,4632,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:38:51');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1691,4633,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:38:52');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1692,4634,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:42:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1693,4635,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:42:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1694,4636,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:42:30');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1695,4637,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:45:10');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1696,4638,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:45:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1697,4639,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:45:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1698,4640,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:54:33');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1699,4641,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:54:33');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1700,4642,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-03 17:54:34');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1701,4643,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-04 13:29:20');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1702,4644,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-04 13:29:23');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1703,4645,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-04 13:29:25');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1705,4646,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-07-04 16:01:56');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1705,4647,'First Aprrover',2,2,1,0,0,NULL,NULL,0,0,0,0,0,'2019-07-04 16:24:23');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1705,4648,'Second Approver',2,3,1,1,1,NULL,NULL,0,0,0,0,0,'2019-07-04 16:24:39');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1706,4649,'Initiator Step',1,1,1,NULL,0,NULL,NULL,0,0,0,0,0,'2019-07-04 16:25:40');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1707,4650,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,0,0,0,'2019-07-12 11:19:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,1707,4651,'ap[p1',2,2,0,1,1,NULL,NULL,0,0,0,0,0,'2019-07-12 11:19:20');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5000,4630,'Processor',3,3,0,1,0,NULL,NULL,0,0,0,0,0,'2019-05-24 13:31:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5000,5001,'Initiator Step',1,1,1,0,NULL,NULL,NULL,1,1,NULL,0,0,'2015-03-25 15:18:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5000,5002,'Approver Step',2,2,1,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-03-25 15:18:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5001,5003,'Initiator Step',1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-07-22 11:47:07');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5001,5004,'Approver Step',2,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-07-22 11:47:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5001,5005,'Processor  Step',3,3,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-07-22 11:47:13');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5002,5006,'Initiator Step',1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-07-22 11:47:13');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5002,5007,'Approver Step',2,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-07-22 11:47:13');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,5002,5008,'Processor  Step',3,3,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-07-22 11:47:13');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6000,2494,'Direct Manager Replacement',2,2,0,0,0,NULL,NULL,0,0,0,1,0,'2019-06-19 17:12:04');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6000,4482,'Approver',2,3,0,0,0,NULL,NULL,0,0,0,1,0,'2019-05-14 13:26:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6000,4483,'final approver',3,4,0,1,0,NULL,NULL,0,0,0,1,0,'2019-06-13 12:41:14');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6000,60001,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:28:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6001,4442,'Hr Mgr',3,3,0,1,0,NULL,NULL,0,0,0,1,0,'2019-06-13 16:59:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6001,60004,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:28:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,6001,60005,'Manager Step',2,2,1,0,0,NULL,NULL,0,0,0,1,0,'2019-06-13 17:05:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7000,2998,'Initiator Step',1,1,1,0,0,NULL,NULL,0,0,NULL,0,0,'2017-02-28 15:27:33');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7000,2999,'step 1',2,2,1,0,0,NULL,NULL,1,1,0,0,0,'2018-06-20 12:53:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7000,3000,'step 2',3,3,0,1,0,NULL,NULL,0,1,0,0,0,'2018-06-20 12:52:26');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7001,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:47:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7001,3382,'Approver',2,2,0,1,0,NULL,NULL,0,0,0,0,0,'2017-09-08 16:52:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7002,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:47:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7002,3226,'Approver',2,2,1,0,0,NULL,NULL,0,0,0,0,0,'2017-06-08 11:13:37');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7002,3553,'Processor',3,3,1,1,0,NULL,NULL,0,0,0,0,0,'2017-12-27 11:16:49');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7003,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:48:01');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7003,3554,'Processor',3,3,1,1,0,NULL,NULL,0,0,0,0,0,'2017-12-27 11:18:28');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,7003,3555,'Approver',2,2,1,0,0,NULL,NULL,0,0,0,0,0,'2017-12-27 11:19:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,8000,2882,'Approver',2,2,0,0,1,NULL,1,NULL,NULL,NULL,0,0,'2016-09-08 12:00:52');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,8000,3479,'Purchase Specilaist(Processor)',3,5,0,1,1,NULL,NULL,0,0,0,0,0,'2017-11-20 17:17:17');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,8000,3501,'Purchase Specialist(HR derived role)(Approver)',2,3,0,0,1,NULL,1,0,0,0,0,0,'2017-11-20 17:17:32');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,8000,3502,'Finanance Specialist Processor',2,4,0,0,1,NULL,NULL,0,0,0,0,0,'2017-11-20 14:14:47');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,8000,8001,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-09-09 11:02:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,50000,3488,'Appover1',2,2,1,NULL,0,NULL,NULL,0,0,0,0,0,'2017-11-08 12:17:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(2,50000,50001,'Initiator Step',1,1,1,1,0,NULL,NULL,0,0,NULL,0,0,'2017-11-08 11:41:11');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,-1,1,'DummyStep',1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL);
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,588,1863,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-08-31 11:37:03');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,588,1866,'Approver Stage',2,2,0,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-08-31 11:49:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,589,1864,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-08-31 11:37:03');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,589,1867,'Approver Stage',2,2,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-08-31 11:49:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,590,1865,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-08-31 11:37:03');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,590,1868,'Approver Stage',2,2,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-08-31 11:49:19');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,594,1890,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:02:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,594,1893,'Line 1 Manager',2,2,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:03:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,594,1896,'Processor',3,3,1,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:03:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,595,1891,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:02:38');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,595,1894,'Line 1 Manager',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:03:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,595,1897,'Processor',3,3,1,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:03:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,596,1892,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:02:39');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,596,1895,'Line 1 Manager',2,2,0,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:03:02');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,596,1898,'Processor',3,3,1,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 11:03:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,597,1899,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 14:31:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,597,1902,'LIne 1 Manger',2,2,0,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 14:32:59');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,598,1900,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 14:31:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,598,1903,'LIne 1 Manger',2,2,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 14:32:59');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,599,1901,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 14:31:46');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,599,1904,'LIne 1 Manger',2,2,0,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-10 14:32:59');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,600,1905,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-15 12:49:57');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,600,1929,'Approver Step',2,2,1,0,1,NULL,NULL,NULL,NULL,NULL,0,0,'2015-10-13 12:33:56');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,600,2300,'HR Step',2,3,0,1,1,NULL,NULL,NULL,NULL,NULL,0,0,'2016-03-03 18:01:23');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,601,1906,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-09-15 12:49:57');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,601,1930,'Approver Step',2,2,1,0,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-10-13 12:33:56');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,601,2301,'HR Step',2,3,0,1,1,NULL,NULL,NULL,NULL,NULL,0,0,'2016-03-03 18:01:22');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,610,1931,'Initiator Step',1,1,1,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-10-13 13:10:39');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,611,1932,'Initiator Step',1,1,1,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-10-13 13:10:45');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,612,1933,'Initiator Step',1,1,1,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-10-13 13:10:45');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,656,2067,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-10-29 12:36:18');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,656,2068,'Manager Approval',2,2,0,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-11-02 15:28:09');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,656,2076,'HR Approval',2,3,0,1,1,NULL,NULL,NULL,NULL,NULL,0,0,'2015-11-02 15:28:26');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,679,2185,'Initiator Step',1,1,1,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-11-30 12:31:50');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,683,2189,'Initiator Step',1,1,1,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,'2015-12-17 11:40:37');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,695,2237,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:28:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,695,2238,'Manager Step',2,2,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:29:44');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,695,2239,'HR Manager',3,3,1,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:31:32');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,745,2319,'Initiator Step',1,1,1,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-03-18 12:13:42');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,5000,5001,'Initiator Step',1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-03-25 15:18:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,5000,5002,'Approver Step',2,2,1,1,NULL,NULL,NULL,NULL,NULL,NULL,0,0,'2015-03-25 15:18:08');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,6000,60001,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:28:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,6000,60002,'Manager Step',2,2,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:29:44');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,6000,60003,'HR Manager',2,3,1,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:31:32');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,6001,60004,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:28:35');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,6001,60005,'Manager Step',2,2,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:29:44');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,6001,60006,'HR Manager',2,3,1,1,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-01-06 17:31:32');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,7001,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:47:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,7002,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:47:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,7003,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:48:01');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(3,8000,8001,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-09-09 11:02:29');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(100000,7001,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:47:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(100000,7002,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:47:12');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(100000,7003,1,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2017-03-03 11:48:01');
+INSERT INTO `toz_workflow_step`(`ClientID`,`WorkflowID`,`StepID`,`StepName`,`Type`,`Order`,`IsMandatory`,`IsLastStep`,`HasAdditionAction`,`ActionType`,`NotifyUsers`,`IsAutoApprove`,`AutoApproveDays`,`IsAuthorizationStep`,`IsDelegate`,`IsSalary`,`LastUPD`) VALUES
+(100000,8000,8001,'Initiator Step',1,1,1,0,0,NULL,NULL,NULL,NULL,NULL,0,0,'2016-09-09 11:02:29');
+COMMIT;
+/*!40000 ALTER TABLE `toz_workflow_step` ENABLE KEYS */;
+
+-- 
+-- Definition of toz_workflow_step_action
+-- 
+
+CREATE TABLE IF NOT EXISTS `toz_workflow_step_action` (
+  `ClientID` int(11) NOT NULL DEFAULT '0',
+  `Category` int(11) NOT NULL DEFAULT '0',
+  `WorkFlowID` int(11) NOT NULL DEFAULT '0',
+  `StepID` int(11) NOT NULL DEFAULT '0',
+  `ActionName` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
+  `IsEnable` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table toz_workflow_step_action
+-- 
+
+/*!40000 ALTER TABLE `toz_workflow_step_action` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1989,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1989,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1990,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1990,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1991,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1991,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1992,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1992,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1993,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1993,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1994,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1994,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1995,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1995,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1996,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1996,'Assign Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1997,'Create Program',1,NULL);
+INSERT INTO `toz_workflow_step_action`(`ClientID`,`Category`,`WorkFlowID`,`StepID`,`ActionName`,`IsEnable`,`LastUPD`) VALUES
+(2,10,637,1997,'Assign Program',1,NULL);
+INSERT INTO `

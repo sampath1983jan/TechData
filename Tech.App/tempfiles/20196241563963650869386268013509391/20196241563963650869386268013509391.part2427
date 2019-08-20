@@ -1,0 +1,1265 @@
+`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV126','ETF177','EmployeeType',0,'2018-05-09 13:40:53',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV126','ETF177','Month',0,'2017-09-06 12:31:16',NULL,2,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV126','ETF177','Year',3,NULL,NULL,3,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV127','ETF178','BusinessUnitID',12,'2017-08-23 17:01:34','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV127','ETF178','DepartmentID',0,'2017-08-23 17:01:34','320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV127','ETF178','EmployeeName',0,'2017-08-23 17:01:34',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV127','ETF178','EmployeeType',0,'2018-05-14 18:12:03',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV127','ETF178','OT Payment Type',0,'2017-08-23 17:01:34','30000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV127','ETF178','StartDate',14,'2017-08-23 17:01:34',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV128','ETF179','BusinessUnitID',0,'2017-09-05 15:02:00','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV128','ETF179','DepartmentID',0,'2017-09-05 15:02:00','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV128','ETF179','EmployeeType',0,'2017-09-05 15:02:00',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV128','ETF179','Month',0,'2017-09-05 15:02:00',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV128','ETF179','WorkLocationID',0,'2017-09-05 15:02:00','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV128','ETF179','Year',0,NULL,NULL,6,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV129','ETF180','BusinessUnitID',0,'2017-10-31 16:39:31','300000',2,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV129','ETF180','DepartmentID',0,'2017-10-31 16:39:31','320000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV129','ETF180','jobid',0,'2017-10-31 16:39:31','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV129','ETF180','StartDate',0,'2017-10-31 16:39:31',NULL,1,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV129','ETF180','WorkLocationID',0,'2017-10-31 16:39:31','310000',3,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV130','ETF181','BusinessUnitID',0,'2017-10-27 16:39:52','300000',2,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV130','ETF181','DepartmentID',0,'2017-10-27 16:39:52','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV130','ETF181','jobid',0,'2017-10-27 16:39:52','350000',4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV130','ETF181','StartDate',0,'2017-10-27 16:39:52',NULL,1,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV131','ETF182','BusinessUnitID',0,'2018-08-10 11:47:28',NULL,1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV131','ETF182','DepartmentID',0,'2018-08-10 11:47:28',NULL,2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV131','ETF182','Duration',14,'2018-08-10 11:47:28',NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV131','ETF182','PositionClassification',0,'2018-08-10 11:47:28',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV131','ETF182','WorkLocationID',0,'2018-08-10 11:47:28',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV133','ETF184','BusinessUnitID',0,'2019-02-08 10:59:14','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV133','ETF184','DepartmentID',0,'2019-02-08 10:59:14','320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV133','ETF184','EmployeeName',0,'2019-02-08 10:59:14',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV133','ETF184','LeaveType',12,NULL,NULL,5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV133','ETF184','PositionClassification',0,'2019-06-14 12:43:28',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV133','ETF184','StartDate',14,'2019-02-08 10:59:14',NULL,6,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV134','ETF185','BusinessUnitID',0,'2018-05-18 10:55:04','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV134','ETF185','DepartmentID',0,'2018-05-18 10:55:04','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV134','ETF185','EmployeeName',0,'2018-05-18 10:55:04',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV134','ETF185','StartDate',14,'2018-05-18 10:55:04',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV134','ETF185','WorkLocationID',0,'2018-05-18 10:55:04','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV135','ETF186','BusinessUnitID',0,'2018-07-09 12:10:58','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV135','ETF186','DepartmentID',0,'2018-07-09 12:10:58','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV135','ETF186','PositionClassification',0,'2018-07-09 12:10:58',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV135','ETF186','Status',0,'2018-07-09 12:10:58','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV135','ETF186','WorkLocationID',0,'2018-07-09 12:10:58','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV140','ETF187','BusinessUnitID',0,'2018-07-18 13:28:52','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV140','ETF187','DepartmentID',0,'2018-07-18 13:28:52','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV140','ETF187','PositionClassification',0,'2019-06-14 12:57:44',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV140','ETF187','Status',0,'2018-07-18 13:28:52',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV140','ETF187','WorkLocationID',0,'2018-07-18 13:28:52','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV145','ETF194','BusinessUnitID',0,'2018-08-06 14:08:31','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV145','ETF194','DepartmentID',0,'2018-08-06 14:08:31','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV145','ETF194','PositionClassification',0,'2018-08-06 14:08:31',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV145','ETF194','Status',0,'2018-08-06 14:08:31','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV145','ETF194','WorkLocationID',0,'2018-08-06 14:08:31','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV146','ETF195','BusinessUnitID',0,'2018-08-06 16:11:40','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV146','ETF195','DepartmentID',0,'2018-08-06 16:11:40','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV146','ETF195','PositionClassification',0,'2018-08-06 16:11:40',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV146','ETF195','Status',0,'2018-08-06 16:11:40','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV146','ETF195','WorkLocationID',0,'2018-08-06 16:11:40','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV147','ETF196','BusinessUnitID',0,'2018-09-17 18:04:23','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV147','ETF196','DepartmentID',0,'2018-09-17 18:04:23','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV147','ETF196','EmployeeName',0,'2018-09-17 18:04:23',NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV147','ETF196','StartDate',14,'2018-09-17 18:04:23',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV147','ETF196','WorkLocationID',0,'2018-09-17 18:04:23','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV148','ETF197','BusinessUnitID',0,'2018-09-18 18:28:14','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV148','ETF197','DepartmentID',0,'2018-09-18 18:28:14','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV148','ETF197','EmployeeName',0,'2018-09-18 18:28:14',NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV148','ETF197','StartDate',14,'2018-09-18 18:28:14',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV148','ETF197','WorkLocationID',0,'2018-09-18 18:28:14','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV150','ETF199','BusinessUnitID',0,'2018-09-27 11:10:46','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV150','ETF199','DepartmentID',0,'2018-09-27 11:10:46','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV150','ETF199','PositionClassification',0,'2018-09-27 11:10:46',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV150','ETF199','Status',0,'2018-09-27 11:10:46','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV150','ETF199','WorkLocationID',0,'2018-09-27 11:10:46','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV152','ETF201','BusinessUnitID',0,'2018-10-09 13:46:29','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV152','ETF201','DepartmentID',0,'2018-10-09 13:46:29','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV152','ETF201','StartDate',14,'2018-10-09 13:46:29',NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV152','ETF201','WorkLocationID',0,'2018-10-09 13:46:29','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV153','ETF202','BusinessUnitID',0,'2018-10-30 15:37:04','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV153','ETF202','DepartmentID',0,'2018-10-30 15:37:04','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV153','ETF202','PositionClassification',0,'2018-10-30 15:37:04',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV153','ETF202','Status',0,'2018-10-30 15:37:04','350000',5,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV153','ETF202','WorkLocationID',0,'2018-10-30 15:37:04','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV155','ETF204','BusinessUnitID',0,'2018-12-18 18:16:24','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV155','ETF204','DepartmentID',0,'2018-12-18 18:16:24','320000',3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV155','ETF204','StartDate',14,'2018-12-18 18:16:24',NULL,4,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV155','ETF204','WorkLocationID',0,'2018-12-18 18:16:24','310000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV156','ETF206','BusinessUnitID',0,'2019-06-06 18:42:18','300000',1,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV156','ETF206','DepartmentID',0,'2019-06-06 18:42:18','320000',2,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV156','ETF206','EmployeeType',0,'2019-06-06 18:42:18',NULL,3,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV156','ETF206','LeaveType',12,'2019-06-06 18:42:18',NULL,5,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV156','ETF206','PositionClassification',0,'2019-06-14 13:13:16',NULL,4,NULL,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`,`LinkView`) VALUES
+('EV156','ETF206','Year',0,'2019-06-06 18:42:18',NULL,6,1,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityviewfilterfields` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityviewfilterfields2004
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityviewfilterfields2004` (
+  `ViewID` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `EFID` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `FilterFieldid` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `FilterOperator` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `LinkComponent` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `FieldOrder` int(11) DEFAULT NULL,
+  `IsMandatory` smallint(6) DEFAULT NULL,
+  `ParentField` varchar(255) CHARACTER SET latin1 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_entityviewfilterfields2004
+-- 
+
+/*!40000 ALTER TABLE `sys_entityviewfilterfields2004` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','BusinessUnitID',0,NULL,NULL,1,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','DepartmentID',0,NULL,NULL,2,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','DiffrenceDate',0,NULL,NULL,10,1,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','EmployeeType',0,NULL,NULL,5,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','jobid',0,NULL,NULL,4,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','LeaveType',0,NULL,'',6,1,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','ShowLeave',0,NULL,NULL,9,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','StartDate',14,NULL,NULL,7,1,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','Status',0,NULL,NULL,8,NULL,NULL);
+INSERT INTO `sys_entityviewfilterfields2004`(`ViewID`,`EFID`,`FilterFieldid`,`FilterOperator`,`LastUPD`,`LinkComponent`,`FieldOrder`,`IsMandatory`,`ParentField`) VALUES
+('EV102','ETF153','WorkLocationID',0,NULL,NULL,3,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityviewfilterfields2004` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_entityviewrelation
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_entityviewrelation` (
+  `EVid` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `EFRid` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `EFRtype` int(11) NOT NULL,
+  PRIMARY KEY (`EVid`,`EFRid`,`EFRtype`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_entityviewrelation
+-- 
+
+/*!40000 ALTER TABLE `sys_entityviewrelation` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV001','EFR0001',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV002','EFG0002',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV003','EFG0003',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV004','EFG0004',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV005','EFG0005',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV007','EFR0001',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV008','EFG0002',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV009','EFG0003',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV010','EFG0004',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV011','EFG0005',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV012','EFR0027',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV012','EFR0028',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV012','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV012','EFR0038',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV014','EFG0006',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV015','EFG0007',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV016','EFG0008',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV017','EFG0009',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV018','EFG0010',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV020','EFG0007',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV021','EFG0008',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV022','EFG0009',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV023','EFG0010',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV024','EFG0011',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV025','EFG0012',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV026','EFG0013',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV027','EFG0014',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV028','EFG0015',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV039','EFR0028',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV039','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV039','EFR0037',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV039','EFR0038',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV039','EFR0039',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV040 ','EFR0027',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV040 ','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV040 ','EFR0037',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV040 ','EFR0038',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV040 ','EFR0040',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV041','EFR0089',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV042','EFR0027',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV042','EFR0028',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV042','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV042','EFR0037',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV042','EFR0042',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV043','EFR0027',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV043','EFR0028',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV043','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV043','EFR0038',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV043','EFR0043',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV044','EFR0027',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV044','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV044','EFR0037',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV044','EFR0038',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV044','EFR0040',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV045','EFR0058',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV045','EFR0059',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV046','EFR0001',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV046','EFR0027',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV046','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV046','EFR0051',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV047','EFR0057',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV047','EFR0060',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV051','EFR0049',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV053','EFR0063',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV053','EFR0064',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV053','EFR0065',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV053','EFR0066',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV053','EFR0067',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV054','EFR0076',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV054','EFR0078',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV055','EFR0069',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV057','EFR0071',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV058','EFR0071',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV059','EFR0104',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV062','EFR0057',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV062','EFR0071',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV062','EFR0077',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV062','EFR0078',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV064','EFR0079',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV065','EFR0080',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV065','EFR0081',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV066','EFR0082',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV067','EFR0083',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV068','EFR0084',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV069','EFR0085',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV085','EFR0097',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV085','EFR0098',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV104','EFR0105',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV108','EFG0005',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV108','EFG0028',2);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV109','EFR0111',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV136','EFR0028',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV136','EFR0029',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV136','EFR0037',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV136','EFR0038',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV136','EFR0039',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV136','EFR0118',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV137','EFR0113',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV137','EFR0114',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV137','EFR0115',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV138','EFR0116',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV138','EFR0118',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV139','EFR0117',1);
+INSERT INTO `sys_entityviewrelation`(`EVid`,`EFRid`,`EFRtype`) VALUES
+('EV139','EFR0118',1);
+COMMIT;
+/*!40000 ALTER TABLE `sys_entityviewrelation` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_excelreport_generalsettings
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_excelreport_generalsettings` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `SectionType` int(10) unsigned DEFAULT NULL COMMENT '0-ReportHeader; 1-ReportSubTitle;2-ReportFilter;3-ReportDetails;4-ReportGroupHeader;5-ReportDetails;6-ReportFooter',
+  `Fontname` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
+  `Backgroundcolor` varchar(20) CHARACTER SET latin1 DEFAULT NULL,
+  `Forecolor` varchar(20) CHARACTER SET latin1 DEFAULT NULL,
+  `BorderColor` varchar(20) CHARACTER SET latin1 DEFAULT NULL,
+  `Bold` bit(1) DEFAULT NULL,
+  `Italic` bit(1) DEFAULT NULL,
+  `Underline` bit(1) DEFAULT NULL,
+  `Wraptext` bit(1) DEFAULT NULL,
+  `DateFormatstring` varchar(15) CHARACTER SET latin1 DEFAULT NULL,
+  `Modifiedby` int(10) unsigned NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_excelreport_generalsettings
+-- 
+
+/*!40000 ALTER TABLE `sys_excelreport_generalsettings` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `sys_excelreport_generalsettings` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_excelreportsettings
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_excelreportsettings` (
+  `ReportID` int(10) unsigned NOT NULL,
+  `ClientID` int(10) unsigned NOT NULL,
+  `ReportTitle` text CHARACTER SET latin1,
+  `ReportSubTitle` text CHARACTER SET latin1,
+  `DisplayColumns` text CHARACTER SET latin1,
+  `IsGroupingData` bit(1) DEFAULT NULL,
+  `Groupingcolumns` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `GroupingcolumnswithDatatype` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ReportID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_excelreportsettings
+-- 
+
+/*!40000 ALTER TABLE `sys_excelreportsettings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_excelreportsettings`(`ReportID`,`ClientID`,`ReportTitle`,`ReportSubTitle`,`DisplayColumns`,`IsGroupingData`,`Groupingcolumns`,`GroupingcolumnswithDatatype`,`LastUPD`) VALUES
+(4,3,'Individual Training Report','Individual Training Report','Employee No,Employee Name,Position Title,Program Title,No.of Hours,Start Date,End Date',1,'Program Title','Program Title:STRING',NULL);
+COMMIT;
+/*!40000 ALTER TABLE `sys_excelreportsettings` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_expiry_reminders
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_expiry_reminders` (
+  `ClientID` int(11) DEFAULT NULL,
+  `ReminderFieldID` int(11) DEFAULT NULL,
+  `ReminderID` int(11) DEFAULT NULL,
+  `ReminderName` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `Time` datetime DEFAULT NULL,
+  `DaysBefore` int(11) DEFAULT NULL,
+  `IsReminderSend` tinyint(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_expiry_reminders
+-- 
+
+/*!40000 ALTER TABLE `sys_expiry_reminders` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,3,225,'Reminder 2','2019-03-13 16:51:40',2,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,100001,233,'Reminder 1','2018-11-02 13:25:51',1,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,100001,234,'Reminder 2','2018-11-02 13:26:49',1,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,2,235,'Reminder 1','2019-02-20 15:33:04',3,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,2,236,'Reminder 1','2018-11-02 16:22:56',43,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,2,237,'Reminder 1','2018-11-02 16:23:12',1,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,2,238,'Reminder 1','2018-11-02 16:23:40',1,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,17,241,'Reminder 1','2018-12-03 15:38:20',1,1,'2019-03-13 16:52:02');
+INSERT INTO `sys_expiry_reminders`(`ClientID`,`ReminderFieldID`,`ReminderID`,`ReminderName`,`Time`,`DaysBefore`,`IsReminderSend`,`LastUPD`) VALUES
+(2,1,242,'Reminder 1','2019-04-16 10:03:36',5,0,'2019-04-16 10:03:36');
+COMMIT;
+/*!40000 ALTER TABLE `sys_expiry_reminders` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_expiryreminder_fields
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_expiryreminder_fields` (
+  `ModuleID` int(11) NOT NULL,
+  `ReminderFieldID` int(11) NOT NULL,
+  `FieldID` varchar(100) DEFAULT NULL,
+  `TableName` varchar(100) DEFAULT NULL,
+  `TableFieldID` varchar(100) DEFAULT NULL,
+  `TableFieldDescription` varchar(100) DEFAULT NULL,
+  `LR` varchar(100) DEFAULT NULL COMMENT 'Left Relation',
+  `RR` varchar(100) DEFAULT NULL COMMENT 'Right Relation',
+  `RelatedTable` varchar(100) DEFAULT NULL,
+  `EnableReminder` tinyint(1) DEFAULT NULL,
+  `IsCoreField` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `ClientID` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ModuleID`,`ReminderFieldID`,`ClientID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table sys_expiryreminder_fields
+-- 
+
+/*!40000 ALTER TABLE `sys_expiryreminder_fields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,1,'UserID','sys_user','F_200155','Separation Date',NULL,NULL,NULL,1,1,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,1,'UserID','sys_user','F_200155','Separation Date',NULL,NULL,NULL,1,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,2,'UserID','sys_user','F_200160','Retirement Date',NULL,NULL,NULL,1,1,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,2,'UserID','sys_user','F_200160','Retirement Date',NULL,NULL,NULL,1,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,3,'UserID','sys_user','F_200030','Date of Birth',NULL,NULL,NULL,1,1,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,3,'UserID','sys_user','F_200030','Date of Birth',NULL,NULL,NULL,1,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,4,'UserID','sys_user','F_200135','Passport Expiry Date',NULL,NULL,NULL,1,1,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,4,'UserID','sys_user','F_200135','Passport Expiry Date',NULL,NULL,NULL,1,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,5,'UserID','employee_qualification','F_30240','Qualification Expiry Date',NULL,NULL,NULL,0,1,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,5,'UserID','employee_qualification','F_30240','Qualification Expiry Date',NULL,NULL,NULL,NULL,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,6,'UserID','employee_visa','F_30515','Visa Expiry Date',NULL,NULL,NULL,1,1,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,6,'UserID','employee_visa','F_30515','Visa Expiry Date',NULL,NULL,NULL,1,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,7,'UserID','sys_user_custom_client_2','F_2000135','Custom Date Field',NULL,NULL,NULL,1,NULL,NULL,0);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,8,'UserID','sys_user','F_200150','Contract Expiry Date',NULL,NULL,NULL,1,1,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(2,17,'UserID','sys_user','F_200400','Confirmation Date',NULL,NULL,NULL,1,1,'2018-12-03 15:37:38',2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(3,10000,'UserID','sys_user','UserID','Performance Appraisal Notification',NULL,NULL,NULL,1,1,'2019-02-21 14:02:22',2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(3,10000,'UserID','sys_user','UserID','Performance Appraisal Notification',NULL,NULL,NULL,1,1,'2019-02-21 14:02:22',3);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(3,10000,'UserID','sys_user','UserID','Performance Appraisal Notification',NULL,NULL,NULL,1,1,'2019-02-21 14:02:22',4);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(3,10000,'UserID','sys_user','UserID','Performance Appraisal Notification',NULL,NULL,NULL,1,1,'2019-06-17 18:25:35',93);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(3,10000,'UserID','sys_user','UserID','Performance Appraisal Notification',NULL,NULL,NULL,1,1,'2019-02-21 14:02:22',100000);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(10,7000,'UserID','sys_user','UserID','Timesheet Notification','','','',1,1,'2018-10-29 17:17:26',2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(10,7001,'UserID','sys_user','UserID','Time and Attendance Notification',NULL,NULL,NULL,0,1,'2018-11-30 15:48:38',2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(10,7001,'UserID','sys_user','UserID','Time and Attendance Notification',NULL,NULL,NULL,0,1,'2018-11-30 15:48:38',3);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(10,7001,'UserID','sys_user','UserID','Time and Attendance Notification',NULL,NULL,NULL,0,1,'2018-11-30 15:48:38',4);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(10,7001,'UserID','sys_user','UserID','Time and Attendance Notification',NULL,NULL,NULL,0,1,'2018-11-30 15:48:38',100000);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,2);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,3);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,6);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,7);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,8);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,9);
+INSERT INTO `sys_expiryreminder_fields`(`ModuleID`,`ReminderFieldID`,`FieldID`,`TableName`,`TableFieldID`,`TableFieldDescription`,`LR`,`RR`,`RelatedTable`,`EnableReminder`,`IsCoreField`,`LastUPD`,`ClientID`) VALUES
+(17,100001,'UserID','sys_user','UserID','Project Close Notification',NULL,NULL,NULL,1,NULL,NULL,100000);
+COMMIT;
+/*!40000 ALTER TABLE `sys_expiryreminder_fields` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_feature
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_feature` (
+  `FeatureID` int(10) unsigned NOT NULL,
+  `FeatureName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ModuleID` int(10) unsigned DEFAULT NULL,
+  `Context` int(10) unsigned DEFAULT NULL,
+  `GroupID` int(10) unsigned NOT NULL,
+  `FeatureType` int(11) DEFAULT NULL COMMENT '1- Manuplate Feature\n2- Analytic Feature',
+  `Component` int(11) DEFAULT NULL,
+  PRIMARY KEY (`FeatureID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_feature
+-- 
+
+/*!40000 ALTER TABLE `sys_feature` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(1,'Employee',2,3,0,1,30000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(2,'Change Request',2,1,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(3,'Position',1,3,0,1,360000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(4,'Business Unit',1,3,0,1,300000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(5,'Work Location',1,3,0,1,310000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(6,'Department',1,3,0,1,320000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(7,'Job',1,3,0,1,350000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(8,'Band & Grade',1,3,0,1,340000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(9,'Position',1,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(10,'Employee Assign to Position',1,3,0,1,360100);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(11,'Competency Assign To Position',1,3,0,1,360200);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(12,'Competency Assign To Job',1,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(13,'Competency',4,3,0,1,10000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(14,'Competency Anchor',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(15,'Manage Competency Assessment',4,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(16,'Extend Close Date of Competency assessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(18,'Close Assessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(20,'Abandon Employee Assessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(21,'Abandon Competency Assessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(22,'Change Competency Assessment Accessor',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(23,'Manage Performance Appraisal',3,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(24,'Extend Close Date of Performance Appraisal',3,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(25,'Close Performance Apprisal',3,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(26,'Abandon Employee Appraisal',3,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(27,'Abandon Performance Appraisal',3,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(28,'Change Performance Apprasisal Reviewer',3,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(29,'Goal management',6,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(30,'Potential management',3,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(31,'Hiring Request',5,2,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(32,'Opening Management',5,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(33,'Suspend Opening',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(34,'Manager Interview',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(35,'Manager Offer Process',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(36,'Opening Screening',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(37,'Selection Process',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(38,'Resume Bank',5,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(39,'Program',7,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(40,'Session',7,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(41,'Competency Assign to Program',7,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(42,'Employee Assign to Session',7,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(43,'Employee Attendance',7,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(44,'EmergencyContact',2,3,0,1,30100);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(45,'Past Work Experience ',2,3,0,1,30300);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(46,'Qualification',2,3,0,1,30200);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(47,'Employee Visa',2,3,0,1,30500);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(48,'Dependent Information',2,3,0,1,30400);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(49,'Disciplinary Action',2,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(50,'Assign Employee Reporting',2,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(51,'Add Employee in Competency Asessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(52,'Individual Publish in Competency Asessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(53,'Remove Employee in Competency Asessment',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(54,'Profile Change Request Approval',2,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(55,'Send Reminder',4,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(56,'Hiring Request Approval',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(57,'Performance Appraisal Form Preparation',3,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(58,'Employee Information Change Request',2,1,0,1,30000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(59,'Emergency Contact Change Request',2,1,0,1,30100);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(60,'Past Work Experience Change Request',2,1,0,1,30300);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(61,'Qualification Change Request',2,1,0,1,30200);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(62,'Employee Visa Change Request',2,1,0,1,30500);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(63,'Dependant Change Request',2,1,0,1,30400);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(64,'Learning Recommendation',7,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(65,'Recruitment Trend',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(66,'Candidate Status',5,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(67,'Leave Management',8,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(68,'Claim Type',9,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(69,'Vendor Management',9,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(70,'Claim Application',9,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(71,'Claim Audit Trial',9,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(72,'Claim Application',9,1,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(73,'Claim Audit Trial',9,1,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(74,'Claim Audit Trial',9,2,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(75,'Employee',2,2,0,1,30000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(76,'Business Unit',1,2,0,1,300000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(77,'Work Location',1,2,0,1,310000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(78,'Department',1,2,0,1,320000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(79,'Job',1,2,0,1,350000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(80,'Band & Grade',1,2,0,1,340000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(81,'Position',1,2,0,1,360000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(82,'Close Opening',5,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(83,'Organisation Structure',1,2,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(84,'Organisation Structure',1,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(85,'EmergencyContact',2,2,0,1,30100);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(86,'Past Work Experience',2,2,0,1,30300);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(87,'Qualification',2,2,0,1,30200);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(88,'Employee Visa',2,2,0,1,30500);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(89,'Dependent Information',2,2,0,1,30400);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(90,'Disciplinary Action',2,2,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(91,'Assign Employee Reporting',2,2,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(92,'Budget',7,2,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(93,'Department Budget',7,2,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(94,'Web Check in',10,1,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(95,'Holiday',10,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(96,'Schedule Management',10,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(97,'Time and Attendance Audit Trial',10,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(98,'Schedule Management',10,2,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(99,'Manage Competency Assessment',4,2,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(100,'Manage Performance Appraisal',3,2,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(101,'Holiday',8,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(102,'Leave Entitlement',8,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(103,'Leave Type',8,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(104,'Leave Period Setting',8,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(105,'Leave Configuration Setting',8,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(106,'Accural',8,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(107,'Budget',7,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(108,'Add Employee To Waitlist',7,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(109,'Remove Employee From Waitlist',7,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(111,'Assign Employee To Session',7,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(112,'Initiate Separation',12,3,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(113,'Employee Bond',2,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(114,'Employee Bond',2,1,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(115,'Import Time Record',10,3,0,1,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(116,'Daily Time Record',10,1,0,2,NULL);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(117,'Cost Center',1,3,0,1,370000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(502,'Cost Center',1,3,0,1,370000);
+INSERT INTO `sys_feature`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`) VALUES
+(504,'Cost Center',1,3,0,1,370000);
+COMMIT;
+/*!40000 ALTER TABLE `sys_feature` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_featuregroup
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_featuregroup` (
+  `GroupID` int(10) unsigned NOT NULL,
+  `ModuleID` int(10) unsigned NOT NULL,
+  `GroupName` varchar(50) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`GroupID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_featuregroup
+-- 
+
+/*!40000 ALTER TABLE `sys_featuregroup` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `sys_featuregroup` ENABLE KEYS */;
+
+-- 
+-- Definition of sys_features
+-- 
+
+CREATE TABLE IF NOT EXISTS `sys_features` (
+  `FeatureID` int(10) unsigned NOT NULL,
+  `FeatureName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ModuleID` int(10) unsigned DEFAULT NULL,
+  `Context` int(10) unsigned DEFAULT NULL,
+  `GroupID` int(10) unsigned NOT NULL,
+  `FeatureType` int(11) DEFAULT NULL COMMENT '1- Manuplate Feature\n2- Analytic Feature',
+  `Component` int(11) DEFAULT NULL,
+  `feasibility` int(11) DEFAULT '0' COMMENT '0-Web 1-Mobile 2-Both',
+  PRIMARY KEY (`FeatureID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table sys_features
+-- 
+
+/*!40000 ALTER TABLE `sys_features` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(1,'Employee List',2,1,0,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(2,'Change Request',2,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(3,'Position',1,1,17,1,360000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(4,'Business Unit',1,1,12,1,300000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(5,'Work Location',1,1,13,1,310000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(6,'Department',1,1,14,1,320000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(7,'Job',1,1,16,1,350000,1);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(8,'Band & Grade',1,1,15,1,340000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(10,'Employee Assign to Position',1,1,0,1,360100,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(11,'Competency Assign to Position',1,1,0,1,360200,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(12,'Competency Assign to Job',1,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(13,'Competency List',4,1,18,1,10000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(14,'Competency Anchor',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(15,'Manage Competency',4,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(16,'Extend Close Date of Competency Assessment',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(18,'Close Assessment',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(20,'Abandon Employee',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(21,'Abandon Assessment',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(22,'Manage Assessor',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(23,'Manage Performance List',3,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(24,'Extend Close Date of Performance Appraisal',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(25,'Close Performance Apprisal',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(26,'Abandon Employee Appraisal',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(27,'Abandon Performance Appraisal',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(28,'Change Performance Apprasisal Reviewer',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(29,'Goal Management',6,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(30,'Potential',3,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(31,'Request to Hire List',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(32,'Opening List',5,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(33,'Suspend Opening',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(34,'Manager Interview',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(35,'Manager Offer Process',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(36,'Opening Screening',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(37,'Selection Process',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(38,'Resume Bank',5,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(39,'Program Library',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(40,'Session Library',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(41,'Assign Competencies and Pcl to the Program',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(42,'Assign Employee to Session',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(43,'Employee Attendance',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(44,'Manage Emergency Contact',2,1,7,1,30100,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(45,'Manage Past Work Experience',2,1,9,1,30300,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(46,'Manage Qualification',2,1,8,1,30200,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(47,'Manage Employee Visa Details',2,1,11,1,30500,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(48,'Manage Dependent Information',2,1,10,1,30400,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(49,'Manage Disciplinary Actions',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(50,'Manage Reporting',2,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(51,'Add Employee in Competency Asessment',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(52,'Individual Publish in Competency Asessment',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(53,'Remove Employee in Competency Asessment',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(54,'Change Request',2,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(55,'Send Reminder',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(56,'Hiring Request Approval',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(57,'Performance Appraisal Form Preparation',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(64,'Learning Recommendation',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(65,'Recruitment Trend',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(66,'Candidate Status',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(67,'Leave Management',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(68,'Claim Type',9,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(69,'Vendors List',9,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(70,'Claim Application',9,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(71,'Claim Audit Trial',9,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(82,'Close Opening',5,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(83,'Organisation Structure',14,1,17,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(92,'Budget Definition',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(93,'Department Budget',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(102,'Leave Entitlement',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(103,'Leave Type',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(104,'Leave Period',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(105,'Configure Leave Type',8,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(106,'Leave Accrual',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(108,'Add Employee to Waitlist',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(109,'Remove Employee from Waitlist',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(112,'Add New Separation',12,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(113,'Employee Bond',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(114,'Competency',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(115,'Recruitment',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(116,'Onboarding',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(117,'Performance Management',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(118,'Learning and Development',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(119,'Leave Management',14,1,0,2,NULL,2);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(120,'Time Management',14,1,0,2,NULL,2);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(121,'Separation',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(122,'Promotion',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(123,'Claim Management',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(124,'Employee',14,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(125,'HR Contacts',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(126,'Talent Profile - Career Progression',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(127,'Manage Social Links',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(128,'Manage Personal Information',2,1,1,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(129,'Manage Employment Details',2,1,2,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(130,'Manage Permanent Address',2,1,3,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(131,'Manage Correspondence Address',2,1,4,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(132,'Manage Salary Details',2,1,19,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(133,'Manage Bank Information',2,1,6,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(134,'Manage Passport Details',2,1,5,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(135,'Employee Hierarchy',2,1,0,1,30000,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(138,'Promotion Requests',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(139,'Document Monitoring',2,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(140,'Search Employee and View',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(141,'Modify Current Employee Hierarchy',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(142,'Employee''s Without Manager',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(143,'View Employee Profile from Hierarchy',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(144,'Assign Employees without Manager into the Hierarchy',2,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(145,'Separation Request List',12,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(147,'Promotion Request List',15,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(148,'Raise Promotion for Employee',15,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(149,'Cancel Promotion',15,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(150,'Remove Employee from Session',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(151,'Employee Learning Track',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(152,'Total Hrs Spent',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(154,'My Training Calendar',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(155,'Upcoming Sessions',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(156,'My Recommendations',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(157,'My Team Recommended Programs',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(158,'Learning Calendar ',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(159,'Budget Graph',7,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(161,'Leave Adjustment',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(164,'Leave Carryforward',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(165,'Holiday Definition',8,1,0,1,NULL,2);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(166,'Employee Tag Definition',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(167,'Exclude',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(168,'Include',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(169,'Apply Leave for Self',8,1,0,1,NULL,2);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(170,'Apply for Subordinates',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(171,'Apply Leave for Employees',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(172,'Leave List',8,1,0,1,NULL,2);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(173,'Leave Timeline',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(174,'Leave Summary',8,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(175,'Leave Calendar',8,1,0,1,NULL,2);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(176,'Leave History',8,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(179,'Goals',3,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(180,'Employee Appraisal History',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(181,'Active Appraisal',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(182,'Performance History',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(183,'My Goals',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(184,'Employee Goals',3,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(185,'Employee Potential',3,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(186,'Employee Status in Current Year Appraisal',3,1,0,1,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(187,'Organisation Home',1,1,17,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(188,'Recruitment Home',5,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(189,'Competency Home',4,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(190,'Performance Home',3,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(191,'Learning Home',7,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(192,'Leave Home',8,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(193,'Claims Home',9,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(194,'Import Timing Record',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(195,'My Work Week Status',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(196,'Team Work Week Status',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(197,'Org. Work Week Status',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(198,'Team Top Workaholic',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(199,'Org. Top Workaholic',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Context`,`GroupID`,`FeatureType`,`Component`,`feasibility`) VALUES
+(200,'Team Top Irregularity',10,1,0,2,NULL,0);
+INSERT INTO `sys_features`(`FeatureID`,`FeatureName`,`ModuleID`,`Co

@@ -1,0 +1,520 @@
+rMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-19 16:48:05','Invalid JSON primitive: 01/2018.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/ExcelImportHandler.ashx?target=SaveExcelData','','SaveExcelData',6405);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-19 17:04:01','Conversion from string \"{\"FieldDescription\": \"DEARNESS_A\" to type ''Integer'' is not valid.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/ExcelImportHandler.ashx?target=SaveExcelData','Input string was not in a correct format.','SaveExcelData',6406);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-19 17:05:54','Conversion from string \"{\"FieldDescription\": \"DEARNESS_A\" to type ''Integer'' is not valid.','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/ExcelImportHandler.ashx?target=SaveExcelData','Input string was not in a correct format.','SaveExcelData',6407);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-19 18:03:00','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/LMSHandler.ashx?target=SaveForm25Settings','Input string was not in a correct format.','SaveForm25Settings',6408);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-19 18:03:40','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/LMSHandler.ashx?target=SaveForm25Settings','Input string was not in a correct format.','SaveForm25Settings',6409);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-19 18:30:00','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/LMSHandler.ashx?target=SaveForm25Settings','Input string was not in a correct format.','SaveForm25Settings',6410);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 11:28:06','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.147',90,'http://localhost:50091/Handler/LMSHandler.ashx?target=SaveForm25Settings','Input string was not in a correct format.','SaveForm25Settings',6411);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 11:51:21','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',6412);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 11:57:10','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',6413);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 12:39:11','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',6414);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 12:58:27','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',6415);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 12:58:46','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','getphoto',6416);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 12:58:47','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','getphoto',6417);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 12:58:48','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=getphoto','Timeout in IO operation','getphoto',6418);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 13:09:59','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeToDoSource',6419);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 13:53:37','Exception of type ''System.Web.HttpUnhandledException'' was thrown.','192.168.0.157',90,'http://localhost/TalentOZsupport/Home.aspx?scsio=pwjdi37_7nh8mSku8gjHGg==&cssi=GGcF!V4bIkHP8Gqoth!CVw==&cipc=kqko1!CMFdYrJMwSBEOcUw==&lang=1','Object reference not set to an instance of an object.','RedirectToPayrollUserAuthentication',6420);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 13:58:13','Exception of type ''System.Web.HttpUnhandledException'' was thrown.','192.168.0.157',90,'http://localhost/TalentOZsupport/Home.aspx?scsio=pwjdi37_7nh8mSku8gjHGg==&cssi=GGcF!V4bIkHP8Gqoth!CVw==&cipc=kqko1!CMFdYrJMwSBEOcUw==&lang=1','Object reference not set to an instance of an object.','RedirectToPayrollUserAuthentication',6421);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 13:58:21','Exception of type ''System.Web.HttpUnhandledException'' was thrown.','192.168.0.157',90,'http://localhost/TalentOZsupport/Home.aspx?scsio=pwjdi37_7nh8mSku8gjHGg==&cssi=GGcF!V4bIkHP8Gqoth!CVw==&cipc=kqko1!CMFdYrJMwSBEOcUw==&lang=1','Object reference not set to an instance of an object.','RedirectToPayrollUserAuthentication',6422);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 15:35:02','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',151,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6423);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:05:56','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6424);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:07:07','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6425);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:07:23','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6426);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:08:20','SMRD.1201: SQL Query Errors Occured - Field ''WorkLocationID'' doesn''t have a default value','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=SaveResHoliday','Field ''WorkLocationID'' doesn''t have a default value','SaveResHoliday',6427);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:33:32','Result consisted of more than one row','192.168.0.148',181,'http://localhost:59354/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6428);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:33:39','Result consisted of more than one row','192.168.0.148',181,'http://localhost:59354/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6429);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 17:56:46','You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''`,max(case when col = ''dsfsz'' then duration end) as `dsfsz`,max(case when col = '' at line 1','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',6430);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 18:19:09','You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''`,max(case when col = ''dsfsz'' then duration end) as `dsfsz`,max(case when col = '' at line 1','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',6431);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 18:31:19','Object reference not set to an instance of an object.','192.168.0.148',155,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6432);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 18:31:45','Object reference not set to an instance of an object.','192.168.0.148',155,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6433);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 18:38:53','Object reference not set to an instance of an object.','192.168.0.148',185,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6434);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 18:40:41','Object reference not set to an instance of an object.','192.168.0.148',185,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6435);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 18:43:43','Object reference not set to an instance of an object.','192.168.0.148',185,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6436);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-20 19:08:28','SMRD.1201: SQL Query Errors Occured - Out of range value for column ''HalfDayWorkingHrs'' at row 1','192.168.0.148',151,'http://localhost:59354/Handler/LMSHandler.ashx?target=SaveWorkDefinition','Out of range value for column ''HalfDayWorkingHrs'' at row 1','SaveWorkDefinition',6437);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:01:22','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',151,'http://localhost:59354/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6438);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:08:22','Object reference not set to an instance of an object.','192.168.0.148',185,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6439);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:08:35','Object reference not set to an instance of an object.','192.168.0.148',185,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6440);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:13:38','Object reference not set to an instance of an object.','192.168.0.148',185,'http://localhost:55372/Handler/WorkflowHandler.ashx?target=GetWFRequest','','GetWFRequest',6441);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:29:16','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_ca_metric_competencytype'' doesn''t exist','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler3.ashx?target=LoadMetricData','Table ''talentozdev.vw_ca_metric_competencytype'' doesn''t exist','LoadMetricData',6442);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:35:40','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',185,'http://localhost:59354/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6443);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:37:27','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',151,'http://localhost:59354/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6444);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 11:39:08','Operator ''='' is not defined for type ''DBNull'' and type ''Integer''.','192.168.0.148',151,'http://localhost:59354/Handler/WorkflowHandler.ashx?target=SaveRequest','','SaveRequest',6445);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 12:09:45','SMRD.1201: SQL Query Errors Occured - Out of range value for column ''WorkingHrs'' at row 1','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=SaveWorkDefinition','Out of range value for column ''WorkingHrs'' at row 1','SaveWorkDefinition',6446);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 14:56:57','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/UIHandler.ashx?target=GetTagData','','GetTagData',6447);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 15:32:28','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6448);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 15:32:41','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6449);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 15:32:48','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.148',90,'http://localhost:59354/Handler/LMSHandler.ashx?target=GetEmpGroupResult','','GetEmpGroupResult',6450);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-21 17:06:37','SMRD.1201: SQL Query Errors Occured - Result consisted of more than one row','192.168.0.148',151,'http://localhost:55372/Handler/TAHandler.ashx?target=SwapEntry','Result consisted of more than one row','SwapEntry',6451);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 07:56:51','Conversion from string \"3/16/2018\" to type ''Date'' is not valid.','192.168.0.107',90,'http://localhost/TalentOZ/Handler/LMSHandler.ashx?target=DateCompare','','DateCompare',6452);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 10:10:35','The ''Microsoft.Jet.OLEDB.12.0'' provider is not registered on the local machine.','192.168.0.147',90,'http://localhost:50091/Handler/RECHandler.ashx?target=GetExcelSheetHeader','','GetExcelSheetHeader',6453);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 10:32:56','The ''Microsoft.ACE.OLEDB.12.0'' provider is not registered on the local machine.','192.168.0.147',90,'http://localhost:50091/Handler/RECHandler.ashx?target=GetExcelSheetHeader','','GetExcelSheetHeader',6454);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 14:56:06','SMRD.1201: SQL Query Errors Occured - Duplicate entry ''2-9254-3699'' for key ''PRIMARY''','192.168.0.147',163,'http://localhost:50091/Handler/WorkflowHandler.ashx?target=SaveRequest','Duplicate entry ''2-9254-3699'' for key ''PRIMARY''','SaveRequest',6455);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 15:17:20','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6456);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 15:18:51','Result consisted of more than one row','192.168.0.148',161,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6457);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 15:22:43','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentozSupport/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6458);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 16:14:41','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6459);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 16:33:59','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6460);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 17:24:10','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6461);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 18:06:32','Result consisted of more than one row','192.168.0.157',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6462);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 18:06:41','Result consisted of more than one row','192.168.0.157',90,'http://localhost/TalentOZdevelopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6463);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 18:07:06','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6464);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 18:16:36','Parameter ''pBUIs'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=LoadAttendanceRerunFilters','','LoadAttendanceRerunFilters',6465);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-22 20:14:05','The ''Microsoft.Jet.OLEDB.12.0'' provider is not registered on the local machine.','192.168.0.153',90,'http://localhost:62023/Handler/RECHandler.ashx?target=GetExcelSheetHeader','','GetExcelSheetHeader',6466);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 09:56:36','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6467);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 10:22:46','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6468);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 10:23:06','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6469);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 10:24:18','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6470);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 10:56:48','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6471);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:17:29','Result consisted of more than one row','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6472);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:18:29','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6473);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:22:47','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6474);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:33:50','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','Unable to connect to any of the specified MySQL hosts.','GetEmployeeToDoSource',6475);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:33:50','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','Unable to connect to any of the specified MySQL hosts.','GetEmployeeWidgetSource',6476);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:33:51','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','Unable to connect to any of the specified MySQL hosts.','GetEmployeeToDoSource',6477);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:33:52','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.148',90,'http://localhost:55372/Handler/UIHandler2.ashx?target=GetEmployeeWidgetSource','Unable to connect to any of the specified MySQL hosts.','GetEmployeeWidgetSource',6478);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:38:29','Object reference not set to an instance of an object.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=GetAssignedProgramsList','','GetAssignedProgramsList',6479);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 11:45:03','Object reference not set to an instance of an object.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=GetAssignedProgramsList','','GetAssignedProgramsList',6480);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 12:40:42','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=LoadAttendanceRerunList','Timeout in IO operation','LoadAttendanceRerunList',6481);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 12:40:42','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=LoadAttendanceRerunList','Timeout in IO operation','LoadAttendanceRerunList',6481);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 12:48:06','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6482);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 12:48:53','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6483);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 12:49:44','Result consisted of more than one row','192.168.0.148',90,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6484);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:07:44','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6485);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:07:49','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',6486);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:07:55','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',6487);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:08:14','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6488);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:08:25','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',6489);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:08:56','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6490);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:09:11','Result consisted of more than one row','192.168.0.148',5108,'http://localhost:55372/Handler/TAHandler.ashx?target=GetBiometricReport','','GetBiometricReport',6491);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:11:22','Result consisted of more than one row','192.168.0.148',161,'http://localhost:55372/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6492);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:39:57','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6493);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:40:09','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6494);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 13:40:51','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6495);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 14:45:57','Method not found: ''Void TalentOZ.Net.Reports.AttendanceSheet..ctor(Int32, System.String, TalentOZ.Net.Reports.ReportLayout, System.Data.DataTable, System.Data.DataTable, System.Data.DataTable, System.String, System.String)''.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',6496);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 14:57:28','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',184,'http://localhost:55372/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6497);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 15:19:07','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler3.ashx?target=LoadAnnouncementAttachements','Timeout in IO operation','LoadAnnouncementAttachements',6498);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 15:20:48','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',153,'http://localhost:55372/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6499);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 15:27:02','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',153,'http://localhost:55372/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6500);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 15:37:46','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',153,'http://localhost:55372/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6501);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 16:38:13','Column ''PeridiumAmount'' does not belong to table Table.','192.168.0.148',5177,'http://localhost:55372/Handler/ClaimsHandler.ashx?target=GetClaimRequestDetails','','GetClaimRequestDetails',6502);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:26:56','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.157',90,'http://localhost/TalentOZdevelopment/Handler/PerfHandler.ashx?target=DeleteGoalPlan','Input string was not in a correct format.','DeleteGoalPlan',6503);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:30:39','Column ''PeridiumAmount'' does not belong to table Table.','192.168.0.148',163,'http://localhost:55372/Handler/ClaimsHandler.ashx?target=GetClaimRequestDetails','','GetClaimRequestDetails',6504);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:44:31','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6505);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:45:40','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6506);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:49:07','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6507);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:54:05','Procedure or function ''`SP_Perf_ReorderGoalPlanID`'' cannot be found in database ''`talentozdev`''.','192.168.0.157',90,'http://localhost/TalentOZdevelopment/Handler/PerfHandler.ashx?target=DeleteGoalPlan','','DeleteGoalPlan',6508);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 17:57:14','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6509);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 19:17:03','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',6510);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 19:17:09','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',6511);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 19:17:18','Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler.ashx?target=GetTagInformation','','GetTagInformation',6512);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-23 19:27:10','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=GetGenerateReportList','Timeout in IO operation','GetGenerateReportList',6513);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 10:13:30','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6514);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 10:14:16','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6515);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 10:18:57','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6516);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:14:50','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6517);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:20:35','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6518);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:23:22','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6519);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:24:42','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','GetEmployeeToDoSource',6520);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:26:05','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6521);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:26:41','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6522);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:34:37','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6523);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:40:44','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6524);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 11:53:23','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6525);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:42:06','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6526);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:43:29','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6527);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:43:45','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6528);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:43:57','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6529);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:44:05','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6530);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:45:31','Conversion from string \"None\" to type ''Double'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=SaveExcelData','Input string was not in a correct format.','SaveExcelData',6531);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:47:21','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6532);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:48:00','Conversion from string \"None\" to type ''Double'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=SaveExcelData','Input string was not in a correct format.','SaveExcelData',6533);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:48:04','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6534);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:49:04','Conversion from string \"None\" to type ''Double'' is not valid.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=SaveExcelData','Input string was not in a correct format.','SaveExcelData',6535);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:49:25','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6536);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:50:03','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6537);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 12:52:15','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6538);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 13:22:58','Exception of type ''SMRHRT.Data.DataException'' was thrown.','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler.ashx?target=GetTagData','','GetTagData',6539);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 13:35:55','SMRD.1411: Error Opening / Closing Database Connection.','192.168.0.147',90,'http://localhost:50091/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',6540);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 13:44:35','SMRD.1008: Error Opening / Closing Database Connection.','192.168.0.147',90,'http://localhost:50091/Handler/TAHandler.ashx?target=LoadSearchData','Timeout in IO operation','LoadSearchData',6541);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:12:37','Object reference not set to an instance of an object.','192.168.0.153',90,'http://localhost:57701/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',6542);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:21:15','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6543);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:21:44','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6544);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:24:18','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6545);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:24:36','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6546);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:26:01','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6547);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:28:34','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6548);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:29:58','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6549);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 14:34:53','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6550);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:00:25','Column ''PeridiumAmount'' does not belong to table Table.','192.168.0.148',153,'http://localhost:55372/Handler/WorkflowHandler.ashx?target=SaveRequest','','SaveRequest',6551);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:00:27','Column ''PeridiumAmount'' does not belong to table Table.','192.168.0.148',153,'http://localhost:55372/Handler/WorkflowHandler.ashx?target=SaveRequest','','SaveRequest',6552);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:03:13','Column ''PeridiumAmount'' does not belong to table Table.','192.168.0.148',153,'http://localhost:55372/Handler/WorkflowHandler.ashx?target=SaveRequest','','SaveRequest',6553);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:05:14','SMRD.1201: SQL Query Errors Occured - Incorrect string value: ''\\xE0\\xA4\\xB0\\\",...'' for column ''RequestedForm'' at row 1','192.168.0.148',153,'http://localhost:55372/Handler/WorkflowHandler.ashx?target=SaveRequest','Incorrect string value: ''\\xE0\\xA4\\xB0\\\",...'' for column ''RequestedForm'' at row 1','SaveRequest',6554);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:30:06','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6555);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:34:04','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6556);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:34:21','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6557);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:36:25','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6558);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:38:02','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6559);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:42:40','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6560);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:43:56','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6561);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:45:43','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6562);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:47:25','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6563);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:48:10','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6564);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 15:53:04','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6565);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:01:45','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6566);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:06:06','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6567);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:07:49','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6568);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:10:34','Conversion from string \"\" to type ''Integer'' is not valid.','192.168.0.148',153,'http://localhost:59354/Handler/ClaimsHandler.ashx?target=GetCliamRequestListForDashboard','Input string was not in a correct format.','GetCliamRequestListForDashboard',6569);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:19:20','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6570);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:19:38','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6571);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:22:47','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6572);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:23:21','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6573);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:24:20','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6574);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:25:27','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6575);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:26:10','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6576);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:26:29','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6577);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:26:51','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6578);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:27:58','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6579);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:29:39','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6580);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:37:36','SMRD.1201: SQL Query Errors Occured - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','192.168.0.153',90,'http://localhost:57701/Handler/UIHandler.ashx?target=SaveUserActivities','Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.','SaveUserActivities',6581);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:32:13','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6582);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:33:07','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6583);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:33:44','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6584);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:42:30','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6585);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:42:35','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6586);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:45:25','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6587);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:45:41','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6588);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:47:31','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6589);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 16:47:36','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6590);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 17:00:48','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6591);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 17:01:46','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6592);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 17:03:38','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6593);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 17:06:39','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6594);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 17:08:03','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6595);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 17:33:03','Cannot find column 28.','192.168.0.147',90,'http://localhost:50091/Handler/RecHandler.ashx?target=GetRecConList','','GetRecConList',6596);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 18:01:36','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6597);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 18:01:57','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6598);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-26 18:37:30','Exception of type ''System.Web.HttpUnhandledException'' was thrown.','192.168.0.157',90,'http://localhost/TalentOZdevelopment/Home.aspx?scsio=pwjdi37_7nh8mSku8gjHGg==&cssi=GGcF!V4bIkHP8Gqoth!CVw==&cipc=kqko1!CMFdYrJMwSBEOcUw==&lang=1','Object reference not set to an instance of an object.','RedirectToPayrollUserAuthentication',6599);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 09:59:12','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6600);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:04:38','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6601);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:06:37','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6602);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:06:51','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6603);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:09:08','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6604);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:11:40','Exception of type ''System.Web.HttpUnhandledException'' was thrown.','192.168.0.147',90,'http://localhost:50091/Home.aspx?scsio=pwjdi37_7nh8mSku8gjHGg==&cssi=GGcF!V4bIkHP8Gqoth!CVw==&cipc=kqko1!CMFdYrJMwSBEOcUw==&lang=1','Object reference not set to an instance of an object.','RedirectToPayrollUserAuthentication',6605);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:21:26','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6606);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:22:23','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6607);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:22:43','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6608);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:36:09','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6609);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 10:54:16','Expression can''t be empty\r\nParameter name: expression','192.168.0.127',90,'http://localhost:50446/Handler/PayRollHandler.ashx?target=GetDeriveSalaryComponents','','GetDeriveSalaryComponents',6610);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:03:51','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6611);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:04:35','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6612);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:13:32','Parameter ''pFromDate'' not found in the collection.','192.168.0.102',90,'http://localhost/TalentozSupport/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',6613);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:14:51','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6614);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:15:22','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6615);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:16:29','Parameter ''pFromDate'' not found in the collection.','192.168.0.102',90,'http://localhost/TalentozSupport/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',6616);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:17:15','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6617);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:17:33','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6618);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:51:05','Parameter ''pFromDate'' not found in the collection.','192.168.0.102',90,'http://localhost/TalentozSupport/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',6619);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:51:55','Parameter ''pFromDate'' not found in the collection.','192.168.0.102',90,'http://localhost/TalentozSupport/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',6620);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 11:52:50','Parameter ''pFromDate'' not found in the collection.','192.168.0.102',90,'http://localhost/TalentozSupport/Handler/UIHandler2.ashx?target=GetEmployeeToDoSource','','GetEmployeeToDoSource',6621);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 12:19:45','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6622);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 12:20:09','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6623);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 12:52:56','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6624);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 12:53:20','Parameter ''pImportedBy'' not found in the collection.','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/ExcelImportHandler.ashx?target=LoadImportHistoryList','','LoadImportHistoryList',6625);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 12:56:04','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6626);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 14:29:55','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6627);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 14:31:03','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6628);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:01:07','Unknown column ''locksms'' in ''field list''','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6629);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:03:06','Unknown column ''locksms'' in ''field list''','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6630);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:04:23','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6631);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:04:27','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6632);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:04:28','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6633);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:11:34','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6634);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:15:23','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6635);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 17:57:31','Unknown column ''StartDate'' in ''field list''','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6636);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 18:03:12','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6637);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-27 19:29:19','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6638);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 09:20:03','Subquery returns more than 1 row','192.168.0.147',90,'http://localhost:59521/Handler/LMSHandler.ashx?target=ValidateLeaveApplication','','ValidateLeaveApplication',6639);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 09:46:00','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6640);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 10:24:27','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6641);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 11:01:00','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6642);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 11:39:11','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6643);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 11:49:57','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6644);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 11:53:35','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6645);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 11:59:41','Procedure or function ''`SP_Perf_GetMaxGoalPlanID`'' cannot be found in database ''`talentozdev`''.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SaveGoalPlan','','SaveGoalPlan',6646);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 12:23:47','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6647);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 12:28:25','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6648);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 12:59:41','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6649);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 13:00:38','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6650);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 13:10:35','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6651);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 13:11:05','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6652);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 13:11:57','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6653);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 13:13:44','Conversion from string \"undefined\" to type ''Integer'' is not valid.','192.168.0.112',90,'http://localhost:59354/Handler/LDHandler.ashx?target=DeleteAssignedProgramForIDP','Input string was not in a correct format.','DeleteAssignedProgramForIDP',6654);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 14:34:16','SMRD.1201: SQL Query Errors Occured - Table ''talentozdev.vw_ca_metric_competencytype'' doesn''t exist','192.168.0.112',90,'http://localhost:59354/Handler/UIHandler3.ashx?target=LoadMetricData','Table ''talentozdev.vw_ca_metric_competencytype'' doesn''t exist','LoadMetricData',6655);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 14:54:31','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6656);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 14:56:13','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6657);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 15:08:27','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6658);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 15:12:06','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6659);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 15:14:37','Result consisted of more than one row','192.168.0.149',90,'http://localhost/TalentOZDeveloopment/Handler/TAHandler.ashx?target=GetCalculatedDTR_CheckIn','','GetCalculatedDTR_CheckIn',6660);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 15:17:46','28/03/2018 is not a valid value for DateTime.','192.168.0.154',90,'http://localhost/TalentOZ/Handler/PerfHandler.ashx?target=SaveGoalPlan','String was not recognized as a valid DateTime.','SaveGoalPlan',6661);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2,'2018-03-28 15:25:06','Conversion from type ''DBNull'' to type ''Boolean'' is not valid.','192.168.0.148',153,'http://localhost:55372/Handler/TAHandler.ashx?target=GetOTEmployeeWorkFlowID','','GetOTEmployeeWorkFlowID',6662);
+INSERT INTO `applicationerrorlog`(`ClientID`,`RecordedDate`,`ErrorMessage`,`SystemIP`,`UserID`,`PageDetail`,`ExceptionMessage`,`Request`,`ErrorID`) VALUES
+(2

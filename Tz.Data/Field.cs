@@ -28,6 +28,7 @@ namespace Tz.Data
             DBQuery select;
             select = DBQuery.SelectAll(TzAccount.Field.Table).From(TzAccount.Field.Table)
                 .LeftJoin(TzAccount.Field.Table).On(TzAccount.Field.TableID, Compare.Equals, TzAccount.Field.TableID);
+            
             return db.GetDatatable(select);
         }
 

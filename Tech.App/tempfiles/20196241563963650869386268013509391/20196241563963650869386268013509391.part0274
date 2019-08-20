@@ -1,0 +1,724 @@
+ Relationship\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,17,'FF_lblOwnership',1,0,'{\r\n	\"Title\": \"Ownership\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblOwnership\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Ownership\"\r\n}',2,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,18,'FF_txtOwnership',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtOwnership\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Ownership\",\r\n	\"ToolTip\": \"Displayed Ownership\"\r\n}',3,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,19,'FF_lblRespect',1,0,'{\r\n	\"Title\": \"Respect For People\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblRespect\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Respect For People\"\r\n}',4,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,20,'FF_txtRespect',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtRespect\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Respect For People\",\r\n	\"ToolTip\": \"Displayed Respect For People\"\r\n}',5,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,21,'FF_lblInnovation',1,0,'{\r\n	\"Title\": \"Innovation\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblInnovation\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Innovation\"\r\n}',6,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,22,'FF_txtInnovation',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtInnovation\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Innovation\",\r\n	\"ToolTip\": \"Displayed Innovation\"\r\n}',7,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,23,'FF_lblLearning',1,0,'{\r\n	\"Title\": \"Life Long Learning\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblLearning\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Life Long Learning\"\r\n}',8,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,24,'FF_txtLearning',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtLearning\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Life Long Learning\",\r\n	\"ToolTip\": \"Displayed Life Long Learning\"\r\n}',9,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,25,'LF_lblQuestion',0,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,26,'LF_txtQuestion',0,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,27,'FF_lblQuestion',1,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,28,'FF_txtQuestion',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,29,'LF_lblTeamQuestion',0,0,'{\r\n	\"Title\": \"Team Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_lblTeamQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Team Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,30,'LF_txtTeamQuestion',0,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_txtTeamQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Team Question\",\r\n	\"ToolTip\": \"Displayed Team Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,31,'FF_lblTeamQuestion',1,0,'{\r\n	\"Title\": \"Team Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblTeamQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Team Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,32,'FF_txtTeamQuestion',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtTeamQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Team Question\",\r\n	\"ToolTip\": \"Displayed Team Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,25,'LF_lblQuestion',0,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,26,'LF_txtQuestion',0,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,27,'FF_lblQuestion',1,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,28,'FF_txtQuestion',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,25,'LF_lblQuestion',0,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,26,'LF_txtQuestion',0,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,27,'FF_lblQuestion',1,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,28,'FF_txtQuestion',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,25,'LF_lblQuestion',0,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,26,'LF_txtQuestion',0,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"LF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,27,'FF_lblQuestion',1,0,'{\r\n	\"Title\": \"Question\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_lblQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"\",\r\n	\"ToolTip\": \"Question\"\r\n}',0,NULL,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalcomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`FieldID`,`Identifier`,`FieldType`,`ControlType`,`FieldAttributes`,`FieldOrder`,`FieldInstanceID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,28,'FF_txtQuestion',1,1,'{\"Title\": \"\",\r\n	\"ISRequired\": true,\r\n	\"Charlength\": 256,\r\n	\"ISNumeric\": false,\r\n	\"ISDecimal\": false,\r\n	\"MinRange\": 0,\r\n	\"MaxRange\": 0,\r\n	\"DecimalPoints\": 0,\r\n	\"Identifier\": \"FF_txtQuestion\",\r\n	\"DateFormat\": \"\",\r\n	\"FileTypes\": \"\",\r\n	\"PlaceHolder\": \"Enter the Question\",\r\n	\"ToolTip\": \"Displayed Question\"\r\n}',1,NULL,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `dc_perfomanceappraisalcomponentfields` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_perfomanceappraisalemployeecomponent
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_perfomanceappraisalemployeecomponent` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceAppraisalID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `ComponentItemID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_perfomanceappraisalemployeecomponent
+-- 
+
+/*!40000 ALTER TABLE `dc_perfomanceappraisalemployeecomponent` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,165,261,'2017-05-11 14:54:40');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,261,'2017-05-11 14:54:40');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,53,165,261,'2017-05-11 14:54:49');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,55,165,261,'2017-05-11 14:54:49');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,82,165,261,'2017-05-11 14:54:49');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,83,165,165,'2017-05-11 14:55:12');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,60,165,261,'2017-05-11 14:57:21');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,61,165,261,'2017-05-11 14:57:21');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,62,165,261,'2017-05-11 14:57:21');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,63,165,261,'2017-05-11 14:57:21');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,72,165,261,'2017-05-11 14:57:36');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,77,165,261,'2017-05-11 14:57:36');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,54,161,539,'2017-05-12 16:39:48');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,56,161,539,'2017-05-12 16:39:48');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,161,539,'2017-05-12 16:40:05');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,60,161,539,'2017-05-12 16:40:25');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,77,161,539,'2017-05-12 16:40:43');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,72,161,539,'2017-05-12 17:02:25');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,60,161,539,'2017-05-16 14:00:11');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,60,153,539,'2017-05-16 16:58:38');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,66,153,539,'2017-05-16 17:07:41');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,60,153,539,'2017-05-16 17:35:17');
+INSERT INTO `dc_perfomanceappraisalemployeecomponent`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,66,153,539,'2017-05-16 17:35:17');
+COMMIT;
+/*!40000 ALTER TABLE `dc_perfomanceappraisalemployeecomponent` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_perfomanceappraisalemployeecomponentfields
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_perfomanceappraisalemployeecomponentfields` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceAppraisalID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `ComponentItemID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `FieldID` int(11) NOT NULL,
+  `StringValue` varchar(500) DEFAULT NULL,
+  `TextValue` text,
+  `DateValue` datetime DEFAULT NULL,
+  `IntegerValue` int(11) DEFAULT NULL,
+  `DecimalValue` decimal(12,2) DEFAULT NULL,
+  `LookupID` int(11) DEFAULT NULL,
+  `ControlType` int(10) unsigned NOT NULL COMMENT '0-LABEL,1-TEXTBOX,2-TEXTAREA,3-DATEPICKER,4-DROPDOWN,5-ATTACHMENT',
+  `CreatedBy` int(10) unsigned DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_perfomanceappraisalemployeecomponentfields
+-- 
+
+/*!40000 ALTER TABLE `dc_perfomanceappraisalemployeecomponentfields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,81,161,3,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,81,161,4,'satrio a 2',NULL,'0001-01-01 00:00:00',0,0.00,0,1,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,83,165,3,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:55:12');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,83,165,4,'Test 3',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-11 14:55:12');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,15,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,16,'ok',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,17,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,18,'ok',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,19,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,20,'ok',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,21,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,22,'ok',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,23,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,165,24,'ok',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-11 14:57:04');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,87,161,3,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-12 15:11:31');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,87,161,4,'Test',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-12 15:11:32');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,60,161,27,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-16 13:02:22');
+INSERT INTO `dc_perfomanceappraisalemployeecomponentfields`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`UserID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`LookupID`,`ControlType`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,60,161,28,'Do you understand the requirements of your job?',NULL,'0001-01-01 00:00:00',0,0.00,0,1,0,'2017-05-16 13:02:23');
+COMMIT;
+/*!40000 ALTER TABLE `dc_perfomanceappraisalemployeecomponentfields` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_perfomanceappraisallibrarycomponentfield
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_perfomanceappraisallibrarycomponentfield` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceAppraisalID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `ComponentItemID` int(11) NOT NULL,
+  `FieldID` int(11) NOT NULL,
+  `StringValue` text,
+  `TextValue` text,
+  `DateValue` datetime DEFAULT NULL,
+  `IntegerValue` int(11) DEFAULT NULL,
+  `DecimalValue` decimal(12,2) DEFAULT NULL,
+  `ControlType` int(10) unsigned NOT NULL COMMENT '0-LABEL,1-TEXTBOX,2-TEXTAREA,3-DATEPICKER,4-DROPDOWN,5-ATTACHMENT',
+  `LookupID` int(11) DEFAULT NULL,
+  `CreatedBy` int(10) unsigned DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`),
+  KEY `ind1` (`ClientID`,`PerformanceAppraisalID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_perfomanceappraisallibrarycomponentfield
+-- 
+
+/*!40000 ALTER TABLE `dc_perfomanceappraisallibrarycomponentfield` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,49,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,49,2,'Uncompromising Integrity',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,50,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,50,2,'Envisioning Technology Leadership',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,51,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,51,2,'Shared Vision among Team Members',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,52,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,52,2,'Flawless Execution of Commitments',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,53,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,53,2,'Edge in Performance',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,54,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,54,2,'Culture of Innovation, Creativity & Productivity',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,55,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,55,2,'Teaming as a Way of Life',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,56,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,56,2,'Accountability for All Actions',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,81,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,81,2,'test satria 1',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,82,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,82,2,'test satria 2',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,83,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-11 14:55:12');
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,83,2,'Test sATRIA 3',NULL,'0001-01-01 00:00:00',0,0.00,1,0,0,'2017-05-11 14:55:12');
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,87,1,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,0,'2017-05-12 15:11:31');
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,87,2,'Test',NULL,'0001-01-01 00:00:00',0,0.00,1,0,0,'2017-05-12 15:11:31');
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,5,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,6,'Be the name synonymous for championing world-class practices in unleashing human potential.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,7,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,8,'We strive to maximise the potential in people through innovative solutions.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,9,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,10,'Passion is the fuel that drives the best. Passion reminds us of the higher purpose that we work and fight for: the never-ending mission to unlock the potential that lies within each person through knowledge and education.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,11,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,12,'We are committed to fulfil our goals; to create innovative solutions that further people’s professional and personal growth, and to provide a platform on which these individuals can take ownership of their future',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,13,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,57,14,'Mutual respect of one another is key in creating a harmonious and effective company. As a team of close to 500 staff members, we value making everyone inclusive. We respect individuals and differences.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,5,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,6,'By creating an environment of passion, commitment and respect, we aim to foster innovation.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,7,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,8,'To us, innovation simply means continuously improving all the time',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,9,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,10,'As we live by these values, we reach for the most quantifiable mark of success: results. PASSION and COMMITMENT keep us going, RESPECT keeps us united, and INNOVATION keeps us ahead;',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,11,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,12,'RESULTS in maximising the potential for human growth and learning and deliver superior value to our stakeholders: shareholders, customers, students, employees, community and society.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,13,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,58,14,'Be passionate and deliver exceptional value',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,5,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,6,'Be passionate and deliver exceptional value',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,7,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,8,'Be committed, honest, truthful and be professional in whatever we do',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,9,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,10,'Respect confidentiality and focus on delivering value to the communities we serve. Do what is right even if it means losing business in the short term',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,11,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,12,'Innovation requires team thinking and team work. We operate as a Team – we recognise that the best value is created when we work as ONE',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,13,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,59,14,'Results is all that matters in this competitive and ever changing world. To ensure we help deliver value and results, we tirelessly work to develop leaders at all levels.',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,60,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,60,26,'Do you understand the requirements of your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,61,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,61,26,'What changes in duties or priorities did you face during the review period and how did you handle them?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,62,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,62,26,'What are your strengths (the things you do well) and how do you put them to use in your position?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,63,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,63,26,'What are your weaknesses (the things you don’t do so well) and how do they impact your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,64,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,64,26,'What would help you enhance your performance (training, equipment, etc.)?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,65,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,65,26,'What are your expectations for the coming evaluation period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,66,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,17,66,26,'How would you rate your overall performance for this review period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,67,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,67,30,'How would your co-workers describe you?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,68,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,68,30,'What is your viewpoint of management?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,69,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,69,30,'What is your definition of success?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,70,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,70,30,'What is your definition of failure?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,71,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,71,30,'Do you know who our competitors are?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,72,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,72,30,'Do you feel that you are an organized person?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,73,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,73,30,'How do you manage your time?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,74,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,74,30,'We are a fast moving company and things are always changing, how do you think you will fit in with our ever changing and fast paced environment?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,75,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,75,30,'What information do you need before making a decision?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,76,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,76,30,'How do you react to problems?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,77,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,77,30,'Do you consider yourself a risk taker or do you like to play it safe?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,78,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,78,30,'test tm',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,79,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,79,30,'test',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,80,29,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,18,80,30,'testb tm 1',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,60,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,60,26,'Do you understand the requirements of your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,61,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,61,26,'What changes in duties or priorities did you face during the review period and how did you handle them?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,62,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,62,26,'What are your strengths (the things you do well) and how do you put them to use in your position?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,63,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,63,26,'What are your weaknesses (the things you don’t do so well) and how do they impact your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,64,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,64,26,'What would help you enhance your performance (training, equipment, etc.)?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,65,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,65,26,'What are your expectations for the coming evaluation period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,66,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,409,17,66,26,'How would you rate your overall performance for this review period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,60,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,60,26,'Do you understand the requirements of your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,61,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,61,26,'What changes in duties or priorities did you face during the review period and how did you handle them?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,62,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,62,26,'What are your strengths (the things you do well) and how do you put them to use in your position?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,63,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,63,26,'What are your weaknesses (the things you don’t do so well) and how do they impact your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,64,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,64,26,'What would help you enhance your performance (training, equipment, etc.)?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,65,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,65,26,'What are your expectations for the coming evaluation period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,66,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,410,17,66,26,'How would you rate your overall performance for this review period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,60,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,60,26,'Do you understand the requirements of your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,61,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,61,26,'What changes in duties or priorities did you face during the review period and how did you handle them?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,62,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,62,26,'What are your strengths (the things you do well) and how do you put them to use in your position?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,63,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,63,26,'What are your weaknesses (the things you don’t do so well) and how do they impact your job?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,64,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,64,26,'What would help you enhance your performance (training, equipment, etc.)?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,65,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,65,26,'What are your expectations for the coming evaluation period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,66,25,NULL,NULL,'0001-01-01 00:00:00',0,0.00,0,0,NULL,NULL);
+INSERT INTO `dc_perfomanceappraisallibrarycomponentfield`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`ComponentItemID`,`FieldID`,`StringValue`,`TextValue`,`DateValue`,`IntegerValue`,`DecimalValue`,`ControlType`,`LookupID`,`CreatedBy`,`LastUPD`) VALUES
+(2,411,17,66,26,'How would you rate your overall performance for this review period?',NULL,'0001-01-01 00:00:00',0,0.00,1,0,NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `dc_perfomanceappraisallibrarycomponentfield` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_perfomanceappraisalratingscaledescription
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_perfomanceappraisalratingscaledescription` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceAppraisalID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `RatingLevel` int(11) NOT NULL,
+  `RatingDescription` varchar(255) NOT NULL,
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_perfomanceappraisalratingscaledescription
+-- 
+
+/*!40000 ALTER TABLE `dc_perfomanceappraisalratingscaledescription` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,1,'Poor',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,2,'Average',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,3,'Good',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,4,'Very Good',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,15,5,'Excellent',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,1,'One 1',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,2,'Two 2',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,3,'Three 3',NULL,NULL);
+INSERT INTO `dc_perfomanceappraisalratingscaledescription`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`RatingLevel`,`RatingDescription`,`CreatedBy`,`LastUPD`) VALUES
+(2,407,16,4,'Four 4',NULL,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `dc_perfomanceappraisalratingscaledescription` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_perfomanceappraisaltemplatecomponents
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_perfomanceappraisaltemplatecomponents` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceAppraisalID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `Weightage` double NOT NULL,
+  `IsItemLevelWeightage` tinyint(4) NOT NULL,
+  `CanAddFromLibrary` tinyint(4) NOT NULL,
+  `CanCreateFromPerformanceForm` tinyint(4) NOT NULL,
+  `MinimumNumberOfComponent` int(11) NOT NULL,
+  `MaximumNumberOfComponent` int(11) NOT NULL,
+  `PreloadComponent` tinyint(4) NOT NULL,
+  `EnableSelfToUpdateFormFields` tinyint(4) NOT NULL,
+  `EnableReviewerToUpdateFormFields` tinyint(4) NOT NULL,
+  `DisplayOrder` int(11) NOT NULL,
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `EanbleQuestionsAtReviewStage` tinyint(4) NOT NULL,
+  `PrepopulateQuestions` tinyint(4) NOT NULL,
+  `BindOrder` int(11) DEFAULT '4',
+  `ComponetDesc` text,
+  `IsRemarksMandatory` int(11) DEFAULT '0',
+  `IsRemovePreloadedItem` int(11) DEFAULT '0',
+  PRIMARY KEY (`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_perfomanceappraisaltemplatecomponents
+-- 
+
+/*!40000 ALTER TABLE `dc_perfomanceappraisaltemplatecomponents` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,407,66,15,50,1,1,1,1,10,0,1,1,0,NULL,NULL,0,0,4,NULL,0,0);
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,407,66,16,10,1,1,1,1,10,0,0,0,0,NULL,NULL,0,0,4,NULL,0,0);
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,407,66,17,0,0,1,1,1,10,0,1,1,0,NULL,NULL,0,0,4,NULL,0,0);
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,407,66,18,40,1,1,1,1,10,0,1,1,0,NULL,NULL,0,0,4,NULL,0,0);
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,409,69,17,0,0,1,1,1,10,0,1,1,0,NULL,NULL,0,0,4,NULL,0,0);
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,410,69,17,0,0,1,1,1,10,0,1,1,0,NULL,NULL,0,0,4,NULL,0,0);
+INSERT INTO `dc_perfomanceappraisaltemplatecomponents`(`ClientID`,`PerformanceAppraisalID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,411,69,17,0,0,1,1,1,10,0,1,1,0,NULL,NULL,0,0,4,NULL,0,0);
+COMMIT;
+/*!40000 ALTER TABLE `dc_perfomanceappraisaltemplatecomponents` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_performance_overallscore
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_performance_overallscore` (
+  `ClientID` int(11) NOT NULL,
+  `PerformanceAppraisalID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL COMMENT '0-Self,1-Manager',
+  `ReviewerType` int(11) NOT NULL,
+  `Score` double NOT NULL,
+  `OverAllScore` double NOT NULL,
+  `Type` int(11) NOT NULL COMMENT '0-Goal,1-Competency,2-Potential',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_performance_overallscore
+-- 
+
+/*!40000 ALTER TABLE `dc_performance_overallscore` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,15,161,1,2.5,25,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,15,165,1,3.5,35,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,15,165,2,2,20,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,16,161,1,3,7.5,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,16,165,1,3.25,8.1,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,16,165,2,2,5,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,18,161,1,0.81,32.4,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,18,165,1,0.7925,31.7,4,NULL);
+INSERT INTO `dc_performance_overallscore`(`ClientID`,`PerformanceAppraisalID`,`ComponentID`,`UserID`,`ReviewerType`,`Score`,`OverAllScore`,`Type`,`LastUPD`) VALUES
+(2,407,18,165,2,0.145,5.8,4,NULL);
+COMMIT;
+/*!40000 ALTER TABLE `dc_performance_overallscore` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_ratingscaledescription
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_ratingscaledescription` (
+  `ClientID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `RatingLevel` int(11) NOT NULL,
+  `RatingDescription` varchar(255) NOT NULL,
+  `CreatedBy` int(11) NOT NULL,
+  `LastUPD` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_ratingscaledescription
+-- 
+
+/*!40000 ALTER TABLE `dc_ratingscaledescription` DISABLE KEYS */;
+START TRANSACTION;
+
+COMMIT;
+/*!40000 ALTER TABLE `dc_ratingscaledescription` ENABLE KEYS */;
+
+-- 
+-- Definition of dc_templatecomponents
+-- 
+
+CREATE TABLE IF NOT EXISTS `dc_templatecomponents` (
+  `ClientID` int(11) NOT NULL,
+  `TemplateID` int(11) NOT NULL,
+  `ComponentID` int(11) NOT NULL,
+  `Weightage` double NOT NULL,
+  `IsItemLevelWeightage` tinyint(4) NOT NULL,
+  `CanAddFromLibrary` tinyint(4) NOT NULL,
+  `CanCreateFromPerformanceForm` tinyint(4) NOT NULL,
+  `MinimumNumberOfComponent` int(11) NOT NULL,
+  `MaximumNumberOfComponent` int(11) NOT NULL,
+  `PreloadComponent` tinyint(4) NOT NULL,
+  `EnableSelfToUpdateFormFields` tinyint(4) NOT NULL,
+  `EnableReviewerToUpdateFormFields` tinyint(4) NOT NULL,
+  `DisplayOrder` int(11) NOT NULL,
+  `CreatedBy` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `EanbleQuestionsAtReviewStage` tinyint(4) NOT NULL,
+  `PrepopulateQuestions` tinyint(4) NOT NULL,
+  `BindOrder` int(11) DEFAULT '4',
+  `ComponetDesc` text,
+  `IsRemarksMandatory` int(11) DEFAULT '0',
+  `IsRemovePreloadedItem` int(11) DEFAULT '0',
+  PRIMARY KEY (`ClientID`,`TemplateID`,`ComponentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table dc_templatecomponents
+-- 
+
+/*!40000 ALTER TABLE `dc_templatecomponents` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,55,15,25,1,1,1,1,5,1,1,1,0,0,'2016-11-21 18:27:31',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,55,16,25,1,1,1,1,5,1,1,1,0,0,'2016-11-21 18:27:31',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,55,17,0,0,1,1,1,5,1,1,1,0,0,'2016-11-21 18:27:31',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,55,18,25,1,1,1,1,5,1,1,1,0,0,'2016-11-21 18:27:31',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,56,15,25,1,1,1,1,5,1,1,1,0,0,'2016-11-21 18:29:36',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,56,16,25,1,1,1,1,5,1,1,1,0,0,'2016-11-21 18:29:36',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,56,18,25,1,1,1,1,5,1,1,1,0,0,'2016-11-21 18:29:36',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,66,15,50,1,1,1,1,10,0,1,1,0,0,'2017-05-11 14:46:03',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,66,16,10,1,1,1,1,10,0,0,0,0,0,'2017-05-11 14:46:03',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,66,17,0,0,1,1,1,10,0,1,1,0,0,'2017-05-11 14:46:03',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadComponent`,`EnableSelfToUpdateFormFields`,`EnableReviewerToUpdateFormFields`,`DisplayOrder`,`CreatedBy`,`LastUPD`,`EanbleQuestionsAtReviewStage`,`PrepopulateQuestions`,`BindOrder`,`ComponetDesc`,`IsRemarksMandatory`,`IsRemovePreloadedItem`) VALUES
+(2,66,18,40,1,1,1,1,10,0,1,1,0,0,'2017-05-11 14:46:03',0,0,4,NULL,0,0);
+INSERT INTO `dc_templatecomponents`(`ClientID`,`TemplateID`,`ComponentID`,`Weightage`,`IsItemLevelWeightage`,`CanAddFromLibrary`,`CanCreateFromPerformanceForm`,`MinimumNumberOfComponent`,`MaximumNumberOfComponent`,`PreloadCompo

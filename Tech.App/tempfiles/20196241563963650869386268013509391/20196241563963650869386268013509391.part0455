@@ -1,0 +1,1079 @@
+entNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,992,'992',1,457,100.00,'dfs','Test Silambu Business',NULL,'2018-06-12 12:58:09',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,993,'993',1,474,5.00,'df','345',NULL,'2018-06-12 17:15:30',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,994,'994',1,474,5.00,'dfgk','345',NULL,'2018-06-12 17:15:39',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,995,'995',1,475,5.00,'dfgk','FORZIA',NULL,'2018-06-12 17:15:50',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,996,'996',1,475,5.00,'dfgk','SMR HR TECHNOLOGIES PVT LTD',NULL,'2018-06-12 17:15:59',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,997,'997',1,474,5.00,'sdfd','SMR HR TECHNOLOGIES PVT LTD',NULL,'2018-06-12 17:17:53',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,998,'998',1,475,5.00,'','345',NULL,'2018-06-21 12:56:18',0,NULL,NULL,NULL,NULL,0);
+INSERT INTO `lms_entitlement`(`ClientID`,`EntitlementID`,`EntitlementNumber`,`EntitlementMode`,`LeaveType`,`EntitlementDays`,`Remarks`,`BusinessUnit`,`CreatedBy`,`LastUPD`,`RequestID`,`EncashSalaryForMonth`,`EncashSalaryForYear`,`EncashingMonth`,`EncashingYear`,`YearEndProcessID`) VALUES
+(2,999,'999',1,475,5.00,'uyyyyyyyy','345',NULL,'2018-06-21 12:56:26',0,NULL,NULL,NULL,NULL,0);
+COMMIT;
+/*!40000 ALTER TABLE `lms_entitlement` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_entitlement_expiry
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_entitlement_expiry` (
+  `EntitleID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `ClientID` int(11) DEFAULT NULL,
+  `LeaveTypeID` int(11) DEFAULT NULL,
+  `EntitleDays` decimal(12,2) NOT NULL DEFAULT '0.00',
+  `ExpiryDate` datetime DEFAULT NULL,
+  `LastActionBy` int(11) DEFAULT NULL,
+  `IsExpiryPerformed` bit(1) NOT NULL DEFAULT b'0',
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`EntitleID`,`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_entitlement_expiry
+-- 
+
+/*!40000 ALTER TABLE `lms_entitlement_expiry` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(-1,90,2,419,1.00,'2018-03-05 00:00:00',90,0,'2018-03-01 00:00:00');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(767,5129,2,401,1.00,'2018-02-27 00:00:00',NULL,0,'2017-12-29 10:08:28');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(768,5129,2,401,1.00,'2018-03-03 00:00:00',NULL,0,'2018-01-02 11:31:50');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(769,5129,2,401,1.00,'2018-03-03 00:00:00',NULL,0,'2018-01-02 12:11:12');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(770,5129,2,401,1.00,'2018-03-03 00:00:00',NULL,0,'2018-01-02 12:17:13');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(771,5129,2,401,1.00,'2018-03-03 00:00:00',NULL,0,'2018-01-02 12:24:02');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(773,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 05:08:45');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(774,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 05:18:46');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(775,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 09:06:38');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(776,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 09:09:16');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(777,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 09:09:24');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(778,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 09:24:37');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(779,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 09:44:03');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(780,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 10:03:10');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(781,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 14:29:05');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(782,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 16:46:27');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(783,5129,2,401,1.00,'2018-03-04 00:00:00',NULL,0,'2018-01-03 16:57:18');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(787,5129,2,401,1.00,'2018-03-06 00:00:00',NULL,0,'2018-01-05 13:12:18');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(788,5129,2,401,1.00,'2018-03-09 00:00:00',NULL,0,'2018-01-08 09:59:04');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(789,5129,2,401,1.00,'2018-02-06 00:00:00',NULL,0,'2018-01-10 09:24:52');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(791,155,2,401,1.00,'2018-02-06 00:00:00',NULL,0,'2018-01-10 15:25:27');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(792,155,2,401,1.00,'2018-02-06 00:00:00',NULL,0,'2018-01-10 15:28:40');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(793,155,2,401,1.00,'2018-02-06 00:00:00',NULL,0,'2018-01-10 15:44:40');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(794,155,2,401,1.00,'2018-02-06 00:00:00',NULL,0,'2018-01-10 16:15:13');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(795,155,2,401,1.00,'2018-02-06 00:00:00',NULL,0,'2018-01-10 16:18:31');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(797,155,2,401,1.00,NULL,NULL,0,'2018-01-10 17:04:36');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(798,5129,2,401,1.00,NULL,NULL,0,'2018-01-10 18:32:08');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(799,5129,2,401,1.00,NULL,NULL,0,'2018-01-10 18:41:21');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(802,5129,2,401,1.00,NULL,NULL,0,'2018-01-18 16:25:22');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(803,5129,2,401,1.00,NULL,NULL,0,'2018-01-18 16:31:57');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(804,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 11:59:31');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(805,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 12:09:59');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(806,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 12:26:33');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(807,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 12:32:19');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(808,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 15:43:43');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(809,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 16:17:36');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(810,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 16:22:32');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(811,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 16:36:08');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(812,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 16:51:48');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(813,5129,2,401,0.50,NULL,NULL,0,'2018-01-19 16:53:00');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(814,5129,2,401,0.50,NULL,NULL,0,'2018-01-24 09:50:25');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(815,5129,2,401,0.50,NULL,NULL,0,'2018-01-24 10:03:53');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(816,5129,2,401,0.50,NULL,NULL,0,'2018-01-24 10:29:13');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(840,90,2,401,30.00,'2018-04-23 00:00:00',90,0,'2018-02-22 10:50:16');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(841,90,2,401,2.00,'2018-04-15 00:00:00',90,0,'2018-02-22 10:51:58');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(849,152,2,401,5.00,'2018-02-22 00:00:00',152,0,'2018-02-23 17:16:46');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(850,153,2,401,5.00,'2018-02-22 00:00:00',90,0,'2018-02-23 18:31:40');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(851,165,2,401,3.00,'2018-02-25 00:00:00',90,0,'2018-02-26 14:36:47');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(852,169,2,401,5.00,'2018-02-25 00:00:00',90,0,'2018-02-26 14:57:04');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(853,241,2,401,10.00,'2018-02-01 00:00:00',90,0,'2018-02-27 14:53:34');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(853,242,2,401,10.00,'2018-02-01 00:00:00',90,0,'2018-02-27 14:53:34');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(853,248,2,401,10.00,'2018-02-01 00:00:00',90,0,'2018-02-27 14:53:34');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(853,249,2,401,10.00,'2018-02-01 00:00:00',90,0,'2018-02-27 14:53:34');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(853,5084,2,401,10.00,'2018-02-01 00:00:00',90,0,'2018-02-27 14:53:35');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(854,90,2,423,3.00,'2018-02-01 00:00:00',90,0,'2018-02-27 14:53:35');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(855,90,2,401,0.50,'2018-02-07 00:00:00',90,0,'2018-03-01 09:21:54');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(856,90,2,401,1.00,'2018-02-08 00:00:00',90,0,'2018-03-01 09:22:25');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(859,90,2,421,1.00,'2018-03-02 00:00:00',90,0,'2018-03-01 15:02:45');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(866,90,2,421,1.50,'2018-03-02 00:00:00',90,0,'2018-03-01 16:51:55');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(867,90,2,401,1.50,'2018-04-30 00:00:00',90,0,'2018-03-01 16:52:40');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(869,90,2,401,0.50,'2018-03-08 00:00:00',90,0,'2018-03-06 12:21:18');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(870,164,2,401,0.50,'2018-03-08 00:00:00',90,0,'2018-03-06 12:24:41');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(871,90,2,401,10.00,'2018-07-19 00:00:00',90,0,'2018-03-06 17:38:27');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(875,90,2,468,5.00,'2018-05-11 00:00:00',90,0,'2018-03-12 11:25:23');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(876,90,2,468,2.00,'2018-04-12 00:00:00',90,0,'2018-03-12 11:25:54');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(892,90,2,468,1.00,'2018-04-30 00:00:00',90,0,'2018-03-16 16:32:57');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(893,90,2,468,1.00,'2018-04-30 00:00:00',90,0,'2018-03-16 16:49:30');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(897,90,2,457,1.00,'2018-03-01 00:00:00',90,0,'2018-03-16 17:37:33');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(898,90,2,457,1.00,'2018-03-01 00:00:00',90,0,'2018-03-16 17:46:24');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(899,90,2,457,1.00,'2018-03-01 00:00:00',90,0,'2018-03-16 18:39:03');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(900,90,2,457,1.00,'2018-03-01 00:00:00',90,0,'2018-03-16 18:43:46');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(901,5108,2,468,1.00,'2018-03-04 00:00:00',90,0,'2018-03-16 18:46:12');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(902,90,2,457,1.00,'2018-03-01 00:00:00',90,0,'2018-03-19 10:00:24');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(903,90,2,457,1.00,'2018-03-01 00:00:00',90,0,'2018-03-19 10:03:27');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(904,90,2,468,1.00,'2018-03-01 00:00:00',90,0,'2018-03-19 10:29:31');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(905,90,2,468,6.00,'2018-05-18 00:00:00',90,0,'2018-03-19 11:15:03');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(906,90,2,468,1.00,'2018-03-01 00:00:00',90,0,'2018-03-19 11:24:58');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(920,155,2,468,1.00,'2018-05-05 00:00:00',90,0,'2018-04-25 12:26:47');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(923,5097,2,468,1.00,'2018-06-01 00:00:00',90,0,'2018-04-25 15:10:57');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(956,241,2,468,1.00,'2018-03-15 00:00:00',90,0,'2018-05-15 18:50:53');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(957,5129,2,468,1.00,'2018-03-15 00:00:00',90,0,'2018-05-15 19:45:59');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(978,5132,2,468,4.00,'2018-07-24 00:00:00',90,0,'2018-05-25 15:08:25');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(981,5101,2,468,6.00,'2018-07-24 00:00:00',90,0,'2018-05-25 16:49:28');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1044,90,2,468,4.00,'2018-08-13 00:00:00',NULL,0,'2018-07-17 10:19:28');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1045,90,2,468,4.00,'2018-08-30 00:00:00',NULL,0,'2018-07-17 10:19:31');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1053,5129,2,468,1.00,'2018-09-05 00:00:00',NULL,0,'2018-07-24 13:14:39');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1054,5129,2,468,4.00,'2018-09-06 00:00:00',NULL,0,'2018-07-24 13:49:44');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1056,208,2,468,1.00,'2018-09-18 00:00:00',90,0,'2018-07-31 11:16:04');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1057,208,2,468,1.00,'2018-09-18 00:00:00',90,0,'2018-07-31 11:22:16');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1058,208,2,468,1.00,'2018-09-18 00:00:00',90,0,'2018-07-31 11:27:23');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1130,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-11 17:32:29');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1131,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 13:55:51');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1132,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 14:04:57');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1133,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 14:09:11');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1134,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 14:14:15');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1135,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 14:51:15');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1136,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 04:55:09');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1137,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 05:07:45');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1138,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:08:35');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1139,155,2,468,1.00,'2019-02-12 00:00:00',NULL,0,'2018-12-12 19:14:17');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1140,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:15:41');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1141,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:18:37');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1142,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:22:09');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1143,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:28:44');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1144,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:40:17');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1145,155,2,468,1.00,'2019-02-15 00:00:00',NULL,0,'2018-12-12 19:42:43');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1146,161,2,468,1.00,'2019-02-16 00:00:00',NULL,0,'2018-12-17 18:10:38');
+INSERT INTO `lms_entitlement_expiry`(`EntitleID`,`UserID`,`ClientID`,`LeaveTypeID`,`EntitleDays`,`ExpiryDate`,`LastActionBy`,`IsExpiryPerformed`,`LastUPD`) VALUES
+(1147,155,2,468,1.00,'2019-01-30 00:00:00',NULL,0,'2018-12-17 18:56:36');
+COMMIT;
+/*!40000 ALTER TABLE `lms_entitlement_expiry` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_exception_leave_period
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_exception_leave_period` (
+  `ExceptionLeavePeriodID` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `ExceptionType` int(11) NOT NULL,
+  `StartDate` datetime NOT NULL,
+  `EndDate` datetime NOT NULL,
+  `IsCurrentPeriod` bit(1) NOT NULL,
+  `IsNextLeavePeriod` bit(1) NOT NULL DEFAULT b'0',
+  `PreviousLeavePeriodLevel` int(11) DEFAULT '0',
+  `LastActionBy` int(11) NOT NULL,
+  `LastUPD` datetime NOT NULL,
+  `LeaveTypeID` text,
+  PRIMARY KEY (`ExceptionLeavePeriodID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_exception_leave_period
+-- 
+
+/*!40000 ALTER TABLE `lms_exception_leave_period` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(36,2,151,2,'2018-08-01 00:00:00','2019-07-31 00:00:00',1,0,0,90,'2018-05-29 14:43:32',NULL);
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(37,2,151,2,'2019-08-01 00:00:00','2020-07-31 00:00:00',0,1,0,-1,'2018-05-29 14:43:32',NULL);
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(38,2,151,2,'2017-08-01 00:00:00','2018-07-31 00:00:00',0,0,1,-1,'2018-05-29 14:43:32',NULL);
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(39,2,151,2,'2016-08-01 00:00:00','2017-07-31 00:00:00',0,0,2,-1,'2018-05-29 14:43:32',NULL);
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(40,2,151,2,'2015-08-01 00:00:00','2016-07-31 00:00:00',0,0,3,-1,'2018-05-29 14:43:32',NULL);
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(41,2,6710,3,'2018-01-01 00:00:00','2018-12-01 00:00:00',1,0,0,90,'2018-08-20 16:21:47',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(42,2,90,3,'2019-05-01 00:00:00','2019-12-31 00:00:00',1,0,0,90,'2019-05-17 10:58:53',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(43,2,6712,3,'2018-08-01 00:00:00','2020-12-01 00:00:00',1,0,0,90,'2019-05-17 10:23:30',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(44,2,6713,3,'2018-01-01 00:00:00','2019-12-31 00:00:00',1,0,0,90,'2018-08-20 16:59:07',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(45,2,6720,3,'2018-01-01 00:00:00','2018-12-31 00:00:00',1,0,0,90,'2018-08-20 17:51:23',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(46,2,6723,3,'2018-02-01 00:00:00','2018-12-31 00:00:00',1,0,0,90,'2018-08-21 10:40:19',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(47,2,6724,3,'2018-07-01 00:00:00','2019-12-31 00:00:00',1,0,0,90,'2018-08-21 12:20:09',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(48,2,128,3,'2019-01-01 00:00:00','2019-05-31 00:00:00',1,0,0,90,'2019-05-23 18:13:46',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(49,2,130,3,'2019-01-01 00:00:00','2019-05-31 00:00:00',1,0,0,90,'2019-05-23 18:13:46',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(50,2,133,3,'2019-01-01 00:00:00','2019-05-31 00:00:00',1,0,0,90,'2019-05-23 18:13:46',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(51,2,134,3,'2019-01-01 00:00:00','2019-05-31 00:00:00',1,0,0,90,'2019-05-23 18:13:46',',481');
+INSERT INTO `lms_exception_leave_period`(`ExceptionLeavePeriodID`,`ClientID`,`UserID`,`ExceptionType`,`StartDate`,`EndDate`,`IsCurrentPeriod`,`IsNextLeavePeriod`,`PreviousLeavePeriodLevel`,`LastActionBy`,`LastUPD`,`LeaveTypeID`) VALUES
+(52,2,153,3,'2019-01-01 00:00:00','2019-05-31 00:00:00',1,0,0,90,'2019-05-23 18:13:46',',481');
+COMMIT;
+/*!40000 ALTER TABLE `lms_exception_leave_period` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_form25_settingfields
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_form25_settingfields` (
+  `ClientID` int(11) DEFAULT NULL,
+  `EnableOT` int(11) DEFAULT NULL,
+  `EnableLOP` int(11) DEFAULT NULL,
+  `EnableSA` int(11) DEFAULT NULL,
+  `EnableODDays` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_form25_settingfields
+-- 
+
+/*!40000 ALTER TABLE `lms_form25_settingfields` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_form25_settingfields`(`ClientID`,`EnableOT`,`EnableLOP`,`EnableSA`,`EnableODDays`) VALUES
+(2,1,0,0,1);
+COMMIT;
+/*!40000 ALTER TABLE `lms_form25_settingfields` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_form25_settings
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_form25_settings` (
+  `RangeID` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientID` int(11) DEFAULT NULL,
+  `PresentRange` int(11) DEFAULT NULL,
+  `HalfdayRange` int(11) DEFAULT NULL,
+  `EnableOT` int(11) DEFAULT NULL,
+  `EnableLOP` int(11) DEFAULT NULL,
+  `EnableSA` int(11) DEFAULT NULL,
+  `EnableODDays` int(11) DEFAULT NULL,
+  `ScheduleCode` varchar(255) DEFAULT NULL,
+  `ScheduleID` int(11) DEFAULT NULL,
+  `WorkLocationID` int(11) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`RangeID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_form25_settings
+-- 
+
+/*!40000 ALTER TABLE `lms_form25_settings` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_form25_settings`(`RangeID`,`ClientID`,`PresentRange`,`HalfdayRange`,`EnableOT`,`EnableLOP`,`EnableSA`,`EnableODDays`,`ScheduleCode`,`ScheduleID`,`WorkLocationID`,`LastUPD`) VALUES
+(153,2,480,240,0,0,0,0,NULL,1586,48,'2019-07-19 15:50:21');
+COMMIT;
+/*!40000 ALTER TABLE `lms_form25_settings` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_holidays
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_holidays` (
+  `ClientID` int(11) NOT NULL,
+  `HolidayID` int(11) NOT NULL,
+  `HolidayName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `HolidayType` int(11) DEFAULT NULL COMMENT '1-Sesonal 2-Recurring',
+  `HolidayDate` datetime DEFAULT NULL,
+  `IsAllWorkLocation` int(11) NOT NULL,
+  `NoofAccurance` int(11) NOT NULL,
+  `IsNational` int(11) DEFAULT '1',
+  `LastUPD` datetime DEFAULT NULL,
+  `GroupID` int(11) NOT NULL,
+  PRIMARY KEY (`ClientID`,`HolidayID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_holidays
+-- 
+
+/*!40000 ALTER TABLE `lms_holidays` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2330,'Test',2,'2018-04-03 00:00:00',0,10,1,'2016-11-04 11:09:28',2330);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2332,'thidee',2,'2017-09-18 00:00:00',0,10,1,'2017-09-20 13:48:45',2332);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2333,'Holiday',2,'2018-04-14 00:00:00',1,10,1,'2017-12-19 00:08:52',2333);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2348,'rer',2,'2018-06-20 00:00:00',0,10,1,'2018-06-22 16:26:58',2348);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2349,'df',2,'2018-06-22 00:00:00',0,10,1,'2018-06-22 16:28:29',2349);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2350,'er',2,'2018-06-21 00:00:00',0,10,1,'2018-06-27 13:35:31',2350);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2351,'testt',2,'2018-06-21 00:00:00',0,10,1,'2018-06-27 19:06:07',2351);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2352,'13',2,'2018-06-13 00:00:00',1,10,1,'2018-06-26 14:38:34',2352);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2354,'23',2,'2018-06-23 00:00:00',1,10,1,'2018-06-27 11:37:31',2354);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2355,'30',2,'2018-06-30 00:00:00',1,10,1,'2018-06-27 11:37:22',2355);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2356,'Vacation',2,'2018-07-13 00:00:00',1,10,1,'2018-07-04 15:14:38',2356);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2357,'TestDemo',2,'2018-07-19 00:00:00',1,10,1,'2018-07-10 14:43:48',2357);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2359,'Demo123',2,'2018-07-25 00:00:00',0,10,1,'2018-07-10 15:01:15',2359);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2360,'Depali',2,'2018-07-31 00:00:00',0,10,2,'2018-07-10 15:05:58',2360);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2361,'Depali',2,'2018-07-31 00:00:00',0,10,2,'2018-07-10 15:07:41',2361);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2363,'TestDemo123',2,'2018-10-25 00:00:00',0,10,1,'2018-07-10 18:52:00',2363);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2364,'TestDemo12345',2,'2018-10-25 00:00:00',0,10,1,'2018-07-10 18:55:32',2364);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2365,'Holiday123',2,'2018-07-18 00:00:00',0,10,2,'2018-07-10 18:59:40',2365);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2366,'Holiday123',2,'2018-07-18 00:00:00',0,10,1,'2018-07-10 19:00:54',2366);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2367,'TestDemo12345',2,'2018-10-25 00:00:00',0,10,1,'2018-07-10 19:02:17',2367);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2368,'Holiday12345',2,'2018-10-28 00:00:00',0,10,1,'2018-07-10 19:08:55',2368);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2369,'HolidayDemo123',2,'2018-11-28 00:00:00',0,10,2,'2018-07-10 19:08:57',2369);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2370,'HolidayDemo123',2,'2018-11-28 00:00:00',0,10,2,'2018-07-10 19:08:59',2370);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2371,'HolidayDemo124',2,'2018-11-28 00:00:00',1,10,2,'2018-12-03 11:46:10',2371);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2372,'vvvvvvvvvvvvv',2,'2018-07-25 00:00:00',0,10,1,'2018-07-11 12:26:31',2372);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2374,'sdsdsdsdsdsdsdsdsdsdsdsdsd',2,'2018-07-27 00:00:00',0,10,1,'2018-07-11 12:42:09',2374);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2375,'Demo123344',2,'2018-07-31 00:00:00',0,10,1,'2018-07-11 12:45:21',2375);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2377,'Christmas',2,'2018-12-25 00:00:00',0,10,2,'2018-07-11 12:53:46',2377);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2385,'Christmas',2,'2018-12-25 00:00:00',0,10,2,'2018-07-11 15:38:36',2385);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2386,'Holiday123',2,'2018-07-18 00:00:00',1,10,1,'2018-07-13 10:14:58',2386);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2387,'Test',2,'2018-07-19 00:00:00',1,10,1,'2018-07-19 11:41:31',2387);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2388,'Holiday 1',2,'2018-07-18 00:00:00',0,10,2,'2018-07-19 11:43:38',2388);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2389,'holiday1234',2,'2018-07-20 00:00:00',1,10,2,'2018-07-19 17:14:10',2389);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2390,'Holidaye12123213',2,'2018-07-30 00:00:00',1,10,1,'2018-07-19 17:14:50',2390);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2392,'TestDemo124',2,'2018-07-25 00:00:00',0,10,1,'2018-08-02 15:43:38',2392);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2394,'xz',2,'2018-11-30 00:00:00',1,10,1,'2018-11-30 12:04:19',2394);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2395,'T1',2,'2018-11-30 00:00:00',0,10,2,'2018-11-30 16:20:17',2395);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2396,'T2',2,'2018-11-30 00:00:00',0,10,1,'2018-11-30 16:08:10',2396);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2397,'T3',2,'2018-11-30 00:00:00',0,10,1,'2018-11-30 15:30:09',2397);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2398,'Silambu',2,'2018-12-21 00:00:00',1,10,1,'2018-12-19 13:18:35',2398);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2399,'Silambu 2',2,'2019-01-01 00:00:00',0,10,2,'2019-04-02 11:36:51',2399);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2400,'vhgfh',2,'2018-07-02 00:00:00',1,10,1,'2019-02-26 15:07:08',2400);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2401,'TestHoliday',2,'2018-12-25 00:00:00',0,10,1,'2019-03-07 18:24:00',2401);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2402,'demo',2,'2018-12-25 00:00:00',0,10,1,'2019-03-08 15:54:18',2402);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2403,'User Holiday',2,'2020-04-15 00:00:00',0,10,1,'2019-04-08 16:18:33',2403);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2404,'National holiday falls on weekend',2,'2019-03-24 00:00:00',0,10,2,'2019-04-12 17:43:33',2404);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2405,'User Holiday',2,'2019-04-14 00:00:00',0,10,1,'2019-04-08 16:27:45',2405);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2406,'national holiday',2,'2019-03-17 00:00:00',1,10,1,'2019-04-09 11:31:09',2406);
+INSERT INTO `lms_holidays`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayType`,`HolidayDate`,`IsAllWorkLocation`,`NoofAccurance`,`IsNational`,`LastUPD`,`GroupID`) VALUES
+(2,2407,'RUBY',2,'2019-07-02 00:00:00',1,10,1,'2019-07-05 18:34:59',2407);
+COMMIT;
+/*!40000 ALTER TABLE `lms_holidays` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_holidays_dtr_update
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_holidays_dtr_update` (
+  `ClientID` int(10) unsigned NOT NULL,
+  `HolidayID` int(10) unsigned NOT NULL,
+  `HolidayName` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `HolidayDate` datetime DEFAULT NULL,
+  `HolidayType` int(10) unsigned DEFAULT NULL,
+  `isAllWorkLocation` bit(1) DEFAULT NULL,
+  `WorkLocationID` text CHARACTER SET latin1,
+  `LASTUPD` datetime NOT NULL,
+  PRIMARY KEY (`ClientID`,`HolidayID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This table will use for Compare the DTR while Edit  Save the Holiday';
+
+-- 
+-- Dumping data for table lms_holidays_dtr_update
+-- 
+
+/*!40000 ALTER TABLE `lms_holidays_dtr_update` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1,'New Year Day','2015-01-01 00:00:00',1,0,'3','2015-09-15 15:20:33');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,16,'Republic Day','2015-01-26 00:00:00',1,0,'3','2015-09-15 15:16:07');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1399,'test1','2015-09-17 00:00:00',1,0,'13','2015-09-15 15:03:43');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1412,'Test2','2015-09-09 00:00:00',1,1,'-1','2015-09-15 15:04:48');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1426,'dsfsdfsd','2015-09-24 00:00:00',1,1,'-1','2015-09-18 19:11:01');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1429,'dsfsdfsd','2018-09-24 00:00:00',1,1,'-1','2016-01-13 15:02:08');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1477,'DD','2015-09-21 00:00:00',2,1,'-1','2015-10-13 15:46:48');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1480,'hh','2015-09-01 00:00:00',1,0,'20','2015-10-13 15:41:01');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1495,'Audit Holiday','2015-10-14 00:00:00',1,1,'-1','2015-10-13 15:51:44');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1535,'sdsd','2016-10-14 00:00:00',1,0,'21','2016-01-13 15:09:12');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1550,'sfsfsfsdf','2018-10-21 00:00:00',1,0,'13','2016-01-13 14:54:59');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1552,'sfsfsfsdf','2020-10-21 00:00:00',2,0,'13','2016-01-21 15:02:50');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1562,'oo','2015-11-10 00:00:00',2,1,'-1','2015-12-12 15:00:38');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1596,'sss','2020-12-11 00:00:00',2,0,'10','2016-01-13 15:11:57');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1606,'pongal','2017-12-24 00:00:00',1,0,'10','2016-01-13 14:52:52');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1608,'pongal','2019-12-24 00:00:00',1,0,'10','2016-01-13 15:09:04');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1619,'RA','2018-01-13 00:00:00',2,1,'-1','2016-01-13 15:01:55');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1620,'RA','2019-01-13 00:00:00',2,1,'-1','2016-01-21 15:44:37');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1622,'RA','2021-01-13 00:00:00',1,1,'-1','2016-01-21 15:17:33');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1637,'KOW','2018-02-01 00:00:00',2,0,'13','2016-01-21 15:01:01');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1651,'Karthik','2019-02-14 00:00:00',2,0,'13','2016-01-21 15:28:33');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1664,'MM','2019-01-05 00:00:00',1,0,'13','2016-01-21 15:44:01');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1688,'New Year','2019-01-01 00:00:00',1,0,'10','2016-01-21 15:53:12');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1702,'New Year','2020-01-01 00:00:00',2,0,'13','2016-01-21 15:59:08');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1725,'New Year','2019-01-01 00:00:00',2,0,'13','2016-01-21 16:02:50');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1726,'New Year','2020-01-01 00:00:00',1,0,'13','2016-01-21 16:01:55');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1739,'f','2020-01-01 00:00:00',2,0,'13','2016-01-21 17:09:20');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1765,'u','2020-01-01 00:00:00',1,0,'13','2016-01-21 17:18:18');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1778,'r','2020-01-01 00:00:00',1,0,'13','2016-01-21 17:20:02');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1788,'f','2017-01-01 00:00:00',1,0,'13','2016-01-21 17:25:34');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1791,'f','2020-01-01 00:00:00',1,0,'13','2016-01-21 17:24:32');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1827,'j','2019-01-01 00:00:00',1,0,'13','2016-01-21 17:27:24');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1837,'o','2016-01-02 00:00:00',1,0,'13','2016-09-27 16:04:04');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1863,'Tamil New Year','2016-04-15 00:00:00',2,0,'23','2016-07-08 15:40:58');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1876,'May Day','2016-05-01 00:00:00',1,0,'10,13','2016-02-18 14:35:27');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1922,'Local Holiday','2016-03-01 00:00:00',1,0,'13','2016-02-13 16:30:36');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1935,'Local holiday','2016-03-01 00:00:00',2,0,'-1','2016-02-13 16:38:13');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1937,'Local holiday','2016-03-01 00:00:00',1,0,'13,23','2016-02-13 16:46:37');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1951,'Local holiday','2016-03-01 00:00:00',2,0,'13,23','2016-02-13 16:49:52');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1952,'Local holiday','2016-03-01 00:00:00',1,0,'13,23','2016-02-13 16:52:23');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1965,'Local holiday','2016-03-01 00:00:00',2,0,'13,23','2016-02-13 16:54:24');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1982,'Local holiday','2016-03-01 00:00:00',2,0,'13,23','2016-02-15 12:10:13');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1983,'Local holiday','2016-03-01 00:00:00',2,0,'13,23','2016-02-15 12:11:24');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1984,'Local holiday','2016-03-01 00:00:00',2,0,'-1','2016-02-15 12:26:05');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1985,'Local Holiday','2016-03-01 00:00:00',2,0,'-1','2016-02-15 12:48:28');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,1997,'local holiday','2016-03-01 00:00:00',2,0,'-1','2016-02-15 15:53:00');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2012,'sss','2016-02-02 00:00:00',2,0,'13,23','2016-02-23 12:29:50');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2032,'MAY Day','2016-06-01 00:00:00',2,0,'31','2016-06-30 16:28:39');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2033,'May Day','2016-05-01 00:00:00',2,1,'-1','2016-07-07 16:19:55');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2099,'Tamil New Year','2016-04-14 00:00:00',1,1,'-1','2016-08-04 10:05:24');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2112,'Tamil New Year','2016-04-14 00:00:00',1,1,'-1','2016-08-04 12:30:24');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2125,'Tamil New Year','2016-04-14 00:00:00',1,0,'10','2016-08-04 12:33:03');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2138,'Tamil new year','2016-04-15 00:00:00',1,0,'23','2016-08-04 19:13:26');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2188,'Tami ne year','2016-04-14 00:00:00',1,0,'10','2016-08-04 19:20:58');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2201,'Tamil new year','2016-05-14 00:00:00',2,0,'23','2016-08-04 19:23:50');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2225,'tami new year','2016-04-15 00:00:00',1,0,'23','2016-08-04 19:26:49');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2249,'test','2016-08-02 00:00:00',2,0,'23','2016-08-04 19:29:47');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2262,'test','2016-08-01 00:00:00',2,0,'23','2016-08-04 19:35:17');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2286,'Test Leave','2016-08-01 00:00:00',2,1,'-1','2016-08-04 19:42:21');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2324,'123456789','2016-09-29 00:00:00',2,0,'44','2016-09-29 12:38:37');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2330,'Test','2016-11-04 00:00:00',2,1,'-1','2016-11-04 11:09:28');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2331,'new','2018-03-23 00:00:00',2,0,'42','2018-07-10 17:31:29');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2337,'fh','2018-02-14 00:00:00',2,1,'-1','2018-05-08 13:50:17');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2341,'hgh','2018-03-07 00:00:00',2,1,'-1','2018-03-12 15:12:36');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2344,'n','2018-03-12 00:00:00',2,0,'42','2018-03-12 16:51:42');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2345,'HWages','2018-04-02 00:00:00',2,0,'49','2018-04-25 14:31:56');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2346,'HWAGES2 - Chennai Perungudi','2018-04-02 00:00:00',2,0,'13','2018-04-25 14:45:20');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2347,'AF','2018-06-29 00:00:00',2,0,'42','2018-06-22 17:00:35');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2350,'er','2018-06-21 00:00:00',2,0,'44','2018-06-27 13:35:12');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2351,'test','2018-06-21 00:00:00',2,0,'44','2018-06-27 19:06:07');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2354,'23','2018-06-23 00:00:00',2,1,'-1','2018-06-27 11:37:31');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2355,'30','2018-06-30 00:00:00',2,1,'-1','2018-06-27 11:37:22');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2371,'HolidayDemo124','2018-11-28 00:00:00',2,1,'-1','2018-12-03 11:46:10');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2394,'xz','2018-11-30 00:00:00',2,1,'-1','2018-11-30 12:04:19');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2395,'T1','2018-11-30 00:00:00',2,0,'53','2018-11-30 16:20:17');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2396,'T2','2018-11-30 00:00:00',2,1,'-1','2018-11-30 16:08:10');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2399,'Silambu 2','2019-01-01 00:00:00',2,0,'23,32,42,43,44','2019-04-02 11:36:51');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2402,'demo','2018-12-25 00:00:00',2,0,'41','2019-03-08 15:54:18');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2403,'User Holiday','2020-04-15 00:00:00',2,0,'41','2019-04-08 16:18:32');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2404,'National holiday falls on weekend','2019-03-24 00:00:00',2,0,'48','2019-04-12 17:43:33');
+INSERT INTO `lms_holidays_dtr_update`(`ClientID`,`HolidayID`,`HolidayName`,`HolidayDate`,`HolidayType`,`isAllWorkLocation`,`WorkLocationID`,`LASTUPD`) VALUES
+(2,2405,'User Holiday','2019-04-16 00:00:00',2,0,'41','2019-04-08 16:27:45');
+COMMIT;
+/*!40000 ALTER TABLE `lms_holidays_dtr_update` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_holidays_worklocation
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_holidays_worklocation` (
+  `ClientID` int(11) NOT NULL,
+  `HolidayID` int(11) NOT NULL,
+  `WorkLocationID` int(11) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`HolidayID`,`WorkLocationID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_holidays_worklocation
+-- 
+
+/*!40000 ALTER TABLE `lms_holidays_worklocation` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2330,4,'2018-04-03 00:00:00');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2330,14,'2016-11-04 11:09:28');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2330,42,'2016-11-04 11:09:28');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2332,13,'2017-09-20 13:48:45');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2333,-1,'2017-12-19 00:08:52');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2348,44,'2018-06-22 16:26:58');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2349,44,'2018-06-22 16:28:29');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2350,44,'2018-06-27 13:37:25');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2351,44,'2018-06-27 19:06:07');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2352,-1,'2018-06-26 14:38:34');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2354,-1,'2018-06-27 11:37:31');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2355,-1,'2018-06-27 11:37:22');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2356,-1,'2018-07-04 15:14:38');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2357,-1,'2018-07-10 14:43:48');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2359,44,'2018-07-10 15:02:44');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2360,31,'2018-07-10 15:05:58');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2361,44,'2018-07-10 15:07:41');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2363,42,'2018-07-10 18:52:00');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2364,42,'2018-07-10 18:55:32');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2365,44,'2018-07-10 18:59:40');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2366,22,'2018-07-10 19:00:54');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2367,44,'2018-07-10 19:02:17');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2368,42,'2018-07-10 19:08:56');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2369,42,'2018-07-10 19:08:57');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2370,44,'2018-07-10 19:08:59');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2371,-1,'2018-12-03 11:46:11');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2372,42,'2018-07-11 12:29:29');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2372,44,'2018-07-11 12:27:39');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2374,42,'2018-07-11 12:42:09');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2374,44,'2018-07-11 12:42:09');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2375,31,'2018-07-11 12:45:21');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2375,43,'2018-07-11 12:45:21');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2375,44,'2018-07-11 12:45:21');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2377,42,'2018-07-11 12:53:46');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2377,43,'2018-07-11 12:53:47');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2385,31,'2018-07-11 15:38:36');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2385,45,'2018-07-11 15:38:37');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2386,-1,'2018-07-13 10:14:58');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2387,-1,'2018-07-19 11:41:31');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2388,13,'2018-07-19 11:43:38');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2389,-1,'2018-07-19 17:14:10');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2390,-1,'2018-07-19 17:14:50');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2392,44,'2018-08-02 15:43:38');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2394,-1,'2018-11-30 12:04:19');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2395,23,'2018-11-30 16:20:17');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2395,42,'2018-11-30 16:20:17');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2395,44,'2018-11-30 16:20:17');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2396,22,'2018-11-30 16:08:11');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2396,32,'2018-11-30 16:08:11');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2397,3,'2018-11-30 15:30:09');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2398,-1,'2018-12-19 13:18:35');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2399,23,'2018-12-19 13:19:26');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2399,32,'2018-12-19 13:19:25');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2399,42,'2018-12-19 13:19:25');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2399,43,'2018-12-19 13:19:25');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2399,44,'2018-12-19 13:19:25');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2400,-1,'2019-02-26 15:07:08');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2402,41,'2019-03-08 15:53:21');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2403,41,'2019-03-28 11:42:10');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2404,48,'2019-04-02 11:35:30');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2405,41,'2019-04-08 16:19:13');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2406,-1,'2019-04-09 11:31:09');
+INSERT INTO `lms_holidays_worklocation`(`ClientID`,`HolidayID`,`WorkLocationID`,`LastUPD`) VALUES
+(2,2407,-1,'2019-07-05 18:34:59');
+COMMIT;
+/*!40000 ALTER TABLE `lms_holidays_worklocation` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_leave_accrual
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_leave_accrual` (
+  `ClientID` int(11) NOT NULL,
+  `AccrualID` int(11) NOT NULL,
+  `LeaveTypeID` int(11) NOT NULL,
+  `Name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `AccrualFrequency` int(11) DEFAULT NULL,
+  `AccrualEvery` int(11) DEFAULT NULL,
+  `DateOfCredit` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `ISAllEmployee` bit(1) DEFAULT b'0',
+  `FirstAccrual` int(11) DEFAULT NULL,
+  `Days` decimal(12,2) DEFAULT NULL,
+  `ISAccrueAll` bit(1) DEFAULT b'0',
+  `State` int(11) DEFAULT NULL,
+  `OwnerID` int(11) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  `MaxDays` decimal(12,2) DEFAULT NULL,
+  `IsEnableProrate` int(11) NOT NULL DEFAULT '0',
+  `DayType` int(11) NOT NULL DEFAULT '0',
+  `FixedDays` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ClientID`,`AccrualID`,`LeaveTypeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_leave_accrual
+-- 
+
+/*!40000 ALTER TABLE `lms_leave_accrual` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,154,416,'fgfgfgf',1,0,'1~:1',1,0,0.00,0,1,90,'2018-03-05 18:34:55',7.00,0,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,159,401,'fdf',1,0,'1~:1',1,0,3.00,1,1,90,'2018-03-05 17:15:13',3.00,1,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,160,401,'gdf',1,0,'1~:1',1,0,4.00,1,1,90,'2018-03-05 18:17:11',4.00,1,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,162,417,'trtrtr',1,0,'1~:1',1,0,6.00,1,1,90,'2018-03-05 17:49:25',6.00,1,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,163,401,'qqq',0,1,'1~:1',0,0,0.00,0,1,90,'2018-03-06 16:58:44',2.00,0,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,164,401,'klkl',1,0,'1~:1',1,0,5.00,1,2,90,'2018-03-06 17:03:07',5.00,0,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,165,401,'ghghg',1,0,'1~:1',1,0,0.00,0,1,90,'2018-03-06 17:04:35',5.00,0,1,1);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,181,520,'tret',5,0,NULL,1,0,8.00,1,2,90,'2019-01-08 17:36:05',0.00,0,1,0);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,183,457,'fgf',0,1,'1~:1',1,0,5.00,1,1,90,'2019-04-10 10:28:49',5.00,0,1,0);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,184,457,'gdgdfg',0,1,'1~:1',1,0,7.00,1,1,90,'2019-01-08 18:11:41',6.00,0,1,0);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,197,468,'ghgh',0,1,'2~:1',1,0,2.00,1,2,90,'2019-01-09 10:09:35',5.00,0,1,0);
+INSERT INTO `lms_leave_accrual`(`ClientID`,`AccrualID`,`LeaveTypeID`,`Name`,`AccrualFrequency`,`AccrualEvery`,`DateOfCredit`,`ISAllEmployee`,`FirstAccrual`,`Days`,`ISAccrueAll`,`State`,`OwnerID`,`LastUPD`,`MaxDays`,`IsEnableProrate`,`DayType`,`FixedDays`) VALUES
+(2,198,457,'tjutyu',5,0,NULL,1,0,1.00,1,2,90,'2019-01-10 15:11:24',0.00,0,1,0);
+COMMIT;
+/*!40000 ALTER TABLE `lms_leave_accrual` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_leave_accrual_businessunit
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_leave_accrual_businessunit` (
+  `ClientID` int(11) NOT NULL,
+  `AccrualID` int(11) NOT NULL,
+  `BusinessUnitID` int(11) NOT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`AccrualID`,`BusinessUnitID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_leave_accrual_businessunit
+-- 
+
+/*!40000 ALTER TABLE `lms_leave_accrual_businessunit` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,127,12,'2017-05-08 19:07:28');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,154,6,'2018-03-05 18:34:55');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,159,20,'2018-03-05 17:15:13');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,160,20,'2018-03-05 18:17:11');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,162,6,'2018-03-05 17:49:25');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,163,71,'2018-03-06 16:58:44');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,164,2,'2018-03-06 17:03:07');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,165,71,'2018-03-06 17:04:35');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,181,12,'2019-01-08 17:36:05');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,183,20,'2019-04-10 10:28:49');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,184,-1,'2019-01-08 18:28:32');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,196,-1,'2019-01-09 10:04:33');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,197,-1,'2019-01-09 10:09:35');
+INSERT INTO `lms_leave_accrual_businessunit`(`ClientID`,`AccrualID`,`BusinessUnitID`,`LastUPD`) VALUES
+(2,198,20,'2019-01-10 15:11:24');
+COMMIT;
+/*!40000 ALTER TABLE `lms_leave_accrual_businessunit` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_leave_accrual_employees
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_leave_accrual_employees` (
+  `ClientID` int(11) NOT NULL,
+  `AccrualID` int(11) NOT NULL,
+  `EmployeeID` int(11) NOT NULL,
+  `Days` decimal(12,2) DEFAULT NULL,
+  `IsVirtual` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL,
+  PRIMARY KEY (`ClientID`,`AccrualID`,`EmployeeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_leave_accrual_employees
+-- 
+
+/*!40000 ALTER TABLE `lms_leave_accrual_employees` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,154,1106,2.00,1,'2018-03-05 18:34:55');
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,163,1107,5.00,1,'2018-03-06 16:58:44');
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,165,1109,5.00,1,'2018-03-06 17:04:36');
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,169,73,2.00,1,'2018-07-27 09:24:26');
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,169,82,3.00,1,'2018-07-27 09:24:26');
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,170,51,1.00,1,'2018-07-27 10:13:50');
+INSERT INTO `lms_leave_accrual_employees`(`ClientID`,`AccrualID`,`EmployeeID`,`Days`,`IsVirtual`,`LastUPD`) VALUES
+(2,170,69,2.00,1,'2018-07-27 10:13:50');
+COMMIT;
+/*!40000 ALTER TABLE `lms_leave_accrual_employees` ENABLE KEYS */;
+
+-- 
+-- Definition of lms_leave_accrual_log
+-- 
+
+CREATE TABLE IF NOT EXISTS `lms_leave_accrual_log` (
+  `ClientID` int(11) DEFAULT NULL,
+  `AccrualLogID` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `AccrualID` int(11) DEFAULT NULL,
+  `LeaveTypeID` int(11) DEFAULT NULL,
+  `Name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `FirstAccrual` int(11) DEFAULT NULL,
+  `ISAccrueAll` bit(1) DEFAULT b'0',
+  `DateOfCredit` varchar(255) CHARACTER SET latin1 DEFAULT '',
+  `Days` decimal(12,2) DEFAULT NULL,
+  `TagID` int(11) DEFAULT NULL,
+  `Employees` text CHARACTER SET latin1,
+  `BatchID` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
+  `LeavePeriodID` int(11) NOT NULL DEFAULT '0',
+  `IsExceptionLeavePeriod` bit(1) DEFAULT NULL,
+  `LastUPD` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table lms_leave_accrual_log
+-- 
+
+/*!40000 ALTER TABLE `lms_leave_accrual_log` DISABLE KEYS */;
+START TRANSACTION;
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'2',181,520,'tret',0,1,'2019-01-04',8.00,-1,'122','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:30');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'3',181,520,'tret',0,1,'2019-01-04',8.00,-1,'164','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:31');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'4',181,520,'tret',0,1,'2019-01-04',8.00,-1,'166','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:32');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'5',181,520,'tret',0,1,'2019-01-04',8.00,-1,'171','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:38');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'6',181,520,'tret',0,1,'2019-01-04',8.00,-1,'172','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:41');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'7',181,520,'tret',0,1,'2019-01-04',8.00,-1,'186','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:43');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'8',181,520,'tret',0,1,'2019-01-04',8.00,-1,'217','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:43');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'9',181,520,'tret',0,1,'2019-01-04',8.00,-1,'218','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:44');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'219','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:44');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'229','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:45');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'238','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:45');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'240','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:45');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'244','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:46');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'245','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:46');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'248','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:46');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'251','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:47');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'252','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:47');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'263','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:47');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'264','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:48');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'265','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:48');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'276','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:49');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5083','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:49');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5085','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:50');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5088','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:50');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5089','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:50');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5090','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:51');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5091','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:51');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5129','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:52');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5130','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:52');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5176','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:52');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5179','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:53');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5182','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:53');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5269','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:54');
+INSERT INTO `lms_leave_accrual_log`(`ClientID`,`AccrualLogID`,`AccrualID`,`LeaveTypeID`,`Name`,`FirstAccrual`,`ISAccrueAll`,`DateOfCredit`,`Days`,`TagID`,`Employees`,`BatchID`,`LeavePeriodID`,`IsExceptionLeavePeriod`,`LastUPD`) VALUES
+(2,'10',181,520,'tret',0,1,'2019-01-04',8.00,-1,'5281','60fb7304-fa0c-43e9-9e2f-936d9f9f46ca',122,0,'2019-01-04 17:05:54');
+INSERT INTO `lms_l

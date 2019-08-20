@@ -26,7 +26,8 @@ namespace Tz.BackApp.Controllers.Authentication
         [HttpGet]
         public ActionResult Login(string ReturnUrl = "")
         {
-          
+
+
             if (User.Identity.IsAuthenticated)
             {
                 return RedirectToAction("Index");
@@ -47,14 +48,14 @@ namespace Tz.BackApp.Controllers.Authentication
             return new JsonpResult(u.UserID);
         }
         [HttpPost]
-        public ActionResult Login(Tz.BackApp.Models.LoginView loginView, string ReturnUrl = "")
+        public ActionResult Login(string userName,string Password,string ReturnUrl)
         {
             if (ModelState.IsValid)
             {
-                if (Membership.ValidateUser(loginView.UserName, loginView.Password))
+                if (Membership.ValidateUser(userName, Password))
                 {
                     
-                    var user = (CustomMembershipUser)Membership.GetUser(loginView.UserName, false);
+                    var user = (CustomMembershipUser)Membership.GetUser(userName, false);
                     if (user != null)
                     {
                         Models.CustomSerializeModel userModel = new Models.CustomSerializeModel()
@@ -68,7 +69,7 @@ namespace Tz.BackApp.Controllers.Authentication
                         string userData = JsonConvert.SerializeObject(userModel);
                         FormsAuthenticationTicket authTicket = new FormsAuthenticationTicket
                             (
-                            1, loginView.UserName, DateTime.Now, DateTime.Now.AddMinutes(15), false, userData
+                            1, userName, DateTime.Now, DateTime.Now.AddMinutes(15), false, userData
                             );
 
                         string enTicket = FormsAuthentication.Encrypt(authTicket);
@@ -82,13 +83,14 @@ namespace Tz.BackApp.Controllers.Authentication
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home", new { area = "" });
+                        return Json(new { redirecturl = "/Client/Client" }, JsonRequestBehavior.AllowGet);
+                        //return RedirectToAction("Index", "Home", new { area = "" });
                         //return Redirect("Index");
                     }
                 }
             }
             ModelState.AddModelError("loginerror", "Something Wrong : Username or Password invalid ^_^ ");
-            return View(loginView);
+            return View();
         }
 
         public ActionResult Logout() {
