@@ -53,6 +53,7 @@ namespace Tech.App
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Authentication", action = "Login", id = UrlParameter.Optional }
             );
+           
         }
     }
     public class DomainData

@@ -1,18 +1,422 @@
 ﻿
- 
-    <div id="cl">
-        <Clients></Clients>
+@*<div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1">
+        <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small class="text-muted">just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            See? Just like this.
+        </div>
     </div>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1">
+        <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small class="text-muted">2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Heads up, toasts will stack automatically
+        </div>
+    </div>
+
+</div>*@
+
+
+<input type="checkbox" id="ckmy" />
+<div id="tost">
+    <div>
+        <toaster :toas="tos" :id="id"  ref="foo" :position="position" >
+      
+        </toaster>
+    </div>
+
+</div>
+<div id="cl">
+
  
+    <div class="row">
+        <div class="col-md-6">
+            <mvprogress :title="PrgName" :value="inputtext"></mvprogress>
+            <cvprogress :value="inputtext" :width="cwd" :height="cht"></cvprogress>
+            <cvprogress :value="getVal" :width="cwd" :height="cht"></cvprogress>
+
+        </div>
+    </div>
+    <div>
+        <tzinput v-model="inputtext" :attribute="{id:'txtUser',
+             isRequired:false,
+             enabletooltip:true,
+             min:0,
+             inputType:1,
+             max:5,
+             limit:true
+             }"></tzinput>
+    </div>
+
+
+    @*<Griod :columns="colm" :data="gData" :id="id" :callback="AjaxGridReq" :pagging="page"></Griod>*@
+
+    <tztextarea v-model="textarea" :attribute="{id:'txtUser1',
+                 isRequired:false,
+                 enabletooltip:true,
+                 min:0,
+                 inputType:2,
+                 max:511,
+                 limit:true
+                 }"></tztextarea>
+
+    <dropdown :attribute="dd" v-model="inputtext"></dropdown>
+
+    @*<Clients></Clients>*@
+    <div id="app"></div>
+    dont add v-model to file uploader
+    <label>{{inputtext}}</label>
+    <label>{{selectedVal}}</label>
+    <div>
+        <Searching :Req="AjaxReq"></Searching>
+        <Tokenizer :attribute="autotext" id="testing" v-on:click="selected" v-model="selectedVal"></Tokenizer>
+    </div>
+</div>
+
 <script type="text/javascript">
-      $(document).ready(function () {
-          var abc = httpVueLoader('/vue/Client/ClientList.vue');        
-     
-        new Vue({
-            el: '#cl',
-            components: {
-                'Clients': abc
+    $(document).ready(function () {
+        var temp = {
+            id: 'txtUser1',
+            isRequired: false,
+            enabletooltip: true,
+            min: 0,
+            inputType: 2,
+            max: 5,
+            limit: true,
+            selectPicker: {
+                datasource: [{ key: 'sampath', value: '1' }, { key: 'kumar', value: '2' }, { key: 'Pavithra', value: '3' }],
+                valueField: 'value',
+                displayField: 'key'
             }
-        });
+        };
+         // var abc = httpVueLoader('/vue/Client/ClientList.vue');
+          //const vueclient = { template: '<div>User {{ $route.params.id }}</div>' }
+          //const Bar = { template: '<div>bar</div>' }
+          //const foo = { template: '<div>foo</div>' }
+          //const routes = [
+          //     { path: '/vueclient/:id', component: vueclient },
+          //    { path: '/vueclient/:id', component: vueclient },
+          //    { path: '/Bar', component: Bar },
+          //    { path: '/foo', component: foo },
+          //]
+          //const router = new VueRouter({
+          //    routes: routes// short for `routes: routes`
+          //});
+          //require(
+          //    // configuration
+          //    {
+          //        paths: {
+          //            // the Vue lib
+          //           'number-input': '/vue/Controls/Input',
+          //           urlArgs: 'bust=v23',
+
+          //        }
+          //    },
+          //    // load libs right now
+          //    ['number-input'],
+          //    function (input) {
+          //        var a = httpVueLoader('/vue/Client/clientlist.vue?1');
+          //        new Vue({
+          //            components: {
+          //                'Clients': a,
+          //                'number-input': input
+          //                //'Client': client
+          //            },
+
+          //        }).$mount('#cl');
+
+          //    }
+          //);
+
+          require(
+              // configuration
+              {
+                  paths: {
+                      // the Vue lib
+
+                      'jquery': '/Scripts/jquery-3.3.1',
+                      'popper': '/Scripts/popper',
+                      'bootstrap': '/Scripts/bootstrap',
+                      "combobox": "/Scripts/Controls/ComboBox/ComboBox",
+                      "token": "/Scripts/Controls/Tokenizer/Tokenizer",
+                      "controls": "/scripts/controls/Control-vue",
+                      "tzGrid": "/vue/controls/Grid",
+
+
+                      "datepicker": "/Scripts/Controls/datepicker/daterangepicker",
+                      "bdatepicker": "/Scripts/Controls/datepicker/bootstrap-datepicker",
+                      "timer": "/Scripts/Controls/timer",
+                      "moment": "/Scripts/Controls/datepicker/moment",
+                      "color": "/Scripts/Controls/ColorPicker/bootstrap-colorpicker",
+                      "input": "/vue/controls/input",
+                      "textarea": "/vue/controls/textarea",
+                      "dropdown": "/vue/controls/dropdown",
+                      "NumberSlider": "/Scripts/Controls/NumberSlider/NumberSlider",
+
+                      "Pagination": "/Scripts/Controls/Pagination/Pagination",
+                      "tzSearch": "/vue/controls/Search",
+                      "Tokenizer": "/vue/controls/Tokenizer",
+                      "tzprogress": "/vue/controls/Progress",
+                      "cvprogress": "/vue/controls/Circular-Progress",
+                      "toaster": "/vue/controls/toast",
+                      urlArgs: 'bust=v27',
+
+
+
+
+                  }
+              },
+              // load libs right now
+              ["jquery", "popper", "bootstrap", "combobox", "controls", "input", "textarea", "tzSearch", "dropdown",
+                  "tzGrid", "token", "Tokenizer", 'tzprogress', "cvprogress","toaster" ,"timer", "color", "moment", "datepicker",
+                  "bdatepicker", "NumberSlider", "Pagination"],
+              function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,  color, NumberSlider, page) {
+
+                  var a = httpVueLoader('/vue/Client/clientlist.vue?1');
+                  new Vue({
+                      components: {
+                          'Clients': a,
+                          'tzinput': input,
+                          'dropdown': dropdown,
+                          "Griod": Griod,
+                          "Searching": tzSearch,
+                          "Tokenizer": token,
+                          "mvprogress": tProgress,
+                          "cvprogress": cvprogress,
+                          "toaster": toaster
+                          //'Client': client
+                      },
+                      data: function () {
+                          return {
+                              inputtext: 23,
+                              token: "sampathkumar, pavithra ",
+                              textarea: "welcome to ",
+                              id:"grd",
+                              dd: {
+                                  id: 'txtUser1',
+                                  isRequired: false,
+                                  enabletooltip: true,
+                                  min: 0,
+                                  inputType: 2,
+                                  max: 5,
+                                  limit: true,
+                                  selectPicker: {
+                                      datasource: [{ key: 'sampath', value: '1' }, { key: 'kumar', value: '2' }, { key: 'Pavithra', value: '3' }],
+                                      valueField: 'value',
+                                      displayField: 'key'
+                                  }
+                              },
+                              gData: [{ name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" },{ name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }],
+                              colm: [{ 'dataField': 'TableName', 'header': 'client Name' }, { 'dataField': 'Category', 'header': 'client No' }],
+                              page: {
+                                  pagesize:3
+                              },
+                              AjaxReq: {
+                                  type: "GET",
+                                  data: {},
+                                  contentType: "",
+                                  dataType: "jsonp",
+                                  url: "/Client/Gets",
+                                  searchFields:"ClientName,ClientNo",
+                                  crossDomain: false,
+                              },
+                              AjaxGridReq: {
+                                  type: "GET",
+                                  data:  ( { clientid: "3271b7623dd34f7b96e574f2351a1486413346222" }),
+                                  contentType: "",
+                                  dataType: "jsonp",
+                                  url: "/Schema/GetTables",
+                                  crossDomain: false,
+                                  enable:true,
+                              },
+                              autotext: {
+
+                                  id: 'fillingdat',
+                                  limit: true,
+                                  autofill: {
+                                      datasource: [{ ClientName: "sampathkumar", ClientNo: "Emp-16" }, { ClientName: "ramkumar", ClientNo: "Emp-17" },
+                                      { ClientName: "vinod", ClientNo: "Emp-18" }, { ClientName: "aruna", ClientNo: "Emp-19" }, { ClientName: "sivakumar", ClientNo: "Emp-11" }, { ClientName: "sampathkumar", ClientNo: "Emp-16" }, { ClientName: "ramkumar", ClientNo: "Emp-17" },
+                                      { ClientName: "vinod", ClientNo: "Emp-18" }, { ClientName: "aruna", ClientNo: "Emp-19" }, { ClientName: "sivakumar", ClientNo: "Emp-11" }, { ClientName: "sampathkumar", ClientNo: "Emp-16" }, { ClientName: "ramkumar", ClientNo: "Emp-17" },
+                                      { ClientName: "vinod", ClientNo: "Emp-18" }, { ClientName: "aruna", ClientNo: "Emp-19" }, { ClientName: "sivakumar", ClientNo: "Emp-11" }, { ClientName: "sampathkumar", ClientNo: "Emp-16" }, { ClientName: "ramkumar", ClientNo: "Emp-17" },
+                                      { ClientName: "vinod", ClientNo: "Emp-18" }, { ClientName: "aruna", ClientNo: "Emp-19" }, { ClientName: "sivakumar", ClientNo: "Emp-11" }],
+                                      callback: function (term, object) {
+                                          $.ajax('/Client/GetClients', {
+                                              data: ({ search: term, start: 1 }),
+                                              dataType: 'jsonp',
+                                              type: "GET",
+                                              success: function (data) {
+                                                  var $items = [];
+                                                  $.each(data, function (k, v) {
+                                                      var obj = {};
+                                                      obj.value = v[object.options.valueField];
+                                                      obj.text = v[object.options.displayField];
+                                                      $items.push(obj);
+                                                  });
+                                                  object.trigger('tokenize:dropdown:fill', [$items]);
+                                              },
+                                              error: function (s, v) {
+                                                  console.log(s);
+                                              }
+                                          });
+                                          return [];
+                                      },
+                                      valueField: "ClientNo",
+                                      displayField: "ClientName",
+                                      type: "remote",
+                                      MaxItem: 2,
+                                      placeholder: "Type something here",
+                                      tokensAllowCustom: false,
+                                      sortable:false,
+                                  }
+
+                              },
+                              selectedVal: "",
+                              PrgName: "welcome",
+                              PrgValue: 65,
+                              cwd: "100",
+                              cht: "250",
+                  
+                          }
+                      },
+                      methods: {
+                          update: function (val) {
+                              this.inputtext = val;
+                          },
+                          selected: function (val) {
+                              this.selectedVal = val;
+                          }
+                      },
+                      watch:  {
+                          //inputtext: function () {
+                          //    //debugger;
+                          //    //this.inputtext = val;
+                          //}
+                      },
+                      computed: {
+                          getVal: function () {
+                              return this.inputtext / 2;
+                          }
+
+
+                      }
+                  }).$mount('#cl');
+
+              }
+        );
+
+        require(["toaster"], function (roster) {
+             
+                                 var toz = new Vue({
+                      components: {
+                                         "toaster": roster
+                                     }, data: function () {
+                                         return {
+                                             tos: [{
+                                                 header: "jquery", body: "welcome to jquery",
+                                                 template: + '<div class="toast-header">'
+                                                     + '<img src="..." class="rounded mr-2" alt="...">'
+                                                     + '<strong class="mr-auto">Bootstrap</strong>'
+                                                     + '<small>11 mins ago</small>'
+                                                     + '<button type="button" class="ml-2 mb-1 close"  >'
+                                                     + ' <span aria-hidden="true">&times;</span>'
+                                                     + '</button>'
+                                                     + '</div>'
+                                                     + ' <div class="toast-body">'
+                                                     + ' <div v-html="t.body"></div>'
+                                                     + '{{t.body}}'
+                                                     + ' </div>'
+                                             }, {
+                                                 header: "bootstrap", body: "welcome to bootstrap", template: + '<div class="toast-header">'
+                                                     + '<img src="..." class="rounded mr-2" alt="...">'
+                                                     + '<strong class="mr-auto">Bootstrap</strong>'
+                                                     + '<small>11 mins ago</small>'
+                                                     + '<button type="button" class="ml-2 mb-1 close" >'
+                                                     + ' <span aria-hidden="true">&times;</span>'
+                                                     + '</button>'
+                                                     + '</div>'
+                                                     + ' <div class="toast-body">'
+                                                     + ' {{t}}'
+                                            
+                                                     + ' </div>'
+                                                 }],
+                                             id: "tz",
+                                             "position":"bottom right"
+                                         }
+                                     }
+
+                                 }).$mount('#tost');
+          
+            $("#ckmy").click(function () {
+            
+                var o = {
+                    header: "ASP.NET", body: "welcome to ASP.NET <input type='button' class='btn btn-dark'  value='click here'/>", template: + '<div class="toast-header">'
+                    + '<img src="..." class="rounded mr-2" alt="...">'
+                    + '<strong class="mr-auto">Bootstrap</strong>'
+                    + '<small>11 mins ago</small>'
+                    + '<button type="button" class="ml-2 mb-1 close">'
+                    + ' <span aria-hidden="true">&times;</span>'
+                    + '</button>'
+                    + '</div>'
+                    + ' <div class="toast-body">'
+                    + '  {{item.body}} '
+                        +"<input type='button' class='btn btn- dark' value='click here' />"
+                    + ' </div>'
+                }
+                var b = {
+                    header: "c#", body: "welcome to ASP.NET with C#  <input type='button' class='btn btn-dark'>", template: + '<div class="toast-header">'
+                        + '<img src="..." class="rounded mr-2" alt="...">'
+                        + '<strong class="mr-auto">Bootstrap</strong>'
+                        + '<small>11 mins ago</small>'
+                        + '<button type="button" class="ml-2 mb-1 close">'
+                        + ' <span aria-hidden="true">&times;</span>'
+                        + '</button>'
+                        + '</div>'
+                        + ' <div class="toast-body" >'
+                        
+                        +
+                        + ' </div>'
+                }
+                a = a + 1;
+                o.header = a;
+           
+                toz.$refs.foo.push(o);
+               // toz.$refs.foo.push(b);
+             //  toz.$refs.foo.show();
+            })          
+
+        })
+        var a = 1;
+
+          //require(['/vue/Client/Clients.js','/Scripts/jquery-3.3.1.js', '/vue/controls/input.js', '/scripts/controls/Controls.js'], function (rt, $,input,ctrl) {
+          //    debugger;
+          //                new Vue({
+          //            components: {
+          //                   //     'Clients': rt,
+          //                'number-input': input
+          //                //'Client': client
+          //            },
+
+          //        }).$mount('#cl');
+          //})
+
+
     })
 </script>

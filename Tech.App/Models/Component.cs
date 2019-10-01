@@ -92,3 +92,5 @@ namespace Tz.BackApp.Models
         public bool IsActive { get; set; }
     }
 }
+
+

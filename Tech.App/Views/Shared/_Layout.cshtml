@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="~/Scripts/Controls/NumberSlider/Numberslider.css" rel="stylesheet" />
     @*<script src="~/Scripts/requires.js"></script>
         <script type="text/javascript">
             require.config({
@@ -47,16 +47,18 @@
     @Styles.Render("~/Content/appstyle")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryui")
-    @Scripts.Render("~/bundles/bootstrap")
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    @Scripts.Render("~/bundles/controljs")
+
+    @*<script type="text/javascript" src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>*@
+    @Scripts.Render("~/bundles/jqueryui")
+
+
+    <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/d3.js"></script>
     @*<script src="~/Scripts/WebChat.js"></script>*@
     @RenderSection("scripts", required: false)
 
-
+    @*<script src="~/Scripts/Controls/Control-vue.js"></script>*@
 
 
 
@@ -64,18 +66,19 @@
     <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
-    @*<script type="text/javascript" src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>*@
+
 
 
 
 
     <script src="~/Scripts/NT/NT.js"></script>
     <script src="~/Scripts/NT/NT-NodeEdge.js"></script>
-    <script src="~/Scripts/NT/NT-Node.js"></script> 
+    <script src="~/Scripts/NT/NT-Node.js"></script>
     <script src="~/Scripts/NT/ComponentModal.js"></script>
     <script src="~/Scripts/NT/NT-context.js"></script>
-    <script src="~/Scripts/NT/NT-NodeLabel.js"></script>
+
     <script src="~/Scripts/Jcookie.js"></script>
+
 
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     @*<script src="~/Scripts/vue/vue.esm.js"></script>*@
@@ -84,7 +87,8 @@
 
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://unpkg.com/http-vue-loader"></script>
-    <script src="https://unpkg.com/requirejs@2.3.5/require.js"></script>
+    <script src="~/Scripts/requires.js"></script>
+
 
     @*<script src="~/Scripts/ace/ace.js"></script>*@
 

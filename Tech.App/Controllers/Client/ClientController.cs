@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Tz.BackApp.Models;
 
 namespace Tz.BackApp.Controllers.Client
 {
@@ -13,7 +14,6 @@ namespace Tz.BackApp.Controllers.Client
         {
             return View();
         }
-
         public ActionResult Client()
         {
             ViewBag.Message = "Your Client page.";
@@ -26,9 +26,32 @@ namespace Tz.BackApp.Controllers.Client
         }
 
         [HttpGet]
-        public JsonpResult Gets()
+        public JsonpResult Gets(string obj)
         {
-            return new JsonpResult(Net.Client.GetClients());            
+            if (obj != null)
+            {
+                var gp = Newtonsoft.Json.JsonConvert.DeserializeObject<GridParam>(obj);
+                return new JsonpResult(Net.Client.GetClients());
+            }
+            else {
+                return new JsonpResult(Net.Client.GetClients());
+            }                              
+        }
+
+        [HttpGet]
+        public JsonpResult GetClients(string search,int start)
+        {
+            if (search != null)
+            {
+                // var gp = Newtonsoft.Json.JsonConvert.DeserializeObject<GridParam>(obj);\
+               var c= Net.Client.GetClients().Where(x => x.ClientName.IndexOf(search) >= 0);
+
+                return new JsonpResult(c);
+            }
+            else
+            {
+                return new JsonpResult(Net.Client.GetClients());
+            }
         }
 
         public JsonpResult Save(string clientName,

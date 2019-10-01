@@ -8,7 +8,8 @@
     $.fn.timepicki = function (options) {
 
         var methods = {
-            setValue: function (a1,a2,a3) {
+            setValue: function (a1, a2, a3) {
+
                 var s = $(this).data('timepicki');
                 //  if (arg.length === 2 || arg.length ===3) {
                 var tim = 0;
@@ -39,9 +40,13 @@
                             $(this).attr('data-timepicki-meri', meri);
                             // set the formatted value
                             $(this).val(s.format_output(tim, mini, meri));
+                            $(this).change();
                         } else {
                             $(this).val(s.format_output(tim, mini));
+                            $(this).change();
                         }
+                         
+                     
                     }
                 //}                
             },
@@ -53,6 +58,14 @@
                     var tim = arg[0].split(":")[0];
                     var mini = arg[0].split(":")[1];
                     var meri = "";
+
+                    if (!isNaN(tim)) {
+                        tim = parseInt(tim);
+                    }
+                    if (!isNaN(mini)) {
+                        mini = parseInt(mini);
+                    }
+
                     if (arg.length === 2) {
                         meri = arg[1];
                     }

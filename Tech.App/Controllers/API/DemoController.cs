@@ -33,7 +33,7 @@ namespace Tz.BackApp.Controllers.API
             //EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
             //QScriptStatement sq = new QScriptStatement(ss, ev);
             //var res = sq.Evaluation();
-
+          
             DataScriptManager dataScript = new DataScriptManager(c.Intend,c.ClientID);
             foreach (Inparam p in c.InputParam) {
                 dataScript.AddParam(p.Name,p.Value);

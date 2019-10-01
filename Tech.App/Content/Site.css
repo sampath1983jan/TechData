@@ -338,106 +338,173 @@ is-floating-label {
     font-size:50% !important;
 }
 
-/*Custom Scroll bar with themes https://mdbootstrap.com/docs/jquery/javascript/scroll/#image*/
-.scrollbar-deep-purple::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: #F5F5F5;
-    border-radius: 10px;
+
+.progress {
+    height: 7px;
+    background: #e3e3e3;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 40px 0 80px;
+    overflow: visible;
+    position: relative;
 }
 
-.scrollbar-deep-purple::-webkit-scrollbar {
-    width: 12px;
-    background-color: #F5F5F5;
+    .progress .progress-title {
+        padding: 5px 5px;
+        margin: 0;
+        background: #393a3d;
+        border-radius: 5px 0 0 5px;
+        box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+        font-size: 12px;
+        /* font-weight: 700; */
+        color: #fff;
+        /* text-transform: uppercase; */
+        position: absolute;
+        top: -10px;
+        left: 0;
+        z-index: 1;
+    }
+
+        .progress .progress-title:after {
+            content: "";
+            border-left: 17px solid #393a3d;
+            border-top: 14px solid transparent;
+            border-bottom: 10px solid transparent;
+            position: absolute;
+            top: 0px;
+            right: -17px;
+        }
+
+    .progress .progress-bar {
+        box-shadow: none;
+        border-radius: 0;
+        position: relative;
+        -webkit-animation: animate-positive 2s;
+        animation: animate-positive 2s;
+    }
+
+        .progress .progress-bar:after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.6);
+            background: #fff;
+            position: absolute;
+            right: -5px;
+            top: -5px;
+        }
+
+    .progress .progress-value {
+        width: 30px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 3px;
+        background: #393a3d;
+        /*//:;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.4);*/
+        font-size: 11px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        bottom: 30px;
+        right: -17px;
+    }
+   
+
+        .progress .progress-value:after {
+       content: "";
+          border-top: 7px solid #393a3d;
+        border-left: 7px solid transparent;
+         border-right: 7px solid transparent;
+          position: absolute;
+        bottom: -7px;
+         left: 25%;
+        }
+
+    .progress.green .progress-bar:after {
+        border: 8px solid #21da9a;
+    }
+
+    .progress.pink .progress-bar:after {
+        border: 8px solid #ff1170;
+    }
+
+    .progress.blue .progress-bar:after {
+        border: 8px solid #294bdc;
+    }
+
+    .progress.yellow .progress-bar:after {
+        border: 5px solid #ffa900;
+    }
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
 }
 
-.scrollbar-deep-purple::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: #512da8;
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
 }
 
-.scrollbar-cyan::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: #F5F5F5;
-    border-radius: 10px;
+/*Circular Chart*/
+single-chart {
+    width: 33%;
+    justify-content: space-around;
 }
 
-.scrollbar-cyan::-webkit-scrollbar {
-    width: 12px;
-    background-color: #F5F5F5;
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    /*max-width: 80%;
+    max-height: 250px;*/
 }
 
-.scrollbar-cyan::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: #00bcd4;
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
 }
 
-.scrollbar-dusty-grass::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: #F5F5F5;
-    border-radius: 10px;
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+.aniProg  {
+    animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
 }
 
-.scrollbar-dusty-grass::-webkit-scrollbar {
-    width: 12px;
-    background-color: #F5F5F5;
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
 }
 
-.scrollbar-dusty-grass::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-image: -webkit-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+.circular-chart.green .circle {
+    stroke: #4CC790;
 }
 
-.scrollbar-ripe-malinka::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: #F5F5F5;
-    border-radius: 10px;
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
 }
 
-.scrollbar-ripe-malinka::-webkit-scrollbar {
-    width: 12px;
-    background-color: #F5F5F5;
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 7px;
+    text-anchor: middle;
 }
-
-.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-image: -webkit-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
-    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-}
-
-.bordered-deep-purple::-webkit-scrollbar-track {
-    -webkit-box-shadow: none;
-    border: 1px solid #512da8;
-}
-
-.bordered-deep-purple::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: none;
-}
-
-.bordered-cyan::-webkit-scrollbar-track {
-    -webkit-box-shadow: none;
-    border: 1px solid #00bcd4;
-}
-
-.bordered-cyan::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: none;
-}
-
-.square::-webkit-scrollbar-track {
-    border-radius: 0 !important;
-}
-
-.square::-webkit-scrollbar-thumb {
-    border-radius: 0 !important;
-}
-
-.thin::-webkit-scrollbar {
-    width: 6px;
-}
+/* end */
+ 
 .tztable {
      
 }
@@ -462,13 +529,13 @@ is-floating-label {
         overflow-x: hidden;
         height: 300px;
     }
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
     color: #4f4f4f !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width:300px;
-}
+}*/
 /*html,
 body {
     height: 100%;
@@ -623,3 +690,7 @@ body {
         padding-left: 5px !important;
         content: "";
     }
+
+.errorhighlight{
+    border:1px solid #c42323 !important;
+}

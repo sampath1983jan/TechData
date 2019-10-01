@@ -98,10 +98,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.Entity, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\MySql.Data.Entity.dll</HintPath>
-    </Reference>
     <Reference Include="MySql.Web, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Web.dll</HintPath>
@@ -192,6 +188,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
       <Private>True</Private>
@@ -344,6 +341,7 @@
     <Compile Include="Models\CustomPrincipal.cs" />
     <Compile Include="Models\CustomRole.cs" />
     <Compile Include="Models\Dataset.cs" />
+    <Compile Include="Models\GridParam.cs" />
     <Compile Include="Models\Inparam.cs" />
     <Compile Include="Models\JsonResult.cs" />
     <Compile Include="Models\LoginView.cs" />
@@ -352,6 +350,7 @@
     <Compile Include="Models\Table.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Saml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -815,6 +814,8 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="appsettings.json" />
     <Content Include="Scripts\ace\mode-QScriptMode.js" />
+    <Content Include="Scripts\Controls\Control-vue.js" />
+    <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\requires.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
@@ -822,8 +823,18 @@
     <Content Include="Scripts\vue\vue.esm.js" />
     <Content Include="Scripts\vue\vue.js" />
     <Content Include="Scripts\vue\vue.min.js" />
+    <Content Include="vue\Controls\Circular-Progress.js" />
+    <Content Include="vue\Controls\dropdown.js" />
+    <Content Include="vue\Controls\Grid.js" />
+    <Content Include="vue\Controls\Input.js" />
+    <Content Include="vue\Controls\Progress.js" />
+    <Content Include="vue\Controls\Search.js" />
+    <Content Include="vue\Controls\TextArea.js" />
+    <Content Include="vue\Controls\toast.js" />
+    <Content Include="vue\Controls\Tokenizer.js" />
     <Content Include="vue\main.js" />
     <Content Include="libman.json" />
+    <Content Include="vue\Client\Clients.js" />
     <Content Include="webpack.config.js" />
     <Content Include="Content\Main.scss" />
     <None Include="compilerconfig.json" />
@@ -864,7 +875,6 @@
     <Content Include="Scripts\NT\NT-context.js" />
     <Content Include="Scripts\NT\NT-Node.js" />
     <Content Include="Scripts\NT\NT-NodeEdge.js" />
-    <Content Include="Scripts\NT\NT-NodeLabel.js" />
     <Content Include="Scripts\NT\NT.js" />
     <Content Include="Scripts\WebChat.js" />
     <Content Include="Views\chat.html" />
@@ -899,6 +909,7 @@
     <Content Include="vue\login.vue" />
     <Content Include="vue\Client\ClientList.vue" />
     <Content Include="Views\Client\Client.cshtml" />
+    <Content Include="vue\Client\Client.vue" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

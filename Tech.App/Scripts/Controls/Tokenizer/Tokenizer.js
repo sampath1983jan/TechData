@@ -881,7 +881,7 @@
      * @returns {object|jQuery}
      */
     Tokenize2.prototype.dropdownItemFormat = function (item) {
-
+    
         if (item.hasOwnProperty('text')) {
             var $display = '';
             if (this.options.searchHighlight) {

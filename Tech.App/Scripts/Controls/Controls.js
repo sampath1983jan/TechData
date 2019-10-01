@@ -1,4 +1,14 @@
-﻿var defaultDate = "00/00/0001T00:00:00";
+﻿(function (factory) {
+    if (typeof define === "function" && define.amd) {
+        define(["jquery"], factory);
+    } else if (typeof module === "object" && module.exports) {
+        module.exports = factory(require("jquery"));
+    } else {
+        factory(jQuery);
+    }
+}(function ($) {
+
+var defaultDate = "00/00/0001T00:00:00";
 // input controls
 (function ($) {
     $.input = {
@@ -302,6 +312,7 @@
                     color: prt.color.defaultcolor,
                   colorSelectors: prt.color.colorSelectors
                 }).on('changeColor', function (e) {
+                    
                     prt.color.onSelected(e.color);
                     });
 			}
@@ -339,7 +350,8 @@
 					this.prt.selectPicker.onSelected($(this).val());
 				});
 				
-			} else if (prt.inputType == 16) {
+            }
+            else if (prt.inputType == 16) {
 				$(self).append(tmp);
 				var a = methods._setCheckValue(prt.text);
 				$(self).find("input[type=checkbox]").prop("checked", a);
@@ -2168,7 +2180,7 @@
         this.element.attr("disabled", "disabled");
         //}
     };
-    $.widget("ui.Submit", fn);
+ //   $.widget("ui.Submit", fn);
 })($);
 // modalwindow
 (function ($) {
@@ -2685,7 +2697,7 @@ $.getUniqueArray = function (arr, uniqueField) {
     uniArray.all = all;
     return uniArray;
 };
-
+}));
 
 
 

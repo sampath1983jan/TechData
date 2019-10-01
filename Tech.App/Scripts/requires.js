@@ -2409,8 +2409,13 @@ var requirejs, require, define, xpcUtil;
 
 		(function () {
 			// Separate function to avoid eval pollution, same with arguments use.
-			function exec() {
-				eval(arguments[0]);
+            function exec() {
+                try {
+                    eval(arguments[0]);
+                } catch (ex) {
+                    throw ex;
+                }
+				
 			}
 
 			require.load = function (context, moduleName, url) {
