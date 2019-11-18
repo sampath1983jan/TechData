@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Tech.QScript.Syntax;
 using Tech.QScript;
 using System.Data;
+using Tz.Global;
+using Tz.ClientManager;
+
 namespace Tz.Net
 {
    public class DataScript
@@ -62,10 +65,10 @@ namespace Tz.Net
            dt = dScript.GetScripts();
 
             List<DataScript> c = dt.toList<DataScript>(new DataFieldMappings()
-                  .Add(Tz.Data.TzAccount.DataScript.ScriptID.Name, "ScriptID")
-                  .Add(Tz.Data.TzAccount.DataScript.Script.Name, "Script")
-                  .Add(Tz.Data.TzAccount.DataScript.ScriptName.Name, "Name")
-                  .Add(Tz.Data.TzAccount.DataScript.Category.Name, "Category")                  
+                  .Add(Tz.Global.TzAccount.DataScript.ScriptID.Name, "ScriptID")
+                  .Add(Tz.Global.TzAccount.DataScript.Script.Name, "Script")
+                  .Add(Tz.Global.TzAccount.DataScript.ScriptName.Name, "Name")
+                  .Add(Tz.Global.TzAccount.DataScript.Category.Name, "Category")                  
                   , null, null).ToList();
             int indx = 0;
             foreach (DataRow dr in dt.Rows) {

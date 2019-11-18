@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using Tz.Net;
+using Tz.Security;
 namespace CustomAuthentication
 {
     public class CustomMembership : MembershipProvider
@@ -244,7 +245,7 @@ namespace CustomAuthentication
         public override MembershipUser GetUser(string username, bool userIsOnline)
         {
             User u = new User(username,"");
-          Tz.Net.User c=  u.GetUserDetailByEmail();
+          Tz.Security.User c=  u.GetUserDetailByEmail();
             var selectedUser = new CustomMembershipUser(c);
             return selectedUser;
         }

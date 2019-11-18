@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Data;
+using Tz.ClientManager;
 namespace Tz.Core
 {
 public  class ComponentModal
     {
         private string ClientID { get; set; }
         private Data.Component.ComponentModal dataComponentModal;
-        private Tz.Net.ClientServer c;
+        private ClientServer c;
         private string conn;
         private string _componentModalID;
 
@@ -41,7 +42,7 @@ public  class ComponentModal
         /// <param name="clientID"></param>        /// 
         public ComponentModal(string clientID,string name,string category,string parentnode) {
             ClientID = clientID;
-            c = new Net.ClientServer(ClientID);
+            c = new ClientServer(ClientID);
             ModalName = name;
             Category = category;
             ParentComponent = parentnode;
@@ -56,7 +57,7 @@ public  class ComponentModal
         public ComponentModal(string clientID)
         {
             ClientID = clientID;
-            c = new Net.ClientServer(ClientID);
+            c = new ClientServer(ClientID);
             ModalName = "";
             Category = "";
             ParentComponent = "";
@@ -71,7 +72,7 @@ public  class ComponentModal
         /// <param name="componentModalID"></param>
         public ComponentModal(string clientID, string componentModalID) {
             this.ClientID = clientID;
-            c = new Net.ClientServer(ClientID);
+            c = new ClientServer(ClientID);
             ComponentModalID = componentModalID;
             this.ComponentModalRoot = new List<ComponentNode>();
             conn = c.GetServer().Connection();
@@ -89,7 +90,7 @@ public  class ComponentModal
             DataTable dtItem = new DataTable();
             DataTable dtRelation = new DataTable();
             List<ComponentModal> ModalList = new List<ComponentModal>();
-            var c = new Net.ClientServer(clientid);
+            var c = new ClientServer(clientid);
             var dataComponentModal = new Data.Component.ComponentModal(c.GetServer().Connection());
             dt = dataComponentModal.GetAllModal(clientid);
             dtModal = dt.DefaultView.ToTable(true, "Name", "Catgory", "ParentComponent", "ComponentModalID");

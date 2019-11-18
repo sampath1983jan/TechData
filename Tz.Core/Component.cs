@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Collections.Generic;
 using Tz.Net;
-
+using Tz.ClientManager;
 namespace Tz.Core
 {
     public enum ComponentType {
@@ -104,7 +104,7 @@ namespace Tz.Core
     /// </summary>    
     public class Component:IComponent
     {
-        Tz.Net.ClientServer ck;
+        ClientServer ck;
         private Data.Component.Component dataComponent;
         /// <summary>
         /// 
@@ -114,7 +114,7 @@ namespace Tz.Core
         public Component(string clientID,string componentID) {
             ClientID = clientID;
             ComponentID = componentID;
-            ck = new Net.ClientServer(clientID);
+            ck = new ClientServer(clientID);
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
             Load();
@@ -122,7 +122,7 @@ namespace Tz.Core
         public Component(string clientID) {
             ClientID = clientID;
             ComponentID = "";
-            ck = new Net.ClientServer(clientID);
+            ck = new ClientServer(clientID);
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
         }
@@ -144,12 +144,12 @@ namespace Tz.Core
             this.ComponentName = name;
             this.Category = category;
             this.ComponentType = componentType;
-            ck = new Net.ClientServer(clientID);
+            ck = new ClientServer(clientID);
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
         }
         public static List<Component> GetComponentList(string clientID) {
-            var ck = new Net.ClientServer(clientID);
+            var ck = new ClientServer(clientID);
             var dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             var dtFields = new DataTable();
             var dt= dataComponent.GetCompnents(clientID);
@@ -310,8 +310,8 @@ namespace Tz.Core
         /// </summary>
         /// <returns></returns>
         internal bool Save() {
-            Tz.Net.ClientServer c = new Tz.Net.ClientServer(this.ClientID);
-            Tz.Net.Server s = c.GetServer();
+            Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+            Tz.ClientManager.Server s = c.GetServer();
             if (ComponentID == "")
             {             
                 var dm = new DataManager(s, c.ClientID);
@@ -490,8 +490,8 @@ namespace Tz.Core
         internal bool AddAttribute(ComponentAttribute ca) {
             try
             {
-                Tz.Net.ClientServer c = new Tz.Net.ClientServer(this.ClientID);
-                Tz.Net.Server s = c.GetServer();
+                Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                Tz.ClientManager.Server s = c.GetServer();
                 DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
                 if (ca.IsPrimaryKey)
                 {
@@ -544,8 +544,8 @@ namespace Tz.Core
         internal bool UpdateAttribute(ComponentAttribute ca) {
             try
             {
-                Tz.Net.ClientServer c = new Tz.Net.ClientServer(this.ClientID);
-                Tz.Net.Server s = c.GetServer();
+                Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                Tz.ClientManager.Server s = c.GetServer();
                 DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);                
                 dm.ChangeField(ca.FieldID, ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length,ca.IsNullable,ca.IsPrimaryKey,ca.AttributeName.Replace(" ", "_"));
                 dm.AcceptChanges();
@@ -581,8 +581,8 @@ namespace Tz.Core
                 var datacom = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
                 datacom.RemoveAll(this.ComponentID);
                     
-                Tz.Net.ClientServer c = new Tz.Net.ClientServer(this.ClientID);
-                Tz.Net.Server s = c.GetServer();
+                Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                Tz.ClientManager.Server s = c.GetServer();
                 DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
                 dm.Remove();
                 return true;
@@ -605,8 +605,8 @@ namespace Tz.Core
                 if (datacom.Remove(attributeID, this.ComponentID))
                 {
                     datacom.RemoveAll(this.ComponentID);
-                    Tz.Net.ClientServer c = new Tz.Net.ClientServer(this.ClientID);
-                    Tz.Net.Server s = c.GetServer();
+                    Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                    Tz.ClientManager.Server s = c.GetServer();
                     DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
                     dm.RemoveField(attributeID);
                     return true;

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tz.Security</RootNamespace>
+    <AssemblyName>Tz.Security</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Group\GroupImplementor\AdminGroupImplementation.cs" />
+    <Compile Include="Group\GroupImplementor\IGroupImplementor.cs" />
+    <Compile Include="Group\GroupImplementor\ManagerGroupImplementation.cs" />
+    <Compile Include="Group\GroupImplementor\SuperAdminGroupImplementation.cs" />
+    <Compile Include="Group\GroupImplementor\SystemAdminGroupImplementation.cs" />
+    <Compile Include="Group\GroupImplementor\UserGroupImplementation.cs" />
+    <Compile Include="IPrivilege.cs" />
+    <Compile Include="Privileges\AnalyticPrivilege.cs" />
+    <Compile Include="Privileges\ComponentPrivilege.cs" />
+    <Compile Include="Privileges\DashboardPrivilege.cs" />
+    <Compile Include="Privileges\FeaturePrivileges.cs" />
+    <Compile Include="Privileges\ModulePrivilege.cs" />
+    <Compile Include="Privileges\ReportPrivileges.cs" />
+    <Compile Include="Group\AdminGroup.cs" />
+    <Compile Include="Group\ManagerGroup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Group\SystemAdminGroup.cs" />
+    <Compile Include="SecurityGroup.cs" />
+    <Compile Include="SecurityGroupManager.cs" />
+    <Compile Include="SecurityUser.cs" />
+    <Compile Include="Group\SuperAdminGroup.cs" />
+    <Compile Include="Group\UserGroup.cs" />
+    <Compile Include="UserSecurityGroup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
+      <Project>{6605498E-3BE2-4B50-AF67-D5A9084A5F00}</Project>
+      <Name>Tech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
+      <Project>{0f9e9e96-db86-46ef-8a33-c900716c0712}</Project>
+      <Name>Tz.ClientManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Data\Tz.Data.csproj">
+      <Project>{a25eb976-3db6-4de4-8ea6-5d33e6cb5867}</Project>
+      <Name>Tz.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Global\Tz.Global.csproj">
+      <Project>{27d9546b-9499-425b-ac56-602e9cf7bd8a}</Project>
+      <Name>Tz.Global</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

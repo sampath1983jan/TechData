@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
+using Tz.ClientManager;
 namespace Tz.Core
 {
     public class ComponentManager
@@ -77,8 +78,8 @@ namespace Tz.Core
         }
         public string GetData(List<ComponentKey> keys,int currentIndex,int pageSize) {
             Component c = (Component)_component;            
-            Tz.Net.ClientServer cs = new Tz.Net.ClientServer(this.ClientID);
-            Tz.Net.Server s = cs.GetServer();
+            ClientServer cs = new ClientServer(this.ClientID);
+            Server s = cs.GetServer();
             var dm = new Tz.Net.DataManager(this.Component.TableID,s.ServerID,this.ClientID);
             System.Data.DataTable dt = new System.Data.DataTable();
             //var tb = new Tz.Net.Entity.Table(s.ServerID,this.Component.TableID,this.ClientID); 

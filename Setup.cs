@@ -3,21 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tz.Data;
 
-namespace Tz.Net
+namespace Tz.Setup
 {
-   public class Setup
-   {
-        public Setup() {
-                       
+    public class Setup
+    {
+        public Setup()
+        {
+
         }
 
-        public void Reset(string conn) {
+        public void Reset(string conn)
+        {
             Tz.Data.Setup s = new Data.Setup(conn);
             s.Clear();
         }
 
-        public void Execute(string conn) {
+        public void Execute(string conn)
+        {
             try
             {
                 Tz.Data.Setup s = new Data.Setup(conn);
@@ -25,8 +29,10 @@ namespace Tz.Net
                 {
                     s.CreateAccount();
                 }
-                catch (Exception ex) {
-                    if (ex.Message.IndexOf("exist") == 0) {
+                catch (Exception ex)
+                {
+                    if (ex.Message.IndexOf("exist") == 0)
+                    {
                         throw ex;
                     }
                 }
@@ -134,14 +140,16 @@ namespace Tz.Net
 
 
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 throw ex;
             }
-            
+
 
         }
 
-        public void ExecuteClientSetup(string conn) {
+        public void ExecuteClientSetup(string conn)
+        {
             Tz.Data.Setup s = new Data.Setup(conn);
             try
             {
@@ -246,6 +254,5 @@ namespace Tz.Net
                 }
             }
         }
-   }
+    }
 }
-

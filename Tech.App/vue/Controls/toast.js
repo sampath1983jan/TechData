@@ -13,7 +13,7 @@ define(function () {
     return Vue.component('toast',
         {
             template: '<div :style="setposition" :id="id"></div>',
-            props: ["toas", "id","position"],
+            props: ["toas", "id","position","type"],   // type -linear nonlinear
             data: function () {
                 return {    
                     toasts: this.toas,                    
@@ -28,7 +28,7 @@ define(function () {
                         + '</div>'
                         + ' <div class="toast-body">'                        
                         + ' </div></div>',
-                  
+                    currentIndex:0,                  
                 }
             },
             created: function () {
@@ -36,30 +36,21 @@ define(function () {
             },
             watch: {
                 value: function (newVal, oldVal) { // watch it
-                    this.text = newVal;
-                    if (this.text == "") { this.text = 0; }
-                    var inval = 0;
-                    var othis = this;
-                    var showPercent = window.setInterval(function () {
-                        $(othis.$el).find(".circle").attr("stroke-dasharray", inval + ",100");
-                        inval = inval + 1;
-                        if (inval > newVal) {
-                            clearInterval(showPercent);
-                        }
-                    }, 1); // Runs at a rate based on the animation's
+                   
                 }
             },
             mounted: function () {
                 var othis = this;               
                 this.$nextTick(function () {
-                    $.each(this.toasts, function (it, itval) {
-                      //  debugger;
-                        var el = $("#" + othis.id).append(othis.template.f("toz_" + it));
-                      //  $(el).attr("id", "toz_"+it);
-                        $("#toz_" + it).find(".toast-body").append(itval.body);
-                        $("#toz_" + it).find(".toast-header").find("strong").append(itval.header);
-                    });                       
-                    $('.toast').toast("show");    
+                    if (this.type == "linear") {
+                        if (this.toasts.length > 0) {
+                            othis.render(0, this.toasts[0]);
+                        }                        
+                    } else {
+                        $.each(this.toasts, function (it, itval) {
+                            othis.render(it, itval);
+                        });
+                    }
                 });
             },
             updated: function () {       
@@ -68,10 +59,8 @@ define(function () {
                     othis.push(itval);
                 });                
                 $('.toast').toast("show");    
-            },
-            
-            destroyed: function () {
-          //      debugger;;
+            },            
+            destroyed: function () {          
             },
             methods: {
                 close: function (index) {
@@ -88,55 +77,58 @@ define(function () {
                     this.toasts.splice(idx, 1);
                 }, 
                 resetIndex: function () {
-                    $.each(othis.toasts, function (idx, v) {
+                    var othis = this;
+                    $.each(this.toasts, function (idx, v) {
                         var id = "toz_" + idx;
-                        $("#" + id).find(".toast-header").find("[type=button]").attr("index", this.toasts.length);
+                        $("#" + id).find(".toast-header").find("[type=button]").attr("index", othis.toasts.length -1);
                     })
-
-
-                },                  
-                push: function (item) {                    
-                    var othis = this;                 
-                                       
-                    var id = "toz_" + this.toasts.length;
-                    var el = $("#" + othis.id).append(othis.template.f("toz_" + this.toasts.length));
+                },  
+                render: function (index, item) {                   
+                    var othis = this;
+                    var id = "toz_" + index;
+                    var el = $("#" + this.id).append(this.template.f(id));
+                    $("#" + this.id).css("z-index","100")
                     $("#" + id).find(".toast-body").append(item.body);
                     $("#" + id).find(".toast-header").find("strong").append(item.header);
-                    $("#" + id).find(".toast-header").find("[type=button]").attr("index", this.toasts.length);
-                    $("#toz_" + this.toasts.length).toast("show");
-                    //$(this).parent().parent().fadeIn(600, function () {
-                    //    $("#toz_" + this.toasts.length).toast("show");
-                    //});
-                        $(this).parent().parent().animate({
-                            //width: ["toggle", "swing"],
-                           // height: ["toggle", "swing"],
-                            //"left": "+=250px" 
-                            opacity: "toggle"
-                        }, 600, "linear", function () {
-                           
-                        });
+                    $("#" + id).find(".toast-header").find("[type=button]").attr("index", index);
+                  //  $("#toz_" + index).toast("show");
+                    $("#" + id).animate({
+                        opacity: "1"
+                    }, 400, "linear", function () {
 
-                    this.toasts.push(item);
-                
-                    $("#" + id).find(".toast-header").find("[type=button]").click(function () {                       
-                        var index = $(this).attr("index");                       
+                    });
+                    $("#" + id).find(".toast-header").find("[type=button]").click(function () {
+                        var index = $(this).attr("index");
                         othis.toasts.splice(index, 1);
-                        $(this).parent().parent().fadeOut(600, function () {
-                            $(this).remove();
+                        othis.resetIndex();
+                        $(this).parent().parent().animate({
+                            opacity: "0"
+                        }, 400, "linear", function () {
+                                $(this).remove();
+                                if (othis.type == "linear") {
+                                    if (othis.toasts.length > 0) {
+                                        othis.render(0, othis.toasts[0]);
+                                    }   
+                                }                                                          
+                              
                         });
-
-                        //$(this).parent().parent().animate({
-                        //    //width: ["toggle", "swing"],
-                        //   // height: ["toggle", "swing"],
-                        //    //"left": "+=250px" 
-                        //    opacity: "toggle"
-                        //}, 600, "linear", function () {
-                        //        $(this).remove();
+                        //$(this).parent().parent().fadeOut(600, function () {
+                        //    $(this).remove();
                         //});
-                    });  
-
-                }
-                ,
+                    }); 
+                },
+                push: function (item) {                    
+                    var othis = this;                      
+                    this.toasts.push(item);
+                    if (this.type == "linear") {
+                        if (this.toasts.length == 1) {
+                            this.render(0, item);
+                        }
+                    } else if (this.type == "nonlinear") {
+                        this.render(this.toasts.length -1, item);
+                    }                
+                     
+                }                ,
                 handleInput: function (e) {
 
                 },
@@ -165,7 +157,13 @@ define(function () {
                     } else if (this.position == "left bottom" || this.position == "bottom left") {
                         o.bottom = "20px";
                         o.left = "20px";
-                    } else {
+                    } else if (this.position == "center bottom" || this.position == "bottom center") {
+                        o.bottom = "20px";
+                        o.left = "40%";
+                    } else if (this.position == "center top" || this.position == "top center") {
+                        o.left = "40%";
+                        o.top = "60px";
+                    }else {
                         o.left = "80%";
                        
                     }

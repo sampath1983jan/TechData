@@ -6,7 +6,7 @@ using System.Data.Common;
 using System.Text;
 using Tech.Data;
 using Tech.Data.Query;
-
+using Tz.Global;
 namespace Tz.Data.Component
 {
    public class Component:DataBase

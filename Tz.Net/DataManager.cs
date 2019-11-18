@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 using Tech.Data.Query;
 using Tech.Data.Schema;
 using Tz.Data;
+using Tz.Global;
+using Tz.ClientManager;
 
 namespace Tz.Net
 {
  public class DataManager
     {
         private Entity.ITable Table;
-        private Server Server;
+        private Tz.ClientManager.Server Server;
         private string ClientID;
         private bool isPrimaryUpdated;
 
@@ -22,7 +24,7 @@ namespace Tz.Net
         /// </summary>
         /// <param name="serverID"></param>
         public DataManager(string serverID,string clientID) {
-            Server = new Server(serverID);
+            Server = new ClientManager.Server(serverID);
             ClientID = clientID;
             isPrimaryUpdated = false;
         }
@@ -30,7 +32,7 @@ namespace Tz.Net
         /// 
         /// </summary>
         /// <param name="server"></param>
-        public DataManager(Server server, string clientID)
+        public DataManager(ClientManager.Server server, string clientID)
         {
             Server = server;
             ClientID = clientID;
@@ -42,7 +44,7 @@ namespace Tz.Net
         /// <param name="tableID"></param>
         /// <param name="serverID"></param>
         public DataManager(string tableID,string serverID, string clientID) {
-            Server = new Server(serverID);
+            Server = new ClientManager.Server(serverID);
             ClientID = clientID;
             Table = new Entity.Table( serverID, tableID, ClientID);
             isPrimaryUpdated = false;
@@ -381,8 +383,8 @@ namespace Tz.Net
         }
         public static async Task<int> synSever(string ClientID) {
             System.Data.DataTable dt = new DataTable();
-            Tz.Net.ClientServer c = new Tz.Net.ClientServer(ClientID);
-            Tz.Net.Server s = c.GetServer();
+           ClientServer c = new ClientServer(ClientID);
+           Tz.ClientManager. Server s = c.GetServer();
             Tech.Data.DBDatabase db = Tech.Data.DBDatabase.Create(s.Connection(), "MySql.Data.MySqlClient");
             Tech.Data.Schema.DBSchemaProvider provider = db.GetSchemaProvider();
             IEnumerable<Tech.Data.Schema.DBSchemaItemRef> tables = provider.GetAllTables();

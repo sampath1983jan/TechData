@@ -3,28 +3,26 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Reflection;
-using Mono.Reflection;
-
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Tz.Net
+using Mono.Reflection;
+namespace Tz.Global
 {
-   public static class Shared
+    public static class Shared
     {
-        //public static string generateID()
-        //{
-        //    long i = 1;
+        public static string generateID()
+        {
+            long i = 1;
 
-        //    foreach (byte b in Guid.NewGuid().ToByteArray())
-        //    {
-        //        i *= ((int)b + 1);
-        //    }
+            foreach (byte b in Guid.NewGuid().ToByteArray())
+            {
+                i *= ((int)b + 1);
+            }
 
-        //    string number = String.Format("{0:d4}", (DateTime.Now.Ticks / 10) % 1000000000);
+            string number = String.Format("{0:d4}", (DateTime.Now.Ticks / 10) % 1000000000);
 
-        //    return Guid.NewGuid().ToString("N") + number;
-        //}
+            return Guid.NewGuid().ToString("N") + number;
+        }
     }
 
     public static class Common
@@ -42,13 +40,13 @@ namespace Tz.Net
             }
         }
 
-            /// <summary>
-            /// 
-            /// </summary>
-            /// <typeparam name="T"></typeparam>
-            /// <param name="item1">Actual Object</param>
-            /// <param name="item2">Target Object</param>
-            public static void Combine<T>(ref T target, T source)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="item1">Actual Object</param>
+        /// <param name="item2">Target Object</param>
+        public static void Combine<T>(ref T target, T source)
         {
             Type t = typeof(T);
             var properties = t.GetProperties().Where(prop => prop.CanRead && prop.CanWrite);
@@ -60,14 +58,14 @@ namespace Tz.Net
             }
         }
 
-        
+
 
         public static List<T> toList<T>(this System.Data.DataTable dt, DataFieldMappings df, Func<T, T> Bind,
-            Func<string,string,dynamic> format)
+            Func<string, string, dynamic> format)
         {
             try
             {
-              //  const BindingFlags flags = BindingFlags.Public | BindingFlags.Instance;
+                //  const BindingFlags flags = BindingFlags.Public | BindingFlags.Instance;
                 var columnNames = dt.Columns.Cast<DataColumn>()
                     .Select(c => c.ColumnName)
                     .ToList();
@@ -116,7 +114,8 @@ namespace Tz.Net
                                         }
                                     }
                                 }
-                                else {
+                                else
+                                {
                                     FieldInfo nameField = pt.GetBackingField();
                                     nameField.SetValue(instanceOfT, dataRow[d.DataField]);
                                 }
@@ -207,9 +206,9 @@ namespace Tz.Net
         {
             return dfm;
         }
-        public DataFieldMappings Add(string dataField, string memberField,bool isKey=false)
+        public DataFieldMappings Add(string dataField, string memberField, bool isKey = false)
         {
-            dfm.Add(new DataFieldMapping(dataField, memberField,isKey));
+            dfm.Add(new DataFieldMapping(dataField, memberField, isKey));
             return this;
         }
     }
@@ -219,7 +218,7 @@ namespace Tz.Net
         public string DataField;
         public string MemberField;
         public bool IsKey;
-        public DataFieldMapping(string dataField, string memberField,bool isKey)
+        public DataFieldMapping(string dataField, string memberField, bool isKey)
         {
             DataField = dataField;
             MemberField = memberField;

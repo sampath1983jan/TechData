@@ -1,94 +1,208 @@
-﻿
-@*<div>
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1">
-        <div class="toast-header">
-            <img src="..." class="rounded mr-2" alt="...">
-            <strong class="mr-auto">Bootstrap</strong>
-            <small class="text-muted">just now</small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+﻿@*<div>
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1">
+            <div class="toast-header">
+                <img src="..." class="rounded mr-2" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">just now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                See? Just like this.
+            </div>
         </div>
-        <div class="toast-body">
-            See? Just like this.
-        </div>
-    </div>
 
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1">
-        <div class="toast-header">
-            <img src="..." class="rounded mr-2" alt="...">
-            <strong class="mr-auto">Bootstrap</strong>
-            <small class="text-muted">2 seconds ago</small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1">
+            <div class="toast-header">
+                <img src="..." class="rounded mr-2" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">2 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Heads up, toasts will stack automatically
+            </div>
         </div>
-        <div class="toast-body">
-            Heads up, toasts will stack automatically
-        </div>
-    </div>
 
+    </div>*@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style>
+
+    #container {
+        float: left;
+        background-color: blue;
+        width: 30%;
+        height: 300px;
+    }
+
+    #resizable {
+        background-color: red;
+        position: absolute;
+        top: 100px;
+        left: 0%;
+        width: 33%;
+        height: 100px;
+    }
+
+    .resize-drag {
+        background-color: #29e;
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 20px;
+        touch-action: none;
+        width: 120px;
+        /* This makes things *much* easier */
+        box-sizing: border-box;
+    }
+
+    .resize-container {
+        display: inline-block;
+        width: 100%;
+        height: 240px;
+    }
+    #drag-1, #drag-2 {
+        width: 25%;
+        min-height: 6.5em;
+        margin: 10%;
+        background-color: #29e;
+        color: white;
+        border-radius: 0.75em;
+        padding: 4%;
+        touch-action: none;
+        user-select: none;
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+</style>
+@*<div id="drag-1" class="draggable">
+    <p> You can drag one element </p>
+</div>
+<div id="drag-2" class="draggable">
+    <p> with each pointer </p>
 </div>*@
-
 
 <input type="checkbox" id="ckmy" />
 <div id="tost">
     <div>
-        <toaster :toas="tos" :id="id"  ref="foo" :position="position" >
-      
+        <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
+
         </toaster>
     </div>
 
 </div>
-<div id="cl">
+<div id="app5">
 
- 
+    <Calendar :attr="attr"></Calendar>
+</div>
+
+
+<div id="cl">
+    @*<ProgressMeter :points="pointData" :valuepoint="CurrentPoint"></ProgressMeter>*@
+
+
+
     <div class="row">
         <div class="col-md-6">
-            <mvprogress :title="PrgName" :value="inputtext"></mvprogress>
-            <cvprogress :value="inputtext" :width="cwd" :height="cht"></cvprogress>
-            <cvprogress :value="getVal" :width="cwd" :height="cht"></cvprogress>
+            @*<mvprogress :title="PrgName" :value="inputtext"></mvprogress>
+                <cvprogress :value="inputtext" :width="cwd" :height="cht"></cvprogress>
+                <cvprogress :value="getVal" :width="cwd" :height="cht"></cvprogress>*@
 
         </div>
     </div>
     <div>
-        <tzinput v-model="inputtext" :attribute="{id:'txtUser',
-             isRequired:false,
-             enabletooltip:true,
-             min:0,
-             inputType:1,
-             max:5,
-             limit:true
-             }"></tzinput>
+        @*<tzinput v-model="inputtext" :attribute="{id:'txtUser',
+            isRequired:false,
+            enabletooltip:true,
+            min:0,
+            inputType:1,
+            max:5,
+            limit:true
+            }"></tzinput>*@
     </div>
 
 
     @*<Griod :columns="colm" :data="gData" :id="id" :callback="AjaxGridReq" :pagging="page"></Griod>*@
 
-    <tztextarea v-model="textarea" :attribute="{id:'txtUser1',
-                 isRequired:false,
-                 enabletooltip:true,
-                 min:0,
-                 inputType:2,
-                 max:511,
-                 limit:true
-                 }"></tztextarea>
+    @*<tztextarea v-model="textarea" :attribute="{id:'txtUser1',
+        isRequired:false,
+        enabletooltip:true,
+        min:0,
+        inputType:2,
+        max:511,
+        limit:true
+        }"></tztextarea>*@
 
     <dropdown :attribute="dd" v-model="inputtext"></dropdown>
 
     @*<Clients></Clients>*@
     <div id="app"></div>
     dont add v-model to file uploader
-    <label>{{inputtext}}</label>
-    <label>{{selectedVal}}</label>
+    @*<label>{{inputtext}}</label>
+        <label>{{selectedVal}}</label>*@
     <div>
-        <Searching :Req="AjaxReq"></Searching>
-        <Tokenizer :attribute="autotext" id="testing" v-on:click="selected" v-model="selectedVal"></Tokenizer>
+        @*<Searching :Req="AjaxReq"></Searching>
+            <Tokenizer :attribute="autotext" id="testing" v-on:click="selected" v-model="selectedVal"></Tokenizer>*@
     </div>
 </div>
 
 <script type="text/javascript">
     $(document).ready(function () {
+
+        // target elements with the "draggable" class
+        interact('.draggable')
+            .draggable({
+                // enable inertial throwing
+                inertia: true,
+                // keep the element within the area of it's parent
+                modifiers: [
+                    interact.modifiers.restrictRect({
+                        restriction: 'parent',
+                        endOnly: true
+                    })
+                ],
+                // enable autoScroll
+                autoScroll: true,
+
+                // call this function on every dragmove event
+                onmove: dragMoveListener,
+                // call this function on every dragend event
+                onend: function (event) {
+                    var textEl = event.target.querySelector('p')
+
+                    textEl && (textEl.textContent =
+                        'moved a distance of ' +
+                        (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                            Math.pow(event.pageY - event.y0, 2) | 0))
+                            .toFixed(2) + 'px')
+                }
+            })
+
+        function dragMoveListener(event) {
+            var target = event.target
+            // keep the dragged position in the data-x/data-y attributes
+            var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+            var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+
+            // translate the element
+            target.style.webkitTransform =
+                target.style.transform =
+                'translate(' + x + 'px, ' + y + 'px)'
+
+            // update the posiion attributes
+            target.setAttribute('data-x', x)
+            target.setAttribute('data-y', y)
+        }
+
+        // this is used later in the resizing and gesture demos
+        window.dragMoveListener = dragMoveListener
+
         var temp = {
             id: 'txtUser1',
             isRequired: false,
@@ -141,7 +255,7 @@
 
           //    }
           //);
-
+        var moment = {};
           require(
               // configuration
               {
@@ -155,7 +269,8 @@
                       "token": "/Scripts/Controls/Tokenizer/Tokenizer",
                       "controls": "/scripts/controls/Control-vue",
                       "tzGrid": "/vue/controls/Grid",
-
+                      "touch":"https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min",
+                      "jqueryui":"/Scripts/jquery-ui",
 
                       "datepicker": "/Scripts/Controls/datepicker/daterangepicker",
                       "bdatepicker": "/Scripts/Controls/datepicker/bootstrap-datepicker",
@@ -166,13 +281,14 @@
                       "textarea": "/vue/controls/textarea",
                       "dropdown": "/vue/controls/dropdown",
                       "NumberSlider": "/Scripts/Controls/NumberSlider/NumberSlider",
-
+                      "calendar": "/Scripts/Controls/calendar",
                       "Pagination": "/Scripts/Controls/Pagination/Pagination",
                       "tzSearch": "/vue/controls/Search",
                       "Tokenizer": "/vue/controls/Tokenizer",
                       "tzprogress": "/vue/controls/Progress",
                       "cvprogress": "/vue/controls/Circular-Progress",
                       "toaster": "/vue/controls/toast",
+                      "pMeter": "/vue/controls/progressmeter",
                       urlArgs: 'bust=v27',
 
 
@@ -182,9 +298,12 @@
               },
               // load libs right now
               ["jquery", "popper", "bootstrap", "combobox", "controls", "input", "textarea", "tzSearch", "dropdown",
-                  "tzGrid", "token", "Tokenizer", 'tzprogress', "cvprogress","toaster" ,"timer", "color", "moment", "datepicker",
-                  "bdatepicker", "NumberSlider", "Pagination"],
-              function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,  color, NumberSlider, page) {
+                  "tzGrid", "token", "Tokenizer", 'tzprogress', "cvprogress", "toaster", "pMeter", "moment", "calendar","timer", "color", "datepicker",
+                  "bdatepicker", "NumberSlider", "Pagination", "touch","jqueryui"],
+              function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,
+                  ProgressMeter, mom, calendar, color, NumberSlider, page, touch) {
+
+
 
                   var a = httpVueLoader('/vue/Client/clientlist.vue?1');
                   new Vue({
@@ -197,7 +316,8 @@
                           "Tokenizer": token,
                           "mvprogress": tProgress,
                           "cvprogress": cvprogress,
-                          "toaster": toaster
+                          "toaster": toaster,
+                          "ProgressMeter": ProgressMeter
                           //'Client': client
                       },
                       data: function () {
@@ -205,7 +325,7 @@
                               inputtext: 23,
                               token: "sampathkumar, pavithra ",
                               textarea: "welcome to ",
-                              id:"grd",
+                              id: "grd",
                               dd: {
                                   id: 'txtUser1',
                                   isRequired: false,
@@ -221,13 +341,13 @@
                                   }
                               },
                               gData: [{ name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
-                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
-                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" },{ name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
-                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
-                                  { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }],
+                              { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                              { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                              { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }, { name: "sampathkumar", no: "Emp-16" }, { name: "ramkumar", no: "Emp-17" },
+                              { name: "vinod", no: "Emp-18" }, { name: "aruna", no: "Emp-19" }, { name: "sivakumar", no: "Emp-11" }],
                               colm: [{ 'dataField': 'TableName', 'header': 'client Name' }, { 'dataField': 'Category', 'header': 'client No' }],
                               page: {
-                                  pagesize:3
+                                  pagesize: 3
                               },
                               AjaxReq: {
                                   type: "GET",
@@ -235,17 +355,17 @@
                                   contentType: "",
                                   dataType: "jsonp",
                                   url: "/Client/Gets",
-                                  searchFields:"ClientName,ClientNo",
+                                  searchFields: "ClientName,ClientNo",
                                   crossDomain: false,
                               },
                               AjaxGridReq: {
                                   type: "GET",
-                                  data:  ( { clientid: "3271b7623dd34f7b96e574f2351a1486413346222" }),
+                                  data: ({ clientid: "3271b7623dd34f7b96e574f2351a1486413346222" }),
                                   contentType: "",
                                   dataType: "jsonp",
                                   url: "/Schema/GetTables",
                                   crossDomain: false,
-                                  enable:true,
+                                  enable: true,
                               },
                               autotext: {
 
@@ -284,7 +404,7 @@
                                       MaxItem: 2,
                                       placeholder: "Type something here",
                                       tokensAllowCustom: false,
-                                      sortable:false,
+                                      sortable: false,
                                   }
 
                               },
@@ -293,7 +413,11 @@
                               PrgValue: 65,
                               cwd: "100",
                               cht: "250",
-                  
+                              pointData: [{ "id": "1", label: "Start" },
+                              { "id": "2", label: "started" },
+                              { "id": "3", label: "progress" }
+                                  , { "id": "4", label: "finished" }],
+                              CurrentPoint: 1,
                           }
                       },
                       methods: {
@@ -322,88 +446,329 @@
               }
         );
 
-        require(["toaster"], function (roster) {
-             
-                                 var toz = new Vue({
-                      components: {
-                                         "toaster": roster
-                                     }, data: function () {
-                                         return {
-                                             tos: [{
-                                                 header: "jquery", body: "welcome to jquery",
-                                                 template: + '<div class="toast-header">'
-                                                     + '<img src="..." class="rounded mr-2" alt="...">'
-                                                     + '<strong class="mr-auto">Bootstrap</strong>'
-                                                     + '<small>11 mins ago</small>'
-                                                     + '<button type="button" class="ml-2 mb-1 close"  >'
-                                                     + ' <span aria-hidden="true">&times;</span>'
-                                                     + '</button>'
-                                                     + '</div>'
-                                                     + ' <div class="toast-body">'
-                                                     + ' <div v-html="t.body"></div>'
-                                                     + '{{t.body}}'
-                                                     + ' </div>'
-                                             }, {
-                                                 header: "bootstrap", body: "welcome to bootstrap", template: + '<div class="toast-header">'
-                                                     + '<img src="..." class="rounded mr-2" alt="...">'
-                                                     + '<strong class="mr-auto">Bootstrap</strong>'
-                                                     + '<small>11 mins ago</small>'
-                                                     + '<button type="button" class="ml-2 mb-1 close" >'
-                                                     + ' <span aria-hidden="true">&times;</span>'
-                                                     + '</button>'
-                                                     + '</div>'
-                                                     + ' <div class="toast-body">'
-                                                     + ' {{t}}'
-                                            
-                                                     + ' </div>'
-                                                 }],
-                                             id: "tz",
-                                             "position":"bottom right"
-                                         }
-                                     }
+        require(["moment", "jqueryui", "calendar", "/vue/controls/vueCalendar.js"], function (mom, jqueryui, calendar, vueCalendar) {
+            moment = mom
+            var now = moment();
 
-                                 }).$mount('#tost');
-          
-            $("#ckmy").click(function () {
-            
-                var o = {
-                    header: "ASP.NET", body: "welcome to ASP.NET <input type='button' class='btn btn-dark'  value='click here'/>", template: + '<div class="toast-header">'
-                    + '<img src="..." class="rounded mr-2" alt="...">'
-                    + '<strong class="mr-auto">Bootstrap</strong>'
-                    + '<small>11 mins ago</small>'
-                    + '<button type="button" class="ml-2 mb-1 close">'
-                    + ' <span aria-hidden="true">&times;</span>'
-                    + '</button>'
-                    + '</div>'
-                    + ' <div class="toast-body">'
-                    + '  {{item.body}} '
-                        +"<input type='button' class='btn btn- dark' value='click here' />"
-                    + ' </div>'
+            var events = [
+                //{
+                //    start: now.startOf('week').add(9, 'h').format('X'),
+                //    end: now.startOf('week').add(10, 'h').format('X'),
+                //    title: '1',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Professionnal'
+                //},
+                //{
+                //    start: now.startOf('week').add(10, 'h').format('X'),
+                //    end: now.startOf('week').add(11, 'h').format('X'),
+                //    title: '2',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Professionnal'
+                //},
+                //{
+                //    start: now.startOf('week').add(11, 'h').format('X'),
+                //    end: now.startOf('week').add(12, 'h').format('X'),
+                //    title: '3',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Personnal'
+                //},
+                //{
+                //    start: now.startOf('week').add(1, 'days').add(9, 'h').format('X'),
+                //    end: now.startOf('week').add(1, 'days').add(10, 'h').format('X'),
+                //    title: '4',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Personnal'
+                //},
+                //{
+                //    start: now.startOf('week').add(1, 'days').add(9, 'h').add(30, 'm').format('X'),
+                //    end: now.startOf('week').add(1, 'days').add(10, 'h').add(30, 'm').format('X'),
+                //    title: '5',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Arrobe'
+                //},
+                //{
+                //    start: now.startOf('week').add(1, 'days').add(11, 'h').format('X'),
+                //    end: now.startOf('week').add(1, 'days').add(12, 'h').format('X'),
+                //    title: '6',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Another category'
+                //},
+                //{
+                //    start: now.startOf('week').add(2, 'days').add(9, 'h').format('X'),
+                //    end: now.startOf('week').add(2, 'days').add(10, 'h').format('X'),
+                //    title: '7',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Personnal'
+                //},
+                //{
+                //    start: now.startOf('week').add(2, 'days').add(9, 'h').add(30, 'm').format('X'),
+                //    end: now.startOf('week').add(2, 'days').add(10, 'h').add(30, 'm').format('X'),
+                //    title: '8',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Professionnal'
+                //},
+                //{
+                //    start: now.startOf('week').add(2, 'days').add(10, 'h').format('X'),
+                //    end: now.startOf('week').add(2, 'days').add(11, 'h').format('X'),
+                //    title: '9',
+                //    content: 'Hello World! <br> <p>Foo Bar</p>',
+                //    category: 'Personnal'
+                //},
+                {
+                    start: now.startOf('week').add(3, 'days').add(9, 'h').format('X'),
+                    end: now.startOf('week').add(3, 'days').add(10, 'h').format('X'),
+                    title: '10',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Professionnal'
+                },
+                {
+                    start: now.startOf('week').add(3, 'days').add(9, 'h').add(15, 'm').format('X'),
+                    end: now.startOf('week').add(3, 'days').add(10, 'h').add(15, 'm').format('X'),
+                    title: '11',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Personnal'
+                },
+                {
+                    start: now.startOf('week').add(3, 'days').add(9, 'h').add(30, 'm').format('X'),
+                    end: now.startOf('week').add(3, 'days').add(10, 'h').add(30, 'm').format('X'),
+                    title: '12',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Anything else'
+                },
+                {
+                    start: now.startOf('week').add(4, 'days').add(9, 'h').format('X'),
+                    end: now.startOf('week').add(4, 'days').add(12, 'h').format('X'),
+                    title: '13',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Private'
+                },
+                {
+                    start: now.startOf('week').add(4, 'days').add(9, 'h').add(30, 'm').format('X'),
+                    end: now.startOf('week').add(4, 'days').add(10, 'h').format('X'),
+                    title: '14',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'No more creative category name'
+                },
+                {
+                    start: now.startOf('week').add(4, 'days').add(11, 'h').format('X'),
+                    end: now.startOf('week').add(4, 'days').add(11, 'h').add(30, 'm').format('X'),
+                    title: '15',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Professionnal'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(10, 'h').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(12, 'h').format('X'),
+                    title: '17',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Private'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(9, 'h').add(30, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(10, 'h').add(30, 'm').format('X'),
+                    title: '16',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Course'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(11, 'h').add(30, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(12, 'h').add(30, 'm').format('X'),
+                    title: '18',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'No more creative category name'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(12, 'h').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(13, 'h').format('X'),
+                    title: '19',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Another one'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(12, 'h').add(15, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(13, 'h').format('X'),
+                    title: '21',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'One again'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(12, 'h').add(45, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(13, 'h').add(45, 'm').format('X'),
+                    title: '22',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Encore'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(13, 'h').add(45, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(14, 'h').format('X'),
+                    title: '23',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Professionnal'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(12, 'h').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(14, 'h').add(30, 'm').format('X'),
+                    title: '20',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Private'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(13, 'h').add(45, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(15, 'h').format('X'),
+                    title: '27',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Encore'
+                },
+                {
+                    start: now.startOf('week').add(5, 'days').add(14, 'h').add(30, 'm').format('X'),
+                    end: now.startOf('week').add(5, 'days').add(15, 'h').format('X'),
+                    title: '28',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Private'
+                },
+                {
+                    start: now.startOf('week').add(6, 'days').add(9, 'h').format('X'),
+                    end: now.startOf('week').add(6, 'days').add(11, 'h').format('X'),
+                    title: '24',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Foo'
+                },
+                {
+                    start: now.startOf('week').add(6, 'days').add(9, 'h').format('X'),
+                    end: now.startOf('week').add(6, 'days').add(11, 'h').format('X'),
+                    title: '25',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Bar'
+                },
+                {
+                    start: now.startOf('week').add(6, 'days').add(9, 'h').format('X'),
+                    end: now.startOf('week').add(6, 'days').add(11, 'h').format('X'),
+                    title: '26',
+                    content: 'Hello World! <br> <p>Foo Bar</p>',
+                    category: 'Baz'
+                },
+            ];
+            var daynotes = [
+                {
+                    time: now.startOf('week').add(15, 'h').add(30, 'm').format('X'),
+                    title: 'Leo\'s holiday',
+                    content: '<h2>working with you</h2>',
+                    category: 'holiday'
                 }
-                var b = {
-                    header: "c#", body: "welcome to ASP.NET with C#  <input type='button' class='btn btn-dark'>", template: + '<div class="toast-header">'
-                        + '<img src="..." class="rounded mr-2" alt="...">'
-                        + '<strong class="mr-auto">Bootstrap</strong>'
-                        + '<small>11 mins ago</small>'
-                        + '<button type="button" class="ml-2 mb-1 close">'
-                        + ' <span aria-hidden="true">&times;</span>'
-                        + '</button>'
-                        + '</div>'
-                        + ' <div class="toast-body" >'
-                        
-                        +
-                        + ' </div>'
+            ];
+
+            new Vue({
+                components: {
+                    "Calendar": vueCalendar,
+
+                },
+                data: function () {
+                    return {
+                        attr: {
+                            id:"testing",
+                        locale: 'en',
+                        weekday: {
+                            timeline: {
+                                intervalMinutes: 60,
+                                fromHour: 7
+                            }
+                        },
+                        events: events,
+                            daynotes: daynotes
+                        }
+                    }
+                },
+
                 }
-                a = a + 1;
-                o.header = a;
-           
-                toz.$refs.foo.push(o);
-               // toz.$refs.foo.push(b);
-             //  toz.$refs.foo.show();
-            })          
+             ).$mount('#app5');
+
+
 
         })
-        var a = 1;
+        //require(["toaster"], function (roster) {
+
+        //                         var toz = new Vue({
+        //              components: {
+        //                                 "toaster": roster
+        //                             }, data: function () {
+        //                                 return {
+        //                                     tos: [{
+        //                                         header: "jquery", body: "welcome to jquery",
+        //                                         template: + '<div class="toast-header">'
+        //                                             + '<img src="..." class="rounded mr-2" alt="...">'
+        //                                             + '<strong class="mr-auto">Bootstrap</strong>'
+        //                                             + '<small>11 mins ago</small>'
+        //                                             + '<button type="button" class="ml-2 mb-1 close"  >'
+        //                                             + ' <span aria-hidden="true">&times;</span>'
+        //                                             + '</button>'
+        //                                             + '</div>'
+        //                                             + ' <div class="toast-body">'
+        //                                             + ' <div v-html="t.body"></div>'
+        //                                             + '{{t.body}}'
+        //                                             + ' </div>',
+        //                                         autohide:true,
+        //                                     }, {
+        //                                         header: "bootstrap", body: "welcome to bootstrap", template: + '<div class="toast-header">'
+        //                                             + '<img src="..." class="rounded mr-2" alt="...">'
+        //                                             + '<strong class="mr-auto">Bootstrap</strong>'
+        //                                             + '<small>11 mins ago</small>'
+        //                                             + '<button type="button" class="ml-2 mb-1 close" >'
+        //                                             + ' <span aria-hidden="true">&times;</span>'
+        //                                             + '</button>'
+        //                                             + '</div>'
+        //                                             + ' <div class="toast-body">'
+        //                                             + ' {{t}}'
+
+        //                                             + ' </div>'
+        //                                         }],
+        //                                     id: "tz",
+        //                                     "position": "center top",
+        //                                     toasterType:"linear",
+        //                                 }
+        //                             }
+
+        //                         }).$mount('#tost');
+
+        //    $("#ckmy").click(function () {
+
+        //        var o = {
+        //            header: "ASP.NET", body: "welcome to ASP.NET <input type='button' class='btn btn-dark'  value='click here'/>", template: + '<div class="toast-header">'
+        //            + '<img src="..." class="rounded mr-2" alt="...">'
+        //            + '<strong class="mr-auto">Bootstrap</strong>'
+        //            + '<small>11 mins ago</small>'
+        //            + '<button type="button" class="ml-2 mb-1 close">'
+        //            + ' <span aria-hidden="true">&times;</span>'
+        //            + '</button>'
+        //            + '</div>'
+        //            + ' <div class="toast-body">'
+        //            + '  {{item.body}} '
+        //                +"<input type='button' class='btn btn- dark' value='click here' />"
+        //            + ' </div>'
+        //        }
+        //        var b = {
+        //            header: "c#", body: "welcome to ASP.NET with C#  <input type='button' class='btn btn-dark'>", template: + '<div class="toast-header">'
+        //                + '<img src="..." class="rounded mr-2" alt="...">'
+        //                + '<strong class="mr-auto">Bootstrap</strong>'
+        //                + '<small>11 mins ago</small>'
+        //                + '<button type="button" class="ml-2 mb-1 close">'
+        //                + ' <span aria-hidden="true">&times;</span>'
+        //                + '</button>'
+        //                + '</div>'
+        //                + ' <div class="toast-body" >'
+
+        //                +
+        //                + ' </div>'
+        //        }
+        //        a = a + 1;
+        //        o.header = a;
+
+        //        toz.$refs.foo.push(o);
+        //       // toz.$refs.foo.push(b);
+        //     //  toz.$refs.foo.show();
+        //    })
+
+        //})
+        //var a = 1;
 
           //require(['/vue/Client/Clients.js','/Scripts/jquery-3.3.1.js', '/vue/controls/input.js', '/scripts/controls/Controls.js'], function (rt, $,input,ctrl) {
           //    debugger;

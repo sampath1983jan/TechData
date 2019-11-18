@@ -27,6 +27,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.DataService", "Tz.DataSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlBackup(NetStandard)", "MySqlBackup\MySqlBackup(NetStandard).csproj", "{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.Cache", "Tz.Cache\Tz.Cache.csproj", "{DA90C649-2BF1-4E26-B5E5-0CA76880780D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.Security", "Tz.Security\Tz.Security.csproj", "{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.Global", "Tz.Global\Tz.Global.csproj", "{27D9546B-9499-425B-AC56-602E9CF7BD8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.Deployment", "Tz.Deployment\Tz.Deployment.csproj", "{94D557C7-2266-45D8-8F34-A452BE086811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tz.ClientManager", "Tz.ClientManager\Tz.ClientManager.csproj", "{0F9E9E96-DB86-46EF-8A33-C900716C0712}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +91,26 @@ Global
 		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2FB5FA1-D842-46D9-AEFE-646D95A6B642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA90C649-2BF1-4E26-B5E5-0CA76880780D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA90C649-2BF1-4E26-B5E5-0CA76880780D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA90C649-2BF1-4E26-B5E5-0CA76880780D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA90C649-2BF1-4E26-B5E5-0CA76880780D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D9546B-9499-425B-AC56-602E9CF7BD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D9546B-9499-425B-AC56-602E9CF7BD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D9546B-9499-425B-AC56-602E9CF7BD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D9546B-9499-425B-AC56-602E9CF7BD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D557C7-2266-45D8-8F34-A452BE086811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D557C7-2266-45D8-8F34-A452BE086811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D557C7-2266-45D8-8F34-A452BE086811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D557C7-2266-45D8-8F34-A452BE086811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9E9E96-DB86-46EF-8A33-C900716C0712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9E9E96-DB86-46EF-8A33-C900716C0712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9E9E96-DB86-46EF-8A33-C900716C0712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9E9E96-DB86-46EF-8A33-C900716C0712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

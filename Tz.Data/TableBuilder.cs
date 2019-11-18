@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Tech.Data;
 using Tech.Data.Query;
 using Tech.Data.Schema;
-
+using Tz.Global;
 namespace Tz.Data
 {
    public class TableBuilder: DataBase

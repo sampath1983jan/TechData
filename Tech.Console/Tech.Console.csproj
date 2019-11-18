@@ -166,9 +166,17 @@
       <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
       <Name>Tech.QScript</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
+      <Project>{0f9e9e96-db86-46ef-8a33-c900716c0712}</Project>
+      <Name>Tz.ClientManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tz.Data\Tz.Data.csproj">
       <Project>{a25eb976-3db6-4de4-8ea6-5d33e6cb5867}</Project>
       <Name>Tz.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Deployment\Tz.Deployment.csproj">
+      <Project>{94d557c7-2266-45d8-8f34-a452be086811}</Project>
+      <Name>Tz.Deployment</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.Net\Tz.Net.csproj">
       <Project>{55ab9f49-fa31-4ec1-b4e9-589a915ee221}</Project>

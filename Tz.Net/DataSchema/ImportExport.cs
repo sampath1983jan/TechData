@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.IO;
 using System.Reflection;
+using Tz.Global;
+using Tz.ClientManager;
 
 namespace Tz.Net.DataSchema
 {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace Tz.Net
+namespace Tz.ClientManager
 {
     public class ClientServer
     {

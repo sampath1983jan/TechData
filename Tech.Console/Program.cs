@@ -39,14 +39,15 @@ namespace Tech.Console
             return number;
         }
         private static string CreateUser() {
-            Tz.Net.User u = new Tz.Net.User("sampath",
-                "312", Tz.Net.UserType.Admin, true,"sampath","kumar","sampath1983jan@gmail.com");
-            u.Save();
-            return u.UserID;
+            //Tz.ClientManager.User u = new Tz.ClientManager.User("sampath",
+            //    "312", Tz.ClientManager.UserType.Admin, true,"sampath","kumar","sampath1983jan@gmail.com");
+            //u.Save();
+            //return u.UserID;
+            return "";
         }
         private static void RemoveUser(string uid) {
-            Tz.Net.User u = new Tz.Net.User(uid);
-            u.Remove();
+            //Tz.ClientManager.User u = new Tz.ClientManager.User(uid);
+            //u.Remove();
         }
 
         private static void PrintUser() {
@@ -54,7 +55,7 @@ namespace Tech.Console
             System.Console.ReadKey();
         }
         private static string CreateServer() {
-            Tz.Net.Server s = new Tz.Net.Server("dell6", "talentozdev", "root", "admin312", 3006,"testing");
+            Tz.ClientManager.Server s = new Tz.ClientManager.Server("dell6", "talentozdev", "root", "admin312", 3006,"testing");
             s.Save();
             return s.ServerID;
         }
@@ -65,21 +66,22 @@ namespace Tech.Console
         private static void UpdateSever(string serverid)
         {
 
-            Tz.Net.Server ss = new Tz.Net.Server(serverid);
+            Tz.ClientManager.Server ss = new Tz.ClientManager.Server(serverid);
             ss.Password = "welcometoq1";
             System.Console.Write(ss.Save());
             System.Console.ReadKey();
         }
         private static void RemoveServer(string serverid)
         {
+           
 
-            Tz.Net.Server s = new Tz.Net.Server(serverid);
+            Tz.ClientManager.Server s = new Tz.ClientManager.Server(serverid);
 
             System.Console.Write(s.Remove());
             System.Console.ReadKey();
         }
         private static string CreateClient() {
-            Tz.Net.Client c = new Tz.Net.Client("sampath kumar",
+            Tz.ClientManager.Client c = new Tz.ClientManager.Client("sampath kumar",
                 "345435 34543",
                 "asff",
                 "sdfsdfds",
@@ -94,13 +96,14 @@ namespace Tech.Console
             return c.ClientID;
         }
         private static void RemoveClient(string clientid) {
-            Tz.Net.Client c = new Tz.Net.Client(clientid);
+            Tz.ClientManager.Client c = new Tz.ClientManager.Client(clientid);
             System.Console.Write(c.Remove());
             System.Console.ReadKey();
         }
         private static void Setup() {
             string s = Tech.Console.Properties.Resources.Conn;
-            Tz.Net.Setup ss = new Tz.Net.Setup();
+          
+            Tz.Deployment.Setup ss = new Tz.Deployment.Setup();
             try
             {
                 ss.Reset(s);
@@ -118,7 +121,7 @@ namespace Tech.Console
             }
         }
         private static void UpdateClient(string clientid) {
-            Tz.Net.Client c = new Tz.Net.Client(clientid);
+            Tz.ClientManager.Client c = new Tz.ClientManager.Client(clientid);
             c.OrganizationName = "Forziatech";
             System.Console.Write(c.Save());
         }

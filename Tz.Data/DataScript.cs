@@ -7,7 +7,7 @@ using System.Data;
 using Tech.Data.Query;
 using Tech.Data;
 using System.Data.Common;
-
+using Tz.Global;
 namespace Tz.Data
 {
  public   class DataScript:DataBase

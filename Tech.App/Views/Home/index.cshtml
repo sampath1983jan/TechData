@@ -1,0 +1,267 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <style>
+        .TemplateList {
+            margin: 0px;
+     
+            width: 40%;
+        }
+            .TemplateList > ul {
+                list-style-type: none;
+                margin:0px !important;
+              
+             
+            }
+                .TemplateList > ul > li {
+                    padding: 10px 5px;
+                    margin:0px;
+                    overflow: auto;
+                    border-bottom:1px solid rgba(221, 221, 221, 0.34);
+                }
+                    .TemplateList > ul > li > .header {
+                        font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+                        margin:0px;
+                       text-transform:capitalize;
+                      
+
+                    }
+                    .TemplateList > ul > li > .body {
+                        font: 13px/1.5 Helvetica, Verdana, sans-serif;
+                        margin-left: 5px;
+                        color: #000000;
+                        text-transform: capitalize;
+                    }
+                    .TemplateList > ul > li:hover {
+                        background: rgba(128, 128, 128, 0.1);
+                        cursor: pointer;
+                    }
+                    .TemplateList > ul > li > .mImg {
+                        margin: 5px 10px;
+                        border: solid 1px #fff;
+                        width: 100px;
+                        height: 100px;
+                        transition: .25s;
+                    }
+                    .TemplateList > ul > li > .mImg {
+                        width: 105px;
+                        height: 105px;
+                    }
+                    .TemplateList > ul > li > .sImg {
+                        margin: 5px 10px;
+                        border: solid 1px #fff;
+                        width: 70px;
+                        height: 70px;
+                        transition: .25s;
+                    }
+                        .TemplateList > ul > li > .sImg:hover {
+                            width: 75px;
+                            height: 75px;
+                        }
+                    .TemplateList > ul > li > .flex-container {
+                        display: flex;
+                        background-color: transparent;
+                        flex-direction:row-reverse;
+                    }
+                        .TemplateList > ul > li > .flex-container > .dftbutton {
+                            background-color: DodgerBlue;
+                            margin: 3px;
+                            padding: 10px 20px;
+                            font-family: Helvetica, Verdana, sans-serif;
+                            font-size: 12px;
+                            border-radius: 5px;
+                            color: #fff;
+                            border:0px;
+                        }
+      .cancel {
+            background-color:#ddd !important;
+            color:#000000 !important;
+        }
+        .left {
+            float: left;
+            margin: 0 15px 0 0;
+        }
+    </style>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+
+</head>
+<body>
+    <div>
+        <div id="drawing"></div>
+        <div class="TemplateList">
+            <ul>
+                <li>
+                    <img class="left sImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoszbmmmoGgWJjHaRsAfVQhYpiBCWPUqEWwHHnccKA9ElCB_JK" />
+                    <h3 class="header">sampathkumar</h3>
+                    <div class="body">this is sampathkumar i am working in forzia tech private limit past 12 year</div>
+                </li>
+                <li>
+                    <img class="left sImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdyx-8f51NTrQGYAWtYXoznz1gfzCbboxPBVTP7eP-62_QuWQR" />
+                    <h3 class="header">ramkumar</h3>
+                    <div class="body">this is ramkumar i am working in forzia tech private limit past 12 year</div>
+                    <div class="flex-container"><button class="dftbutton">Save</button> <button class="dftbutton cancel">Cancel</button></div>
+                </li>
+                <li>
+                    <img class="left sImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHh_SJjVdk9IuxVQORqk5Sc-sBFxcq5q-0aV8y9WNjYMrK5ajZ" />
+                    <h3 class="header">sampathkumar</h3>
+                    <div class="body">this is sampathkumar i am working in forzia tech private limit past 12 year</div>
+                </li>
+                <li>
+                    <img class="left sImg" src="https://media.monolithicpower.com/wysiwyg/employee-img2.png" />
+                    <h3 class="header">ramkumar</h3>
+                    <div class="body">this is ramkumar i am working in forzia tech private limit past 12 year this is ramkumar i am working in forzia tech private limit past 12 year
+                    this is ramkumar i am working in forzia tech private limit past 12 year</div>
+                    <div class="flex-container"><button class="dftbutton">Save</button> <button class="dftbutton cancel">Cancel</button></div>
+                </li>
+                <li>
+                    <img class="left sImg" src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=bench-carved-stones-cemetery-257360.jpg&fm=jpg" />
+                    <h3 class="header">sampathkumar</h3>
+                    <div class="body">this is sampathkumar i am working in forzia tech private limit past 12 year</div>
+                </li>
+                <li>
+                    <img class="left sImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwgDQfoG3-ynO6G1L6IPlrbSknOxkXpUxvgLw7vbpcnA57_42g" />
+                    <h3 class="header">ramkumar</h3>
+                    <div class="body">this is ramkumar i am working in forzia tech private limit past 12 year</div>
+                    <div class="flex-container"><button class="dftbutton">Save</button> <button class="dftbutton cancel">Cancel</button></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+        //colors: [
+        //    "#63b598", "#ce7d78", "#ea9e70", "#a48a9e", "#c6e1e8", "#648177", "#0d5ac1",
+        //    "#f205e6", "#1c0365", "#14a9ad", "#4ca2f9", "#a4e43f", "#d298e2", "#6119d0",
+        //    "#d2737d", "#c0a43c", "#f2510e", "#651be6", "#79806e", "#61da5e", "#cd2f00",
+        //    "#9348af", "#01ac53", "#c5a4fb", "#996635", "#b11573", "#4bb473", "#75d89e",
+        //    "#2f3f94", "#2f7b99", "#da967d", "#34891f", "#b0d87b", "#ca4751", "#7e50a8",
+        //    "#c4d647", "#e0eeb8", "#11dec1", "#289812", "#566ca0", "#ffdbe1", "#2f1179",
+        //    "#935b6d", "#916988", "#513d98", "#aead3a", "#9e6d71", "#4b5bdc", "#0cd36d",
+        //    "#250662", "#cb5bea", "#228916", "#ac3e1b", "#df514a", "#539397", "#880977",
+        //    "#f697c1", "#ba96ce", "#679c9d", "#c6c42c", "#5d2c52", "#48b41b", "#e1cf3b",
+        //    "#5be4f0", "#57c4d8", "#a4d17a", "#225b8", "#be608b", "#96b00c", "#088baf",
+        //    "#f158bf", "#e145ba", "#ee91e3", "#05d371", "#5426e0", "#4834d0", "#802234",
+        //    "#6749e8", "#0971f0", "#8fb413", "#b2b4f0", "#c3c89d", "#c9a941", "#41d158",
+        //    "#fb21a3", "#51aed9", "#5bb32d", "#807fb", "#21538e", "#89d534", "#d36647",
+        //    "#7fb411", "#0023b8", "#3b8c2a", "#986b53", "#f50422", "#983f7a", "#ea24a3",
+        //    "#79352c", "#521250", "#c79ed2", "#d6dd92", "#e33e52", "#b2be57", "#fa06ec",
+        //    "#1bb699", "#6b2e5f", "#64820f", "#1c271", "#21538e", "#89d534", "#d36647",
+        //    "#7fb411", "#0023b8", "#3b8c2a", "#986b53", "#f50422", "#983f7a", "#ea24a3",
+        //    "#79352c", "#521250", "#c79ed2", "#d6dd92", "#e33e52", "#b2be57", "#fa06ec",
+        //    "#1bb699", "#6b2e5f", "#64820f", "#1c271", "#9cb64a", "#996c48", "#9ab9b7",
+        //    "#06e052", "#e3a481", "#0eb621", "#fc458e", "#b2db15", "#aa226d", "#792ed8",
+        //    "#73872a", "#520d3a", "#cefcb8", "#a5b3d9", "#7d1d85", "#c4fd57", "#f1ae16",
+        //    "#8fe22a", "#ef6e3c", "#243eeb", "#1dc18", "#dd93fd", "#3f8473", "#e7dbce",
+        //    "#421f79", "#7a3d93", "#635f6d", "#93f2d7", "#9b5c2a", "#15b9ee", "#0f5997",
+        //    "#409188", "#911e20", "#1350ce", "#10e5b1", "#fff4d7", "#cb2582", "#ce00be",
+        //    "#32d5d6", "#17232", "#608572", "#c79bc2", "#00f87c", "#77772a", "#6995ba",
+        //    "#fc6b57", "#f07815", "#8fd883", "#060e27", "#96e591", "#21d52e", "#d00043",
+        //    "#b47162", "#1ec227", "#4f0f6f", "#1d1d58", "#947002", "#bde052", "#e08c56",
+        //    "#28fcfd", "#bb09b", "#36486a", "#d02e29", "#1ae6db", "#3e464c", "#a84a8f",
+        //    "#911e7e", "#3f16d9", "#0f525f", "#ac7c0a", "#b4c086", "#c9d730", "#30cc49",
+        //    "#3d6751", "#fb4c03", "#640fc1", "#62c03e", "#d3493a", "#88aa0b", "#406df9",
+        //    "#615af0", "#4be47", "#2a3434", "#4a543f", "#79bca0", "#a8b8d4", "#00efd4",
+        //    "#7ad236", "#7260d8", "#1deaa7", "#06f43a", "#823c59", "#e3d94c", "#dc1c06",
+        //    "#f53b2a", "#b46238", "#2dfff6", "#a82b89", "#1a8011", "#436a9f", "#1a806a",
+        //    "#4cf09d", "#c188a2", "#67eb4b", "#b308d3", "#fc7e41", "#af3101", "#ff065",
+        //    "#71b1f4", "#a2f8a5", "#e23dd0", "#d3486d", "#00f7f9", "#474893", "#3cec35",
+        //    "#1c65cb", "#5d1d0c", "#2d7d2a", "#ff3420", "#5cdd87", "#a259a4", "#e4ac44",
+        //    "#1bede6", "#8798a4", "#d7790f", "#b2c24f", "#de73c2", "#d70a9c", "#25b67",
+        //    "#88e9b8", "#c2b0e2", "#86e98f", "#ae90e2", "#1a806b", "#436a9e", "#0ec0ff",
+        //    "#f812b3", "#b17fc9", "#8d6c2f", "#d3277a", "#2ca1ae", "#9685eb", "#8a96c6",
+        //    "#dba2e6", "#76fc1b", "#608fa4", "#20f6ba", "#07d7f6", "#dce77a", "#77ecca"]
+
+        //function getRandomColor() {
+        //    var letters = '0123456789ABCDEF';
+        //    var color = '#';
+        //    for (var i = 0; i < 6; i++) {
+        //        color += letters[Math.floor(Math.random() * 16)];
+        //    }
+        //    return color;
+        //}
+        //function getRandomNumber() {
+        //    return Math.floor(Math.random() * 100);
+        //}
+        //$(document).ready(function () {
+        //    var height = 600;
+        //    var width = 1000;
+        //    var draw = SVG('drawing').size(width, height)
+
+        //    var rw = 0;
+        //    var max = 100;
+        //    var data = [];
+        //    for (var i = 0; i < 15; i++) {
+        //        data.push(getRandomNumber());
+        //    }
+        //    var prVal = {};
+        //    var pline = 0;
+        //    var path = "";
+        //    $.each(data, function (i, val) {
+        //        var p = (val / max) * height;
+        //        var wid = width / data.length;
+        //        var color = getRandomColor()
+        //         var rect = draw.rect(wid, p).attr({ fill: color }).move(rw, height - p);
+        //        //rect.radius(10,5);
+        //        prVal.x1 = (rw + (wid / 2) );
+        //        prVal.y1 = (height - p);
+
+
+
+        //        var rect = draw.circle(10).fill("red").move((rw + (wid / 2) - 5), (height - p) - 5)
+        //      //  var line = draw.line(0, 0, 100, 150).stroke({ width: 1 })
+
+        //        if (pline == 0) {
+        //            path = "M " + prVal.x1 + " " + prVal.y1;
+        //            pline = 1;
+        //        } else {
+        //            path = path + " L " + prVal.x1 + " " + prVal.y1
+        //            var oPath = draw.path(path)
+        //            oPath.stroke({ color: '#f06', width: 2, linecap: 'round', linejoin: 'round' })
+        //            pline = 0;
+        //            path = "";
+
+        //            path = "M " + prVal.x1 + " " + prVal.y1;
+        //            pline = 1;
+        //        }
+
+
+        //        rw = rw + wid + 1;
+
+        //    });
+        //   // var rect = draw.rect(100, 100).attr({ fill: '#f06' })
+        //   // var nested = draw.nested()
+        //   // var link = draw.link('http://svgdotjs.github.io/')
+        //   ////  var r1 = nested.rect(200, 200).attr({ fill: "#f03" })
+        //   // rect.radius(10)
+        //   // var group = draw.group()
+        //   // group.path('M200,20L30,40').attr({fill:"black"})
+        //   // group.add(rect);
+        //   // group.add(link);
+        //   // link.show('replace')
+        //   // rect.linkTo('http://svgdotjs.github.io/')
+
+        //   // //r1.linkTo(function (link) {
+        //   // //    link.to('http://svgdotjs.github.io/').target('_blank')
+        //   // //})
+
+
+        //   // var symbol = draw.symbol()
+        //   // symbol.rect(100, 100).fill('#f09')
+
+        //   // var use = draw.use(symbol).move(0, 100)
+        //})
+</script>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Tz.ClientManager;
 namespace Tz.BackApp.Controllers.Server
 {
     public class ServerController : Controller
@@ -26,7 +26,7 @@ namespace Tz.BackApp.Controllers.Server
             int port,
             string serverName
             ) {
-            Tz.Net.Server s = new Net.Server(host, dbName, userName, password, port,serverName);
+            ClientManager. Server s = new ClientManager.Server(host, dbName, userName, password, port,serverName);
             s.Save();
             return new JsonpResult(s.ServerID);
         }
@@ -38,7 +38,7 @@ namespace Tz.BackApp.Controllers.Server
           string serverName
           )
         {
-            Tz.Net.Server s = new Net.Server(serverid);
+            ClientManager. Server s = new ClientManager.Server(serverid);
             s.ServerName = serverName;
             s.Host = host;
             s.DBName = dbName;
@@ -54,16 +54,16 @@ namespace Tz.BackApp.Controllers.Server
             int port,
             string serverName)
         {
-            Tz.Net.Server s = new Net.Server(host, dbName, userName, password, port, serverName);
+            ClientManager. Server s = new ClientManager.Server(host, dbName, userName, password, port, serverName);
             return new JsonpResult(s.Test());
         }
 
         public JsonpResult Gets() {
-            return new JsonpResult(Tz.Net.Server.GetServer());
+            return new JsonpResult(ClientManager.Server.GetServer());
         }
         public JsonpResult Get(string serverID)
         {
-            return new JsonpResult(  new Net.Server(serverID));
+            return new JsonpResult(  new ClientManager.Server(serverID));
         }
     }
 }

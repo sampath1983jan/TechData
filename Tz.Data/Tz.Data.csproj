@@ -111,7 +111,9 @@
     <Compile Include="Field.cs" />
     <Compile Include="ImportExport.cs" />
     <Compile Include="ScriptIntend.cs" />
-    <Compile Include="Shared\DataBase.cs" />
+    <Compile Include="Security\Group\SecurityGroup.cs" />
+    <Compile Include="Security\Privileges\SecurityPrivilege.cs" />
+    <Compile Include="Security\User.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="Exception\DataException.cs" />
     <Compile Include="Stepup\Setup.cs" />
@@ -135,9 +137,14 @@
       <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
       <Name>Tech.QScript</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.Global\Tz.Global.csproj">
+      <Project>{27d9546b-9499-425b-ac56-602e9cf7bd8a}</Project>
+      <Name>Tz.Global</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

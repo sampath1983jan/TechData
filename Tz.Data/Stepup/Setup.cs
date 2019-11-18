@@ -7,6 +7,7 @@ using Tech.Data;
 using Tech.Data.Query;
 using Tech.Data.Schema;
 using Tz.Data;
+using Tz.Global;
 namespace Tz.Data
 {
    public class Setup:DataBase
@@ -19,7 +20,8 @@ namespace Tz.Data
             DBSchemaProvider provider = db.GetSchemaProvider();
              tables = provider.GetAllTables();            
         }
-        public void Clear() {
+        public void Clear()
+        {
             DBQuery[] all = new DBQuery[] {
             DBQuery.Drop.Table(base.Schema, TzAccount.Client.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.User.Table).IfExists(),
@@ -29,44 +31,34 @@ namespace Tz.Data
             DBQuery.Drop.Table(base.Schema, TzAccount.ClientServer.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.DataScript.Table).IfExists(),
             DBQuery.Drop.Table(base.Schema, TzAccount.ScriptIntend.Table).IfExists(),
+                   DBQuery.Drop.Table(base.Schema, TzAccount.SecurityGroup .Table).IfExists(),
+                          DBQuery.Drop.Table(base.Schema, TzAccount.SecurityPrivilege.Table).IfExists(),
+                                 DBQuery.Drop.Table(base.Schema, TzAccount.Component.Table).IfExists(),
+                                        DBQuery.Drop.Table(base.Schema, TzAccount.ComponentAttribute.Table).IfExists(),
+                                          DBQuery.Drop.Table(base.Schema, TzAccount.ComponentModal.Table).IfExists(),
+                                            DBQuery.Drop.Table(base.Schema, TzAccount.ComponentModalItem.Table).IfExists(),
+                                              DBQuery.Drop.Table(base.Schema, TzAccount.ComponentModalRelation.Table).IfExists(),
+                                                DBQuery.Drop.Table(base.Schema, TzAccount.ComponentLookUpItem.Table).IfExists(),
+                                            DBQuery.Drop.Table(base.Schema, TzAccount.ComponentLookUp.Table).IfExists(),
+                                                DBQuery.Drop.Table(base.Schema, TzAccount.ImportExportEvents.Table).IfExists(),
             };
-            foreach (DBQuery q in all) {
+            foreach (DBQuery q in all)
+            {
                 try
                 {
                     db.ExecuteNonQuery(q);
                 }
                 catch (System.Exception ex)
-                {              
+                {
                 }
             }
         }
         public void CreateAccount() {            
-         //   DBSchemaItemRef table =   tables.Where(x => x.Name.ToLower() == TzAccount.Account.Table.ToLower()).FirstOrDefault ();
-         ////  Tech.Data.Schema.DBSchemaTable table = provider.GetTable("", base.Schema, TzAccount.Account.Table);
-         //   if (table == null)
-         //   {
-         //       DBQuery create;
-         //       create = DBQuery.Create.Table(base.Schema, TzAccount.Account.Table)
-         //                               .Add(TzAccount.Account.AccountID)
-         //                               .Add(TzAccount.Account.Name)
-         //                               .Add(TzAccount.Account.AccountNo)
-         //                               .Add(TzAccount.Account.Status)
-         //                               .Add(TzAccount.Account.NoOfUsers);
-         //       db.ExecuteNonQuery(create);
-         //   }
-         //   else {
-         //       throw new Exception("Account table Name exist");
-         //   }
-            //if (IsColumnExist(table, TzAccount.Account.AccountID, TzAccount.Account.AccountNo, TzAccount.Account.Name,
-            //    TzAccount.Account.NoOfUsers,
-            //    TzAccount.Account.Status))
-            //{
-            //    throw new Exception("Table Name exist");
-            //}
-            //else {             
-                
-            //}
+       
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateClient() {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.Client .Table.ToLower()).FirstOrDefault();            
             if (table == null)
@@ -92,6 +84,9 @@ namespace Tz.Data
                 throw new System.Exception("Client table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateServer() {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.Server.Table.ToLower()).FirstOrDefault();
             if (table == null)
@@ -112,6 +107,9 @@ namespace Tz.Data
                 throw new System.Exception("Server table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateUser()
         {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.User.Table.ToLower()).FirstOrDefault();
@@ -134,6 +132,9 @@ namespace Tz.Data
                 throw new System.Exception("User table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateTable()
         {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.Tables.Table.ToLower()).FirstOrDefault();
@@ -154,6 +155,9 @@ namespace Tz.Data
                 throw new System.Exception("'Table' table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateField()
         {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.Field.Table.ToLower()).FirstOrDefault();
@@ -176,6 +180,9 @@ namespace Tz.Data
                 throw new System.Exception("'Fields' table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateClientServer()
         {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.ClientServer.Table.ToLower()).FirstOrDefault();
@@ -192,6 +199,9 @@ namespace Tz.Data
                 throw new System.Exception("'Client Server' table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateDataScript() {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.DataScript.Table.ToLower()).FirstOrDefault();
             if (table == null)
@@ -209,6 +219,9 @@ namespace Tz.Data
                 throw new System.Exception("'Client Server' table Name exist");
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateScriptIntend()
         {
             DBSchemaItemRef table = tables.Where(x => x.Name.ToLower() == TzAccount.ScriptIntend.Table.ToLower()).FirstOrDefault();
@@ -227,7 +240,9 @@ namespace Tz.Data
                 throw new System.Exception("'Script intend' table Name exist");
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateImportEvents()
         {
             DBQuery create;
@@ -250,7 +265,9 @@ namespace Tz.Data
             {
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateComponent() {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.Component.Table)
@@ -275,7 +292,11 @@ namespace Tz.Data
             {
             }
         }
-        public void CreateComponentAttribute() {
+        /// <summary>
+        /// 
+        /// </summary>
+        public void CreateComponentAttribute()
+        {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.ComponentAttribute.Table)
                                     .Add(TzAccount.ComponentAttribute.ClientID)
@@ -302,6 +323,9 @@ namespace Tz.Data
             {
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateComponentModal() {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.ComponentModal.Table)
@@ -319,6 +343,9 @@ namespace Tz.Data
             {
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateComponentModalItem() {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.ComponentModalItem.Table)
@@ -336,6 +363,9 @@ namespace Tz.Data
             {
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateComponentModalRelation() {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.ComponentModalRelation.Table)
@@ -354,6 +384,9 @@ namespace Tz.Data
             {
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateComponentLookup() {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.ComponentLookUp.Table)
@@ -369,6 +402,9 @@ namespace Tz.Data
             {
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void CreateComponentLookUpItem() {
             DBQuery create;
             create = DBQuery.Create.Table(base.Schema, TzAccount.ComponentLookUpItem.Table)
@@ -390,7 +426,51 @@ namespace Tz.Data
             {
             }
         }
-         
+        /// <summary>
+        /// 
+        /// </summary>
+        public void CreateSecurityGroup() {
+            DBQuery create;
+            create = DBQuery.Create.Table(base.Schema, TzAccount.SecurityGroup.Table)
+                                    .Add(TzAccount.SecurityGroup.ClientID)
+                                    .Add(TzAccount.SecurityGroup.SecurityGroupID )
+                                    .Add(TzAccount.SecurityGroup.GroupName )
+                                    .Add(TzAccount.SecurityGroup.Description)
+                                    .Add(TzAccount.SecurityGroup.Context )
+                                     .Add(TzAccount.SecurityGroup.Context)
+                                 ;
+            try
+            {
+                db.ExecuteNonQuery(create);
+            }
+            catch (System.Exception ex)
+            {
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public void CreateSecurityPrivilege() {
+            DBQuery create;
+            create = DBQuery.Create.Table(base.Schema, TzAccount.SecurityPrivilege.Table)
+                                    .Add(TzAccount.SecurityPrivilege.ClientID)
+                                    .Add(TzAccount.SecurityPrivilege.SecurityGroupID)
+                                    .Add(TzAccount.SecurityPrivilege.PrivilegeID)
+                                    .Add(TzAccount.SecurityPrivilege.SecurityComponentID)
+                                    .Add(TzAccount.SecurityPrivilege.ComponentCategory)
+                                    .Add(TzAccount.SecurityPrivilege.ComponentType)
+                                    .Add(TzAccount.SecurityPrivilege.View)
+                                    .Add(TzAccount.SecurityPrivilege.Remove)
+                                    .Add(TzAccount.SecurityPrivilege.Add )
+                                    .Add(TzAccount.SecurityPrivilege.Edit);
+            try
+            {
+                db.ExecuteNonQuery(create);
+            }
+            catch (System.Exception ex)
+            {
+            }
+        }
 
 
         private bool IsColumnExist(DBSchemaTable table, params DBColumn[] columns)

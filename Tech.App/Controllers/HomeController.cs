@@ -7,7 +7,7 @@ using System.Data;
 using Tech.Data.Schema;
 using Tech.Data.Query;
 using Tech.App.Models;
-
+using Tz.ClientManager;
 namespace Tech.App.Controllers
 {
     public class HomeController : Controller
@@ -45,7 +45,7 @@ namespace Tech.App.Controllers
         /// <returns></returns>
         public JsonResult GetData(string clientid,string tb,int currentPage,int PageSize)
         {
-            Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+            ClientServer c = new ClientServer(clientid);
 
             System.Data.DataTable dt = new DataTable();
             Data.DBDatabase db = Data.DBDatabase.Create(c.GetServer().Connection(), "MySql.Data.MySqlClient");
@@ -69,7 +69,7 @@ namespace Tech.App.Controllers
         /// <returns></returns>
         public JsonResult GetEntity(string clientid) {
             System.Data.DataTable dt = new DataTable();
-            Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+            ClientServer c = new ClientServer(clientid);
             Data.DBDatabase db = Data.DBDatabase.Create(c.GetServer().Connection(), "MySql.Data.MySqlClient");
           // Data.DBDatabase db = Data.DBDatabase.Create("Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; ", "MySql.Data.MySqlClient");
             //Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; 
@@ -87,7 +87,7 @@ namespace Tech.App.Controllers
         /// <returns></returns>
         public JsonResult GetFields(string clientid, string tb) {
             System.Data.DataTable dt = new DataTable();
-            Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+            ClientServer c = new ClientServer(clientid);
             Data.DBDatabase db = Data.DBDatabase.Create(c.GetServer().Connection(), "MySql.Data.MySqlClient");
           // Data.DBDatabase db = Data.DBDatabase.Create("Server=52.163.241.42; Uid=admin;Pwd=smrtalentoz3106;Initial Catalog=jumbo_talentoz; ", "MySql.Data.MySqlClient");
             Data.Schema.DBSchemaProvider provider = db.GetSchemaProvider();

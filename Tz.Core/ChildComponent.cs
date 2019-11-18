@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using Tz.ClientManager;
 namespace Tz.Core
 {
   public  class ComponentNode
@@ -150,7 +150,7 @@ namespace Tz.Core
         /// <param name="relatedfield"></param>
         /// <returns></returns>
         public bool UpdateModalItemRelation(string mrelatedID,string parentfield,string relatedfield) {
-            var c = new Net.ClientServer(ClientID);
+            var c = new ClientServer(ClientID);
             var item = this.Relations.Where(x => x.ModalItemRelationID == mrelatedID).FirstOrDefault();
             var dataComponentModal = new Data.Component.ComponentModal(c.GetServer().Connection());
             if (item != null)
@@ -172,7 +172,7 @@ namespace Tz.Core
         /// <param name="modalid"></param>
         /// <returns></returns>
         public bool RemoveItem(string modalid) {
-            var c = new Net.ClientServer(ClientID);
+            var c = new ClientServer(ClientID);
             var dataComponentModal = new Data.Component.ComponentModal(c.GetServer().Connection());
             if (dataComponentModal.RemoveModalItem(this.ClientID, modalid, this.ComponentModalItemID))
             {
@@ -184,7 +184,7 @@ namespace Tz.Core
             }
         }
         public bool RemoveAllRelations() {
-            var c = new Net.ClientServer(ClientID);
+            var c = new ClientServer(ClientID);
             var dataComponentModal = new Data.Component.ComponentModal(c.GetServer().Connection());
             dataComponentModal.RemoveAllItemRelation(this.ClientID, this.ComponentModalItemID);
             return true;

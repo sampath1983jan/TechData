@@ -10,6 +10,7 @@ using Tech.App.Models;
 using Tz.Net.DataSchema;
 using System.Web.Hosting;
 using System.IO;
+using Tz.ClientManager;
 
 namespace Tz.BackApp.Controllers.Schema
 {
@@ -44,13 +45,13 @@ namespace Tz.BackApp.Controllers.Schema
         /// <returns></returns>
         public JsonpResult GetTables(string clientid)
         {
-            Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+            ClientServer c = new ClientServer(clientid);
             return new JsonpResult(Net.Entity.Table.GetTables(clientid, c.GetServer().ServerID));
         }
 
         public JsonpResult GetTable(string clientid, string tableid)
         {
-            Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+ClientServer c = new ClientServer(clientid);
             Tz.Net.DataManager dataManager = new Net.DataManager(tableid, c.GetServer().ServerID, clientid);
             return new JsonpResult(dataManager.GetTable());
         }
@@ -66,7 +67,7 @@ namespace Tz.BackApp.Controllers.Schema
         {
             try
             {
-                Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+                ClientServer c = new ClientServer(clientid);
                 Tz.BackApp.Models.Table ModalTable;
                 ModalTable = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Table>(tb);
                 List<Models.Field> mFields = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.Field>>(fields);
@@ -141,7 +142,7 @@ namespace Tz.BackApp.Controllers.Schema
         {
             try
             {
-                Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+                ClientServer c = new ClientServer(clientid);
                 Tz.BackApp.Models.Table ModalTable;
                 ModalTable = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Table>(tb);
                 Tz.Net.DataManager dataManager = new Net.DataManager(ModalTable.TableID, c.GetServer().ServerID, clientid);
@@ -166,7 +167,7 @@ namespace Tz.BackApp.Controllers.Schema
         {
             try
             {
-                Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+                ClientServer c = new ClientServer(clientid);
                 Tz.Net.DataManager dataManager = new Net.DataManager(btid, c.GetServer().ServerID, clientid);
                 Models.Field mField = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Field>(fields);
                 if (mField.IsPrimaryKey)
@@ -196,7 +197,7 @@ namespace Tz.BackApp.Controllers.Schema
         {
             try
             {
-                Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+                ClientServer c = new ClientServer(clientid);
                 Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID, clientid);
                 Models.Field mField = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Field>(fields);
                 //if (mField.IsPrimaryKey)
@@ -225,7 +226,7 @@ namespace Tz.BackApp.Controllers.Schema
         {
             try
             {
-                Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+ClientServer c = new ClientServer(clientid);
                 Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID, clientid);
                 dataManager.Remove();
                 return new JsonpResult("true");
@@ -239,7 +240,7 @@ namespace Tz.BackApp.Controllers.Schema
         public JsonpResult GetData(int pageSize, int currentPage, string clientid, string tbid)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
-            Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+            ClientServer c = new ClientServer(clientid);
             Tz.Net.DataManager dataManager = new Net.DataManager(tbid, c.GetServer().ServerID, clientid);
             dt = dataManager.GetData(currentPage, pageSize);
             int trecord = dataManager.GetDataCount();
@@ -259,7 +260,7 @@ namespace Tz.BackApp.Controllers.Schema
         {
             try
             {
-                Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+                ClientServer c = new ClientServer(clientid);
                 Tz.Net.DataManager dataManager = new Net.DataManager(tbID, c.GetServer().ServerID, clientid);
                 dataManager.RemoveField(fieldID);
                 return new JsonpResult("true");

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Web;
 using Tz.Net;
+using Tz.Security;
 
 namespace CustomAuthentication
 {

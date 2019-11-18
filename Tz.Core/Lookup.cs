@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Linq;
+using Tz.ClientManager;
 namespace Tz.Core
 {
     public class Lookup
@@ -26,7 +27,7 @@ namespace Tz.Core
         public List<LookupItem> LookupItems;
 
         private Data.Component.LookUp dataLookup;
-        private Tz.Net.ClientServer c;
+        private ClientServer c;
         /// <summary>
         /// 
         /// </summary>
@@ -34,7 +35,7 @@ namespace Tz.Core
         /// <param name="lookupid"></param>
         public Lookup(string clientid, string lookupid) {
             ClientID = clientid;
-          c = new Net.ClientServer(clientid);
+          c = new ClientServer(clientid);
             LookupID = lookupid;
             LookupItems = new List<LookupItem>();
             dataLookup = new Data.Component.LookUp(c.GetServer().Connection());
@@ -46,7 +47,7 @@ namespace Tz.Core
         /// </summary>
         /// <param name="clientid"></param>
         public Lookup(string clientid) {
-            c = new Net.ClientServer(clientid);
+            c = new ClientServer(clientid);
             ClientID = clientid;
             LookupID = "";
             Name = "";
@@ -84,7 +85,7 @@ namespace Tz.Core
         /// <param name="clientid"></param>
         /// <returns></returns>
         public static List<Lookup> GetLookUps(string clientid) {
-             Tz.Net.ClientServer c = new Tz.Net.ClientServer(clientid);
+             ClientServer c = new ClientServer(clientid);
         var dataLookup = new Data.Component.LookUp(c.GetServer().Connection());
             DataTable dt= dataLookup.GetLookUpList(clientid);
            List< Lookup> lup = new List<Lookup>();

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Tz.BackApp.Models;
-
+using Tz.ClientManager;
 namespace Tz.BackApp.Controllers.Client
 {
     public class ClientController : Controller
@@ -21,7 +21,7 @@ namespace Tz.BackApp.Controllers.Client
         }
         [HttpGet]
         public JsonpResult Get(string clientid) {
-            Tz.Net.Client c = new Net.Client(clientid);
+         Tz.ClientManager.Client c = new Tz.ClientManager.Client(clientid);
             return new JsonpResult(c);
         }
 
@@ -31,10 +31,10 @@ namespace Tz.BackApp.Controllers.Client
             if (obj != null)
             {
                 var gp = Newtonsoft.Json.JsonConvert.DeserializeObject<GridParam>(obj);
-                return new JsonpResult(Net.Client.GetClients());
+                return new JsonpResult(Tz.ClientManager.Client.GetClients());
             }
             else {
-                return new JsonpResult(Net.Client.GetClients());
+                return new JsonpResult(Tz.ClientManager.Client.GetClients());
             }                              
         }
 
@@ -44,13 +44,13 @@ namespace Tz.BackApp.Controllers.Client
             if (search != null)
             {
                 // var gp = Newtonsoft.Json.JsonConvert.DeserializeObject<GridParam>(obj);\
-               var c= Net.Client.GetClients().Where(x => x.ClientName.IndexOf(search) >= 0);
+               var c= Tz.ClientManager.Client.GetClients().Where(x => x.ClientName.IndexOf(search) >= 0);
 
                 return new JsonpResult(c);
             }
             else
             {
-                return new JsonpResult(Net.Client.GetClients());
+                return new JsonpResult(Tz.ClientManager.Client.GetClients());
             }
         }
 
@@ -63,7 +63,7 @@ namespace Tz.BackApp.Controllers.Client
             string email,
             string hostname
             ) {
-            Tz.Net.Client c = new Net.Client(clientName,
+            Tz.ClientManager.Client c = new Tz.ClientManager.Client(clientName,
                 clientNo,
                 address,
                 state,
@@ -88,7 +88,7 @@ namespace Tz.BackApp.Controllers.Client
             string hostname
             )
         {
-            Tz.Net.Client c = new Net.Client(clientID);
+            Tz.ClientManager.Client c = new Tz.ClientManager.Client(clientID);
             c.ClientName = clientName;
             c.ClientNo = clientNo;
             c.OrganizationName = orgName;
@@ -102,17 +102,17 @@ namespace Tz.BackApp.Controllers.Client
         }
 
         public JsonpResult Assign(string clientid, string serverid) {
-            Tz.Net.ClientServer cs = new Net.ClientServer(clientid,serverid);
+            Tz.ClientManager.ClientServer cs = new Tz.ClientManager.ClientServer(clientid,serverid);
             return new JsonpResult(cs.Assign());
         }
 
         public JsonpResult RemoveServer(string clientid, string serverid) {
-            Tz.Net.ClientServer cs = new Net.ClientServer(clientid, serverid);
+            Tz.ClientManager.ClientServer cs = new Tz.ClientManager.ClientServer(clientid, serverid);
             return new JsonpResult(cs.Remove());
         }
 
         public JsonpResult GetServer(string clientid) {
-            Tz.Net.ClientServer cs = new Net.ClientServer(clientid);
+            Tz.ClientManager.ClientServer cs = new Tz.ClientManager.ClientServer(clientid);
             return new JsonpResult(cs.GetServer());
         }
     }

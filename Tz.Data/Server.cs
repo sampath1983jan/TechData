@@ -7,7 +7,7 @@ using Tech.Data;
 using System.Data;
 using Tech.Data.Query;
 using System.Data.Common;
-
+using Tz.Global;
 namespace Tz.Data
 {
     public class Server:DataBase

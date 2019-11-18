@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-namespace Tz.Net
+using Tz.Global;
+
+namespace Tz.ClientManager
 {
     public class Client:INetImplimentor
     {
@@ -66,16 +68,16 @@ namespace Tz.Net
             dClient = new Data.Client("");
             dt= dClient.GetClient(this.ClientID);
            Client c= dt.toList <Client> (new DataFieldMappings()                    
-                    .Add( Tz.Data.TzAccount.Client.ClientName.Name, "ClientName")
-                    .Add( Tz.Data.TzAccount.Client.ClientNo.Name, "ClientNo")
-                    .Add( Tz.Data.TzAccount.Client.Address.Name, "Address")
-                    .Add( Tz.Data.TzAccount.Client.State.Name,"State")
-                    .Add( Tz.Data.TzAccount.Client.Country.Name, "Country")
-                     .Add(Tz.Data.TzAccount.Client.Email.Name,"Email" )
-                    .Add( Tz.Data.TzAccount.Client.PhoneNo.Name, "PhoneNo")
-                    .Add( Tz.Data.TzAccount.Client.OrganizationName.Name, "OrganizationName")
-                    .Add( Tz.Data.TzAccount.Client.Status.Name,"Status")
-                    .Add( Tz.Data.TzAccount.Client.Host.Name, "ClientHost")
+                    .Add( Tz.Global.TzAccount.Client.ClientName.Name, "ClientName")
+                    .Add( Tz.Global.TzAccount.Client.ClientNo.Name, "ClientNo")
+                    .Add( Tz.Global.TzAccount.Client.Address.Name, "Address")
+                    .Add( Tz.Global.TzAccount.Client.State.Name,"State")
+                    .Add( Tz.Global.TzAccount.Client.Country.Name, "Country")
+                     .Add(Tz.Global.TzAccount.Client.Email.Name,"Email" )
+                    .Add( Tz.Global.TzAccount.Client.PhoneNo.Name, "PhoneNo")
+                    .Add( Tz.Global.TzAccount.Client.OrganizationName.Name, "OrganizationName")
+                    .Add( Tz.Global.TzAccount.Client.Status.Name,"Status")
+                    .Add( Tz.Global.TzAccount.Client.Host.Name, "ClientHost")
                     , null,null).FirstOrDefault();
             this.Merge<Client>(c);          
         }
@@ -87,17 +89,17 @@ namespace Tz.Net
                 return new List<Client>();
             }
           return  dt.toList<Client>(new DataFieldMappings()
-                     .Add(Tz.Data.TzAccount.Client.ClientID.Name, "ClientID",true)
-                     .Add(Tz.Data.TzAccount.Client.ClientName.Name, "ClientName")
-                     .Add(Tz.Data.TzAccount.Client.ClientNo.Name, "ClientNo")
-                     .Add(Tz.Data.TzAccount.Client.Address.Name, "Address")
-                     .Add(Tz.Data.TzAccount.Client.State.Name, "State")
-                     .Add(Tz.Data.TzAccount.Client.Country.Name, "Country")
-                      .Add(Tz.Data.TzAccount.Client.Email.Name, "Email")
-                     .Add(Tz.Data.TzAccount.Client.PhoneNo.Name, "PhoneNo")
-                     .Add(Tz.Data.TzAccount.Client.OrganizationName.Name, "OrganizationName")
-                     .Add(Tz.Data.TzAccount.Client.Status.Name, "Status")
-                     .Add(Tz.Data.TzAccount.Client.Host.Name, "ClientHost")
+                     .Add(Tz.Global.TzAccount.Client.ClientID.Name, "ClientID",true)
+                     .Add(Tz.Global.TzAccount.Client.ClientName.Name, "ClientName")
+                     .Add(Tz.Global.TzAccount.Client.ClientNo.Name, "ClientNo")
+                     .Add(Tz.Global.TzAccount.Client.Address.Name, "Address")
+                     .Add(Tz.Global.TzAccount.Client.State.Name, "State")
+                     .Add(Tz.Global.TzAccount.Client.Country.Name, "Country")
+                      .Add(Tz.Global.TzAccount.Client.Email.Name, "Email")
+                     .Add(Tz.Global.TzAccount.Client.PhoneNo.Name, "PhoneNo")
+                     .Add(Tz.Global.TzAccount.Client.OrganizationName.Name, "OrganizationName")
+                     .Add(Tz.Global.TzAccount.Client.Status.Name, "Status")
+                     .Add(Tz.Global.TzAccount.Client.Host.Name, "ClientHost")
                      , null, null).ToList();
         }
 

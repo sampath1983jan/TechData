@@ -355,6 +355,7 @@
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\AppStyle\bootstrap-colorpicker.css" />
+    <Content Include="Content\AppStyle\Calendar.css" />
     <Content Include="Content\AppStyle\CheckBox.css" />
     <Content Include="Content\AppStyle\ComboBox.css" />
     <Content Include="Content\AppStyle\cProgress.css" />
@@ -367,6 +368,7 @@
     <Content Include="Content\AppStyle\img\hue.png" />
     <Content Include="Content\AppStyle\img\saturation.png" />
     <Content Include="Content\AppStyle\Pagination.css" />
+    <Content Include="Content\AppStyle\ProgressMeter.css" />
     <Content Include="Content\AppStyle\SwitchBotton.css" />
     <Content Include="Content\AppStyle\Time.css" />
     <Content Include="Content\AppStyle\Tokenizer.css" />
@@ -814,7 +816,9 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="appsettings.json" />
     <Content Include="Scripts\ace\mode-QScriptMode.js" />
+    <Content Include="Scripts\Controls\Calendar.js" />
     <Content Include="Scripts\Controls\Control-vue.js" />
+    <Content Include="Scripts\Controls\interact.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\requires.js" />
     <Content Include="Scripts\vue.js" />
@@ -828,10 +832,12 @@
     <Content Include="vue\Controls\Grid.js" />
     <Content Include="vue\Controls\Input.js" />
     <Content Include="vue\Controls\Progress.js" />
+    <Content Include="vue\Controls\ProgressMeter.js" />
     <Content Include="vue\Controls\Search.js" />
     <Content Include="vue\Controls\TextArea.js" />
     <Content Include="vue\Controls\toast.js" />
     <Content Include="vue\Controls\Tokenizer.js" />
+    <Content Include="vue\Controls\vueCalendar.js" />
     <Content Include="vue\main.js" />
     <Content Include="libman.json" />
     <Content Include="vue\Client\Clients.js" />
@@ -910,6 +916,7 @@
     <Content Include="vue\Client\ClientList.vue" />
     <Content Include="Views\Client\Client.cshtml" />
     <Content Include="vue\Client\Client.vue" />
+    <Content Include="Views\Home\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -937,6 +944,10 @@
       <Project>{0A03DAF8-213B-43B0-B704-4E032CAEA07F}</Project>
       <Name>Tech.QScript</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
+      <Project>{0f9e9e96-db86-46ef-8a33-c900716c0712}</Project>
+      <Name>Tz.ClientManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tz.Core\Tz.Core.csproj">
       <Project>{67584ee3-663a-48fb-9cde-ae164063ea09}</Project>
       <Name>Tz.Core</Name>
@@ -944,6 +955,10 @@
     <ProjectReference Include="..\Tz.Net\Tz.Net.csproj">
       <Project>{55AB9F49-FA31-4EC1-B4E9-589A915EE221}</Project>
       <Name>Tz.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Security\Tz.Security.csproj">
+      <Project>{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}</Project>
+      <Name>Tz.Security</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using Tz.Global;
+
 namespace Tz.Net.Entity
 {
     /// <summary>
@@ -109,12 +111,12 @@ namespace Tz.Net.Entity
             var dTable = new Data.Table();
             DataTable dt = new DataTable();
             dt = dTable.GetTables(clientid,serverid);
-            List<Table>ts                = dt.toList<Table>(new DataFieldMappings()               //  .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID")
-               .Add(Tz.Data.TzAccount.Tables.TableID.Name, "TableID", true)
-                  .Add(Tz.Data.TzAccount.Tables.TableName.Name, "TableName")
-                .Add(Tz.Data.TzAccount.Tables.Category.Name, "Category")
-                .Add(Tz.Data.TzAccount.Tables.ServerID.Name, "ServerID")
-                .Add(Tz.Data.TzAccount.Tables.ClientID.Name, "ClientID")
+            List<Table>ts                = dt.toList<Table>(new DataFieldMappings()               //  .Add(Tz.Global.TzAccount.Field.FieldID.Name, "FieldID")
+               .Add(Tz.Global.TzAccount.Tables.TableID.Name, "TableID", true)
+                  .Add(Tz.Global.TzAccount.Tables.TableName.Name, "TableName")
+                .Add(Tz.Global.TzAccount.Tables.Category.Name, "Category")
+                .Add(Tz.Global.TzAccount.Tables.ServerID.Name, "ServerID")
+                .Add(Tz.Global.TzAccount.Tables.ClientID.Name, "ClientID")
                 , null, null);
             return ts;
         }
@@ -127,13 +129,13 @@ namespace Tz.Net.Entity
             DataTable dt = new DataTable();
             dt=  dTable.GetTable(this.TableID);
             if (dt.Rows.Count > 0) {
-            dynamic fs = dt.toList<Field>(new DataFieldMappings()               //  .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID")
-                 .Add(Tz.Data.TzAccount.Field.FieldID.Name, "FieldID",true)
-                    .Add(Tz.Data.TzAccount.Field.FieldName.Name, "FieldName")
-                  .Add(Tz.Data.TzAccount.Field.FieldType.Name, "FieldType")
-                  .Add(Tz.Data.TzAccount.Field.Length.Name, "Length")
-                  .Add(Tz.Data.TzAccount.Field.ISPrimaryKey.Name, "IsPrimaryKey")
-                  .Add(Tz.Data.TzAccount.Field.IsNullable.Name, "IsNullable")
+            dynamic fs = dt.toList<Field>(new DataFieldMappings()               //  .Add(Tz.Global.TzAccount.Field.FieldID.Name, "FieldID")
+                 .Add(Tz.Global.TzAccount.Field.FieldID.Name, "FieldID",true)
+                    .Add(Tz.Global.TzAccount.Field.FieldName.Name, "FieldName")
+                  .Add(Tz.Global.TzAccount.Field.FieldType.Name, "FieldType")
+                  .Add(Tz.Global.TzAccount.Field.Length.Name, "Length")
+                  .Add(Tz.Global.TzAccount.Field.ISPrimaryKey.Name, "IsPrimaryKey")
+                  .Add(Tz.Global.TzAccount.Field.IsNullable.Name, "IsNullable")
                   ,  null,(x,y)=> dynamic(x,y));
                 int i = 0;
                 foreach (Field f in fs)

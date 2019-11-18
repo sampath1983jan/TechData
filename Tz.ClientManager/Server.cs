@@ -4,8 +4,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tz.Global;
 
-namespace Tz.Net
+namespace Tz.ClientManager
 {
     public class Server:INetImplimentor
     {
@@ -87,13 +88,13 @@ namespace Tz.Net
             dServer = new Data.Server();
             dt = dServer.GetServer(this.ServerID);
             Server c = dt.toList<Server>(new DataFieldMappings()
-                .Add(Tz.Data.TzAccount.Server.ServerID.Name, "ServerID",true)
-                .Add(Tz.Data.TzAccount.Server.ServerName.Name, "ServerName")
-                     .Add(Tz.Data.TzAccount.Server.Host.Name, "Host")
-                     .Add(Tz.Data.TzAccount.Server.UserID.Name, "UserName")
-                     .Add(Tz.Data.TzAccount.Server.Password.Name, "Password")
-                     .Add(Tz.Data.TzAccount.Server.Port.Name, "Port")
-                      .Add(Tz.Data.TzAccount.Server.DB.Name, "DBName")                    
+                .Add(Tz.Global.TzAccount.Server.ServerID.Name, "ServerID",true)
+                .Add(Tz.Global.TzAccount.Server.ServerName.Name, "ServerName")
+                     .Add(Tz.Global.TzAccount.Server.Host.Name, "Host")
+                     .Add(Tz.Global.TzAccount.Server.UserID.Name, "UserName")
+                     .Add(Tz.Global.TzAccount.Server.Password.Name, "Password")
+                     .Add(Tz.Global.TzAccount.Server.Port.Name, "Port")
+                      .Add(Tz.Global.TzAccount.Server.DB.Name, "DBName")                    
                      , null, null).FirstOrDefault();
             this.Merge<Server>(c);
         }
@@ -105,20 +106,19 @@ namespace Tz.Net
             if (dt.Rows.Count > 0)
             {
                 return dt.toList<Server>(new DataFieldMappings()
-                      .Add(Tz.Data.TzAccount.Server.ServerID.Name, "ServerID", true)
-                             .Add(Tz.Data.TzAccount.Server.ServerName.Name, "ServerName")
-                     .Add(Tz.Data.TzAccount.Server.Host.Name, "Host")
-                     .Add(Tz.Data.TzAccount.Server.UserID.Name, "UserName")
-                     .Add(Tz.Data.TzAccount.Server.Password.Name, "Password")
-                     .Add(Tz.Data.TzAccount.Server.Port.Name, "Port")
-                      .Add(Tz.Data.TzAccount.Server.DB.Name, "DBName")
+                      .Add(Tz.Global.TzAccount.Server.ServerID.Name, "ServerID", true)
+                             .Add(Tz.Global.TzAccount.Server.ServerName.Name, "ServerName")
+                     .Add(Tz.Global.TzAccount.Server.Host.Name, "Host")
+                     .Add(Tz.Global.TzAccount.Server.UserID.Name, "UserName")
+                     .Add(Tz.Global.TzAccount.Server.Password.Name, "Password")
+                     .Add(Tz.Global.TzAccount.Server.Port.Name, "Port")
+                      .Add(Tz.Global.TzAccount.Server.DB.Name, "DBName")
                      , null, null).ToList();
             }
             else {
                 return new List<Server>();
             }           
         }
-
         public bool Remove()
         {
             dServer = new Data.Server();
@@ -136,8 +136,8 @@ namespace Tz.Net
                     Password,
                     Port,ServerName);
                 if (_serverID != "")
-                {
-                    Tz.Net.Setup s = new Tz.Net.Setup();
+                {                  
+                    Tz.Deployment.Setup s = new Tz.Deployment.Setup();
                     s.ExecuteClientSetup(Connection());                    
                     return true;
                 }
