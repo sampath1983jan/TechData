@@ -41,9 +41,10 @@ namespace Tz.BackApp.Controllers.Authentication
         {
             return View();
         }
-        public JsonpResult SaveUser(string Username, string firstName, string lastName, string password, int userType,string email)
+        public JsonpResult SaveUser(string Username, string firstName, string lastName, string password, string userType,string email)
         {
-            Tz.Security.User u = new Security.User(Username, password, (Security.UserType)userType, true,firstName,lastName,email);
+            string clientid="";
+            Tz.Security.User u = new Security.User(clientid,Username, password, (string)userType, true,firstName,lastName,email);
             u.Save();
             return new JsonpResult(u.UserID);
         }

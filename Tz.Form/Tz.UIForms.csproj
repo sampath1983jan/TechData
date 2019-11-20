@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28436F80-C091-42A5-9F15-668FAC4514B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tz.UIForms</RootNamespace>
+    <AssemblyName>Tz.UIForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form.cs" />
+    <Compile Include="FormBuilder.cs" />
+    <Compile Include="FormField.cs" />
+    <Compile Include="FormFields\Boolean.cs" />
+    <Compile Include="FormFields\Date.cs" />
+    <Compile Include="FormFields\Picker.cs" />
+    <Compile Include="FormFields\Selection.cs" />
+    <Compile Include="FormFields\Text.cs" />
+    <Compile Include="FormFields\Upload.cs" />
+    <Compile Include="IFormField.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIFormKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
+      <Project>{6605498e-3be2-4b50-af67-d5a9084a5f00}</Project>
+      <Name>Tech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
+      <Project>{0F9E9E96-DB86-46EF-8A33-C900716C0712}</Project>
+      <Name>Tz.ClientManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Core\Tz.Core.csproj">
+      <Project>{67584ee3-663a-48fb-9cde-ae164063ea09}</Project>
+      <Name>Tz.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Data\Tz.Data.csproj">
+      <Project>{a25eb976-3db6-4de4-8ea6-5d33e6cb5867}</Project>
+      <Name>Tz.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Global\Tz.Global.csproj">
+      <Project>{27d9546b-9499-425b-ac56-602e9cf7bd8a}</Project>
+      <Name>Tz.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Security\Tz.Security.csproj">
+      <Project>{c0c78509-ebfd-4ffd-b633-b2ee45156bc5}</Project>
+      <Name>Tz.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.WebControl\Tz.Controls.csproj">
+      <Project>{918c3bfb-d7ed-4477-818b-475ca43b81ab}</Project>
+      <Name>Tz.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

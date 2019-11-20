@@ -16,7 +16,7 @@ namespace CustomAuthentication
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public UserType Roles { get; set; }
+        public string Roles { get; set; }
         #endregion
 
         public IIdentity Identity
@@ -26,27 +26,28 @@ namespace CustomAuthentication
 
         public bool IsInRole(string role)
         {
-            if (role == "Admin")
-            {
-                if (Roles == UserType.Admin || Roles == UserType.SuperAdmin)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else if (role == "User") {
-                if (Roles == UserType.User || Roles == UserType.SuperAdmin || Roles == UserType.Admin || Roles == UserType.SuperUser)
-                {
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            }
-            return false;
+            return true;
+            //if (role == "Admin")
+            //{
+            //    if (Roles == UserType.Admin || Roles == UserType.SuperAdmin)
+            //    {
+            //        return true;
+            //    }
+            //    else
+            //    {
+            //        return false;
+            //    }
+            //}
+            //else if (role == "User") {
+            //    if (Roles == UserType.User || Roles == UserType.SuperAdmin || Roles == UserType.Admin || Roles == UserType.SuperUser)
+            //    {
+            //        return true;
+            //    }
+            //    else {
+            //        return false;
+            //    }
+            //}
+            //return false;
         }
 
         

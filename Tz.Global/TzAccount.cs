@@ -54,7 +54,7 @@ namespace Tz.Global
         public class User
         {
             public const string Table = "cf_User";
-            //public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
             public static readonly DBColumn UserID = DBColumn.Column("UserID", System.Data.DbType.String, 255,
                DBColumnFlags.PrimaryKey);
             public static readonly DBColumn Password = DBColumn.Column("Password", System.Data.DbType.String, 255,
@@ -67,7 +67,7 @@ namespace Tz.Global
               DBColumnFlags.Nullable);
             public static readonly DBColumn Email = DBColumn.Column("Email", System.Data.DbType.String, 255,
               DBColumnFlags.Nullable);
-            public static readonly DBColumn UserType = DBColumn.Column("UserType", System.Data.DbType.Int32,
+            public static readonly DBColumn UserRole = DBColumn.Column("UserRole", System.Data.DbType.Int32,
               DBColumnFlags.Nullable);
             public static readonly DBColumn Status = DBColumn.Column("Status", System.Data.DbType.Boolean,
     DBColumnFlags.Nullable);
@@ -213,6 +213,7 @@ namespace Tz.Global
             public static readonly DBColumn RelatedField = DBColumn.Column("RelatedField", System.Data.DbType.String, 255);
             public static readonly DBColumn Parent = DBColumn.Column("Parent", System.Data.DbType.String, 255);
             public static readonly DBColumn Child = DBColumn.Column("Child", System.Data.DbType.String, 255);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class ComponentLookUpItem
         {
@@ -227,6 +228,7 @@ namespace Tz.Global
             public static readonly DBColumn ParentID = DBColumn.Column("ParentID", System.Data.DbType.String, 255);
             public static readonly DBColumn Order = DBColumn.Column("Order", System.Data.DbType.Int32, 255);
             public static readonly DBColumn IsActive = DBColumn.Column("IsActive", System.Data.DbType.Boolean);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class ComponentLookUp
         {
@@ -234,6 +236,7 @@ namespace Tz.Global
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
             public static readonly DBColumn LookupID = DBColumn.Column("LookupID", System.Data.DbType.String, 255, DBColumnFlags.PrimaryKey);
             public static readonly DBColumn LookUpName = DBColumn.Column("Name", System.Data.DbType.String, 255);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class ImportExportEvents
         {
@@ -247,6 +250,7 @@ namespace Tz.Global
             public static readonly DBColumn IgnoreSQLErrors = DBColumn.Column("IgnoreSQLErrors", System.Data.DbType.Boolean);
             public static readonly DBColumn FilePath = DBColumn.Column("FilePath", System.Data.DbType.String, 500);
             public static readonly DBColumn Errors = DBColumn.Column("Errors", System.Data.DbType.String, 120000);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class SecurityGroup {
             public const string Table = "cf_SecurityGroup";
@@ -257,6 +261,7 @@ namespace Tz.Global
             public static readonly DBColumn Context = DBColumn.Column("Context", System.Data.DbType.Int32, 10);
             public static readonly DBColumn IsBaseType = DBColumn.Column("IsBaseType", System.Data.DbType.Boolean, 10);
             public static readonly DBColumn BaseType = DBColumn.Column("BaseType", System.Data.DbType.Int32, 10);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class SecurityPrivilege {
             public const string Table = "cf_SecurityPrivileges";
@@ -272,7 +277,34 @@ namespace Tz.Global
             public static readonly DBColumn Add = DBColumn.Column("Add", System.Data.DbType.Boolean, 10);
             public static readonly DBColumn Edit = DBColumn.Column("Edit", System.Data.DbType.Boolean, 10);
             public static readonly DBColumn Remove = DBColumn.Column("Remove", System.Data.DbType.Boolean, 10);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
 
+        public class Form {
+            public const string Table = "cf_forms";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn FormID = DBColumn.Column("FormID", System.Data.DbType.String, 255);
+            public static readonly DBColumn Name = DBColumn.Column("Name", System.Data.DbType.String, 255);
+            public static readonly DBColumn FormType = DBColumn.Column("FormType", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
+            public static readonly DBColumn FormKeys = DBColumn.Column("FormKeys", System.Data.DbType.String, 255);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+        }
+
+        public class FormFields
+        {
+            public const string Table = "cf_formfields";
+            public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
+            public static readonly DBColumn FormID = DBColumn.Column("FormID", System.Data.DbType.String, 255);
+            public static readonly DBColumn FieldID = DBColumn.Column("FieldID", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn FieldERenderType = DBColumn.Column("FieldERenderType", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn Left = DBColumn.Column("Left", System.Data.DbType.Double, 255);
+            public static readonly DBColumn Top = DBColumn.Column("Top", System.Data.DbType.Double, 255);
+            public static readonly DBColumn FieldAttribute = DBColumn.Column("FieldAttribute", System.Data.DbType.String, 2500);
+
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+
+        }
     }
 }

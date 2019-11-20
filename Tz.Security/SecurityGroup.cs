@@ -271,7 +271,8 @@ namespace Tz.Security
             DataTable dt = sp.GetAnalyticPrivilege(this.ClientID, this.GroupID);      
             foreach (DataRow dr in dt.Rows)
             {
-                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID);
+                string compID = "";
+                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID, compID);
                 AnalyticPrivileges.Add(item);
             }
         }
@@ -283,7 +284,8 @@ namespace Tz.Security
             DataTable dt = sp.GetDashboardPrivilege(this.ClientID, this.GroupID);
             foreach (DataRow dr in dt.Rows)
             {
-                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID);
+                string compID = "";
+                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID, compID);
                 AnalyticPrivileges.Add(item);
             }
         }
@@ -296,7 +298,8 @@ namespace Tz.Security
             DataTable dt = sp.GetFeaturePrivilege(this.ClientID, this.GroupID);
             foreach (DataRow dr in dt.Rows)
             {
-                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID);
+                string compID = "";
+                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID,compID);
                 AnalyticPrivileges.Add(item);
             }
         }
@@ -309,7 +312,8 @@ namespace Tz.Security
             DataTable dt = sp.GetDashboardPrivilege(this.ClientID, this.GroupID);
             foreach (DataRow dr in dt.Rows)
             {
-                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID);
+                string compID = "";
+                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID, compID);
                 AnalyticPrivileges.Add(item);
             }
         }
@@ -322,7 +326,8 @@ namespace Tz.Security
             DataTable dt = sp.GetReportPrivilege(this.ClientID, this.GroupID);
             foreach (DataRow dr in dt.Rows)
             {
-                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID);
+                string compID = "";
+                AnalyticPrivilege item = new AnalyticPrivilege(this.ClientID, this.GroupID, compID);
                 AnalyticPrivileges.Add(item);
             }
         }               

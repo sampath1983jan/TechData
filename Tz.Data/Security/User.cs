@@ -70,12 +70,12 @@ namespace Tz.Data.Security
         /// </summary>
         /// <param name="UserName"></param>
         /// <param name="Password"></param>
-        /// <param name="UserType"></param>
+        /// <param name="userRole"></param>
         /// <param name="Status"></param>
         /// <returns></returns>
-        public string Save(string UserName,
+        public string Save(string clientid,string UserName,
             string Password,
-            int UserType,
+            string userRole,
             bool Status, string firstName, string lastName, string email)
         {
             DBDatabase db;
@@ -83,17 +83,16 @@ namespace Tz.Data.Security
             string a = Shared.generateID();
             DBConst dbUserID = DBConst.String(a);
             DBConst dbStatus = DBConst.Const(DbType.Boolean, Status);
-            DBConst dbUserType = DBConst.Int32(UserType);
+            DBConst dbUserType = DBConst.String(userRole);
             DBConst dbUserName = DBConst.String(UserName);
             DBConst dbPass = DBConst.String(Password);
             DBConst dbfirstName = DBConst.String(firstName);
             DBConst dblastName = DBConst.String(lastName);
             DBConst dbemail = DBConst.String(email);
-
             DBQuery insert = DBQuery.InsertInto(TzAccount.User.Table).Fields(
-                TzAccount.User.UserID.Name,
+               TzAccount.User.UserID.Name,
                TzAccount.User.UserName.Name,
-               TzAccount.User.UserType.Name,
+               TzAccount.User.UserRole.Name,
                TzAccount.User.Status.Name,
                TzAccount.User.FirstName.Name,
                TzAccount.User.LastName.Name,
@@ -166,6 +165,29 @@ namespace Tz.Data.Security
             DBQuery update = DBQuery.Update(TzAccount.User.Table).Set(
                 TzAccount.User.Status.Name, dbStatus)
                 .WhereField(TzAccount.User.UserID.Name, Compare.Equals, dbUserID);
+            int i = db.ExecuteNonQuery(update);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool UpdateRole(string clientID, string userID, string role) {
+            DBDatabase db;
+            db = base.Database;
+            DBConst dbUserID = DBConst.String(userID);
+            DBConst dbclientID = DBConst.String(clientID);
+            DBConst dbStatus = DBConst.Const(DbType.String, role);
+
+            DBComparison client = DBComparison.Equal(DBField.Field(TzAccount.User.ClientID.Name), dbclientID);
+            DBComparison user = DBComparison.Equal(DBField.Field(TzAccount.User.UserID.Name), dbUserID);
+
+            DBQuery update = DBQuery.Update(TzAccount.User.Table).Set(
+                TzAccount.User.UserRole.Name, dbStatus)
+                .WhereAll(client, user);
             int i = db.ExecuteNonQuery(update);
             if (i > 0)
             {

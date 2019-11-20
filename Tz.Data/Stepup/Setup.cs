@@ -124,7 +124,7 @@ namespace Tz.Data
                                         .Add(TzAccount.User.FirstName)
                                         .Add(TzAccount.User.LastName)
                                         .Add(TzAccount.User.Status)
-                                        .Add(TzAccount.User.UserType);
+                                        .Add(TzAccount.User.UserRole);
                 db.ExecuteNonQuery(create);
             }
             else

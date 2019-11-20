@@ -14,7 +14,6 @@ namespace Tz.Security
         REPORT=4
     }
 
-
     public interface IPrivilege
     {
         string PrivilegeID { get; set; }
@@ -23,12 +22,11 @@ namespace Tz.Security
         string ComponentID { get; set; }
         PrivilegeType ComponentType { get; }
         //string UserID { get; set; }
-        bool Add { get; set; }
-        bool Remove { get; set; }
-        bool Edit { get; set; }
-        bool View { get; set; }
+        bool IsAdd { get; set; }
+        bool IsRemove { get; set; }
+        bool IsEdit { get; set; }
+        bool IsView { get; set; }
         bool Save();
-        bool Remove();
-         
+        bool Remove();         
     }
 }

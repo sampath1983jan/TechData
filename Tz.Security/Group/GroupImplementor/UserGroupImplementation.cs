@@ -19,26 +19,35 @@ namespace Tz.Security.Group.GroupImplementor
             bool view)
         {
             IPrivilege pri;
-            if ((PrivilegeType)componentType == PrivilegeType.ANALYTIC) {
-                pri = new Privileges.AnalyticPrivilege(clientid, groupid,componentID, "", add, remove, edit, view);
+            if ((PrivilegeType)componentType == PrivilegeType.ANALYTIC)
+            {
+                pri = new Privileges.AnalyticPrivilege(clientid, groupid, componentID, "", add, remove, edit, view);
+                return pri.Save();
             }
             else if ((PrivilegeType)componentType == PrivilegeType.DASHBOARD)
             {
                 pri = new Privileges.DashboardPrivilege(clientid, groupid, componentID, "", add, remove, edit, view);
+                return pri.Save();
             }
             else if ((PrivilegeType)componentType == PrivilegeType.FEATURE)
             {
-                pri = new Privileges.FeaturePrivilege(clientid, groupid, componentID,"",add,remove,edit,view);
+                pri = new Privileges.FeaturePrivilege(clientid, groupid, componentID, "", add, remove, edit, view);
+                return pri.Save();
             }
             else if ((PrivilegeType)componentType == PrivilegeType.COMPONENT)
             {
                 pri = new Privileges.ComponentPrivilege(clientid, groupid, componentID, "", add, remove, edit, view);
+                return pri.Save();
             }
             else if ((PrivilegeType)componentType == PrivilegeType.REPORT)
             {
                 pri = new Privileges.ReportPrivilege(clientid, groupid, componentID, "", add, remove, edit, view);
+                return pri.Save();
             }
-            pri.Add();
+            else {
+                return false;
+            }
+         
              
         }
 

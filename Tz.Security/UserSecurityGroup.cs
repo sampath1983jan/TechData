@@ -13,9 +13,10 @@ namespace Tz.Security
         private string ClientID;
        public SecurityGroup Role;
 
-        public UserGroup(string userID,string clientID) {
+        public UserGroup(string userID,string clientID,string roleID) {
             this.UserID = userID;
             this.ClientID = clientID;
+            RoleID = roleID;
             Load();
         }
 

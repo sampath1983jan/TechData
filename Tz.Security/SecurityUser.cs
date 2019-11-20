@@ -10,13 +10,6 @@ namespace Tz.Security
 {
     //http://ryankirkman.com/2013/01/31/activity-based-authorization.html
    
-    public enum UserType
-    {
-        User,
-        SuperUser,
-        Admin,
-        SuperAdmin,
-    }
     public abstract class IUser
     {
         public abstract string UserID { get; }
@@ -25,7 +18,7 @@ namespace Tz.Security
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public UserType UserType { get; set; }
+        public string UserGroupID { get; set; }
         public bool IsActive { get; set; }
         public Guid ActivationCode { get; set; }
         public UserGroup UserGroup;
@@ -79,11 +72,11 @@ namespace Tz.Security
         /// </summary>
         /// <param name="userName"></param>
         /// <param name="password"></param>
-        /// <param name="usertype"></param>
+        /// <param name="userGroupID"></param>
         /// <param name="status"></param>
         public User(string clientid,string userName,
             string password,
-            UserType usertype,
+            string userGroupID,
             bool status,
             string firstName, 
             string lastName, 
@@ -93,7 +86,7 @@ namespace Tz.Security
             _userid = "";
             this.UserName = userName;
             this.Password = password;
-            this.UserType = usertype;
+            this.UserGroupID = userGroupID;
             this.IsActive = status;
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -124,9 +117,9 @@ namespace Tz.Security
                    .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
                    , null, null).FirstOrDefault();
                 this.Merge<User>(c);
-                if (dt.Rows[0]["UserType"] == null)
+                if (dt.Rows[0]["UserRole"] == null)
                 {
-                    this.UserType = (UserType)dt.Rows[0]["UserType"];
+                    this.UserGroupID = (string)dt.Rows[0]["UserRole"];
                 }
                 _isauth = true;
             }
@@ -152,9 +145,9 @@ namespace Tz.Security
                  .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
                  , null, null).FirstOrDefault();
                 //  this.Merge<User>(c);
-                if (dt.Rows[0]["UserType"] != null)
+                if (dt.Rows[0]["UserRole"] != null)
                 {
-                    c.UserType = (UserType)dt.Rows[0]["UserType"];
+                    c.UserGroupID = (string)dt.Rows[0]["UserRole"];
                 }
                 _isauth = true;
             }
@@ -183,12 +176,12 @@ namespace Tz.Security
                    .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
                    , null, null).FirstOrDefault();
                 this.Merge<User>(c);
-                if (dt.Rows[0]["UserType"] == null)
+                if (dt.Rows[0]["UserRole"] == null)
                 {
-                    this.UserType = (UserType)dt.Rows[0]["UserType"];
+                    this.UserGroupID = (string)dt.Rows[0]["UserRole"];
                 }
                 _isauth = true;
-                UserGroup = new UserGroup(this.UserID,this.ClientID);
+                UserGroup = new UserGroup(this.UserID,this.ClientID,this.UserGroupID);
             }
             else
             {
@@ -259,9 +252,9 @@ namespace Tz.Security
         {
             if (_userid == "")
             {
-                _userid = dUser.Save(this.UserName,
+                _userid = dUser.Save(this.ClientID,this.UserName,
                 this.Password,
-                (int)this.UserType,
+                (string)this.UserGroupID,
                 this.IsActive, this.FirstName, this.LastName, this.Email);
                 if (_userid == "")
                 {
