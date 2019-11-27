@@ -24,7 +24,7 @@ namespace CustomAuthentication
             {
                 return false;
             }
-            User u = new User(username, password);
+            User u = new User("",username, password);
             if (u.isAuthenticateUser)
             {
                 return true;
@@ -67,7 +67,7 @@ namespace CustomAuthentication
         /// <param name="Password"></param>
         /// <returns></returns>
         public MembershipUser GetUser(string UserName, string Password) {
-            User u = new User(UserName, Password);
+            User u = new User("",UserName, Password);
             var selectedUser = new CustomMembershipUser(u);
             return selectedUser;
         }
@@ -244,7 +244,7 @@ namespace CustomAuthentication
 
         public override MembershipUser GetUser(string username, bool userIsOnline)
         {
-            User u = new User(username,"");
+            User u = new User("",username,"");
           Tz.Security.User c=  u.GetUserDetailByEmail();
             var selectedUser = new CustomMembershipUser(c);
             return selectedUser;

@@ -125,47 +125,47 @@ namespace Tz.Data.Component
             DBConst dbnewlayout = DBConst.String(newlayout);
             DBConst dbreadlayout = DBConst.String(readlayout);
             DBConst dbcategory = DBConst.String(category);
-            DBQuery insert = DBQuery.InsertInto(TzAccount.Component.Table).Fields(
-              TzAccount.Component.ComponentID.Name,
-              TzAccount.Component.ComponentName.Name,
-              TzAccount.Component.ComponentType.Name,
-              TzAccount.Component.Title.Name,
-              TzAccount.Component.TitleFormat.Name,
-              TzAccount.Component.PrimaryKeys.Name,
-              TzAccount.Component.NewLayout.Name,
-              TzAccount.Component.ReadLayout.Name,
-              TzAccount.Component.TableID.Name,
-              TzAccount.Component.ClientID .Name ,
-              TzAccount.Component.Category.Name
+                DBQuery insert = DBQuery.InsertInto(TzAccount.Component.Table).Fields(
+                  TzAccount.Component.ComponentID.Name,
+                  TzAccount.Component.ComponentName.Name,
+                  TzAccount.Component.ComponentType.Name,
+                  TzAccount.Component.Title.Name,
+                  TzAccount.Component.TitleFormat.Name,
+                  TzAccount.Component.PrimaryKeys.Name,
+                  TzAccount.Component.NewLayout.Name,
+                  TzAccount.Component.ReadLayout.Name,
+                  TzAccount.Component.TableID.Name,
+                  TzAccount.Component.ClientID .Name ,
+                  TzAccount.Component.Category.Name
 
-              )
-              .Values(
-              dbcomponentid,
-              dbcomponentName,
-              dbcomponenttype,
-              dbtitle,
-              dbtitleformat,
-              dbprimarykeys,
-              dbnewlayout,
-              dbreadlayout,
-              dbtableid,
-              dbclientid,
-              dbcategory
-              );
-            int val = 0;
-            using (DbTransaction trans = db.BeginTransaction())
-            {
-                val = db.ExecuteNonQuery(trans, insert);
-                trans.Commit();
-            }
-            if (val > 0)
-            {
-                return a;
-            }
-            else
-            {
-                return "";
-            }
+                  )
+                  .Values(
+                  dbcomponentid,
+                  dbcomponentName,
+                  dbcomponenttype,
+                  dbtitle,
+                  dbtitleformat,
+                  dbprimarykeys,
+                  dbnewlayout,
+                  dbreadlayout,
+                  dbtableid,
+                  dbclientid,
+                  dbcategory
+                  );
+                int val = 0;
+                using (DbTransaction trans = db.BeginTransaction())
+                {
+                    val = db.ExecuteNonQuery(trans, insert);
+                    trans.Commit();
+                }
+                if (val > 0)
+                {
+                    return a;
+                }
+                else
+                {
+                    return "";
+                }
         }
         /// <summary>
         /// 

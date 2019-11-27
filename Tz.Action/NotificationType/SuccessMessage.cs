@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tz.Report
+namespace Tz.UIAction.NotificationType
 {
-    public class Class1
+   public  class SuccessMessage
     {
+        public string Message { get; set; }
     }
 }

@@ -9,6 +9,8 @@ namespace Tz.UIForms
 {
     public interface IFormFieldBuilder {
           FormField GetField(string clientid, string formid, RenderType renderType);
+        bool SaveField();
+
     }
     public class FormFieldBuilder: IFormFieldBuilder
     {
@@ -36,6 +38,11 @@ namespace Tz.UIForms
             }
             else
                 return null;
-        }        
+        }
+
+        public bool SaveField()
+        {
+            throw new NotImplementedException();
+        }
     }
 }   

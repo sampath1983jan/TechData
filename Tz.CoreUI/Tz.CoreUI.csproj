@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{28436F80-C091-42A5-9F15-668FAC4514B8}</ProjectGuid>
+    <ProjectGuid>{F840C1C3-6DF8-414E-A8EB-DBC0218EC784}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tz.UIForms</RootNamespace>
-    <AssemblyName>Tz.UIForms</AssemblyName>
+    <RootNamespace>Tz.CoreUI</RootNamespace>
+    <AssemblyName>Tz.CoreUI</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,31 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form.cs" />
-    <Compile Include="FormBuilder.cs" />
-    <Compile Include="FormField.cs" />
-    <Compile Include="FormFields\Boolean.cs" />
-    <Compile Include="FormFields\Date.cs" />
-    <Compile Include="FormFields\Picker.cs" />
-    <Compile Include="FormFields\Selection.cs" />
-    <Compile Include="FormFields\Text.cs" />
-    <Compile Include="FormFields\Upload.cs" />
-    <Compile Include="IFormField.cs" />
+    <Compile Include="FormFlow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UIFormKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
       <Project>{6605498e-3be2-4b50-af67-d5a9084a5f00}</Project>
       <Name>Tech.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tech.QScript\Tech.QScript.csproj">
+      <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
+      <Name>Tech.QScript</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tz.Action\Tz.UIAction.csproj">
       <Project>{27c2e113-33df-4fd1-9cf8-1221121c0f78}</Project>
       <Name>Tz.UIAction</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
-      <Project>{0F9E9E96-DB86-46EF-8A33-C900716C0712}</Project>
-      <Name>Tz.ClientManager</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.Core\Tz.Core.csproj">
       <Project>{67584ee3-663a-48fb-9cde-ae164063ea09}</Project>
@@ -78,13 +65,13 @@
       <Project>{a25eb976-3db6-4de4-8ea6-5d33e6cb5867}</Project>
       <Name>Tz.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.Form\Tz.UIForms.csproj">
+      <Project>{28436f80-c091-42a5-9f15-668fac4514b8}</Project>
+      <Name>Tz.UIForms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tz.Global\Tz.Global.csproj">
       <Project>{27d9546b-9499-425b-ac56-602e9cf7bd8a}</Project>
       <Name>Tz.Global</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tz.Security\Tz.Security.csproj">
-      <Project>{c0c78509-ebfd-4ffd-b633-b2ee45156bc5}</Project>
-      <Name>Tz.Security</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.WebControl\Tz.Controls.csproj">
       <Project>{918c3bfb-d7ed-4477-818b-475ca43b81ab}</Project>

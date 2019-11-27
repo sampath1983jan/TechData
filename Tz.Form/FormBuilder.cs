@@ -78,7 +78,7 @@ namespace Tz.UIForms
             {
                 foreach (FormField ff in UIForm.FormFields)
                 {
-                    ff.setFieldID(UIForm.FormID);
+                    ff.SetForm(UIForm.FormID);
                     ff.Save();                   
                 }
                 return true;

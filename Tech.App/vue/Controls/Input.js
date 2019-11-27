@@ -1,6 +1,4 @@
 ﻿
-
-
 define(function () {
     var setTemplate = function (itype, ele, attr) {
         itype = parseInt(itype);
@@ -99,11 +97,9 @@ define(function () {
                 var othis = this;              
                 this.$nextTick(function () {
                     setTemplate(this.attribute.inputType, this.$el, this.attribute);
-                    $(this.$el).find("input").Input(this.attribute);
-                    
+                    $(this.$el).find("input").Input(this.attribute);                    
                     $(this.$el).find("input").Input("text", this.text);
                     $(othis.$el).find('input[type=checkbox]').click(function () {
-                      
                         if ($(this).prop("checked") == true) {
                             othis.text = true;
                             othis.$emit("input", othis.text);
@@ -113,7 +109,7 @@ define(function () {
                             othis.text = false;
                             othis.$emit("input", othis.text);
                         }
-                    })
+                    });
                     $(othis.$el).find('input').keypress(function () {
                         othis.text = $(this).val();
                         othis.$emit("text", othis.text);
@@ -129,10 +125,8 @@ define(function () {
                         } else if (othis.attribute.inputType == 13) {
                             othis.text = $(this).val();
                             othis.$emit('input', othis.text);
-                        }
-                     
-                       // alert($(this).timepicki("getValue"));
-                 
+                        }                     
+                       // alert($(this).timepicki("getValue"));                 
                     });
                     $(othis.$el).find('input').css({ "border": "1px solid #aaa", "border-radius": "5px" });
                 });

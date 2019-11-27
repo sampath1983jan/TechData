@@ -8,7 +8,7 @@
     }
 }(function ($) {
     var defaultDate = "00/00/0001T00:00:00";
-    // input controls
+     // input controls
     (function ($) {
         $.input = {
             defaults: {
@@ -118,6 +118,7 @@
                 var prt = $.extend(true, {}, $.input.defaults, options);
             
                // var tmp = methods._getTemplate(prt);
+               
               methods._buildControl("", prt, self);
                 self.data('c_textbox', $.extend({}, prt, { initialized: true, waiting: false }));
                 prt.parentID = self.id;
@@ -350,11 +351,9 @@
 
                 }
                 else if (prt.inputType === 19) {
-                 //   $(self).append(tmp);
-                    if ($('#select_' + prt.id)[0] != null) {
+                    //   $(self).append(tmp);
+                    if ($('#select_' + prt.id)[0] != undefined) {
                         $('#select_' + prt.id)[0].prt = prt;
-                    }
-                  //  if (prt.type == "select") {
                         $('#select_' + prt.id).selectpicker({
                             dropupAuto: prt.selectPicker.dropupAuto,
                             width: prt.width,
@@ -363,6 +362,9 @@
                         }).on("change", function (e) {
                             this.prt.selectPicker.onSelected($(this).val());
                         });
+                    }
+                  //  if (prt.type == "select") {
+                      
                    // } 
                     
 
@@ -2088,7 +2090,6 @@
                     } else {
                         $("#" + ks.id).addClass("is-focused");
                     }
-
                 });
                 self.data('lblfield', $.extend({}, _options, { initialized: true, waiting: false }));
                 //$(this).parents('.is-floating-label').find("label").css("opacity", "0");
@@ -2600,9 +2601,10 @@
                 linkbuttons: [],
                 formElement: [],
                 name: '',
-                isVertical: false,
+                isVertical: false
             }
         };
+      
         var methods = {
             init: function (options) {
                 var self = $(this);

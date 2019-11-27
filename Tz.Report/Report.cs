@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tz.Dashboard
+namespace Tz.Report
 {
-    public class Class1
+    public class UIReport
     {
     }
 }

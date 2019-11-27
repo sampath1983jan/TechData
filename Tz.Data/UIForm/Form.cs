@@ -36,11 +36,23 @@ namespace Tz.Data.UIForm
                 .AndWhere(TzAccount.Form.Table, TzAccount.Form.FormID.Name, Compare.Equals, DBConst.String(formid));
             return db.GetDatatable(select);
         }
-
+       
         public string Save(string clientid, string formName,
             string componentid,
             int formtype,
-            string formKeys           )
+            string formKeys,
+            string successmessage,
+            bool capturelocation,
+            bool captureip,
+            string errormessage,
+            bool enableDefault,
+            string submit,
+            string reset,
+            string update,
+            string cancel,
+            string ipaddress,
+            string location
+           )
         {
             DBDatabase db;
             db = base.Database;
@@ -53,6 +65,19 @@ namespace Tz.Data.UIForm
              TzAccount.Form.Name.Name,
              TzAccount.Form.FormType.Name,
              TzAccount.Form.FormKeys.Name,
+
+             TzAccount.Form.SuccessMessage.Name,
+             TzAccount.Form.CaptureLocation.Name,
+             TzAccount.Form.CaptureIPaddress.Name,
+             TzAccount.Form.ErrorMessage.Name,
+             TzAccount.Form.EnableDefaultAction.Name,
+             TzAccount.Form.Submit.Name,
+              TzAccount.Form.Reset.Name,
+             TzAccount.Form.Update.Name,
+             TzAccount.Form.Cancel.Name,
+             TzAccount.Form.IPAddress.Name,
+             TzAccount.Form.Location.Name,
+
              TzAccount.Form.LastUPD.Name)
              .Values(
              DBConst.String(clientid),
@@ -61,8 +86,21 @@ namespace Tz.Data.UIForm
              DBConst.String(formName),
               DBConst.Int32(formtype),
               DBConst.String(formKeys),
+
+                DBConst.String(successmessage),
+                   DBConst.Const(DbType.Boolean,capturelocation),
+                     DBConst.Const(DbType.Boolean,captureip),
+                      DBConst.String(errormessage),
+                        DBConst.Const(DbType.Boolean,enableDefault),
+                          DBConst.String(submit),
+                            DBConst.String(reset),
+                                DBConst.String(update),
+                                    DBConst.String(cancel),
+                                        DBConst.String(ipaddress),
+                                            DBConst.String(location),
+
              DBConst.DateTime(DateTime.Now)
-           
+
              );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -80,7 +118,18 @@ namespace Tz.Data.UIForm
             }
         }
 
-        public bool Update(string clientid, string formName,string formid,string formkeys
+        public bool Update(string clientid, string formName,string formid,string formkeys,
+               string successmessage,
+            bool capturelocation,
+            bool captureip,
+            string errormessage,
+            bool enableDefault,
+            string submit,
+            string reset,
+            string update,
+            string cancel,
+            string ipaddress,
+            string location
             )
         {
             DBDatabase db;
@@ -88,13 +137,13 @@ namespace Tz.Data.UIForm
             DBComparison client = DBComparison.Equal(DBField.Field(TzAccount.Form.ClientID.Name), DBConst.String(clientid));
             DBComparison form = DBComparison.Equal(DBField.Field(TzAccount.Form.FormID.Name), DBConst.String(formid));
 
-            DBQuery update = DBQuery.Update(TzAccount.Form.Table).Set(
+            DBQuery upd = DBQuery.Update(TzAccount.Form.Table).Set(
             TzAccount.Form.Name.Name, DBConst.String(formName)
             ).Set(
             TzAccount.Form.FormKeys.Name, DBConst.String(formkeys)
             ).WhereAll(client, form);
 
-            int i = db.ExecuteNonQuery(update);
+            int i = db.ExecuteNonQuery(upd);
             if (i > 0)
             {
                 return true;

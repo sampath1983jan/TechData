@@ -41,10 +41,10 @@ namespace Tz.Security
         /// 
         /// </summary>
         /// <param name="userID"></param>
-        public User(string userID,string clientID)
+        public User(string userID)
         {
             _userid = userID;
-            this.ClientID = clientID;
+       //     this.ClientID = clientID;
             dUser = new Tz.Data.Security.User();
          //   UserRole = new UserSecurityGroup();
             Load();
@@ -115,12 +115,13 @@ namespace Tz.Security
                    //.Add(Tz.Global.TzAccount.User.UserType.Name, "UserType")
                    .Add(Tz.Global.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
+                   .Add(Tz.Global.TzAccount.User.UserRole.Name, "UserGroupID")
                    , null, null).FirstOrDefault();
                 this.Merge<User>(c);
-                if (dt.Rows[0]["UserRole"] == null)
-                {
-                    this.UserGroupID = (string)dt.Rows[0]["UserRole"];
-                }
+                //if (dt.Rows[0]["UserRole"] == null)
+                //{
+                //    this.UserGroupID = dt.Rows[0]["UserRole"] == null ? "" : (string)dt.Rows[0]["UserRole"];
+                //}
                 _isauth = true;
             }
             else
@@ -143,12 +144,13 @@ namespace Tz.Security
                  // .Add(Tz.Global.TzAccount.User.UserType.Name, "UserType")
                  .Add(Tz.Global.TzAccount.User.Status.Name, "Status")
                  .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
+                 .Add(Tz.Global.TzAccount.User.UserRole.Name, "UserGroupID")
                  , null, null).FirstOrDefault();
                 //  this.Merge<User>(c);
-                if (dt.Rows[0]["UserRole"] != null)
-                {
-                    c.UserGroupID = (string)dt.Rows[0]["UserRole"];
-                }
+                //if (dt.Rows[0]["UserRole"] != null)
+                //{
+                //    c.UserGroupID = dt.Rows[0]["UserRole"] ==null? "" :(string)dt.Rows[0]["UserRole"];
+                //}
                 _isauth = true;
             }
             else
@@ -171,15 +173,16 @@ namespace Tz.Security
                      .Add(Tz.Global.TzAccount.User.FirstName.Name, "FirstName")
                    .Add(Tz.Global.TzAccount.User.LastName.Name, "LastName")
                    .Add(Tz.Global.TzAccount.User.Email.Name, "Email")
-                   // .Add(Tz.Global.TzAccount.User.UserType.Name, "UserType")
+                    .Add(Tz.Global.TzAccount.User.ClientID.Name, "ClientID")
                    .Add(Tz.Global.TzAccount.User.Status.Name, "Status")
                    .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
+                    .Add(Tz.Global.TzAccount.User.UserRole.Name, "UserGroupID")
                    , null, null).FirstOrDefault();
                 this.Merge<User>(c);
-                if (dt.Rows[0]["UserRole"] == null)
-                {
-                    this.UserGroupID = (string)dt.Rows[0]["UserRole"];
-                }
+                //if (dt.Rows[0]["UserRole"] == null)
+                //{
+                //    this.UserGroupID = (string)dt.Rows[0]["UserRole"];
+                //}
                 _isauth = true;
                 UserGroup = new UserGroup(this.UserID,this.ClientID,this.UserGroupID);
             }
