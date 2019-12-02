@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="container">
+   
+    <App id="test"></App>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var moment = {};
+        require(
+            // configuration
+            {
+                paths: {
+                    'jquery': '/Scripts/jquery-3.3.1',
+                    'popper': '/Scripts/popper',
+                    'bootstrap': '/Scripts/bootstrap',
+                    "combobox": "/Scripts/Controls/ComboBox/ComboBox",
+                    "token": "/Scripts/Controls/Tokenizer/Tokenizer",
+                    "controls": "/scripts/controls/Control-vue",
+                    "tzGrid": "/vue/controls/Grid",
+                    "touch": "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min",
+                    "jqueryui": "/Scripts/jquery-ui",
+                    "datepicker": "/Scripts/Controls/datepicker/daterangepicker",
+                    "bdatepicker": "/Scripts/Controls/datepicker/bootstrap-datepicker",
+                    "timer": "/Scripts/Controls/timer",
+                    "moment": "/Scripts/Controls/datepicker/moment",
+                    "color": "/Scripts/Controls/ColorPicker/bootstrap-colorpicker",
+                    "input": "/vue/controls/input",
+                    "textarea": "/vue/controls/textarea",
+                    "dropdown": "/vue/controls/dropdown",
+                    "NumberSlider": "/Scripts/Controls/NumberSlider/NumberSlider",
+                    "calendar": "/Scripts/Controls/calendar",
+                    "Pagination": "/Scripts/Controls/Pagination/Pagination",
+                    "tzSearch": "/vue/controls/Search",
+                    "Tokenizer": "/vue/controls/Tokenizer",
+                    "tzprogress": "/vue/controls/Progress",
+                    "cvprogress": "/vue/controls/Circular-Progress",
+                    "toaster": "/vue/controls/toast",
+                    "pMeter": "/vue/controls/progressmeter",
+                    urlArgs: 'bust=v27',
+                }
+            },
+            // load libs right now
+            ["jquery", "popper", "bootstrap", "combobox", "controls", "input", "textarea", "tzSearch", "dropdown",
+                "tzGrid", "token", "Tokenizer", 'tzprogress', "cvprogress", "toaster", "pMeter", "moment", "calendar", "timer", "color", "datepicker",
+                "bdatepicker", "NumberSlider", "Pagination", "touch", "jqueryui"],  
+            function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,
+                ProgressMeter, mom, calendar, color, NumberSlider, page, touch) {
+                var a = httpVueLoader('/vue/App/App.vue?5');
+                new Vue({
+                    components: {
+                        'App': a,
+                        'tzinput': input,
+                        'dropdown': dropdown,
+                        "Griod": Griod,
+                        "Searching": tzSearch,
+                        "Tokenizer": token,
+                        "mvprogress": tProgress,
+                        "cvprogress": cvprogress,
+                        "toaster": toaster,
+                        "ProgressMeter": ProgressMeter
+                        //'Client': client
+                    },
+                    data: function () {
+                        return {}
+                    },
+                    methods: {
+                        newApp:function() {
+                            alert("mew fomr");
+                        },                       
+                    },
+                    watch: {
+                        //inputtext: function () {
+                        //    //debugger;
+                        //    //this.inputtext = val;
+                        //}
+                    },
+                    computed: {
+                        getVal: function () {
+                            //     return this.inputtext / 2;
+                        }
+
+                    }
+                }).$mount('#container');
+
+
+                Vue.filter('formatDate', function (value) {
+                    if (value) {
+                        return mom(String(value)).format('MMM DD, YYYY')
+                    }
+                });
+            }
+        );
+    });
+    
+
+    require(['/Scripts/jquery-3.3.1.js',"/Scripts/Controls/Jpopup.js"], function (jquery,pop) {
+     
+    (function ($app) {        
+            $app.App = function (options) {
+                var defaults = {
+                    plc: "",
+                    AppID: "",
+                    template: "<div><h2>Create New app to build your service</h2><div style='margin-left:35%'><label>App Name</label><input type='text'></input></div></div>"
+                };
+                var opt = $.extend({}, defaults, options);
+                var render = function () {
+                    if (opt.AppID == "") {
+                        uiRender();
+                    } else {
+                        getAppDetail(function () {
+
+                        });
+                    }
+                }
+                var uiRender = function () {
+                    //$("#" + opt.plc).append(opt.template);
+                    //$("#" + opt.plc).find("input").Input({
+                    //    id: 'txtMy',
+                    //    isRequired: false,
+                    //    enabletooltip: true,
+                    //    min: 0,
+                    //    inputType: 1,
+                    //    max: 5,
+                    //    limit: true
+                    //}
+                    //)
+                }
+                var getAppDetail = function (onComplete) {
+
+                }
+                var Save = function () {
+
+                }
+                render();
+        }
+       
+    })($) ;
+        })
+</script>

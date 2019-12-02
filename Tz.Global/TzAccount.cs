@@ -151,13 +151,16 @@ namespace Tz.Global
             public static readonly DBColumn Description = DBColumn.Column("Description", System.Data.DbType.String, 1000);
             public static readonly DBColumn CreatedOn = DBColumn.Column("CreatedOn", System.Data.DbType.DateTime, 255);
             public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.String, 255);
+            public static readonly DBColumn TimeZone = DBColumn.Column("TimeZone", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn DateFormat = DBColumn.Column("DateFormat", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn TimeFormat = DBColumn.Column("TimeFormat", System.Data.DbType.Int32, 255);
         }
         public class AppElements
         {
             public const string Table = "cf_appElements";
             public static readonly DBColumn ClientID = DBColumn.Column("clientid", System.Data.DbType.String, 255);
             public static readonly DBColumn AppID = DBColumn.Column("AppID", System.Data.DbType.String, 255);
-            public static readonly DBColumn ElementID = DBColumn.Column("FormID", System.Data.DbType.String, 255);
+            public static readonly DBColumn ElementID = DBColumn.Column("ElementID", System.Data.DbType.String, 255);
             public static readonly DBColumn ElementType = DBColumn.Column("ElementType", System.Data.DbType.String, 255);
             public static readonly DBColumn CreatedOn = DBColumn.Column("CreatedOn", System.Data.DbType.DateTime, 255);
         }        
@@ -176,6 +179,7 @@ namespace Tz.Global
             public static readonly DBColumn NewLayout = DBColumn.Column("NewLayout", System.Data.DbType.String, 655000, DBColumnFlags.Nullable);
             public static readonly DBColumn ReadLayout = DBColumn.Column("ReadLayout", System.Data.DbType.String, 655000, DBColumnFlags.Nullable);
             public static readonly DBColumn IsGlobal = DBColumn.Column("IsGlobal", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
+            public static readonly DBColumn ComponentState = DBColumn.Column("ComponentState", System.Data.DbType.Int32, DBColumnFlags.Nullable);
             public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class ComponentAttribute

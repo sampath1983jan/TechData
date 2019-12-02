@@ -136,8 +136,8 @@ namespace Tz.Data.Component
                   TzAccount.Component.ReadLayout.Name,
                   TzAccount.Component.TableID.Name,
                   TzAccount.Component.ClientID .Name ,
-                  TzAccount.Component.Category.Name
-
+                  TzAccount.Component.Category.Name,
+                  TzAccount.Component.ComponentState.Name
                   )
                   .Values(
                   dbcomponentid,
@@ -150,7 +150,8 @@ namespace Tz.Data.Component
                   dbreadlayout,
                   dbtableid,
                   dbclientid,
-                  dbcategory
+                  dbcategory,
+                  DBConst.Int32(0) // pending
                   );
                 int val = 0;
                 using (DbTransaction trans = db.BeginTransaction())
@@ -166,6 +167,26 @@ namespace Tz.Data.Component
                 {
                     return "";
                 }
+        }
+
+        public bool ChangeState(string clientid, string componentid,int state) {
+            DBDatabase db;
+            db = base.Database;
+            DBComparison dbcompo = DBComparison.Equal(DBField.Field(TzAccount.Component.ComponentID.Name), DBConst.String(componentid));
+            DBComparison dbclient = DBComparison.Equal(DBField.Field(TzAccount.Component.ClientID.Name), DBConst.String(clientid));
+            DBQuery update = DBQuery.Update(TzAccount.Component.Table).Set(
+            TzAccount.Component.ComponentState.Name, DBConst.Int32(state)
+            ).WhereAll(dbcompo, dbclient);
+
+            int i = db.ExecuteNonQuery(update);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         /// <summary>
         /// 

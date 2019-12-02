@@ -25,6 +25,17 @@ namespace Tz.Data.App
                 .WhereField(TzAccount.App.Table, TzAccount.App.ClientID.Name, Compare.Equals, DBConst.String(clientid));
             return db.GetDatatable(select);
         }
+        public DataTable GetApp(string clientid,string appid)
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+
+            select = DBQuery.SelectAll(TzAccount.App.Table).From(TzAccount.App.Table)
+                .WhereField(TzAccount.App.Table, TzAccount.App.ClientID.Name, Compare.Equals, DBConst.String(clientid))
+                .AndWhere(TzAccount.App.Table, TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid));
+            return db.GetDatatable(select);
+        }
         public DataTable GetAppComponent(string clientid,string appid) {
             DBDatabase db;
             db = base.Database;
@@ -188,7 +199,7 @@ namespace Tz.Data.App
                 return false;
             }
         }
-        public bool AssignElement(string clientid, string appid, string elementtype, string elementid) {
+        public bool AssignElement(string clientid, string appid, int elementtype, string elementid) {
             DBDatabase db;
             db = base.Database;
             DBQuery insert = DBQuery.InsertInto(TzAccount.AppElements.Table).Fields(
@@ -201,7 +212,7 @@ namespace Tz.Data.App
               DBConst.String(clientid),
                DBConst.String(appid),
                DBConst.String(elementid),
-               DBConst.String(elementtype),
+               DBConst.Int32(elementtype),
                DBConst.DateTime(DateTime.Now));
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())

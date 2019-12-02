@@ -1,24 +1,29 @@
 ﻿ <template>
+   
      <div class="list">
-         <ul>
-             <li v-for="d in Clients">
-                 <div class='row rowlight'>
-                     <div class='col-md-10'>
-                         <router-link :to="d.url">
-                             {{d.ClientName}} - {{d.ClientNo}}
-                         </router-link>
+         <div>
+             
+             <ul>
+                 <li v-for="d in Clients">
+                     <div class='row rowlight'>
+                         <div class='col-md-10'>
+                             <router-link :to="d.url">
+                                 {{d.ClientName}} - {{d.ClientNo}}
+                             </router-link>
+                         </div>
+                         <div class='col-md-2'>
+                             <a href="#" style="text-indent:-100%;" v-bind:name="d.ClientID">
+                                 <span title="Delete" act="del" class="remove fa fa-remove"></span>
+                             </a>
+                         </div>
                      </div>
-                     <div class='col-md-2'>
-                         <a href="#" style="text-indent:-100%;" v-bind:name="d.ClientID">
-                             <span title="Delete" act="del" class="remove fa fa-remove"></span>
-                         </a>
-                     </div>
-                 </div>
-             </li>
-         </ul>
-         <!--<router-link to="/foo">Go to Foo</router-link> 
-         <router-link to="/Bar"> Go to Bar</router-link>--> 
-      <router-view :key="$route.fullPath"></router-view> 
+                 </li>
+             </ul>
+         </div>
+         
+         <!--<router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/Bar"> Go to Bar</router-link>-->
+         <router-view :key="$route.fullPath"></router-view>
      </div>
 
 </template> 
@@ -42,6 +47,7 @@
              this.getClient(this.$route.params.id);
          },
          methods: {
+               
          getClient: function (id) {
                  var that = this;
                  $.ajax('/Client/Get',

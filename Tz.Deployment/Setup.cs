@@ -13,13 +13,11 @@ namespace Tz.Deployment
         {
 
         }
-
         public void Reset(string conn)
         {
             Tz.Data.Setup s = new Data.Setup(conn);
             s.Clear();
         }
-
         public void Execute(string conn)
         {
             try
@@ -137,15 +135,11 @@ namespace Tz.Deployment
                         throw ex;
                     }
                 }
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
-
         }
 
         public void ExecuteClientSetup(string conn)

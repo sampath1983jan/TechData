@@ -35,18 +35,37 @@ namespace Tz.Core
             _clientID = clientID;            
             _component = new Component(this.ClientID, ComponentID);
         }
-        
-       
+        /// <summary>
+        /// this constructor help to create component
+        /// </summary>
+        /// <param name="component"></param>
+        public ComponentManager(IComponent component) {
+            component.ComponentID = "";
+            _component = component;
+        }       
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public string SaveComponent() {
-            if (Component.Attributes.Count == 0) {
+            //if (Component.Attributes.Count == 0) {
+            //    throw new Exception("", null);
+            //}
+            Component c = (Component)_component;
+            c.SaveAsDraft();
+            return Component.ComponentID;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string Publish() {
+            if (Component.Attributes.Count == 0)
+            {
                 throw new Exception("", null);
             }
             Component c = (Component)_component;
-            c.Save();
+            c.Publish(); 
             return Component.ComponentID;
         }
         /// <summary>

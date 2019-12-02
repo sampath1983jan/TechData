@@ -322,6 +322,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\App\AppController.cs" />
     <Compile Include="Controllers\Authentication\AuthenticationController.cs" />
     <Compile Include="Controllers\Client\ClientController.cs" />
     <Compile Include="Controllers\Component\ComponentManagerController.cs" />
@@ -362,11 +363,13 @@
     <Content Include="Content\AppStyle\datepicker.css" />
     <Content Include="Content\AppStyle\daterangepicker.css" />
     <Content Include="Content\AppStyle\fileuploader.css" />
+    <Content Include="Content\AppStyle\FontAwesome.css" />
     <Content Include="Content\AppStyle\img\alpha-horizontal.png" />
     <Content Include="Content\AppStyle\img\alpha.png" />
     <Content Include="Content\AppStyle\img\hue-horizontal.png" />
     <Content Include="Content\AppStyle\img\hue.png" />
     <Content Include="Content\AppStyle\img\saturation.png" />
+    <Content Include="Content\AppStyle\JPopup.css" />
     <Content Include="Content\AppStyle\Pagination.css" />
     <Content Include="Content\AppStyle\ProgressMeter.css" />
     <Content Include="Content\AppStyle\SwitchBotton.css" />
@@ -384,6 +387,9 @@
       <DependentUpon>Main.css</DependentUpon>
     </Content>
     <Content Include="Content\NT-Node.css" />
+    <Content Include="Content\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\webfonts\fa-solid-900.svg" />
     <Content Include="dist\build.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -819,6 +825,7 @@
     <Content Include="Scripts\Controls\Calendar.js" />
     <Content Include="Scripts\Controls\Control-vue.js" />
     <Content Include="Scripts\Controls\interact.js" />
+    <Content Include="Scripts\Controls\Jpopup.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\requires.js" />
     <Content Include="Scripts\vue.js" />
@@ -827,6 +834,7 @@
     <Content Include="Scripts\vue\vue.esm.js" />
     <Content Include="Scripts\vue\vue.js" />
     <Content Include="Scripts\vue\vue.min.js" />
+    <None Include="vue\Component\CSimpleForm.vue" />
     <Content Include="vue\Controls\Circular-Progress.js" />
     <Content Include="vue\Controls\dropdown.js" />
     <Content Include="vue\Controls\Form-Vue.js" />
@@ -849,6 +857,18 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\theme.scss" />
+    <Content Include="Content\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Controls\ColorPicker\bootstrap-colorpicker.js" />
     <Content Include="Scripts\Controls\ComboBox\ComboBox.js" />
@@ -919,6 +939,12 @@
     <Content Include="vue\Client\Client.vue" />
     <Content Include="Views\Home\index.cshtml" />
     <Content Include="Views\ComponentManager\Index.cshtml" />
+    <Content Include="Views\App\Index.cshtml" />
+    <Content Include="vue\App\App.vue" />
+    <Content Include="vue\App\AppForm.vue" />
+    <Content Include="Views\App\AppInfo.cshtml" />
+    <Content Include="Views\Shared\AppLayout.cshtml" />
+    <Content Include="vue\Component\ComponentList.vue" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -946,17 +972,57 @@
       <Project>{0A03DAF8-213B-43B0-B704-4E032CAEA07F}</Project>
       <Name>Tech.QScript</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.Action\Tz.UIAction.csproj">
+      <Project>{27c2e113-33df-4fd1-9cf8-1221121c0f78}</Project>
+      <Name>Tz.UIAction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.App\Tz.App.csproj">
+      <Project>{5ccf5d2f-af1b-4883-8fb6-7ef93ce63cb9}</Project>
+      <Name>Tz.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Cache\Tz.Cache.csproj">
+      <Project>{da90c649-2bf1-4e26-b5e5-0ca76880780d}</Project>
+      <Name>Tz.Cache</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
       <Project>{0f9e9e96-db86-46ef-8a33-c900716c0712}</Project>
       <Name>Tz.ClientManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.CoreUI\Tz.CoreUI.csproj">
+      <Project>{f840c1c3-6df8-414e-a8eb-dbc0218ec784}</Project>
+      <Name>Tz.CoreUI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.Core\Tz.Core.csproj">
       <Project>{67584ee3-663a-48fb-9cde-ae164063ea09}</Project>
       <Name>Tz.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.Dashboard\Tz.Dashboard.csproj">
+      <Project>{00f37893-b65b-464d-ae4f-c2aad259444c}</Project>
+      <Name>Tz.Dashboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Feature\Tz.Feature.csproj">
+      <Project>{2758d6ae-86b3-4a2b-b48a-6a708379a2ef}</Project>
+      <Name>Tz.Feature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Form\Tz.UIForms.csproj">
+      <Project>{28436f80-c091-42a5-9f15-668fac4514b8}</Project>
+      <Name>Tz.UIForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Global\Tz.Global.csproj">
+      <Project>{27d9546b-9499-425b-ac56-602e9cf7bd8a}</Project>
+      <Name>Tz.Global</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tz.Net\Tz.Net.csproj">
       <Project>{55AB9F49-FA31-4EC1-B4E9-589A915EE221}</Project>
       <Name>Tz.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Page\Tz.Page.csproj">
+      <Project>{c43f7426-733d-4953-bfdb-2cba5b8c3bf5}</Project>
+      <Name>Tz.Page</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Report\Tz.Report.csproj">
+      <Project>{e4ca5c1b-f003-43b8-9521-3c85a9325e95}</Project>
+      <Name>Tz.Report</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tz.Security\Tz.Security.csproj">
       <Project>{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}</Project>

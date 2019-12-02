@@ -22,8 +22,7 @@
             mounted: function () {
                 var othis = this;
          
-                this.$nextTick(function () {
-                    
+                this.$nextTick(function () {                    
                     $(this.$parent.$el).find("table").DataGrid({
                         columns: othis.Cols,
                         data: othis.datasource,

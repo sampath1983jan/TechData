@@ -8,6 +8,8 @@ using Tz.UIForms;
 using Tz.Controls;
 using Tz.UIAction;
 using System.Data;
+using Tz.ClientManager;
+
 namespace Tz.CoreUI
 {
     /// <summary>

@@ -170,13 +170,14 @@ define(function () {
                     return [ti, mi, mer];
 
                 },
-                handleInput:function(e) {
-                   
-                    console.log(this.text);
-                     this.$emit('input', this.text);
-                }, changeinput: function (e) {
+                handleInput: function (e) {    
+                   // console.log(this.text);
+                    this.$emit('input', this.text);
+                    this.$emit('handle-Input', this.text);
+                },
+                changeinput: function (e) {
                  //   alert(this.text);
-                //    console.log(this.text);
+                   console.log(this.text);
                     this.$emit('input', this.text);
                 },
                 setValue: function (value) {
@@ -190,7 +191,8 @@ define(function () {
                         return 'required';
                     }
 
-                }, getType: function () {
+                },
+                getType: function () {
                     if (this.attribute.inputType == "number") {
                         return "date";
                     }

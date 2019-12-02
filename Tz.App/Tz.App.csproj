@@ -49,5 +49,71 @@
     <Compile Include="AppManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tech.Data\Tech.Data.csproj">
+      <Project>{6605498e-3be2-4b50-af67-d5a9084a5f00}</Project>
+      <Name>Tech.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tech.QScript\Tech.QScript.csproj">
+      <Project>{0a03daf8-213b-43b0-b704-4e032caea07f}</Project>
+      <Name>Tech.QScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Action\Tz.UIAction.csproj">
+      <Project>{27c2e113-33df-4fd1-9cf8-1221121c0f78}</Project>
+      <Name>Tz.UIAction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Analytic\Tz.Analytic.csproj">
+      <Project>{11d0d7ea-1d34-40ee-89c3-84d5a38479f9}</Project>
+      <Name>Tz.Analytic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Cache\Tz.Cache.csproj">
+      <Project>{da90c649-2bf1-4e26-b5e5-0ca76880780d}</Project>
+      <Name>Tz.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.ClientManager\Tz.ClientManager.csproj">
+      <Project>{0f9e9e96-db86-46ef-8a33-c900716c0712}</Project>
+      <Name>Tz.ClientManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Core\Tz.Core.csproj">
+      <Project>{67584ee3-663a-48fb-9cde-ae164063ea09}</Project>
+      <Name>Tz.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Dashboard\Tz.Dashboard.csproj">
+      <Project>{00f37893-b65b-464d-ae4f-c2aad259444c}</Project>
+      <Name>Tz.Dashboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Data\Tz.Data.csproj">
+      <Project>{a25eb976-3db6-4de4-8ea6-5d33e6cb5867}</Project>
+      <Name>Tz.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Feature\Tz.Feature.csproj">
+      <Project>{2758d6ae-86b3-4a2b-b48a-6a708379a2ef}</Project>
+      <Name>Tz.Feature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Form\Tz.UIForms.csproj">
+      <Project>{28436f80-c091-42a5-9f15-668fac4514b8}</Project>
+      <Name>Tz.UIForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Global\Tz.Global.csproj">
+      <Project>{27d9546b-9499-425b-ac56-602e9cf7bd8a}</Project>
+      <Name>Tz.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Page\Tz.Page.csproj">
+      <Project>{c43f7426-733d-4953-bfdb-2cba5b8c3bf5}</Project>
+      <Name>Tz.Page</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Report\Tz.Report.csproj">
+      <Project>{e4ca5c1b-f003-43b8-9521-3c85a9325e95}</Project>
+      <Name>Tz.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.Security\Tz.Security.csproj">
+      <Project>{c0c78509-ebfd-4ffd-b633-b2ee45156bc5}</Project>
+      <Name>Tz.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz.WebControl\Tz.Controls.csproj">
+      <Project>{918c3bfb-d7ed-4477-818b-475ca43b81ab}</Project>
+      <Name>Tz.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

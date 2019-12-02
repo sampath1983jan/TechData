@@ -19,9 +19,9 @@ define(function () {
                     toasts: this.toas,                    
                     template: '<div    id="{0}" class="toast" data-autohide="false">'
                         + '<div class="toast-header">'
-                        + '<img src="..." class="rounded mr-2" alt="...">'
+                        + '<img src="..." class="rounded mr-2" alt="..." style="display:none">'
                         + '<strong class="mr-auto"></strong>'
-                        + '<small>11 mins ago</small>'
+                        + '<small></small>'
                         + '<button type="button" class="ml-2 mb-1 close">'
                         + ' <span aria-hidden="true">&times;</span>'
                         + '</button>'
@@ -64,8 +64,9 @@ define(function () {
             },
             methods: {
                 close: function (index) {
+                 
                     var othis = this;
-                    $("toz" + index).click(function () {
+                    $("toz_" + index + "_" + this.id).click(function () {
                         othis.toasts.splice(index, 1);
                     });  
                 },
@@ -79,23 +80,60 @@ define(function () {
                 resetIndex: function () {
                     var othis = this;
                     $.each(this.toasts, function (idx, v) {
-                        var id = "toz_" + idx;
+                        var id = "toz_" + idx + "_" + othis.id;
                         $("#" + id).find(".toast-header").find("[type=button]").attr("index", othis.toasts.length -1);
                     })
                 },  
                 render: function (index, item) {                   
                     var othis = this;
-                    var id = "toz_" + index;
-                    var el = $("#" + this.id).append(this.template.f(id));
+                
+                    var id = "toz_" + index + "_" + this.id;
+                  
+                    var el = {};
+                    if (item.template == "") {
+                          el = $("#" + this.id).append(this.template.f(id));
+                    } else {
+                        el = $("#" + this.id).append(item.template.f(id));
+                    }
+                   
                     $("#" + this.id).css("z-index","100")
                     $("#" + id).find(".toast-body").append(item.body);
+                    if (item.bodyCss != undefined) {
+                        $("#" + id).find(".toast-body").addClass(item.bodyCss);
+                    }
+                    
                     $("#" + id).find(".toast-header").find("strong").append(item.header);
                     $("#" + id).find(".toast-header").find("[type=button]").attr("index", index);
                   //  $("#toz_" + index).toast("show");
+                    if (item.autohide == true && item.header == "") {
+                        $("#" + id).find(".toast-header").hide();
+                    }
                     $("#" + id).animate({
                         opacity: "1"
-                    }, 400, "linear", function () {
+                    }, 1000, "linear", function () {
+                            var kthis = this;
+                            
+                            if (item.autohide == true) {
+                                var inds = $(othis).attr("id").split[1];
+                                othis.toasts.splice(index, 1);
+                                othis.resetIndex();
+                                setTimeout(function () {
+                                    $(kthis).remove();
+                                    if (othis.type == "linear") {
+                                        if (othis.toasts.length > 0) {
+                                            othis.render(0, othis.toasts[0]);
+                                        }
+                                    }
+                                }, 3000);
+                            }      
 
+                            
+
+                            //if (othis.type == "linear") {
+                            //    if (othis.toasts.length > 0) {
+                            //        othis.render(0, othis.toasts[0]);
+                            //    }
+                            //}     
                     });
                     $("#" + id).find(".toast-header").find("[type=button]").click(function () {
                         var index = $(this).attr("index");
@@ -104,12 +142,15 @@ define(function () {
                         $(this).parent().parent().animate({
                             opacity: "0"
                         }, 400, "linear", function () {
-                                $(this).remove();
+                                
+                                var kthis = this;
+                                $(kthis).remove();
                                 if (othis.type == "linear") {
                                     if (othis.toasts.length > 0) {
                                         othis.render(0, othis.toasts[0]);
-                                    }   
-                                }                                                          
+                                    }
+                                }
+                                                                                        
                               
                         });
                         //$(this).parent().parent().fadeOut(600, function () {
@@ -143,7 +184,7 @@ define(function () {
                 }
                 ,
                 setposition: function () {
-                    var o = {};
+                    var o = {};  
                     o.position = "fixed";
                     if (this.position == "top left" || this.position == "left top") {
                         o.left = "20px";

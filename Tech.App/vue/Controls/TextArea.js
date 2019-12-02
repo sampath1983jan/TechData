@@ -114,25 +114,25 @@ define(function () {
                 var othis = this;
                 this.$nextTick(function () {
                     this.attr.inputType = 8;
-
-                    setTemplate(this.attr.inputType, this.$parent.$el, this.attr);
-                    $(this.$parent.$el).find("textarea").Input(this.attr);
-                    $(this.$parent.$el).find("textarea").Input("text", this.text);                
-                    $(othis.$parent.$el).find('textarea').keypress(function () {
+            
+                    setTemplate(this.attr.inputType, this.$el, this.attr);
+                    $(this.$el).find("textarea").Input(this.attr);
+                    $(this.$el).find("textarea").Input("text", this.text);                
+                    $(this.$el).find('textarea').keypress(function () {
                         othis.text = $(this).val();
                         othis.$emit("text", othis.text);
                     });
-                    $(othis.$parent.$el).find('textarea').blur(function () {
+                    $(this.$el).find('textarea').blur(function () {
                         //othis.text = $(this).val();
                         //othis.$emit("text", othis.text);
                     });
-                    $(othis.$parent.$el).find('textarea').change(function () {
+                    $(this.$el).find('textarea').change(function () {
 
                         //othis.text = $(this).val();
 
                         othis.$emit("text", othis.text);
                     });
-                    $(othis.$parent.$el).find('input').css({ "border": "1px solid #aaa", "border-radius": "5px" });
+                    $(this.$el).find('textarea').css({ "border": "1px solid #aaa", "border-radius": "5px" });
                 });
             },
             updated: function () {

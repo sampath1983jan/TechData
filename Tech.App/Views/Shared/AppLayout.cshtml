@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,400i&display=swap" rel="stylesheet">
+    <script src="~/Scripts/Controls/interact.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Scripts/Controls/NumberSlider/Numberslider.css" rel="stylesheet" />
+
+
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/appstyle")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+
+    @*<script type="text/javascript" src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>*@
+    @Scripts.Render("~/bundles/jqueryui")
+
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/d3.js"></script>
+    @*<script src="~/Scripts/WebChat.js"></script>*@
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Scripts/Controls/Control-vue.js"></script>
+
+
+
+    <link href="~/Content/NT-Node.css" rel="stylesheet" />
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+    <link href="~/Content/AppStyle/FontAwesome.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
+
+    <script src="~/Scripts/NT/NT.js"></script>
+    <script src="~/Scripts/NT/NT-NodeEdge.js"></script>
+    <script src="~/Scripts/NT/NT-Node.js"></script>
+    <script src="~/Scripts/NT/ComponentModal.js"></script>
+    <script src="~/Scripts/NT/NT-context.js"></script>
+
+    <script src="~/Scripts/Jcookie.js"></script>
+    <script src="~/Scripts/Controls/Jpopup.js"></script>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    @*<script src="~/Scripts/vue/vue.esm.js"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script src="~/Scripts/requires.js"></script>
+
+
+    @*<script src="~/Scripts/ace/ace.js"></script>*@
+    <style>
+        .feedback {
+            background-color: #fff;
+            color: #000000;
+            border-left: 5px solid #227f85;
+        }
+
+        .hidden {
+            width: 80%;
+            z-index: 2;
+            position: absolute;
+            left: -1800px;
+            background: #fff;
+            color: #000;
+            float: left;
+            border-right: 0px solid #808080;
+            height: 230px;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.10);
+        }
+        .screen {
+            position:absolute;
+            width:100%;
+            z-index:1;
+            height:500px;
+           
+            background-color:rgba(128, 128, 128, 0.31);
+        }
+        .hiddenhome {
+            width: 20% !important;
+            left: -1000px;
+        }
+
+        .bar {
+            background-color: #241d1d;
+            color: #fff;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+        }
+
+        .elementItem {
+            float: left;
+            width: 20%;
+            margin: 15px 15px;
+            text-align:center;
+            padding:5px;
+        }
+        .elementItem:hover {
+            color:#ff0000;
+            cursor:pointer;
+            border-bottom:2px solid #808080;
+           
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var isShown = false;
+            $('#apptitle').click(function () {
+
+                var windowHeight = window.innerHeight;
+                var h = windowHeight - $("#apptitle").innerHeight();
+                h = h;
+                $('#slider').height(h + "px");
+                $(".screen").css("height", h + "px");
+                var hidden = $('#slider');
+                if (hidden.hasClass('visible')) {
+                    hidden.animate({ "left": "-1800px" }, "slow").removeClass('visible');
+                    $(".screen").addClass("hidden");
+                    $(".screen").css("left", "-1800px")
+                } else {
+                    hidden.animate({ "left": "0px" }, "slow").addClass('visible');
+                    $(".screen").removeClass("hidden");
+                    $(".screen").css("left", "0px")
+                    if (isShown == false) {
+                        getApps();
+                        //    isShown = true;
+                    }
+                }
+                $('#homesd').animate({ "left": "-1000px" }, "slow").removeClass('visible');
+            }); 
+            $(".screen").click(function () {
+                $('#slider').animate({ "left": "-1800px" }, "slow").removeClass('visible');
+                $(".screen").addClass("hidden");
+                $(".screen").css("left", "-1800px")
+            })
+            $("#newElemt").click(function (e) {
+                e.stopPropagation();
+              
+                var demoContent = '<div >'
+                    +'<div class="elementItem">'
+                    +'<h4>Forms</h4>'
+                        +'<i class="fas fa-file-code" style="font-size:70px"></i>'
+                        +'</div>'
+                    +'<div class="elementItem">'
+                        +' <h4>Components</h4>'
+                    +'<i class="fab fa-elementor" style="font-size:70px"></i>'
+                        +'</div>'
+                    +'<div class="elementItem"> '
+                        +' <h4>Pages</h4>'
+
+                        +' <i class="fas fa-file-alt" style="font-size:70px"></i>'
+                        +'</div>'
+                    +'<div class="elementItem">'
+                        +'<h4>Reports'
+                        +'</h4>'
+                        +'<i class="fas fa-file-word" style="font-size:70px"></i>'
+                        +'</div>'
+                        +'</div >'
+                var jPopupDemo = new jPopup({
+                    content: demoContent,
+                    hashtagValue: '#demopopup',
+                    shouldSetHash: false
+                });
+
+                $(".jPopup").find(".content").css("top", "40%");
+                $(".jPopup").find(".content").css("width", "90%");
+                $(".jPopup").find(".content").css("padding-left", "10%");
+
+            })
+            $("#homenav").click(function () {
+                var hidden = $('#homesd');
+                var windowHeight = window.innerHeight;
+                var h = windowHeight - $("#apptitle").innerHeight();
+                h = h;
+                $('#homesd').height(h + "px");
+
+                if (hidden.hasClass('visible')) {
+                    hidden.animate({ "left": "-1000px" }, "slow").removeClass('visible');
+                   
+                } else {
+                    hidden.animate({ "left": "0px" }, "slow").addClass('visible');
+                 
+                    if (isShown == false) {
+                        getApps();
+                        isShown = true;
+                    }
+                }
+                $('#slider').animate({ "left": "-1800px" }, "slow").removeClass('visible');
+            })
+
+            renderApp = function (data) {
+
+                var alt = "<div class=' list' style='' ><div class='stlabel'>Available Apps</div><ul>";
+                $.each(data, function (i, v) {
+                    alt = alt + "<li>";
+                    alt = alt + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.AppName + "</a></div>"
+                });
+                alt = alt + "</ul><div><a href='/App/Index'>Back to Home</a></div></div>";
+                $("#appContainer").append(alt);
+            }
+            renderComponent = function (data) {
+                var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Components</div><ul>";
+                $.each(data, function (i, v) {
+                    cmp = cmp + "<li>";
+                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
+                });
+                cmp = cmp + "</ul></div>";
+                $("#compContainer").append(cmp);
+            }
+            renderForm = function (data) {
+                var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Form</div><ul>";
+                $.each(data, function (i, v) {
+                    cmp = cmp + "<li>";
+                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
+                });
+                cmp = cmp + "</ul></div>";
+                $("#formContainer").append(cmp);
+            }
+            renderPage = function (data) {
+                var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Page</div><ul>";
+                $.each(data, function (i, v) {
+                    cmp = cmp + "<li>";
+                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
+                });
+                cmp = cmp + "</ul></div>";
+                $("#pageContainer").append(cmp);
+            }
+            getApps = function () {
+                var that = this;
+                $.ajax('/App/Get',
+                    {
+                        type: "GET",
+                        dataType: 'jsonp', // type of response data
+                        data: { clientid: "3271b7623dd34f7b96e574f2351a1486413346222" },
+                        // timeout milliseconds
+                        success: function (data, status, xhr) {   // success callback function
+
+                            $.each(data, function (i, v) {
+                                v.url = "/app/appinfo/" + v.AppID;
+                            });
+                            renderApp(data);
+                            renderComponent();
+                            renderForm();
+                            renderPage();
+                        },
+                        error: function (jqXhr, textStatus, errorMessage) { // error callback
+                            alert(errorMessage);
+                        }
+                    });
+            }
+        })
+
+    </script>
+</head>
+<body  style="padding-top:0px; margin-top:0px;">
+    <div>
+        <div id="navBar" class="bar">
+            <div class="row">
+                <div class="" id="homenav" style="margin:15px 0px; cursor:pointer">
+                    <i class="fas fa-bars" style="padding:0px 15px; font-size:18px;"></i>
+                </div>
+                <div id="apptitle" style="cursor:pointer" class="col-md-5">
+                    <a>
+                        <h2 style="margin-top:6px;float:left"></h2> <div class="" id="newElemt" style="margin:15px 0px; cursor:pointer;float:left">
+                            <i class="fas fa-plus" style="padding:0px 15px; font-size:15px;"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+        
+        @RenderBody()
+        <div id="tzContainer">
+            <div>
+                <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
+
+                </toaster>
+            </div>
+        </div>
+        <div id="tzFeedback">
+            <div>
+                <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
+
+                </toaster>
+            </div>
+        </div>
+        <div id="slider" class="hidden">
+            <div class="row">
+                <div class="col-md-3" id="compContainer"></div>
+                <div class="col-md-3" id="formContainer"></div>
+                <div class="col-md-3" id="pageContainer"></div>
+            </div>
+        </div>
+        <div id="homesd" class="hidden hiddenhome">
+            <div class="row">
+                <div class="col-md-12" id="appContainer"></div>
+            </div>
+        </div>
+        <div class="screen hidden" ></div>
+    </div>
+</body>
+</html>

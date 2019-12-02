@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     padding-bottom: 5px;
     font-family: "Source Sans Pro","Arial","sans-serif"
 }
@@ -139,6 +139,58 @@ is-floating-label {
     margin-top: 15px;
 }
 
+.tile {
+    width:100%;
+    margin:5px;
+}
+    .tile ul {
+        padding-left: 0px
+    }
+        .tile ul li {
+            text-decoration: none;
+            list-style: none;
+          
+        }
+            .tile ul li > div {
+                width: 350px;
+                margin: 5px;
+                padding: 10px;
+                float: left;
+                height: 180px;
+                -webkit-box-shadow: 3px 0px 10px -3px rgba(0,0,0,0.15);
+                -moz-box-shadow: 3px 0px 10px -3px rgba(0,0,0,0.15);
+                box-shadow: 3px 0px 10px -3px rgba(0,0,0,0.15);
+                overflow: hidden;
+                /*white-space: nowrap;*/
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+                .tile ul li > div a > h5 {
+                font-weight:bold;
+                font-size:16px;
+                
+                }
+                .tile ul li > div a > label {
+                    height: 80px;
+                    /*white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;*/
+                    overflow: hidden;
+                    font-size:14px;
+                }
+                .tile ul li > div a > small {
+                  text-align:right;
+                  float:right;
+                }
+
+                .tilehg {
+                }
+.tilehg :hover {
+    background-color: #444;
+    cursor: pointer;
+    color: #fff;
+}
+
 .list {
     margin:5px;
     
@@ -157,11 +209,12 @@ is-floating-label {
         
         .list > ul > li {   
             line-height: 40px;
-            display: block;
-         
+            display: block;         
             font-size: 16px;
             color: #4f4f4f;
             transition: .4s;
+            text-decoration:none;
+            list-style:none;
         }
             .list > ul > li > div[class^="row"] {
                 border-bottom: 1px solid #dddddda6;
@@ -177,6 +230,7 @@ is-floating-label {
                 font-size: 16px;
                 color: #4f4f4f;
                 text-decoration: none;
+                font-weight:300;
                 
 
                  
@@ -187,7 +241,8 @@ is-floating-label {
                 font-size: 16px;
                 color: #4f4f4f;
                 transition: .4s;
-                font-size: 14px;
+                font-size: 16px;
+                font-weight: 300;
             }
 .bootstrap-select {
     border: 1px solid #ced4da !important;
@@ -256,10 +311,32 @@ is-floating-label {
 .pgtitle {
     font-size: 20px;
     color: #4f4f4f;
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.winTitle {
+    font-size: 28px;
+    color: #393a3d;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.stlabel {
+    margin-left: 10px;
+    margin-top: 10px;
+    pointer-events: none;
+    font-weight: 400;
+        /* 
+    transform: translate3d(0, 0, 0) scale(1);
+    transform-origin: left top;
+    transition: 100ms;*/
+    font-size: 17px;
+    color: #444;
 }
 .nav-link.active {
     color: #28a745 !important;
@@ -311,7 +388,7 @@ is-floating-label {
     color: red;  
 }
 .rowlight:hover {
-    background-color: rgba(204, 204, 204, 0.46);
+    background-color: rgba(204, 204, 204, 0.26);
     cursor: pointer;
 }
 
@@ -529,6 +606,9 @@ single-chart {
         overflow-x: hidden;
         height: 300px;
     }
+h1, h2, h3, h4, h5, h6 {
+  font-weight:300;
+}
 /*h1, h2, h3, h4, h5, h6 {
     color: #4f4f4f !important;
     white-space: nowrap;

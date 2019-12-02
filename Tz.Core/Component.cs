@@ -305,6 +305,76 @@ namespace Tz.Core
                 return "";
             }
         }
+
+        internal bool SaveAsDraft() {
+            Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+            Tz.ClientManager.Server s = c.GetServer();
+            // var dm = new DataManager(s, c.ClientID);
+            // dm.NewTable(this.ComponentName, getCategory());
+            this.ComponentID = dataComponent.SaveComponent(ClientID,
+                    ComponentName,
+                    (int)ComponentType,
+                    TableID,
+                    Title,
+                    PrimaryKeys,
+                    TitleFormat,
+                    "", "", Category);
+            return true;
+        }
+        internal bool Publish() {
+            Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+            Tz.ClientManager.Server s = c.GetServer();     
+            var pk = "";
+            var dm = new DataManager(s, c.ClientID);
+            dm.NewTable(this.ComponentName, getCategory());
+            foreach (ComponentAttribute ca in this.Attributes)
+            {
+                if (ca.IsPrimaryKey)
+                {
+                    pk = pk + ca.AttributeName.Replace(" ", "_");
+                    dm.AddPrimarykey(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length);
+                }
+                else
+                {
+                    dm.AddField(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length, ca.IsNullable);
+                }
+            }
+            if (pk.StartsWith(","))
+            {
+                pk = pk.Substring(1);
+                PrimaryKeys = pk;
+            }
+            else
+            {
+                PrimaryKeys = pk;
+            }
+            if (PrimaryKeys == null)
+            {
+                PrimaryKeys = "";
+            }
+
+            dm.AcceptChanges();
+            if (dm.GetTable().TableID == "")
+            {
+                return false;
+            }
+            TableID = dm.GetTable().TableID;
+            foreach (ComponentAttribute ca in this.Attributes)
+            {
+
+                Net.Entity.IField f = dm.GetTable().Fields.Where(x => x.FieldName == ca.AttributeName.Replace(" ", "_")).FirstOrDefault();
+                if (f != null)
+                {
+                    ca.setFieldID(f.FieldID);
+                }
+            }
+            dataComponent.ChangeState(this.ClientID, this.ComponentID, 1);// publish
+            foreach (ComponentAttribute ca in this.Attributes)
+            {
+                this.UpdateAttribute(ca, s.ServerID);
+            }
+                return true;
+        }
         /// <summary>
         ///  save component
         /// </summary>
@@ -338,8 +408,7 @@ namespace Tz.Core
                 if (PrimaryKeys == null)
                 {
                     PrimaryKeys = "";
-                }
-                
+                }                
                 try
                 {
                     dm.AcceptChanges();
@@ -349,7 +418,6 @@ namespace Tz.Core
                     TableID = dm.GetTable().TableID;
                     foreach (ComponentAttribute ca in this.Attributes)
                     {
-
                         Net.Entity.IField f = dm.GetTable().Fields.Where(x => x.FieldName == ca.AttributeName.Replace(" ", "_")).FirstOrDefault();
                         if (f != null) {
                             ca.setFieldID(f.FieldID);
@@ -389,11 +457,10 @@ namespace Tz.Core
                     {
                         return false;
                     }
-
                 }
                 catch (System.Exception ex) {
                     throw ex;
-                }               
+                }              
                
             }
             else {
@@ -541,12 +608,16 @@ namespace Tz.Core
         /// </summary>
         /// <param name="ca"></param>
         /// <returns></returns>
-        internal bool UpdateAttribute(ComponentAttribute ca) {
+        internal bool UpdateAttribute(ComponentAttribute ca,string serverid ="") {
             try
             {
-                Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
-                Tz.ClientManager.Server s = c.GetServer();
-                DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);                
+                if (serverid == "") {
+                    Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                    Tz.ClientManager.Server s = c.GetServer();
+                    serverid = s.ServerID;
+                }
+                
+                DataManager dm = new DataManager(this.TableID, serverid, this.ClientID);                
                 dm.ChangeField(ca.FieldID, ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length,ca.IsNullable,ca.IsPrimaryKey,ca.AttributeName.Replace(" ", "_"));
                 dm.AcceptChanges();
                 var dataComponentAttr = new Data.Component.ComponentAttribute(ck.GetServer().Connection());

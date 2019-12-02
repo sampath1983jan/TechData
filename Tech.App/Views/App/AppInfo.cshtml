@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "AppInfo";
+    Layout = "~/Views/Shared/AppLayout.cshtml";
+} 
+
+
+<div id="container"></div>
+<script type="text/javascript">
+    $(document).ready(function () {          
+        var appid = '@ViewBag.AppID';     
+        var template = '<div>  {0}</div>    ';                 
+        getApp = function (id) {
+            var that = this;
+            $.ajax('/App/GetApp',
+                {
+                    type: "GET",
+                    dataType: 'jsonp', // type of response data
+                    data: {  appid: id },
+                    // timeout milliseconds
+                    success: function (data, status, xhr) {   // success callback function
+                        var App = data;                    
+                        template = template.format( App.Description);
+                        $("#apptitle").find("h2").append(App.AppName );
+                       // $("#container").append(template);
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) { // error callback
+                        alert(errorMessage);
+                    }
+                });
+        }
+
+
+        String.prototype.format = function () {
+            a = this;
+            for (k in arguments) {
+                a = a.replace("{" + k + "}", arguments[k])
+            }
+            return a
+        }
+        getApp(appid);
+    });
+</script>
