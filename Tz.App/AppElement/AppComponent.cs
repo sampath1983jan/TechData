@@ -34,14 +34,14 @@ namespace Tz.App.AppElement
         public AppComponent(string clientid, string appid,string elementID) {
             this.ClientID = clientid;
             this.AppID = appid;
-          //  component = new Tz.Core.ComponentManager(this.ClientID, this.component.ComponentID).Component;
+            this.ElementID = elementID;
+            component = new Tz.Core.Component(this.ClientID);
         }
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        internal bool Assign() {
-         //   var a = new Tz.Core.ComponentManager(component);
+        internal bool Assign() { 
             try
             {               
                     Data.App.App aa = new Data.App.App(Common.GetConnection(this.ClientID));

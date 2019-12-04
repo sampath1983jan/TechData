@@ -47,10 +47,10 @@ namespace Tz.Data.Component
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.LookUpID.Name)
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.RegExp.Name)                
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.DefaultValue.Name)
-                .From(TzAccount.ComponentAttribute.Table).LeftJoin(TzAccount.Component.Table)
-                .On(TzAccount.Component.Table, TzAccount.Component.ComponentID.Name,
-                Compare.Equals,TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.ComponentID.Name)
-               .WhereField(TzAccount.Component.Table, TzAccount.ComponentAttribute.ClientID.Name, 
+                .From(TzAccount.Component.Table).LeftJoin(TzAccount.ComponentAttribute.Table)
+                .On(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.ComponentID.Name,
+                Compare.Equals,TzAccount.Component.Table, TzAccount.Component.ComponentID.Name)
+               .WhereField(TzAccount.Component.Table, TzAccount.Component.ClientID.Name, 
                Compare.Equals, DBConst.String(clientid));
             return db.GetDatatable(select);                       
         }

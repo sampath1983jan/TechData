@@ -6,17 +6,119 @@
 
 
 <div id="container"></div>
+<main id="app"></main>
+
+<template id="appComponents">
+    <div id="slider" class="hidden">
+        <div class="row">
+            <div class="col-md-3" id="compContainer"></div>
+            <div class="col-md-3" id="formContainer"></div>
+            <div class="col-md-3" id="pageContainer"></div>
+        </div>
+    </div>
+</template>
+
 <script type="text/javascript">
+    var AppComponent = {};  
+    $(document).ready(function () {
+        var moment = {};
+
+        AppComponent = Vue.extend({
+            template: '#appComponents',
+            data: function () {
+                return {
+                    AppComponent:[]
+                }
+            }, created: function () {
+                this.get(appid);
+            },
+            methods: {
+                get: function (id) {
+                    $.ajax('/MyApp/' + id + '/Components',
+                        {
+                            type: "GET",
+                            dataType: 'jsonp', // type of response data
+                            data: {},
+                            // timeout milliseconds
+                            success: function (data, status, xhr) {  // success callback function
+                                
+                                $.each(data, function (i, v) {
+                                    v.url = "/App/" + appid + "/Component/" + v.ElementID;
+                                })
+                                that.AppComponent = data;
+                                renderComponent(data);
+                            },
+                            error: function (jqXhr, textStatus, errorMessage) { // error callback
+                                alert(errorMessage);
+                            }
+                        });
+                },
+                afterSaved: function () {
+                    getComponent();
+                }
+            },
+            computed: {
+          
+            }
+        });
+
+        new AppComponent().$mount('#app');
+
+
+        require(
+            // configuration
+            {
+                paths: {
+                    'jquery': '/Scripts/jquery-3.3.1',
+                    'popper': '/Scripts/popper',
+                    'bootstrap': '/Scripts/bootstrap',
+                    "combobox": "/Scripts/Controls/ComboBox/ComboBox",
+                    "token": "/Scripts/Controls/Tokenizer/Tokenizer",
+                    "controls": "/scripts/controls/Control-vue",
+                    "tzGrid": "/vue/controls/Grid",
+                    "touch": "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min",
+                    "jqueryui": "/Scripts/jquery-ui",
+                    "datepicker": "/Scripts/Controls/datepicker/daterangepicker",
+                    "bdatepicker": "/Scripts/Controls/datepicker/bootstrap-datepicker",
+                    "timer": "/Scripts/Controls/timer",
+                    "moment": "/Scripts/Controls/datepicker/moment",
+                    "color": "/Scripts/Controls/ColorPicker/bootstrap-colorpicker",
+                    "input": "/vue/controls/input",
+                    "textarea": "/vue/controls/textarea",
+                    "dropdown": "/vue/controls/dropdown",
+                    "NumberSlider": "/Scripts/Controls/NumberSlider/NumberSlider",
+                    "calendar": "/Scripts/Controls/calendar",
+                    "Pagination": "/Scripts/Controls/Pagination/Pagination",
+                    "tzSearch": "/vue/controls/Search",
+                    "Tokenizer": "/vue/controls/Tokenizer",
+                    "tzprogress": "/vue/controls/Progress",
+                    "cvprogress": "/vue/controls/Circular-Progress",
+                    "toaster": "/vue/controls/toast",
+                    "pMeter": "/vue/controls/progressmeter",
+                    urlArgs: 'bust=v27',
+                }
+            },
+            // load libs right now
+            ["jquery", "popper", "bootstrap", "combobox", "controls", "input", "textarea", "tzSearch", "dropdown",
+                "tzGrid", "token", "Tokenizer", 'tzprogress', "cvprogress", "toaster", "pMeter", "moment", "calendar", "timer", "color", "datepicker",
+                "bdatepicker", "NumberSlider", "Pagination", "touch", "jqueryui"],
+            function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,
+                ProgressMeter, mom, calendar, color, NumberSlider, page, touch) {
+               
+            }
+        );
+    });
+      var appid = '@ViewBag.AppID';     
     $(document).ready(function () {          
-        var appid = '@ViewBag.AppID';     
+      
         var template = '<div>  {0}</div>    ';                 
         getApp = function (id) {
             var that = this;
-            $.ajax('/App/GetApp',
+            $.ajax('/MyApp/' + id,
                 {
                     type: "GET",
                     dataType: 'jsonp', // type of response data
-                    data: {  appid: id },
+                  //  data: {  appid: id },
                     // timeout milliseconds
                     success: function (data, status, xhr) {   // success callback function
                         var App = data;                    
@@ -30,6 +132,38 @@
                 });
         }
 
+        newCompnonent = function (plc) {
+            var a = httpVueLoader('/vue/component/csimpleform.vue?6');
+            new Vue({
+                components: {
+                    "csimpleform": a,
+                    
+                    //'Client': client
+                },
+                data: function () {
+                    return {}
+                },
+                methods: {
+                    newApp: function () {
+                      ///  alert("mew fomr");
+                    },
+                    afterSaved: function () {
+                        getComponent();
+                    }
+                },
+                watch: {
+                    //inputtext: function () {
+                    //    //debugger;
+                    //    //this.inputtext = val;
+                    //}
+                },
+                computed: {
+                    getVal: function () {
+                        //     return this.inputtext / 2;
+                    }
+                }
+            }).$mount('#' + plc);
+        }
 
         String.prototype.format = function () {
             a = this;

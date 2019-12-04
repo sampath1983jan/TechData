@@ -160,11 +160,14 @@ namespace Tz.BackApp.Controllers.Component
         /// </summary>
         /// <param name="clientid"></param>
         /// <returns></returns>
-        public JsonpResult GetComponents(string clientid)
+        [Route("MyApp/{appid}/Components")]
+        public JsonpResult GetComponents(string appid)
         {
-            //Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-            //Tz.Core.ComponentManager cm = new Core.ComponentManager()
-            return new JsonpResult(Core.Component.GetComponentList(clientid));
+
+            string clientid = Request.Params["clientkey"];
+           var a = new Tz.App.AppManager(clientid, appid);
+            return new JsonpResult(a.GetComponents());
+           // return new JsonpResult(Core.Component.GetComponentList(clientid));
         }
         /// <summary>
         /// 
@@ -172,48 +175,76 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="clientid"></param>
         /// <param name="componentID"></param>
         /// <returns></returns>
-        public JsonpResult GetComponent(string clientid, string componentID) {
+        [Route("App/{appid}/Component/{compid}")]
+        public JsonpResult GetComponent(string appid,string compid) {
             //   Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-            Tz.Core.ComponentManager cm = new Core.ComponentManager(clientid, componentID);
-            return new JsonpResult(cm);
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="clientid"></param>
-        /// <param name="component"></param>
-        /// <param name="attribute"></param>
-        /// <returns></returns>
-        public JsonpResult SaveComponent(string component, string attribute) {
-            // Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+            //Tz.Core.ComponentManager cm = new Core.ComponentManager(clientid, componentID);
+            //return new JsonpResult(cm);
             string clientid = Request.Params["clientkey"];
-            Tz.BackApp.Models.Component mc = new Models.Component();
-            List<Models.Attribute> at = new List<Models.Attribute>();
-            mc = Newtonsoft.Json.JsonConvert.DeserializeObject<Tz.BackApp.Models.Component>(component);
-            at = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.Attribute>>(attribute);
-            Core.ComponentManager mg = new ComponentManager((Core.ComponentType)mc.ComponentType,
-                clientid, mc.ComponentName, mc.Category, mc.Title, mc.TitleFormat);
-            //foreach (Models.Attribute att in at) {
-            //    mg.InsertAttribute(new ComponentAttribute(clientid) { AttributeName = att.AttributeName,
-            //        AttributeType = (Core.ComponentAttribute.ComoponentAttributeType)att.AttributeType,
-            //        ClientID = clientid,
-            //        DefaultValue = att.DefaultValue,
-            //        FileExtension = att.FileExtension,
-            //        IsAuto = att.IsAuto,
-            //        IsCore = att.IsCore,
-            //        IsNullable = att.IsNullable,
-            //        IsPrimaryKey = att.IsPrimaryKey,
-            //        IsReadOnly = att.IsReadOnly,
-            //        IsRequired = att.IsRequired,
-            //        IsSecured = att.IsSecured,
-            //        IsUnique = att.IsUnique,
-            //        Length = att.Length,
-            //        RegExp = att.RegExp
-            //    });
-            //}
-            return new JsonpResult(mg.SaveComponent());
-
+            var a = new Tz.App.AppManager(clientid, appid);
+            a.GetComponents();
+            return new JsonpResult(a.GetComponent(compid));
         }
+
+        [Route("App/{appid}/Component/Create")]
+        public JsonpResult SaveComponent(string appid, string compName, string title)
+        {
+
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            var comp = a.NewComponent(ComponentType.core);
+            comp.ComponentName = compName;
+            comp.Title = title;
+            return new JsonpResult (a.SaveComponent(comp));
+
+            //Core.ComponentManager mg = new ComponentManager((Core.ComponentType.core),
+            //    clientid, compName, "", title, "");
+            //return new JsonpResult(mg.SaveComponent());
+        }
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="clientid"></param>
+        ///// <param name="component"></param>
+        ///// <param name="attribute"></param>
+        ///// <returns></returns>
+        //public JsonpResult SaveComponent(string component, string attribute) {
+        //    // Tz.Net.ClientServer c = new Net.ClientServer(clientid);
+        //    string clientid = Request.Params["clientkey"];
+        //    Tz.BackApp.Models.Component mc = new Models.Component();
+        //    List<Models.Attribute> at = new List<Models.Attribute>();
+        //    mc = Newtonsoft.Json.JsonConvert.DeserializeObject<Tz.BackApp.Models.Component>(component);
+        //    at = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.Attribute>>(attribute);
+        //    Core.ComponentManager mg = new ComponentManager((Core.ComponentType)mc.ComponentType,
+        //        clientid, mc.ComponentName, mc.Category, mc.Title, mc.TitleFormat);
+        //    //foreach (Models.Attribute att in at) {
+        //    //    mg.InsertAttribute(new ComponentAttribute(clientid) { AttributeName = att.AttributeName,
+        //    //        AttributeType = (Core.ComponentAttribute.ComoponentAttributeType)att.AttributeType,
+        //    //        ClientID = clientid,
+        //    //        DefaultValue = att.DefaultValue,
+        //    //        FileExtension = att.FileExtension,
+        //    //        IsAuto = att.IsAuto,
+        //    //        IsCore = att.IsCore,
+        //    //        IsNullable = att.IsNullable,
+        //    //        IsPrimaryKey = att.IsPrimaryKey,
+        //    //        IsReadOnly = att.IsReadOnly,
+        //    //        IsRequired = att.IsRequired,
+        //    //        IsSecured = att.IsSecured,
+        //    //        IsUnique = att.IsUnique,
+        //    //        Length = att.Length,
+        //    //        RegExp = att.RegExp
+        //    //    });
+        //    //}
+        //    return new JsonpResult(mg.SaveComponent());
+
+        //}
+        //public JsonpResult SaveComponent(string id, string compName, string title)
+        //{
+        //    string clientid = Request.Params["clientkey"];
+        //    Core.ComponentManager mg = new ComponentManager((Core.ComponentType.core),
+        //        clientid, compName, "", title, "");
+        //    return new JsonpResult(mg.SaveComponent());
+        //}
         /// <summary>
         /// 
         /// </summary>

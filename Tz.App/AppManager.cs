@@ -97,6 +97,7 @@ namespace Tz.App
             this.TimeZone = 0;
             this.Category = "None";
             this.AppName = "";
+            Components = new List<AppElement.AppComponent>();
 
         }
         /// <summary>
@@ -109,17 +110,16 @@ namespace Tz.App
         {
             this.ClientID = clientid;
             _appid = appid;
+            Components = new List<AppElement.AppComponent>();
             Load();
         }
         public void Load()
         {
             Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
             var dt = new DataTable();
-            dt = a.GetApp(this.ClientID,this.AppID);
-           
+            dt = a.GetApp(this.ClientID,this.AppID);           
             foreach (DataRow dr in dt.Rows)
-            {
-                
+            {                
               //  am._appid = dr["AppID"] == null ? "" : (string)dr["AppID"];
                 this.AppName = dr["Name"] == null ? "" : (string)dr["Name"];
                 this.Description = dr["Description"] == null ? "" : (string)dr["Description"];
@@ -171,20 +171,20 @@ namespace Tz.App
                  "IsGlobal"
                  );
            // var clist = new List<IComponent>();
-            dtFields = dt.DefaultView.ToTable(true, "FieldID",
-                "AttributeName",
-                "ComponentID",
-                "IsRequired",
-                "IsUnique",
-                "IsCore",
-                "IsReadOnly",
-                "IsSecured",
-                "IsAuto",
-                "DefaultValue",
-                "FileExtension",
-                "RegExp",
-                "AttributeType"
-                );
+            //dtFields = dt.DefaultView.ToTable(true, "FieldID",
+            //    "AttributeName",
+            //    "ComponentID",
+            //    "IsRequired",
+            //    "IsUnique",
+            //    "IsCore",
+            //    "IsReadOnly",
+            //    "IsSecured",
+            //    "IsAuto",
+            //    "DefaultValue",
+            //    "FileExtension",
+            //    "RegExp",
+            //    "AttributeType"
+            //    );
             foreach (DataRow dr in dttable.Rows)
             {             
                // var c = new Tz.Core. Component(this.ClientID);
@@ -200,25 +200,25 @@ namespace Tz.App
                 c.TitleFormat = dr.IsNull("TitleFormat") ? "" : dr["TitleFormat"].ToString();
                 c.Category = dr.IsNull("Category") ? "" : dr["Category"].ToString();
                 c.IsGlobal = dr.IsNull("IsGlobal") ? false : Convert.ToBoolean(dr["IsGlobal"]);
-                foreach (DataRow drow in dtFields.Rows)
-                {
-                    string _fieldid = "";
-                    _fieldid = drow.IsNull("FieldID") ? "" : drow["FieldID"].ToString();
-                    Core.ComponentAttribute ca = new Core.ComponentAttribute(this.ClientID, c.TableID, _fieldid);
-                    ca.AttributeName = drow.IsNull("AttributeName") ? "" : drow["AttributeName"].ToString();
-                    // ca.FieldName = drow.IsNull("FieldName") ? "" : drow["FieldName"].ToString();
-                    ca.IsRequired = drow.IsNull("IsRequired") ? false : Convert.ToBoolean(drow["IsRequired"]);
-                    ca.IsUnique = drow.IsNull("IsUnique") ? false : Convert.ToBoolean(drow["IsUnique"]);
-                    ca.IsCore = drow.IsNull("IsCore") ? false : Convert.ToBoolean(drow["IsCore"]);
-                    ca.IsReadOnly = drow.IsNull("IsReadOnly") ? false : Convert.ToBoolean(drow["IsReadOnly"]);
-                    ca.IsSecured = drow.IsNull("IsSecured") ? false : Convert.ToBoolean(drow["IsSecured"]);
-                    ca.IsAuto = drow.IsNull("IsAuto") ? false : Convert.ToBoolean(drow["IsAuto"]);
-                    ca.DefaultValue = drow.IsNull("DefaultValue") ? "" : drow["DefaultValue"].ToString();
-                    ca.FileExtension = drow.IsNull("FileExtension") ? "" : drow["FileExtension"].ToString();
-                    ca.RegExp = drow.IsNull("RegExp") ? "" : drow["RegExp"].ToString();
-                    ca.AttributeType = drow.IsNull("AttributeType") ? Core.ComponentAttribute.ComoponentAttributeType._string : (Core.ComponentAttribute.ComoponentAttributeType)drow["AttributeType"];
-                                     c.Attributes.Add(ca);
-                }
+                //foreach (DataRow drow in dtFields.Rows)
+                //{
+                //    string _fieldid = "";
+                //    _fieldid = drow.IsNull("FieldID") ? "" : drow["FieldID"].ToString();
+                //    Core.ComponentAttribute ca = new Core.ComponentAttribute(this.ClientID, c.TableID, _fieldid);
+                //    ca.AttributeName = drow.IsNull("AttributeName") ? "" : drow["AttributeName"].ToString();
+                //    // ca.FieldName = drow.IsNull("FieldName") ? "" : drow["FieldName"].ToString();
+                //    ca.IsRequired = drow.IsNull("IsRequired") ? false : Convert.ToBoolean(drow["IsRequired"]);
+                //    ca.IsUnique = drow.IsNull("IsUnique") ? false : Convert.ToBoolean(drow["IsUnique"]);
+                //    ca.IsCore = drow.IsNull("IsCore") ? false : Convert.ToBoolean(drow["IsCore"]);
+                //    ca.IsReadOnly = drow.IsNull("IsReadOnly") ? false : Convert.ToBoolean(drow["IsReadOnly"]);
+                //    ca.IsSecured = drow.IsNull("IsSecured") ? false : Convert.ToBoolean(drow["IsSecured"]);
+                //    ca.IsAuto = drow.IsNull("IsAuto") ? false : Convert.ToBoolean(drow["IsAuto"]);
+                //    ca.DefaultValue = drow.IsNull("DefaultValue") ? "" : drow["DefaultValue"].ToString();
+                //    ca.FileExtension = drow.IsNull("FileExtension") ? "" : drow["FileExtension"].ToString();
+                //    ca.RegExp = drow.IsNull("RegExp") ? "" : drow["RegExp"].ToString();
+                //    ca.AttributeType = drow.IsNull("AttributeType") ? Core.ComponentAttribute.ComoponentAttributeType._string : (Core.ComponentAttribute.ComoponentAttributeType)drow["AttributeType"];
+                //                     c.Attributes.Add(ca);
+                //}
                 acs.Add(ac);
             }
             return acs;
@@ -297,9 +297,10 @@ namespace Tz.App
         /// <returns></returns>
         public bool SaveComponent(Tz.Core.IComponent c) {
             var a = new Tz.Core.ComponentManager(c);
-            if (a.SaveComponent() != "")
+            string compID = a.SaveComponent();
+            if (compID != "")
             {
-                var cc = new AppElement.AppComponent(this.ClientID, this.AppID, a.Component.ComponentID);
+                var cc = new AppElement.AppComponent(this.ClientID, this.AppID, compID);
                 this.Components.Add(cc);
                 if (cc.Assign()) { return true; }
                 else return false;
@@ -316,7 +317,7 @@ namespace Tz.App
             if (c == null)
             {
                 var aa = new ComponentManager(this.ClientID, ElementID);
-                return c.Component;
+                return aa.Component;
             }
             else
                 return null;      

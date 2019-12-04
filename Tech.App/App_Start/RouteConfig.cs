@@ -16,7 +16,7 @@ namespace Tech.App
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-
+            routes.MapMvcAttributeRoutes();
 
 
 
@@ -47,6 +47,15 @@ namespace Tech.App
 
 
 
+            //    routes.MapRoute(
+            //name: "App",
+            //url: "App/{appkey}/component/{componentkey}",
+            //defaults: new
+            //{
+            //    controller = "App",
+            //    action = "Unit",
+            //}
+            //);
 
             routes.MapRoute(
                 name: "Default",

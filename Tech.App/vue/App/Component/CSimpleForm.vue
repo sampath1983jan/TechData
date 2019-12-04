@@ -1,8 +1,8 @@
 ﻿<template>
     <div>
-        <h2>Create New app</h2>
+        <h2>Create New Component</h2>
         <div style='margin-left:35%'>
-            <label class="stlabel">App Name</label>
+            <label class="stlabel">Component Name</label>
             <div style="width:65%">
                 <tzinput :attribute="{id:'txtComponentName',
             isRequired:false,
@@ -14,20 +14,20 @@
             }" :value="compName" v-on:input="updating"></tzinput>
 
             </div>
-            <label>Description</label>
+            <label class="stlabel">Title</label>
             <div style="width:65%">
-                <tztextarea v-model="description" :attribute="{id:'txtDescription',
-        isRequired:false,
-        enabletooltip:true,
-        min:0,
-        inputType:2,
-        max:511,
-        limit:true
-        }"></tztextarea>
+                <tzinput :attribute="{id:'txtTitle',
+            isRequired:false,
+            enabletooltip:true,
+            min:0,
+            inputType:1,
+            max:500,
+            limit:true
+            }" :value="title" v-on:input="updatetitle"></tzinput>
             </div>
         
             
-                <h4 class="stlabel">Create new app from the scrach</h4>
+                <h4 class="stlabel">Create new component from the scrach</h4>
            
             <div  style="position:absolute; left:69%">
                 <button class="btn btn-primary" v-on:click="Save">Save</button>
@@ -42,9 +42,9 @@
      module.exports = {
          data: function (){
              return {
-                 Apps: [],
+                 Components: [],
                  compName: "",
-                 description:"",
+                 title:"",
              }
          },
          created: function () {
@@ -53,28 +53,31 @@
 
         methods: {
             updating: function (val) {
-                this.appName = val;
-    },
+                this.compName = val;
+            }, updatetitle: function (val) {
+                this.title = val;
+            },
             Close: function () {
                  jPopup.prototype.close(true);
              },
              Save:function() {
                  var that = this;
-                 $.ajax('/App/Save',
+                 $.ajax('/App/'+ appid +'/Component/Create',
                      {
                          type: "POST",
                          dataType: 'jsonp', // type of response data
-                         data: { "Name": this.$data.appName, "description": this.$data.description },
+                         data: {"id":appid, "compName": this.$data.compName, "title": this.$data.title },
                          // timeout milliseconds
                          success: function (data, status, xhr) {   // success callback function
                              //that.Apps = data;this.$emit('increment');
-                             that.appName = "";
+                             that.compName = "";
+                             that.title = "";
                              that.$emit('saved');
                              that.Close();
                              //Window.toz.$refs.foo.push = [];
                              //Window.toz.$refs.foo.push = [];
                              Window.toz.$refs.foo.push({
-                                 header: "", body: "App Created Successfully", template:""
+                                 header: "", body: "Component created successfully", template:""
                                  , autohide: true,
                                  bodyCss: "feedback",
                                  position: "top right",

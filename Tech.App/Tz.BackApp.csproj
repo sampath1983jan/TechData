@@ -834,7 +834,8 @@
     <Content Include="Scripts\vue\vue.esm.js" />
     <Content Include="Scripts\vue\vue.js" />
     <Content Include="Scripts\vue\vue.min.js" />
-    <None Include="vue\Component\CSimpleForm.vue" />
+    <Content Include="vue\App\AppDesigner.vue" />
+    <None Include="vue\App\Component\CSimpleForm.vue" />
     <Content Include="vue\Controls\Circular-Progress.js" />
     <Content Include="vue\Controls\dropdown.js" />
     <Content Include="vue\Controls\Form-Vue.js" />
@@ -944,7 +945,7 @@
     <Content Include="vue\App\AppForm.vue" />
     <Content Include="Views\App\AppInfo.cshtml" />
     <Content Include="Views\Shared\AppLayout.cshtml" />
-    <Content Include="vue\Component\ComponentList.vue" />
+    <Content Include="vue\App\Component\ComponentList.vue" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

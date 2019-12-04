@@ -1,8 +1,6 @@
-﻿ <template>
-   
+﻿ <template>   
      <div class="list">
-         <div>
-             
+         <div>             
              <ul>
                  <li v-for="d in Clients">
                      <div class='row rowlight'>
@@ -19,13 +17,11 @@
                      </div>
                  </li>
              </ul>
-         </div>
-         
+         </div>         
          <!--<router-link to="/foo">Go to Foo</router-link>
     <router-link to="/Bar"> Go to Bar</router-link>-->
          <router-view :key="$route.fullPath"></router-view>
      </div>
-
 </template> 
 
  <script>      

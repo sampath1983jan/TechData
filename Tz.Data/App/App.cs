@@ -36,12 +36,13 @@ namespace Tz.Data.App
                 .AndWhere(TzAccount.App.Table, TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid));
             return db.GetDatatable(select);
         }
-        public DataTable GetAppComponent(string clientid,string appid) {
+        public DataTable GetAppComponent(string clientid, string appid)
+        {
             DBDatabase db;
             db = base.Database;
             DBQuery select;
             select = DBQuery.Select()
-                  .Field(TzAccount.App.Table, TzAccount.App.AppID.Name)
+                 .Field(TzAccount.App.Table, TzAccount.App.AppID.Name)
                 .Field(TzAccount.AppElements.Table, TzAccount.AppElements.CreatedOn.Name)
                  .Field(TzAccount.Component.Table, TzAccount.Component.ComponentID.Name)
                 .Field(TzAccount.Component.Table, TzAccount.Component.ComponentName.Name)
@@ -59,8 +60,8 @@ namespace Tz.Data.App
                 TzAccount.Component.Table, TzAccount.Component.ComponentID.Name)
                 .WhereField(TzAccount.App.Table, TzAccount.App.ClientID.Name,
                Compare.Equals, DBConst.String(clientid))
-               .AndWhere(TzAccount.App.AppID.Name,Compare.Equals,DBConst.String(appid))
-               .AndWhere(TzAccount.AppElements.ElementType.Name,Compare.Equals,DBConst.String("1"));
+               .AndWhere(TzAccount.App.Table,TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid))
+               .AndWhere(TzAccount.AppElements.Table,TzAccount.AppElements.ElementType.Name, Compare.Equals, DBConst.String("1"));
             return db.GetDatatable(select);
         }
         public DataTable GetAppForm(string clientid, string appid) {

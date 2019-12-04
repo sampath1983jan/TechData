@@ -1,23 +1,18 @@
 ﻿
-define(function () {
-
- 
-    const vueclient = { template: '<div>User {{ $route.params.id }}</div>' }
-    const Bar = { template: '<div>bar</div>' }
-    const foo = { template: '<div>foo</div>' }
-
+define(function () {     
+    const vueclient = { template: '<div>User {{ $route.params.id }}</div>' };
+    const Bar = { template: '<div>bar</div>' };
+    const foo = { template: '<div>foo</div>' };
     const routes = [
         //{ path: '/vueclient/:id', component: vueclient },
         { path: '/vueclient/:id', component: vueclient },
         { path: '/Bar', component: Bar },
-        { path: '/foo', component: foo },
-    ]
+        { path: '/foo', component: foo }
+    ];
     const router = new VueRouter({
         routes: routes// short for `routes: routes`
     });
-
-    var c = "name: 'vueclient' ";
-        
+    var c = "name: 'vueclient' ";        
     return Vue.component('Clients',
         {
             template: '<div class="list">'
@@ -70,5 +65,4 @@ define(function () {
             },
             router: router
         });
-
 });

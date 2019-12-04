@@ -117,11 +117,15 @@ namespace Tz.Core
             ck = new ClientServer(clientID);
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
+            TableID = "";
+            PrimaryKeys = "";
             Load();
         }
         public Component(string clientID) {
             ClientID = clientID;
             ComponentID = "";
+            TableID = "";
+            PrimaryKeys = "";
             ck = new ClientServer(clientID);
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
@@ -139,6 +143,8 @@ namespace Tz.Core
             ,string category) {
             ClientID = clientID;
             ComponentID = "";
+            TableID = "";
+            PrimaryKeys = "";
             this.Title = title;
             this.TitleFormat = titleformat;
             this.ComponentName = name;
@@ -307,8 +313,8 @@ namespace Tz.Core
         }
 
         internal bool SaveAsDraft() {
-            Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
-            Tz.ClientManager.Server s = c.GetServer();
+            //Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+            //Tz.ClientManager.Server s = c.GetServer();
             // var dm = new DataManager(s, c.ClientID);
             // dm.NewTable(this.ComponentName, getCategory());
             this.ComponentID = dataComponent.SaveComponent(ClientID,

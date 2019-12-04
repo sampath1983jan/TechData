@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Tz.Core;
 
 namespace Tz.BackApp.Controllers.App
 {
@@ -13,6 +14,7 @@ namespace Tz.BackApp.Controllers.App
         {
             return View();
         }
+       
         public JsonpResult Get() {
             string clientid = Request.Params["clientkey"];
            return new JsonpResult( Tz.App.AppManager.GetAppManagers(clientid));
@@ -34,15 +36,23 @@ namespace Tz.BackApp.Controllers.App
             ViewBag.AppID =  id ;
             return View();
         }
+        [Route("MyApp/{appid}")]
         public JsonpResult GetApp( string appid) {
             string clientid = Request.Params["clientkey"];
             return new JsonpResult(new Tz.App.AppManager(clientid, appid));
         }
+        [Route("App/{appid}/Remove")]
         public JsonpResult RemoveApp( string appid)
-
         {
             string clientid = Request.Params["clientkey"];
             return new JsonpResult(new Tz.App.AppManager(clientid, appid).Remove());
         }
+        //[Route("App/{appid}/Component/Create")]
+        //public JsonpResult SaveComponent(string appid, string compName, string title) {
+        //    string clientid = Request.Params["clientkey"];        
+        //    Core.ComponentManager mg = new ComponentManager((Core.ComponentType.core),
+        //        clientid, compName, "", title, "");           
+        //    return new JsonpResult(mg.SaveComponent());
+        //}
     }
 }

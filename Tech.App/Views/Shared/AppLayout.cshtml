@@ -110,8 +110,28 @@
     <script>
         $(document).ready(function () {
             var isShown = false;
-            $('#apptitle').click(function () {
+            var isSlideShown = false;
+            var newElement = '<div >'
+                + '<div class="elementItem" id="form">'
+                + '<h4>Forms</h4>'
+                + '<i class="fas fa-file-code" style="font-size:70px"></i>'
+                + '</div>'
+                + '<div class="elementItem" id="comp">'
+                + ' <h4>Components</h4>'
+                + '<i class="fab fa-elementor" style="font-size:70px"></i>'
+                + '</div>'
+                + '<div class="elementItem" id="pages"> '
+                + ' <h4>Pages</h4>'
 
+                + ' <i class="fas fa-file-alt" style="font-size:70px"></i>'
+                + '</div>'
+                + '<div class="elementItem" id="reports">'
+                + '<h4>Reports'
+                + '</h4>'
+                + '<i class="fas fa-file-word" style="font-size:70px"></i>'
+                + '</div>'
+                + '</div >';
+            $('#apptitle').click(function () {
                 var windowHeight = window.innerHeight;
                 var h = windowHeight - $("#apptitle").innerHeight();
                 h = h;
@@ -126,9 +146,9 @@
                     hidden.animate({ "left": "0px" }, "slow").addClass('visible');
                     $(".screen").removeClass("hidden");
                     $(".screen").css("left", "0px")
-                    if (isShown == false) {
-                        getApps();
-                        //    isShown = true;
+                    if (isSlideShown == false) {
+                        getComponent();
+                         isSlideShown = true;
                     }
                 }
                 $('#homesd').animate({ "left": "-1000px" }, "slow").removeClass('visible');
@@ -139,39 +159,20 @@
                 $(".screen").css("left", "-1800px")
             })
             $("#newElemt").click(function (e) {
-                e.stopPropagation();
-              
-                var demoContent = '<div >'
-                    +'<div class="elementItem">'
-                    +'<h4>Forms</h4>'
-                        +'<i class="fas fa-file-code" style="font-size:70px"></i>'
-                        +'</div>'
-                    +'<div class="elementItem">'
-                        +' <h4>Components</h4>'
-                    +'<i class="fab fa-elementor" style="font-size:70px"></i>'
-                        +'</div>'
-                    +'<div class="elementItem"> '
-                        +' <h4>Pages</h4>'
-
-                        +' <i class="fas fa-file-alt" style="font-size:70px"></i>'
-                        +'</div>'
-                    +'<div class="elementItem">'
-                        +'<h4>Reports'
-                        +'</h4>'
-                        +'<i class="fas fa-file-word" style="font-size:70px"></i>'
-                        +'</div>'
-                        +'</div >'
+                e.stopPropagation();             
                 var jPopupDemo = new jPopup({
-                    content: demoContent,
+                    content: newElement,
                     hashtagValue: '#demopopup',
                     shouldSetHash: false
                 });
-
+                $(".jPopup").find(".content").attr("id", "newelement");
                 $(".jPopup").find(".content").css("top", "40%");
                 $(".jPopup").find(".content").css("width", "90%");
                 $(".jPopup").find(".content").css("padding-left", "10%");
-
-            })
+                $("#comp").click(function () {
+                    renderNewComponent();
+                })
+            });
             $("#homenav").click(function () {
                 var hidden = $('#homesd');
                 var windowHeight = window.innerHeight;
@@ -192,25 +193,30 @@
                 }
                 $('#slider').animate({ "left": "-1800px" }, "slow").removeClass('visible');
             })
-
+            renderNewComponent = function (plc) {
+                $("#newelement").html("");
+                $("#newelement").append("<div><csimpleform v-on:saved='afterSaved'></csimpleform></div>");
+                newCompnonent("newelement");            
+            }
             renderApp = function (data) {
-
                 var alt = "<div class=' list' style='' ><div class='stlabel'>Available Apps</div><ul>";
                 $.each(data, function (i, v) {
                     alt = alt + "<li>";
                     alt = alt + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.AppName + "</a></div>"
                 });
                 alt = alt + "</ul><div><a href='/App/Index'>Back to Home</a></div></div>";
+                $("#appContainer").html("");
                 $("#appContainer").append(alt);
-            }
+            }           
             renderComponent = function (data) {
                 var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Components</div><ul>";
                 $.each(data, function (i, v) {
                     cmp = cmp + "<li>";
-                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
+                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.Component.ComponentName + "</a></div>"
                 });
                 cmp = cmp + "</ul></div>";
-                $("#compContainer").append(cmp);
+                $("#compContainer").html("");
+                $("#compContainer").append(cmp);             
             }
             renderForm = function (data) {
                 var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Form</div><ul>";
@@ -219,6 +225,7 @@
                     cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
                 });
                 cmp = cmp + "</ul></div>";
+                $("#formContainer").html("");
                 $("#formContainer").append(cmp);
             }
             renderPage = function (data) {
@@ -228,6 +235,7 @@
                     cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
                 });
                 cmp = cmp + "</ul></div>";
+                $("#pageContainer").html("");
                 $("#pageContainer").append(cmp);
             }
             getApps = function () {
@@ -243,10 +251,26 @@
                             $.each(data, function (i, v) {
                                 v.url = "/app/appinfo/" + v.AppID;
                             });
-                            renderApp(data);
-                            renderComponent();
-                            renderForm();
-                            renderPage();
+                            renderApp(data);                             
+                        },
+                        error: function (jqXhr, textStatus, errorMessage) { // error callback
+                            alert(errorMessage);
+                        }
+                    });
+            }
+            getComponent = function () {
+                $.ajax('/MyApp/' + appid + '/Components',
+                    {
+                        type: "GET",
+                        dataType: 'jsonp', // type of response data
+                        data: { },
+                        // timeout milliseconds
+                        success: function (data, status, xhr) {   // success callback function
+                             
+                            $.each(data, function (i, v) {
+                                v.url = "/App/" + appid + "/Component/" + v.ElementID;
+                            })                           
+                            renderComponent(data);                       
                         },
                         error: function (jqXhr, textStatus, errorMessage) { // error callback
                             alert(errorMessage);
@@ -266,7 +290,7 @@
                 </div>
                 <div id="apptitle" style="cursor:pointer" class="col-md-5">
                     <a>
-                        <h2 style="margin-top:6px;float:left"></h2> <div class="" id="newElemt" style="margin:15px 0px; cursor:pointer;float:left">
+                        <h2 style="margin-top:6px;float:left"></h2><h6></h6></div> <div class="" id="newElemt" style="margin:15px 0px; cursor:pointer;float:left">
                             <i class="fas fa-plus" style="padding:0px 15px; font-size:15px;"></i>
                         </div>
                     </a>
@@ -292,19 +316,51 @@
                 </toaster>
             </div>
         </div>
-        <div id="slider" class="hidden">
+        @*<div id="slider" class="hidden">
             <div class="row">
                 <div class="col-md-3" id="compContainer"></div>
                 <div class="col-md-3" id="formContainer"></div>
                 <div class="col-md-3" id="pageContainer"></div>
             </div>
-        </div>
+        </div>*@
         <div id="homesd" class="hidden hiddenhome">
             <div class="row">
                 <div class="col-md-12" id="appContainer"></div>
             </div>
         </div>
         <div class="screen hidden" ></div>
-    </div>
+    
 </body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        require(["/vue/Controls/toast.js"], function (roster) {
+            Window.toz = new Vue({
+                components: {
+                    "toaster": roster
+                }, data: function () {
+                    return {
+                        tos: [],
+                        id: "tosz",
+                        "position": "right top",
+                        toasterType: "linear",
+                    }
+                }
+            }).$mount('#tzContainer');
+
+            Window.feedback = new Vue({
+                components: {
+                    "toaster": roster
+                }, data: function () {
+                    return {
+                        tos: [],
+                        id: "tozfeedback",
+                        "position": "right bottom",
+                        toasterType: "linear",
+                    }
+                }
+            }).$mount('#tzFeedback');
+
+        });
+    });
+</script>

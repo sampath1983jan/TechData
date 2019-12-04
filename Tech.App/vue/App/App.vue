@@ -1,8 +1,6 @@
 ﻿
 <template>
-    <div>
-       
-             
+    <div>                    
         <div class="row" style="border-bottom:2px solid #ddd">
             <div class="col-md-8">
                 <h4 style="margin-top: 10px;padding: 0px;font-weight: bold;">My application list</h4>
@@ -47,12 +45,9 @@
                 <!--<router-view :key="$route.fullPath"></router-view>-->
                 <div id="window"></div>
             </div>
-        </div>
-
-
+        </div>        
     </div>
 </template>
-
 <script>     
     
     //const View = {
@@ -119,7 +114,7 @@
                      title: "",
                      message: "Are you sure, you want to remove this lookup?",
                      onAction: function () {
-                         $.ajax('/App/RemoveApp',
+                         $.ajax('/App/' + id +'/Remove',
                              {
                                  type: "Post",
                                  dataType: 'jsonp', // type of response data
