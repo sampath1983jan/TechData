@@ -3,13 +3,87 @@
     ViewBag.Title = "Component Manager";
 }
  
-<div id="container"></div>
-<div id="pv"></div>
+<div id="app">
+    <router-view></router-view>
+</div>
 
  <script type="text/javascript">
+     var appid = '@ViewBag.AppID';  
+    
+      
      $(document).ready(function () {
 
-     })
+         var cmManager = httpVueLoader('/vue/App/Component/ComponentManager.vue?4');          
+         var CompForm = httpVueLoader('/vue/App/Component/CompForm.vue?' + (Math.random() * 10000));
+
+         const Root = { template: '<div>root</div>' }
+         const Home = cmManager;//{ template: '<div><h1>Home</h1><router-view></router-view></div>' }
+         const Foo = { template: '<div>foo</div>' }
+         const Bar = { template: '<div>bar</div>' }
+         const Baz = { template: '<div>baz</div>' }
+         const Default = { template: '<div>default</div>' }
+         const Nested = { template: '<router-view/>' }
+         const NestedFoo = { template: '<div>nested foo</div>' }
+
+         const router = new VueRouter({
+           //  mode: 'history',
+            // base: __dirname,
+             routes: [
+                 //{ path: '/root', component: Root, alias: '/root-alias' },
+                 {
+                     path: '/', component: cmManager,
+                     children: [
+                         // absolute alias
+                         { path: 'foo', component: CompForm, alias: '/foo' },
+                         // relative alias (alias to /home/bar-alias)
+                         { path: 'bar', component: Bar, alias: 'bar-alias' },
+                         // multiple aliases
+                         { path: 'baz', component: Baz, alias: ['/baz', 'baz-alias'] },
+                         // default child route with empty string as alias.
+                         { path: 'default', component: Default, alias: '' },
+                         // nested alias
+                         {
+                             path: 'nested', component: Nested, alias: 'nested-alias',
+                             children: [
+                                 { path: 'foo', component: NestedFoo }
+                             ]
+                         }
+                     ]
+                 }
+             ]
+         })
+
+         new Vue({
+             router:router,
+             template: ' <div id="app">      <h1>Route Alias</h1>      <ul>        <li><router-link to="/root-alias">/root-alias (renders /root)'
+                 + '</router-link></li>        <li><router-link to="/foo">          /foo (renders /home/foo)        </router-link></li>'
+                 + '<li> <router-link to="/home/bar-alias">          /home/bar-alias (renders /home/bar)        </router-link></li><li><router-link to="/baz">'
+                 + '/baz (renders /home/baz)</router-link></li><li><router-link to="/home/baz-alias"> /home/baz-alias (renders /home/baz)'
+                 + '</router-link></li>        <li><router-link to="/home">          /home (renders /home/default)        </router-link></li>'
+                 + '<li> <router-link to="/home/nested-alias/foo/122">          /home/nested-alias/foo (renders /home/nested/foo)        </router-link></li>'
+                 + '</ul>      <router-view class="view"></router-view>    </div> '
+         }).$mount('#app');
+
+        // var cmManager = httpVueLoader('/vue/App/Component/ComponentManager.vue?4'); 
+        //      const router = new VueRouter({
+        //         ////mode: 'history',
+        //        routes: [
+        //            {
+        //                props: { name: appid },
+        //                path: '',
+        //                name: "ss",
+        //                component: cmManager,              
+
+        //        }
+        //    ]
+        //});     
+
+     //  var self= new Vue({
+     //       router,
+     //       el: '#app'
+     //   });
+
+      })
      </script>
 
 <div id="window"></div>

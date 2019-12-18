@@ -60,8 +60,9 @@ namespace Tz.Data.App
                 TzAccount.Component.Table, TzAccount.Component.ComponentID.Name)
                 .WhereField(TzAccount.App.Table, TzAccount.App.ClientID.Name,
                Compare.Equals, DBConst.String(clientid))
-               .AndWhere(TzAccount.App.Table,TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid))
-               .AndWhere(TzAccount.AppElements.Table,TzAccount.AppElements.ElementType.Name, Compare.Equals, DBConst.String("1"));
+               .AndWhere(TzAccount.App.Table, TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid))
+               .AndWhere(TzAccount.AppElements.Table, TzAccount.AppElements.ElementType.Name, Compare.Equals, DBConst.String("1"))
+               .OrderBy(TzAccount.Component.Table, TzAccount.Component.ComponentName.Name , Order.Ascending);
             return db.GetDatatable(select);
         }
         public DataTable GetAppForm(string clientid, string appid) {
@@ -222,6 +223,28 @@ namespace Tz.Data.App
                 trans.Commit();
             }
             if (val > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool RemoveAppComponent(string clientID, string appid, string elementid) {
+            DBDatabase db;
+            db = base.Database;
+            DBConst dbClientID = DBConst.String(clientID);
+            DBConst dbappid = DBConst.String(appid);
+            DBConst dbelement = DBConst.String(elementid);
+            DBComparison client = DBComparison.Equal(DBField.Field(TzAccount.AppElements.ClientID.Name), dbClientID);
+            DBComparison app = DBComparison.Equal(DBField.Field(TzAccount.AppElements.AppID.Name), dbappid);
+            DBComparison element = DBComparison.Equal(DBField.Field(TzAccount.AppElements.ElementID.Name), dbelement);
+
+            DBQuery del = DBQuery.DeleteFrom(TzAccount.AppElements.Table)
+                                .WhereAll(client, app, element);
+            int i = db.ExecuteNonQuery(del);
+            if (i > 0)
             {
                 return true;
             }

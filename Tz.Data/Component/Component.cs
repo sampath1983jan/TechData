@@ -169,7 +169,28 @@ namespace Tz.Data.Component
                 }
         }
 
-        public bool ChangeState(string clientid, string componentid,int state) {
+        public bool UpdateTableID(string clientid, string componentid,string tableid)
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBComparison dbcompo = DBComparison.Equal(DBField.Field(TzAccount.Component.ComponentID.Name), DBConst.String(componentid));
+            DBComparison dbclient = DBComparison.Equal(DBField.Field(TzAccount.Component.ClientID.Name), DBConst.String(clientid));
+            DBQuery update = DBQuery.Update(TzAccount.Component.Table).Set(
+            TzAccount.Component.TableID.Name, DBConst.String(tableid)
+            ).WhereAll(dbcompo, dbclient);
+
+            int i = db.ExecuteNonQuery(update);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool ChangeState(string clientid, string componentid,int state,string tableid="") {
             DBDatabase db;
             db = base.Database;
             DBComparison dbcompo = DBComparison.Equal(DBField.Field(TzAccount.Component.ComponentID.Name), DBConst.String(componentid));

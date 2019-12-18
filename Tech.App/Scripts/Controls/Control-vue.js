@@ -1034,6 +1034,7 @@
             },
             text: function (val) {
                 var o = $(this).data("c_textbox");
+             
                 if (val !== undefined) {
                     o.text = val;
                     //1-text,2-number,3-decimal,4-alphaNumber,5-timeformat,6-email, //7-datepicker, 9-datetimepicker, 10-checkbox, 11-radio, 12-fileupload,
@@ -1141,9 +1142,9 @@
                                 $(ithis).tokenize2().tokenAdd(v, v, true);
                             });
                         }
-
                     }
                     else if (o.inputType === 19) {
+                       
                         var os = {};
                         var sVal = "";
                         if (o.selectPicker.selection === 'multiple') {

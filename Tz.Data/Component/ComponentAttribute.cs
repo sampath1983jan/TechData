@@ -21,11 +21,11 @@ namespace Tz.Data.Component
             db = base.Database;
             DBQuery select;
             select = DBQuery.Select()
-                .Field(TzAccount.Field.Table,TzAccount.Field.FieldName.Name)
-                .Field(TzAccount.Field.Table, TzAccount.Field.FieldType.Name)
-                .Field(TzAccount.Field.Table, TzAccount.Field.Length.Name)
-                .Field(TzAccount.Field.Table, TzAccount.Field.IsNullable.Name)
-                .Field(TzAccount.Field.Table, TzAccount.Field.ISPrimaryKey.Name)
+                //.Field(TzAccount.Field.Table,TzAccount.Field.FieldName.Name)
+                //.Field(TzAccount.Field.Table, TzAccount.Field.FieldType.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.Length.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.IsNullable.Name)
+                .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.ISPrimaryKey.Name)
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.FieldID.Name)
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeName.Name)
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.AttributeType.Name)
@@ -39,9 +39,7 @@ namespace Tz.Data.Component
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.LookUpID.Name)
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.RegExp.Name)
                 .Field(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.DefaultValue.Name)
-                .From(TzAccount.ComponentAttribute.Table).LeftJoin(TzAccount.Field.Table)
-                .On(TzAccount.ComponentAttribute.Table,TzAccount.ComponentAttribute.FieldID.Name,Compare.Equals,
-                TzAccount.Field.Table,TzAccount.Field.FieldID.Name)
+                .From(TzAccount.ComponentAttribute.Table) 
                .WhereField(TzAccount.ComponentAttribute.Table, TzAccount.ComponentAttribute.ComponentID.Name, Compare.Equals, DBConst.String(componentID));
             return db.GetDatatable(select);
         }
@@ -60,13 +58,16 @@ namespace Tz.Data.Component
             string fileExtension,
             string regExp,
             string AttributeName,
-            int AttributeType) {
+            int AttributeType,
+            bool isNull,
+            bool isPrimary,
+            int length) {
             lookupid= lookupid == null ? "" : lookupid;
             defaultValue = defaultValue == null ? "" : defaultValue;
             fileExtension = fileExtension == null ? "" : fileExtension;
             regExp = regExp == null ? "" : regExp;
             AttributeName = AttributeName == null ? "" : AttributeName;
-            FieldID = FieldID == null ? "" : FieldID;
+            FieldID = FieldID == "" ? Shared.generateID() : FieldID;
 
             DBDatabase db;
             db = base.Database;
@@ -102,7 +103,10 @@ namespace Tz.Data.Component
               TzAccount.ComponentAttribute.RegExp.Name,
               TzAccount.ComponentAttribute.ClientID.Name,
               TzAccount.ComponentAttribute.AttributeName.Name,
-              TzAccount.ComponentAttribute.AttributeType.Name
+              TzAccount.ComponentAttribute.AttributeType.Name,
+                TzAccount.ComponentAttribute.IsNullable.Name,
+                  TzAccount.ComponentAttribute.ISPrimaryKey.Name,
+                    TzAccount.ComponentAttribute.Length.Name
               )
               .Values(
               dbcomponentID,
@@ -119,7 +123,10 @@ namespace Tz.Data.Component
               dbregExp,
               dbclientid,
               dbAttributeName,
-              dbAttributeType
+              dbAttributeType,
+              DBConst.Const (DbType.Boolean,isNull),
+               DBConst.Const(DbType.Boolean, isPrimary),
+                DBConst.Const(DbType.Int32, length)
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -151,7 +158,10 @@ namespace Tz.Data.Component
             string defaultValue,
             string fileExtension,
             string regExp,
-            string attributeName)
+            string attributeName,
+            int length,
+            bool isNull,
+            bool isPrimarykey)
         {
             lookupid = lookupid == null ? "" : lookupid;
             defaultValue = defaultValue == null ? "" : defaultValue;
@@ -202,6 +212,12 @@ namespace Tz.Data.Component
           TzAccount.ComponentAttribute.FileExtension.Name, dbfileExtension
           ).Set(
           TzAccount.ComponentAttribute.RegExp.Name, dbregExp
+          ).Set(
+          TzAccount.ComponentAttribute.Length.Name, DBConst.Int32(length)
+          ).Set(
+          TzAccount.ComponentAttribute.IsNullable.Name, DBConst.Const(DbType.Boolean, isNull)
+          ).Set(
+          TzAccount.ComponentAttribute.ISPrimaryKey.Name, DBConst.Const(DbType.Boolean, isPrimarykey)
           ).WhereAll(componentid,fieldid, Client);
 
             int i = db.ExecuteNonQuery(update);

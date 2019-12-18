@@ -992,6 +992,7 @@ var defaultDate = "00/00/0001T00:00:00";
             return methods._isValid.call(this);
         },
         text: function (val) {
+            debugger;
             var o = $(this).data("c_textbox");         
             if (val !== undefined) {
                 o.text = val;
@@ -1002,7 +1003,8 @@ var defaultDate = "00/00/0001T00:00:00";
 					o.inputType === 3 ||
 					o.inputType === 4 ||
 					o.inputType === 6 ||
-					o.inputType === 14) {
+                    o.inputType === 14) {
+                 
 					$(this).find("input").val(val);
 				} else if (o.inputType === 8) {
 					$(this).find("textarea").val(val);

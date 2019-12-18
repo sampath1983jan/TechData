@@ -81,13 +81,14 @@ namespace Tz.Net
         public DataManager AddField(string fieldName,
             DbType fieldType,
             int length,
-            bool isNullable
+            bool isNullable,
+               string fieldID = ""
             ) {
             var f = this.Table.Fields.Where(x => x.FieldName.ToLower() == fieldName.ToLower()).FirstOrDefault();
             if (f != null) {
                 return this;
             }
-            var field = ((Entity.Table)Table).NewField();            
+            var field = ((Entity.Table)Table).NewField(fieldID);            
             field.FieldName = fieldName;
             field.FieldType = fieldType;
             field.Length = length;
@@ -106,7 +107,8 @@ namespace Tz.Net
         /// <returns></returns>        ///
         public DataManager AddPrimarykey(string fieldName,
             DbType fieldType,
-            int length
+            int length,
+            string fieldID=""
             )
         {
             var f = this.Table.Fields.Where(x => x.FieldName.ToLower() == fieldName.ToLower()).FirstOrDefault();
@@ -114,7 +116,7 @@ namespace Tz.Net
             {
                 return this;
             }
-            var field = ((Entity.Table)Table).NewField();
+            var field = ((Entity.Table)Table).NewField(fieldID);          
             field.FieldName = fieldName;
             field.FieldType = fieldType;
             field.Length = length;

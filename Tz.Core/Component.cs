@@ -7,6 +7,11 @@ using Tz.Net;
 using Tz.ClientManager;
 namespace Tz.Core
 {
+    public enum ComponentState {
+        draft,
+        published,
+        hold,
+    }
     public enum ComponentType {
         /// <summary>
         /// Master component of the system
@@ -97,6 +102,11 @@ namespace Tz.Core
         /// 
         /// </summary>
         public bool IsGlobal { get; set; }
+        public ComponentState State { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void LoadAttributes();
     }
 
     /// <summary>
@@ -119,6 +129,7 @@ namespace Tz.Core
             Attributes = new List<ComponentAttribute>();
             TableID = "";
             PrimaryKeys = "";
+            State = ComponentState.draft;
             Load();
         }
         public Component(string clientID) {
@@ -127,6 +138,7 @@ namespace Tz.Core
             TableID = "";
             PrimaryKeys = "";
             ck = new ClientServer(clientID);
+            State = ComponentState.draft;
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
         }
@@ -151,6 +163,7 @@ namespace Tz.Core
             this.Category = category;
             this.ComponentType = componentType;
             ck = new ClientServer(clientID);
+            State = ComponentState.draft;
             dataComponent = new Data.Component.Component(ck.GetServer().Connection());
             Attributes = new List<ComponentAttribute>();
         }
@@ -198,8 +211,8 @@ namespace Tz.Core
                 c.TitleFormat = dr.IsNull("TitleFormat") ? "" : dr["TitleFormat"].ToString();
                 c.Category = dr.IsNull("Category") ? "" : dr["Category"].ToString();
                 c.IsGlobal = dr.IsNull("IsGlobal") ? false : Convert.ToBoolean(dr["IsGlobal"]);
-               
-                
+               c.State = dr.IsNull("ComponentState") ? ComponentState.draft  : (ComponentState)(dr["ComponentState"]);
+
                 foreach (DataRow drow in dtFields.Rows)
                 {
                     string _fieldid = "";
@@ -216,11 +229,12 @@ namespace Tz.Core
                     ca.DefaultValue = drow.IsNull("DefaultValue") ? "" : drow["DefaultValue"].ToString();
                     ca.FileExtension = drow.IsNull("FileExtension") ? "" : drow["FileExtension"].ToString();
                     ca.RegExp = drow.IsNull("RegExp") ? "" : drow["RegExp"].ToString();
+                    ca.LookUpID = dr.IsNull("LookUpID") ? "" : dr["LookUpID"].ToString();
                     ca.AttributeType = drow.IsNull("AttributeType") ? ComponentAttribute.ComoponentAttributeType._string : (ComponentAttribute.ComoponentAttributeType)drow["AttributeType"];
                     //ca.FieldType = drow.IsNull("FieldType") ? DbType.String : (DbType)drow["FieldType"];
-                    //ca.Length = drow.IsNull("length") ? -1 : (int)drow["length"];
-                  //  ca.IsNullable = drow.IsNull("IsNullable") ? false : (bool)drow["IsNullable"];
-                  //  ca.IsPrimaryKey = drow.IsNull("ISPrimaryKey") ? false : (bool)drow["ISPrimaryKey"];
+                    ca.Length = drow.IsNull("length") ? -1 : (int)drow["length"];
+                    ca.IsNullable = drow.IsNull("IsNullable") ? false : (bool)drow["IsNullable"];
+                    ca.IsPrimaryKey = drow.IsNull("ISPrimaryKey") ? false : (bool)drow["ISPrimaryKey"];
                     c.Attributes.Add(ca);
                 }
                 clist.Add(c);
@@ -241,18 +255,54 @@ namespace Tz.Core
                 TitleFormat = dr.IsNull("TitleFormat") ? "" : dr["TitleFormat"].ToString();
                 Category = dr.IsNull("Category") ? "" : dr["Category"].ToString();
                 IsGlobal = dr.IsNull("IsGlobal") ? false : Convert.ToBoolean(dr["IsGlobal"]);
+                State = dr.IsNull("ComponentState") ? ComponentState.draft : (ComponentState)(dr["ComponentState"]);
             }
+            // time being commented sampathkumar
+
+            //Data.Component.ComponentAttribute ca = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
+            //dt = new DataTable();
+            //dt= ca.GetAttributes(this.ComponentID);
+            //foreach (DataRow dr in  dt.Rows) {
+            //    string _fieldid = "";
+            //    _fieldid = dr.IsNull("FieldID") ? "" : dr["FieldID"].ToString();
+            //    ComponentAttribute c = new ComponentAttribute(this.ClientID,this.TableID,_fieldid);
+            //    c.AttributeName= dr.IsNull("AttributeName") ? "" : dr["AttributeName"].ToString();
+            //  //  c.FieldName = dr.IsNull("FieldName") ? "" : dr["FieldName"].ToString();
+            //    c.IsRequired = dr.IsNull("IsRequired") ? false : Convert.ToBoolean(dr["IsRequired"]);
+            //    c.IsUnique = dr.IsNull("IsUnique") ? false :Convert.ToBoolean(dr["IsUnique"]);
+            //    c.IsCore = dr.IsNull("IsCore") ? false : Convert.ToBoolean(dr["IsCore"]);
+            //    c.IsReadOnly = dr.IsNull("IsReadOnly") ? false : Convert.ToBoolean(dr["IsReadOnly"]);
+            //    c.IsSecured = dr.IsNull("IsSecured") ? false : Convert.ToBoolean(dr["IsSecured"]);
+            //    c.IsAuto = dr.IsNull("IsAuto") ? false : Convert.ToBoolean(dr["IsAuto"]);
+            //    c.DefaultValue = dr.IsNull("DefaultValue") ? "" : dr["DefaultValue"].ToString();
+            //    c.FileExtension = dr.IsNull("FileExtension") ? "" : dr["FileExtension"].ToString();
+            //    c.RegExp = dr.IsNull("RegExp") ? "" : dr["RegExp"].ToString();
+            //    c.AttributeType = dr.IsNull("AttributeType") ? ComponentAttribute.ComoponentAttributeType._string : (ComponentAttribute.ComoponentAttributeType)dr["AttributeType"];
+            //  // c.FieldType= dr.IsNull("FieldType") ? DbType.String :(DbType) dr["FieldType"];
+            //  // c.FieldType= dr.IsNull("FieldType") ? DbType.String :(DbType) dr["FieldType"];
+            //// c.Length = dr.IsNull("length") ? -1 : Convert.ToInt32(dr["length"]);
+            //  //  c.IsNullable = dr.IsNull("IsNullable") ? false : Convert.ToBoolean(dr["IsNullable"]);
+            //   // c.IsPrimaryKey = dr.IsNull("ISPrimaryKey") ? false : Convert.ToBoolean(dr["ISPrimaryKey"]);
+            //    this.Attributes.Add(c);
+            //}
+        }
+        /// <summary>
+        /// this method load attribute of the component
+        /// </summary>
+        public override void LoadAttributes() {
+
             Data.Component.ComponentAttribute ca = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
-            dt = new DataTable();
-            dt= ca.GetAttributes(this.ComponentID);
-            foreach (DataRow dr in  dt.Rows) {
+            var dt = new DataTable();
+            dt = ca.GetAttributes(this.ComponentID);
+            foreach (DataRow dr in dt.Rows)
+            {
                 string _fieldid = "";
                 _fieldid = dr.IsNull("FieldID") ? "" : dr["FieldID"].ToString();
-                ComponentAttribute c = new ComponentAttribute(this.ClientID,this.TableID,_fieldid);
-                c.AttributeName= dr.IsNull("AttributeName") ? "" : dr["AttributeName"].ToString();
-                c.FieldName = dr.IsNull("FieldName") ? "" : dr["FieldName"].ToString();
+                ComponentAttribute c = new ComponentAttribute(this.ClientID, this.TableID, _fieldid);
+                c.AttributeName = dr.IsNull("AttributeName") ? "" : dr["AttributeName"].ToString();
+          //      c.FieldName = dr.IsNull("FieldName") ? "" : dr["FieldName"].ToString();
                 c.IsRequired = dr.IsNull("IsRequired") ? false : Convert.ToBoolean(dr["IsRequired"]);
-                c.IsUnique = dr.IsNull("IsUnique") ? false :Convert.ToBoolean(dr["IsUnique"]);
+                c.IsUnique = dr.IsNull("IsUnique") ? false : Convert.ToBoolean(dr["IsUnique"]);
                 c.IsCore = dr.IsNull("IsCore") ? false : Convert.ToBoolean(dr["IsCore"]);
                 c.IsReadOnly = dr.IsNull("IsReadOnly") ? false : Convert.ToBoolean(dr["IsReadOnly"]);
                 c.IsSecured = dr.IsNull("IsSecured") ? false : Convert.ToBoolean(dr["IsSecured"]);
@@ -260,9 +310,10 @@ namespace Tz.Core
                 c.DefaultValue = dr.IsNull("DefaultValue") ? "" : dr["DefaultValue"].ToString();
                 c.FileExtension = dr.IsNull("FileExtension") ? "" : dr["FileExtension"].ToString();
                 c.RegExp = dr.IsNull("RegExp") ? "" : dr["RegExp"].ToString();
+                c.LookUpID = dr.IsNull("LookUpID") ? "" : dr["LookUpID"].ToString();
                 c.AttributeType = dr.IsNull("AttributeType") ? ComponentAttribute.ComoponentAttributeType._string : (ComponentAttribute.ComoponentAttributeType)dr["AttributeType"];
-              // c.FieldType= dr.IsNull("FieldType") ? DbType.String :(DbType) dr["FieldType"];
-             c.Length = dr.IsNull("length") ? -1 : Convert.ToInt32(dr["length"]);
+                // c.FieldType= dr.IsNull("FieldType") ? DbType.String :(DbType) dr["FieldType"];
+                c.Length = dr.IsNull("length") ? -1 : Convert.ToInt32(dr["length"]);
                 c.IsNullable = dr.IsNull("IsNullable") ? false : Convert.ToBoolean(dr["IsNullable"]);
                 c.IsPrimaryKey = dr.IsNull("ISPrimaryKey") ? false : Convert.ToBoolean(dr["ISPrimaryKey"]);
                 this.Attributes.Add(c);
@@ -327,6 +378,32 @@ namespace Tz.Core
                     "", "", Category);
             return true;
         }
+        internal bool Update() {
+            try
+            {
+                //var dm = new DataManager(this.TableID, s.ServerID, c.ClientID);
+                //dm.Rename(this.ComponentName, this.getCategory());
+                if (dataComponent.UpdateComponent(ClientID,
+                   ComponentID,
+                   ComponentName,
+                   (int)ComponentType,
+                   Title,
+                   PrimaryKeys,
+                   TitleFormat,
+                   "", "", Category))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
         internal bool Publish() {
             Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
             Tz.ClientManager.Server s = c.GetServer();     
@@ -338,11 +415,11 @@ namespace Tz.Core
                 if (ca.IsPrimaryKey)
                 {
                     pk = pk + ca.AttributeName.Replace(" ", "_");
-                    dm.AddPrimarykey(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length);
+                    dm.AddPrimarykey(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length,ca.FieldID);
                 }
                 else
                 {
-                    dm.AddField(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length, ca.IsNullable);
+                    dm.AddField(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length, ca.IsNullable,ca.FieldID);
                 }
             }
             if (pk.StartsWith(","))
@@ -365,21 +442,23 @@ namespace Tz.Core
                 return false;
             }
             TableID = dm.GetTable().TableID;
-            foreach (ComponentAttribute ca in this.Attributes)
-            {
+            //foreach (ComponentAttribute ca in this.Attributes)
+            //{
 
-                Net.Entity.IField f = dm.GetTable().Fields.Where(x => x.FieldName == ca.AttributeName.Replace(" ", "_")).FirstOrDefault();
-                if (f != null)
-                {
-                    ca.setFieldID(f.FieldID);
-                }
-            }
-            dataComponent.ChangeState(this.ClientID, this.ComponentID, 1);// publish
-            foreach (ComponentAttribute ca in this.Attributes)
-            {
-                this.UpdateAttribute(ca, s.ServerID);
-            }
-                return true;
+            //    Net.Entity.IField f = dm.GetTable().Fields.Where(x => x.FieldName == ca.AttributeName.Replace(" ", "_")).FirstOrDefault();
+            //    if (f != null)
+            //    {
+            //        ca.setFieldID(f.FieldID);
+            //    }
+            //}
+            dataComponent.UpdateTableID(this.ClientID, this.ComponentID, this.TableID);
+            dataComponent.ChangeState(this.ClientID, this.ComponentID, (int) ComponentState.published);// publish
+
+            //foreach (ComponentAttribute ca in this.Attributes)
+            //{
+            //    this.UpdateAttribute(ca, s.ServerID);
+            //}
+            return true;
         }
         /// <summary>
         ///  save component
@@ -455,7 +534,10 @@ namespace Tz.Core
                                 ca.FileExtension,
                                 ca.RegExp,
                                 ca.AttributeName,
-                               (int) ca.AttributeType);
+                               (int) ca.AttributeType,
+                               ca.IsNullable,
+                               ca.IsPrimaryKey,
+                               ca.Length);
                         }
                         return true;
                     }
@@ -563,46 +645,53 @@ namespace Tz.Core
         internal bool AddAttribute(ComponentAttribute ca) {
             try
             {
-                Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
-                Tz.ClientManager.Server s = c.GetServer();
-                DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
-                if (ca.IsPrimaryKey)
+                if (this.TableID != "")
                 {
-                    dm.AddPrimarykey(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length);
-                }
-                else
-                    dm.AddField(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length, ca.IsNullable);
+                    Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                    Tz.ClientManager.Server s = c.GetServer();
+                    DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
+                    if (ca.IsPrimaryKey)
+                    {
+                        dm.AddPrimarykey(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length);
+                    }
+                    else
+                        dm.AddField(ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length, ca.IsNullable);
 
-                dm.AcceptChanges();
-                TableID = dm.GetTable().TableID;
-                Net.Entity.IField f = dm.GetTable().Fields.Where(x => x.FieldName == ca.AttributeName.Replace(" ", "_")).FirstOrDefault();
-                if (f != null)
-                {
-                    ca.setFieldID(f.FieldID);
-
-                    var dataComponentAttr = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
-                    dataComponentAttr.Save(this.ClientID,
-                        this.ComponentID,
-                        ca.FieldID,
-                        ca.IsRequired,
-                        ca.IsCore,
-                        ca.IsUnique,
-                        ca.IsReadOnly,
-                        ca.IsSecured,
-                        ca.IsAuto,
-                        ca.LookUpID,
-                        ca.DefaultValue,
-                        ca.FileExtension,
-                        ca.RegExp,
-                        ca.AttributeName,
-                        (int)ca.AttributeType);
-                    return true;
+                    dm.AcceptChanges();
+                    TableID = dm.GetTable().TableID;
+                    Net.Entity.IField f = dm.GetTable().Fields.Where(x => x.FieldName == ca.AttributeName.Replace(" ", "_")).FirstOrDefault();
+                    if (f != null)
+                    {
+                        ca.setFieldID(f.FieldID);
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
                 else {
-                    return false;
-                }
-
-               
+                    ca.setFieldID("");
+                }                            
+                var dataComponentAttr = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
+                dataComponentAttr.Save(this.ClientID,
+                    this.ComponentID,
+                    ca.FieldID,
+                    ca.IsRequired,
+                    ca.IsCore,
+                    ca.IsUnique,
+                    ca.IsReadOnly,
+                    ca.IsSecured,
+                    ca.IsAuto,
+                    ca.LookUpID,
+                    ca.DefaultValue,
+                    ca.FileExtension,
+                    ca.RegExp,
+                    ca.AttributeName,
+                    (int)ca.AttributeType,
+                    ca.IsNullable,
+                    ca.IsPrimaryKey,
+                    ca.Length);
+                return true;
             }
             catch (Exception ex) {
                 throw ex;
@@ -617,15 +706,19 @@ namespace Tz.Core
         internal bool UpdateAttribute(ComponentAttribute ca,string serverid ="") {
             try
             {
-                if (serverid == "") {
-                    Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
-                    Tz.ClientManager.Server s = c.GetServer();
-                    serverid = s.ServerID;
-                }
-                
-                DataManager dm = new DataManager(this.TableID, serverid, this.ClientID);                
-                dm.ChangeField(ca.FieldID, ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length,ca.IsNullable,ca.IsPrimaryKey,ca.AttributeName.Replace(" ", "_"));
-                dm.AcceptChanges();
+                if (this.TableID != "")
+                {
+                    if (serverid == "")
+                    {
+                        Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                        Tz.ClientManager.Server s = c.GetServer();
+                        serverid = s.ServerID;
+                    }
+                    DataManager dm = new DataManager(this.TableID, serverid, this.ClientID);
+                    dm.ChangeField(ca.FieldID, ca.AttributeName.Replace(" ", "_"), GetFieldType(ca), ca.Length, ca.IsNullable, ca.IsPrimaryKey, ca.AttributeName.Replace(" ", "_"));
+                    dm.AcceptChanges();
+                }               
+               
                 var dataComponentAttr = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
                 dataComponentAttr.Update(this.ClientID,
                     this.ComponentID,
@@ -640,7 +733,10 @@ namespace Tz.Core
                     ca.DefaultValue,
                     ca.FileExtension,
                     ca.RegExp,
-                    ca.AttributeName);
+                    ca.AttributeName,
+                    ca.Length,
+                    ca.IsNullable,
+                    ca.IsPrimaryKey);
                 return true;
             }
             catch (Exception ex)
@@ -657,11 +753,13 @@ namespace Tz.Core
                 dataComponent.Remove(this.ClientID, this.ComponentID);
                 var datacom = new Data.Component.ComponentAttribute(ck.GetServer().Connection());
                 datacom.RemoveAll(this.ComponentID);
-                    
-                Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
-                Tz.ClientManager.Server s = c.GetServer();
-                DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
-                dm.Remove();
+                if (this.TableID != "") {
+                    Tz.ClientManager.ClientServer c = new Tz.ClientManager.ClientServer(this.ClientID);
+                    Tz.ClientManager.Server s = c.GetServer();
+                    DataManager dm = new DataManager(this.TableID, s.ServerID, this.ClientID);
+                    dm.Remove();
+                }
+              
                 return true;
             }
             catch (Exception ex)

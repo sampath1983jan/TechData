@@ -5,6 +5,15 @@
         <div>{{Client.ClientNo}}</div>
         <div>{{Client.ClientHost}}</div>
     </div>
+    <!--<div>
+    <h2>
+        Component Information 
+        </h2><div>
+        {{ComponentInfo.ComponentName}}
+            </div><div>
+        {{ComponentInfo.Title}}
+                </div> </div>-->
+
 </template>
 <!--<script type="text/x-template" id="anchored-heading-template">
     <div>

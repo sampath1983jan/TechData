@@ -5,66 +5,14 @@
 } 
 
 
-<div id="container"></div>
-<main id="app"></main>
-
-<template id="appComponents">
-    <div id="slider" class="hidden">
-        <div class="row">
-            <div class="col-md-3" id="compContainer"></div>
-            <div class="col-md-3" id="formContainer"></div>
-            <div class="col-md-3" id="pageContainer"></div>
-        </div>
-    </div>
-</template>
-
-<script type="text/javascript">
-    var AppComponent = {};  
-    $(document).ready(function () {
-        var moment = {};
-
-        AppComponent = Vue.extend({
-            template: '#appComponents',
-            data: function () {
-                return {
-                    AppComponent:[]
-                }
-            }, created: function () {
-                this.get(appid);
-            },
-            methods: {
-                get: function (id) {
-                    $.ajax('/MyApp/' + id + '/Components',
-                        {
-                            type: "GET",
-                            dataType: 'jsonp', // type of response data
-                            data: {},
-                            // timeout milliseconds
-                            success: function (data, status, xhr) {  // success callback function
-                                
-                                $.each(data, function (i, v) {
-                                    v.url = "/App/" + appid + "/Component/" + v.ElementID;
-                                })
-                                that.AppComponent = data;
-                                renderComponent(data);
-                            },
-                            error: function (jqXhr, textStatus, errorMessage) { // error callback
-                                alert(errorMessage);
-                            }
-                        });
-                },
-                afterSaved: function () {
-                    getComponent();
-                }
-            },
-            computed: {
-          
-            }
-        });
-
-        new AppComponent().$mount('#app');
-
-
+<div id="app">
+    <router-view default="{name: 'home'}"></router-view>
+</div>
+ 
+    <script type="text/javascript">
+    var appid = '@ViewBag.AppID';  
+        $(document).ready(function () {  
+              window.dropdown_c = {};
         require(
             // configuration
             {
@@ -95,7 +43,7 @@
                     "cvprogress": "/vue/controls/Circular-Progress",
                     "toaster": "/vue/controls/toast",
                     "pMeter": "/vue/controls/progressmeter",
-                    urlArgs: 'bust=v27',
+                    urlArgs: 'bust=v328',
                 }
             },
             // load libs right now
@@ -104,14 +52,87 @@
                 "bdatepicker", "NumberSlider", "Pagination", "touch", "jqueryui"],
             function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,
                 ProgressMeter, mom, calendar, color, NumberSlider, page, touch) {
-               
+                window.dropdown_c = dropdown;
+                window.popper = popper;
+                var cmManager = httpVueLoader('/vue/App/Component/ComponentManager.vue?4');
+                var CompForm = httpVueLoader('/vue/App/Component/CompForm.vue?' + (Math.random() * 10000));
+                var attributes = httpVueLoader('/vue/App/Component/CompAttributes.vue?' + (Math.random() * 10000));
+                var atDesigner = httpVueLoader('/vue/App/Component/AttributeDesigner.vue?' + (Math.random() * 10000));
+
+                const Root = { template: '<div>root</div>' }
+                const Home = cmManager;//{ template: '<div><h1>Home</h1><router-view></router-view></div>' }
+                const Foo = { template: '<div>foo</div>' }
+                const Bar = { template: '<div>bar</div>' }
+                const Baz = { template: '<div>baz</div>' }
+                const Default = { template: '<div></div>' }
+                const Nested = { template: '<router-view/>' }
+                const NestedFoo = { template: '<div>nested foo</div>' }
+
+                const router = new VueRouter({
+                    //  mode: 'history',
+                    // base: __dirname,
+                    routes: [
+                        //{ path: '/root', component: Root, alias: '/root-alias' },
+                        {
+                            path: '/Home/:AppiD?', name: "home", component: Home, params: { AppiD: appid }, props: true,
+                            children: [
+                                // absolute alias
+                                { path: '/Home/:id/component/:action', component: CompForm  ,"name":"App"},
+                                // relative alias (alias to /home/bar-alias)
+                                {
+                                    path: '/Home/:id/attributes/:cid', component: attributes, name: "component",
+                                    children: [
+                                        { path: 'changeattribute', component: atDesigner, alias: '/Home/:id/attributes/:cid/change/:attid', name:"compAttribute"}, //alias: '/:attid'
+                                        { path: 'addattribute', component: atDesigner, name: "mytesting", alias: '/Home/:id/attributes/:cid/addattribute' , name:"compAttributeAdd"}
+                                       
+                                    ]
+                                },
+                                // multiple aliases
+                                { path: 'baz', component: Baz, alias: ['/baz', 'baz-alias'] },
+                                // default child route with empty string as alias.
+                                { path: 'default', component: Default, alias: '' },
+                                // nested alias
+                                {
+                                    path: 'nested', component: Nested, alias: 'nested-alias',
+                                    children: [
+                                        { path: 'foo', component: NestedFoo }
+                                    ]
+                                }
+                            ]
+
+                        },
+                        {
+                            path: "/Form:AppID", name: "FromDesigner", component: Form, params: { AppID: appid },props:true
+
+                        }
+                    ]
+                })
+
+                var self = new Vue({
+                    router: router,
+                    components: {
+                        "popper":  popper,
+                        'tzinput': input,
+                        'dropdown': dropdown,
+                        "Griod": Griod,
+                        "Searching": tzSearch,
+                        "Tokenizer": token,
+                        "mvprogress": tProgress,
+                        "cvprogress": cvprogress,
+                        "toaster": toaster,
+                        "ProgressMeter": ProgressMeter
+                    }
+                }).$mount('#app');
+                self.$router.push({ name: 'home', params: { AppiD: appid } });
             }
         );
-    });
-      var appid = '@ViewBag.AppID';     
-    $(document).ready(function () {          
-      
-        var template = '<div>  {0}</div>    ';                 
+        });
+
+     
+
+    $(document).ready(function () {
+
+        var template = '<div>{0}</div>';
         getApp = function (id) {
             var that = this;
             $.ajax('/MyApp/' + id,
@@ -121,9 +142,9 @@
                   //  data: {  appid: id },
                     // timeout milliseconds
                     success: function (data, status, xhr) {   // success callback function
-                        var App = data;                    
-                        template = template.format( App.Description);
-                        $("#apptitle").find("h2").append(App.AppName );
+                        var App = data;
+                    //    template = template.format( App.Description);
+                        $("#apptitle").find("h3").append(App.AppName );
                        // $("#container").append(template);
                     },
                     error: function (jqXhr, textStatus, errorMessage) { // error callback
@@ -133,11 +154,10 @@
         }
 
         newCompnonent = function (plc) {
-            var a = httpVueLoader('/vue/component/csimpleform.vue?6');
+            var a = httpVueLoader('/vue/App/component/csimpleform.vue?6');
             new Vue({
                 components: {
                     "csimpleform": a,
-                    
                     //'Client': client
                 },
                 data: function () {
@@ -145,21 +165,15 @@
                 },
                 methods: {
                     newApp: function () {
-                      ///  alert("mew fomr");
                     },
                     afterSaved: function () {
-                        getComponent();
+                        window.r.$refs.refComp.forceRerender();
                     }
                 },
                 watch: {
-                    //inputtext: function () {
-                    //    //debugger;
-                    //    //this.inputtext = val;
-                    //}
                 },
                 computed: {
                     getVal: function () {
-                        //     return this.inputtext / 2;
                     }
                 }
             }).$mount('#' + plc);
@@ -174,4 +188,67 @@
         }
         getApp(appid);
     });
-</script>
+
+    //debugger;
+    //var template = "<div style='margin-left:35%'>"
+    //    + '<label class="stlabel" > Component Name</label>'
+    //    + '<div style="width:65%">'
+    //    + '<tzinput : attribute="{'
+    //    + "id: 'txtComponentName', "
+    //    + "isRequired:false,"
+    //    + "enabletooltip:true,"
+    //    + "min:0,"
+    //    + "inputType:1,"
+    //    + "max:500,"
+    //    + "limit:true"
+    //    + ' }"'
+    //    + ':value="compName" v-on:input = "updating" ></tzinput > '
+    // +"</div>"
+    //    + '<label class="stlabel">Title</label>'
+    //    + '<div style="width:65%">'
+    //    + '<tzinput : attribute="{'
+    //    + "id: 'txtTitle',"
+    //    + "isRequired:false,"
+    //    + " enabletooltip:true,"
+    //    + "min:0,"
+    //    + "inputType:1,"
+    //    + "max:500,"
+    //    + "limit:true"
+    //    + '}"'
+    //    + ':value="title" v-on:input="updatetitle"></tzinput>'
+    //    + "</div>"
+    //    + '<label class="stlabel">Title</label>'
+    //    + '<div style="width:65%">'
+    //    + '<tzinput : attribute="{'
+    //    + "id: 'txtCagory',"
+    //    + "isRequired:false,"
+    //    + "enabletooltip:true,"
+    //    + "min:0,"
+    //    + "inputType:1,"
+    //    + "max:500,"
+    //    + "limit:true"
+    //    + '}"'
+    //    + ':value="category" v-on:input="updatecategory"></tzinput>'
+    //    + "</div>"
+    //    + '<label class="stlabel">Title Format</label>'
+    //    + '<div style="width:65%">'
+    //    + '<tzinput : attribute="{'
+    //    + "id: 'txtTitleFormat',"
+    //    + "isRequired:false,"
+    //    + "enabletooltip:true,"
+    //    + "min:0,"
+    //    + "inputType:1,"
+    //    + "max:500,"
+    //    + "limit:true"
+    //    + '}"'
+    //    + ' :value="titleformat" v-on:input="updatetitleformat"></tzinput>'
+    //    + "</div>"
+
+    //    + '<div style="position:absolute; left:69%">'
+    //    + '<button class="btn btn-primary" v-on: click="Save">Save</button>'
+    //    + '<button class="btn btn-default" v-on: click="Close">Cancel</button>'
+    //    + "</div>"
+    //    + "</div>";
+    //document.write(template);
+ //   var AppComponent = {};
+    </script>

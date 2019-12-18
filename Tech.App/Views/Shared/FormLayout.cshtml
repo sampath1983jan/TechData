@@ -117,15 +117,14 @@
             font-size: 17px;
             cursor: pointer;
             float: left;
-            padding:0px;
-       
+            padding: 0px;
         }
 
             .navbar > .item {
                 color: rgba(174, 166, 166, 0.90);
                 border-left: 1px solid #5b5959;
                 border-right: 1px solid #5b5959;
-                padding:5px 8px !important;
+                padding: 5px 8px !important;
             }
 
                 .navbar > .item:hover {
@@ -317,7 +316,7 @@
 
     </script>
 </head>
-<body  style="padding-top:0px; margin-top:0px;">
+<body style="padding-top:0px; margin-top:0px;">
     <div>
         <div id="navBar" class="bar">
             <div class="row">
@@ -333,50 +332,51 @@
                     </div>
                     <ul id="newElemt" class="navbar" style="">
                         <li class="nav-item item">
-                            <a><i class="icofont-plus" ></i></a>                        </li>
-                        
+                            <a><i class="icofont-plus"></i></a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="col-md-2"></div>
-                    <div class="col-md-2">
-                        <div id="entityActions" class="row">
+                <div class="col-md-2">
+                    <div id="entityActions" class="row">
 
-                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-        
-        @RenderBody()
-        <div id="tzContainer">
-            <div>
-                <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
 
-                </toaster>
-            </div>
         </div>
-        <div id="tzFeedback">
-            <div>
-                <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
+    </div>
 
-                </toaster>
-            </div>
+    @RenderBody()
+    <div id="tzContainer">
+        <div>
+            <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
+
+            </toaster>
         </div>
-        @*<div id="slider" class="hidden">
+    </div>
+    <div id="tzFeedback">
+        <div>
+            <toaster :toas="tos" :id="id" ref="foo" :position="position" :type="toasterType">
+
+            </toaster>
+        </div>
+    </div>
+    @*<div id="slider" class="hidden">
             <div class="row">
                 <div class="col-md-3" id="compContainer"></div>
                 <div class="col-md-3" id="formContainer"></div>
                 <div class="col-md-3" id="pageContainer"></div>
             </div>
         </div>*@
-        <div id="homesd" class="hidden hiddenhome">
-            <div class="row">
-                <div class="col-md-12" id="appContainer"></div>
-            </div>
+    <div id="homesd" class="hidden hiddenhome">
+        <div class="row">
+            <div class="col-md-12" id="appContainer"></div>
         </div>
-        <div class="screen hidden" ></div>
-    
+    </div>
+    <div class="screen hidden"></div>
+
 </body>
 </html>
 <script type="text/javascript">

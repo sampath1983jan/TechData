@@ -40,7 +40,7 @@ namespace Tz.Core
         /// </summary>
         /// <param name="component"></param>
         public ComponentManager(IComponent component) {
-            component.ComponentID = "";
+           // component.ComponentID = "";
             _component = component;
         }       
         /// <summary>
@@ -59,10 +59,19 @@ namespace Tz.Core
         /// 
         /// </summary>
         /// <returns></returns>
+        public bool UpdateComponent() {
+            Component c = (Component)_component;
+           return c.Update();
+
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string Publish() {
             if (Component.Attributes.Count == 0)
             {
-                throw new Exception("", null);
+                throw new Exception("Component must have atleast one attribute.", null);
             }
             Component c = (Component)_component;
             c.Publish(); 

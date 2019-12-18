@@ -113,7 +113,7 @@ namespace Tz.App
             Components = new List<AppElement.AppComponent>();
             Load();
         }
-        public void Load()
+        private void Load()
         {
             Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
             var dt = new DataTable();
@@ -192,6 +192,7 @@ namespace Tz.App
                 var ac = new App.AppElement.AppComponent(this.ClientID, this.AppID, cid);
                 var c = ac.Component;
                 c.ClientID = this.ClientID;
+                c.ComponentID = cid;
                 c.ComponentName = dr.IsNull("ComponentName") ? "" : dr["ComponentName"].ToString();
                 c.ComponentType = dr.IsNull("ComponentType") ? Tz.Core.ComponentType.none : (Tz.Core.ComponentType)dr["ComponentType"];
                 c.Title = dr.IsNull("Title") ? "" : dr["Title"].ToString();
@@ -295,7 +296,8 @@ namespace Tz.App
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public bool SaveComponent(Tz.Core.IComponent c) {
+        public bool SaveComponent(Tz.Core.IComponent c)
+        {
             var a = new Tz.Core.ComponentManager(c);
             string compID = a.SaveComponent();
             if (compID != "")
@@ -305,7 +307,55 @@ namespace Tz.App
                 if (cc.Assign()) { return true; }
                 else return false;
             }
-            else return false;                  
+            else return false;
+        }
+        public bool UpdateComponent(Tz.Core.IComponent c) {
+            var cc = new AppElement.AppComponent(this.ClientID, this.AppID, c.ComponentID);
+            cc.Load();
+            cc.Component.ComponentName = c.ComponentName;
+            cc.Component.Category = c.Category;
+            cc.Component.Title = c.Title;
+            cc.Component.TitleFormat = c.TitleFormat;
+          
+            var a = new Tz.Core.ComponentManager(cc.Component);
+            return a.UpdateComponent();
+
+
+        }
+        public bool RemoveComponent(string componentID) {
+            if (this.Components.Count == 0)
+                GetComponents();
+            var comp = this.GetComponent(componentID);
+            Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
+            Core.ComponentManager mg = new ComponentManager(comp);
+            if (mg.Remove())
+            {
+                a.RemoveAppComponent(this.ClientID, this.AppID, componentID);
+                return true;
+            }
+            else
+                return false;
+        }
+        public bool PublishComponent(string componentID) {
+            if (this.Components.Count == 0)
+                GetComponents();
+            var comp = this.GetComponent(componentID);
+            comp.LoadAttributes();
+            Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
+            Core.ComponentManager mg = new ComponentManager(comp);
+            try
+            {
+                if (mg.Publish() != "")
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            catch (Exception ex) {
+                throw new Exception(ex.Message, ex.InnerException);
+            }
+          
         }
         /// <summary>
         /// 

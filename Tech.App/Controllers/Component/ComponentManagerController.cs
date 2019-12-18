@@ -167,7 +167,7 @@ namespace Tz.BackApp.Controllers.Component
             string clientid = Request.Params["clientkey"];
            var a = new Tz.App.AppManager(clientid, appid);
             return new JsonpResult(a.GetComponents());
-           // return new JsonpResult(Core.Component.GetComponentList(clientid));
+           
         }
         /// <summary>
         /// 
@@ -181,9 +181,11 @@ namespace Tz.BackApp.Controllers.Component
             //Tz.Core.ComponentManager cm = new Core.ComponentManager(clientid, componentID);
             //return new JsonpResult(cm);
             string clientid = Request.Params["clientkey"];
-            var a = new Tz.App.AppManager(clientid, appid);
+            var a = new Tz.App.AppManager(clientid, appid);           
             a.GetComponents();
-            return new JsonpResult(a.GetComponent(compid));
+           var comp= a.GetComponent(compid);
+            comp.LoadAttributes();
+            return new JsonpResult(comp);
         }
 
         [Route("App/{appid}/Component/Create")]
@@ -196,10 +198,29 @@ namespace Tz.BackApp.Controllers.Component
             comp.ComponentName = compName;
             comp.Title = title;
             return new JsonpResult (a.SaveComponent(comp));
+        }
+        [Route("App/{appid}/Component/{componentid}/update")]
+        public JsonpResult UpdateComponent(string appid, string componentid, string compName, string title, string category, string titleformat)
+        {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            a.GetComponents();
+            var comp = a.GetComponent(componentid);
+            if (comp != null)
+            {
+                comp.ComponentName = compName;
+                comp.Title = title;
+                comp.TitleFormat = titleformat;
+                comp.Category = category;               
 
-            //Core.ComponentManager mg = new ComponentManager((Core.ComponentType.core),
-            //    clientid, compName, "", title, "");
-            //return new JsonpResult(mg.SaveComponent());
+                return new JsonpResult(a.UpdateComponent(comp));
+            }
+            else {
+                throw new Exception("This component not exist. Please contact service provider");
+            }
+       
+         
+
         }
         ///// <summary>
         ///// 
@@ -263,10 +284,12 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="clientid"></param>
         /// <param name="componentid"></param>
         /// <returns></returns>
-        public JsonpResult RemoveComponent(string clientid, string componentid) {
+        [Route("App/{appid}/Component/Remove/{componentid}")]
+        public JsonpResult RemoveComponent(string appid, string componentid) {
             //   Tz.Net.ClientServer c = new Net.ClientServer(clientid);
-            Core.ComponentManager mg = new ComponentManager(clientid, componentid);
-            return new JsonpResult(mg.Remove());
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);             
+            return new JsonpResult(a.RemoveComponent(componentid));
         }
         /// <summary>
         /// /

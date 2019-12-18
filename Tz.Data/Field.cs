@@ -85,11 +85,11 @@ namespace Tz.Data
 
            public bool Save(ref DataTable dtFields) {                        
             DataRow item = null;
-            dtFields.Columns.Add(new DataColumn("fieldid"));
-            for (int i = 0; i < dtFields.Rows.Count; i++)
-            {
-                dtFields.Rows[i]["fieldid"] = Shared.generateID();
-            }
+            //dtFields.Columns.Add(new DataColumn("fieldid"));
+            //for (int i = 0; i < dtFields.Rows.Count; i++)
+            //{
+            //    dtFields.Rows[i]["fieldid"] = Shared.generateID();
+            //}
             DBParam dbfieldid = DBParam.ParamWithDelegate(DbType.String, delegate { return item["fieldid"] == null ? Shared.generateID() : item["fieldid"]; });
             DBParam dbTableid = DBParam.ParamWithDelegate(DbType.String, delegate { return item["tableid"] == null ? "" : item["tableid"]; });
             DBParam dbfieldName = DBParam.ParamWithDelegate(DbType.String, delegate { return item["fieldname"] == null ? "" : item["fieldname"]; });

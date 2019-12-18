@@ -5,8 +5,10 @@ define(function () {
         $(d).attr("data-toggle", "tooltip");
         $(d).attr("title", "this is required field");
         $(ele).find('select').appendTo(d);
-       
-        $(d).append('<small id="emailHelp" class="form-text help-text-muted">' + attr.note + '</small>');
+        if (attr.note != undefined) {
+            $(d).append('<small id="emailHelp" class="form-text help-text-muted">' + attr.note + '</small>');
+        }
+      
         $(ele).append(d);
     }
     return Vue.component('tzdropdown',
@@ -15,7 +17,7 @@ define(function () {
                 + '<option v-for="option in datasource" :value="option[valuefield]"  :key="option[valuefield]"> {{ option[displayfield] }}</option>'
                 + ' </select ></div>'
             ,
-            props: ['attribute'],
+            props: ['attribute', 'value'],
             data: function () {
                 return {
                     required: true,
@@ -35,15 +37,18 @@ define(function () {
 
             },
             watch: {
-
+                value: function (newVal, oldVal) {                 
+                    this.text = newVal;
+                    $(this.$el).find("select").Input("text",this.text);    
+                }
             },
             mounted: function () {
-                var othis = this;
-              
+                var othis = this;             
                 this.$nextTick(function () {
+               
                     this.attr.inputType = 19;                 
-                    dropdowntemplate(this.$parent.$el, this.attr);                  
-                    $(othis.$parent.$el).find("select").Input(othis.attr);                                 
+                    dropdowntemplate(this.$el, this.attr);                  
+                    $(othis.$el).find("select").Input(othis.attr);                                 
                 });
             },
             updated: function () {              

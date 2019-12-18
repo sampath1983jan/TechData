@@ -1,5 +1,7 @@
 ﻿
 define(function () {
+
+
     var setTemplate = function (itype, ele, attr) {
         itype = parseInt(itype);
      
@@ -75,31 +77,31 @@ define(function () {
     }
     return Vue.component('tzinput',
         {
-            template: '<div><input :type="getType"  v-model="getValue"  @blur="handleInput"  v-on:change="changeinput"   @input="handleInput"/></div>'
+            template: '<div><input :type="getType"  v-model="text"  @blur="handleInput"  v-on:change="changeinput"   @input="handleInput"/></div>'
             ,
-            props: ['value', 'type', 'inputType', 'attribute','req', 'id'],
+            props: ['value', 'type', 'inputType', 'attribute', 'req', 'id'],
             data: function () {
                 return {
-                    required: true,                  
+                    required: true,
                     length: 200,
                     with: 200,
                     height: '',
-                    text: this.value,          
+                    text: this.value
                 }
             },
             created: function () {
 
             },
-            watch:  {
-               
-            },             
+
             mounted: function () {
-                var othis = this;              
+                var othis = this;
                 this.$nextTick(function () {
                     setTemplate(this.attribute.inputType, this.$el, this.attribute);
-                    $(this.$el).find("input").Input(this.attribute);                    
-                    $(this.$el).find("input").Input("text", this.text);
-                    $(othis.$el).find('input[type=checkbox]').click(function () {
+                    $(this.$el).find("input").attr("id", this.attribute.id);
+                    $(this.$el).find("input").Input(this.attribute);
+                    $(this.$el).find("input").Input("text", this.dataformat(this.text));
+                    $(this.$el).find('input[type=checkbox]').click(function () {
+                      //  debugger;
                         if ($(this).prop("checked") == true) {
                             othis.text = true;
                             othis.$emit("input", othis.text);
@@ -110,35 +112,36 @@ define(function () {
                             othis.$emit("input", othis.text);
                         }
                     });
-                    $(othis.$el).find('input').keypress(function () {
-                        othis.text = $(this).val();
-                        othis.$emit("text", othis.text);
+                    $(this.$el).find('input').keypress(function () {
+                        this.text = $(this).val();
+                        othis.$emit("text", this.text);
                     });
-                    $(othis.$el).find('input').blur(function () {
+                    $(this.$el).find('input').blur(function () {
                         //othis.text = $(this).val();
                         //othis.$emit("text", othis.text);
                     });
-                    $(othis.$el).find('input').change(function () {
+                    $(this.$el).find('input').change(function () {
+                     
                         if (othis.attribute.inputType == 5) {
-                            othis.text = $(this).timepicki("getValue").date;
+                            this.text = $(this).timepicki("getValue").date;
                             othis.$emit('input', $(this).timepicki("getValue"));
                         } else if (othis.attribute.inputType == 13) {
-                            othis.text = $(this).val();
-                            othis.$emit('input', othis.text);
-                        }                     
-                       // alert($(this).timepicki("getValue"));                 
+                            this.text = $(this).val();
+                            othis.$emit('input', othis.dataformat(this.text));
+                        }
+                        // alert($(this).timepicki("getValue"));                 
                     });
-                    $(othis.$el).find('input').css({ "border": "1px solid #aaa", "border-radius": "5px" });
+                    $(this.$el).find('input').css({ "border": "1px solid #aaa", "border-radius": "5px" });
                 });
             },
             updated: function () {
-            //    $(this.$parent.$el).find('input').css("border", "1px solid black");
-            //    alert($(this.$parent.$el).html());
+                //    $(this.$parent.$el).find('input').css("border", "1px solid black");
+                //    alert($(this.$parent.$el).html());
 
             },
             destroyed: function () {
-             //   $(this.$parent.$el).find('input').css("border", "1px solid black");
-            //    alert($(this.$parent.$el).html());
+                //   $(this.$parent.$el).find('input').css("border", "1px solid black");
+                //    alert($(this.$parent.$el).html());
             },
             methods: {
                 gettime: function () {
@@ -157,7 +160,7 @@ define(function () {
                     ti = d.getHours();
                     mi = d.getMinutes();
                     mer = "AM";
-                    if (this.text.indexOf("AM") > 0 || this.text.indexOf("PM") >0) {
+                    if (this.text.indexOf("AM") > 0 || this.text.indexOf("PM") > 0) {
                         if (ti === 0) { // midnight
                             ti = 12;
                         } else if (ti === 12) { // noon
@@ -170,14 +173,14 @@ define(function () {
                     return [ti, mi, mer];
 
                 },
-                handleInput: function (e) {    
-                   // console.log(this.text);
+                handleInput: function (e) {
+                    // console.log(this.text);
                     this.$emit('input', this.text);
                     this.$emit('handle-Input', this.text);
                 },
                 changeinput: function (e) {
-                 //   alert(this.text);
-                   console.log(this.text);
+                    //   alert(this.text);
+                    console.log(this.text);
                     this.$emit('input', this.text);
                 },
                 setValue: function (value) {
@@ -190,31 +193,33 @@ define(function () {
                     if (this.required == true) {
                         return 'required';
                     }
-
                 },
                 getType: function () {
                     if (this.attribute.inputType == "number") {
                         return "date";
                     }
+                },
+                dataformat: function (val) {
+                    if (!val) return '';               
+                    if (this._props.attribute.inputType == 5) {
+                        return this.gettime();
+                    } else {
+                        var a = val + "";
+                        return a.toLowerCase();
+                    }
                 }
             },
-            computed: {
-                fullName:{
-                    // getter
-                    get: function () {
-                        return this.firstName + ' ' + this.lastName;
-                    },
-                    // setter
-                    set: function (newValue) {
-                        var names = newValue.split(' ');
-                        this.firstName = names[0];
-                        this.lastName = names[names.length - 1];
-                    }
-                },
+            watch: {
+                value: function (newVal, oldVal)  {                     
+                   //console.log('Prop changed: ', newVal, ' | was: ', oldVal);
+                    this.text = newVal;
+                }
+            },
+            computed: {              
                 getValue: {
                     // getter
                     get: function () {
-                    
+                     
                         if (this._props.attribute.inputType == 5) {
                             return this.gettime();
                         } else {
@@ -224,7 +229,8 @@ define(function () {
                     },
                     // setter
                     set: function (newValue) {
-                        this.text = newValue
+                        
+                        this.text = newValue;
                     }
                 },
                 getType: {

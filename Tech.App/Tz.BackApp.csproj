@@ -380,6 +380,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\icofont.svg" />
+    <Content Include="Content\icofont.min.css" />
     <Content Include="Content\Main.css">
       <DependentUpon>Main.scss</DependentUpon>
     </Content>
@@ -830,11 +832,21 @@
     <Content Include="Scripts\requires.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
+    <Content Include="Scripts\vue\vue-router.js" />
     <Content Include="Scripts\vue\vue.common.dev.js" />
     <Content Include="Scripts\vue\vue.esm.js" />
     <Content Include="Scripts\vue\vue.js" />
     <Content Include="Scripts\vue\vue.min.js" />
     <Content Include="vue\App\AppDesigner.vue" />
+    <Content Include="vue\App\Component\CompForm.vue" />
+    <Content Include="vue\App\Component\ComponentManager.vue" />
+    <Content Include="vue\App\Component\CompAttributes.vue" />
+    <Content Include="vue\App\Component\AttributeDesigner.vue" />
+    <Content Include="Content\fonts\icofont.eot" />
+    <Content Include="Content\fonts\icofont.ttf" />
+    <Content Include="Content\fonts\icofont.woff" />
+    <Content Include="Content\fonts\icofont.woff2" />
+    <Content Include="Views\Shared\FormLayout.cshtml" />
     <None Include="vue\App\Component\CSimpleForm.vue" />
     <Content Include="vue\Controls\Circular-Progress.js" />
     <Content Include="vue\Controls\dropdown.js" />
@@ -946,6 +958,7 @@
     <Content Include="Views\App\AppInfo.cshtml" />
     <Content Include="Views\Shared\AppLayout.cshtml" />
     <Content Include="vue\App\Component\ComponentList.vue" />
+    <Content Include="vue\App\Forms\FormList.vue" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

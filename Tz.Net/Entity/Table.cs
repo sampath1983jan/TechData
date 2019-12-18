@@ -162,11 +162,15 @@ namespace Tz.Net.Entity
             dt.Columns.Add("isnull", typeof(bool));
             dt.Columns.Add("isprimary", typeof(bool));
             dt.Columns.Add("length", typeof(int));
+            dt.Columns.Add(("fieldid"));
             DataRow dr;
             bool isFieldExist = false;
+            var tb = new Table(ServerID, this.TableID, this.ClientID);
+            tb.Load();
+
             foreach (Field field in this.Fields)
             {
-                if (field.FieldID == "")
+                if (tb.Fields.Where(x=> x.FieldID == field.FieldID).FirstOrDefault ()== null)
                 {
                     dr = dt.NewRow();
                     dr[0] = this.TableID;
@@ -175,8 +179,14 @@ namespace Tz.Net.Entity
                     dr[3] = field.IsNullable;
                     dr[4] = field.IsPrimaryKey;
                     dr[5] = field.Length;
+                    if (field.FieldID == "")
+                    {
+                        dr[6] = Shared.generateID();
+                    }
+                    else {
+                        dr[6] = field.FieldID;
+                    }
                     dt.Rows.Add(dr);
-
                 }
                 else {
                     isFieldExist = true;
@@ -244,12 +254,13 @@ namespace Tz.Net.Entity
         /// 
         /// </summary>
         /// <returns></returns>
-        public IField NewField() {
+        public IField NewField(string fieldID = "") {
             var f= new Field(this.TableID);
             f.FieldType = System.Data.DbType.String;
             f.IsNullable = true;
             f.IsPrimaryKey = false;
-            f.FieldName = "";            
+            f.FieldName = "";
+            f.setFieldID(fieldID);
             return f;
         }
         /// <summary>

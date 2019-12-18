@@ -196,11 +196,15 @@ namespace Tz.Global
             public static readonly DBColumn IsSecured = DBColumn.Column("IsSecured", System.Data.DbType.Boolean, 555, DBColumnFlags.Nullable);
             public static readonly DBColumn LookUpID = DBColumn.Column("LookUpID", System.Data.DbType.String, DBColumnFlags.Nullable);
             public static readonly DBColumn AttributeType = DBColumn.Column("AttributeType", System.Data.DbType.Int32, 555, DBColumnFlags.Nullable);
+            public static readonly DBColumn Length = DBColumn.Column("Length", System.Data.DbType.Int32, 100000000, DBColumnFlags.Nullable);
             public static readonly DBColumn DefaultValue = DBColumn.Column("DefaultValue", System.Data.DbType.String, 555, DBColumnFlags.Nullable);
             public static readonly DBColumn FileExtension = DBColumn.Column("FileExtension", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
             public static readonly DBColumn RegExp = DBColumn.Column("RegExp", System.Data.DbType.String, 255, DBColumnFlags.Nullable);
+            public static readonly DBColumn IsNullable = DBColumn.Column("IsNullable", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
+            public static readonly DBColumn ISPrimaryKey = DBColumn.Column("ISPrimaryKey", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
             public static readonly DBColumn IsAuto = DBColumn.Column("IsAuto", System.Data.DbType.Boolean, DBColumnFlags.Nullable);
             public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+            
         }
         public class ComponentModal
         {

@@ -37,6 +37,10 @@ namespace Tz.App.AppElement
             this.ElementID = elementID;
             component = new Tz.Core.Component(this.ClientID);
         }
+        internal void Load() {
+            component = new Tz.Core.Component(this.ClientID, this.ElementID);
+            
+        }
         /// <summary>
         /// 
         /// </summary>
