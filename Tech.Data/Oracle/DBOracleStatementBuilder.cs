@@ -735,7 +735,7 @@ namespace Tech.Data.Oracle
             }
         }
 
-        public override void WriteLiteral(System.Data.DbType dbType, object value)
+        public override void WriteLiteral(System.Data.DbType dbType, object value, bool isInorNot = false)
         {
             if (dbType == System.Data.DbType.Time)
             {

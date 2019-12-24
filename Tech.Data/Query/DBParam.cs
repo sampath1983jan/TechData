@@ -716,7 +716,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder">The SQL statement builder</param>
         /// <returns></returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             this.Name = builder.RegisterParameter(this);
 
@@ -794,7 +794,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder"></param>
         /// <returns></returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             this.Name = builder.RegisterParameter(this);
 

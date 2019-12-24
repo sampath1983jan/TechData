@@ -162,7 +162,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
         
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginAggregateFunction(this.Function,this.Function.ToString());
             builder.BeginFunctionParameterList();

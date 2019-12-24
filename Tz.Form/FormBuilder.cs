@@ -60,6 +60,9 @@ namespace Tz.UIForms
             UIForm.FormFields.Add(field);
             return this;
         }
+        public bool Remove() {
+           return UIForm.Remove();
+        }
         /// <summary>
         /// 
         /// </summary>

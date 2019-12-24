@@ -13,6 +13,8 @@ namespace Tz.Controls
         public string Name { get; set; }
         public int Width { get; set; }
         public string Height { get; set; }
+        public string Description { get; set; }
+ 
         protected void Render() {
 
         }

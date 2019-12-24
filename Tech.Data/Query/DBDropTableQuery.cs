@@ -118,7 +118,7 @@ namespace Tech.Data.Query
 #else
 
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginDropStatement(DBSchemaTypes.Table, this.TableOwner, this.TableName, this.CheckExists == DBExistState.Exists);
             builder.EndDrop(DBSchemaTypes.Table, this.CheckExists == DBExistState.Exists);

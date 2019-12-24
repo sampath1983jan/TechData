@@ -89,7 +89,7 @@ namespace Tech.Data.Query
         // no statement building
 #else
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginDropStatement(DBSchemaTypes.Index, this.Owner, this.Name, this.CheckExists == DBExistState.Exists);
             if (!string.IsNullOrEmpty(this.TableName))

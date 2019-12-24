@@ -97,7 +97,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder">The provider specific builder</param>
         /// <returns>true if the statement was built</returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginDeleteStatement();
             if(_from != null)

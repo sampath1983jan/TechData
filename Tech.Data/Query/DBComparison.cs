@@ -325,13 +325,19 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNotIn=false)
         {
             if (this.ToOperateOn != null)
             {
                 builder.BeginBlock();
                 builder.WriteOperator((Operator)this.UnaryOperator);
-                this.ToOperateOn.BuildStatement(builder);
+                if ((Operator)this.UnaryOperator == Operator.In || (Operator)this.UnaryOperator == Operator.NotIn)
+                {
+                    this.ToOperateOn.BuildStatement(builder, true);
+                }
+                else {
+                    this.ToOperateOn.BuildStatement(builder);
+                }              
                 builder.EndBlock();
                 return true;
             }
@@ -455,12 +461,19 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginBlock();
             this.Left.BuildStatement(builder);
             builder.WriteOperator((Operator)this.CompareOperator);
-            this.Right.BuildStatement(builder);
+
+            if ((Operator)this.CompareOperator == Operator.In || (Operator)this.CompareOperator == Operator.NotIn) {
+                this.Right.BuildStatement(builder,true);
+            }
+            else
+                this.Right.BuildStatement(builder);
+
+
             builder.EndBlock();
 
             return true;
@@ -621,7 +634,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginBlock();
             this.CompareTo.BuildStatement(builder);
@@ -783,7 +796,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             if (null != this.All && this.All.Length > 0)
             {

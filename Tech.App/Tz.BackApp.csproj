@@ -847,6 +847,7 @@
     <Content Include="Content\fonts\icofont.woff" />
     <Content Include="Content\fonts\icofont.woff2" />
     <Content Include="Views\Shared\FormLayout.cshtml" />
+    <Content Include="vue\App\AppHome.vue" />
     <None Include="vue\App\Component\CSimpleForm.vue" />
     <Content Include="vue\Controls\Circular-Progress.js" />
     <Content Include="vue\Controls\dropdown.js" />
@@ -959,6 +960,10 @@
     <Content Include="Views\Shared\AppLayout.cshtml" />
     <Content Include="vue\App\Component\ComponentList.vue" />
     <Content Include="vue\App\Forms\FormList.vue" />
+    <Content Include="vue\App\Forms\FormDesigner.vue" />
+    <Content Include="vue\App\Forms\SimpleForm.Vue" />
+    <Content Include="vue\App\Forms\ChooseComponent.vue" />
+    <Content Include="vue\App\Forms\FormComponentAttribute.vue" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1042,6 +1047,13 @@
       <Project>{C0C78509-EBFD-4FFD-B633-B2EE45156BC5}</Project>
       <Name>Tz.Security</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tz.WebControl\Tz.Controls.csproj">
+      <Project>{918c3bfb-d7ed-4477-818b-475ca43b81ab}</Project>
+      <Name>Tz.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

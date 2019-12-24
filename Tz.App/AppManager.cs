@@ -12,6 +12,7 @@ using Tz.Page;
 using Tz.Report;
 using Tz.Dashboard;
 using System.Data;
+using Tz.UIForms;
 
 namespace Tz.App
 {
@@ -26,6 +27,7 @@ namespace Tz.App
     }
     public class AppManager
     {
+        private List<AppElement.AppForm> _forms;
         private string _appid;
         /// <summary>
         /// 
@@ -83,7 +85,7 @@ namespace Tz.App
         /// <summary>
         /// 
         /// </summary>
-        public List<AppElement.AppForm> Forms { get; }
+        public List<AppElement.AppForm> Forms { get { return _forms; } }
         /// <summary>
         /// 
         /// </summary>
@@ -98,7 +100,10 @@ namespace Tz.App
             this.Category = "None";
             this.AppName = "";
             Components = new List<AppElement.AppComponent>();
-
+            _forms = new List<AppElement.AppForm>();
+            Pages = new List<AppElement.AppWebPage>();
+            Reports = new List<AppElement.AppReport>();
+            Dashboards = new List<AppElement.AppDashboard>();
         }
         /// <summary>
         /// 
@@ -111,6 +116,10 @@ namespace Tz.App
             this.ClientID = clientid;
             _appid = appid;
             Components = new List<AppElement.AppComponent>();
+            _forms = new List<AppElement.AppForm>();
+            Pages = new List<AppElement.AppWebPage>();
+            Reports = new List<AppElement.AppReport>();
+            Dashboards = new List<AppElement.AppDashboard>();
             Load();
         }
         private void Load()
@@ -127,10 +136,8 @@ namespace Tz.App
                 this.Category = dr["Category"] == null ? "" : (string)dr["Category"];
                 this.TimeZone = DBNull.Value.Equals(dr["TimeZone"]) == true ? 0 : (Int32)dr["TimeZone"];
                 this.DateFormat = DBNull.Value.Equals(dr["DateFormat"]) == true ? 0 : (Int32)dr["DateFormat"];
-                this.TimeFormat = DBNull.Value.Equals(dr["TimeFormat"]) == true ? 0 : (Int32)dr["TimeFormat"];
-           
-            }
-           
+                this.TimeFormat = DBNull.Value.Equals(dr["TimeFormat"]) == true ? 0 : (Int32)dr["TimeFormat"];           
+            }           
         }
         public static List<AppManager> GetAppManagers(string clientid) {
             Tz.Data.App.App a = new Data.App.App(Common.GetConnection(clientid));
@@ -169,25 +176,9 @@ namespace Tz.App
                  "TitleFormat",
                  "Category",
                  "IsGlobal"
-                 );
-           // var clist = new List<IComponent>();
-            //dtFields = dt.DefaultView.ToTable(true, "FieldID",
-            //    "AttributeName",
-            //    "ComponentID",
-            //    "IsRequired",
-            //    "IsUnique",
-            //    "IsCore",
-            //    "IsReadOnly",
-            //    "IsSecured",
-            //    "IsAuto",
-            //    "DefaultValue",
-            //    "FileExtension",
-            //    "RegExp",
-            //    "AttributeType"
-            //    );
+                 );            
             foreach (DataRow dr in dttable.Rows)
-            {             
-               // var c = new Tz.Core. Component(this.ClientID);
+            {           
                 string cid = dr.IsNull("ComponentID") ? "" : dr["ComponentID"].ToString();
                 var ac = new App.AppElement.AppComponent(this.ClientID, this.AppID, cid);
                 var c = ac.Component;
@@ -200,26 +191,7 @@ namespace Tz.App
                 c.PrimaryKeys = dr.IsNull("PrimaryKeys") ? "" : dr["PrimaryKeys"].ToString();
                 c.TitleFormat = dr.IsNull("TitleFormat") ? "" : dr["TitleFormat"].ToString();
                 c.Category = dr.IsNull("Category") ? "" : dr["Category"].ToString();
-                c.IsGlobal = dr.IsNull("IsGlobal") ? false : Convert.ToBoolean(dr["IsGlobal"]);
-                //foreach (DataRow drow in dtFields.Rows)
-                //{
-                //    string _fieldid = "";
-                //    _fieldid = drow.IsNull("FieldID") ? "" : drow["FieldID"].ToString();
-                //    Core.ComponentAttribute ca = new Core.ComponentAttribute(this.ClientID, c.TableID, _fieldid);
-                //    ca.AttributeName = drow.IsNull("AttributeName") ? "" : drow["AttributeName"].ToString();
-                //    // ca.FieldName = drow.IsNull("FieldName") ? "" : drow["FieldName"].ToString();
-                //    ca.IsRequired = drow.IsNull("IsRequired") ? false : Convert.ToBoolean(drow["IsRequired"]);
-                //    ca.IsUnique = drow.IsNull("IsUnique") ? false : Convert.ToBoolean(drow["IsUnique"]);
-                //    ca.IsCore = drow.IsNull("IsCore") ? false : Convert.ToBoolean(drow["IsCore"]);
-                //    ca.IsReadOnly = drow.IsNull("IsReadOnly") ? false : Convert.ToBoolean(drow["IsReadOnly"]);
-                //    ca.IsSecured = drow.IsNull("IsSecured") ? false : Convert.ToBoolean(drow["IsSecured"]);
-                //    ca.IsAuto = drow.IsNull("IsAuto") ? false : Convert.ToBoolean(drow["IsAuto"]);
-                //    ca.DefaultValue = drow.IsNull("DefaultValue") ? "" : drow["DefaultValue"].ToString();
-                //    ca.FileExtension = drow.IsNull("FileExtension") ? "" : drow["FileExtension"].ToString();
-                //    ca.RegExp = drow.IsNull("RegExp") ? "" : drow["RegExp"].ToString();
-                //    ca.AttributeType = drow.IsNull("AttributeType") ? Core.ComponentAttribute.ComoponentAttributeType._string : (Core.ComponentAttribute.ComoponentAttributeType)drow["AttributeType"];
-                //                     c.Attributes.Add(ca);
-                //}
+                c.IsGlobal = dr.IsNull("IsGlobal") ? false : Convert.ToBoolean(dr["IsGlobal"]);              
                 acs.Add(ac);
             }
             return acs;
@@ -244,10 +216,13 @@ namespace Tz.App
             Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
             DataTable dt = new DataTable();
             dt = a.GetAppForm(this.ClientID, this.AppID);
-            foreach (DataRow r in dt.Rows)
-            {
-
-            }
+            string s = string.Join(", ", dt.Rows.OfType<DataRow>().Select(r => r["ElementID"].ToString()));
+         var uforms =   Tz.UIForms.Form.GetForms(this.ClientID,s);
+                      foreach (UIForms.Form f in uforms) {
+                var apForm = new App.AppElement.AppForm(this.ClientID, this.AppID);
+                apForm.Set(f);
+                this.Forms.Add(apForm);
+            }          
         }
         /// <summary>
         /// 
@@ -283,13 +258,15 @@ namespace Tz.App
             Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
            return a.Remove(this.ClientID, this.AppID);
         }
+        #region Component
         /// <summary>
         /// 
         /// </summary>
         /// <param name="ctype"></param>
         /// <returns></returns>
-        public Tz.Core.IComponent NewComponent(ComponentType ctype) {
-            return new Tz.Core.ComponentManager(ctype, this.ClientID, "", "", "", "").Component ;
+        public Tz.Core.IComponent NewComponent(ComponentType ctype)
+        {
+            return new Tz.Core.ComponentManager(ctype, this.ClientID, "", "", "", "").Component;
         }
         /// <summary>
         /// 
@@ -309,20 +286,22 @@ namespace Tz.App
             }
             else return false;
         }
-        public bool UpdateComponent(Tz.Core.IComponent c) {
+        public bool UpdateComponent(Tz.Core.IComponent c)
+        {
             var cc = new AppElement.AppComponent(this.ClientID, this.AppID, c.ComponentID);
             cc.Load();
             cc.Component.ComponentName = c.ComponentName;
             cc.Component.Category = c.Category;
             cc.Component.Title = c.Title;
             cc.Component.TitleFormat = c.TitleFormat;
-          
+
             var a = new Tz.Core.ComponentManager(cc.Component);
             return a.UpdateComponent();
 
 
         }
-        public bool RemoveComponent(string componentID) {
+        public bool RemoveComponent(string componentID)
+        {
             if (this.Components.Count == 0)
                 GetComponents();
             var comp = this.GetComponent(componentID);
@@ -336,7 +315,8 @@ namespace Tz.App
             else
                 return false;
         }
-        public bool PublishComponent(string componentID) {
+        public bool PublishComponent(string componentID)
+        {
             if (this.Components.Count == 0)
                 GetComponents();
             var comp = this.GetComponent(componentID);
@@ -352,31 +332,34 @@ namespace Tz.App
                 else
                     return false;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 throw new Exception(ex.Message, ex.InnerException);
             }
-          
+
         }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="ElementID"></param>
         /// <returns></returns>
-        public IComponent GetComponent(string ElementID) {
-          var c=   this.Components.Where(x => x.Component.ComponentID == ElementID).FirstOrDefault();
+        public IComponent GetComponent(string ElementID)
+        {
+            var c = this.Components.Where(x => x.Component.ComponentID == ElementID).FirstOrDefault();
             if (c == null)
             {
                 var aa = new ComponentManager(this.ClientID, ElementID);
                 return aa.Component;
             }
             else
-                return null;      
+                return null;
         }
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public bool Save() {
+        public bool Save()
+        {
             Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
             if (this.AppID == "")
             {
@@ -391,7 +374,8 @@ namespace Tz.App
                 }
                 else { return false; }
             }
-            else {
+            else
+            {
                 if (a.Update(this.ClientID,
                      this.AppID,
                      this.AppName,
@@ -402,9 +386,87 @@ namespace Tz.App
                 }
                 else
                     return false;
-            }          
+            }
 
         }
+
+        #endregion
+        #region Form
+        public UIForms.Form NewForm() {                
+            var k = new List<UIFormKey>();
+         var   formBuilder = new FormBuilder(this.ClientID,"", k, new FormFieldBuilder());
+            return   formBuilder.UIForm;            
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="formid"></param>
+        /// <returns></returns>
+        public UIForms.Form GetForm(string formid) {
+            var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+            return appform.Form;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="f"></param>
+        /// <returns></returns>
+        public bool SaveForm(UIForms.Form f)
+        {
+            if (f.Save())
+            {
+                var cc = new AppElement.AppForm(this.ClientID, this.AppID, f.FormID);
+                this.Forms.Add(cc);
+                if (cc.Assign()) { return true; }
+                else
+                    return false;
+            }
+            else return false;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="formid"></param>
+        /// <returns></returns>
+        public bool RemoveForm(string formid) {
+            var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+            var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
+           return fb.Remove();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="formid"></param>
+        /// <param name="renderType"></param>
+        /// <returns></returns>
+        public FormField NewField(string formid,RenderType renderType) {
+          var appform=  this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+            var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
+      return      fb.NewField(renderType);         
+        
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="formid"></param>
+        /// <param name="field"></param>
+        /// <returns></returns>
+        public bool AddFormField(string formid, FormField field) {
+            var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+            var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
+            return fb.SaveField(field);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="formid"></param>
+        /// <param name="fieldid"></param>
+        /// <returns></returns>
+        public bool RemoveField(string formid, string fieldid) {
+            var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+            return appform.Form.RemoveField(fieldid);
+        }
+        #endregion
     }
 
     public static class Common

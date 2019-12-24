@@ -70,7 +70,16 @@ namespace Tz.Data.App
             db = base.Database;
             DBQuery select;
             select = DBQuery.Select()
-                ;
+                 .Field(TzAccount.App.Table, TzAccount.App.AppID.Name)
+                .Field(TzAccount.AppElements.Table, TzAccount.AppElements.CreatedOn.Name)
+                           .Field(TzAccount.AppElements.Table, TzAccount.AppElements.ElementID.Name)
+                    .From(TzAccount.App.Table).LeftJoin(TzAccount.AppElements.Table).
+                    On(TzAccount.App.Table, TzAccount.App.AppID.Name,
+                Compare.Equals, TzAccount.AppElements.Table, TzAccount.AppElements.AppID.Name)
+                .WhereField(TzAccount.App.Table, TzAccount.App.ClientID.Name,
+               Compare.Equals, DBConst.String(clientid))
+               .AndWhere(TzAccount.App.Table, TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid))
+                 .AndWhere(TzAccount.AppElements.Table, TzAccount.AppElements.ElementType.Name, Compare.Equals, DBConst.String("4"));
                    return db.GetDatatable(select);
         }
         public DataTable GetAppFeature(string clientid, string appid)

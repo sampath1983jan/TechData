@@ -6,7 +6,47 @@
 
 
 <div id="app">
-    <router-view default="{name: 'home'}"></router-view>
+    <div>
+        <div id="navBar" class="bar">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="" id="homenav" style="margin:5px 0px; cursor:pointer;float:left">
+                        <i class="fas fa-bars" style="padding:0px 15px; font-size:18px;"></i>
+                    </div>
+                    <div id="apptitle" style="cursor:pointer; width:35%;float:left">
+                        <a>
+                            <h3 style="margin:0px;float:left"></h3><h5 style="margin-top:5px"></h5>
+
+                        </a>
+                    </div>
+                    <ul id="newElemt" class="navbar" style="">
+                        <li class="nav-item item">
+                            <a><i class="icofont-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <div id="entityActions" class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Slider Start-->
+    <div id="slider" class="hidden">
+        <div class="row">
+            <comp-list :appid="AppID" v-on:onComponentChange="onChanged" ref="refComp"></comp-list>
+            <form-list :appid="AppID" v-on:onformselection="onFormSelection" ref="refForms"></form-list>
+            <div class="col-md-3" id="pageContainer"></div>
+        </div>
+    </div>
+    <!--Slider End-->
+
+
+    <router-view :key="$route.fullPath"></router-view>
+    @*<app-home :appid="AppID"></app-home>*@
 </div>
  
     <script type="text/javascript">
@@ -54,59 +94,158 @@
                 ProgressMeter, mom, calendar, color, NumberSlider, page, touch) {
                 window.dropdown_c = dropdown;
                 window.popper = popper;
+
+                var appDesigner = httpVueLoader('/vue/App/AppDesigner.vue?' + (Math.random() * 10000));
                 var cmManager = httpVueLoader('/vue/App/Component/ComponentManager.vue?4');
                 var CompForm = httpVueLoader('/vue/App/Component/CompForm.vue?' + (Math.random() * 10000));
                 var attributes = httpVueLoader('/vue/App/Component/CompAttributes.vue?' + (Math.random() * 10000));
                 var atDesigner = httpVueLoader('/vue/App/Component/AttributeDesigner.vue?' + (Math.random() * 10000));
+                var fmDesigner = httpVueLoader('/vue/App/Forms/FormDesigner.vue?' + (Math.random() * 10000));
+
+                var appHome = httpVueLoader('/vue/App/AppHome.vue?' + (Math.random() * 10000));
 
                 const Root = { template: '<div>root</div>' }
-                const Home = cmManager;//{ template: '<div><h1>Home</h1><router-view></router-view></div>' }
+                const Home = appHome;//{ template: '<div><h1>Home</h1><router-view></router-view></div>' }
                 const Foo = { template: '<div>foo</div>' }
                 const Bar = { template: '<div>bar</div>' }
                 const Baz = { template: '<div>baz</div>' }
                 const Default = { template: '<div></div>' }
                 const Nested = { template: '<router-view/>' }
-                const NestedFoo = { template: '<div>nested foo</div>' }
+                const NestedFoo = { template: '<div>nested foo</div>' };
+
+                var a = httpVueLoader('/vue/App/Component/ComponentList.vue?3' + (Math.random() * 10000));
+                var CompForm = httpVueLoader('/vue/App/Component/CompForm.vue?' + (Math.random() * 10000));
+                var fmlist = httpVueLoader('/vue/App/Forms/FormList.vue?' + (Math.random() * 10000));
 
                 const router = new VueRouter({
-                    //  mode: 'history',
-                    // base: __dirname,
                     routes: [
-                        //{ path: '/root', component: Root, alias: '/root-alias' },
                         {
-                            path: '/Home/:AppiD?', name: "home", component: Home, params: { AppiD: appid }, props: true,
-                            children: [
-                                // absolute alias
-                                { path: '/Home/:id/component/:action', component: CompForm  ,"name":"App"},
-                                // relative alias (alias to /home/bar-alias)
-                                {
-                                    path: '/Home/:id/attributes/:cid', component: attributes, name: "component",
-                                    children: [
-                                        { path: 'changeattribute', component: atDesigner, alias: '/Home/:id/attributes/:cid/change/:attid', name:"compAttribute"}, //alias: '/:attid'
-                                        { path: 'addattribute', component: atDesigner, name: "mytesting", alias: '/Home/:id/attributes/:cid/addattribute' , name:"compAttributeAdd"}
-                                       
-                                    ]
-                                },
-                                // multiple aliases
-                                { path: 'baz', component: Baz, alias: ['/baz', 'baz-alias'] },
-                                // default child route with empty string as alias.
-                                { path: 'default', component: Default, alias: '' },
-                                // nested alias
-                                {
-                                    path: 'nested', component: Nested, alias: 'nested-alias',
-                                    children: [
-                                        { path: 'foo', component: NestedFoo }
-                                    ]
-                                }
-                            ]
-
+                            path: '/', component: appHome, name: "app", props: true,                             
                         },
                         {
-                            path: "/Form:AppID", name: "FromDesigner", component: Form, params: { AppID: appid },props:true
+                            path: '/comp/:id/:cid',
+                            component: attributes, name: "Component",
+                            children: [
+                                {
+                                    path: ':attid', name: "attribute", component: atDesigner,                                
+                                
+                                }, 
+                                {
+                                    path: 'newatt', name: "CreateAttr", component: atDesigner, 
+                                }, {
+                                    path: "EditComponent",
+                                    component: CompForm, name: "crComponent",
+                                } 
+                            ]
+                        }, {
+                            path: '/form/:id/:fid',
+                            component: fmDesigner, name: "FromDesigner",
+                            //children: [
+                            //    {
+                            //        path: ':attid', name: "attribute", component: atDesigner,
 
+                            //    },
+                            //    {
+                            //        path: 'newatt', name: "CreateAttr", component: atDesigner,
+                            //    }, {
+                            //        path: "EditComponent",
+                            //        component: CompForm, name: "crComponent",
+                            //    }
+                            //]
                         }
+
+                        //{
+                        //    path: '/Home/:AppiD?', name: "home", component: Home, params: { AppiD: appid }, props: true,
+                        //    children: [
+                        //        // absolute alias
+                        //        { path: '/Home/:id/component/:action', component: CompForm, "name": "App" },
+                        //        // relative alias (alias to /home/bar-alias)
+                        //        {
+                        //            path: '/Home/:id/attributes/:cid', component: attributes, name: "component",
+                        //            children: [
+                        //                { path: 'changeattribute', component: atDesigner, alias: '/Home/:id/attributes/:cid/change/:attid', name: "compAttribute" }, //alias: '/:attid'
+                        //                { path: 'addattribute', component: atDesigner, name: "mytesting", alias: '/Home/:id/attributes/:cid/addattribute', name: "compAttributeAdd" }
+
+                        //            ]
+                        //        },
+                        //        // multiple aliases
+                        //        { path: 'baz', component: Baz, alias: ['/baz', 'baz-alias'] },
+                        //        // default child route with empty string as alias.
+                        //        { path: 'default', component: Default, alias: '' },
+                        //        // nested alias
+                        //        {
+                        //            path: 'nested', component: Nested, alias: 'nested-alias',
+                        //            children: [
+                        //                { path: 'foo', component: NestedFoo }
+                        //            ]
+                        //        }
+                        //    ]
+                        //},
+                        //{
+                        //    path: "/Form/:id", name: "FromDesigner", component: fmDesigner, props: true,
+                        //    children: [
+
+                        //    ]
+                        //}
                     ]
-                })
+                });
+
+                //var appDesigner = httpVueLoader('/vue/App/AppDesigner.vue?' + (Math.random() * 10000));
+                // var appHome = httpVueLoader('/vue/App/AppHome.vue?' + (Math.random() * 10000));
+                //var cmManager = httpVueLoader('/vue/App/Component/ComponentManager.vue?4');
+                //var CompForm = httpVueLoader('/vue/App/Component/CompForm.vue?' + (Math.random() * 10000));
+                //var attributes = httpVueLoader('/vue/App/Component/CompAttributes.vue?' + (Math.random() * 10000));
+                //var atDesigner = httpVueLoader('/vue/App/Component/AttributeDesigner.vue?' + (Math.random() * 10000));              
+                //var fmDesigner = httpVueLoader('/vue/App/Forms/FormDesigner.vue?' + (Math.random() * 10000));
+                //const Root = { template: '<div>root</div>' }
+                //const Home = cmManager;//{ template: '<div><h1>Home</h1><router-view></router-view></div>' }
+                //const Foo = { template: '<div>foo</div>' }
+                //const Bar = { template: '<div>bar</div>' }
+                //const Baz = { template: '<div>baz</div>' }
+                //const Default = { template: '<div></div>' }
+                //const Nested = { template: '<router-view/>' }
+                //const NestedFoo = { template: '<div>nested foo</div>' }
+
+                //const router = new VueRouter({
+                //    //  mode: 'history',
+                //    // base: __dirname,
+                //    routes: [
+                //        //{ path: '/root', component: Root, alias: '/root-alias' },
+                //        {
+                //            path: '/Home/:AppiD?', name: "home", component: Home, params: { AppiD: appid }, props: true,
+                //            children: [
+                //                // absolute alias
+                //                { path: '/Home/:id/component/:action', component: CompForm  ,"name":"App"},
+                //                // relative alias (alias to /home/bar-alias)
+                //                {
+                //                    path: '/Home/:id/attributes/:cid', component: attributes, name: "component",
+                //                    children: [
+                //                        { path: 'changeattribute', component: atDesigner, alias: '/Home/:id/attributes/:cid/change/:attid', name:"compAttribute"}, //alias: '/:attid'
+                //                        { path: 'addattribute', component: atDesigner, name: "mytesting", alias: '/Home/:id/attributes/:cid/addattribute' , name:"compAttributeAdd"}
+                                       
+                //                    ]
+                //                },
+                //                // multiple aliases
+                //                { path: 'baz', component: Baz, alias: ['/baz', 'baz-alias'] },
+                //                // default child route with empty string as alias.
+                //                { path: 'default', component: Default, alias: '' },
+                //                // nested alias
+                //                {
+                //                    path: 'nested', component: Nested, alias: 'nested-alias',
+                //                    children: [
+                //                        { path: 'foo', component: NestedFoo }
+                //                    ]
+                //                }
+                //            ]
+                //        },
+                //        {
+                //            path: "/Form:id/form/:fid", name: "FromDesigner", component: fmDesigner, props: true,
+                //            children: [
+                                 
+                //            ]
+                //        }
+                //    ]
+                //})
 
                 var self = new Vue({
                     router: router,
@@ -120,10 +259,34 @@
                         "mvprogress": tProgress,
                         "cvprogress": cvprogress,
                         "toaster": toaster,
-                        "ProgressMeter": ProgressMeter
+                        "ProgressMeter": ProgressMeter,
+                        "app-home": appHome,
+                        'comp-list': a,
+                        'comp-form': CompForm,
+                        'form-list': fmlist
+                    },
+                    data: function(){
+                        return {
+                            AppID: appid
+                        }
+                    },
+                    methods: {
+                        onChanged: function (id) {
+                      
+                            this.compid = id;
+                            this.$router.push({ name:"Component", params: { id: this.AppID, cid: this.compid }, props: true });
+                            console.log(this.compid);
+
+                            window.hideMenu();
+                        },
+                        onFormSelection: function (id) {
+                            this.formid = id;
+                            this.$router.push({ name: "FromDesigner", params: { id: this.AppID, fid: this.formid }, props: true });
+                            window.hideMenu();
+                        },
                     }
                 }).$mount('#app');
-                self.$router.push({ name: 'home', params: { AppiD: appid } });
+               
             }
         );
         });
@@ -131,7 +294,6 @@
      
 
     $(document).ready(function () {
-
         var template = '<div>{0}</div>';
         getApp = function (id) {
             var that = this;
@@ -152,12 +314,13 @@
                     }
                 });
         }
-
         newCompnonent = function (plc) {
             var a = httpVueLoader('/vue/App/component/csimpleform.vue?6');
+            var sForm = httpVueLoader('/vue/App/Form/SimpleForm.vue?6');
             new Vue({
                 components: {
                     "csimpleform": a,
+                    "simpleform":sForm,
                     //'Client': client
                 },
                 data: function () {
@@ -178,7 +341,31 @@
                 }
             }).$mount('#' + plc);
         }
-
+        newForm = function (plc) {
+        
+            var sForm = httpVueLoader('/vue/App/Forms/SimpleForm.vue?6');
+            new Vue({
+                components: {                    
+                    "simpleform": sForm,                  
+                },
+                data: function () {
+                    return {}
+                },
+                methods: {
+                    newApp: function () {
+                    },
+                    afterSaved: function () {
+                        window.r.$refs.refComp.forceRerender();
+                    }
+                },
+                watch: {
+                },
+                computed: {
+                    getVal: function () {
+                    }
+                }
+            }).$mount('#' + plc);
+        }
         String.prototype.format = function () {
             a = this;
             for (k in arguments) {

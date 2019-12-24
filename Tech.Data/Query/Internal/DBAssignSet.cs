@@ -96,7 +96,7 @@ namespace Tech.Data.Query
         //
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             if (this._assignments == null || this._assignments.Count == 0)
                 return false;

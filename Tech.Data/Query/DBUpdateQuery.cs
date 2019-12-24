@@ -323,7 +323,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder"></param>
         /// <returns></returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginUpdateStatement();
 

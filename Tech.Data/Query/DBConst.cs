@@ -366,14 +366,14 @@ namespace Tech.Data.Query
         // SQL Statement builder methods
         //
 
-        #region public override bool BuildStatement(DBStatementBuilder builder)
+        #region public override bool BuildStatement(DBStatementBuilder builder,isInorNotIn=false)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder,bool isInorNotIn=false)
         {
             if (null == this.Value || this.Value is DBNull)
                 builder.WriteNull();
             else
-                builder.WriteLiteral(this.Type, this.Value);
+                builder.WriteLiteral(this.Type, this.Value, isInorNotIn);
             if (string.IsNullOrEmpty(this.Alias) == false)
                 builder.WriteAlias(this.Alias);
 

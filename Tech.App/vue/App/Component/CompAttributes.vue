@@ -1,7 +1,7 @@
 ﻿  <template>
       <div>
           
-       <div class="row" style="margin-top:10px">         
+       <div class="row" >         
            <div class="col-md-2" style="position:absolute;top:0px; left:83%">
                <div class="row" style="color:#fff; float:right">
 
@@ -33,15 +33,15 @@
            </div>  
           
           <div class="row">
-              <div class="col-md-4">                 
-                  <div class=' list' style='border-right:1px solid #ccc'>
-                      <h4 class=''>Attribute list</h4><ul>
+              <div class="col-md-3" style="padding:0px;margin:0px;border-right:2px solid rgba(248, 248, 248, 0.84)">                 
+                  <div class=' list' >
+                      <h4 class='' style="padding:5px; border-bottom:2px solid rgba(213, 205, 205, 0.29);font-weight:bold">Attribute list</h4><ul>
                           <li v-for="d in attri.Attributes"><div class=' rowlight' style='padding-left:15px;'><a v-on:click="ShowAttribute(d.FieldID)">{{d.AttributeName}} </a></div>
                       </ul>
                   </div>
               </div>
-              <div class="col-md-8" >
-                  <router-view :key="$route.fullPath" :onAdd="AfterAdd"></router-view>
+              <div class="col-md-9" style="padding:0px;margin:0px;background-color:#fff">
+                  <router-view :key="$route.fullPath"   :onAdd="AfterAdd"></router-view>
               </div>
           </div>
           <div id="window"></div>
@@ -64,6 +64,7 @@
 
             },
             beforeRouteUpdate(to, from, next) {
+
                 aid = to.params.id;
                 cid = to.params.cid;
                 myComp(to.params.id, to.params.cid, function (data) {
@@ -71,6 +72,7 @@
                 })
             },
             beforeRouteEnter(to, from, next) {
+
                 aid = to.params.id;
                 cid = to.params.cid;
         myComp(to.params.id, to.params.cid, function (data) {
@@ -126,7 +128,8 @@
             },
             newAttribute: function () {
                 this.$router.push({
-                    path: "/Home/" + this.appid + "/attributes/" + this.compid + "/addattribute",
+      name:"CreateAttr",
+                 //   path: "/Home/" + this.appid + "/attributes/" + this.compid + "/newatt",
                     params: { id: this.appid, cid: this.compid }, props: true
                 })
                 //this.$router.push("/Home/" + this.appid + "/attributes/" + this.compid + "/addattribute");
@@ -134,7 +137,7 @@
             showForm: function () {
        
 
-                this.$router.push({ path: "/Home/"+ this.appid +"/component/" + this.compid, params: { id: this.appid, cid: this.compid, rd: + Math.random() * 100001 } });
+                this.$router.push({ name:"crComponent", params: { id: this.appid, cid: this.compid, rd: + Math.random() * 100001 } });
                 // this.$router.push({ path: "view" });
                 //this.$router.push("/App/" + this.Appid + "/" + this.compid + "/view/" + Math.random() * 100001, { params: { id: this.Appid, action: this.compid } });
                 //this.$router.push("/App/" + this.Appid + "/" + this.compid + "/profile/b/"+ Math.random() * 100001);
@@ -182,9 +185,17 @@
       },
         ShowAttribute:function(aid){
          this.$router.push({
-                    path:   "/Home/"+ this.appid+"/attributes/"+this.compid+"/change/" + aid,
+         //   path: "/comp/" + this.appid + "/" + this.compid + "/change/" + aid,
+            // path:"change",
+       name:"attribute",
                     params: { id: this.appid, cid: this.compid, attid:aid}, props: true
-                })
+                },function(a,b,c){
+
+      },
+
+      function(a,b,c){
+
+      })
       },
         }
         }

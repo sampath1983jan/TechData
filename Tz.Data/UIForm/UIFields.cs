@@ -29,6 +29,7 @@ namespace Tz.Data.UIForm
             db = base.Database;
             DBQuery select;
             select = DBQuery.SelectAll(TzAccount.FormFields.Table).
+                From(TzAccount.FormFields.Table ).
                 WhereField(TzAccount.FormFields.Table, TzAccount.FormFields.ClientID.Name,
                Compare.Equals, DBConst.String(clientid))
                .AndWhere( DBComparison.Equal(DBField.Field(TzAccount.FormFields.FormID.Name), DBConst.String(formid)));

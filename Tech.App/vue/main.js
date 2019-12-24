@@ -3,7 +3,7 @@
 	{
 		paths: {
 			// the Vue lib
-			'Vue': 'https://unpkg.com/vue@2.5.11/dist/vue.min',
+            'Vue': 'https://cdn.jsdelivr.net/npm/vue@2.6.0',
 			// Vue RequireJS loader
 			'vue': 'https://unpkg.com/requirejs-vue@1.1.5/requirejs-vue',
 			//'VueRouter':'https://unpkg.com/vue-router/dist/vue-router'

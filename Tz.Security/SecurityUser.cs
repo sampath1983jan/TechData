@@ -12,7 +12,7 @@ namespace Tz.Security
    
     public abstract class IUser
     {
-        public abstract string UserID { get; }
+        public abstract string UserID { get; set; }
         public string UserName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -30,8 +30,11 @@ namespace Tz.Security
         private string _userid;
         private bool _isauth;
         private Tz.Data.Security.User  dUser;
-        public override string UserID => _userid;
+        //public override string UserID => _userid;
         public override bool isAuthenticateUser => _isauth;
+
+        public override string UserID { set { _userid = value; } get { return _userid; } }
+
         public User()
         {
             _userid = "";
@@ -137,6 +140,7 @@ namespace Tz.Security
             if (dt.Rows.Count > 0)
             {
                 c = dt.toList<User>(new DataFieldMappings()
+                    .Add(Tz.Global.TzAccount.User.UserID.Name, "UserID")
                  .Add(Tz.Global.TzAccount.User.UserName.Name, "UserName")
                    .Add(Tz.Global.TzAccount.User.FirstName.Name, "FirstName")
                  .Add(Tz.Global.TzAccount.User.LastName.Name, "LastName")
@@ -145,12 +149,7 @@ namespace Tz.Security
                  .Add(Tz.Global.TzAccount.User.Status.Name, "Status")
                  .Add(Tz.Global.TzAccount.User.Password.Name, "Password")
                  .Add(Tz.Global.TzAccount.User.UserRole.Name, "UserGroupID")
-                 , null, null).FirstOrDefault();
-                //  this.Merge<User>(c);
-                //if (dt.Rows[0]["UserRole"] != null)
-                //{
-                //    c.UserGroupID = dt.Rows[0]["UserRole"] ==null? "" :(string)dt.Rows[0]["UserRole"];
-                //}
+                 , null, null).FirstOrDefault();           
                 _isauth = true;
             }
             else

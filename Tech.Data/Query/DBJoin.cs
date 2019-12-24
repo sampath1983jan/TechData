@@ -262,7 +262,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             if (null == this.JoinedTo)
                 throw new NullReferenceException(Errors.NoJoinRightReference);

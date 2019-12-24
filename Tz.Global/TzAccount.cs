@@ -312,6 +312,8 @@ namespace Tz.Global
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
             public static readonly DBColumn FormID = DBColumn.Column("FormID", System.Data.DbType.String, 255);
             public static readonly DBColumn Name = DBColumn.Column("Name", System.Data.DbType.String, 255);
+            public static readonly DBColumn Description = DBColumn.Column("Description", System.Data.DbType.String, 1000);
+            
             public static readonly DBColumn FormType = DBColumn.Column("FormType", System.Data.DbType.Int32, 255);
             public static readonly DBColumn ComponentID = DBColumn.Column("ComponentID", System.Data.DbType.String, 255);
             public static readonly DBColumn FormKeys = DBColumn.Column("FormKeys", System.Data.DbType.String, 255);
@@ -325,9 +327,9 @@ namespace Tz.Global
             public static readonly DBColumn Reset = DBColumn.Column("Reset", System.Data.DbType.String, 255);
             public static readonly DBColumn Update = DBColumn.Column("Update", System.Data.DbType.String, 255);
             public static readonly DBColumn Cancel = DBColumn.Column("Cancel", System.Data.DbType.String, 255);
-            public static readonly DBColumn IPAddress = DBColumn.Column("IPAddress", System.Data.DbType.String, 255);
-            public static readonly DBColumn Location = DBColumn.Column("Location", System.Data.DbType.String, 255);
-
+            //public static readonly DBColumn IPAddress = DBColumn.Column("IPAddress", System.Data.DbType.String, 255);
+            //public static readonly DBColumn Location = DBColumn.Column("Location", System.Data.DbType.String, 255);
+            public static readonly DBColumn CreatedOn = DBColumn.Column("CreatedOn", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
             public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
 

@@ -63,7 +63,7 @@ namespace Tech.Data.Query
 #if SILVERLIGHT
         // no statement building
 #else
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginDeclareStatement(this.Parameter);
             builder.EndDeclareStatement();

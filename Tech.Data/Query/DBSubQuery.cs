@@ -314,7 +314,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             InnerQuery.BuildStatement(builder);
             

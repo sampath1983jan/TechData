@@ -174,9 +174,9 @@ namespace Tech.Data.Query
         // SQL Statement builder
         //
 
-        #region public override bool BuildStatement(DBStatementBuilder builder)
+        #region public override bool BuildStatement(DBStatementBuilder builder,bool isInorNot=false)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginBlock();
             this.GroupItems.BuildStatement(builder);

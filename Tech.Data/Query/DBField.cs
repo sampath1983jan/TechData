@@ -329,7 +329,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             if (string.IsNullOrEmpty(this.Name))
                 return false;
@@ -491,7 +491,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder"></param>
         /// <returns></returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.WriteAllFieldIdentifier(this.Catalog, this.Owner, this.Table);
 

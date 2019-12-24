@@ -227,7 +227,7 @@ namespace Tech.Data.Query
 
         #region public override bool BuildStatement(DBStatementBuilder builder)
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder,bool isInorNot=false)
         {
             builder.BeginBlock();
             this.Left.BuildStatement(builder);

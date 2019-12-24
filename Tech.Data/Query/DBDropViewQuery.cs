@@ -98,7 +98,7 @@ namespace Tech.Data.Query
 #if SILVERLIGHT
         // no statement building
 #else
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginDropStatement(DBSchemaTypes.View, this.ViewOwner, this.ViewName, this.CheckExists == DBExistState.Exists);
             builder.EndDrop(DBSchemaTypes.View, this.CheckExists == DBExistState.Exists);

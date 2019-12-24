@@ -80,7 +80,7 @@ namespace Tech.Data.Query
         {
             get { return XmlHelper.CreateTable; }
         }
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             bool checknotexists = this.CheckExists == DBExistState.NotExists;
             builder.BeginCreate(DBSchemaTypes.Table, this.TableOwner, this.TableName, string.Empty, checknotexists);

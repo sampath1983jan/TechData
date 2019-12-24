@@ -45,14 +45,15 @@
     <script src="~/Scripts/Jcookie.js"></script>
     <script src="~/Scripts/Controls/Jpopup.js"></script>
 
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
     @*<script src="~/Scripts/vue/vue.esm.js"></script>*@
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-    <script src="~/Scripts/vue/vue-router.js"></script>
 
-    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script src="~/Scripts/vue/vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.1/src/httpVueLoader.min.js"></script>
     <script src="~/Scripts/requires.js"></script>
+
 
 
     @*<script src="~/Scripts/ace/ace.js"></script>*@
@@ -117,15 +118,14 @@
             font-size: 17px;
             cursor: pointer;
             float: left;
-            padding:0px;
-       
+            padding: 0px;
         }
 
             .navbar > .item {
                 color: rgba(174, 166, 166, 0.90);
                 border-left: 1px solid #5b5959;
                 border-right: 1px solid #5b5959;
-                padding:5px 8px !important;
+                padding: 5px 8px !important;
             }
 
                 .navbar > .item:hover {
@@ -134,166 +134,7 @@
     </style>
     <script>
         $(document).ready(function () {
-            var isShown = false;
-            var isSlideShown = false;
-            var newElement = '<div >'
-                + '<div class="elementItem" id="form">'
-                + '<h4>Forms</h4>'
-                + '<i class="fas fa-file-code" style="font-size:70px"></i>'
-                + '</div>'
-                + '<div class="elementItem" id="comp">'
-                + ' <h4>Components</h4>'
-                + '<i class="fab fa-elementor" style="font-size:70px"></i>'
-                + '</div>'
-                + '<div class="elementItem" id="pages"> '
-                + ' <h4>Pages</h4>'
 
-                + ' <i class="fas fa-file-alt" style="font-size:70px"></i>'
-                + '</div>'
-                + '<div class="elementItem" id="reports">'
-                + '<h4>Reports'
-                + '</h4>'
-                + '<i class="fas fa-file-word" style="font-size:70px"></i>'
-                + '</div>'
-                + '</div >';
-            $('#apptitle').click(function () {
-                var windowHeight = window.innerHeight;
-                var h = windowHeight - $("#apptitle").innerHeight();
-                h = h;
-                $(".screen").css("height", h + "px");
-
-                $('#slider').height(h + "px");
-
-                var hidden = $('#slider');
-                if (hidden.hasClass('visible')) {
-                    hidden.animate({ "left": "-1800px" }, "slow").removeClass('visible');
-                    window.hideScreen();
-                } else {
-                    hidden.animate({ "left": "0px" }, "slow").addClass('visible');
-                    window.showScreen();
-                    if (isSlideShown == false) {
-                        //   getComponent();
-                        isSlideShown = true;
-                    }
-                }
-                $('#homesd').animate({ "left": "-1000px" }, "slow").removeClass('visible');
-            });
-            window.showScreen = function () {
-                $(".screen").removeClass("hidden");
-                $(".screen").css("left", "0px")
-                $(".screen").css("top", $("#apptitle").innerHeight() + "px")
-                var windowHeight = window.innerHeight;
-                var h = windowHeight - $("#apptitle").innerHeight();
-                h = h;
-                $(".screen").css("height", h + "px");
-
-            }
-            window.hideScreen = function () {
-                $(".screen").addClass("hidden");
-                $(".screen").css("left", "-1800px")
-            }
-            window.hideMenu = function () {
-                $('#slider').animate({ "left": "-1800px" }, "slow").removeClass('visible');
-                $(".screen").addClass("hidden");
-                $(".screen").css("left", "-1800px")
-            }
-            $(".screen").click(function () {
-                hideMenu();
-                $('#homesd').animate({ "left": "-1000px" }, "slow").removeClass('visible');
-            })
-            $("#newElemt").click(function (e) {
-                e.stopPropagation();
-                var jPopupDemo = new jPopup({
-                    content: newElement,
-                    hashtagValue: '#demopopup',
-                    shouldSetHash: false
-                });
-                $(".jPopup").find(".content").attr("id", "newelement");
-                $(".jPopup").find(".content").css("top", "40%");
-                $(".jPopup").find(".content").css("width", "90%");
-                $(".jPopup").find(".content").css("padding-left", "10%");
-                $("#comp").click(function () {
-                    renderNewComponent();
-                })
-            });
-            $("#homenav").click(function () {
-                var hidden = $('#homesd');
-                var windowHeight = window.innerHeight;
-                var h = windowHeight - $("#apptitle").innerHeight();
-                h = h;
-                $('#homesd').css("top", $("#apptitle").innerHeight() + "px")
-                $('#homesd').height(h + "px");
-
-                if (hidden.hasClass('visible')) {
-                    hidden.animate({ "left": "-1000px" }, "slow").removeClass('visible');
-                    window.hideScreen();
-
-                } else {
-                    hidden.animate({ "left": "0px" }, "slow").addClass('visible');
-                    window.showScreen();
-                    if (isShown == false) {
-                        getApps();
-                        isShown = true;
-                    }
-                }
-                $('#slider').animate({ "left": "-1800px" }, "slow").removeClass('visible');
-            })
-            renderNewComponent = function (plc) {
-                $("#newelement").html("");
-                $("#newelement").append("<div><csimpleform v-on:saved='afterSaved'></csimpleform></div>");
-                newCompnonent("newelement");
-            }
-            renderApp = function (data) {
-                var alt = "<div class=' list' style='' ><div class='stlabel'>Available Apps</div><ul>";
-                $.each(data, function (i, v) {
-                    alt = alt + "<li>";
-                    alt = alt + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.AppName + "</a></div>"
-                });
-                alt = alt + "</ul><div><a href='/App/Index'>Back to Home</a></div></div>";
-                $("#appContainer").html("");
-                $("#appContainer").append(alt);
-            }
-
-            renderForm = function (data) {
-                var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Form</div><ul>";
-                $.each(data, function (i, v) {
-                    cmp = cmp + "<li>";
-                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
-                });
-                cmp = cmp + "</ul></div>";
-                $("#formContainer").html("");
-                $("#formContainer").append(cmp);
-            }
-            renderPage = function (data) {
-                var cmp = "<div class=' list' style='border-right:1px solid #ccc' ><div class='stlabel'>Page</div><ul>";
-                $.each(data, function (i, v) {
-                    cmp = cmp + "<li>";
-                    cmp = cmp + "<div class=' rowlight' style='padding-left:15px;'><a href='" + v.url + "'>" + v.ComponentName + "</a></div>"
-                });
-                cmp = cmp + "</ul></div>";
-                $("#pageContainer").html("");
-                $("#pageContainer").append(cmp);
-            }
-            getApps = function () {
-                var that = this;
-                $.ajax('/App/Get',
-                    {
-                        type: "GET",
-                        dataType: 'jsonp', // type of response data
-
-                        // timeout milliseconds
-                        success: function (data, status, xhr) {   // success callback function
-
-                            $.each(data, function (i, v) {
-                                v.url = "/app/appinfo/" + v.AppID;
-                            });
-                            renderApp(data);
-                        },
-                        error: function (jqXhr, textStatus, errorMessage) { // error callback
-                            alert(errorMessage);
-                        }
-                    });
-            }
             //getComponent = function () {
             //    $.ajax('/MyApp/' + appid + '/Components',
             //        {
@@ -317,37 +158,7 @@
 
     </script>
 </head>
-<body  style="padding-top:0px; margin-top:0px;">
-    <div>
-        <div id="navBar" class="bar">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="" id="homenav" style="margin:5px 0px; cursor:pointer;float:left">
-                        <i class="fas fa-bars" style="padding:0px 15px; font-size:18px;"></i>
-                    </div>
-                    <div id="apptitle" style="cursor:pointer; width:35%;float:left">
-                        <a>
-                            <h3 style="margin:0px;float:left"></h3><h5 style="margin-top:5px"></h5>
-
-                        </a>
-                    </div>
-                    <ul id="newElemt" class="navbar" style="">
-                        <li class="nav-item item">
-                            <a><i class="icofont-plus" ></i></a>                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="col-md-2"></div>
-                    <div class="col-md-2">
-                        <div id="entityActions" class="row">
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        
+<body  style="padding-top:0px; margin-top:0px;">          
         @RenderBody()
         <div id="tzContainer">
             <div>

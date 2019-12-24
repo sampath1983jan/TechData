@@ -33,10 +33,7 @@ namespace Tz.UIForms
         /// 
         /// </summary>
         public FormProperty FormProperties { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        //new public string Name { get; set; }
+     
         /// <summary>
         /// 
         /// </summary>
@@ -61,10 +58,21 @@ namespace Tz.UIForms
         public Form(string clientid,List<UIFormKey> formKeys)
         {
             this.ClientID = clientid;
+            this.Name = "";
+            this.Description = "";
+            this.ComponentID = "";
+            this.FormID = "";
             this.FormKeys = formKeys;
             FormProperties = new FormProperty();
+            Actions = new List<UIAction.Action>();              
+            this.ComponentID = "";
+        }
+        public Form(string clientid) {
+            this.ClientID = clientid;
+           
+            FormProperties = new FormProperty();
             Actions = new List<UIAction.Action>();
-                FormKeys = new List<UIFormKey>();
+            FormKeys = new List<UIFormKey>();
             this.ComponentID = "";
         }
         /// <summary>
@@ -94,6 +102,7 @@ namespace Tz.UIForms
             foreach (DataRow dr in dt.Rows)
             {
                 this.Name = dr["Name"] == null ? "" : dr["Name"].ToString();
+                this.Description = dr["Description"] == null ? "" : dr["Description"].ToString();
                 this.ComponentID = dr["ComponentID"] == null ? "" : dr["ComponentID"].ToString();
                 this.FormType = dr["FormType"] == null ? FormType.MAIN : (FormType)dr["FormType"];
                 string fkey = dr["FormKeys"] == null ? "" : (string)dr["FormKeys"];
@@ -105,10 +114,35 @@ namespace Tz.UIForms
                 this.FormProperties.Submit = dr["Submit"] == null ? "" : (string)dr["Submit"];
                 this.FormProperties.Reset = dr["Reset"] == null ? "" : (string)dr["Reset"];
                 this.FormProperties.Update = dr["Update"] == null ? "" : (string)dr["Update"];
-                this.FormProperties.Cancel = dr["Cancel"] == null ? "" : (string)dr["Cancel"];
-                this.FormProperties.Location = dr["Location"] == null ? "" : (string)dr["Location"];
-                this.FormProperties.IPAddress = dr["IPAddress"] == null ? "" : (string)dr["IPAddress"];
+                this.FormProperties.Cancel = dr["Cancel"] == null ? "" : (string)dr["Cancel"];             
             }
+        }
+        public static List<Form> GetForms(string clientid,string formids) {
+            DataTable dt;
+            var Forms = new List<Form>();
+            string conn = Common.GetConnection(clientid);
+            Data.UIForm.Form form = new Data.UIForm.Form(Common.GetConnection(clientid));
+            dt = form.GetForms(clientid, formids);
+            foreach (DataRow dr in dt.Rows) {
+                var f = new Form(clientid);
+                f.FormID = dr["FormID"] == null ? "" : dr["FormID"].ToString();
+                f.Name = dr["Name"] == null ? "" : dr["Name"].ToString();
+                f.Description = dr["Description"] == null ? "" : dr["Description"].ToString();
+                f.ComponentID = dr["ComponentID"] == null ? "" : dr["ComponentID"].ToString();
+                f.FormType =  dr["FormType"] == DBNull.Value ? UIForms.FormType.MAIN : (UIForms.FormType)Convert.ToInt32(dr["FormType"]);
+                string fkey = dr["FormKeys"] == null ? "" : (string)dr["FormKeys"];
+                f.FormKeys = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UIFormKey>>(fkey);
+                f.FormProperties.CaptureLocation = dr["CaptureLocation"] == DBNull.Value ? false : Convert.ToBoolean(dr["CaptureLocation"]);
+                f.FormProperties.CaptureIPaddress = dr["CaptureIPaddress"] == DBNull.Value ? false : Convert.ToBoolean(dr["CaptureIPaddress"]);
+                f.FormProperties.ErrorMessage = dr["ErrorMessage"] == null ? "" : (string)dr["ErrorMessage"];
+                f.FormProperties.EnableDefaultAction = dr["EnableDefaultAction"] == DBNull.Value ? false : Convert.ToBoolean(dr["EnableDefaultAction"]);
+                f.FormProperties.Submit = dr["Submit"] == null ? "" : (string)dr["Submit"];
+                f.FormProperties.Reset = dr["Reset"] == null ? "" : (string)dr["Reset"];
+                f.FormProperties.Update = dr["Update"] == null ? "" : (string)dr["Update"];
+                f.FormProperties.Cancel = dr["Cancel"] == null ? "" : (string)dr["Cancel"];
+                Forms.Add(f);
+            }
+            return Forms;
         }
         public void LoadFormFields()
         {
@@ -151,8 +185,7 @@ namespace Tz.UIForms
                     this.FormProperties.Reset,
                     this.FormProperties.Update,
                     this.FormProperties.Cancel,
-                    this.FormProperties.IPAddress,
-                    this.FormProperties.Location
+                    this.Description
                     );
                 if (this.FormID == "")
                 {
@@ -163,7 +196,7 @@ namespace Tz.UIForms
             }
             else
             {
-                return form.Update(this.ClientID, this.Name, this.FormID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FormKeys),
+                return form.Update(this.ClientID, this.Name,this.Description, this.FormID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FormKeys),
                      this.FormProperties.SuccessMessage,
                     this.FormProperties.CaptureLocation,
                     this.FormProperties.CaptureIPaddress,
@@ -173,15 +206,27 @@ namespace Tz.UIForms
                     this.FormProperties.Reset,
                     this.FormProperties.Update,
                     this.FormProperties.Cancel,
-                    this.FormProperties.IPAddress,
-                    this.FormProperties.Location);
+                    this.ComponentID,
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FormKeys));
             }
+        }
+
+        public bool SaveComponent(string compID) {
+            if (this.ComponentID == "")
+            {
+                Data.UIForm.Form form = new Data.UIForm.Form(Common.GetConnection(this.ClientID));
+                form.UpdateComponent(this.ClientID, this.FormID, compID);
+                this.ComponentID = compID;
+                return true;
+            }
+            else
+                return false;
         }
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public bool Remove()
+        internal bool Remove()
         {
             Data.UIForm.Form form = new Data.UIForm.Form(Common.GetConnection(this.ClientID));
             return form.Remove(this.ClientID, this.FormID);
@@ -217,15 +262,7 @@ namespace Tz.UIForms
         /// <summary>
         /// 
         /// </summary>
-        public bool CaptureIPaddress { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public string IPAddress { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public string Location { get; set; }
+        public bool CaptureIPaddress { get; set; }  
         /// <summary>
         /// 
         /// </summary>
@@ -256,16 +293,13 @@ namespace Tz.UIForms
         public   FormProperty() {
             SuccessMessage = "";
             CaptureIPaddress = false;
-            CaptureLocation = false;
-            IPAddress = "";
-            Location = "";
+            CaptureLocation = false;         
             ErrorMessage = "";
             Submit = "";
             Reset = "";
             Update = "";
             Cancel = "";
-            EnableDefaultAction = false;
-
+            EnableDefaultAction = true;
         }
     }
     /// <summary>

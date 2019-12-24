@@ -108,8 +108,56 @@ namespace Tz.BackApp.Controllers.App
             var a = new Tz.App.AppManager(clientid, appid);
             return new JsonpResult( a.PublishComponent(compid));
         }
-       
+        #region Form
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="appid"></param>
+        /// <param name="formname"></param>
+        /// <param name="description"></param>
+        /// <returns></returns>
+        [Route("App/{appid}/Form/CreateForm")]
+        public JsonpResult SaveMainForm(string appid,string formname,
+            string description) {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            var f=a.NewForm();
+            f.Name = formname;
+            f.Description = description;
+            return new JsonpResult(a.SaveForm(f));
+        }
 
+        [Route("App/{appid}/Form/Get")]
+        public JsonpResult GetForms (string appid)
+        {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            a.LoadForms();
+            return new JsonpResult(a);
+        }
+
+        [Route("App/{appid}/Form/Get/{formid}")]
+        public JsonpResult GetForms(string appid,string formid)
+        {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            a.LoadForms();
+         var fm=   a.GetForm(formid);
+            fm.LoadFormFields();
+            return new JsonpResult(fm);
+        }
+
+        [Route("App/{appid}/Form/AssignComponent/{formid}")]
+        public JsonpResult AssignComponent(string appid, string formid,string compID)
+        {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            a.LoadForms();
+            var fm = a.GetForm(formid);        
+            return new JsonpResult(fm.SaveComponent(compID));
+        }
+
+        #endregion
 
         //[Route("App/{appid}/Component/Create")]
         //public JsonpResult SaveComponent(string appid, string compName, string title) {

@@ -18,12 +18,14 @@ namespace Tz.Data.UIForm
             InitDbs(conn);
         }
 
-        public  DataTable GetForms(string clientid) {
+        public  DataTable GetForms(string clientid, string formid) {
             DBDatabase db;
             db = base.Database;
             DBQuery select;
-            select = DBQuery.SelectAll(TzAccount.Form.Table).WhereField(TzAccount.Form.Table, TzAccount.ComponentAttribute.ClientID.Name,
-               Compare.Equals, DBConst.String(clientid));
+            select = DBQuery.SelectAll().From (TzAccount.Form.Table).
+                WhereField(TzAccount.Form.Table, TzAccount.ComponentAttribute.ClientID.Name,
+               Compare.Equals, DBConst.String(clientid))
+               .AndWhere(TzAccount.Form.Table, TzAccount.Form.FormID.Name, Compare.In, DBConst.String( formid));
             return db.GetDatatable(select);
         }
 
@@ -31,12 +33,14 @@ namespace Tz.Data.UIForm
             DBDatabase db;
             db = base.Database;
             DBQuery select;
-            select = DBQuery.SelectAll(TzAccount.Form.Table).
+            select = DBQuery.SelectAll().From(TzAccount.Form.Table).
                WhereField(TzAccount.Form.Table, TzAccount.Form.ClientID.Name, Compare.Equals, DBConst.String(clientid))
                 .AndWhere(TzAccount.Form.Table, TzAccount.Form.FormID.Name, Compare.Equals, DBConst.String(formid));
             return db.GetDatatable(select);
         }
-       
+
+         
+
         public string Save(string clientid, string formName,
             string componentid,
             int formtype,
@@ -50,8 +54,8 @@ namespace Tz.Data.UIForm
             string reset,
             string update,
             string cancel,
-            string ipaddress,
-            string location
+            string description
+       
            )
         {
             DBDatabase db;
@@ -75,10 +79,9 @@ namespace Tz.Data.UIForm
               TzAccount.Form.Reset.Name,
              TzAccount.Form.Update.Name,
              TzAccount.Form.Cancel.Name,
-             TzAccount.Form.IPAddress.Name,
-             TzAccount.Form.Location.Name,
-
-             TzAccount.Form.LastUPD.Name)
+             TzAccount.Form.CreatedOn.Name,
+             TzAccount.Form.LastUPD.Name,
+             TzAccount.Form.Description.Name)
              .Values(
              DBConst.String(clientid),
              DBConst.String(a),
@@ -88,19 +91,18 @@ namespace Tz.Data.UIForm
               DBConst.String(formKeys),
 
                 DBConst.String(successmessage),
-                   DBConst.Const(DbType.Boolean,capturelocation),
-                     DBConst.Const(DbType.Boolean,captureip),
+                   DBConst.Const(DbType.Boolean, capturelocation),
+                     DBConst.Const(DbType.Boolean, captureip),
                       DBConst.String(errormessage),
-                        DBConst.Const(DbType.Boolean,enableDefault),
+                        DBConst.Const(DbType.Boolean, enableDefault),
                           DBConst.String(submit),
                             DBConst.String(reset),
                                 DBConst.String(update),
                                     DBConst.String(cancel),
-                                        DBConst.String(ipaddress),
-                                            DBConst.String(location),
 
-             DBConst.DateTime(DateTime.Now)
-
+      DBConst.DateTime(DateTime.Now),
+      DBConst.DateTime(DateTime.Now),
+      DBConst.String(description)
              );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -118,7 +120,7 @@ namespace Tz.Data.UIForm
             }
         }
 
-        public bool Update(string clientid, string formName,string formid,string formkeys,
+        public bool Update(string clientid, string formName,string description,string formid,string formkeys,
                string successmessage,
             bool capturelocation,
             bool captureip,
@@ -127,9 +129,9 @@ namespace Tz.Data.UIForm
             string submit,
             string reset,
             string update,
-            string cancel,
-            string ipaddress,
-            string location
+            string cancel ,
+            string component,
+            string keys
             )
         {
             DBDatabase db;
@@ -141,8 +143,55 @@ namespace Tz.Data.UIForm
             TzAccount.Form.Name.Name, DBConst.String(formName)
             ).Set(
             TzAccount.Form.FormKeys.Name, DBConst.String(formkeys)
+            ).Set(
+            TzAccount.Form.ComponentID.Name, DBConst.String(component)
+            ).Set(
+            TzAccount.Form.FormKeys.Name, DBConst.String(keys)
+            ).Set(
+            TzAccount.Form.Description.Name, DBConst.String(description)
+            ).Set(
+            TzAccount.Form.SuccessMessage .Name, DBConst.String(successmessage)
+            ).Set(
+            TzAccount.Form.ErrorMessage.Name, DBConst.String(errormessage)
+            ).Set(
+            TzAccount.Form.EnableDefaultAction.Name, DBConst.Const(DbType.Boolean, enableDefault)
+            ).Set(
+            TzAccount.Form.Submit.Name, DBConst.String(submit)
+            ).Set(
+            TzAccount.Form.Reset.Name, DBConst.String(reset)
+            ).Set(
+            TzAccount.Form.Update.Name, DBConst.String(update)
+            ).Set(
+            TzAccount.Form.Cancel.Name, DBConst.String(cancel)
+            ).Set(
+            TzAccount.Form.CaptureLocation.Name, DBConst.Const(DbType.Boolean, capturelocation)
+            ).Set(
+            TzAccount.Form.CaptureIPaddress.Name, DBConst.Const( DbType.Boolean, captureip)
             ).WhereAll(client, form);
 
+            int i = db.ExecuteNonQuery(upd);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        public bool UpdateComponent(string clientid,  string formid, string componetID
+          )
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBComparison client = DBComparison.Equal(DBField.Field(TzAccount.Form.ClientID.Name), DBConst.String(clientid));
+            DBComparison form = DBComparison.Equal(DBField.Field(TzAccount.Form.FormID.Name), DBConst.String(formid));
+
+            DBQuery upd = DBQuery.Update(TzAccount.Form.Table).Set(
+            TzAccount.Form.ComponentID.Name, DBConst.String(componetID)
+            ).WhereAll(client, form);
             int i = db.ExecuteNonQuery(upd);
             if (i > 0)
             {

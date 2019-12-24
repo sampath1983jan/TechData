@@ -2503,7 +2503,7 @@ namespace Tech.Data.Query
 
         #region public virtual void WriteLiteral(DbType dbType, object value)
 
-        public virtual void WriteLiteral(DbType dbType, object value)
+        public virtual void WriteLiteral(DbType dbType, object value,bool isInorNot =false)
         {
             if (null == value)
                 this.WriteNull();
@@ -2530,9 +2530,27 @@ namespace Tech.Data.Query
                     case DbType.AnsiStringFixedLength:
                     case DbType.String:
                     case DbType.StringFixedLength:
-                        this.BeingStringLiteral();
-                        this.Writer.Write(this.EscapeString((string)value));
-                        this.EndStringLiteral();
+                       
+                        if (isInorNot == true)
+                        {
+                            this.Writer.Write("(");
+                            string[] val = this.EscapeString((string)value).Trim().Split(',');
+                            for(int i =0;i< val.Length;i++) {
+                                this.BeingStringLiteral();
+                                this.Writer.Write(this.EscapeString((string)val[i].Trim()));
+                                this.EndStringLiteral();
+                                if (i < val.Length-1) {
+                                    this.Writer.Write(",");
+                                }                              
+                            }                         
+                            this.Writer.Write(")");
+                        }
+                        else {
+                            this.BeingStringLiteral();
+                            this.Writer.Write(this.EscapeString((string)value));
+                            this.EndStringLiteral();
+                        }                       
+                      
                         break;
                     default:
                         if (value is DBNull)

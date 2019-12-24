@@ -70,7 +70,7 @@ namespace Tz.BackApp.Controllers.Authentication
                         string userData = JsonConvert.SerializeObject(userModel);
                         FormsAuthenticationTicket authTicket = new FormsAuthenticationTicket
                             (
-                            1, userName, DateTime.Now, DateTime.Now.AddMinutes(15), false, userData
+                            1, userName, DateTime.Now, DateTime.Now.AddMinutes(160), false, userData
                             );
 
                         string enTicket = FormsAuthentication.Encrypt(authTicket);

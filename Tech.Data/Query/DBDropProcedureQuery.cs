@@ -98,7 +98,7 @@ namespace Tech.Data.Query
         // no statement building
 #else
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginDropStatement(DBSchemaTypes.StoredProcedure, this.SprocOwner, this.SprocName, this.CheckExists == DBExistState.Exists);
             builder.EndDrop(DBSchemaTypes.Table, this.CheckExists == DBExistState.Exists);

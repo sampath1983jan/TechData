@@ -135,7 +135,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder">The builder to use to generate the execute statement</param>
         /// <returns>true</returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginExecuteStatement();
             if (string.IsNullOrEmpty(this.Catalog) == false)

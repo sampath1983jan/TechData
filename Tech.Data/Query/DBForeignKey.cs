@@ -265,7 +265,7 @@ namespace Tech.Data.Query
         // no statement building
 #else
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginCreate(DBSchemaTypes.ForeignKey, string.Empty, this.Name, string.Empty, false);
             

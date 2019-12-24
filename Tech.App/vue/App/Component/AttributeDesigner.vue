@@ -1,20 +1,14 @@
 ﻿<template>
     <div class=' '>
-        <div class="row" style="border-bottom:0px solid #ddd;" >
-            <div class="col-md-8"><h3 style="font-weight:bold">{{AttributeName}}</h3></div>
-                <div class="col-md-4" style="text-align:right"><a v-on:click="goback" style="cursor:pointer;"><i class="icofont-close-line icofont-2x"></i></a></div>
-            </div>
-            <!--Field name and title-->
-            <div class='row' style="margin:25px 0px 0px;">
-                <div class="col-md-2">Field Type</div>
-                <div class="col-md-9">
-                    <dropdown :attribute="attFieldType" :value="AttributeType" v-on:input="fieldtype"></dropdown>
-                </div>
-            </div>
-            <div class='row' style="margin:25px 0px;">
-                <div class="col-md-2">Field Name</div>
-                <div class="col-md-9">
-                    <tzinput :attribute="{id:'txtAttributeName',
+        <div class="row" style="border-bottom:0px solid #ddd; padding:0px;margin:0px; background-color:#f8f8f8">
+            <div class="col-md-8"><h4 style="font-weight:bold;padding-top:9px">{{AttributeName}}</h4></div>
+            <div class="col-md-4" style="text-align:right;top:5px"><a v-on:click="goback" style="cursor:pointer;"><i class="icofont-close-line icofont-2x"></i></a></div>
+        </div>
+        <!--Field name and title-->
+        <div class='row' style="margin:25px 0px;">
+            <div class="col-md-2">Field Name</div>
+            <div class="col-md-9">
+                <tzinput :attribute="{id:'txtAttributeName',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -23,12 +17,16 @@
             limit:true
             }" :value="AttributeName" v-on:input="attributeName"></tzinput>
 
-                </div>
             </div>
-            <div class='row' style="margin:25px 0px;">
-                <div class="col-md-2">Length</div>
-                <div class="col-md-9">
-                    <tzinput :attribute="{id:'txtLength',
+        </div>
+        <div class='row' style="margin:25px 0px 0px;">
+            <div class="col-md-2">Field Type</div>
+            <div class="col-md-4">
+                <dropdown :attribute="attFieldType" :value="AttributeType" v-on:input="fieldtype"></dropdown>
+            </div>
+            <div class="col-md-2">Length</div>
+            <div class="col-md-3">
+                <tzinput :attribute="{id:'txtLength',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -36,20 +34,24 @@
             max:500,
             limit:false,format: 'hex',
             }" :value="Length" v-on:input="length"></tzinput>
-                </div>
             </div>
-            <!--Field Defination-->
-            <div class='row' style="margin:25px 0px;">
-                <div class="col-md-12" style="padding-left:0px !important">
-                    <div class="row">
-                        <div class="col-md-2">     Field defined as </div>
-                        <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-md-12">Is Key</div>
-                                        <div class="col-md-12">
-                                            <tzinput :attribute="{id:'txtiskey',
+        </div>
+
+        <div class='row' style="margin:25px 0px;">
+            
+        </div>
+        <!--Field Defination-->
+        <div class='row' style="margin:25px 0px;">
+            <div class="col-md-12" style="padding-left:0px !important">
+                <div class="row">
+                    <div class="col-md-2">     Field defined as </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12">Is Key</div>
+                                    <div class="col-md-12">
+                                        <tzinput :attribute="{id:'txtiskey',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -57,14 +59,14 @@
             max:500,
             limit:false,format: 'hex',Note:'Set this field key field or not'
             }" :value="IsPrimary" v-on:input="iskey"></tzinput>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-md-12">Is Null</div>
-                                        <div class="col-md-12">
-                                            <tzinput :attribute="{id:'txtisnull',
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12">Is Null</div>
+                                    <div class="col-md-12">
+                                        <tzinput :attribute="{id:'txtisnull',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -72,15 +74,15 @@
             max:500,
              Note:'allow null vlaue or not'
             }" :value="IsNull" v-on:input="isnull"></tzinput>
-                                        </div>
                                     </div>
-
                                 </div>
-                                <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-md-12">Is Core</div>
-                                        <div class="col-md-12">
-                                            <tzinput :attribute="{id:'txtiscore',
+
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12">Is Core</div>
+                                    <div class="col-md-12">
+                                        <tzinput :attribute="{id:'txtiscore',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -88,14 +90,14 @@
             max:500,
              Note:'Is Core field or not'
             }" :value="IsCore" v-on:input="iscore"></tzinput>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-md-12">Is Req.</div>
-                                        <div class="col-md-12">
-                                            <tzinput :attribute="{id:'txtisreq',
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12">Is Req.</div>
+                                    <div class="col-md-12">
+                                        <tzinput :attribute="{id:'txtisreq',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -103,14 +105,14 @@
             max:500,
              Note:'Is Required field or not'
             }" :value="IsRequired" v-on:input="isrequired"></tzinput>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-md-12">Is Uniq.</div>
-                                        <div class="col-md-12">
-                                            <tzinput :attribute="{id:'txtisunique',
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12">Is Uniq.</div>
+                                    <div class="col-md-12">
+                                        <tzinput :attribute="{id:'txtisunique',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -118,27 +120,27 @@
             max:500,
              Note:'Is Required field or not'
             }" :value="IsUnique" v-on:input="isunique"></tzinput>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
-
-
                 </div>
+
+
             </div>
-            <!--Security-->
-            <div class="row" style="margin:25px 0px;">
-                <div class="col-md-2">
-                    Field Security
-                </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-12">Enable Field Encryption</div>
-                        <div class="col-md-12">
-                            <tzinput :attribute="{id:'txtisSecurity',
+        </div>
+        <!--Security-->
+        <div class="row" style="margin:25px 0px;">
+            <div class="col-md-2">
+                Field Security
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">Enable Field Encryption</div>
+                    <div class="col-md-12">
+                        <tzinput :attribute="{id:'txtisSecurity',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -146,32 +148,32 @@
             max:500,
             limit:false,format: 'hex',Note:'Set this field key field or not'
             }" :value="IsSecured" v-on:input="issecurity"></tzinput>
-                        </div>
                     </div>
                 </div>
             </div>
-            <!--Other information-->
-            <div class="row" style="margin:25px 0px;">
-                <div class="col-md-2">Other information</div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    LookUp
-                                </div>
-                                <div class="col-md-12">
-                                    <dropdown :attribute="attLookup" :value="LookUpID" v-on:input="lookupid"></dropdown>
-                                </div>
+        </div>
+        <!--Other information-->
+        <div class="row" style="margin:25px 0px;">
+            <div class="col-md-2">Other information</div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-md-12">
+                                LookUp
+                            </div>
+                            <div class="col-md-12">
+                                <dropdown :attribute="attLookup" :value="LookUpID" v-on:input="lookupid"></dropdown>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    Default value
-                                </div>
-                                <div class="col-md-12">
-                                    <tzinput :attribute="{id:'txtdefault',
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                Default value
+                            </div>
+                            <div class="col-md-12">
+                                <tzinput :attribute="{id:'txtdefault',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -179,16 +181,16 @@
             max:500,
             limit:false,format: 'hex',Note:'set default value'
             }" :value="DefaultValue" v-on:input="defaultvalue"></tzinput>
-                                </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    File Extenstions
-                                </div>
-                                <div class="col-md-12">
-                                    <tzinput :attribute="{id:'txtfileExtention',
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                File Extenstions
+                            </div>
+                            <div class="col-md-12">
+                                <tzinput :attribute="{id:'txtfileExtention',
             isRequired:false,
             enabletooltip:true,
             min:0,
@@ -196,23 +198,23 @@
             max:500,
             limit:false,format: 'hex',Note:'set default value'
             }" :value="FileExtension" v-on:input="fileextention"></tzinput>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Actions-->
-            <div class="row">
-                <div class="col-md-8">
+        </div>
+        <!--Actions-->
+        <div class="row">
+            <div class="col-md-8">
 
-                </div>
-                <div class="col-md-4" style="margin-top:25px">
-                    <input type="button" class="btn btn-primary" v-on:click="Save" value="Save" />
-                    <input type="button" class="btn btn-default" v-on:click="Close" value="Cancel" />
-                </div>
+            </div>
+            <div class="col-md-4" style="margin-top:25px">
+                <input type="button" class="btn btn-primary" v-on:click="Save" value="Save" />
+                <input type="button" class="btn btn-default" v-on:click="Close" value="Cancel" />
             </div>
         </div>
+    </div>
 
 </template>
 <script>
@@ -297,16 +299,18 @@
             }
         },
         beforeCreate: function () {
-          
+   
         },
         beforeRouteEnter(to, from, next) {
+        
             next()             
         },
         created: function () {
-            
-            var avaa = this.$route.fullPath.split("/");
-            
-            this.FieldID = avaa[6];
+          //  debugger;
+
+          //  var avaa = this.$route.fullPath.split("/");
+           
+            this.FieldID = this.$route.params.attid;
             var appid = this.$route.params.id;
             var cid = this.$route.params.cid;
             if (this.FieldID == undefined) {

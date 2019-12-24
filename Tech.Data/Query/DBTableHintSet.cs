@@ -126,7 +126,7 @@ namespace Tech.Data.Query
         // statement building
         //
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             if (this.HasHints)
             {

@@ -258,7 +258,7 @@ namespace Tech.Data.Query
         /// </summary>
         /// <param name="builder">The builder that outputs provider specific statements</param>
         /// <returns>true</returns>
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             builder.BeginInsertStatement();
             if (_into == null)

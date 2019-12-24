@@ -208,7 +208,7 @@ namespace Tech.QScript.Domain.QData
     {
         protected override string XmlElementName => throw new NotImplementedException();
 
-        public override bool BuildStatement(DBStatementBuilder builder)
+        public override bool BuildStatement(DBStatementBuilder builder, bool isInorNot = false)
         {
             throw new NotImplementedException();
         }
