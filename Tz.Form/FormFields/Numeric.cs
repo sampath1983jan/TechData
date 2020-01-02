@@ -6,37 +6,22 @@ using System.Threading.Tasks;
 
 namespace Tz.UIForms.FormFields
 {
-   public class Upload : FormField
+    public class Numeric:FormField
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        public string FileExtension { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public double MaxFileSize { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="clientid"></param>
-        public Upload(string clientid) : base(clientid, "")
+        public int Min { get; set; }
+        public int Max { get; set; }
+        public string DisplayFormat { get; set; }
+
+
+        public Numeric(string clientid) : base(clientid, "")
         {
-            FieldRenderType = RenderType.UPLOAD;
+            FieldRenderType = RenderType.NUMBER
+                ;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="clientid"></param>
-        /// <param name="formid"></param>
-        public Upload(string clientid, string formid) : base(clientid, formid)
+        public Numeric(string clientid, string formid) : base(clientid, formid)
         {
-            FieldRenderType = RenderType.UPLOAD;
+            FieldRenderType = RenderType.NUMBER;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
         new public bool Save()
         {
             Data.UIForm.UIFields uIFields = new Data.UIForm.UIFields(UIForms.Common.GetConnection(this.ClientID));
@@ -63,6 +48,5 @@ namespace Tz.UIForms.FormFields
             }
             return true;
         }
-
     }
 }

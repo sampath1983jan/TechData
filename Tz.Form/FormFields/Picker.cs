@@ -10,11 +10,11 @@ namespace Tz.UIForms.FormFields
     {
         public Picker(string clientid) : base(clientid, "")
         {
-
+            FieldRenderType = RenderType.PICKER;
         }
         public Picker(string clientid, string formid) : base(clientid, formid)
         {
-
+            FieldRenderType = RenderType.PICKER;
         }
         new public bool Save()
         {
@@ -25,7 +25,8 @@ namespace Tz.UIForms.FormFields
                               this.ClientID, (int)this.FieldRenderType,
                               (int)this.Category,
                               this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                              , this.Width, this.Height);
             }
             else
             {
@@ -36,7 +37,8 @@ namespace Tz.UIForms.FormFields
                     (int)this.Category,
                     this.Left,
                     this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                    , this.Width, this.Height);
             }
             return true;
         }

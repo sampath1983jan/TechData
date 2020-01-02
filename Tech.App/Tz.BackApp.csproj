@@ -381,6 +381,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\icofont.svg" />
+    <Content Include="Content\gridstack.css" />
     <Content Include="Content\icofont.min.css" />
     <Content Include="Content\Main.css">
       <DependentUpon>Main.scss</DependentUpon>
@@ -800,6 +801,7 @@
     <Content Include="Scripts\ace\worker-xml.js" />
     <Content Include="Scripts\ace\worker-xquery.js" />
     <Content Include="Scripts\app\Component.js" />
+    <Content Include="Scripts\app\Global.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
@@ -826,6 +828,8 @@
     <Content Include="Scripts\ace\mode-QScriptMode.js" />
     <Content Include="Scripts\Controls\Calendar.js" />
     <Content Include="Scripts\Controls\Control-vue.js" />
+    <Content Include="Scripts\Controls\GridStack-ui.js" />
+    <Content Include="Scripts\Controls\GridStack.js" />
     <Content Include="Scripts\Controls\interact.js" />
     <Content Include="Scripts\Controls\Jpopup.js" />
     <Content Include="Scripts\popper.js" />
@@ -964,10 +968,13 @@
     <Content Include="vue\App\Forms\SimpleForm.Vue" />
     <Content Include="vue\App\Forms\ChooseComponent.vue" />
     <Content Include="vue\App\Forms\FormComponentAttribute.vue" />
+    <Content Include="vue\App\Forms\AttributeProperties.vue" />
+    <Content Include="vue\App\Component\LookUp.vue" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Component\" />
+    <Folder Include="vue\App\ComponentModel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -48,7 +48,9 @@
     <Compile Include="FormBuilder.cs" />
     <Compile Include="FormField.cs" />
     <Compile Include="FormFields\Boolean.cs" />
+    <Compile Include="FormFields\SpecialField\Currency.cs" />
     <Compile Include="FormFields\Date.cs" />
+    <Compile Include="FormFields\Numeric.cs" />
     <Compile Include="FormFields\Picker.cs" />
     <Compile Include="FormFields\Selection.cs" />
     <Compile Include="FormFields\Text.cs" />

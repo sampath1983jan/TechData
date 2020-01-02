@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 namespace Tz.UIForms.FormFields
 {
   public class Text:FormField
-    {
-        public int Min { get; set; }
-        public int Max { get; set; }
-        public string DisplayFormat { get; set; }
-
+    {    
         public Text(string clientid) : base(clientid, "")
         {
-
+            FieldRenderType = RenderType.TEXT;
         }
         public Text(string clientid, string formid) : base(clientid, formid)
         {
-
+            FieldRenderType = RenderType.TEXT;
         }
         new public bool Save()
         {
@@ -29,7 +25,8 @@ namespace Tz.UIForms.FormFields
                               this.ClientID, (int)this.FieldRenderType,
                               (int)this.Category,
                               this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                              , this.Width, this.Height);
             }
             else
             {
@@ -40,10 +37,10 @@ namespace Tz.UIForms.FormFields
                     (int)this.Category,
                     this.Left,
                     this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                    , this.Width, this.Height);
             }
             return true;
         }
-
     }
 }

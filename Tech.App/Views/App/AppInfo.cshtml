@@ -59,13 +59,16 @@
                 paths: {
                     'jquery': '/Scripts/jquery-3.3.1',
                     'popper': '/Scripts/popper',
+                  
                     'bootstrap': '/Scripts/bootstrap',
                     "combobox": "/Scripts/Controls/ComboBox/ComboBox",
                     "token": "/Scripts/Controls/Tokenizer/Tokenizer",
                     "controls": "/scripts/controls/Control-vue",
                     "tzGrid": "/vue/controls/Grid",
                     "touch": "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min",
-                    "jqueryui": "/Scripts/jquery-ui",
+                    "Jquery-ui": "/Scripts/jquery-ui",
+                    'gridstack': "/Scripts/Controls/GridStack",
+                    'gsui': "/Scripts/Controls/GridStack-ui",
                     "datepicker": "/Scripts/Controls/datepicker/daterangepicker",
                     "bdatepicker": "/Scripts/Controls/datepicker/bootstrap-datepicker",
                     "timer": "/Scripts/Controls/timer",
@@ -89,12 +92,14 @@
             // load libs right now
             ["jquery", "popper", "bootstrap", "combobox", "controls", "input", "textarea", "tzSearch", "dropdown",
                 "tzGrid", "token", "Tokenizer", 'tzprogress', "cvprogress", "toaster", "pMeter", "moment", "calendar", "timer", "color", "datepicker",
-                "bdatepicker", "NumberSlider", "Pagination", "touch", "jqueryui"],
+                "bdatepicker", "NumberSlider", "Pagination", "touch", "Jquery-ui", "gridstack","gsui"],
             function (aa, popper, b, combobox, controls, input, textarea, tzSearch, dropdown, Griod, tx, token, tProgress, cvprogress, toaster,
-                ProgressMeter, mom, calendar, color, NumberSlider, page, touch) {
+                ProgressMeter, mom, calendar, timer, color, datepicker, bdatepicker, NumberSlider, page, touch, jui, gridstack, gsui) {
                 window.dropdown_c = dropdown;
                 window.popper = popper;
-
+                //window.gridstack = gridstack;
+               /// window.jui = jui;
+   
                 var appDesigner = httpVueLoader('/vue/App/AppDesigner.vue?' + (Math.random() * 10000));
                 var cmManager = httpVueLoader('/vue/App/Component/ComponentManager.vue?4');
                 var CompForm = httpVueLoader('/vue/App/Component/CompForm.vue?' + (Math.random() * 10000));

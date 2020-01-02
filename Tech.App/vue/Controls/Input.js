@@ -4,7 +4,7 @@ define(function () {
 
     var setTemplate = function (itype, ele, attr) {
         itype = parseInt(itype);
-     
+        
         if (itype === 1 || itype === 2 || itype === 3 || itype === 4 || itype === 5 || itype === 6 || itype === 13) {
             var d = document.createElement("div");
             $(ele).find('input').addClass("form-control");
@@ -77,25 +77,26 @@ define(function () {
     }
     return Vue.component('tzinput',
         {
-            template: '<div><input :type="getType"  v-model="text"  @blur="handleInput"  v-on:change="changeinput"   @input="handleInput"/></div>'
+            template: '<div><input :type="getType" :disabled="isenabled"  v-model="text"  @blur="handleInput"  v-on:change="changeinput"   @input="handleInput"/></div>'
             ,
-            props: ['value', 'type', 'inputType', 'attribute', 'req', 'id'],
+            props: ['value', 'attribute','disable'], // must write watch when value updated outside.
             data: function () {
                 return {
                     required: true,
                     length: 200,
                     with: 200,
                     height: '',
-                    text: this.value
+                    text: this.value,
+                    isenabled: this.disable,
                 }
-            },
+            },            
             created: function () {
-
+                 
             },
-
             mounted: function () {
                 var othis = this;
                 this.$nextTick(function () {
+                
                     setTemplate(this.attribute.inputType, this.$el, this.attribute);
                     $(this.$el).find("input").attr("id", this.attribute.id);
                     $(this.$el).find("input").Input(this.attribute);
@@ -135,9 +136,7 @@ define(function () {
                 });
             },
             updated: function () {
-                //    $(this.$parent.$el).find('input').css("border", "1px solid black");
-                //    alert($(this.$parent.$el).html());
-
+               
             },
             destroyed: function () {
                 //   $(this.$parent.$el).find('input').css("border", "1px solid black");
@@ -210,6 +209,9 @@ define(function () {
                 }
             },
             watch: {
+                disable: function (newval, oldval) {                  
+                    this.isenabled = newval;
+                },
                 value: function (newVal, oldVal)  {                     
                    //console.log('Prop changed: ', newVal, ' | was: ', oldVal);
                     this.text = newVal;

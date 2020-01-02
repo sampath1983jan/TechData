@@ -40,10 +40,16 @@ namespace Tz.UIForms.FormFields
         /// <summary>
         /// 
         /// </summary>
+        public bool AllowOrderbyAlphabet { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="clientid"></param>
+        /// 
+
         public Selection(string clientid) : base(clientid, "")
         {
-
+            FieldRenderType = RenderType.SELECTION;
         }
         /// <summary>
         /// 
@@ -52,7 +58,7 @@ namespace Tz.UIForms.FormFields
         /// <param name="formid"></param>
         public Selection(string clientid, string formid) : base(clientid, formid)
         {
-
+            FieldRenderType = RenderType.SELECTION;
         }
         /// <summary>
         /// 
@@ -66,7 +72,8 @@ namespace Tz.UIForms.FormFields
                               this.ClientID, (int)this.FieldRenderType,
                               (int)this.Category,
                               this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                              , this.Width, this.Height);
             }
             else
             {
@@ -77,7 +84,8 @@ namespace Tz.UIForms.FormFields
                     (int)this.Category,
                     this.Left,
                     this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                    , this.Width, this.Height);
             }
             return true;
         }    

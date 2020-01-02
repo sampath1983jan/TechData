@@ -346,6 +346,11 @@ namespace Tz.Global
             public static readonly DBColumn Top = DBColumn.Column("Top", System.Data.DbType.Double, 255);
             public static readonly DBColumn FieldAttribute = DBColumn.Column("FieldAttribute", System.Data.DbType.String, 500000);
             public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+            public static readonly DBColumn CreatedDate = DBColumn.Column("CreatedDate", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+
+            public static readonly DBColumn Width = DBColumn.Column("Width", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            public static readonly DBColumn Height = DBColumn.Column("Height", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+
         }
     }
 }

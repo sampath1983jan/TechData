@@ -13,6 +13,7 @@ namespace Tz.UIForms
         PICKER=2,
         UPLOAD=3,
         BOOLEAN=4,
+        NUMBER=5,
     }
     public enum RenderCategory {
         text,
@@ -23,12 +24,15 @@ namespace Tz.UIForms
         number_range,
         formula,
 
-
         autocomplete,
         dropdown,
         select_with_grid,
         list,
         choice,
+        week_picker,
+        year_picker,
+        month_picker,
+        quarter_picker,
 
         image,
         file,
@@ -39,12 +43,8 @@ namespace Tz.UIForms
         date_time,
         date_range,
         time,
-        time_range,
-        week_picker,
-        year_picker,
-        month_picker,
-        monthyear_picker,
-        quarter_picker,
+        time_range,      
+        monthyear_picker,    
 
        yes_no,
        question,
@@ -62,6 +62,10 @@ namespace Tz.UIForms
         public float Top { get; set; }
         public string DataField { get; set; }
         public ComponentAttribute FieldAttribute { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public bool EnableLimit { get; set; }
+          
         /// <summary>
         /// 
         /// </summary>
@@ -90,6 +94,8 @@ namespace Tz.UIForms
                 this.Category = row["Category"] == null ? RenderCategory.text : (RenderCategory)row["Category"];
                 this.Left = row["Left"] == null ? 0 : (int)row["Left"];
                 this.Top = row["Top"] == null ?  0 : (int)row["Top"];
+                this.Width = row["Width"] == null ? 0 : (int)row["Width"];
+                this.Height = row["Height"] == null ? 0 : (int)row["Height"];
                 var fatt = row["FieldAttribute"] == null ? "" : (string)row["FieldAttribute"];
                 FieldAttribute = Newtonsoft.Json.JsonConvert.DeserializeObject<ComponentAttribute>(fatt);
             }

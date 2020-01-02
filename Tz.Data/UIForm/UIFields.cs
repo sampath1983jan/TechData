@@ -74,7 +74,9 @@ namespace Tz.Data.UIForm
             float left,
             float top,
             string attributeId,
-            string attribute)
+            string attribute,
+            int width,
+            int height)
         {
             DBDatabase db;
             db = base.Database;
@@ -90,7 +92,10 @@ namespace Tz.Data.UIForm
               TzAccount.FormFields.Left.Name,
                TzAccount.FormFields.Top.Name,
                 TzAccount.FormFields.FieldAttribute.Name,
-             TzAccount.FormFields.LastUPD.Name)
+             TzAccount.FormFields.LastUPD.Name,
+             TzAccount.FormFields.CreatedDate.Name,
+             TzAccount.FormFields.Height.Name,
+             TzAccount.FormFields.Width.Name)
              .Values(
              DBConst.String(clientid),
              DBConst.String(formid),
@@ -101,7 +106,9 @@ namespace Tz.Data.UIForm
               DBConst.Double(left),
               DBConst.Double(top),
               DBConst.String(attribute),
-             DBConst.DateTime(DateTime.Now)
+             DBConst.DateTime(DateTime.Now),
+             DBConst.DateTime(DateTime.Now),
+             DBConst.Int32(height), DBConst.Int32(width)
              );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -137,7 +144,9 @@ namespace Tz.Data.UIForm
             int category,
             float left,
             float top,             
-            string attribute)
+            string attribute,
+            int width,
+            int height)
         {
             DBDatabase db;
             db = base.Database;
@@ -153,6 +162,10 @@ namespace Tz.Data.UIForm
             TzAccount.FormFields.Left.Name, DBConst.Double(left)
             ).Set(
             TzAccount.FormFields.Top.Name, DBConst.Double(top)
+            ).Set(
+            TzAccount.FormFields.Height.Name, DBConst.Double(width)
+            ).Set(
+            TzAccount.FormFields.Width.Name, DBConst.Double(width)
             ).Set(
             TzAccount.FormFields.FieldAttribute.Name, DBConst.String(attribute)
             ).WhereAll(client, form, formfield);

@@ -29,8 +29,8 @@ namespace Tz.BackApp.Controllers.Component
         /// </summary>
         /// <param name="clientid"></param>
         /// <returns></returns>
-        public JsonpResult GetLookups(string clientid) {
-
+        public JsonpResult GetLookups() {
+            string clientid = Request.Params["clientkey"];
             return new JsonpResult(Tz.Core.Lookup.GetLookUps(clientid));
         }
 
@@ -40,8 +40,9 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="clientid"></param>
         /// <param name="lookupid"></param>
         /// <returns></returns>
-        public JsonpResult GetLookup(string clientid, string lookupid)
+        public JsonpResult GetLookup(string lookupid)
         {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             return new JsonpResult(lk);
         }
@@ -51,7 +52,8 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="clientid"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public JsonpResult SaveLookUp(string clientid, string name) {
+        public JsonpResult SaveLookUp(string name) {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid);
             lk.Name = name;
             return new JsonpResult(lk.Save());
@@ -63,7 +65,8 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="lookupid"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public JsonpResult UpdateLookUp(string clientid, string lookupid, string name) {
+        public JsonpResult UpdateLookUp( string lookupid, string name) {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             lk.Name = name;
             return new JsonpResult(lk.Update());
@@ -75,7 +78,8 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="lookupid"></param>
         /// <param name="Lookupitems"></param>
         /// <returns></returns>
-        public JsonpResult AddLookupItems(string clientid, string lookupid, string Lookupitems) {
+        public JsonpResult AddLookupItems(string lookupid, string Lookupitems) {
+            string clientid = Request.Params["clientkey"];
             var litems = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Tz.BackApp.Models.LookupItem>>(Lookupitems);
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             int a = 0;
@@ -95,8 +99,9 @@ namespace Tz.BackApp.Controllers.Component
             return new JsonpResult(lk.Save());
         }
 
-        public JsonpResult UpdateLookupItem(string clientid, string lookupid, string Lookupitem)
+        public JsonpResult UpdateLookupItem(string lookupid, string Lookupitem)
         {
+            string clientid = Request.Params["clientkey"];
             var litm = Newtonsoft.Json.JsonConvert.DeserializeObject<Tz.BackApp.Models.LookupItem>(Lookupitem);
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
 
@@ -114,7 +119,8 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="clientid"></param>
         /// <param name="lookupid"></param>
         /// <returns></returns>
-        public JsonpResult RemoveLookup(string clientid, string lookupid) {
+        public JsonpResult RemoveLookup( string lookupid) {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             return new JsonpResult(lk.Remove());
         }
@@ -125,8 +131,9 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="lookupid"></param>
         /// <param name="lookupitemid"></param>
         /// <returns></returns>
-        public JsonpResult RemoveLookupItem(string clientid, string lookupid, string lookupitemid)
+        public JsonpResult RemoveLookupItem( string lookupid, string lookupitemid)
         {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             return new JsonpResult(lk.RemoveLookupItem(lookupitemid));
         }
@@ -138,8 +145,9 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="lookupitemid"></param>
         /// <param name="isActive"></param>
         /// <returns></returns>
-        public JsonpResult ChangeActive(string clientid, string lookupid, string lookupitemid, bool isActive)
+        public JsonpResult ChangeActive(string lookupid, string lookupitemid, bool isActive)
         {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             return new JsonpResult(lk.ChangeLookItemActive(isActive, lookupitemid));
         }
@@ -151,7 +159,8 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="lookupitemid"></param>
         /// <param name="order"></param>
         /// <returns></returns>
-        public JsonpResult ChangeOrder(string clientid, string lookupid, string lookupitemid, int order) {
+        public JsonpResult ChangeOrder(string lookupid, string lookupitemid, int order) {
+            string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             return new JsonpResult(lk.ChangeOrder(lookupitemid, order));
         }

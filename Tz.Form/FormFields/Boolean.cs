@@ -9,11 +9,11 @@ namespace Tz.UIForms.FormFields
     public class Boolean: FormField
     {
         public Boolean(string clientid):base(clientid,"") {
-
+            this.FieldRenderType = RenderType.BOOLEAN;
         }
         public Boolean(string clientid, string formid) : base(clientid, formid)
         {
-
+            this.FieldRenderType = RenderType.BOOLEAN;
         }
         new public bool Save()
         {
@@ -24,7 +24,8 @@ namespace Tz.UIForms.FormFields
                               this.ClientID, (int)this.FieldRenderType,
                               (int)this.Category,
                               this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
+                              ,this.Width,this.Height);
             }
             else
             {
@@ -35,7 +36,8 @@ namespace Tz.UIForms.FormFields
                     (int)this.Category,
                     this.Left,
                     this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute));
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute),
+                    this.Width,this.Height);
             }
             return true;
         }
