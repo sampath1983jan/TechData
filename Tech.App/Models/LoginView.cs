@@ -21,6 +21,7 @@ namespace Tz.BackApp.Models{
 
     public class CustomSerializeModel
     {
+        public string ClientId { get; set; }
         public string UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

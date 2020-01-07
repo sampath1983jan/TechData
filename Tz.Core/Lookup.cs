@@ -24,6 +24,22 @@ namespace Tz.Core
         /// <summary>
         /// 
         /// </summary>
+        public string Description { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool IsCore { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime CreatedOn { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime LastUPD { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public List<LookupItem> LookupItems;
 
         private Data.Component.LookUp dataLookup;
@@ -61,10 +77,14 @@ namespace Tz.Core
             DataTable dt = new DataTable();
             dt=    dataLookup.GetLookupItems(ClientID,LookupID);
             DataTable dtLookup = new DataTable();
-            dtLookup= dt.DefaultView.ToTable(true, "ClientID", "LookupID", "Name");
+            dtLookup= dt.DefaultView.ToTable(true, "ClientID", "LookupID", "Name","Description","IsCore","LastUPD","CreatedOn");
             foreach (DataRow dr in dtLookup.Rows) {
                 Name = dr["Name"] == null ? "" : dr["Name"].ToString();
-                LookupID = dr["LookupID"] == null ? "" : dr["LookupID"].ToString();                
+                LookupID = dr["LookupID"] == null ? "" : dr["LookupID"].ToString();
+                 IsCore = DBNull.Value.Equals(dr["IsCore"]) == true ? false : Convert.ToBoolean(dr["IsCore"]);
+                Description = DBNull.Value.Equals(dr["Description"]) == true ? "" : dr["Description"].ToString();
+                 CreatedOn = DBNull.Value.Equals(dr["CreatedOn"]) == true ? DateTime.Now : Convert.ToDateTime(dr["LastUPD"]);
+                 LastUPD = DBNull.Value.Equals(dr["LastUPD"]) == true ? DateTime.Now : Convert.ToDateTime(dr["LastUPD"]);
             }
             foreach (DataRow dRow in dt.Rows) {                
                var LookUpItemID = dRow["ComponentLookupItemID"] == null ? "" : dRow["ComponentLookupItemID"].ToString();
@@ -84,14 +104,18 @@ namespace Tz.Core
         /// </summary>
         /// <param name="clientid"></param>
         /// <returns></returns>
-        public static List<Lookup> GetLookUps(string clientid) {
+        public static List<Lookup> GetLookUps(string clientid,string lookupIds="") {
              ClientServer c = new ClientServer(clientid);
         var dataLookup = new Data.Component.LookUp(c.GetServer().Connection());
-            DataTable dt= dataLookup.GetLookUpList(clientid);
+            DataTable dt= dataLookup.GetLookUpList(clientid, lookupIds);
            List< Lookup> lup = new List<Lookup>();
             foreach (DataRow dr in dt.Rows) {
                 Lookup l = new Lookup(clientid);
                 l.Name = dr["Name"] == null ? "" : dr["Name"].ToString();
+                l.IsCore = DBNull.Value.Equals(dr["IsCore"]) == true ? false : Convert.ToBoolean( dr["IsCore"]);
+                l.Description = DBNull.Value.Equals(dr["Description"]) == true ? "" : dr["Description"].ToString();
+                l.CreatedOn = DBNull.Value.Equals(dr["CreatedOn"]) == true ? DateTime.Now : Convert.ToDateTime(dr["LastUPD"]);
+                l.LastUPD = DBNull.Value.Equals(dr["LastUPD"]) == true ? DateTime.Now : Convert.ToDateTime( dr["LastUPD"]);
                 l.LookupID = dr["LookUpID"] ==null? "": dr["LookUpID"].ToString();
                 lup.Add(l);
             }
@@ -104,11 +128,14 @@ namespace Tz.Core
         public bool Save() {
             if (this.LookupID == "") {
                 this.LookupID = dataLookup.SaveLookup(this.ClientID,
-                 this.Name);
+                 this.Name,
+                 this.Description,
+                 this.IsCore);
             }
             var conn = c.GetServer().Connection();
             if (this.LookupID != "")
             {
+                dataLookup.UpdateLookup(this.ClientID, this.LookupID, this.Name, this.Description, this.IsCore);
                 foreach (LookupItem itm in this.LookupItems)
                 {
                     if (itm.LookUpItemID == "" || itm.LookUpItemID ==null) {
@@ -174,7 +201,9 @@ namespace Tz.Core
         public bool Update() {
         return    dataLookup.UpdateLookup(this.ClientID,
                 this.LookupID,
-                this.Name);
+                this.Name,
+                this.Description,
+                this.IsCore);
         }
         /// <summary>
         /// 

@@ -81,6 +81,8 @@ namespace Tz.BackApp.Controllers.App
             return new JsonpResult(mg.AddAttribute(natt));
         }
 
+
+ 
         /// <summary>
         /// 
         /// </summary>
@@ -157,6 +159,27 @@ namespace Tz.BackApp.Controllers.App
             return new JsonpResult(fm.SaveComponent(compID));
         }
 
+        #endregion
+
+        #region Lookup
+        [Route("App/{appid}/Lookup/Create")]
+        public JsonpResult CreateLookup(string appid, string lookupname, string description, bool isCore) {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            var lok =a.NewLookup();
+            lok.Name = lookupname;
+            lok.Description = description;
+            lok.IsCore = isCore;
+            return new JsonpResult(a.SaveLookup(lok));
+        }
+        [Route("App/{appid}/Lookup/get")]
+        public JsonpResult GetLookups(string appid)
+        {
+            string clientid = Request.Params["clientkey"];
+            var a = new Tz.App.AppManager(clientid, appid);
+            a.LoadLookUp();
+            return new JsonpResult( a);
+        }
         #endregion
 
         //[Route("App/{appid}/Component/Create")]

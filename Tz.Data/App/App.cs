@@ -36,6 +36,7 @@ namespace Tz.Data.App
                 .AndWhere(TzAccount.App.Table, TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid));
             return db.GetDatatable(select);
         }
+
         public DataTable GetAppComponent(string clientid, string appid)
         {
             DBDatabase db;
@@ -107,6 +108,23 @@ namespace Tz.Data.App
             DBQuery select;
             select = DBQuery.Select()
                 ;
+            return db.GetDatatable(select);
+        }
+        public DataTable GetAppLookups(string clientid, string appid) {
+            DBDatabase db;
+            db = base.Database;
+            DBQuery select;
+            select = DBQuery.Select()
+                 .Field(TzAccount.App.Table, TzAccount.App.AppID.Name)
+                .Field(TzAccount.AppElements.Table, TzAccount.AppElements.CreatedOn.Name)
+                           .Field(TzAccount.AppElements.Table, TzAccount.AppElements.ElementID.Name)
+                    .From(TzAccount.App.Table).LeftJoin(TzAccount.AppElements.Table).
+                    On(TzAccount.App.Table, TzAccount.App.AppID.Name,
+                Compare.Equals, TzAccount.AppElements.Table, TzAccount.AppElements.AppID.Name)
+                .WhereField(TzAccount.App.Table, TzAccount.App.ClientID.Name,
+               Compare.Equals, DBConst.String(clientid))
+               .AndWhere(TzAccount.App.Table, TzAccount.App.AppID.Name, Compare.Equals, DBConst.String(appid))
+                 .AndWhere(TzAccount.AppElements.Table, TzAccount.AppElements.ElementType.Name, Compare.Equals, DBConst.String("7"));
             return db.GetDatatable(select);
         }
         public DataTable GetAppDashboard(string clientid, string appid)

@@ -12,6 +12,7 @@ namespace Tz.Security
    
     public abstract class IUser
     {
+   
         public abstract string UserID { get; set; }
         public string UserName { get; set; }
         public string FirstName { get; set; }

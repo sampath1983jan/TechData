@@ -17,6 +17,7 @@ namespace CustomAuthentication
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Roles { get; set; }
+        public string ClientId { get; set; }
         #endregion
 
         public CustomMembershipUser(IUser user) : base("CustomMembership", user.UserName, user.UserID, user.Email, string.Empty, string.Empty, true, false, DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now)
@@ -25,6 +26,7 @@ namespace CustomAuthentication
             FirstName = user.FirstName;
             LastName = user.LastName;
             Roles = user.UserGroupID;
+            ClientId = user.ClientID;
         }
     }
 }

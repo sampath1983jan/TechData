@@ -57,7 +57,7 @@
                     shouldSetHash: false
                 });
                 $(".jPopup").find(".content").attr("id", "newelement");
-                $(".jPopup").find(".content").css("top", "40%");
+                $(".jPopup").find(".content").css("top", "35%");
                 $(".jPopup").find(".content").css("width", "90%");
                 $(".jPopup").find(".content").css("padding-left", "10%");
                 var aProperty = httpVueLoader('/vue/App/Forms/AttributeProperties.vue?' + (Math.random() * 10000));

@@ -23,11 +23,14 @@ namespace Tz.App
         REPORT=3,
         FORM=4,
         FEATURE=5,
-        ANALYTIC=6
+        ANALYTIC=6,
+        LOOKUP=7,
+            
     }
     public class AppManager
     {
         private List<AppElement.AppForm> _forms;
+        private List<AppElement.AppLookup> _lookups;
         private string _appid;
         /// <summary>
         /// 
@@ -85,6 +88,10 @@ namespace Tz.App
         /// <summary>
         /// 
         /// </summary>
+        public List<AppElement.AppLookup> Lookups { get { return _lookups; } }
+        /// <summary>
+        /// 
+        /// </summary>
         public List<AppElement.AppForm> Forms { get { return _forms; } }
         /// <summary>
         /// 
@@ -104,6 +111,7 @@ namespace Tz.App
             Pages = new List<AppElement.AppWebPage>();
             Reports = new List<AppElement.AppReport>();
             Dashboards = new List<AppElement.AppDashboard>();
+            _lookups = new List<AppElement.AppLookup>();
         }
         /// <summary>
         /// 
@@ -120,6 +128,7 @@ namespace Tz.App
             Pages = new List<AppElement.AppWebPage>();
             Reports = new List<AppElement.AppReport>();
             Dashboards = new List<AppElement.AppDashboard>();
+            _lookups = new List<AppElement.AppLookup>();
             Load();
         }
         private void Load()
@@ -223,6 +232,19 @@ namespace Tz.App
                 apForm.Set(f);
                 this.Forms.Add(apForm);
             }          
+        }
+        public void LoadLookUp() {
+            Tz.Data.App.App a = new Data.App.App(Common.GetConnection(this.ClientID));
+            DataTable dt = new DataTable();
+            dt = a.GetAppLookups(this.ClientID, this.AppID);
+            string s = string.Join(", ", dt.Rows.OfType<DataRow>().Select(r => r["ElementID"].ToString()));
+           var lookups= Tz.Core.Lookup.GetLookUps(this.ClientID, s);
+            foreach (Tz.Core.Lookup l in lookups) {
+                var apLookup = new App.AppElement.AppLookup(this.ClientID, this.AppID);
+              
+                apLookup.Set(l);
+                this.Lookups.Add(apLookup);
+            }
         }
         /// <summary>
         /// 
@@ -397,6 +419,7 @@ namespace Tz.App
          var   formBuilder = new FormBuilder(this.ClientID,"", k, new FormFieldBuilder());
             return   formBuilder.UIForm;            
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -431,7 +454,13 @@ namespace Tz.App
         public bool RemoveForm(string formid) {
             var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
             var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
-           return fb.Remove();
+            if (fb.Remove())
+            {
+                appform.Remove();
+                return true;
+            }
+            else
+                return false;
         }
         /// <summary>
         /// 
@@ -466,6 +495,38 @@ namespace Tz.App
             var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
             return appform.Form.RemoveField(fieldid);
         }
+        #endregion
+        #region Lookup
+        public Tz.Core.Lookup NewLookup() {
+            Tz.Core.Lookup lk = new Lookup(this.ClientID);
+            return lk;           
+            
+        }
+        public bool SaveLookup(Tz.Core.Lookup lk) {
+            if (lk.Save())
+            {
+                var cc = new AppElement.AppLookup(this.ClientID, this.AppID, lk.LookupID);
+                this.Lookups.Add(cc);
+                if (cc.Assign()) { return true; }
+                else
+                    return false;
+            }
+            else
+                return false;
+        }
+        public bool RemoveLookUp(string lkid) {
+            var lk = this.Lookups.Where(x => x.Lookup.LookupID == lkid).FirstOrDefault();
+            if (lk.Lookup.Remove())
+            {
+                lk.Remove();
+                return true;
+            }
+            else
+                return false;
+        }
+
+
+
         #endregion
     }
 

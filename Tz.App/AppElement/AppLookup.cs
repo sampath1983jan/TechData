@@ -6,50 +6,37 @@ using System.Threading.Tasks;
 
 namespace Tz.App.AppElement
 {
-    public class AppForm
+    public class AppLookup
     {
-        private Tz.UIForms.Form _form;
-        /// <summary>
-        /// 
-        /// </summary>
-        public string ClientID { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public string AppID { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public Tz.UIForms.Form Form { get { return _form; } }
+        private Tz.Core.Lookup lookup;
 
-        /// <summary>
-        /// 
-        /// </summary>
+        public string ClientID { get; set; }
+        public string AppID { get; set; }
         public string ElementID { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="clientid"></param>
-        /// <param name="appid"></param>
-        /// <param name="elementID"></param>
-        public AppForm(string clientid, string appid, string elementID) {
+
+        public Tz.Core.Lookup  Lookup {get  { return lookup; } }
+
+        public AppLookup(string clientid, string appid, string elementID) {
             this.ClientID = clientid;
             this.AppID = appid;
             this.ElementID = elementID;
-            _form = new UIForms.Form(this.ClientID);
+            lookup = new Core.Lookup(this.ClientID);
+
         }
-        public AppForm(string clientid, string appid) {
+        public AppLookup(string clientid, string appid)
+        {
             this.ClientID = clientid;
             this.AppID = appid;
-            _form = new UIForms.Form(this.ClientID);
+            this.ElementID = "";
+            lookup = new Core.Lookup(this.ClientID);
+
         }
-        internal void Set(UIForms.Form form) {
-            ElementID = form.FormID;
-        _form = form;
+        internal void Set(Tz.Core.Lookup lk) {
+            lookup = lk;
         }
         internal void Load()
         {
-            _form = new UIForms.Form(this.ClientID, this.ElementID);
+            lookup = new Tz.Core.Lookup(this.ClientID, this.ElementID);
         }
         /// <summary>
         /// 
@@ -60,11 +47,12 @@ namespace Tz.App.AppElement
             try
             {
                 Data.App.App aa = new Data.App.App(Common.GetConnection(this.ClientID));
-                if (aa.AssignElement(this.ClientID, this.AppID, (int)AppElementType.FORM, ElementID))
+                if (aa.AssignElement(this.ClientID, this.AppID, (int)AppElementType.LOOKUP, ElementID))
                 {
                     return true;
                 }
                 else return false;
+
             }
             catch (Exception ex)
             {

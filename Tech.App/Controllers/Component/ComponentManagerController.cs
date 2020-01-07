@@ -52,10 +52,13 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="clientid"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public JsonpResult SaveLookUp(string name) {
+        
+        public JsonpResult SaveLookUp(string name,string description,bool iscore) {
             string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid);
             lk.Name = name;
+            lk.Description = description;
+            lk.IsCore = iscore;
             return new JsonpResult(lk.Save());
         }
         /// <summary>
@@ -65,10 +68,12 @@ namespace Tz.BackApp.Controllers.Component
         /// <param name="lookupid"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public JsonpResult UpdateLookUp( string lookupid, string name) {
+        public JsonpResult UpdateLookUp( string lookupid, string name, string description, bool iscore) {
             string clientid = Request.Params["clientkey"];
             Tz.Core.Lookup lk = new Lookup(clientid, lookupid);
             lk.Name = name;
+            lk.Description = description;
+            lk.IsCore = iscore;
             return new JsonpResult(lk.Update());
         }
         /// <summary>

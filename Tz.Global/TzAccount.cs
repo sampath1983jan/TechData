@@ -263,6 +263,9 @@ namespace Tz.Global
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
             public static readonly DBColumn LookupID = DBColumn.Column("LookupID", System.Data.DbType.String, 255, DBColumnFlags.PrimaryKey);
             public static readonly DBColumn LookUpName = DBColumn.Column("Name", System.Data.DbType.String, 255);
+            public static readonly DBColumn IsCore = DBColumn.Column("IsCore", System.Data.DbType.Boolean, 255);
+            public static readonly DBColumn Description = DBColumn.Column("Description", System.Data.DbType.String, 500);
+            public static readonly DBColumn CreatedOn = DBColumn.Column("CreatedOn", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
             public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
         }
         public class ImportExportEvents

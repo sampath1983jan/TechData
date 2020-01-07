@@ -62,6 +62,7 @@ namespace Tz.BackApp.Controllers.Authentication
                         Models.CustomSerializeModel userModel = new Models.CustomSerializeModel()
                         {
                             UserId = user.UserId,
+                            ClientId = user.ClientId,
                             FirstName = user.FirstName,
                             LastName = user.LastName,
                             RoleName = user.Roles

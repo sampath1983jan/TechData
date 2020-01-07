@@ -47,18 +47,41 @@ namespace Tz.Data.Component
         /// </summary>
         /// <param name="clientID"></param>
         /// <returns></returns>
-        public DataTable GetLookUpList(string clientID)
+        public DataTable GetLookUpList(string clientID,string lookupIds="")
         {
             DBDatabase db;
             db = base.Database;
             DBQuery select;
-            select = DBQuery.Select()
-                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name)
-                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookUpName.Name)
-                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookupID.Name)                
-                .From(TzAccount.ComponentLookUp.Table)
-               .WhereField(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name,
-               Compare.Equals, DBConst.String(clientID)).OrderBy(TzAccount.ComponentLookUp.LookUpName.Name,Order.Ascending);
+            if (lookupIds == "")
+            {
+                select = DBQuery.Select()
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name)
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookUpName.Name)
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookupID.Name)
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.IsCore.Name)
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.Description.Name)
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LastUPD.Name)
+                              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.CreatedOn.Name)
+                              .From(TzAccount.ComponentLookUp.Table)
+                             .WhereField(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name,
+                             Compare.Equals, DBConst.String(clientID)).OrderBy(TzAccount.ComponentLookUp.LookUpName.Name, Order.Ascending);
+            }
+            else {
+                select = DBQuery.Select()
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name)
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookUpName.Name)
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookupID.Name)
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.IsCore.Name)
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.Description.Name)
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LastUPD.Name)
+              .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.CreatedOn.Name)
+              .From(TzAccount.ComponentLookUp.Table)
+             .WhereField(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name,
+             Compare.Equals, DBConst.String(clientID))
+             .AndWhere (TzAccount.ComponentLookUp.Table,TzAccount.ComponentLookUp.LookupID.Name ,Compare.In, DBConst.String(lookupIds))
+             .OrderBy(TzAccount.ComponentLookUp.LookUpName.Name, Order.Ascending);
+            }          
+           
             return db.GetDatatable(select);
         }
         /// <summary>
@@ -101,6 +124,10 @@ namespace Tz.Data.Component
                 .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.ClientID.Name)
                 .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookUpName.Name)
                 .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookupID.Name)
+                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.Description.Name)
+                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.IsCore.Name)
+                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LastUPD.Name)
+                .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.CreatedOn.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.ComponentLookupItemID.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.Label.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.ShortLabel.Name)
@@ -333,7 +360,8 @@ namespace Tz.Data.Component
         /// <returns></returns>
         public bool UpdateLookup(string clientid,
             string lookupid,
-            string name)
+            string name, string description,
+            bool isCore)
         {
             DBDatabase db;
             db = base.Database;
@@ -346,6 +374,10 @@ namespace Tz.Data.Component
 
             DBQuery update = DBQuery.Update(TzAccount.ComponentLookUp.Table).Set(
         TzAccount.ComponentLookUp.LookUpName.Name, dbparentid
+        ).Set(
+        TzAccount.ComponentLookUp.Description.Name, DBConst.String(description)
+        ).Set(
+        TzAccount.ComponentLookUp.IsCore.Name, DBConst.Const(DbType.Boolean,isCore)
         ).WhereAll(componentlookup,  Client);
             int i = db.ExecuteNonQuery(update);
             if (i > 0)
@@ -364,23 +396,31 @@ namespace Tz.Data.Component
         /// <param name="name"></param>
         /// <returns></returns>
         public string SaveLookup(string clientid,
-            string name) {
+            string name,
+            string description,
+            bool isCore) {
             DBDatabase db;
             db = base.Database;
             string a = Shared.generateID();
             DBConst dbComponentLookupID = DBConst.String(a);
             DBConst dbclientID = DBConst.String(clientid);
-            DBConst dbname = DBConst.String(name);
-           
+            DBConst dbname = DBConst.String(name);           
             DBQuery insert = DBQuery.InsertInto(TzAccount.ComponentLookUp.Table).Fields(
               TzAccount.ComponentLookUp.ClientID.Name,
               TzAccount.ComponentLookUp.LookupID.Name,
-              TzAccount.ComponentLookUp.LookUpName.Name            
-              )
+              TzAccount.ComponentLookUp.LookUpName.Name ,
+               TzAccount.ComponentLookUp.Description.Name,
+                TzAccount.ComponentLookUp.IsCore.Name,
+                 TzAccount.ComponentLookUp.CreatedOn.Name,
+                  TzAccount.ComponentLookUp.LastUPD.Name)
               .Values(
               dbclientID,
               dbComponentLookupID,
-              dbname             
+              dbname,
+              DBConst.String(description),
+              DBConst.Const(DbType.Boolean,isCore),
+              DBConst.DateTime(DateTime.Now),
+              DBConst.DateTime(DateTime.Now)             
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())

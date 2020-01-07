@@ -202,7 +202,7 @@
             </div>
         </div>
 
-        <div class="row" v-show="Show">
+        <div class="" v-show="Show">
             <div class="col-md-12" id="lkform">
               
             </div>
@@ -349,10 +349,14 @@
 
         },
         computed: {
-            Show: function () {                
+            Show: function () {
+                
                 if (this.IsViewLookUp) {
                     this.Render();
-                }                
+                } else {
+                    $("#lkform").html("");
+                    return false;
+                }
                 return this.IsViewLookUp
             }
         },
@@ -360,12 +364,27 @@
             ShowLookup: function () {              
                 this.IsViewLookUp = true;           
             },
+            getback: function () {                
+                that.IsViewLookUp = false;
+            },
+            onselection: function () {
+
+            },
             Render: function () {
-                $("#lkform").append("<div><look-up></look-up></div>");
+                var that = this;
+                $("#lkform").append("<div><look-up v-on:back='getback' v-on:selected='onselection'></look-up></div>");
                 var mydat = new Vue({
                     components: {
                         'look-up': cmlok
                     },
+                    methods: {
+                        getback: function () {                            
+                            that.IsViewLookUp = false;
+                        },
+                        onselection: function () {
+
+                        }
+                    }
                 }).$mount('#lkform');
             },
             Save: function () {
