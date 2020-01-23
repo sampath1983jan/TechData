@@ -57,7 +57,8 @@
             },
             cancel: function(){
 
-            }, save: function () {
+            }, 
+                save: function() {
                 if (this.Component == "") {
                     alert("Choose Component");
                     return false;

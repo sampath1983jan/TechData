@@ -53,7 +53,7 @@ namespace Tz.Data.UIForm
                 WhereField(TzAccount.FormFields.Table, TzAccount.FormFields.ClientID.Name,
                Compare.Equals, DBConst.String(clientid))
                .AndWhere(DBComparison.Equal(DBField.Field(TzAccount.FormFields.FormID.Name), DBConst.String(formid)))
-               .AndWhere(DBComparison.Equal(DBField.Field(TzAccount.FormFields.FormID.Name), DBConst.String(fieldid)));
+               .AndWhere(DBComparison.Equal(DBField.Field(TzAccount.FormFields.FieldID.Name), DBConst.String(fieldid)));
             return db.GetDatatable(select);
         }
         /// <summary>
@@ -69,14 +69,9 @@ namespace Tz.Data.UIForm
         /// <returns></returns>
         public string Save(string formid,
             string clientid,
-            int rendertype,
-            int category,
-            float left,
-            float top,
+            int rendertype,            
             string attributeId,
-            string attribute,
-            int width,
-            int height)
+            string attribute             )
         {
             DBDatabase db;
             db = base.Database;
@@ -87,28 +82,19 @@ namespace Tz.Data.UIForm
                 TzAccount.FormFields.FormID.Name,
              TzAccount.FormFields.FieldID.Name,
              TzAccount.FormFields.DataField.Name,
-             TzAccount.FormFields.FieldRenderType.Name,
-             TzAccount.FormFields.Category.Name,
-              TzAccount.FormFields.Left.Name,
-               TzAccount.FormFields.Top.Name,
+             TzAccount.FormFields.FieldRenderType.Name,          
                 TzAccount.FormFields.FieldAttribute.Name,
              TzAccount.FormFields.LastUPD.Name,
-             TzAccount.FormFields.CreatedDate.Name,
-             TzAccount.FormFields.Height.Name,
-             TzAccount.FormFields.Width.Name)
+             TzAccount.FormFields.CreatedDate.Name         )
              .Values(
              DBConst.String(clientid),
              DBConst.String(formid),
              DBConst.String(a),
              DBConst.String(attributeId),
-             DBConst.Int32(rendertype),
-              DBConst.Int32(category),
-              DBConst.Double(left),
-              DBConst.Double(top),
+             DBConst.Int32(rendertype),             
               DBConst.String(attribute),
              DBConst.DateTime(DateTime.Now),
-             DBConst.DateTime(DateTime.Now),
-             DBConst.Int32(height), DBConst.Int32(width)
+             DBConst.DateTime(DateTime.Now)
              );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -140,13 +126,9 @@ namespace Tz.Data.UIForm
         public bool Update(string formid,
             string formfieldid,
             string clientid,
-            int rendertype,
-            int category,
-            float left,
-            float top,             
-            string attribute,
-            int width,
-            int height)
+            int rendertype,                      
+            string attribute
+            )
         {
             DBDatabase db;
             db = base.Database;
@@ -156,16 +138,6 @@ namespace Tz.Data.UIForm
 
             DBQuery update = DBQuery.Update(TzAccount.FormFields.Table).Set(
             TzAccount.FormFields.FieldRenderType.Name, DBConst.Int32(rendertype)
-            ).Set(
-            TzAccount.FormFields.Category.Name, DBConst.Int32(category)
-            ).Set(
-            TzAccount.FormFields.Left.Name, DBConst.Double(left)
-            ).Set(
-            TzAccount.FormFields.Top.Name, DBConst.Double(top)
-            ).Set(
-            TzAccount.FormFields.Height.Name, DBConst.Double(width)
-            ).Set(
-            TzAccount.FormFields.Width.Name, DBConst.Double(width)
             ).Set(
             TzAccount.FormFields.FieldAttribute.Name, DBConst.String(attribute)
             ).WhereAll(client, form, formfield);
@@ -180,6 +152,34 @@ namespace Tz.Data.UIForm
                 return false;
             }
         }
+
+        public bool ChangeShape(string formid,
+          string formfieldid,
+          string clientid,          
+          string attribute
+          )
+        {
+            DBDatabase db;
+            db = base.Database;
+            DBComparison client = DBComparison.Equal(DBField.Field(TzAccount.FormFields.ClientID.Name), DBConst.String(clientid));
+            DBComparison form = DBComparison.Equal(DBField.Field(TzAccount.FormFields.FormID.Name), DBConst.String(formid));
+            DBComparison formfield = DBComparison.Equal(DBField.Field(TzAccount.FormFields.FieldID.Name), DBConst.String(formfieldid));
+
+            DBQuery update = DBQuery.Update(TzAccount.FormFields.Table).Set(
+            TzAccount.FormFields.FieldAttribute.Name, DBConst.String(attribute)
+            ).WhereAll(client, form, formfield);
+
+            int i = db.ExecuteNonQuery(update);
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// 
         /// </summary>

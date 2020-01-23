@@ -23,7 +23,9 @@ namespace Tz.Data
          
             select = DBQuery.SelectAll(TzAccount.Client.Table).From(TzAccount.Client.Table)
                 .WhereField(TzAccount.Client.Table,TzAccount.Client.ClientID.Name , Compare.Equals, DBConst.String(ClientID));
-            return db.GetDatatable(select);
+           return db.GetDatatable(select);
+            //DBExecQuery ex = DBQuery.Exec("").WithParamValue(null);
+            //db.ExecuteNonQuery(ex);
         }
 
 

@@ -341,18 +341,21 @@ namespace Tz.Global
             public const string Table = "cf_formfields";
             public static readonly DBColumn ClientID = DBColumn.Column("ClientID", System.Data.DbType.String, 255);
             public static readonly DBColumn FormID = DBColumn.Column("FormID", System.Data.DbType.String, 255);
-            public static readonly DBColumn FieldID = DBColumn.Column("FieldID", System.Data.DbType.Int32, 255);
-            public static readonly DBColumn DataField = DBColumn.Column("DataField", System.Data.DbType.Int32, 255);
+            public static readonly DBColumn FieldID = DBColumn.Column("FieldID", System.Data.DbType.Int32, 255);          
             public static readonly DBColumn FieldRenderType = DBColumn.Column("FieldRenderType", System.Data.DbType.Int32, 255);
-            public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.Int32, 255);
-            public static readonly DBColumn Left = DBColumn.Column("Left", System.Data.DbType.Double, 255);
-            public static readonly DBColumn Top = DBColumn.Column("Top", System.Data.DbType.Double, 255);
+            public static readonly DBColumn DataField = DBColumn.Column("DataField", System.Data.DbType.Int32, 255);
             public static readonly DBColumn FieldAttribute = DBColumn.Column("FieldAttribute", System.Data.DbType.String, 500000);
-            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
             public static readonly DBColumn CreatedDate = DBColumn.Column("CreatedDate", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+            public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+            //public static readonly DBColumn Category = DBColumn.Column("Category", System.Data.DbType.Int32, 255);
+            //public static readonly DBColumn Left = DBColumn.Column("Left", System.Data.DbType.Double, 255);
+            //public static readonly DBColumn Top = DBColumn.Column("Top", System.Data.DbType.Double, 255);
 
-            public static readonly DBColumn Width = DBColumn.Column("Width", System.Data.DbType.Int32, DBColumnFlags.Nullable);
-            public static readonly DBColumn Height = DBColumn.Column("Height", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            //public static readonly DBColumn LastUPD = DBColumn.Column("LastUPD", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+            //public static readonly DBColumn CreatedDate = DBColumn.Column("CreatedDate", System.Data.DbType.DateTime, DBColumnFlags.Nullable);
+
+            //public static readonly DBColumn Width = DBColumn.Column("Width", System.Data.DbType.Int32, DBColumnFlags.Nullable);
+            //public static readonly DBColumn Height = DBColumn.Column("Height", System.Data.DbType.Int32, DBColumnFlags.Nullable);
 
         }
     }

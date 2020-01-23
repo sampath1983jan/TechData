@@ -8,25 +8,51 @@ namespace Tz.UIForms.FormFields
 {
   public class Text:FormField
     {    
+        /// <summary>
+        /// 
+        /// </summary>
+        public int Min { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int Max { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public Text() : base("", "")
+        {
+            FieldRenderType = RenderType.TEXT;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
         public Text(string clientid) : base(clientid, "")
         {
             FieldRenderType = RenderType.TEXT;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
+        /// <param name="formid"></param>
         public Text(string clientid, string formid) : base(clientid, formid)
         {
             FieldRenderType = RenderType.TEXT;
         }
-        new public bool Save()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+          public override bool Save()
         {
             Data.UIForm.UIFields uIFields = new Data.UIForm.UIFields(UIForms.Common.GetConnection(this.ClientID));
-            if (this.FormFieldID != "")
+            if (this.FormFieldID == "")
             {
                 uIFields.Save(this.FormID,
                               this.ClientID, (int)this.FieldRenderType,
-                              (int)this.Category,
-                              this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
-                              , this.Width, this.Height);
+                             this.Attribute.DataField, Newtonsoft.Json.JsonConvert.SerializeObject(this)
+                              );
             }
             else
             {
@@ -34,13 +60,11 @@ namespace Tz.UIForms.FormFields
                     this.FormFieldID,
                     this.ClientID,
                     (int)this.FieldRenderType,
-                    (int)this.Category,
-                    this.Left,
-                    this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
-                    , this.Width, this.Height);
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this));
             }
             return true;
         }
     }
+  
 }
+

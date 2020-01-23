@@ -96,11 +96,11 @@ namespace Tz.CoreUI
             float top,float left) {
             var f = this.Component.Attributes.Where(x => x.FieldID == componentField).FirstOrDefault();
             CurrentField= this.formBuilder.NewField(renderType);
-            CurrentField.Category = category;
-            CurrentField.Top = top;
-            CurrentField.Left = left;
-            CurrentField.DataField = f.FieldID;
-            CurrentField.FieldAttribute = f;
+            CurrentField.Attribute.Category = category;
+            CurrentField.Attribute.Top = top;
+            CurrentField.Attribute.Left = left;
+            CurrentField.Attribute.DataField = f.FieldID;
+            CurrentField.Attribute.FieldAttribute = f;
             CurrentField.ClientID = this.ClientID;
             return this;
         }

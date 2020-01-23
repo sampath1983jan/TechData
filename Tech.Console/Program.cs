@@ -12,6 +12,7 @@ using Tech.QScript;
 using MySql.Data.MySqlClient;
 using System.Reflection;
 using System.IO;
+using System.Data;
 
 namespace Tech.Console
 {
@@ -255,26 +256,60 @@ namespace Tech.Console
 
          static void Main(string[] args)
          {
+            //    Setup();
 
-                Setup();
+
 
             //var strings =Assembly.GetExecutingAssembly().Location ;
             ////Setup();
             //string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
+            System.Console.WriteLine("Start time:" + DateTime.Now);
 
-            string program = @"p:pUserID=90; p:getfield=F_200115; d:data=getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030, F_200140, F_200115, F_200160, F_200200, F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID]:c with[c:PositionID equalto b:PositionID],[c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]), and[(a:UserID isequalto value:pUserID), (b:status isequalto value:1)]);d:result = getvalue(data, getfield)";
-            //
+            string program = @"p:pUserID=90; p:getfield=F_200115; d:data=getdata(get(sys_user:[UserID,F_200005,F_200015,F_200030, F_200140, F_200115, F_200160, F_200200, F_200205]:a join Employee_Position:[status]:b with[a:userid equalto b:userid] join position:[PositionID]:c with[c:PositionID equalto b:PositionID],[c:ClientID equalto b:ClientID] join businessunit:[F_300015]:bu with[bu:BusinessUnitID equalto c:F_360025] join worklocation:[F_310035]:wl with[wl:WorkLocationID equalto c:F_360030] join department:[F_320005]:dp with[dp:DepartmentID equalto c:F_360035]), and[(b:status isequalto value:1)]);d:result = getvalue(data, getfield)";
 
-            EvaluationParam ev = new EvaluationParam("connection", "Server=dell6;Initial Catalog=talentozdev;Uid=root;Pwd=admin312");
+
+            EvaluationParam ev = new EvaluationParam("connection", "Server=smrdbserver;Initial Catalog=talentozdev;Uid=admin;Pwd=admin312");
             QScriptStatement sq = new QScriptStatement(program, ev);
             var res = sq.Evaluation();
-            System.Console.Write(res.result);
-            System.Console.ReadLine();
+            System.Data.DataTable  dataTable = res.data;
+           // System.Console.Write(dataTable.ToJSON());
+            List<KeyValuePair<string, string>> find = new List<KeyValuePair<string, string>>();
+            find.Add(new KeyValuePair<string, string>("-",""));
+            find.Add(new KeyValuePair<string, string>(" ", ""));
+            find.Add(new KeyValuePair<string, string>(":", "_"));           
+            System.Data.DataTable dt = dataTable.FindReplace("F_200140", find, "AliasEmail");
+            System.Data.DataTable dt_date = dataTable.DateParse("F_200140", ParseType._YEARMONTH);
+            
+            System.Console.WriteLine("End time:" +DateTime.Now);
+            // System.Console.Write(res.result);        
+            System.Data.DataTable dts = new DataTable();
+            DataTable dtre = new DataTable();
+            dts.TableName = "User";
+            dts.Columns.Add(new DataColumn("UserID"));
+            dts.Columns.Add(new DataColumn("UserName"));
+          DataRow dr=  dts.NewRow();
+            dr[0] = "1";
+            dr[1] = "sampathkumar";
+            dts.Rows.Add(dr);
+            dtre.TableName = "info";
+            dtre.Columns.Add(new DataColumn("UserID"));
+            dtre.Columns.Add(new DataColumn("Password"));
+             dr = dtre.NewRow();
+            dr[0] = "1";
+            dr[1] = "pavithra";
+            dtre.Rows.Add(dr);
+           var item = new List<ModelField>();
+            item .Add(new ModelField("UserID", "User"));
+            item.Add(new ModelField("UserName", "User"));
+            item.Add(new ModelField("Password", "info"));
 
-
+       
+           var dm = new DataModel(dts).Select(item.ToArray()).Join(dtre,"UserID","UserID");
+          DataTable abc=  (DataTable)dm.getResult();
             //    // Setup employee collection
-
+            System.Console.Write(abc.ToJSON());
+            System.Console.ReadLine();
             //    //Employees e = new Employees();
             //    //e.Attach(new Clerk());
             //    //e.Attach(new Director());

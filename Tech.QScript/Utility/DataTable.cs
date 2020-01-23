@@ -1631,7 +1631,6 @@ namespace System.Data
 
                 trgArray.Add(cleanRow);
             }
-
             return JsonConvert.DeserializeObject<DataTable>(trgArray.ToString());
         }
         /// <summary>

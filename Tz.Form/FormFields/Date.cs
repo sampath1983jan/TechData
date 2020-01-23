@@ -53,21 +53,23 @@ namespace Tz.UIForms.FormFields
         {
             FieldRenderType = RenderType.PICKER;
         }
+        public Date() : base("")
+        {
+            FieldRenderType = RenderType.PICKER;
+        }
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        new public bool Save()
+        public override bool Save()
         {
             Data.UIForm.UIFields uIFields = new Data.UIForm.UIFields(UIForms.Common.GetConnection(this.ClientID));
-            if (this.FormFieldID != "")
+            if (this.FormFieldID == "")
             {
                 uIFields.Save(this.FormID,
                               this.ClientID, (int)this.FieldRenderType,
-                              (int)this.Category,
-                              this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
-                              , this.Width, this.Height);
+                             this.Attribute.DataField, Newtonsoft.Json.JsonConvert.SerializeObject(this)
+                              );
             }
             else
             {
@@ -75,11 +77,7 @@ namespace Tz.UIForms.FormFields
                     this.FormFieldID,
                     this.ClientID,
                     (int)this.FieldRenderType,
-                    (int)this.Category,
-                    this.Left,
-                    this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
-                    , this.Width, this.Height);
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this));
             }
             return true;
         }

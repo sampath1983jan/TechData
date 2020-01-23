@@ -30,6 +30,7 @@ namespace Tz.UIForms
             _builder = builder;
             UIForm = new Form(clientid, formKeys);
             UIForm.ComponentID = componentID;
+              
         }
         /// <summary>
         /// 
@@ -39,6 +40,7 @@ namespace Tz.UIForms
         /// <param name="builder"></param>
         public FormBuilder(UIForms.Form uIForms, IFormFieldBuilder builder) {
             UIForm = uIForms;
+            _builder = builder;
         }
         /// <summary>
         /// 

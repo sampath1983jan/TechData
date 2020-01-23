@@ -15,6 +15,11 @@ namespace Tz.Core
         public string ParentID { get; set; }
         public int Order { get; set; }
         public bool IsActive { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Value { get; set; }
+
         public LookupItem() {
             this.LookUpID = "";
             this.LookUpItemID = "";
@@ -33,7 +38,8 @@ namespace Tz.Core
             string description,
             string parentid,
             int order,
-            bool isActive)
+            bool isActive,
+            string value)
         {
             this.LookUpID = lookupid;
             this.LookUpItemID = lookupitemid;
@@ -44,6 +50,7 @@ namespace Tz.Core
             this.ParentID = parentid;
             this.Order = order;
             this.IsActive = isActive;
+            this.Value = value;
         }
 
         public bool Remove(string conn) {
@@ -68,7 +75,7 @@ namespace Tz.Core
                         this.ParentID,
                         this.LookUpID,
                         this.Order,
-                        this.IsActive) != "")
+                        this.IsActive,this.Value) != "")
             {
                 return true;
             }

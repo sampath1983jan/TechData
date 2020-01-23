@@ -8,6 +8,10 @@ namespace Tz.UIForms.FormFields
 {
     public class Boolean: FormField
     {
+        public Boolean() : base("", "")
+        {
+            this.FieldRenderType = RenderType.BOOLEAN;
+        }
         public Boolean(string clientid):base(clientid,"") {
             this.FieldRenderType = RenderType.BOOLEAN;
         }
@@ -15,17 +19,15 @@ namespace Tz.UIForms.FormFields
         {
             this.FieldRenderType = RenderType.BOOLEAN;
         }
-        new public bool Save()
+        public override bool Save()
         {
             Data.UIForm.UIFields uIFields = new Data.UIForm.UIFields(UIForms.Common.GetConnection(this.ClientID));
-            if (this.FormFieldID != "")
+            if (this.FormFieldID == "")
             {
                 uIFields.Save(this.FormID,
                               this.ClientID, (int)this.FieldRenderType,
-                              (int)this.Category,
-                              this.Left,
-                              this.Top, this.FieldAttribute.FieldID, Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute)
-                              ,this.Width,this.Height);
+                             this.Attribute.DataField, Newtonsoft.Json.JsonConvert.SerializeObject(this)
+                              );
             }
             else
             {
@@ -33,11 +35,7 @@ namespace Tz.UIForms.FormFields
                     this.FormFieldID,
                     this.ClientID,
                     (int)this.FieldRenderType,
-                    (int)this.Category,
-                    this.Left,
-                    this.Top,
-                    Newtonsoft.Json.JsonConvert.SerializeObject(this.FieldAttribute),
-                    this.Width,this.Height);
+                    Newtonsoft.Json.JsonConvert.SerializeObject(this));
             }
             return true;
         }

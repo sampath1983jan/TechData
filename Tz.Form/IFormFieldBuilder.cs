@@ -10,7 +10,6 @@ namespace Tz.UIForms
     public interface IFormFieldBuilder {
           FormField GetField(string clientid, string formid, RenderType renderType);
         bool SaveField();
-
     }
     public class FormFieldBuilder: IFormFieldBuilder
     {
@@ -30,16 +29,18 @@ namespace Tz.UIForms
             }
             else if (renderType == RenderType.PICKER)
             {
-                return new FormFields.Picker(clientid, formid);
+                return new FormFields.Date(clientid, formid);
             }
             else if (renderType == RenderType.UPLOAD)
             {
                 return new FormFields.Upload(clientid, formid);
             }
+            else if (renderType == RenderType.NUMBER) {
+                return new FormFields.Numeric(clientid, formid);
+            }
             else
                 return null;
         }
-
         public bool SaveField()
         {
             throw new NotImplementedException();

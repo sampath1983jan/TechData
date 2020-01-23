@@ -47,15 +47,17 @@
     <Compile Include="Form.cs" />
     <Compile Include="FormBuilder.cs" />
     <Compile Include="FormField.cs" />
+    <Compile Include="FormFieldAttribute.cs" />
     <Compile Include="FormFields\Boolean.cs" />
     <Compile Include="FormFields\SpecialField\Currency.cs" />
     <Compile Include="FormFields\Date.cs" />
     <Compile Include="FormFields\Numeric.cs" />
     <Compile Include="FormFields\Picker.cs" />
     <Compile Include="FormFields\Selection.cs" />
+    <Compile Include="FormFields\SpecialField\CustomField.cs" />
     <Compile Include="FormFields\Text.cs" />
     <Compile Include="FormFields\Upload.cs" />
-    <Compile Include="IFormField.cs" />
+    <Compile Include="IFormFieldBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIFormKey.cs" />
   </ItemGroup>

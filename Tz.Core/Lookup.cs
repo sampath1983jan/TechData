@@ -29,6 +29,7 @@ namespace Tz.Core
         /// 
         /// </summary>
         public bool IsCore { get; set; }
+        
         /// <summary>
         /// 
         /// </summary>
@@ -73,11 +74,11 @@ namespace Tz.Core
         /// <summary>
         /// 
         /// </summary>
-        private void Load() {
+        public void Load() {
             DataTable dt = new DataTable();
             dt=    dataLookup.GetLookupItems(ClientID,LookupID);
             DataTable dtLookup = new DataTable();
-            dtLookup= dt.DefaultView.ToTable(true, "ClientID", "LookupID", "Name","Description","IsCore","LastUPD","CreatedOn");
+            dtLookup= dt.DefaultView.ToTable(true, "ClientID", "LookupID", "Name", "Description", "IsCore","LastUPD","CreatedOn","Value");
             foreach (DataRow dr in dtLookup.Rows) {
                 Name = dr["Name"] == null ? "" : dr["Name"].ToString();
                 LookupID = dr["LookupID"] == null ? "" : dr["LookupID"].ToString();
@@ -85,17 +86,19 @@ namespace Tz.Core
                 Description = DBNull.Value.Equals(dr["Description"]) == true ? "" : dr["Description"].ToString();
                  CreatedOn = DBNull.Value.Equals(dr["CreatedOn"]) == true ? DateTime.Now : Convert.ToDateTime(dr["LastUPD"]);
                  LastUPD = DBNull.Value.Equals(dr["LastUPD"]) == true ? DateTime.Now : Convert.ToDateTime(dr["LastUPD"]);
+             
             }
             foreach (DataRow dRow in dt.Rows) {                
                var LookUpItemID = dRow["ComponentLookupItemID"] == null ? "" : dRow["ComponentLookupItemID"].ToString();
                 LookupItem li = new LookupItem(ClientID,LookUpItemID,LookupID);
-                li.Description= dRow["Description"] == null ? "" : dRow["Description"].ToString();
+                li.Description= dRow["ItemDescription"] == null ? "" : dRow["ItemDescription"].ToString();
                 li.Label= dRow["Label"] == null ? "" : dRow["Label"].ToString();
                 li.ShortLabel = dRow["ShortLabel"] == null ? "" : dRow["ShortLabel"].ToString();
                 li.ParentID = dRow["ParentID"] == null ? "" : dRow["ParentID"].ToString();
                 li.Order = dRow["Order"] == null ? 0 : Convert.ToInt32(dRow["Order"]);
                 li.IsActive = dRow["IsActive"] == null ? false : Convert.ToBoolean(dRow["IsActive"]);
                 Name = dRow["Name"] == null ? "" : dRow["Name"].ToString();
+                li.Value = DBNull.Value.Equals(dRow["Value"]) == true ? "" : (string)(dRow["Value"]);
                 this.LookupItems.Add(li);
             }
         }
@@ -117,6 +120,7 @@ namespace Tz.Core
                 l.CreatedOn = DBNull.Value.Equals(dr["CreatedOn"]) == true ? DateTime.Now : Convert.ToDateTime(dr["LastUPD"]);
                 l.LastUPD = DBNull.Value.Equals(dr["LastUPD"]) == true ? DateTime.Now : Convert.ToDateTime( dr["LastUPD"]);
                 l.LookupID = dr["LookUpID"] ==null? "": dr["LookUpID"].ToString();
+           //     l.Value = DBNull.Value.Equals(dr["Value"]) == true ? "" : (string)(dr["Value"]);
                 lup.Add(l);
             }
             return lup;
@@ -248,7 +252,7 @@ namespace Tz.Core
             string shortlabel,
             string description,
             string parentid,
-            int order) {
+            int order,string value) {
             this.LookupItems.Add(new LookupItem(this.ClientID,
                 lookupitemid,
                 this.LookupID,
@@ -257,7 +261,7 @@ namespace Tz.Core
                 description,
                 parentid,
                 order,
-                true));
+                true,value));
         }
         /// <summary>
         /// 
@@ -271,7 +275,8 @@ namespace Tz.Core
             string label,
             string shortlabel,
             string description,
-            string parentid            
+            string parentid     ,
+            string value
             ) {
 
             return dataLookup.Save(this.ClientID,
@@ -280,7 +285,7 @@ namespace Tz.Core
                           parentid,
                           this.LookupID,
                          this.LookupItems.Count +1,
-                          true);
+                          true,value);
         }
         /// <summary>
         /// 
@@ -296,7 +301,8 @@ namespace Tz.Core
         string shortlabel,
         string description,
         string parentid,
-        string lookupitemid
+        string lookupitemid,
+            string value
         )
         {
 
@@ -306,7 +312,7 @@ namespace Tz.Core
                 label,
                 shortlabel,
                 description,
-                parentid);
+                parentid, value);
         }
     }
 }

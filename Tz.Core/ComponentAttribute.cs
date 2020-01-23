@@ -46,7 +46,7 @@ namespace Tz.Core
         public string FileExtension { get; set; }
         public string RegExp { get; set; }
         public ComoponentAttributeType AttributeType { get; set; }
-        public string FieldID => _fieldid;
+        public string FieldID { get => _fieldid; set => _fieldid = value; }
         public string FieldName { get => fieldName; set => fieldName=value; }
         public DbType FieldType { get => fieldType; set => fieldType=value; }
         public int Length { get => length; set => length=value; }
@@ -70,6 +70,10 @@ namespace Tz.Core
             ComponentID = "";
             _fieldid = "";
         }
-
+        public ComponentAttribute() {
+            this.ClientID = "";
+            ComponentID = "";
+            _fieldid = "";
+        }
     }
 }

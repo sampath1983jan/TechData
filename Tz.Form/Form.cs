@@ -9,6 +9,8 @@ using Tz.Controls;
  
 using Tz.UIAction;
 using Tz.Core;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Tz.UIForms
 {
@@ -66,14 +68,19 @@ namespace Tz.UIForms
             FormProperties = new FormProperty();
             Actions = new List<UIAction.Action>();              
             this.ComponentID = "";
+            FormFields = new List<FormField>();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
         public Form(string clientid) {
-            this.ClientID = clientid;
-           
+            this.ClientID = clientid;           
             FormProperties = new FormProperty();
             Actions = new List<UIAction.Action>();
             FormKeys = new List<UIFormKey>();
             this.ComponentID = "";
+            FormFields = new List<FormField>();
         }
         /// <summary>
         /// 
@@ -88,6 +95,7 @@ namespace Tz.UIForms
             Actions = new List<UIAction.Action>();
             FormKeys = new List<UIFormKey>();
             this.ComponentID = "";
+            FormFields = new List<FormField>();
             Load();
         }
         /// <summary>
@@ -117,6 +125,12 @@ namespace Tz.UIForms
                 this.FormProperties.Cancel = dr["Cancel"] == null ? "" : (string)dr["Cancel"];             
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientid"></param>
+        /// <param name="formids"></param>
+        /// <returns></returns>
         public static List<Form> GetForms(string clientid,string formids) {
             DataTable dt;
             var Forms = new List<Form>();
@@ -144,6 +158,9 @@ namespace Tz.UIForms
             }
             return Forms;
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void LoadFormFields()
         {
             Data.UIForm.UIFields form = new Data.UIForm.UIFields(Common.GetConnection(this.ClientID));
@@ -151,17 +168,59 @@ namespace Tz.UIForms
             FormFields = new List<FormField>();
             foreach (System.Data.DataRow row in dt.Rows)
             {
+                var serial = new JsonSerializer();
+                serial.Formatting = Formatting.Indented;
                 var ff = new FormField(this.ClientID);
-                ff.FormFieldID = row["FieldID"] == null ? "" : (string)row["FieldID"];
-                ff.DataField = row["DataField"] == null ? "" : (string)row["DataField"];
-                ff.FieldRenderType = row["FieldRenderType"] == null ? RenderType.TEXT : (RenderType)row["FieldRenderType"];
-                ff.Category = row["Category"] == null ? RenderCategory.text : (RenderCategory)row["Category"];
-                ff.Left = row["Left"] == null ? 0 : (int)row["Left"];
-                ff.Top = row["Top"] == null ? 0 : (int)row["Top"];
+                RenderType rt = row["FieldRenderType"] == null ? RenderType.TEXT : (RenderType)row["FieldRenderType"];
                 var fatt = row["FieldAttribute"] == null ? "" : (string)row["FieldAttribute"];
-                ff.FieldAttribute = Newtonsoft.Json.JsonConvert.DeserializeObject<ComponentAttribute>(fatt);
+                if (rt == RenderType.BOOLEAN)
+                {
+                    using (var sr = new StringReader(fatt))
+                    using (var jr = new JsonTextReader(sr))
+                        ff = serial.Deserialize<FormFields.Boolean>(jr);
+                }
+                else if (rt == RenderType.NUMBER)
+                {
+                    using (var sr = new StringReader(fatt))
+                    using (var jr = new JsonTextReader(sr))
+                        ff = serial.Deserialize<FormFields.Numeric>(jr);
+                  //  ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Numeric>(fatt);
+                }
+                else if (rt == RenderType.PICKER)
+                {
+                    using (var sr = new StringReader(fatt))
+                    using (var jr = new JsonTextReader(sr))
+                        ff = serial.Deserialize<FormFields.Date>(jr);
+
+                  //  ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Date>(fatt);
+                }
+                else if (rt == RenderType.SELECTION)
+                {
+                    using (var sr = new StringReader(fatt))
+                    using (var jr = new JsonTextReader(sr))
+                        ff = serial.Deserialize<FormFields.Selection>(jr);
+                   // ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Selection>(fatt);
+                }
+                else if (rt == RenderType.TEXT)
+                {
+                    using (var sr = new StringReader(fatt))
+                    using (var jr = new JsonTextReader(sr))
+                        ff = serial.Deserialize<FormFields.Text>(jr);
+                   // ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Text>(fatt);
+
+                }
+                else if (rt == RenderType.UPLOAD) {
+                    using (var sr = new StringReader(fatt))
+                    using (var jr = new JsonTextReader(sr))
+                        ff = serial.Deserialize<FormFields.Upload>(jr);
+                  //  ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Upload>(fatt);
+                }              
+                ff.SetForm(this.FormID);
+                ff.FormFieldID = row["FieldID"] == null ? "" : (string)row["FieldID"];
+                //   ff.Attribute.DataField = row["DataField"] == null ? "" : (string)row["DataField"];
+                ff.FieldRenderType = rt;
                 FormFields.Add(ff);
-            }        
+            }     
     }
         /// <summary>
         /// 

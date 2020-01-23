@@ -50,7 +50,7 @@
             });
         },
         methods: {
-     getAttributes: function () {
+            getAttributes: function () {
                 var that = this;
                 $.ajax('/App/' + this.AppID + '/Component/' + this.ComponentID,
                     {

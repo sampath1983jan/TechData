@@ -99,7 +99,7 @@ namespace Tz.BackApp.Controllers.Component
                     litm.ShortLabel,
                     litm.Description,
                     litm.ParentID,
-                    a);
+                    a,litm.Value);
             }
             return new JsonpResult(lk.Save());
         }
@@ -115,7 +115,7 @@ namespace Tz.BackApp.Controllers.Component
                     litm.ShortLabel,
                     litm.Description,
                     litm.ParentID,
-                    litm.LookUpItemID));
+                    litm.LookUpItemID, litm.Value));
         }
 
         /// <summary>

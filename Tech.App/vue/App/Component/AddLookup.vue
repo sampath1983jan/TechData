@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-2">
-                    <label>Lookup Name</label>
+                    <label style="font-weight:bold">Lookup Name</label>
                 </div>
                 <div class="col-md-6">
                     <tzinput :attribute="{id:'txtLookupName',
@@ -18,7 +18,7 @@
             <div class="row">
 
                 <div class="col-md-2">
-                    <label>Description</label>
+                    <label style="font-weight:bold">Description</label>
                 </div>
                 <div class="col-md-6">
                     <tztextarea :attribute="{id:'txtlkDescription',
@@ -32,7 +32,7 @@
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <label>Is Core</label>
+                    <label style="font-weight:bold">Is Core</label>
                 </div>
                 <div class="col-md-3">
                     <tzinput  :attribute="attCore" v-on:Input="changecore"></tzinput>

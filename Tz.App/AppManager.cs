@@ -201,6 +201,7 @@ namespace Tz.App
                 c.TitleFormat = dr.IsNull("TitleFormat") ? "" : dr["TitleFormat"].ToString();
                 c.Category = dr.IsNull("Category") ? "" : dr["Category"].ToString();
                 c.IsGlobal = dr.IsNull("IsGlobal") ? false : Convert.ToBoolean(dr["IsGlobal"]);              
+                this.Components.Add(ac);
                 acs.Add(ac);
             }
             return acs;
@@ -240,8 +241,7 @@ namespace Tz.App
             string s = string.Join(", ", dt.Rows.OfType<DataRow>().Select(r => r["ElementID"].ToString()));
            var lookups= Tz.Core.Lookup.GetLookUps(this.ClientID, s);
             foreach (Tz.Core.Lookup l in lookups) {
-                var apLookup = new App.AppElement.AppLookup(this.ClientID, this.AppID);
-              
+                var apLookup = new App.AppElement.AppLookup(this.ClientID, this.AppID);              
                 apLookup.Set(l);
                 this.Lookups.Add(apLookup);
             }
@@ -368,10 +368,21 @@ namespace Tz.App
         public IComponent GetComponent(string ElementID)
         {
             var c = this.Components.Where(x => x.Component.ComponentID == ElementID).FirstOrDefault();
-            if (c == null)
+            if (c != null)
             {
                 var aa = new ComponentManager(this.ClientID, ElementID);
                 return aa.Component;
+            }
+            else
+                return null;
+        }
+
+        public Tz.Core.Lookup GetLookUp(string ElementID) {
+            var l = this.Lookups.Where(x => x.Lookup.LookupID == ElementID).FirstOrDefault();
+            if (l != null)
+            {
+                l.Lookup.Load();
+                return l.Lookup;
             }
             else
                 return null;
@@ -468,11 +479,15 @@ namespace Tz.App
         /// <param name="formid"></param>
         /// <param name="renderType"></param>
         /// <returns></returns>
-        public FormField NewField(string formid,RenderType renderType) {
+        public FormField NewField(string formid,RenderType renderType,string attID) {
           var appform=  this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+            Core.Component c = new Core.Component(this.ClientID, appform.Form.ComponentID);
+            c.LoadAttributes();
+           var att =c.Attributes.Where (x => x.FieldID == attID).FirstOrDefault();            
             var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
-      return      fb.NewField(renderType);         
-        
+            var f = fb.NewField(renderType);
+            f.Attribute.FieldAttribute = att;
+            return f;        
         }
         /// <summary>
         /// 
@@ -482,9 +497,11 @@ namespace Tz.App
         /// <returns></returns>
         public bool AddFormField(string formid, FormField field) {
             var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
+
             var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
             return fb.SaveField(field);
         }
+ 
         /// <summary>
         /// 
         /// </summary>

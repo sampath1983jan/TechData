@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModel.cs" />
     <Compile Include="Domain\EvaluationParam.cs" />
     <Compile Include="Domain\Evalution.cs" />
     <Compile Include="Domain\EvalutionVisitor.cs" />

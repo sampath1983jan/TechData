@@ -116,17 +116,34 @@
         .grid-stack-item-content {
             background-color: #fff;
             color: #5b5959;
-            border: 1px solid rgba(174, 166, 166, 0.40);
-             cursor: move; /* fallback if grab cursor is unsupported */
-            cursor: grab;
+            border: 1px dashed rgba(174, 166, 166, 0.40);
+          
+           
+            border-radius:5px;
             /*cursor: -moz-grab;
             cursor: -webkit-grab;*/
         }
-            .grid-stack-item-content:hover {
-                background-color: #444;
-                color: #fff;
-            
-            }
+        .circle {
+            border: 1px solid #ffd800;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #ffd800;
+        }
+        .grid-stack-item-content:hover {
+            background-color: #30cdd7;
+            color: #fff;
+            /*border: 1px dashed #0dccd8;*/
+        }
+        grid-stack-item:hover a {
+        
+        }
+        .grid-stack-item-content:hover a {
+            /*color: #26797e;
+            float: right;
+            cursor: pointer;
+            font-size:15px;
+            margin-top:5px;*/
+        }
         .active {
             background-color: #227f85;
             color: #fff;

@@ -90,6 +90,7 @@ namespace Tz.BackApp.Models
         public string ParentID { get; set; }
         public int Order { get; set; }
         public bool IsActive { get; set; }
+        public string Value { get; set; }
     }
 }
 

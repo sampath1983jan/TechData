@@ -128,13 +128,15 @@ namespace Tz.Data.Component
                 .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.IsCore.Name)
                 .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LastUPD.Name)
                 .Field(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.CreatedOn.Name)
+             
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.ComponentLookupItemID.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.Label.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.ShortLabel.Name)
-                .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.Description.Name)
+                .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.Description.Name).As("ItemDescription")
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.ParentID.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.Order.Name)
                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.IsActive.Name)
+                 .Field(TzAccount.ComponentLookUpItem.Table, TzAccount.ComponentLookUpItem.Value.Name)
                 .From(TzAccount.ComponentLookUp.Table).LeftJoin(TzAccount.ComponentLookUpItem.Table)
                 .On(TzAccount.ComponentLookUp.Table, TzAccount.ComponentLookUp.LookupID.Name,
                 Compare.Equals, TzAccount.ComponentLookUpItem.Table,
@@ -164,7 +166,8 @@ namespace Tz.Data.Component
             string parentid,
             string lookupid,
             int order,  
-            bool isActive
+            bool isActive,
+            string value
             )
         {
 
@@ -187,7 +190,9 @@ namespace Tz.Data.Component
               TzAccount.ComponentLookUpItem.ShortLabel.Name,
               TzAccount.ComponentLookUpItem.LookupID.Name,
                TzAccount.ComponentLookUpItem.Order.Name,
-               TzAccount.ComponentLookUpItem.IsActive.Name
+               TzAccount.ComponentLookUpItem.IsActive.Name,
+                TzAccount.ComponentLookUpItem.Value .Name,
+                TzAccount.ComponentLookUpItem .Description .Name 
               )
               .Values(
                 dbclientID,
@@ -197,7 +202,9 @@ namespace Tz.Data.Component
               dbshortlabel,              
               dbcategory,
               dborder,
-              dbisactive
+              dbisactive,
+              DBConst.String(value)
+              ,DBConst.String(description)
               );
             int val = 0;
             using (DbTransaction trans = db.BeginTransaction())
@@ -231,7 +238,8 @@ namespace Tz.Data.Component
               string label,
             string shortlabel,
             string description,                        
-            string parentid
+            string parentid,
+             string value
             )
         {
             DBDatabase db;
@@ -254,6 +262,8 @@ namespace Tz.Data.Component
         TzAccount.ComponentLookUpItem.ShortLabel.Name, dbshortlabel
         ).Set(
         TzAccount.ComponentLookUpItem.Description.Name, dbdescription
+        ).Set(
+        TzAccount.ComponentLookUpItem.Value .Name, DBConst.String(value)
         ).WhereAll(componentlookup, category, Client);
             int i = db.ExecuteNonQuery(update);
             if (i > 0)
