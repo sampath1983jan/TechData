@@ -172,8 +172,7 @@ namespace Tz.BackApp.Controllers.App
             string clientid = Request.Params["clientkey"];
             var a = new Tz.App.AppManager(clientid, appid);
             a.LoadForms();
-            var fm = a.GetForm(formid);
-            fm.LoadFormFields();
+            var fm = a.LoadFormFields(formid);         
             return new JsonpResult(fm);
         }
         /// <summary>
@@ -284,12 +283,17 @@ namespace Tz.BackApp.Controllers.App
                    
                 }
             }
-
             return new JsonpResult("true");
-
-
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="appid"></param>
+        /// <param name="formid"></param>
+        /// <param name="renderType"></param>
+        /// <param name="attributeID"></param>
+        /// <param name="formelement"></param>
+        /// <returns></returns>
         [Route("App/{appid}/Form/createfield/{formid}")]
         public JsonpResult AssignFormField(string appid, string formid, int renderType,string attributeID,string formelement) {
             string clientid = Request.Params["clientkey"];
@@ -308,13 +312,15 @@ namespace Tz.BackApp.Controllers.App
             {
                 case Tz.UIForms.RenderType.BOOLEAN:
                      Tz.UIForms.FormFields.Boolean ab= (Tz.UIForms.FormFields.Boolean)fm;
-                    return new JsonpResult(a.AddFormField(formid, ab));
+                    a.AddFormField(formid, ab);
+                    return new JsonpResult(ab);
                 case Tz.UIForms.RenderType.NUMBER:
                     Tz.UIForms.FormFields.Numeric num = (Tz.UIForms.FormFields.Numeric)fm;
                     num.Min = fAtt.Min;
                     num.Max = fAtt.Max;
                     num.DisplayFormat = fAtt.DisplayFormat;
-                    return new JsonpResult(a.AddFormField(formid, num));
+                    a.AddFormField(formid, num);
+                    return new JsonpResult(num);
                 case Tz.UIForms.RenderType.PICKER:
                     Tz.UIForms.FormFields.Date pick = (Tz.UIForms.FormFields.Date)fm;
                     pick.DateFormat = fAtt.DateFormat;
@@ -324,7 +330,8 @@ namespace Tz.BackApp.Controllers.App
                     pick.AllowedDays = fAtt.AllowedDays;
                     pick.AllowedFromHours = fAtt.AllowedFromHours;
                     pick.AllowedToHours = fAtt.AllowedToHours;
-                    return new JsonpResult(a.AddFormField (formid,pick));                     
+                    a.AddFormField(formid, pick);
+                    return new JsonpResult(pick);                     
                 case Tz.UIForms.RenderType.SELECTION:
                     Tz.UIForms.FormFields.Selection  sel= (Tz.UIForms.FormFields.Selection)fm;
                     sel.SeletionType = (Tz.UIForms.FormFields.SelectionType)fAtt.SeletionType;
@@ -334,19 +341,21 @@ namespace Tz.BackApp.Controllers.App
                     sel.LookUpSource = fAtt.LookUpSource;
                     sel.ComponentSource = fAtt.ComponentSource;
                     sel.AllowOrderbyAlphabet = fAtt.AllowOrderbyAlphabet;
-                    
+                    a.AddFormField(formid, sel);
 
-                    return new JsonpResult(a.AddFormField(formid, sel));                    
+                    return new JsonpResult(sel);                    
                 case Tz.UIForms.RenderType.TEXT:
                     Tz.UIForms.FormFields.Text txt = (Tz.UIForms.FormFields.Text)fm;
                     txt.Min = fAtt.Min;
                     txt.Max = fAtt.Max;
-                    return new JsonpResult(a.AddFormField(formid, txt));                  
+                    a.AddFormField(formid, txt);
+                    return new JsonpResult(txt);                  
                 case Tz.UIForms.RenderType.UPLOAD:
                     Tz.UIForms.FormFields.Upload upd = (Tz.UIForms.FormFields.Upload)fm;
                     upd.MaxFileSize = fAtt.MaxFileSize;
                     upd.FileExtension = fAtt.FileExtension;
-                    return new JsonpResult(a.AddFormField(formid, upd));         
+                    a.AddFormField(formid, upd);
+                    return new JsonpResult(upd);         
             }
             throw new Exception("Invalid Render type");
         }

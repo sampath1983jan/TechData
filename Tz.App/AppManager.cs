@@ -246,6 +246,10 @@ namespace Tz.App
                 this.Lookups.Add(apLookup);
             }
         }
+        private Lookup  GetLookUpbyID(string lookupid) {
+            var lookup = Tz.Core.Lookup.GetLookUps(this.ClientID, lookupid).FirstOrDefault();
+            return lookup;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -440,6 +444,32 @@ namespace Tz.App
             var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
             return appform.Form;
         }
+        public UIForms.Form LoadFormFields(string formid) {
+           var frm= this.GetForm(formid);
+            frm.LoadFormFields();
+            foreach (FormField fd in frm.FormFields)
+                 {
+                if (fd.FieldRenderType == RenderType.SELECTION) {
+                    if (((UIForms.FormFields.Selection)fd).Attribute.FieldAttribute.AttributeType ==
+                        Core.ComponentAttribute.ComoponentAttributeType._componentlookup)
+                    {
+                        this.GetComponents();
+                        ((UIForms.FormFields.Selection)fd).SourceName=  this.GetComponent(((UIForms.FormFields.Selection)fd).LookUpSource).ComponentName ;
+
+
+                    }
+                    else if (((UIForms.FormFields.Selection)fd).Attribute.FieldAttribute.AttributeType ==
+                       Core.ComponentAttribute.ComoponentAttributeType._lookup)
+                    {
+                        if (((UIForms.FormFields.Selection)fd).LookUpSource != "")
+                        {
+                            ((UIForms.FormFields.Selection)fd).SourceName = this.GetLookUpbyID(((UIForms.FormFields.Selection)fd).LookUpSource).Name;
+                        }
+                    }                                     
+                }              
+            }         
+            return frm;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -495,11 +525,17 @@ namespace Tz.App
         /// <param name="formid"></param>
         /// <param name="field"></param>
         /// <returns></returns>
-        public bool AddFormField(string formid, FormField field) {
+        public string AddFormField(string formid, FormField field) {
             var appform = this.Forms.Where(x => x.Form.FormID == formid).FirstOrDefault();
 
             var fb = new FormBuilder(appform.Form, new FormFieldBuilder());
-            return fb.SaveField(field);
+            if (fb.SaveField(field))
+            {
+                return field.FormFieldID ;
+            }
+            else
+                return "";
+
         }
  
         /// <summary>

@@ -81,7 +81,8 @@
                                         <div class="col-md-2" v-if="LookupID==''">
                                             <input type="button" class="btn btn-primary" value="AddLookup" v-on:click="ShowLookup" />
                                         </div>
-                                        <div class="col-md-8" v-if="LookupID!=''">
+                                        <!--Lookup View-->
+                                        <div class="col-md-8" v-if="isLookup()==true && LookupID!=''">
                                             <div class="row">
                                                 <div class="col-md-5" style="overflow:hidden">
                                                     {{LookupName}}
@@ -102,6 +103,31 @@
                                                 <div class="col-md-3"> </div>
                                             </div>
                                         </div>
+                                        <!--Lookup View end-->
+                                        <!--component lookup view-->
+                                        <div class="col-md-8" v-show="isLookup()==false && LookupID!=''">
+                                            <div class="row">
+                                                <div class="col-md-5" style="overflow:hidden">
+                                                    {{LookupName}}
+                                                    <a v-on:click="ShowLookup" style="cursor:pointer;color:palevioletred">Change Component </a>
+                                                </div>
+                                                <div class="col-md-2">Display Field</div>
+                                                <div class="col-md-3">
+                                                    <div id="plc_clookupdisplay"></div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2">Value Field</div>
+                                                <div class="col-md-3">
+                                                    <div id="plc_clookupvalue"></div>
+                                                    <!--<dropdown :attribute="clookupvalue" :value="LookUpValueField" v-on:input="changevaluefield"></dropdown>-->
+                                                </div>
+                                                <div class="col-md-2">Sort by</div>
+                                                <div class="col-md-3"> </div>
+                                            </div>
+                                        </div>
+                                        <!--component lookup view-->
                                     </div>
                                     <div class="row" style="margin:10px 0px;" v-if="IsText">
                                         <div class="col-md-2">
@@ -121,22 +147,12 @@
                                     <div class="row" style="margin:10px 0px;" v-if="IsDate==true || IsTime==true">
                                         <div class="col-md-12"><label style="font-weight:bold">Date & Time Fomat</label></div>
                                         <div class="col-md-12">
-                                            <div class="row" style="margin:10px 0px;">
+                                            <div class="row" style="margin:10px 0px;" v-if="IsDate==true ">
                                                 <div class="col-md-2">Date Fomat</div>
                                                 <div class="col-md-3">
                                                     <dropdown :attribute="dateAttribute" :value="DateFormat" v-on:Input="changedateformat"></dropdown>
                                                 </div>
-                                            </div>
-                                            <!--<div class="row">
-                    <div class="col-md-2">Date & Time Fomat</div>
-                    <div class="col-md-3">
-                        <dropdown :attribute="attFieldType" :value="AttributeType" v-on:input="fieldtype"></dropdown>
-                    </div>
-                    <div class="col-md-2">Picker Interval</div>
-                    <div class="col-md-3">
-                        <dropdown :attribute="attFieldType" :value="AttributeType" v-on:input="fieldtype"></dropdown>
-                    </div>
-                </div>-->
+                                            </div>                                         
                                             <div class="row" style="margin:10px 0px;" v-if="IsTime">
                                                 <div class="col-md-2">Time Fomat</div>
                                                 <div class="col-md-3">
@@ -195,7 +211,7 @@
                                                     <dropdown :attribute="allowToh" :value="AllowedToHours" v-on:input="changetohr"></dropdown>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="row" v-if="IsDate">
                                                 <div class="col-md-2">Allowed days to choose</div>
                                                 <div class="col-md-6">
                                                     <dropdown :attribute="allowDays" :value="AllowedDays" v-on:input="changeDays"></dropdown>
@@ -236,7 +252,9 @@
 <script>
   
     var cmlok = httpVueLoader('/vue/App/Component/LookUp.vue?' + (Math.random() * 10000));
+    var complookup = httpVueLoader('/vue/App/Component/LookUpComponent.vue?' + (Math.random() * 10000));
     var lookupfield = [{ "key": "label", "value": "Label" }, { "key": "shortlabel", "value": "Short Label" }];
+    var complookupFields = [];
     module.exports = {
         components: {
             "popper": window.popper,
@@ -249,7 +267,9 @@
                 Min: 0,
                 Max: 0,
                 DecimalPlace: 2,
+                FormFieldID:"",
                 FieldID: this.fieldid,
+            //    complookup: {},
                 IsText:false,
                 IsDate: false,
                 IsTime: false,
@@ -394,8 +414,9 @@
                         defaultSelection: 'Choose To lookup field'
                     }
                 },
+         
                 FormID: this.formid,
-                DateFormat: "",
+                DateFormat: "mm/dd/yyyy",
                 TimeFormat: "",
                 PickerInterval: "0",
                 MaxFileSize: 5000,
@@ -404,37 +425,46 @@
                 AllowedToHours: "",
                 AllowedDays:"",
                 Category: "",
+                LookupName:"",
             }
         },
 
         created: function () {
             this.Category = this.rendertype;
-            this.changeRender(this.Category);            
-            this.Min = this.formfieldattribute.Min;
-            this.Max = this.formfieldattribute.Max;
-            this.DateFormat = this.formfieldattribute.DateFormat;
-            this.AllowedDays = this.formfieldattribute.AllowedDays;
-            debugger;
-            this.AllowedFromHours = this.formfieldattribute.AllowedFromHours;
-            this.AllowedToHours = this.formfieldattribute.AllowedToHours;
-            this.LookUpDisplayField = this.formfieldattribute.TimeFormat;
-            this.DecimalPlace = this.formfieldattribute.DecimalPlace;
-            this.TimeFormat = this.formfieldattribute.TimeFormat;
-            this.PickerInterval = this.formfieldattribute.pickerInterval;
-            this.MaxFileSize = this.formfieldattribute.MaxFileSize;
-            this.FileExtension = this.formfieldattribute.FileExtension;
+            this.changeRender(this.Category);
+            if (this.formfieldattribute != undefined) {
+                this.Min = this.formfieldattribute.Min;
+                this.FormFieldID = this.formfieldattribute.FormFieldID;
+                this.Max = this.formfieldattribute.Max;
+                this.DateFormat = this.formfieldattribute.DateFormat;
+                this.AllowedDays = this.formfieldattribute.AllowedDays;
+                this.LookUpValueField = this.formfieldattribute.ValueField
+                this.LookupID = this.formfieldattribute.LookUpSource;
+                this.AllowedFromHours = this.formfieldattribute.AllowedFromHours;
+                this.AllowedToHours = this.formfieldattribute.AllowedToHours;
+                this.LookUpDisplayField = this.formfieldattribute.DisplayField;
+                this.DecimalPlace = this.formfieldattribute.DecimalPlace;
+                this.TimeFormat = this.formfieldattribute.TimeFormat;
+                this.PickerInterval = this.formfieldattribute.pickerInterval;
+                this.MaxFileSize = this.formfieldattribute.MaxFileSize;
+                this.FileExtension = this.formfieldattribute.FileExtension;
+                this.EnableLimit = this.formfieldattribute.Attribute.EnableLimit;
+                this.LookupName = this.formfieldattribute.SourceName;
 
-            this.EnableLimit = this.formfieldattribute.Attribute.EnableLimit;
-         
+            
+            }
+            if (this.IsLookup) {
+                this.getAttributes();
+            }
+           
         },
         mounted: function () {
             
         },
         computed: {
-            Show: function () {
-                
+            Show: function () {                
                 if (this.IsViewLookUp) {
-                    this.Render();
+                    this.Render();                   
                 } else {
                     $("#lkform").html("");
                     return false;
@@ -442,12 +472,49 @@
                 return this.IsViewLookUp
             }
         },
+        watch: {
+            clookupdisplay: function (newVal, oldVal) {
+                 
+                this.clookupdisplay = newVal;
+            }
+        },
         methods: {
+            getAttributes: function () {
+                var that = this;
+        
+                $.ajax('/App/' + appid + '/Component/' + that.LookupID,
+                    {
+                        type: "GET",
+                        dataType: 'jsonp', // type of response data
+                        success: function (data, status, xhr) {   // success callback function  
+                            complookupFields = [];
+                             
+                            $.each(data.Attributes, function (i, v) {
+                                var k = {};
+                                k.key = v.FieldID;
+                                k.value = v.AttributeName;
+                                complookupFields.push(k);
+                            });
+                            that.renderComponentLookupFields();     
+
+                        },
+                        error: function (jqXhr, textStatus, errorMessage) { // error callback
+                            alert(errorMessage);
+                        }
+                    });
+            },
             getRenderTypeSource: function () {
-                var a = this.getRenderType();
+                var a = this.getRenderType();              
             return    renderType.filter(function (x) {
                     return x.basetype == a;
                 });
+            },
+            isLookup:function () {
+                 
+                if (this.attribute.AttributeType == 5) {
+                    return true;
+                }
+                return false;
             },
             getRenderType: function () {
                 if (this.attribute.AttributeType == 0 || this.attribute.AttributeType == 1 || this.attribute.AttributeType == 4) {
@@ -456,12 +523,14 @@
                     return 3;
                 } else if (this.attribute.AttributeType == 5 || this.attribute.AttributeType == 6) {
                     return 1
-                } else if (this.attribute.AttributeType == 9 || this.attribute.AttributeType == 10 || this.attribute.AttributeType == 11) {
+                } else if (this.attribute.AttributeType == 9 || this.attribute.AttributeType == 11) {
                     return 2
-                } else if (this.attribute.AttributeType == 12 ) {
+                } else if (this.attribute.AttributeType == 12) {
                     return 4
                 } else if (this.attribute.AttributeType == 2 || this.attribute.AttributeType == 3) {
                     return 0
+                } else if (this.attribute.AttributeType == 10 ) {
+                    return 6;
                 }
             },
             ShowLookup: function () {              
@@ -479,19 +548,122 @@
             changevaluefield: function (val) {
                 this.LookUpValueField = val;
             },
+            renderComponentLookupFields: function () {
+                
+                var that = this;                 
+                setTimeout(function () {
+                    $("#plc_clookupdisplay").append('<dropdown :attribute="clookupdisplay" :value="LookUpDisplayField" v-on:input="changedisplayfield"></dropdown>');
+                    var v = new Vue({
+                        components: {                            
+                            'dropdown': window.dropdown_c,         
+                        },
+                        created: function () {
+                             
+                        },
+                        data: function () {
+                            return {
+                                clookupdisplay: {
+                                    id: 'clkdisplay',
+                                    inputType: 19,
+                                    max: 500,
+                                    selectPicker: {
+                                        datasource: complookupFields,
+                                        displayField: 'value',
+                                        valueField: 'key',
+                                        selection: 'single',
+                                        defaultSelection: 'Choose To lookup field'
+                                    }
+                                },
+                                clookupvalue: {
+                                    id: 'clkvalue',
+                                    inputType: 19,
+                                    max: 500,
+                                    selectPicker: {
+                                        datasource: complookupFields,
+                                        displayField: 'value',
+                                        valueField: 'key',
+                                        selection: 'single',
+                                        defaultSelection: 'Choose To lookup field'
+                                    }
+                                },
+                                LookUpDisplayField: that.LookUpDisplayField,
+                            }
+                        },
+                        methods: {
+                            changedisplayfield: function (val) {
+                                that.LookUpDisplayField = val;
+                                this.LookUpDisplayField = val;
+                            }
+
+                        }
+                    }).$mount('#plc_clookupdisplay');
+                    $("#plc_clookupvalue").append('<dropdown :attribute="clookupvalue" :value="LookUpValueField" v-on:input="changevaluefield"></dropdown>')
+                    var v = new Vue({
+                        components: {
+                            'dropdown': window.dropdown_c,
+                        },
+                        created: function () {
+
+                        },
+                        data: function () {
+                            return {                                
+                                clookupvalue: {
+                                    id: 'clkvalue',
+                                    inputType: 19,
+                                    max: 500,
+                                    selectPicker: {
+                                        datasource: complookupFields,
+                                        displayField: 'value',
+                                        valueField: 'key',
+                                        selection: 'single',
+                                        defaultSelection: 'Choose To lookup field'
+                                    }
+                                },
+                                LookUpValueField: that.LookUpValueField,
+                            }
+                        },
+                        methods: {
+                            changevaluefield: function (val) {
+                                that.LookUpValueField = val;
+                                this.LookUpValueField = val;
+                            }
+
+                        }
+                    }).$mount('#plc_clookupvalue');
+                  
+                }, 1000)
+              
+            },
             Render: function () {
                 var that = this;
-                $("#lkform").append("<div><look-up v-on:back='getback' v-on:selected='onselection'></look-up></div>");
+                $("#lkform").append("<div><look-up v-on:back='getback' v-if='islk' v-on:selected='onselection'></look-up><lookup-component v-on:back='getback' v-on:selected='oncomponentselection' v-if='islk==false'></lookup-component></div>");
                 var mydat = new Vue({
                     components: {
-                        'look-up': cmlok
+                        'look-up': cmlok,
+                        'lookup-component': complookup
                     },
+                    data: function(){
+                        return{
+                            islk: this.isLookup(),
+                        }
+                    },  
                     methods: {
+                        isLookup: function () {                             
+                            return that.isLookup();
+                        },
                         getback: function () {                            
                             that.IsViewLookUp = false;
                         },
-                        onselection: function (val, name) {
-                           
+                        oncomponentselection: function (val, name,data) {
+                            that.LookupID = val;
+                            that.LookupName = name;
+                            that.IsViewLookUp = false;
+                            that.getAttributes();
+                             
+                         //   complookup = data;
+                         //   complookup = data;
+                        },
+                        onselection: function (val, name) {                           
                             that.LookupID = val;
                             that.LookupName = name;
                             that.IsViewLookUp = false;
@@ -502,13 +674,14 @@
             Save: function () {
                 var fld = {};
                 fld.FormID = this.FormID;
-                fld.FormFieldID = "";
+                fld.FormFieldID = this.FormFieldID;
                 fld.EnableLimit = this.EnableLimit;
                 fld.RenderType = this.getRenderType();
                 fld.Category = this.Category;
                 fld.DecimalPlace = this.DecimalPlace;
                 fld.LookUpSource = this.LookupID;
                 fld.DisplayField = this.LookUpDisplayField;
+                fld.ValueField = this.LookUpValueField;
                 fld.AllowOrderbyAlphabet = this.AllowOrderbyAlphabet;
                 fld.DateFormat = this.DateFormat;
                 fld.TimeFormat = this.TimeFormat;
@@ -587,7 +760,7 @@
                 } else
                     this.IsTime = false;
 
-                if ((val >= 7 && val <= 11) || val == 12 || val == 14 || val == 15 || (val >=16 && val<=19) || val==23 || val==24 || val==26 || val ==27) {
+                if ((val >= 7 && val <= 11) || val == 12 || val == 14 || val == 15 || (val >=16 && val<=19) || (val >=20 && val<=27) || val==23 || val==24 || val==26 || val ==27) {
                     this.IsEnableRequired = false;
                     this.EnableLimit = false;
                 } else {

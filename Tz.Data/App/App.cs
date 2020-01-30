@@ -127,6 +127,7 @@ namespace Tz.Data.App
                  .AndWhere(TzAccount.AppElements.Table, TzAccount.AppElements.ElementType.Name, Compare.Equals, DBConst.String("7"));
             return db.GetDatatable(select);
         }
+      
         public DataTable GetAppDashboard(string clientid, string appid)
         {
             DBDatabase db;

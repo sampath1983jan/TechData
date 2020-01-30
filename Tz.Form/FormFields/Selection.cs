@@ -41,6 +41,10 @@ namespace Tz.UIForms.FormFields
         /// 
         /// </summary>
         public bool AllowOrderbyAlphabet { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string SourceName { get; set; }
 
         /// <summary>
         /// 
@@ -76,10 +80,11 @@ namespace Tz.UIForms.FormFields
             Data.UIForm.UIFields uIFields = new Data.UIForm.UIFields(UIForms.Common.GetConnection(this.ClientID));
             if (this.FormFieldID == "")
             {
-                uIFields.Save(this.FormID,
-                              this.ClientID, (int)this.FieldRenderType,
-                             this.Attribute.DataField, Newtonsoft.Json.JsonConvert.SerializeObject(this)
-                              );
+                this.FormFieldID = uIFields.Save(this.FormID,
+                               this.ClientID, (int)this.FieldRenderType,
+                              this.Attribute.DataField, Newtonsoft.Json.JsonConvert.SerializeObject(this)
+                               );
+                if (this.FormFieldID == "") { return false; }
             }
             else
             {

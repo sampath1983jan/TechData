@@ -1185,8 +1185,8 @@ namespace Tech.Data.Schema
                 DBSchemaItemRefCollection idxs = new DBSchemaItemRefCollection();
                 DBSchemaItemRefCollection fks = new DBSchemaItemRefCollection();
 
-                this.LoadForeignKeyRefs(con, fks, tableref);
-                this.LoadIndexRefs(con, idxs, tableref);
+                //this.LoadForeignKeyRefs(con, fks, tableref);
+                //this.LoadIndexRefs(con, idxs, tableref);
 
                 DBSchemaIndexCollection indexes = new DBSchemaIndexCollection();
                 foreach (DBSchemaItemRef idx in idxs)

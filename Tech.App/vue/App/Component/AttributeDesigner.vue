@@ -184,23 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-12">
-                                File Extenstions
-                            </div>
-                            <div class="col-md-12">
-                                <tzinput :attribute="{id:'txtfileExtention',
-            isRequired:false,
-            enabletooltip:true,
-            min:0,
-            inputType:1,
-            max:500,
-            limit:false,format: 'hex',Note:'set default value'
-            }" :value="FileExtension" v-on:input="fileextention"></tzinput>
-                            </div>
-                        </div>
-                    </div>
+                     
                 </div>
             </div>
         </div>
@@ -231,10 +215,7 @@
         { key: 9, value: "Date" },
         { key: 10, value: "Time" },
         { key: 11, value: "Date & time" },
-        { key: 12, value: "Boolean" },
-        { key: 13, value: "Year" },
-        { key: 14, value: "Month" },
-        { key: 15, value: "Quarter" },
+        { key: 12, value: "Boolean" },     
     ]
 
     module.exports = {
@@ -393,8 +374,7 @@
                 attr.IsSecured = this.IsSecured;
                 attr. IsAuto = false;
                 attr.LookUpID = this.LookUpID;
-                attr.DefaultValue = this.DefaultValue;
-                attr.FileExtension = this.FileExtension;
+                attr.DefaultValue = this.DefaultValue;               
                 attr. RegExp = "";
                 attr.AttributeType = this.AttributeType;
                 $.ajax('/App/' + appid + '/Component/' + cid + "/Atrribute/Add",

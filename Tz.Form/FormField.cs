@@ -14,6 +14,7 @@ namespace Tz.UIForms
         UPLOAD=3,
         BOOLEAN=4,
         NUMBER=5,
+        TIMEPICKER=6,
      
     }
     public enum RenderCategory {

@@ -72,7 +72,12 @@ namespace Tz.UIForms
         /// <returns></returns>
         public bool SaveField(FormField field) {
             UIForm.FormFields.Add(field);
-            return field.Save();
+            if (field.Save())
+            {
+                return true;
+            }
+            else
+                return false;
         }
         /// <summary>
         /// 

@@ -191,7 +191,6 @@ namespace Tz.UIForms
                     using (var sr = new StringReader(fatt))
                     using (var jr = new JsonTextReader(sr))
                         ff = serial.Deserialize<FormFields.Date>(jr);
-
                   //  ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Date>(fatt);
                 }
                 else if (rt == RenderType.SELECTION)
@@ -199,7 +198,9 @@ namespace Tz.UIForms
                     using (var sr = new StringReader(fatt))
                     using (var jr = new JsonTextReader(sr))
                         ff = serial.Deserialize<FormFields.Selection>(jr);
-                   // ff = Newtonsoft.Json.JsonConvert.DeserializeObject<FormFields.Selection>(fatt);
+                    if (((FormFields.Selection)ff).LookUpSource != "") {
+                       
+                    }                   
                 }
                 else if (rt == RenderType.TEXT)
                 {

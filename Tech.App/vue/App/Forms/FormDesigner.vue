@@ -26,7 +26,7 @@
                 AppID: "",
                 componentTemplate: "<div id='chComp'><div><choose-component :appid='AppID' :formid='FormID' :comp='Component'></choose-component></div></div>",
                 componentAttributeTemplate: "<div><component-attribute :attributes='ComponentAttribute' v-on:addfield='NewField'></component-attribute></div>",
-                attributeTemplate:"<div id='attProperty'><attribute-property :attribute='attribute' :formfieldattribute='formfieldattribute' :rendertype='rendertype' :attributename='attributename' :fieldid='fieldid' :formid='FormID' v-on:save='addattribute' v-on:back='goback'></attribute-property></div>",
+                attributeTemplate:"<div id='{0}'><attribute-property :attribute='attribute' :formfieldattribute='formfieldattribute' :rendertype='rendertype' :attributename='attributename' :fieldid='fieldid' :formid='FormID' v-on:save='addattribute' v-on:back='goback'></attribute-property></div>",
                 AppForm: {},
                 FormFields: [],
                 Designer: {},
@@ -127,11 +127,11 @@
             },        
             AttributeFormRender: function (element, frt, formfield) {
                 $("#fattribute").html("");
-                $("#fattribute").append(this.attributeTemplate);
-                this.AttributeForm("attProperty", element, frt, formfield);
+                $("#fattribute").append(this.attributeTemplate.format("abcd"));
+                this.AttributeForm("abcd", element, frt, formfield);
             },
             AttributeForm: function (plc, element, frt, formfield) {
-               
+                
                 var that = this;
                 var aProperty = httpVueLoader('/vue/App/Forms/AttributeProperties.vue?' + (Math.random() * 10000));
                 var self = new Vue({
@@ -154,12 +154,14 @@
 
                         },
                         addattribute: function (fld) {
-                            that.Designer.addNewWidget(element);
-                            fld.Top = that.Node.y;
-                            fld.Left = that.Node.x;
-                            fld.Width = that.Node.width;
-                            fld.Height = that.Node.height;
-                            that.FormFields.push(fld);
+                            if (formfield == undefined) {
+                                that.Designer.addNewWidget(element);
+                                fld.Top = that.Node.y;
+                                fld.Left = that.Node.x;
+                                fld.Width = that.Node.width;
+                                fld.Height = that.Node.height;
+                            }
+                            
                             $.ajax('/App/' + that.AppID + '/Form/createfield/' + that.FormID,
                                 {
                                     type: "GET",
@@ -167,6 +169,15 @@
                                     data: { renderType: fld.RenderType, attributeID: fld.FieldID, formelement: JSON.stringify(fld) },
                                     // timeout milliseconds
                                     success: function (data, status, xhr) {  // success callback function
+                                        if (data.FormFieldID == "") {
+                                            that.Designer.Remove(fld.FieldID);
+
+                                        } else {
+                                            if (formfield == undefined) {
+                                                that.FormFields.push(data);
+                                            }
+                                        }                                                                    
+                                                                  
 
                                         jPopup.prototype.close(true);
                                     },
@@ -187,7 +198,7 @@
             NewAttributeForm: function (element) {
                 var that = this;
                 var jPopupDemo = new jPopup({
-                    content: this.attributeTemplate,
+                    content: this.attributeTemplate.format("attProperty"),
                     hashtagValue: '#demopopup',
                     shouldSetHash: false
                 });
@@ -360,6 +371,20 @@
                 that.itemSelected(it[0].id)
             })       
         }
+        this.Remove = function (fid) {
+            var newitem = [];
+            $.each(this.items, function (i, v) {
+                if (v.FieldID != fid) {
+                    newitem.push(v);
+                }
+            });
+            this.items = newitem;
+             
+            $widget = $(".grid-stack").find("[data-gs-id=" + fid + "]");
+           
+            this.grid.removeWidget($widget);
+            this.afterRemove(this.items);
+        }
         this.addNewWidget = function (ele, nd)
         {
             
@@ -380,18 +405,11 @@
 
             }          
             this.items.push(node);
-            $(".grid-stack-item-content").find("a").click(function () {
-                var fid = this.id.split("_")[1];                 
-                var newitem = [];
-                $.each(that.items, function (i, v) {
-                    if (v.FieldID != fid) {
-                        newitem.push(v);
-                    }
-                });
-                that.items = newitem;
-                $widget = $(this).closest(".grid-stack-item");
-                that.grid.removeWidget($widget);
-                that.afterRemove(that.items);
+ 
+            $(".grid-stack").find("[data-gs-id=" + ele.FieldID + "]").find("a").click(function () {
+                var fid = this.id.split("_")[1];
+                
+                that.Remove(fid,this);
             });
             $(".grid-stack-item-content").mouseover(function () {             
                 $(this).find("a").show();
@@ -399,6 +417,7 @@
             $(".grid-stack-item-content").mouseout(function () {
                 $(this).find("a").hide();
             });
+       
             this.eventSelect(ele.FieldID);
             return false;
         }.bind(this);

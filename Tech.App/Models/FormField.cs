@@ -65,8 +65,11 @@ namespace Tz.BackApp.Models
         /// 
         /// </summary>
         public bool AllowOrderbyAlphabet { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string SourceName { get; set; }
 
-        
         /// <summary>
         /// 
         /// </summary>    

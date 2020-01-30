@@ -1136,8 +1136,8 @@ var renderType = [{ "key": "0", "basetype": "0", "value": "text" }, { "key": "1"
     { "key": "16", "basetype": "3", "value": "image" }, { "key": "17", "basetype": "3", "value": "file" },
     { "key": "18", "basetype": "3", "value": "audio" }, { "key": "19", "basetype": "3", "value": "video" },
     { "key": "20", "basetype": "2", "value": "date" }, { "key": "21", "basetype": "2", "value": "date time" },
-    { "key": "22", "basetype": "2", "value": "date range" }, { "key": "23", "basetype": "2", "value": "time" },
-    { "key": "24", "basetype": "2", "value": "time range" }, { "key": "25", "basetype": "2", "value": "month year picker" },
+    { "key": "22", "basetype": "2", "value": "date range" }, { "key": "23", "basetype": "6", "value": "time" },
+    { "key": "24", "basetype": "6", "value": "time range" }, { "key": "25", "basetype": "2", "value": "month year picker" },
 { "key": "26", "basetype": "4", "value": "yes no" }, { "key": "27", "basetype": "4", "value": "question" }];
 var timeinternval = [{
     key: "10",
